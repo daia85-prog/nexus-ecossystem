@@ -1,0 +1,9 @@
+// Utilitário para combinar classes CSS
+// Quando lucide-react, clsx e tailwind-merge estiverem instalados, descomentar:
+// import { clsx, type ClassValue } from "clsx"
+// import { twMerge } from "tailwind-merge"
+// export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)) }
+
+export function cn(...classes: (string | undefined | null | false)[]): string {
+  return classes.filter(Boolean).join(" ");
+}
