@@ -15,12 +15,10 @@ export const REQUIRED_FIELDS = new Set([
   'ct1','ct_r','ct_qc','ct2','ct_d','ct_df','ct6','s1c','s2c',
   // Full Case
   'fc1','fc_r','fc2','fc2b','fc_i','fc_if','fc_re',
-  // Conferência
-  'cf_t1','cf2','cf_t2',
   // Packing
   'pk1',
   // Sorter
-  'st1','st2','st3','st4',
+  'st1','st2','st3','st4','st11','st11_tvs','st_rc',
   // PTL/PTM
   'pt1','pt3',
   // Gestão de Estoque

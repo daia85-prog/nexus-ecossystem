@@ -532,7 +532,7 @@ export async function generateDocx(
     EMAIL_RESPONSAVEL:        userEmail,
     DEPARTAMENTO_RESPONSAVEL: fieldVal(capa.departamento, 'Desenvolvimento de Software'),
     TELEFONE_RESPONSAVEL:     fieldVal(capa.telefone,     '+55 11 2833-0005|0006'),
-    DATA_REVISAO:             capa.data_revisao      ?? '',
+    DATA_REVISAO:             new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }),
     DESCRICAO_REVISAO:        capa.descricao_revisao ?? 'Emissão inicial',
     // Campo responsável na tabela de revisões usa apenas o primeiro nome
     RESPONSAVEL_REVISAO:      firstNameOf(fullName) || capa.responsavel_revisao || '',

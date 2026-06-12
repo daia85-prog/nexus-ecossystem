@@ -11,6 +11,13 @@ export interface Pendencia {
   feito: boolean;
 }
 
+export interface JsonVersion {
+  id: string;
+  filename: string;
+  content: string; // JSON.stringify of InputJson
+  createdAt: string;
+}
+
 export interface NexusProject {
   id: string;
   code: string;
@@ -29,6 +36,10 @@ export interface NexusProject {
   pendencias?: Pendencia[];
   aDefinirNotes?: Record<string, string>;
   progressPct?: number;
+  jsonVersions?: JsonVersion[];
+  scratchpad?: string;
+  meetingNotes?: string;
+  sharePointUrl?: string;
 }
 
 const KEY = 'nexus_projects_v1';

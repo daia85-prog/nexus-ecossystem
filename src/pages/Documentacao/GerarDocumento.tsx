@@ -10,6 +10,8 @@ import FileUploadRoundedIcon from '@mui/icons-material/FileUploadRounded';
 import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded';
 import { ProjectPickerModal } from '../../components/ProjectPickerModal';
 import type { NexusProject } from '../../lib/projectStore';
+import { loadProject, upsertProject, generateId } from '../../lib/projectStore';
+import type { JsonVersion } from '../../lib/projectStore';
 import { generateDocx } from '../../lib/docxBuilder';
 import type { InputJson, UserInfo } from '../../lib/docxBuilder';
 import { readUploadAsText, safeJsonParse, validateInputJson } from '../../lib/security';
@@ -85,6 +87,20 @@ export function GerarDocumento() {
       URL.revokeObjectURL(url);
       setRemovedCount(result.internalBlocksRemoved.length);
       setLastGenerated(result.filename);
+
+      // Save JSON version to the linked project
+      if (project && inputJson && inputFilename) {
+        const existing = loadProject(project.id);
+        if (existing) {
+          const version: JsonVersion = {
+            id: generateId(),
+            filename: inputFilename,
+            content: JSON.stringify(inputJson),
+            createdAt: new Date().toISOString(),
+          };
+          upsertProject({ ...existing, jsonVersions: [...(existing.jsonVersions ?? []), version] });
+        }
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Erro desconhecido ao gerar documento.');
     } finally {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
@@ -11,26 +11,39 @@ import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import CircularProgress from '@mui/material/CircularProgress';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
+import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
+import DataObjectRoundedIcon from '@mui/icons-material/DataObjectRounded';
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
+import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import AssignmentTurnedInRoundedIcon from '@mui/icons-material/AssignmentTurnedInRounded';
+import InsertLinkRoundedIcon from '@mui/icons-material/InsertLinkRounded';
+import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 import PeopleRoundedIcon from '@mui/icons-material/PeopleRounded';
 import RadioButtonUncheckedRoundedIcon from '@mui/icons-material/RadioButtonUncheckedRounded';
 import TaskAltRoundedIcon from '@mui/icons-material/TaskAltRounded';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
-import type { NexusProject, Contact, Pendencia } from '../../lib/projectStore';
+import type { NexusProject, Contact, Pendencia, JsonVersion } from '../../lib/projectStore';
 import { loadProject, upsertProject, getProgress, generateId } from '../../lib/projectStore';
+import { generateDocx } from '../../lib/docxBuilder';
+import type { InputJson, UserInfo } from '../../lib/docxBuilder';
 import { SECTION_MAP } from '../../lib/sectionMeta';
 
 function getADefinirBySection(answers: Record<string, string>) {
   const counts: Record<string, number> = {};
   Object.entries(answers).forEach(([key, val]) => {
-    if (val !== 'tbd') return;
+    if (!val) return;
+    const isTbd = val === 'tbd';
+    const hasDefinir = !isTbd && /definir/i.test(val);
+    if (!isTbd && !hasDefinir) return;
     let secId = 'ge';
     if (key.startsWith('os')) secId = 'os';
     else if (key.startsWith('p') && !key.startsWith('pt') && !key.startsWith('pk')) secId = 'pb';
@@ -68,6 +81,23 @@ interface ContactDialogState {
   email: string;
 }
 
+function getCurrentUser(): UserInfo | undefined {
+  try {
+    const session = JSON.parse(localStorage.getItem('nexus_session') ?? 'null') as { name: string } | null;
+    if (!session?.name) return undefined;
+    const users = JSON.parse(localStorage.getItem('nexus_users') ?? '{}') as Record<string, { name: string }>;
+    const match = Object.entries(users).find(([, u]) => u.name === session.name);
+    return { name: session.name, email: match ? match[0] : '' };
+  } catch { return undefined; }
+}
+
+function getCurrentRole(): string {
+  try {
+    const session = JSON.parse(localStorage.getItem('nexus_session') ?? 'null') as { role?: string } | null;
+    return session?.role ?? '';
+  } catch { return ''; }
+}
+
 function copyText(text: string) {
   navigator.clipboard.writeText(text).catch(() => {
     const el = document.createElement('textarea');
@@ -96,11 +126,18 @@ export function ProjectOverview({ projectId, onOpenKickoff, onBack, onUpdate }: 
   const [editTaskDesc, setEditTaskDesc] = useState('');
   const [aDefNoteEditing, setADefNoteEditing] = useState<string | null>(null);
   const [aDefNoteValue, setADefNoteValue] = useState('');
+  const [jsonAccordionOpen, setJsonAccordionOpen] = useState(false);
+  const [deleteVersion, setDeleteVersion] = useState<JsonVersion | null>(null);
+  const [generatingVersion, setGeneratingVersion] = useState<string | null>(null);
+  const [genVersionError, setGenVersionError] = useState<string | null>(null);
+  const [spUrl, setSpUrl] = useState('');
+  const currentRole = getCurrentRole();
 
   useEffect(() => {
     if (!projectId) return;
     const p = loadProject(projectId);
     setProject(p);
+    setSpUrl(p?.sharePointUrl ?? '');
   }, [projectId]);
 
   if (!project) {
@@ -210,6 +247,49 @@ export function ProjectOverview({ projectId, onOpenKickoff, onBack, onUpdate }: 
     setEditTask(null);
   };
 
+  const downloadVersion = (v: JsonVersion) => {
+    const blob = new Blob([v.content], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = v.filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const generateFromVersion = async (v: JsonVersion) => {
+    setGeneratingVersion(v.id);
+    setGenVersionError(null);
+    try {
+      const resp = await fetch('/ES_PLACEHOLDER_v7.docx', { cache: 'no-store' });
+      if (!resp.ok) throw new Error('Template não encontrado.');
+      const templateBytes = await resp.arrayBuffer();
+      const inputJson = JSON.parse(v.content) as InputJson;
+      const result = await generateDocx(templateBytes, inputJson, getCurrentUser());
+      const url = URL.createObjectURL(result.blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = result.filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      setGenVersionError(err instanceof Error ? err.message : 'Erro ao gerar documento.');
+    } finally {
+      setGeneratingVersion(null);
+    }
+  };
+
+  const confirmDeleteVersion = () => {
+    if (!deleteVersion) return;
+    const updated = (project.jsonVersions ?? []).filter(v => v.id !== deleteVersion.id);
+    saveProject({ ...project, jsonVersions: updated });
+    setDeleteVersion(null);
+  };
+
   const saveADefNote = (sectionId: string) => {
     const notes = { ...(project.aDefinirNotes ?? {}), [sectionId]: aDefNoteValue.trim() };
     if (!aDefNoteValue.trim()) delete notes[sectionId];
@@ -304,6 +384,39 @@ export function ProjectOverview({ projectId, onOpenKickoff, onBack, onUpdate }: 
           </Paper>
         )}
       </Box>
+
+      {/* SharePoint URL */}
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75, mb: 1.25 }}>
+        <InsertLinkRoundedIcon sx={{ fontSize: 14, color: 'text.disabled' }} />
+        <Typography sx={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1.2px', color: 'text.disabled' }}>
+          Link SharePoint
+        </Typography>
+      </Box>
+      <Paper elevation={0} sx={{ p: '8px 14px', display: 'flex', alignItems: 'center', gap: 1, mb: 3 }}>
+        <Box
+          component="input"
+          value={spUrl}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSpUrl(e.target.value)}
+          onBlur={() => saveProject({ ...project, sharePointUrl: spUrl })}
+          onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => { if (e.key === 'Enter') saveProject({ ...project, sharePointUrl: spUrl }); }}
+          placeholder="https://empresa.sharepoint.com/..."
+          sx={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: 'text.primary', fontSize: 12, fontFamily: 'inherit', minWidth: 0 }}
+        />
+        {spUrl && (
+          <Tooltip title="Abrir no SharePoint">
+            <IconButton
+              size="small"
+              component="a"
+              href={spUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: 'primary.main', flexShrink: 0 }}
+            >
+              <OpenInNewRoundedIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+        )}
+      </Paper>
 
       {/* Contacts */}
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.25 }}>
@@ -580,6 +693,92 @@ export function ProjectOverview({ projectId, onOpenKickoff, onBack, onUpdate }: 
         </Box>
       </Box>
 
+      {/* JSON Versions accordion — documentacao role only */}
+      {currentRole === 'documentacao' && (
+        <Box sx={{ mb: 3 }}>
+          <Box
+            component="button"
+            onClick={() => setJsonAccordionOpen(o => !o)}
+            sx={{
+              width: '100%', display: 'flex', alignItems: 'center', gap: 0.75,
+              bgcolor: 'transparent', border: '1px solid', borderColor: jsonAccordionOpen ? 'rgba(255,197,0,0.3)' : 'divider',
+              borderRadius: 1.5, cursor: 'pointer', px: 1.5, py: 1, color: 'text.secondary',
+              '&:hover': { borderColor: 'rgba(255,197,0,0.4)', color: 'text.primary' }, transition: '.15s',
+            }}
+          >
+            <DataObjectRoundedIcon sx={{ fontSize: 14, color: 'text.disabled', flexShrink: 0 }} />
+            <Typography sx={{ fontSize: 9, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1.2px', flex: 1, textAlign: 'left' }}>
+              Versões de input.json
+            </Typography>
+            {(project.jsonVersions?.length ?? 0) > 0 && (
+              <Chip
+                label={project.jsonVersions!.length}
+                size="small"
+                sx={{ fontSize: 9, height: 16, fontFamily: 'monospace', fontWeight: 700, bgcolor: 'rgba(255,197,0,0.08)', color: 'primary.main', border: 'none' }}
+              />
+            )}
+            {jsonAccordionOpen ? <ExpandLessRoundedIcon sx={{ fontSize: 16 }} /> : <ExpandMoreRoundedIcon sx={{ fontSize: 16 }} />}
+          </Box>
+
+          {jsonAccordionOpen && (
+            <Box sx={{ mt: 1, display: 'flex', flexDirection: 'column', gap: 0.75 }}>
+              {genVersionError && (
+                <Box sx={{ p: '8px 12px', borderRadius: 1, bgcolor: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)' }}>
+                  <Typography sx={{ fontSize: 11, color: '#ef4444' }}>{genVersionError}</Typography>
+                </Box>
+              )}
+              {(project.jsonVersions ?? []).length === 0 ? (
+                <Typography sx={{ fontSize: 12, color: 'text.disabled', fontStyle: 'italic', py: 1, px: 0.5 }}>
+                  Nenhuma versão salva. Gere um documento vinculado a este projeto para registrar a primeira versão.
+                </Typography>
+              ) : (
+                [...(project.jsonVersions ?? [])].reverse().map(v => {
+                  const dt = new Date(v.createdAt).toLocaleString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+                  return (
+                    <Paper key={v.id} elevation={0} sx={{ p: '10px 14px', display: 'flex', alignItems: 'center', gap: 1.5 }}>
+                      <ArticleRoundedIcon sx={{ fontSize: 16, color: 'text.disabled', flexShrink: 0 }} />
+                      <Box sx={{ flex: 1, minWidth: 0 }}>
+                        <Typography sx={{ fontSize: 12, fontWeight: 600, color: 'text.primary', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                          {v.filename}
+                        </Typography>
+                        <Typography sx={{ fontSize: 10, color: 'text.disabled' }}>{dt}</Typography>
+                      </Box>
+                      <Box sx={{ display: 'flex', gap: 0.25, flexShrink: 0 }}>
+                        <Tooltip title="Baixar JSON">
+                          <IconButton size="small" onClick={() => downloadVersion(v)} sx={{ color: 'text.disabled', '&:hover': { color: 'primary.main' } }}>
+                            <DownloadRoundedIcon sx={{ fontSize: 14 }} />
+                          </IconButton>
+                        </Tooltip>
+                        <Tooltip title="Gerar documento (.docx)">
+                          <span>
+                            <IconButton
+                              size="small"
+                              onClick={() => generateFromVersion(v)}
+                              disabled={!!generatingVersion}
+                              sx={{ color: 'text.disabled', '&:hover': { color: '#22c55e' }, '&.Mui-disabled': { color: 'rgba(255,255,255,0.15)' } }}
+                            >
+                              {generatingVersion === v.id
+                                ? <CircularProgress size={12} color="inherit" />
+                                : <ArticleRoundedIcon sx={{ fontSize: 14 }} />
+                              }
+                            </IconButton>
+                          </span>
+                        </Tooltip>
+                        <Tooltip title="Excluir versão">
+                          <IconButton size="small" onClick={() => setDeleteVersion(v)} sx={{ color: 'text.disabled', '&:hover': { color: 'error.main' } }}>
+                            <DeleteRoundedIcon sx={{ fontSize: 14 }} />
+                          </IconButton>
+                        </Tooltip>
+                      </Box>
+                    </Paper>
+                  );
+                })
+              )}
+            </Box>
+          )}
+        </Box>
+      )}
+
       {/* Add/edit contact dialog */}
       <Dialog open={contactDialog.open} onClose={closeContactDialog} maxWidth="xs" fullWidth>
         <DialogTitle sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -663,6 +862,29 @@ export function ProjectOverview({ projectId, onOpenKickoff, onBack, onUpdate }: 
           <Button onClick={() => setEditTask(null)} color="inherit" size="small">Cancelar</Button>
           <Button onClick={saveEditTask} variant="contained" color="primary" size="small" disabled={!editTaskTitle.trim()}>
             Salvar
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* Delete JSON version confirmation */}
+      <Dialog open={!!deleteVersion} onClose={() => setDeleteVersion(null)} maxWidth="xs" fullWidth>
+        <DialogTitle sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <WarningAmberRoundedIcon sx={{ fontSize: 18, color: '#f59e0b' }} />
+            ALERTA, TEM CERTEZA?
+          </Box>
+          <IconButton size="small" onClick={() => setDeleteVersion(null)}><CloseRoundedIcon fontSize="small" /></IconButton>
+        </DialogTitle>
+        <DialogContent>
+          <Typography sx={{ fontSize: 13, color: 'text.primary', lineHeight: 1.6 }}>
+            Excluir a versão <Box component="span" sx={{ fontWeight: 700, color: 'primary.main' }}>"{deleteVersion?.filename}"</Box>?
+            Esta ação é irreversível.
+          </Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setDeleteVersion(null)} color="inherit" size="small">Cancelar</Button>
+          <Button onClick={confirmDeleteVersion} variant="contained" color="error" size="small" sx={{ fontWeight: 700 }}>
+            Excluir
           </Button>
         </DialogActions>
       </Dialog>

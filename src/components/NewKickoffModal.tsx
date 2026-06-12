@@ -193,14 +193,14 @@ export function NewKickoffModal({ open, onClose, onCreate }: Props) {
               required
             />
             <TextField
-              label="Nome do Projeto"
+              label="Codinome do Projeto"
               fullWidth
               size="small"
               value={name}
               onChange={e => setName(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ex: CD São Paulo — Sorter"
-              helperText="Opcional — ajuda a identificar este kickoff"
+              placeholder="Ex: Projeto Colibri, CD São Paulo"
+              helperText="Opcional — codinome interno, diferente do nome do cliente"
             />
           </Stack>
         )}

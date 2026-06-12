@@ -25,24 +25,24 @@
 
 | # | Descrição | Prioridade | Status | Observações |
 |---|---|---|---|---|
-| F1-01 | Nome do cliente e projeto aparecer preenchido no header do kickoff | 🔴 | — | Exibir client + name no topo do formulário aberto |
-| F1-02 | Campo "Go-Live" (texto livre) nas Infos Gerais do projeto | 🔴 | — | Data/estimativa de go-live, campo aberto |
-| F1-03 | Campo "Layout do Projeto Semelhante ao:" nas Infos Gerais | 🟡 | — | Referência a projeto anterior como base |
-| F1-04 | Retirar validação numérica dos campos de quantidade — aceitar texto | 🔴 | — | Ex: "a definir", "2 ou 3 dependendo do cliente" devem ser aceitos |
-| F1-05 | IA no kickoff não deve ser pergunta opcional | 🔴 | — | Se o projeto tem IA, deve ser mandatory; revisar gate question |
-| F1-06 | Recirculação e IA no Sorter não devem ser perguntas opcionais | 🟡 | — | Mover de opcional para obrigatório dentro da seção Sorter |
-| F1-07 | Remover seção Conferência inteira do kickoff | 🔴 | — | Confirmado: conferência não existe nesse tipo de projeto |
-| F1-08 | Dependências entre funcionalidades: se tem IA → sempre tem TV e IVT/etiqueta | 🟡 | — | Lógica de campos dependentes — se X=sim, campos Y e Z tornam-se obrigatórios |
-| F1-09 | PTM/IA: gerar campos de TV da IA ou TV do PTM e quantidade | 🟡 | ❓ | Ver dúvida C2 abaixo |
-| F1-10 | Revisar campos fixos padrão: torná-los invisíveis na UI mas manter no JSON | 🟡 | ❓ | Ver dúvida C3 abaixo |
-| F1-11 | Integração mover para o início do formulário | 🟡 | ❓ | Ver dúvida C4 abaixo — decisão estratégica de ordem |
-| F1-12 | Notas rápidas (bloco de texto livre) visível no lado esquerdo do kickoff | 🟡 | — | Scratchpad para o preenchedor anotar enquanto digita depois arruma |
-| F1-13 | Conta ADM: easter egg (clicar 10x em local secreto + botão Y para acessar) | 🟢 | — | Acesso admin oculto sem tela de login especial |
-| F1-14 | KPIs linkados e visíveis na seção Administração do Config | 🟡 | — | Cada feature implementada mostra seus KPIs medidos |
-| F1-15 | ADM pode editar os valores de KPI de cada funcionalidade no painel Config | 🟡 | — | Interface para inserir valores reais nas tabelas de KPI |
-| F1-16 | Separar "Nome do Projeto" (codinome) de "Nome do Cliente" como campos distintos | 🔴 | — | Atualmente o nome do projeto = nome do cliente. Criar campo codinome; ambos pre-preenchidos no kickoff |
-| F1-17 | Texto com "definir" (qualquer case) em qualquer campo → tratado como [A DEFINIR] | 🟡 | — | Validação global no kickoff; complementa o tratamento que já existe no docxBuilder |
-| F1-18 | Versionamento de input.json por projeto: accordion no Overview, baixar/excluir/gerar por versão | 🔴 | — | localStorage; visível só para papel `documentacao`; confirmação ao excluir |
+| F1-01 | Nome do cliente e projeto aparecer preenchido no header do kickoff | 🔴 | ✅ | Strip com cliente + codinome no topo de cada seção; pre-fill automático ao abrir |
+| F1-02 | Campo "Go-Live" (texto livre) nas Infos Gerais do projeto | 🔴 | ✅ | Campo `g_golive` já existia com máscara de data |
+| F1-03 | Campo "Layout do Projeto Semelhante ao:" nas Infos Gerais | 🟡 | ✅ | Campo `g_layout_ref` adicionado após GoLive |
+| F1-04 | Retirar validação numérica dos campos de quantidade — aceitar texto | 🔴 | ✅ | NUM_FIELDS esvaziado; todos os campos aceitam texto livre |
+| F1-05 | IA no kickoff não deve ser pergunta opcional | 🔴 | ✅ | `st11` obrigatório dentro do Sorter (gate st1 continua existindo) |
+| F1-06 | Recirculação e IA no Sorter não devem ser perguntas opcionais | 🟡 | ✅ | `st11` e `st_rc` agora required=1 + adicionados ao kickoffMeta |
+| F1-07 | Remover seção Conferência inteira do kickoff | 🔴 | ✅ | Seção `cf` removida do SEC, PHASES, sectionMeta e kickoffMeta |
+| F1-08 | Dependências entre funcionalidades: se tem IA → sempre tem TV e IVT/etiqueta | 🟡 | ✅ | Campo `st11_tvs` obrigatório quando IA=Sim; trigger laranja se IA=Sim e Etiquetas=Não |
+| F1-09 | PTM/IA: gerar campos de TV da IA ou TV do PTM e quantidade | 🟡 | ✅ | `pt_tvs_ptl` e `pt_ptm_qtd` já existiam; `st11_tvs` adicionado para IA — C2 resolvida |
+| F1-10 | Revisar campos fixos padrão: torná-los invisíveis na UI mas manter no JSON | 🟡 | ❓ | Ver dúvida C3 abaixo — quais campos especificamente? |
+| F1-11 | Integração mover para o início do formulário | 🟡 | ✅ | Seção `in` movida para Phase 0 (Dados do Projeto), antes de Order Start |
+| F1-12 | Notas rápidas (bloco de texto livre) visível no lado esquerdo do kickoff | 🟡 | ✅ | Scratchpad no painel esquerdo, auto-save no projeto; oculto durante busca |
+| F1-13 | Conta ADM: easter egg (clicar 10x em local secreto + botão Y para acessar) | 🟢 | ✅ | 10 cliques no logo NEXUS → badge "PRESSIONE Y" → role = adm; oculto no Select |
+| F1-14 | KPIs linkados e visíveis na seção Administração do Config | 🟡 | ✅ | KpiEntry[] no RoleFeature; exibidos abaixo da descrição em cada card |
+| F1-15 | ADM pode editar os valores de KPI de cada funcionalidade no painel Config | 🟡 | ✅ | Editor inline (+ KPI, campos label/valor/unidade) visível só para role=adm |
+| F1-16 | Separar "Nome do Projeto" (codinome) de "Nome do Cliente" como campos distintos | 🔴 | ✅ | Modal renomeado; `g_codinome` pre-preenche ao abrir; project.name sincroniza com codinome |
+| F1-17 | Texto com "definir" (qualquer case) em qualquer campo → tratado como [A DEFINIR] | 🟡 | ✅ | `isADefinir()` adicionado; painel A Definir detecta campos com "definir" em texto livre |
+| F1-18 | Versionamento de input.json por projeto: accordion no Overview, baixar/excluir/gerar por versão | 🔴 | ✅ | localStorage; visível só para `documentacao`; botões baixar/gerar/excluir; confirmação "ALERTA, TEM CERTEZA?" |
 
 ---
 
@@ -55,7 +55,7 @@
 | F2-01 | Login automático se já autenticado naquele navegador (session persistente) | 🔴 | — | Supabase Auth + localStorage token |
 | F2-02 | Registro via código enviado por e-mail (magic link / OTP) | 🔴 | — | Login não precisa de código, só o registro |
 | F2-03 | Upload de documentos no projeto: Layout Mecânico, Layout Elétrico, Docs aprovados | 🔴 | — | Supabase Storage; vincular ao projeto |
-| F2-04 | Link do SharePoint por projeto (campo + abertura direta) | 🟡 | — | Requer banco; campo simples de URL |
+| F2-04 | Link do SharePoint por projeto (campo + abertura direta) | 🟡 | ✅ | Implementado em localStorage — campo de URL no Overview com botão "Abrir no SharePoint" |
 | F2-05 | Último Layout Aprovado e Último Documento Aprovado por projeto | 🟡 | — | Requer banco + upload |
 | F2-06 | Apontamento de Horas: horário inteligente, associação de cliente, export Excel no formato correto | 🔴 | — | Sub-aba já existe como Coming Soon no módulo Documentação |
 | F2-07 | Aba de Relatório — campos a definir — visualizar lacunas do kickoff por projeto | 🟡 | — | Ver dúvida C5 abaixo |
@@ -102,7 +102,7 @@ Preciso das suas respostas para fechar a triagem desses itens:
 | # | Dúvida | Item relacionado |
 |---|---|---|
 | C1 | ~~"CONFERÊNCIA não tem"~~ — **Resolvido:** remover a seção inteira. | F1-07 |
-| C2 | "PTM/IA televisão" — o que é "televisão" nesse contexto? É uma tela/display físico que fica na estação? O campo seria "Quantidade de TVs da IA" e "Quantidade de TVs do PTM"? | F1-09 |
+| C2 | ~~Resolvida:~~ `pt_tvs_ptl` (TVs PTL), `pt_ptm_qtd` (TVs PTM) já existiam; `st11_tvs` (TVs câmera IA) adicionado. | F1-09 |
 | C3 | "Campos fixos padrão invisíveis" — quais campos você tem em mente? Ex: campos que sempre têm o mesmo valor e não precisam aparecer no form mas devem ir no JSON? | F1-10 |
 | C4 | Integração no início — é mover a seção de Integração (ERP, APIs) para antes das outras no formulário, ou é criar um campo de integração nas Infos Gerais como contexto inicial? | F1-11 |
 | C5 | Aba de Relatório — o que aparece lá? Ex: "campos que ninguém preencheu essa semana", "projetos com mais TBDs", "seções com menor taxa de completude"? | F2-07 |

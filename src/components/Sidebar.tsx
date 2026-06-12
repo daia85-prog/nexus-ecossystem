@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
@@ -26,6 +26,7 @@ export const ROLES = [
   { value: 'pmo',             label: 'PMO' },
   { value: 'desenvolvimento', label: 'Desenvolvimento' },
   { value: 'eletrica',        label: 'Elétrica' },
+  { value: 'adm',             label: 'Administrador' },
 ] as const;
 
 export type Role = typeof ROLES[number]['value'];
@@ -57,6 +58,34 @@ interface SidebarProps {
 
 export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onLogout }: SidebarProps) {
   const [collapsed, setCollapsed] = useState(false);
+  const [admClicks, setAdmClicks] = useState(0);
+  const [admHint, setAdmHint] = useState(false);
+  const admHintTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleLogoClick = () => {
+    const next = admClicks + 1;
+    if (next >= 10) {
+      setAdmClicks(0);
+      setAdmHint(true);
+      if (admHintTimer.current) clearTimeout(admHintTimer.current);
+      admHintTimer.current = setTimeout(() => setAdmHint(false), 5000);
+    } else {
+      setAdmClicks(next);
+    }
+  };
+
+  useEffect(() => {
+    if (!admHint) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'y' || e.key === 'Y') {
+        onRoleChange('adm');
+        setAdmHint(false);
+        if (admHintTimer.current) clearTimeout(admHintTimer.current);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [admHint, onRoleChange]);
   const W = collapsed ? 56 : 220;
   const NAV = role === 'documentacao'
     ? [...NAV_DEFAULT, NAV_DOC]
@@ -136,6 +165,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
       >
         {/* Logo row */}
         <Box
+          onClick={handleLogoClick}
           sx={{
             pt: '20px',
             pb: '16px',
@@ -145,6 +175,9 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
             alignItems: 'center',
             justifyContent: 'center',
             flexShrink: 0,
+            position: 'relative',
+            userSelect: 'none',
+            cursor: 'default',
           }}
         >
           {collapsed ? (
@@ -172,6 +205,16 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
               <Typography sx={{ display: 'none', color: 'primary.main', fontWeight: 900, fontSize: 20, letterSpacing: 2 }}>
                 NEXUS
               </Typography>
+            </Box>
+          )}
+          {admHint && (
+            <Box sx={{
+              position: 'absolute', bottom: 4, left: '50%', transform: 'translateX(-50%)',
+              bgcolor: '#ffc500', color: '#0b0e14', fontSize: 9, fontWeight: 800,
+              px: '7px', py: '3px', borderRadius: '4px', whiteSpace: 'nowrap',
+              zIndex: 100, letterSpacing: '0.5px', pointerEvents: 'none',
+            }}>
+              PRESSIONE Y
             </Box>
           )}
         </Box>
@@ -202,7 +245,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
                 fullWidth size="small"
                 sx={{ fontSize: 12 }}
               >
-                {ROLES.map(r => (
+                {ROLES.filter(r => r.value !== 'adm' || role === 'adm').map(r => (
                   <MenuItem key={r.value} value={r.value} sx={{ fontSize: 12 }}>{r.label}</MenuItem>
                 ))}
               </Select>

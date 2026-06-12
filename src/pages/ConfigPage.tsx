@@ -18,7 +18,7 @@ import FormatListBulletedRoundedIcon from '@mui/icons-material/FormatListBullete
 import RadioButtonUncheckedRoundedIcon from '@mui/icons-material/RadioButtonUncheckedRounded';
 import { ROLES } from '../components/Sidebar';
 import type { Role } from '../components/Sidebar';
-import type { RoleFeature } from '../lib/featureRegistry';
+import type { RoleFeature, KpiEntry } from '../lib/featureRegistry';
 import { loadFeatures, saveFeature } from '../lib/featuresStore';
 import { PAGE_CATEGORIES, getCategoryColor, getCategoryLabel } from '../lib/pageCategories';
 import { loadLista, toggleListaItem, removeFromLista } from '../lib/listaStore';
@@ -31,9 +31,10 @@ const ROLE_COLOR: Record<Role, string> = {
   pmo:             '#ffc500',
   desenvolvimento: '#22c55e',
   eletrica:        '#f59e0b',
+  adm:             '#ef4444',
 };
 
-export function ConfigPage() {
+export function ConfigPage({ role }: { role?: Role }) {
   const [tab, setTab] = useState(0);
 
   // ── Administração
@@ -217,14 +218,14 @@ export function ConfigPage() {
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                       {r.features
                         .filter(f => pageFilter === 'all' || f.page === pageFilter)
-                        .map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} />)}
+                        .map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={role === 'adm'} />)}
                     </Box>
                   </Box>
                 ))}
             </Box>
           ) : (
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              {filtered.map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} />)}
+              {filtered.map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={role === 'adm'} />)}
             </Box>
           )}
         </Box>
@@ -383,7 +384,7 @@ export function ConfigPage() {
   );
 }
 
-function FeatureCard({ feature, onSave }: { feature: RoleFeature; onSave: (f: RoleFeature) => void }) {
+function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave: (f: RoleFeature) => void; isAdm?: boolean }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState<RoleFeature>({ ...feature });
 
@@ -503,6 +504,54 @@ function FeatureCard({ feature, onSave }: { feature: RoleFeature; onSave: (f: Ro
           />
         </Box>
 
+        {/* KPIs — ADM only */}
+        {isAdm && (
+          <Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: '6px' }}>
+              <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>KPIs <Box component="span" sx={{ color: '#ef4444', ml: '4px', fontSize: 10 }}>ADM</Box></Typography>
+              <Button
+                size="small" variant="text"
+                onClick={() => setDraft(d => ({ ...d, kpis: [...(d.kpis ?? []), { label: '', value: '', unit: '' }] }))}
+                sx={{ fontSize: 11, p: '2px 6px', minWidth: 0, color: 'text.disabled', '&:hover': { color: 'primary.main' } }}
+              >
+                + KPI
+              </Button>
+            </Box>
+            {(draft.kpis ?? []).length === 0 && (
+              <Typography sx={{ fontSize: 11, color: 'rgba(255,255,255,0.2)', fontStyle: 'italic' }}>Nenhum KPI cadastrado.</Typography>
+            )}
+            {(draft.kpis ?? []).map((k, i) => (
+              <Box key={i} sx={{ display: 'flex', gap: 0.75, mb: 0.75, alignItems: 'center' }}>
+                <TextField
+                  size="small" placeholder="Métrica"
+                  value={k.label}
+                  onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, label: e.target.value } : x) }))}
+                  sx={{ flex: 2, '& .MuiInputBase-root': { fontSize: 12 } }}
+                />
+                <TextField
+                  size="small" placeholder="Valor"
+                  value={k.value}
+                  onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, value: e.target.value } : x) }))}
+                  sx={{ flex: 1, '& .MuiInputBase-root': { fontSize: 12 } }}
+                />
+                <TextField
+                  size="small" placeholder="Unid."
+                  value={k.unit ?? ''}
+                  onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, unit: e.target.value } : x) }))}
+                  sx={{ width: 64, '& .MuiInputBase-root': { fontSize: 12 } }}
+                />
+                <IconButton
+                  size="small"
+                  onClick={() => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).filter((_, j) => j !== i) }))}
+                  sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0 }}
+                >
+                  <DeleteRoundedIcon sx={{ fontSize: 14 }} />
+                </IconButton>
+              </Box>
+            ))}
+          </Box>
+        )}
+
         {/* Actions */}
         <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end' }}>
           <Button size="small" variant="outlined" onClick={() => setEditing(false)} sx={{ fontSize: 12, textTransform: 'none' }}>
@@ -535,6 +584,19 @@ function FeatureCard({ feature, onSave }: { feature: RoleFeature; onSave: (f: Ro
           )}
         </Box>
         <Typography sx={{ fontSize: 12, color: 'text.secondary', lineHeight: 1.6 }}>{feature.description}</Typography>
+        {(feature.kpis?.length ?? 0) > 0 && (
+          <Box sx={{ mt: 1, pt: 1, borderTop: '1px solid', borderColor: 'divider' }}>
+            <Typography sx={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: 'rgba(255,255,255,0.25)', mb: '6px' }}>KPIs</Typography>
+            {feature.kpis!.map((k, i) => (
+              <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: '3px' }}>
+                <Typography sx={{ fontSize: 12, color: 'text.secondary', flex: 1 }}>{k.label}</Typography>
+                <Typography sx={{ fontSize: 12, fontWeight: 700, color: 'primary.main', fontFamily: 'monospace' }}>
+                  {k.value}{k.unit ? ` ${k.unit}` : ''}
+                </Typography>
+              </Box>
+            ))}
+          </Box>
+        )}
         <Box sx={{ display: 'flex', gap: 0.75, mt: 1, flexWrap: 'wrap', alignItems: 'center' }}>
           {feature.roles.map(r => {
             const rl = ROLES.find(x => x.value === r)?.label ?? r;

@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "7483836654a0a6f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "83435186ff35863d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb9f1be0c67e363f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "deed6ce0d31162a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "06c63727fa5ecc89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6be7af8b013ae9d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "4a225cb0aa6d4ff8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "77a4d0ff0a216f26",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 217.5
+  },
+  "right": {
+    "id": "805f28042437da32",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d3c4c7ddea159f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c5fac4c0ffa0dfa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "518c6b3c35b8dd82",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "0b4dbef2bb32cccd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "acdb7fd238d1c717",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "bb2890d0ffdaf9a6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "bb9f1be0c67e363f",
+  "lastOpenFiles": [
+    "src/lib/docxBuilder.ts.tmp.14528.d0a1d630f843",
+    "dist/assets/index-CBSx7BZl.js",
+    "src/pages/KickoffPage.tsx.tmp.14528.21d432f6ef6f",
+    "dist/assets/index-B55831pJ.js",
+    "verify_kickoff_open.png",
+    "verify_overview.png",
+    "verify_temp2.cjs",
+    "verify_s5_kickoff.png",
+    "verify_s4.png",
+    "verify_s3.png",
+    "verify_s2.png",
+    "verify_s1.png",
+    "verify_temp.cjs",
+    "node_modules/playwright-core/bin/reinstall_msedge_stable_win.ps1",
+    "node_modules/playwright-core/bin/reinstall_msedge_stable_mac.sh",
+    "node_modules/playwright-core/bin/reinstall_msedge_stable_linux.sh",
+    "node_modules/playwright-core/bin/reinstall_msedge_dev_win.ps1",
+    "node_modules/playwright-core/bin/reinstall_msedge_dev_mac.sh",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/video-recording.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/tracing.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/test-generation.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/storage-state.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/session-management.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/spec-driven-testing.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/running-code.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/request-mocking.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/playwright-tests.md",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/references/element-attributes.md",
+    "node_modules/playwright-core/lib/vite/dashboard/assets/safari-na3_-uQk.svg",
+    "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-nightly-Cp5nfeDT.svg",
+    "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-beta-k3eOH_eK.svg",
+    "node_modules/playwright-core/lib/tools/cli-client/skill/SKILL.md",
+    "node_modules/playwright-core/lib/tools/trace/SKILL.md",
+    "node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
+    "node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
+    "node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
+    "node_modules/playwright/lib/agents/playwright-test-heal.prompt.md",
+    "node_modules/playwright/lib/agents/playwright-test-generator.agent.md",
+    "node_modules/playwright/lib/agents/playwright-test-generate.prompt.md",
+    "node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md",
+    "NEXUS_FEATURES.md",
+    "node_modules/resolve/SECURITY.md",
+    "node_modules/util-deprecate/History.md",
+    "node_modules/tslib/README.md",
+    "node_modules/eslint-plugin-react-hooks/README.md"
+  ]
+}

@@ -182,7 +182,7 @@ export default function App() {
       case 'dashboard':
         return <ComingSoon iconType="dashboard" title="Dashboard" description="Métricas e indicadores dos projetos: taxa de preenchimento, seções críticas, timeline." />;
       case 'config':
-        return <ConfigPage />;
+        return <ConfigPage role={role} />;
       case 'sugestoes':
         return <SugestoesPage role={role} userName={userName} />;
       case 'documentacao':

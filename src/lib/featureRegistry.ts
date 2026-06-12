@@ -1,5 +1,11 @@
 import type { Role } from '../components/Sidebar';
 
+export interface KpiEntry {
+  label: string;
+  value: string;
+  unit?: string;
+}
+
 export interface RoleFeature {
   id: string;
   title: string;
@@ -8,6 +14,7 @@ export interface RoleFeature {
   page: string;
   addedAt: string;
   implemented: boolean;
+  kpis?: KpiEntry[];
 }
 
 // ─── REGISTRO DE FUNCIONALIDADES POR FUNÇÃO ───────────────────────────────────
@@ -44,6 +51,15 @@ export const ROLE_FEATURES: RoleFeature[] = [
     implemented: true,
   },
   {
+    id: 'doc-json-versions',
+    title: 'Versionamento de input.json',
+    description: 'Documentação vê no Overview de cada projeto um accordion com todas as versões de input.json geradas. Cada versão permite baixar o JSON, gerar o .docx diretamente ou excluir (com confirmação).',
+    roles: ['documentacao'],
+    page: 'Projetos',
+    addedAt: '2026-06-11',
+    implemented: true,
+  },
+  {
     id: 'doc-approval-date',
     title: 'Marcação de Data de Aprovação',
     description: 'Em cada projeto, Documentação pode registrar a data em que o documento foi aprovado pelo cliente.',
@@ -69,5 +85,23 @@ export const ROLE_FEATURES: RoleFeature[] = [
     page: 'Ferramentas I.A',
     addedAt: '2026-06-09',
     implemented: false,
+  },
+  {
+    id: 'adm-easter-egg',
+    title: 'Acesso Administrador (easter egg)',
+    description: 'Clique 10x no logo NEXUS e pressione Y para ativar o modo Administrador. Desativa ao trocar para outro papel.',
+    roles: ['adm'],
+    page: 'Configurações',
+    addedAt: '2026-06-11',
+    implemented: true,
+  },
+  {
+    id: 'adm-kpi-editor',
+    title: 'Editor de KPIs por Funcionalidade',
+    description: 'Administrador pode adicionar e editar valores de KPI (métricas de impacto) em cada funcionalidade listada no painel de Administração.',
+    roles: ['adm'],
+    page: 'Configurações',
+    addedAt: '2026-06-11',
+    implemented: true,
   },
 ];
