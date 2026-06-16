@@ -563,17 +563,17 @@ function QF({ q, v, ch, a, qid }) {
             var vs = v ? v.split('|||') : [];
             var ck = vs.indexOf(ov) >= 0;
             return (
-              <Paper key={ov} elevation={0} sx={{ px:1.25, py:'8px', bgcolor: ck ? 'rgba(255,197,0,0.08)' : '#2e2e2e', borderColor: ck ? 'rgba(255,197,0,0.3)' : 'divider', cursor:'pointer', transition:'.15s' }}>
+              <Paper key={ov} elevation={0} sx={{ px:1.25, py:'8px', bgcolor: ck ? 'rgba(255,197,0,0.08)' : 'rgba(255,255,255,0.03)', borderColor: ck ? 'rgba(255,197,0,0.3)' : 'rgba(255,255,255,0.07)', cursor:'pointer', transition:'.15s' }}>
                 <FormControlLabel
                   control={
                     <Checkbox
                       size="small"
                       checked={ck}
                       onChange={function(){var nv=ck?vs.filter(function(x){return x!==ov;}):vs.concat([ov]);ch(q.id,nv.join('|||'));}}
-                      sx={{ color:'divider', '&.Mui-checked':{color:'primary.main'}, p:0, mr:1 }}
+                      sx={{ color:'rgba(255,255,255,0.2)', '&.Mui-checked':{color:'primary.main'}, p:0, mr:1 }}
                     />
                   }
-                  label={<Typography sx={{ fontSize:13, color: ck ? 'primary.main' : 'text.secondary', fontWeight: ck ? 600 : 400 }}>{to(ov)}</Typography>}
+                  label={<Typography sx={{ fontSize:13, color: ck ? 'primary.main' : 'rgba(255,255,255,0.45)', fontWeight: ck ? 600 : 400 }}>{to(ov)}</Typography>}
                   sx={{ m:0, width:'100%' }}
                 />
               </Paper>
@@ -1178,7 +1178,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
                         key={s.id}
                         component="button"
                         onClick={function(){goSec(s.id);}}
-                        sx={{ width:'100%', display:'flex', alignItems:'center', gap:'9px', p:'7px 12px', bgcolor: isActive ? 'rgba(255,197,0,0.08)' : 'transparent', border:'none', borderLeft:'2px solid', borderLeftColor: isActive ? 'primary.main' : (isDone && !isNA) ? '#22c55e' : 'transparent', cursor:'pointer', textAlign:'left' }}
+                        sx={{ width:'100%', display:'flex', alignItems:'center', gap:'9px', p:'7px 12px', bgcolor: isActive ? 'rgba(255,255,255,0.05)' : 'transparent', border:'none', borderLeft:'2px solid', borderLeftColor: isActive ? 'primary.main' : (isDone && !isNA) ? '#22c55e' : 'transparent', cursor:'pointer', textAlign:'left' }}
                       >
                         <Box sx={{ minWidth:21, height:21, borderRadius:'50%', display:'flex', alignItems:'center', justifyContent:'center', fontFamily:'monospace', fontSize:9, fontWeight:700, bgcolor: isActive ? 'primary.main' : (isDone && !isNA) ? 'rgba(34,197,94,0.2)' : isNA ? '#383838' : 'rgba(255,255,255,0.75)', color: isActive ? '#0b0e14' : (isDone && !isNA) ? '#22c55e' : isNA ? 'text.disabled' : '#0b0e14', flexShrink:0 }}>
                           {s.n}
@@ -1310,18 +1310,18 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
 
         {/* Readiness */}
         <Box sx={{ px:2, pb:2, flexShrink:0 }}>
-          <Stack direction="row" alignItems="center" sx={{ mb:1.25, gap:2 }}>
-            <Typography sx={{ fontSize:11, fontWeight:700, color:pctColor }}>{tp}%</Typography>
-            <Typography sx={{ fontSize:9, fontWeight:800, textTransform:'uppercase', letterSpacing:'1.2px', color:'text.disabled' }}>Progresso Kickoff</Typography>
-          </Stack>
-          <Box sx={{ height:7, borderRadius:'4px', bgcolor:'#383838', overflow:'hidden' }}>
-            <Box sx={{ height:7, borderRadius:'4px', width:tp+'%', bgcolor:pctColor, transition:'width .4s' }} />
+          <Typography sx={{ fontSize:9, fontWeight:800, textTransform:'uppercase', letterSpacing:'1.2px', color:'text.disabled', mb:1.25 }}>Progresso Kickoff</Typography>
+          <Box sx={{ position:'relative', height:13, borderRadius:'7px', bgcolor:'#383838', overflow:'hidden' }}>
+            <Box sx={{ height:'100%', borderRadius:'7px', width:tp+'%', bgcolor:pctColor, transition:'width .4s' }} />
+            <Box sx={{ position:'absolute', top:0, left:0, right:0, bottom:0, display:'flex', alignItems:'center', justifyContent:'center' }}>
+              <Typography component="span" sx={{ fontSize:9, fontWeight:800, lineHeight:1, color: tp > 55 ? '#0b0e14' : 'rgba(255,255,255,0.7)' }}>{tp}%</Typography>
+            </Box>
           </Box>
         </Box>
 
         {/* Meeting Notes accordion — cresce quando aberto, encolhe quando fechado */}
         <Box sx={{ flexGrow:meetingNotesOpen ? 1 : 0, flexShrink:1, px:2, display:'flex', flexDirection:'column', minHeight:0, mb:2 }}>
-          <Box sx={{ border:'1px solid rgba(255,197,0,0.3)', borderRadius:'8px', overflow:'hidden', bgcolor:'rgba(255,197,0,0.03)', display:'flex', flexDirection:'column', flexGrow:meetingNotesOpen ? 1 : 0 }}>
+          <Box sx={{ border:'1px solid rgba(255,255,255,0.08)', borderRadius:'8px', overflow:'hidden', bgcolor:'transparent', display:'flex', flexDirection:'column', flexGrow:meetingNotesOpen ? 1 : 0 }}>
             <Box
               component="button"
               onClick={function(){setMeetingNotesOpen(function(v){ var next=!v; try{localStorage.setItem('nexus_kickoff_mno',next?'1':'0');}catch{} return next; });}}
@@ -1373,7 +1373,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
           <Stack spacing={0.75}>
             <Button fullWidth variant="contained" color="primary" size="small" startIcon={<DownloadRoundedIcon />} onClick={exA} sx={{ fontWeight:700 }}>Baixar Kickoff</Button>
             <Box sx={{ display:'flex', gap:0.75 }}>
-              <Button fullWidth variant="outlined" size="small" onClick={exP} sx={{ fontSize:12, borderColor:'rgba(251,191,36,0.3)', color:'#fbbf24', bgcolor:'rgba(120,53,15,0.5)', '&:hover':{ bgcolor:'rgba(120,53,15,0.7)', borderColor:'rgba(251,191,36,0.5)' } }}>Pendências</Button>
+              <Button fullWidth variant="outlined" size="small" onClick={exP} sx={{ fontSize:12, borderColor:'rgba(255,255,255,0.12)', color:'text.secondary', bgcolor:'transparent', '&:hover':{ bgcolor:'rgba(255,255,255,0.05)', borderColor:'rgba(255,255,255,0.2)' } }}>Pendências</Button>
               <Button fullWidth variant="outlined" color="inherit" size="small" onClick={function(){fr.current&&fr.current.click();}} sx={{ fontSize:12, color:'text.secondary', borderColor:'divider' }}>Carregar JSON</Button>
             </Box>
             <input ref={fr} type="file" accept=".json" style={{display:'none'}} onChange={function(e){if(e.target.files&&e.target.files[0])hi(e.target.files[0]);e.target.value='';}} />
@@ -1571,7 +1571,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
         </Box>
         <Box sx={{ display:'flex', gap:1, mb:2.5 }}>
           <Button variant="contained" color="primary" size="small" startIcon={<DownloadRoundedIcon />} onClick={exA} sx={{ fontWeight:700 }}>Baixar Kickoff</Button>
-          <Button variant="outlined" size="small" onClick={exP} sx={{ fontSize:12, color:'#fbbf24', borderColor:'rgba(251,191,36,0.3)', bgcolor:'rgba(120,53,15,0.5)' }}>Pendencias</Button>
+          <Button variant="outlined" size="small" onClick={exP} sx={{ fontSize:12, color:'text.secondary', borderColor:'rgba(255,255,255,0.12)', bgcolor:'transparent', '&:hover':{ bgcolor:'rgba(255,255,255,0.05)', borderColor:'rgba(255,255,255,0.2)' } }}>Pendencias</Button>
         </Box>
         <Stack spacing={1.5}>
           {SEC.map(function(s){

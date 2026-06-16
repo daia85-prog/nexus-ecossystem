@@ -36,7 +36,7 @@ function getADefinirBySection(answers: Record<string, string>): Array<{ sectionI
     else if (key.startsWith('fc')) secId = 'fc';
     else if (key.startsWith('es')) secId = 'es';
     else if (key.startsWith('st') || key.startsWith('so')) secId = 'so';
-    else if (key.startsWith('cf')) secId = 'cf';
+    else if (key.startsWith('cf')) secId = 'pk';
     else if (key.startsWith('pk')) secId = 'pk';
     else if (key.startsWith('pt')) secId = 'pt';
     else if (key.startsWith('et')) secId = 'et';

@@ -110,7 +110,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
     alignItems: 'center',
     width: '100%',
     color: isActive ? '#ffc500' : 'rgba(255,255,255,0.45)',
-    bgcolor: isActive ? 'rgba(255,197,0,0.08)' : 'transparent',
+    bgcolor: isActive ? 'rgba(255,255,255,0.05)' : 'transparent',
     '&::before': isActive ? {
       content: '""',
       position: 'absolute',
@@ -122,7 +122,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
       bgcolor: '#ffc500',
     } : {},
     '&:hover': {
-      bgcolor: isActive ? 'rgba(255,197,0,0.10)' : 'rgba(255,255,255,0.04)',
+      bgcolor: isActive ? 'rgba(255,255,255,0.07)' : 'rgba(255,255,255,0.04)',
       color: isActive ? '#ffc500' : 'rgba(255,255,255,0.75)',
     },
     transition: 'background-color 0.15s, color 0.15s',
