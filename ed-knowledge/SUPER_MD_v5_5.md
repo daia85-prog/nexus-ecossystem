@@ -1,8 +1,14 @@
-# SUPER MD v5.5 — Biblioteca de Blocos WCS (Padrão Ouro Definitivo)
+# SUPER MD v5.7 — Biblioteca de Blocos WCS (Padrão Ouro Definitivo)
 
-> Versão: 5.5
+> Versão: 5.7
 > Formato: Hierarquia Estrita (Capítulos > Subseções > Blocos)
 > Regra de Ouro: Textos introdutórios ficam soltos no Capítulo Pai `[BASE]`. Processos físicos distintos e paralelos ganham Subseções `##`. Variações de hardware, parametrizações ou regras excludentes ganham Blocos `[SE:]` dentro do tópico correspondente.
+>
+> **Changelog v5.7:**
+> - **Cap. 22 expandido:** `22.1 Sugestão de Alocação por Curva ABC [SE: CURVA_ABC]` — conceito de PEGA, parâmetro de range, tela de consulta com tabela de dados, critérios A/B/C, fluxo de sugestão e aprovação, relatório operacional.
+>
+> **Changelog v5.6:**
+> - **Cap. 17 reestruturado em duas subseções:** `17.1 Tela de Tratativa do Rejeito` (nova — fluxo do operador + 3 ações: Reinduzir / Devolver ao Estoque / Desmontar) e `17.2 Motivos de Rejeito` (motivos reescritos no formato narrativo numerado com "Ocorre quando...").
 >
 > **Changelog v5.5:**
 > - Cap. 6 (Integrações): adicionado quadro-resumo + `[MOLDE_SUBINTEGRACAO]` (Direção + tabela de campos + bloco JSON por integração) — o miolo das integrações agora tem origem no Super MD.
@@ -57,11 +63,14 @@
 ### 15. Sorter
 ### 16. Mapa do Sorter [SE: SORTER]
 ### 17. Rejeito do Sorter [SE: SORTER]
+- 17.1 Tela de Tratativa do Rejeito
+- 17.2 Motivos de Rejeito
 ### 18. PTL / Alocação
 ### 19. Dashboard Operacional
 ### 20. Relatórios
 ### 21. Etiquetas / Layouts
 ### 22. Controle de Estoque das Posições de Picking [SE: ESTOQUE_SOMBRA]
+#### 22.1 Sugestão de Alocação por Curva ABC [SE: CURVA_ABC]
 ### 23. Inventário [SE: INVENTARIO]
 ### 24. Recall [SE: RECALL]
 ### 25. Movimentação Forçada [SE: MOVIMENTACAO_FORCADA]
@@ -572,12 +581,44 @@ O Mapa do Sorter é a interface de configuração das rampas, acessada pela supe
 
 # 17. REJEITO DO SORTER [SE: SORTER]
 [BASE]
-A rampa de rejeito recebe os volumes que não puderam ser classificados e direcionados ao destino correto pelo fluxo automatizado. Esses volumes são tratados manualmente por operadores na mesa de rejeito, equipada com {{QTD_LEITORES_REJEITO}} leitores. A rampa de rejeito recebe volumes enquadrados nas seguintes situações:
+A rampa de rejeito recebe os volumes que não puderam ser classificados e direcionados ao destino correto pelo fluxo automatizado. Esses volumes são tratados manualmente por operadores na mesa de rejeito, equipada com {{QTD_LEITORES_REJEITO}} leitores.
+
+---
+
+## 17.1 Tela de Tratativa do Rejeito
+[BASE]
+
+A Tela de Tratativa do Rejeito é a interface onde o operador trata manualmente cada volume desviado para a rampa de rejeito. A estação é composta por um desktop com acesso ao WCS Velox e um coletor para leitura dos volumes. O operador lê o LPN do volume na mesa de rejeito, o sistema exibe o motivo do desvio (NoRead, Sem Rota, Sem Mapa, MultiRead, Rampa Cheia, Cancelamento ou Perda de Tracking) e disponibiliza as ações de destino aplicáveis àquele motivo. Enquanto o volume não recebe um destino, ele permanece pendente no painel de rejeito.
+
+**Fluxo do operador:**
+
+1. O operador lê o LPN do volume no coletor (ou no scanner fixo da estação).
+2. O WCS identifica o volume e exibe na tela o motivo do desvio e os dados do pedido associado.
+3. O operador analisa fisicamente o volume e seleciona uma das ações de destino.
+4. O WCS executa a ação, atualiza o status do LPN e dispara a integração ao {{SISTEMA_CLIENTE}}.
+5. O volume sai da fila de pendências do rejeito.
+
+**Ações de destino disponíveis:**
+
+- **Reinduzir.** Aplicável quando o impedimento foi resolvido (etiqueta corrigida, rota/mapa cadastrados, código duplicado removido, rampa esvaziada, tracking recuperável). O operador corrige a causa e reinsere o volume no Sorter antes do portal de leitura para nova classificação. Alternativamente, conduz o volume manualmente à rampa de destino e confirma a leitura no scanner fixo, hipótese em que o WCS atualiza o status do LPN para "Na Rampa" e informa a rampa correta.
+
+- **Devolver ao Estoque.** Aplicável a volumes de pedidos cancelados pelo {{SISTEMA_CLIENTE}} durante o trânsito. O operador lê o volume na tela, o WCS confirma o cancelamento ao {{SISTEMA_CLIENTE}} e libera os itens para reoferta no estoque disponível, conforme o protocolo do Capítulo 26 (Devolução de Cancelados). O volume não retorna ao Sorter.
+
+- **Desmontar.** Aplicável quando o volume precisa ser aberto e seus itens reincorporados individualmente ao estoque (cancelamento com necessidade de fracionamento, avaria de embalagem, divergência irrecuperável). O operador desmonta o volume e o WCS registra o retorno dos itens ao estoque, encerrando o LPN. Cruza com o Capítulo 26.
+
+> **[OBS INTERNA]:** A tela como objeto estruturado é uma síntese de âncoras dispersas nos projetos de referência. Definir com Engenharia Interna: layout da tela e campos exibidos, regras de permissão por ação (operador vs. supervisor), mapeamento motivo → ações permitidas e responsabilidade do hardware desktop+coletor.
+
+---
+
+## 17.2 Motivos de Rejeito
+[BASE]
+
+A rampa de rejeito no final do Sorter é responsável por receber volumes que se classificam em uma das seguintes 7 situações:
 
 **1. Sem Leitura (NoRead)**
 
 [BASE]
-O portal de leitura não consegue identificar o código do volume — por ausência de etiqueta, código de barras danificado, deformação da embalagem ou posicionamento inadequado da etiqueta. O operador corrige a etiqueta ou reposiciona o volume e o reinsere no Sorter antes do portal de leitura. Alternativamente, conduz o volume manualmente à rampa de destino correta e realiza a leitura no scanner fixo da estação de rejeito para atualizar o dashboard e disparar a integração ao {{SISTEMA_CLIENTE}}.
+Ocorre quando o portal de leitura não consegue identificar o código do volume — por ausência de etiqueta, código de barras danificado, deformação da embalagem ou posicionamento inadequado da etiqueta. Nesse caso, o CLP envia a informação de "sem leitura" para o WCS, que direciona o volume para a rampa de rejeito. O volume será tratado por um operador, que, após a correção ou a adição da etiqueta, deve reinserir o volume no Sorter antes do portal de leitura. Alternativamente, o operador conduz o volume manualmente à rampa de destino correta e realiza a leitura no scanner fixo da estação.
 
 [SE: RECIRCULACAO]
 Com a esteira de recirculação ativa, o volume com NoRead é automaticamente recirculado para uma nova tentativa de leitura. Somente após esgotar o número de tentativas configurado no WCS o volume é direcionado à rampa de rejeito.
@@ -587,7 +628,7 @@ Com a esteira de recirculação ativa, o volume com NoRead é automaticamente re
 **2. Sem Rota**
 
 [BASE]
-A leitura é realizada com sucesso, mas o WCS não encontra nenhuma rota cadastrada para o código identificado. O operador cadastra a rota no sistema e a vincula ao Mapa do Sorter, depois reinsere o volume. Alternativamente, conduz o volume manualmente à rampa correta e realiza a leitura no scanner fixo.
+Ocorre quando a câmera consegue ler o código do volume e o CLP envia a informação ao WCS, mas o sistema não encontra nenhuma rota cadastrada para aquele código na sua base de dados de destinos. Nesse caso, o volume é direcionado para o rejeito e o operador deverá cadastrar a rota no sistema, vinculando-a ao Mapa do Sorter, e reinserir o volume antes do portal de leitura. Alternativamente, conduz o volume manualmente à rampa correta e realiza a leitura no scanner fixo.
 
 [SE: RECIRCULACAO]
 Com recirculação ativa, o volume aguarda na malha enquanto o operador realiza o cadastro da rota. Após o vínculo ser criado, o volume é classificado normalmente na próxima passagem pelo portal.
@@ -597,7 +638,7 @@ Com recirculação ativa, o volume aguarda na malha enquanto o operador realiza 
 **3. Sem Mapa**
 
 [BASE]
-A leitura é realizada e a rota existe no WCS, mas não há rampa física vinculada a essa rota no Mapa do Sorter. O operador acessa o Mapa do Sorter, vincula a rota à rampa correta e reinsere o volume. Alternativamente, conduz o volume manualmente à rampa e realiza a leitura no scanner fixo.
+Ocorre quando a leitura é realizada com sucesso e a rota existe no WCS, mas não há rampa física vinculada a essa rota no Mapa do Sorter. Nesse caso, o volume é direcionado ao rejeito e o operador deverá acessar o Mapa do Sorter, vincular a rota à rampa correta e reinserir o volume antes do portal. Alternativamente, conduz o volume manualmente à rampa e realiza a leitura no scanner fixo.
 
 [SE: RECIRCULACAO]
 Com recirculação ativa, o volume aguarda na malha enquanto o operador realiza o vínculo no mapa. Após a vinculação, o volume é classificado na próxima passagem.
@@ -607,7 +648,7 @@ Com recirculação ativa, o volume aguarda na malha enquanto o operador realiza 
 **4. MultiRead** [SE: MULTIREAD]
 
 [BASE]
-Mais de um código de barras está visível para a câmera ao mesmo tempo, impossibilitando a identificação unívoca do volume. O operador remove o código extra ou cobre a etiqueta incorreta, corrige a caixa e a reinsere antes do portal de leitura. Alternativamente, conduz o volume manualmente à rampa correta e realiza a leitura no scanner fixo.
+Esse caso ocorre quando mais de um código de barras está visível para a câmera no momento da leitura, impossibilitando a identificação unívoca do volume. A câmera informa ao CLP que há múltiplos códigos lidos, e o CLP envia a mensagem de "MultiRead" para o WCS. Quando o volume chega à rampa de rejeito, o operador deve remover o código extra ou cobrir a etiqueta incorreta e reinserir o volume antes do portal de leitura. Alternativamente, conduz o volume manualmente à rampa correta e realiza a leitura no scanner fixo.
 
 [SE: MULTIREAD_RECIRCULACAO]
 Com recirculação ativa, o volume com MultiRead é recirculado automaticamente. O operador é alertado no dashboard para intervir e corrigir a caixa antes da próxima passagem pelo portal.
@@ -617,7 +658,7 @@ Com recirculação ativa, o volume com MultiRead é recirculado automaticamente.
 **5. Rampa Cheia**
 
 [BASE]
-A rampa de destino está com capacidade máxima — o sensor de acúmulo disparou. O volume é desviado para o rejeito e a situação é sinalizada no sinaleiro da rampa afetada. O volume deve ser reinserido no Sorter após a rampa ser esvaziada, ou conduzido manualmente à rampa e lido no scanner fixo.
+Ocorre quando o processo de leitura e validação no Velox está correto, mas quando o volume chega ao desviador da rampa de destino, a rampa está cheia de caixas, acionando o sensor de acúmulo. Nesse caso, o volume é enviado para o rejeito e o sinaleiro indica essa condição na rampa afetada. O operador deve reinserir o volume no Sorter após a rampa ser esvaziada, ou conduzi-lo manualmente à rampa de destino e realizar a leitura no scanner fixo para que o volume possa ser finalizado.
 
 > **[OBS INTERNA]:** Rampa Cheia não possui condicional `[SE: RECIRCULACAO]` — o impedimento é físico, não sistêmico.
 
@@ -626,7 +667,7 @@ A rampa de destino está com capacidade máxima — o sensor de acúmulo disparo
 **6. Cancelamento**
 
 [BASE]
-O pedido associado ao volume foi cancelado pelo {{SISTEMA_CLIENTE}} durante o trânsito na linha. O WCS identifica o LPN como cancelado e o desvia para o rejeito. O volume não deve retornar ao Sorter. O tratamento correto é o desmonte do volume e retorno dos itens ao estoque, conforme o protocolo do Capítulo 26.
+Ocorre quando o pedido associado ao volume é cancelado pelo {{SISTEMA_CLIENTE}} durante o trânsito na linha, fazendo com que o WCS identifique o LPN como cancelado e o desvie para o rejeito. O volume não deve retornar ao Sorter — o tratamento correto é o desmonte do volume e o retorno dos itens ao estoque, conforme o protocolo do Capítulo 26.
 
 > **[OBS INTERNA]:** Cancelamento não possui condicional `[SE: RECIRCULACAO]` — é rejeito definitivo independentemente da infraestrutura.
 
@@ -635,7 +676,7 @@ O pedido associado ao volume foi cancelado pelo {{SISTEMA_CLIENTE}} durante o tr
 **7. Perda de Tracking**
 
 [BASE]
-Após a leitura no portal, o sistema perde a referência da posição física do volume dentro do Sorter — o controlador lógico (CLP) deixa de rastrear onde o volume está na linha. Isso ocorre geralmente por enroscos mecânicos, volume fora das especificações de dimensão ou peso, ou falha de comunicação entre o CLP e o WCS. Sem a referência posicional, o Sorter não consegue acionar o desvio correto e direciona o volume ao rejeito. O operador reinsere o volume antes do portal ou o conduz manualmente à rampa de destino com leitura no scanner fixo.
+Ocorre quando, após a leitura no portal, há a perda da identificação do volume dentro do sistema — o CLP deixa de ter a referência da posição física do volume no Sorter. Esse tipo de falha geralmente acontece por enroscos mecânicos, volume fora das especificações de dimensão ou peso, ou falha de comunicação entre o CLP e o WCS. Nessa situação, o Sorter não consegue determinar o destino correto do volume, direcionando-o automaticamente para a rampa de rejeito. O operador deve então reinserir o volume antes do portal de leitura, ou conduzi-lo manualmente à rampa de destino com leitura no scanner fixo, para que o processo seja restabelecido.
 
 [SE: RECIRCULACAO]
 Com recirculação ativa, o volume é recirculado para tentar reestabelecer o rastreio posicional. Se o tracking for recuperado durante o percurso, o volume é classificado normalmente. Se a perda persistir, o volume vai ao rejeito para tratamento manual.
@@ -693,8 +734,39 @@ Esta seção documenta os layouts das etiquetas utilizadas na operação. O proj
 [BASE]
 O WCS mantém o controle do saldo de estoque das posições de picking sob sua responsabilidade. Cada posição tem um saldo registrado no sistema, que é atualizado em tempo real a cada coleta realizada (baixa) e a cada reabastecimento executado (entrada). Esse controle permite que o WCS saiba, a qualquer momento, quantas unidades restam em cada canal — e tome decisões automatizadas de reabastecimento antes que a posição esvazie.
 
-[SE: CURVA_ABC]
-O WCS disponibiliza o módulo de Curva ABC para classificação dos produtos por velocidade de saída. O sistema analisa o histórico de {{RANGE_CURVA_ABC}} dias e categoriza os itens em curvas A, B e C. Com base nessa classificação, o sistema sugere realocações de endereço — priorizando os produtos de maior giro (Curva A) nas posições mais ergonômicas e de fácil acesso. O supervisor revisa e aprova as sugestões antes da aplicação.
+## 22.1 Sugestão de Alocação por Curva ABC [SE: CURVA_ABC]
+
+O WCS é responsável por calcular e sugerir a alocação dos produtos nas posições de picking com base na Curva ABC de giro. O sistema analisa o histórico de **{{RANGE_CURVA_ABC}} dias** de operação, computa a quantidade de pegas realizadas por produto e classifica os itens automaticamente. Com base nessa classificação, o sistema emite uma sugestão de realocação — priorizando os produtos de maior giro nas posições mais próximas da saída. A operação recebe a sugestão, analisa e decide se a aplica integralmente ou realiza ajustes antes da execução.
+
+**Administração PEGA**
+
+O conceito central do módulo é a "pega": cada vez que um operador coleta uma unidade de um produto durante o picking, o WCS registra uma pega para aquele item. Ao longo do período configurado ({{RANGE_CURVA_ABC}} dias), o sistema acumula o total de pegas por produto — e essa contagem é a base do cálculo de Curva ABC.
+
+O módulo exibe uma tela de consulta com a lista de produtos e suas respectivas quantidades de pegas no período selecionado. A tabela apresenta os campos:
+
+| Produto | Unidade de Medida | Quantidade de PEGAS | Status da Alocação | Código do Produto | Data de Alocação |
+|---|---|---|---|---|---|
+| (nome do produto) | (un, cx, kg...) | (total no período) | (Alocado / Sugerido / Pendente) | (código interno) | (data da última alocação) |
+
+> [OBS INTERNA] Confirmar com o cliente os estados possíveis de "Status da Alocação" e se há filtros disponíveis na tela por status ou por classificação de curva.
+
+**Critérios de Classificação ABC**
+
+Com base no volume de pegas acumulado no período, o WCS classifica cada produto em uma das três curvas:
+
+- **Curva A** — produtos de alta rotatividade. Recebem as posições de picking mais próximas da área de saída/expedição, minimizando o deslocamento do operador e reduzindo o tempo de ciclo.
+- **Curva B** — produtos de rotatividade intermediária. Alocados em posições intermediárias do armazém.
+- **Curva C** — produtos de baixa rotatividade. Alocados nas posições mais distantes da saída, sem impacto significativo no tempo médio de ciclo.
+
+> [OBS INTERNA] Verificar se o cliente possui regras adicionais de alocação que devem sobrescrever a sugestão do sistema (ex: produtos com restrição de altura de prateleira, produtos perigosos em área segregada). Confirmar se essas restrições são parametrizáveis no módulo ou tratadas manualmente.
+
+**Sugestão e Aplicação**
+
+O WCS gera automaticamente a sugestão de realocação com base na classificação resultante. O supervisor ou responsável operacional revisa a sugestão antes de aplicá-la: é possível ajustar posições individualmente ou aceitar o rearranjo completo. O sistema não realoca posições de forma autônoma — a aplicação exige aprovação explícita do operador.
+
+**Relatório de Curva ABC**
+
+O módulo disponibiliza um relatório que consolida os dados do período analisado, permitindo à gestão identificar os itens de maior saída, acompanhar a evolução da classificação ao longo do tempo e embasar decisões de rearranjo do armazém. O relatório é exportável e serve como insumo para reuniões de análise de desempenho operacional.
 
 [SE: MATRIZ_FRAGILIDADE]
 O WCS aplica regras de empilhamento baseadas na fragilidade dos produtos. Cada produto cadastrado recebe uma classificação (ex: Frágil, Resistente, Líquido). No momento da alocação no PTL, o sistema impede que volumes frágeis sejam colocados em posições inferiores do pallet onde receberão pressão de produtos mais pesados. Os displays PTL exibem alertas de restrição de posicionamento para o operador de doca.
