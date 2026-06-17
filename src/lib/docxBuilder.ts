@@ -71,6 +71,8 @@ function xe(text: unknown): string {
 }
 
 function collapseSplitVars(xml: string): string {
+  xml = xml.replace(/\{(<[^>]*>)+\{/g, '{{');
+  xml = xml.replace(/\}(<[^>]*>)+\}/g, '}}');
   return xml.replace(/\{\{[^{}]{1,60}\}\}/g, (m) => m.replace(/<[^>]+>/g, ''));
 }
 
@@ -494,7 +496,7 @@ function injectBody(docXml: string, bodyXml: string): string {
   const fim = paraBounds(docXml, ANCHOR_END);
   if (!ini || !fim) throw new Error(`Âncoras ${ANCHOR_START}/${ANCHOR_END} não encontradas no template.`);
   if (ini[0] >= fim[0]) throw new Error('Ordem das âncoras inválida no template.');
-  return docXml.slice(0, ini[0]) + bodyXml + xmlPageBreak() + docXml.slice(fim[1]);
+  return docXml.slice(0, ini[0]) + bodyXml + docXml.slice(fim[1]);
 }
 
 // ─── Public API ───────────────────────────────────────────────────────────────

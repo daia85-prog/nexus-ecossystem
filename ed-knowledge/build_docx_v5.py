@@ -2,7 +2,7 @@
 """
 build_docx_v5.py - Motor de geracao de ES (Especificacao de Software) no padrao Invent.
 
-ABORDAGEM (v6): ABRE o template binario ES_PLACEHOLDER_v6.docx e INJETA o corpo
+ABORDAGEM (v7): ABRE o template binario ES_PLACEHOLDER_v7.docx e INJETA o corpo
 gerado ENTRE as ancoras {{INICIO_CORPO}} e {{FIM_CORPO}}. NUNCA cria documento do
 zero. Capa (paginas 1-2), cabecalho/rodape (logo + regua amarela) e pagina de
 APROVACAO DA PROPOSTA pertencem ao template e sao PRESERVADOS intactos.
@@ -81,7 +81,7 @@ from pathlib import Path
 # --- Caminhos ----------------------------------------------------------------
 
 SCRIPT_DIR = Path(__file__).parent
-TEMPLATE   = SCRIPT_DIR / 'ES_PLACEHOLDER_v6.docx'
+TEMPLATE   = SCRIPT_DIR / 'ES_PLACEHOLDER_v7.docx'
 OUTPUT_DIR = SCRIPT_DIR / 'output'
 
 ANCHOR_START = '{{INICIO_CORPO}}'
@@ -420,7 +420,7 @@ def inject_body(doc_xml: str, body_xml: str) -> str:
     if not (ini[0] < fim[0]):
         sys.exit('Erro: ordem das ancoras invalida no template.')
     # body + quebra de pagina para que a Aprovacao comece em pagina propria
-    return doc_xml[:ini[0]] + body_xml + xml_page_break() + doc_xml[fim[1]:]
+    return doc_xml[:ini[0]] + body_xml + doc_xml[fim[1]:]
 
 
 # --- Main --------------------------------------------------------------------

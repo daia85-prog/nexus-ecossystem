@@ -178,6 +178,9 @@
   },
   "active": "cbdc2bf95da838db",
   "lastOpenFiles": [
+    "src/lib/kickoffMeta.ts.tmp.7020.c69b7b99339b",
+    "src/pages/KickoffPage.tsx.tmp.7020.df335f8a8264",
+    "src/pages/KickoffPage.tsx.tmp.7020.638fbba920f8",
     "node_modules/playwright-core/lib/tools/cli-client/skill/SKILL.md",
     "src/pages/Projetos/ProjectOverview.tsx.tmp.14528.2ab1630b2e68",
     "src/pages/KickoffPage.tsx.tmp.14528.551bbfc4ca5f",
@@ -187,8 +190,6 @@
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.97ff310e3aae",
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.601936030a2b",
     "ed-knowledge/json-docs-v3.md.tmp.14528.b2f0724edf02",
-    "src/pages/KickoffPage.tsx.tmp.14528.4afa26fd8036",
-    "src/pages/KickoffPage.tsx.tmp.14528.52d16f6ec564",
     "README.md",
     "NEXUS_FEATURES.md",
     "verify_kickoff_open.png",

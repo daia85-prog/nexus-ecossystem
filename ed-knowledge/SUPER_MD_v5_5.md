@@ -1,8 +1,14 @@
-# SUPER MD v5.7 — Biblioteca de Blocos WCS (Padrão Ouro Definitivo)
+# SUPER MD v5.8 — Biblioteca de Blocos WCS (Padrão Ouro Definitivo)
 
-> Versão: 5.7
+> Versão: 5.8
 > Formato: Hierarquia Estrita (Capítulos > Subseções > Blocos)
 > Regra de Ouro: Textos introdutórios ficam soltos no Capítulo Pai `[BASE]`. Processos físicos distintos e paralelos ganham Subseções `##`. Variações de hardware, parametrizações ou regras excludentes ganham Blocos `[SE:]` dentro do tópico correspondente.
+>
+> **Changelog v5.9:**
+> - **Métodos de Autenticação promovido a tópico independente:** movido de subtópico dentro de Cap. 6 para capítulo `nivel: 1` próprio, antes de Integrações. O AI deve gerá-lo como capítulo standalone no JSON.
+>
+> **Changelog v5.8:**
+> - **Cap. 6 — Métodos de Autenticação:** nova subseção `[BASE]` fixa que deve aparecer SEMPRE entre o quadro-resumo e a primeira integração (6.1). Documenta o fluxo Bearer Token (JWT) via Basic Auth, com exemplos em JS, cURL e Python, tabela de erros e OBS INTERNA de credenciais PRD/HML.
 >
 > **Changelog v5.7:**
 > - **Cap. 22 expandido:** `22.1 Sugestão de Alocação por Curva ABC [SE: CURVA_ABC]` — conceito de PEGA, parâmetro de range, tela de consulta com tabela de dados, critérios A/B/C, fluxo de sugestão e aprovação, relatório operacional.
@@ -34,6 +40,7 @@
 ### 3. Etapas da ES
 ### 4. Stakeholders
 ### 5. Legenda
+### Métodos de Autenticação (tópico fixo — sempre antes de Integrações)
 ### 6. Integrações
 ### 7. Cubagem
 #### 7.1 Cubagem de Pallet [SE: PTL]
@@ -261,6 +268,105 @@ A Especificação de Software (ES) passa pelas seguintes etapas antes de autoriz
 
 [SE: PTL]
 | PTL | Put-to-Light — sistema de displays luminosos que guia o operador na alocação de volumes no pallet |
+
+---
+
+# MÉTODOS DE AUTENTICAÇÃO
+
+[BASE]
+Todas as integrações entre o {{SISTEMA_CLIENTE}} e o WCS Velox utilizam autenticação via **Bearer Token (JWT)**. Antes de realizar qualquer chamada às APIs de integração, o sistema deve obter um token de acesso através do endpoint de autenticação da Invent.
+
+**Obter Token de Acesso**
+
+Endpoint: `POST /integracao/api/prod/autenticacao`
+
+Envie as credenciais utilizando Basic Authentication para receber o token de acesso.
+
+**Headers obrigatórios:**
+
+| Header | Valor |
+|---|---|
+| `Content-Type` | `application/json` |
+| `Authorization` | `Basic <credenciais_em_base64>` |
+
+**Como montar o header Authorization:**
+1. Combine usuário e senha: `usuario:senha`
+2. Codifique em Base64 — ex.: `dXN1YXJpbzpzZW5oYQ==`
+3. Adicione o prefixo: `Basic dXN1YXJpbzpzZW5oYQ==`
+
+**Resposta de sucesso:**
+```json
+{
+  "mensagem": "Autenticação realizada com sucesso.",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+**Usar o token nas requisições:** após obter o token, inclua-o no header `Authorization` de todas as chamadas subsequentes:
+
+`Authorization: Bearer <seu_token_aqui>`
+
+**Exemplos Práticos**
+
+*JavaScript:*
+```js
+const credenciais = btoa('meuusuario:minhasenha');
+const response = await fetch('/integracao/api/hml/autenticacao', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Basic ${credenciais}`
+  }
+});
+const { token } = await response.json();
+
+// Usar token nas outras requisições:
+const apiResponse = await fetch('/integracao/api/hml/outros-endpoints', {
+  method: 'GET',
+  headers: { 'Authorization': `Bearer ${token}` }
+});
+```
+
+*cURL:*
+```bash
+# 1. Obter token
+curl -X POST "/integracao/api/hml/autenticacao" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Basic bWV1dXN1YXJpbzptaW5oYXNlbmhh"
+
+# 2. Usar token
+curl -X GET "/integracao/api/hml/outros-endpoints" \
+  -H "Authorization: Bearer <seu_token_aqui>"
+```
+
+*Python:*
+```python
+import requests, base64
+
+# 1. Autenticar
+credenciais = base64.b64encode(b'meuusuario:minhasenha').decode()
+response = requests.post('/integracao/api/hml/autenticacao',
+    headers={'Content-Type': 'application/json', 'Authorization': f'Basic {credenciais}'})
+token = response.json()['token']
+
+# 2. Usar token
+api_response = requests.get('/integracao/api/hml/outros-endpoints',
+    headers={'Authorization': f'Bearer {token}'})
+```
+
+**Possíveis Erros:**
+
+| Status | Mensagem | Causa |
+|---|---|---|
+| 403 | Autenticação básica é obrigatória. | Header `Authorization` ausente ou inválido |
+| 403 | Usuário ou senha inválidos. | Credenciais incorretas |
+| 400 | Erro ao processar a autenticação. | Erro interno do servidor |
+
+**Resumo do Fluxo:**
+1. **Autenticar:** `POST /autenticacao` com Basic Auth → receber token
+2. **Usar:** `Authorization: Bearer <token>` em todas as requisições seguintes
+
+> [OBS INTERNA] O token expira em **24h**. As credenciais de PRD e HML são distintas — confirmar com o cliente/TI as credenciais de cada ambiente antes do início da integração.
 
 ---
 

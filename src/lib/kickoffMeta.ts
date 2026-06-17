@@ -16,7 +16,7 @@ export const REQUIRED_FIELDS = new Set([
   // Picking Cart
   'ct1','ct_r','ct_qc','ct2','ct_d','ct_df','ct6','s1c','s2c',
   // Full Case
-  'fc1','fc_r','fc2','fc2b','fc_i','fc_if','fc_re',
+  'fc1','fc_r','fc2','fc2b','fc_i','fc_if','fc_conf','fc_conf_hw','fc_conf_forn',
   // Conferência & Packing
   'cf_gate','cf_t1','cf2','cf_t2','pk1',
   // Sorter
@@ -28,5 +28,5 @@ export const REQUIRED_FIELDS = new Set([
   // Etiquetas (sem gate)
   'et_r','et1',
   // Infraestrutura (sem gate)
-  'if_titul','if_ambiente','if_s','if1','if2','if3','if4','if5','if6',
+  'if_resp_infra','if_resp_srv','if_ambiente','if_s','if1','if2','if3','if4','if5','if6',
 ]);

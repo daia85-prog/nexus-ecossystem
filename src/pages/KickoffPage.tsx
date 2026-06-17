@@ -54,6 +54,7 @@ var O = {
   pdv_dev:'PDV',col_dev:'Coletor',
   dest_pbl:'Completa PBL',dest_conf:'Conferência',dest_pack:'Packing',
   fc_coletor:'Coletor',fc_etiq_led:'Etiq+LED',fc_etiq:'Etiqueta',
+  fc_hw_col:'Coletor Android',fc_hw_pdv:'PDV + Scanner de Mão',
   invent:'Invent',client:'Cliente',both_resp:'Ambos',
   led3:'LED 3 dig',led10:'LED 10 dig',
   sc_hand:'Scanner de mão',sc_fixed:'Scanner fixo',
@@ -137,8 +138,9 @@ var SEC = [
     Q('fc2b','Metodo','select',1,['fc_coletor','fc_etiq_led','fc_etiq','tbd'],0,'fc_r:both_wms_wcs'),
     Q('fc_i','Tem impressora?','select',1,YN),
     Q('fc_if','Quem fornece a impressora?','select',1,FN,0,'fc_i:yes'),
-    Q('fc_re','Quem fornece equip. Full Case?','select',1,FN),
-    Q('fc_qe','Quantos equip.?','text',0),
+    Q('fc_conf','Tem Conferência?','select',1,['yes','no','tbd']),
+    Q('fc_conf_hw','Hardware de conferência','select',1,['fc_hw_col','fc_hw_pdv','tbd'],0,'fc_conf:yes'),
+    Q('fc_conf_forn','Coletor Android — fornecimento','select',1,FN,0,'fc_conf:no'),
   ]},
   {id:'pk',n:'9',t:'Conferência & Packing',dept:'gest',q:[
     Q('cf_gate','Tem Conferência?','select',1,['yes','no','tbd']),
@@ -201,7 +203,10 @@ var SEC = [
     Q('et_dist','Distribuição','text',0),
   ]},
   {id:'if',n:'14',t:'Infraestrutura',dept:'infra',q:[
-    Q('if_titul','Titular da infra','select',1,['srv_invent','srv_client','srv_shared','tbd']),
+    Q('if_resp_infra','Responsável Infraestrutura','select',1,['srv_invent','srv_client','srv_shared','tbd']),
+    Q('if_resp_infra_cli','Resp. Infra — Cliente','text',0,0,0,'if_resp_infra:srv_shared','Descreva as responsabilidades de infra do cliente (rede, hardware, acesso físico, cabeamento...)'),
+    Q('if_resp_infra_inv','Resp. Infra — Invent','text',0,0,0,'if_resp_infra:srv_shared','Descreva as responsabilidades de infra da Invent (instalação, configuração, equipamentos, suporte...)'),
+    Q('if_resp_srv','Responsável Servidores','select',1,['srv_invent','srv_client','srv_shared','tbd']),
     Q('if_ambiente','Tipo de ambiente','select',1,['onprem','saas','cloud','hybrid','tbd']),
     Q('if_s','Servidor: unico ou separado?','select',1,['single_srv','sep_srv','tbd']),
     Q('if_ambientes','Tem PRD + HML?','select',0,YN),
@@ -241,7 +246,7 @@ function getTriggers(a) {
   if(a.st11==='yes'&&a.et_r==='no'){ts.push({color:'#f59e0b',effect:'ATENÇÃO: IA Sorter requer IVT/Etiquetas — revisar "Etiquetas" (seção 11)',cause:'IA=Sim, Etiquetas=Não'});}
   if(a.pt_ptm==='yes'&&a.pt_ptm_qtd)ts.push({color:'#38bdf8',effect:'Comprar '+a.pt_ptm_qtd+' monitores PTM',cause:'PTM ativo'});
   if(a.pt_tvs_ptl&&parseInt(a.pt_tvs_ptl)>0)ts.push({color:'#38bdf8',effect:'Comprar '+a.pt_tvs_ptl+' monitores PTL',cause:'TVs PTL definidas'});
-  if(a.if_titul==='srv_invent'&&a.if_ambientes==='yes')ts.push({color:'#f59e0b',effect:'Verificar custo 2 ambientes Invent no contrato',cause:'Titular Invent + PRD+HML'});
+  if(a.if_resp_srv==='srv_invent'&&a.if_ambientes==='yes')ts.push({color:'#f59e0b',effect:'Verificar custo 2 ambientes Invent no contrato',cause:'Servidores Invent + PRD+HML'});
   if(!a.in1||a.in1==='tbd')ts.push({color:'#4a90d9',effect:'Definir protocolo de integracao WCS-WMS',cause:'Tipo integracao indefinido'});
   if(a.st1==='yes'&&(!a.if1||!a.if2))ts.push({color:'#9b82f3',effect:'Preencher detalhes técnicos da Infra',cause:'Sorter confirmado'});
   return ts;
@@ -343,8 +348,9 @@ var DESC = {
   fc2b:'Método de operação do Full Case quando gerenciado por ambos (WCS + WMS).',
   fc_i:'Se há impressora de etiquetas dedicada ao processo de Full Case.',
   fc_if:'Responsável pelo fornecimento da impressora do Full Case.',
-  fc_re:'Responsável pelo fornecimento do hardware do processo Full Case.',
-  fc_qe:'Quantidade de equipamentos (coletores/PDVs) utilizados no Full Case.',
+  fc_conf:'Indica se o processo Full Case inclui etapa de conferência. Sincronizado automaticamente com a seção Conferência & Packing.',
+  fc_conf_hw:'Hardware utilizado na estação de conferência do Full Case: Coletor Android ou PDV com scanner de mão.',
+  fc_conf_forn:'Responsável pelo fornecimento do Coletor Android utilizado no processo de Full Case.',
   // Seção 9 — Conferência & Packing
   cf_gate:'Define se existe processo de conferência de caixas neste CD.',
   cf_t1:'Método de conferência das caixas desviadas: cega (sem ver o pedido), item a item, multiplicador ou EAN.',
@@ -406,7 +412,10 @@ var DESC = {
   in_endpoint:'URL base da API de integração do WMS/ERP para configuração no WCS.',
   in3:'Tempo máximo (ms) de espera por resposta da API antes de abortar a chamada. Ex: 5000.',
   // Seção 14 — Infraestrutura
-  if_titul:'Responsável pelos servidores: Invent (cloud/SaaS), Cliente (on-premise) ou compartilhado.',
+  if_resp_infra:'Define quem é responsável pela infraestrutura geral do projeto: Invent, Cliente ou compartilhada (ambos). Quando compartilhada, detalhar as responsabilidades de cada parte.',
+  if_resp_infra_cli:'Descreva o que fica sob responsabilidade do cliente na infraestrutura (rede, hardware, acesso físico, cabeamento, etc.).',
+  if_resp_infra_inv:'Descreva o que fica sob responsabilidade da Invent na infraestrutura (instalação, configuração, equipamentos, suporte, etc.).',
+  if_resp_srv:'Define quem fornece e mantém os servidores do WCS: Invent (cloud/SaaS), Cliente (on-premise) ou compartilhado.',
   if_ambiente:'Modelo de deploy do WCS: On-premise (servidores no CD), SaaS, Cloud ou Híbrido.',
   if_s:'Produção e homologação no mesmo servidor (único) ou em máquinas separadas.',
   if_ambientes:'Se o projeto inclui dois ambientes distintos: Produção (PRD) e Homologação (HML).',
@@ -1010,7 +1019,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
     return function() { clearTimeout(tid1); clearTimeout(tid2); clearTimeout(tid3); };
   }, [pendingScrollQId]);
 
-  var ch = useCallback(function(id,v){setA(function(p){var n=Object.assign({},p);n[id]=v;return n;});},[]);
+  var ch = useCallback(function(id,v){setA(function(p){var n=Object.assign({},p);n[id]=v;if(id==='fc_conf')n['cf_gate']=v;if(id==='cf_gate')n['fc_conf']=v;return n;});},[]);
   var nc = useCallback(function(id,v){setN(function(p){var n=Object.assign({},p);n[id]=v;return n;});},[]);
   var tgo = useCallback(function(id){setSo(function(p){var n=Object.assign({},p);n[id]=!p[id];return n;});},[]);
 
@@ -1459,7 +1468,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
         <Box sx={{ height:3, borderRadius:'2px', bgcolor:deptColor, mb:2.5, opacity:.5 }} />
 
         {/* Infra cost warning */}
-        {s.id==='if' && a.if_titul==='srv_invent' && a.if_ambientes==='yes' && (
+        {s.id==='if' && a.if_resp_srv==='srv_invent' && a.if_ambientes==='yes' && (
           <Paper elevation={0} sx={{ display:'flex', gap:1.25, p:'10px 13px', borderRadius:1.5, bgcolor:'rgba(245,158,11,0.08)', borderColor:'rgba(245,158,11,0.25)', mb:1.75 }}>
             <WarningAmberRoundedIcon sx={{ fontSize:18, color:'#f59e0b', flexShrink:0, mt:'1px' }} />
             <Box>
