@@ -107,10 +107,12 @@ def xe(text) -> str:
 
 def collapse_split_vars(xml: str) -> str:
     """
-    O Word as vezes fragmenta {{VARIAVEL}} em multiplos runs. Remove tags XML
-    intercaladas dentro de {{ ... }} para que a substituicao encontre o
-    placeholder (e as ancoras) como string contigua.
+    O Word as vezes fragmenta {{VARIAVEL}} em multiplos runs. Dois casos:
+    1) Tags XML dentro de {{...}} — remove as tags internas.
+    2) O proprio {{ ou }} dividido entre runs — colapsa { <tags> { em {{ e } <tags> } em }}.
     """
+    xml = re.sub(r'\{(<[^>]*>)+\{', '{{', xml)
+    xml = re.sub(r'\}(<[^>]*>)+\}', '}}', xml)
     def strip_tags(m):
         return re.sub(r'<[^>]+>', '', m.group(0))
     return re.sub(r'\{\{[^{}]{1,60}\}\}', strip_tags, xml)
@@ -411,7 +413,7 @@ def _para_bounds(xml: str, marker: str):
 
 
 def inject_body(doc_xml: str, body_xml: str) -> str:
-    """Substitui tudo entre os paragrafos das ancoras (inclusive) pelo corpo gerado."""
+    """Substitui tudo entre as ancoras (inclusive) pelo corpo gerado."""
     doc_xml = collapse_split_vars(doc_xml)
     ini = _para_bounds(doc_xml, ANCHOR_START)
     fim = _para_bounds(doc_xml, ANCHOR_END)
@@ -419,8 +421,70 @@ def inject_body(doc_xml: str, body_xml: str) -> str:
         sys.exit(f'Erro: ancoras {ANCHOR_START}/{ANCHOR_END} nao encontradas no template.')
     if not (ini[0] < fim[0]):
         sys.exit('Erro: ordem das ancoras invalida no template.')
-    # body + quebra de pagina para que a Aprovacao comece em pagina propria
     return doc_xml[:ini[0]] + body_xml + doc_xml[fim[1]:]
+
+
+def _titulo1_headings(xml: str):
+    """Lista (p_start, texto) de cada paragrafo com estilo Ttulo1."""
+    out = []
+    for m in re.finditer(r'<w:pStyle w:val="Ttulo1"\s*/>', xml):
+        p_start = max(xml.rfind('<w:p ', 0, m.start()), xml.rfind('<w:p>', 0, m.start()))
+        p_end   = xml.find('</w:p>', m.start())
+        if p_start == -1 or p_end == -1:
+            continue
+        seg  = xml[p_start:p_end]
+        text = ''.join(re.findall(r'<w:t[^>]*>(.*?)</w:t>', seg))
+        out.append((p_start, text))
+    return out
+
+
+def extract_auth_block(doc_xml: str) -> str:
+    """
+    Extrai byte-a-byte o capitulo "Metodos de Autenticacao" do template: do
+    paragrafo Ttulo1 com "Autentica" ate (exclusive) o proximo Ttulo1 com
+    "Integra". Retorna '' se nao encontrar.
+    """
+    headings = _titulo1_headings(doc_xml)
+    for i, (ps, txt) in enumerate(headings):
+        if re.search(r'autentica', txt, re.IGNORECASE):
+            for ps2, txt2 in headings[i + 1:]:
+                if re.search(r'integra', txt2, re.IGNORECASE):
+                    return doc_xml[ps:ps2]
+            break
+    return ''
+
+
+def inject_auth_before_integrations(body_xml: str, auth_xml: str) -> str:
+    """Insere auth_xml imediatamente antes do Ttulo1 de Integracoes no corpo."""
+    for ps, txt in _titulo1_headings(body_xml):
+        if re.search(r'integra', txt, re.IGNORECASE):
+            return body_xml[:ps] + auth_xml + body_xml[ps:]
+    return body_xml + auth_xml
+
+
+def strip_auth_chapters(capitulos, auth_re, integr_re):
+    """
+    Remove do JSON o bloco inteiro de autenticacao: do capitulo cujo titulo casa
+    com auth_re ate (exclusive) o capitulo de Integracoes. Elimina o heading E as
+    tabelas/warnings/subtopicos filhos.
+
+    NAO depende de 'nivel': o ED (IA) gera o JSON de forma nao-deterministica e o
+    campo 'nivel' do heading de auth varia entre execucoes (as vezes ausente).
+    Delimitar por titulo (autentica -> integra) e robusto a essa variacao.
+    """
+    start = next((i for i, c in enumerate(capitulos)
+                  if auth_re.search(c.get('titulo') or '')), None)
+    if start is None:
+        return capitulos
+    end = next((j for j in range(start + 1, len(capitulos))
+                if integr_re.search(capitulos[j].get('titulo') or '')), None)
+    if end is None:
+        # Sem capitulo de Integracoes: remove ate o proximo heading nao-auth.
+        end = next((j for j in range(start + 1, len(capitulos))
+                    if (capitulos[j].get('titulo') or '')
+                    and not auth_re.search(capitulos[j].get('titulo') or '')),
+                   len(capitulos))
+    return capitulos[:start] + capitulos[end:]
 
 
 # --- Main --------------------------------------------------------------------
@@ -486,10 +550,19 @@ def main():
     # 1. Preenche {{VARIAVEIS}} da capa, revisao e aprovacao.
     doc_xml = replace_vars(doc_xml, variables)
 
-    # 2. Monta o corpo (capitulos) e filtra blocos internos.
-    body_xml, internas = build_body_xml(capitulos)
+    # 2. Extrai o capitulo de Metodos de Autenticacao byte-a-byte do template
+    #    (preserva formatacao exata do Word). Remove do JSON o BLOCO inteiro de
+    #    autenticacao (heading + tabelas/warnings ate o capitulo de Integracoes)
+    #    para nao duplicar nem deixar tabelas orfas coladas no capitulo anterior.
+    AUTH_RE    = re.compile(r'autentica', re.IGNORECASE)
+    INTEGR_RE  = re.compile(r'integra',   re.IGNORECASE)
+    auth_block = extract_auth_block(doc_xml)
+    capitulos  = strip_auth_chapters(capitulos, AUTH_RE, INTEGR_RE)
 
-    # 3. Injeta o corpo entre {{INICIO_CORPO}} e {{FIM_CORPO}} (preserva capa/aprovacao).
+    # 3. Monta o corpo, injeta a auth antes de Integracoes e injeta tudo no template.
+    body_xml, internas = build_body_xml(capitulos)
+    if auth_block:
+        body_xml = inject_auth_before_integrations(body_xml, auth_block)
     doc_xml = inject_body(doc_xml, body_xml)
 
     files['word/document.xml'] = doc_xml.encode('utf-8')

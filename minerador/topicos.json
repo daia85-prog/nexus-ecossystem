@@ -1,0 +1,16 @@
+{
+  "topicos": {
+    "order-start":      { "bloco": "entrada",     "sub": "order-start" },
+    "cubagem":          { "bloco": "entrada",      "sub": "cubagem" },
+    "picking-cart":     { "bloco": "separacao",    "sub": "picking-cart" },
+    "shortpicking":     { "bloco": "separacao",    "sub": "shortpicking" },
+    "conferencia":      { "bloco": "conferencia",  "sub": "conferencia" },
+    "packing":          { "bloco": "conferencia",  "sub": "packing" },
+    "sorter":           { "bloco": "expedicao",    "sub": "sorter" },
+    "ptl-alocacao":     { "bloco": "expedicao",    "sub": "ptl-alocacao" },
+    "etiquetas":        { "bloco": "expedicao",    "sub": "etiquetas" },
+    "reabastecimento":  { "bloco": "estoque",      "sub": "reabastecimento" },
+    "inventario":       { "bloco": "estoque",      "sub": "inventario" },
+    "integracao":       { "bloco": "integracao",   "sub": "integracao" }
+  }
+}

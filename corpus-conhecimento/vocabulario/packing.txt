@@ -1,0 +1,20 @@
+# Vocabulário controlado — Packing / Embalagem
+
+# --- Termos diretos ---
+packing
+embalagem do pedido
+fechamento de caixa
+caixa de expedição
+caixa de expedicao
+embalar separação
+embalar separacao
+volume de expedição
+volume de expedicao
+estação de packing
+estacao de packing
+tela de packing
+pesagem do volume
+fechar volume
+gerar volume
+cubagem de saída
+cubagem de saida

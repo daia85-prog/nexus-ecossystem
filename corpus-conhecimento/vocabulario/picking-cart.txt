@@ -1,0 +1,28 @@
+# Vocabulário controlado — Picking Cart
+# Uma variante por linha. Linhas com # são comentários.
+# O minerador faz match case-insensitive em qualquer dessas strings.
+# Adicione variantes conforme encontrar nos documentos reais.
+
+# --- Termos diretos ---
+picking cart
+picking de carrinho
+separação por carrinho
+cart picking
+pick by cart
+PBC
+
+# --- Termos do processo ---
+rota de carrinho
+sequência de coleta por carrinho
+wave de carrinho
+separação roteirizada por carrinho
+coleta roteirizada
+baia de separação
+baia de picking
+
+# --- Termos relacionados (cuidado: podem ser falso-positivo em outros contextos) ---
+separação em rota
+rota de separação
+picking roteirizado
+endereçamento de carrinho
+slot de carrinho

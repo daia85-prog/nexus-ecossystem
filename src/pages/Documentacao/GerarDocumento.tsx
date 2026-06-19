@@ -88,17 +88,19 @@ export function GerarDocumento() {
       setRemovedCount(result.internalBlocksRemoved.length);
       setLastGenerated(result.filename);
 
-      // Save JSON version to the linked project
+      // Save JSON version — dedup by content: same JSON updates date instead of adding duplicate
       if (project && inputJson && inputFilename) {
         const existing = loadProject(project.id);
         if (existing) {
-          const version: JsonVersion = {
-            id: generateId(),
-            filename: inputFilename,
-            content: JSON.stringify(inputJson),
-            createdAt: new Date().toISOString(),
-          };
-          upsertProject({ ...existing, jsonVersions: [...(existing.jsonVersions ?? []), version] });
+          const content = JSON.stringify(inputJson);
+          const versions = existing.jsonVersions ?? [];
+          const dupIdx = versions.findIndex(v => v.content === content);
+          if (dupIdx >= 0) {
+            upsertProject({ ...existing, jsonVersions: versions.map((v, i) => i === dupIdx ? { ...v, createdAt: new Date().toISOString() } : v) });
+          } else {
+            const version: JsonVersion = { id: generateId(), filename: inputFilename, content, createdAt: new Date().toISOString() };
+            upsertProject({ ...existing, jsonVersions: [...versions, version] });
+          }
         }
       }
     } catch (err) {

@@ -1,0 +1,25 @@
+# Vocabulário controlado — Cubagem
+
+# --- Termos diretos ---
+cubagem
+cubar pedido
+cubar order
+cubar separação
+cubar separacao
+cálculo de cubagem
+calculo de cubagem
+volume do pedido
+peso do pedido
+dimensão do pedido
+dimensao do pedido
+capacidade de carrinho
+capacidade do veículo
+capacidade do veiculo
+limite de peso
+limite de volume
+divisão de pedido por peso
+divisao de pedido por peso
+partição de order
+particao de order
+split de order
+split de pedido

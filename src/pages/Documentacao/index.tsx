@@ -2,8 +2,8 @@ import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
-import { ComingSoon } from '../ComingSoon';
 import { GerarDocumento } from './GerarDocumento';
+import { ApontamentoHoras } from './ApontamentoHoras';
 
 type DocTab = 'gerar' | 'horas';
 
@@ -33,15 +33,13 @@ export function DocumentacaoPage() {
         </Tabs>
       </Box>
 
-      <Box sx={{ flex: 1, overflow: 'auto' }}>
-        {tab === 'gerar' && <GerarDocumento />}
-        {tab === 'horas' && (
-          <ComingSoon
-            iconType="config"
-            title="Apontamento de Horas"
-            description="Registro de horas por projeto, tarefa e colaborador. Em breve."
-          />
+      <Box sx={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+        {tab === 'gerar' && (
+          <Box sx={{ flex: 1, overflow: 'auto' }}>
+            <GerarDocumento />
+          </Box>
         )}
+        {tab === 'horas' && <ApontamentoHoras />}
       </Box>
     </Box>
   );

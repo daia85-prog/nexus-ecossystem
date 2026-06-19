@@ -42,6 +42,15 @@ export const ROLE_FEATURES: RoleFeature[] = [
     implemented: true,
   },
   {
+    id: 'doc-apontamento-horas',
+    title: 'Apontamento de Horas',
+    description: 'Documentação lança atividades por dia da semana com pesos, distribui automaticamente em blocos de 30 min respeitando jornada e almoço, permite ajuste manual e exporta planilha Excel no formato padrão Invent (15 colunas, uma linha por bloco).',
+    roles: ['documentacao'],
+    page: 'Documentação',
+    addedAt: '2026-06-19',
+    implemented: true,
+  },
+  {
     id: 'doc-gerar-documento',
     title: 'Gerar Documento (Especificação de Software)',
     description: 'Documentação pode vincular um projeto existente, fazer upload de um input.json gerado pelo Especialista Documentador e baixar automaticamente o .docx de Especificação de Software no padrão Invent.',

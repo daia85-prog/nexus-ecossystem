@@ -1,0 +1,22 @@
+# Vocabulário controlado — Reabastecimento / Replenishment
+
+# --- Termos diretos ---
+reabastecimento
+replenishment
+abastecimento de endereço
+abastecimento de endereco
+reposição de estoque
+reposicao de estoque
+ponto de reabastecimento
+gatilho de reabastecimento
+fila de reabastecimento
+tarefa de reabastecimento
+missão de reabastecimento
+missao de reabastecimento
+abastecer endereço
+abastecer endereco
+transferência de reabastecimento
+transferencia de reabastecimento
+pick and replenish
+nível mínimo
+nivel minimo

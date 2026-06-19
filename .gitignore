@@ -29,3 +29,6 @@ dist-ssr
 
 # Documentos gerados pelo build_docx
 ed-knowledge/output/
+
+# Python virtual environment
+.venv/

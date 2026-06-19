@@ -1,0 +1,29 @@
+# Vocabulário controlado — Integrações
+
+# --- Termos diretos ---
+integração
+integracao
+integração ERP
+integracao ERP
+integração WMS
+integracao WMS
+integração SAP
+integracao SAP
+mensageria
+fila de mensagens
+mensagem de integração
+mensagem de integracao
+webservice
+API de integração
+API de integracao
+envio de posição
+envio de posicao
+recebimento de pedido via integração
+recebimento de pedido via integracao
+confirmação de expedição via integração
+confirmacao de expedicao via integracao
+layout de integração
+layout de integracao
+retorno de integração
+retorno de integracao
+mapeamento de campos

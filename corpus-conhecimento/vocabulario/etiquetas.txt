@@ -1,0 +1,21 @@
+# Vocabulário controlado — Etiquetas de Expedição
+
+# --- Termos diretos ---
+etiqueta de expedição
+etiqueta de expedicao
+etiqueta de volume
+label de expedição
+label de expedicao
+impressão de etiqueta
+impressao de etiqueta
+geração de etiqueta
+geracao de etiqueta
+etiqueta de transporte
+romaneio
+etiqueta NF
+nota fiscal de expedição
+nota fiscal de expedicao
+etiqueta logística
+etiqueta logistica
+código de barras do volume
+codigo de barras do volume

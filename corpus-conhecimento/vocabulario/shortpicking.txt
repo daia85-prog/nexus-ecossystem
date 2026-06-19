@@ -1,0 +1,26 @@
+# Vocabulário controlado — Shortpicking / Divergência de Estoque na Separação
+
+# --- Termos diretos ---
+short picking
+shortpicking
+short pick
+divergência de estoque
+divergencia de estoque
+falta no endereço
+falta no endereco
+produto não encontrado
+produto nao encontrado
+saldo insuficiente no endereço
+saldo insuficiente
+ruptura no endereço
+ruptura no endereco
+quebra de estoque na separação
+quebra de estoque na separacao
+quantidade inferior ao solicitado
+saldo menor que o pedido
+endereço vazio na separação
+endereco vazio na separacao
+apontamento de falta
+registrar divergência
+registrar divergencia
+tratar falta

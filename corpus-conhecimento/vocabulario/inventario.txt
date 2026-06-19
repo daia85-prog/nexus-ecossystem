@@ -1,0 +1,25 @@
+# Vocabulário controlado — Inventário
+
+# --- Termos diretos ---
+inventário
+inventario
+contagem cíclica
+contagem ciclica
+contagem de endereço
+contagem de endereco
+inventário rotativo
+inventario rotativo
+ajuste de estoque
+divergência de inventário
+divergencia de inventario
+inventário geral
+inventario geral
+inventário parcial
+inventario parcial
+inventário cego
+inventario cego
+dupla contagem
+reconciliação de estoque
+reconciliacao de estoque
+fechar contagem
+abrir contagem

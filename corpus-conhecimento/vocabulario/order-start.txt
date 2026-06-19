@@ -1,0 +1,31 @@
+# Vocabulário controlado — Order Start / Início de Separação
+# Uma variante por linha. Linhas com # são comentários.
+
+# --- Termos diretos ---
+order start
+início da separação
+inicio da separacao
+liberação do pedido
+liberacao do pedido
+liberação da order
+liberacao da order
+criação de wave
+criacao de wave
+geração de wave
+geracao de wave
+release de order
+disparo de separação
+disparo de separacao
+disparo da wave
+fila de separação
+fila de separacao
+queue de separação
+queue de separacao
+apontamento de início
+inicio de separação
+waving
+impressão da lista de separação
+impressao da lista de separacao
+picking list
+lista de separação
+lista de separacao
