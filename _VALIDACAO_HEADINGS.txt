@@ -1,0 +1,2432 @@
+================================================================================
+VALIDAÇÃO DE HEADINGS — corpus-conhecimento — 23/06/2026
+================================================================================
+
+INSTRUÇÕES:
+  Para cada heading, preencha o campo DECISAO (depois do último |):
+  OK                     → confirma que está no lugar certo (ou deixe em branco)
+  → slug                 → mover para MD existente (ex: → sorter)
+  NOVO: nome / bloco     → criar novo MD (ex: NOVO: picking-pbl / separacao)
+  DROP                   → descartar (boilerplate não capturado)
+  INFRA                  → confirmar como infra (já vai para INBOX, não vira RAW)
+
+SLUGS EXISTENTES:
+  separacao  : picking-cart, shortpicking
+  entrada    : order-start, cubagem, recebimento-armazenagem
+  expedicao  : sorter, ptl-alocacao, etiquetas
+  conferencia: conferencia, packing
+  estoque    : reabastecimento, inventario
+  integracao : integracao
+  sistema    : cadastros-acessos, dashboards-relatorios
+
+================================================================================
+
+## [SEPARACAO] picking-cart  (201 seções | 60 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+3.2. Picking Fracionados (x2)                           |
+3.3. Picking Túnel (x2)                                 |
+[SEM TÍTULO]                                            |
+Abastecimento do Picking Cart                           |
+Agrupamento de categorias                               |
+Ajuste no processo de Picking Cart (PC)                 |
+Aloca Pallet (x2)                                       |
+Botão Led (FlowRack Frente)                             |
+Coleta de Múltiplos Volumes na Mesma Posição (x2)       |
+Coleta Picking Cart (x6)                                |
+Confirmação de Picking Cart (Tela Separada)             |
+Consulta PBL                                            |
+Especificação (x15)                                     |
+Especificações de Hardware de TI (x2)                   |
+Estrutura do Picking Cart (x2)                          |
+Execução do Picking Cart de Reabastecimento             |
+Fracionados A4 ( Picking Cart )                         |
+Frente                                                  |
+Limpeza de Canal de Picking                             |
+Mapeamento do Picking Cart (x2)                         |
+Nova Area de Separação                                  |
+PBL Adicional                                           |
+Picking (x21)                                           |
+Picking (Coringa/Especial) (x6)                         |
+Picking Brindes (x3)                                    |
+Picking Cart (x18)                                      |
+Picking cart                                            |
+Picking Coletor (x4)                                    |
+Picking de caixas FullCase                              |
+Picking Fracionado (x6)                                 |
+Picking Fracionado Níveis (x5)                          |
+Picking Full Case (x10)                                 |
+Picking Full Case com IA (Caixa fechada)                |
+Picking Fullcase (x2)                                   |
+Picking Fullcase e Picking Exceção (x4)                 |
+Picking Fullcase Perigoso (x4)                          |
+Picking Map (x4)                                        |
+Picking Pallet (x2)                                     |
+Picking Pallet Direto (x2)                              |
+Picking Pallet Exceção (x8)                             |
+Picking pendentes (x11)                                 |
+Picking Rack (x2)                                       |
+Picking Termolábil (Área Resfriada) (x5)                |
+Picking Tunnel – Separação de  Full Case                |
+Picking Túnel (Mezanino)                                |
+Picking Túnel (Térreo)                                  |
+Picking – Separação (x6)                                |
+Picking – Separação de fracionados                      |
+Posições de Picking (x3)                                |
+Posto de Separação (x2)                                 |
+Posto de separação (x2)                                 |
+Separação                                               |
+Separação no Picking Cart (x2)                          |
+Separação no Posto                                      |
+Separações                                              |
+Solicitar nova caixa (x2)                               |
+SSCC — Identificação Única para produto Rastreável      |
+Tela de endereços (x6)                                  |
+Transferência de Caixas                                 |
+Área Dedicada                                           |
+
+## [SEPARACAO] shortpicking  (61 seções | 24 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+4.1.5.		Retorno da Conferência                          |
+Alta disponibilidade (x2)                               |
+Arquivos laudos                                         |
+Atributos Estendidos                                    |
+Atualizações                                            |
+Avarias / Shortpicking                                  |
+Categorias de Conferência (x5)                          |
+Conferência / Auditoria                                 |
+Confirmación de selección / Selección corta             |
+Confirmação de Picking / Shortpicking                   |
+CONTEXTO E PROBLEMA IDENTIFICADO                        |
+Motivos de Avaria                                       |
+Posição de Compra de Palete Vazio                       |
+Registro de Divergências                                |
+Relatório Resumo por Posto                              |
+Remoção do Item                                         |
+Short Picking                                           |
+Shortpicking (x31)                                      |
+SHORTPICKING (x2)                                       |
+Shortpicking Fullcase                                   |
+Tratamento de Shortpicking (Corte) (x2)                 |
+Tratativa de Divergencia                                |
+Tratativa de Divergências (Corte/Shortpicking)          |
+Validação de Shortpicking do Operador                   |
+
+## [ENTRADA] order-start  (378 seções | 155 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+3.1. Order Start (x2)                                   |
+3.5.1 ORDER START (x2)                                  |
+4.1.	Separação                                          |
+4.1.6.		Reindução pós Conferência                       |
+Abastecimento de Insumos (AMR)                          |
+Alarme de saída cheia (x2)                              |
+Alteração no Processo Operacional: Order Start          |
+Automatização na geração de onda                        |
+Balanceamento (1 x 1) (x2)                              |
+Benefícios esperados                                    |
+Caixas de separação                                     |
+Cancelamento de Missão                                  |
+Cancelamento de Pedidos (x11)                           |
+Cancelamento de pedidos                                 |
+Coleta Full case (Ruas) Velox                           |
+Coleta Full case Velox                                  |
+Coleta PBL – Alteração de Etiquetagem e Formação da...  |
+Coletor de Dados (x2)                                   |
+Coluna de % Ocupação nas Telas de Order Start           |
+Conceito – Picking Full Case e Tarefas                  |
+Configuração de Tara de Caixas no Order Start (x2)      |
+Consolidação dos Order Start Fullcase (Normal)          |
+Consolidação dos Order Start OS Exceção                 |
+Contexto / Situação atual                               |
+Controle de Liberação de Ondas B2C Multi (Order Start)  |
+Corte por Falta de Saldo no Order Start                 |
+Criar onda                                              |
+Criação da Onda                                         |
+Criação de onda                                         |
+Criação de Onda                                         |
+Critérios Operacionais de Processamento                 |
+Dashboard de Gargalos por Posto de Trabalho             |
+Dashboard Operacional – Monitoramento de Order Star...  |
+Encerramento de onda                                    |
+Escopo da melhoria                                      |
+Especificación                                          |
+Especificação (x12)                                     |
+Especificações de Hardware de TI (x8)                   |
+Estação de Order Start                                  |
+Estação de Order Start – Fracionado e Full case         |
+Estação de trabalho (DESKTOP) (x3)                      |
+Estação de trabalho (Desktop)                           |
+Estações de Separação (x2)                              |
+Estações de trabalho (x12)                              |
+Estações de Trabalho (x2)                               |
+Estações de trabalho (DESKTOP) (x4)                     |
+Estações de trabalho (PDV) (x2)                         |
+Etiqueta de início da ordem de separação                |
+Etiqueta início do Volume                               |
+Etiqueta order start (x2)                               |
+Etiqueta Order Start (x2)                               |
+Etiqueta Picking Fracionado (x3)                        |
+Etiqueta Picking Full Case (x6)                         |
+Etiqueta Virtual                                        |
+Etiquetas fixas                                         |
+Exclusão de onda                                        |
+Exclusão de transporte                                  |
+Filtros e Seleção Inicial                               |
+Finalização e Confirmação (x2)                          |
+Fluxo Operacional                                       |
+Fluxo Operacional de Picking Térreo (x5)                |
+Fracionados (x2)                                        |
+Fracionados Controlados (x3)                            |
+Fracionados Não Controlados (x3)                        |
+Full Case (x3)                                          |
+Full Case - Picking Tunnel                              |
+Fullcase (x4)                                           |
+Geração da Lista de Coleta                              |
+Geração de Volumes                                      |
+IDOC - Criação/Deleção Ondas (x4)                       |
+Inclusão de ondas preparadas                            |
+Inclusão de transporte                                  |
+Inclusão em ondas criadas                               |
+Indução                                                 |
+Informações Disponíveis por Bica                        |
+Intercalação de Etiquetas por Rampa de Destino – Or...  |
+Início da operação                                      |
+Início de Onda                                          |
+Justificativa                                           |
+Layout de etiqueta order start (x2)                     |
+Layout de Etiqueta Order Start  Caixa Pedido            |
+Leitura da Etiqueta no Order Start                      |
+Linha de separação (x2)                                 |
+Listagem de Anomalias                                   |
+Localização Order Start (OS)                            |
+Lógica de Intercalação Round-Robin                      |
+Misto (x2)                                              |
+Nível 1 (x5)                                            |
+Nível 2 (x5)                                            |
+Nível 3 (x5)                                            |
+Objetivo do Controle (x2)                               |
+Operação Grandes volumes                                |
+Order Start (x67)                                       |
+Order start                                             |
+ORDER START (x2)                                        |
+Order Start (Misto) (x3)                                |
+Order Start (PTL) (x3)                                  |
+Order Start (WMS)                                       |
+Order Start -  Portais de entrada (x3)                  |
+Order Start - Portais de entrada                        |
+Order Start / Operação (x2)                             |
+Order Start Brindes (x3)                                |
+Order Start Coletor (x3)                                |
+Order Start Coletor (Inconformes)                       |
+Order Start e Packing                                   |
+Order Start FlowRack (x4)                               |
+Order Start Fracionado (x5)                             |
+Order Start Fracionado Térreo (x4)                      |
+Order Start Full Case (x13)                             |
+Order Start Picking Cart (x11)                          |
+Order Start – Picking Cart (x2)                         |
+Order Start – Picking Cart (Exceção)                    |
+Pedido Mono Máquina                                     |
+Pesagem sem Order Start - Pendente                      |
+Pesagem sem Order Start – Pendente de Infos             |
+Premissas e considerações                               |
+Preparação da Onda                                      |
+Prioridade de Pedidos por Onda                          |
+Priorização                                             |
+Priorização de pedidos - Saída (x5)                     |
+Problema Atual                                          |
+PROCEDURE: SP_INTEG_ONDA                                |
+PROCEDURE: SP_INTEG_PRODUTO_ALTERNATIVO                 |
+PROCEDURE: SP_RETORNO_LEITURA                           |
+Processo de Order Start                                 |
+Processo operacional (x2)                               |
+Processo Separação                                      |
+Pré-requisito para Execução da Onda                     |
+Rede                                                    |
+Regra de Impressão do Order Start                       |
+Regras de Ordenação e Exibição                          |
+Regras de Order Start                                   |
+Relatório de Backlog de Separação                       |
+Relatório de Conferência por Onda (x2)                  |
+Resumo do Fluxo Operacional                             |
+Seleção de docas                                        |
+Separação (x9)                                          |
+Separação (SP)                                          |
+Separação Cristal MG                                    |
+Separação Fracionado                                    |
+Separação Fracionado (FlowHacks)                        |
+Separação no Posto                                      |
+Sequência de liberação de caixas no Order Start         |
+Start de Onda                                           |
+Status possíveis para cada momento no WCS               |
+TABELA: PALLET                                          |
+Tela de Configuração de Caixas por Order Start          |
+Tela de Priorização de Pedidos                          |
+Tela de reimpressão/impressão                           |
+Tela Order Start Multiline                              |
+Tela – Consulta de histórico de caixas plástica (3)     |
+Telas de Order Start                                    |
+Troca de Endereço para Exceção                          |
+Térreo                                                  |
+Wave (x2)                                               |
+
+## [ENTRADA] cubagem  (158 seções | 68 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+2 – WCS calcula cubagem e informa ao SAP caixas nec...  |
+4.1.2.	Cubagem das caixas                               |
+Aloca Pallet (x2)                                       |
+Alocação por pedidos Completos no Pallet                |
+Alteração nas Regras de Cubagem                         |
+Balança 01 – Tara (x2)                                  |
+Busca pallets fracionados (BPF) (x2)                    |
+Cadastro de Caixas Por tipo de item                     |
+Cadastro Prévio das Caixas de Papelão                   |
+Caixa Adicional (x2)                                    |
+CAIXAS / CUBAGEM                                        |
+Cancelamento de Pedido                                  |
+Cancelamento de Pedidos (x2)                            |
+Costas                                                  |
+Cubagem (x21)                                           |
+CUBAGEM                                                 |
+Cubagem + Caixas (x18)                                  |
+Cubagem das caixas                                      |
+Cubagem das caixas de expedição (x2)                    |
+Cubagem das caixas de picking (x7)                      |
+Cubagem de pallet (x10)                                 |
+Cubagem de Pallet (x2)                                  |
+Cubagem de pallet (fora do escopo do projeto) (x2)      |
+Cubagem de Pallet/Routeiner                             |
+Cubagem de ULDs                                         |
+Cubagem dos Volumes / Pré Expedição                     |
+Cubagem e Seleção Automática de Caixas no Picking (x2)  |
+Cubagem Fracionados                                     |
+Cubagem – Dimensões dos produtos                        |
+Cubicaje de palés (x2)                                  |
+Dimensões e peso                                        |
+Display 10 Dígitos (Corredores)                         |
+Etiqueta Picking (Fracionado) (x7)                      |
+Fechamento                                              |
+Fechamento de Pallet                                    |
+Fechamento do Pallet (x8)                               |
+Fracionados (x4)                                        |
+Fracionados (PBL)                                       |
+Full Case (Caixa Fechada) (x5)                          |
+Gatilhos de Fechamento de Pallet                        |
+Impressão (x3)                                          |
+Indução de Pedidos Fracionados (Fluxo Padrão)           |
+Inteligência de Cubagem e Matriz de Fragilidade         |
+Lógica de Cubagem e Priorização                         |
+Lógica de Desvio (Sistema e Balança)                    |
+Matriz de Fragilidade (x2)                              |
+Pedido Misto com uma caixa Pollux / Venus (x2)          |
+Priorização de pedidos                                  |
+Processo de agrupamento (x2)                            |
+Processo de cubagem                                     |
+Produtos (SKU)                                          |
+Produção x Volume                                       |
+PTW – Put To Wall (x2)                                  |
+Rastreabilidade de Conferência                          |
+Recubagem por Indisponibilidade de Caixa                |
+Regra de "Bypass" (Pallets Monocliente)                 |
+Regras de Negócio                                       |
+Separação Invent                                        |
+Separação Kaizen (ET)                                   |
+Separação Kaizen (ET) + Invent                          |
+Solicitação de Nova Caixa (x2)                          |
+Solução Proposta                                        |
+Status de uma ou mais Ordens de produção – producti...  |
+Tela de Gestão de Volumes do Pedido                     |
+Tipo de volumes                                         |
+Tolerância de peso                                      |
+Validação de Dimensões e Cubagem (x2)                   |
+Volumes MAX/MIN Zerados no JSON - Pendente              |
+
+## [ENTRADA] recebimento-armazenagem  (403 seções | 129 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+[SEM TÍTULO] (x6)                                       |
+Abreviações (x2)                                        |
+Alarme de corredor bloqueado ou ocupado (x9)            |
+Alarme de inconsistência de dados (x2)                  |
+Alerta de célula com erro (x9)                          |
+Alerta de célula ocupada (x9)                           |
+Alerta de célula vazia (x2)                             |
+Alerta no transelevador sem recuperação (x2)            |
+ARMAZENAGEM DE DADOS (x2)                               |
+Armazenamento (x2)                                      |
+Atender ordem de saída ou Crossdocking (x2)             |
+Ações (x2)                                              |
+BK25                                                    |
+Bloqueio do transelevador (x2)                          |
+Buffer para Canal de Picking dinâmico                   |
+Chegada a um berço de entrada (x9)                      |
+Chegada a um berço de saída (x2)                        |
+Chegada a um ponto de entrega (x2)                      |
+Chegada a uma célula (x9)                               |
+Chegada ao portal de entrada (x4)                       |
+Chegada dos pallets nos portais de entrada (x5)         |
+Conceito de Túnel e Zonas                               |
+Crosscheck (x2)                                         |
+Crosscheck Ligado                                       |
+CrossDocking (x9)                                       |
+Crossdocking e saídas diretas (x2)                      |
+Curva ABC                                               |
+Célula                                                  |
+Detalhes de Crossdocking (x2)                           |
+Entrada / Histórico de rejeito                          |
+Especificação (x46)                                     |
+Especificação Hardware de TI (x22)                      |
+Especificação hardware de TI (x2)                       |
+Especificações de Hardware de TI (x15)                  |
+Estação de supervisório (x12)                           |
+Estação do Supervisório (x10)                           |
+Falha no disparo de ações (x2)                          |
+Fluxo de entrada e saída de pallets (x2)                |
+Gerenciamento de centros (x2)                           |
+Gerenciamento de corredores (x2)                        |
+Gerenciamento de deposito padrão (x2)                   |
+Gerenciamento de depósitos (x2)                         |
+Gerenciamento de motivos de rejeição (x2)               |
+Gerenciamento de zonas (x2)                             |
+Gestão de Estoque                                       |
+Histórico de pallets rejeitados (x2)                    |
+Histórico de paradas (x2)                               |
+Identificação do Marketplace e Gatilho do Processo      |
+Indução volumes – Recebimento                           |
+Leitura e recebimento de alarmes e dados (x2)           |
+Linhas A1, A2 e A3 - Picking by ligth e Picking by ...  |
+Lista de missões (x2)                                   |
+Listagem de ordens de armazenamento (x2)                |
+Lógica de Endereçamento Interno (Exceção)               |
+Mapeamento (x2)                                         |
+Modelo (x2)                                             |
+Objetivo do Projeto                                     |
+Ocupação por pilar                                      |
+Ordem de transporte (OT)                                |
+Painel Geral                                            |
+Portais de entrada                                      |
+Processo de Recebimento no Transfer no WCS (x4)         |
+Processo de Remoção Forçada de Estoque (x3)             |
+Processo operacional (x2)                               |
+Realocar destino de carga (x2)                          |
+Realocação automatica (x2)                              |
+Realocação automática (x4)                              |
+Regra de Avaliações e Movimentações de paletes          |
+Regra de entrada em contingência (x2)                   |
+Regra de entrada online (x2)                            |
+Regras de entrada (x2)                                  |
+Regras de saída (x2)                                    |
+Remover carga (x2)                                      |
+Requisitos mínimos – servidor local (on premise) (x2)   |
+Requisitos mínimos – Servidor local (on premise)        |
+Retirada de uma célula (x9)                             |
+RF1 – Recebimento de pallets (x2)                       |
+RF1.1 – Confirmação de entrada no armazém (x2)          |
+RF1.1.1 – Tipo de conservação (x2)                      |
+RF1.1.2 – Tipo de pallet (x2)                           |
+RF1.2 – Rejeito de entrada no armazém (x2)              |
+RF1.2.1 – Pallets repetidos (x2)                        |
+RF1.2.2 – Disponibilidade de transelevadores (x2)       |
+RF1.3 – Crossdocking de entrada (x2)                    |
+RF1.3.1 – Status do pallet (x2)                         |
+RF1.3.2 – Tolerância de Crossdocking (x2)               |
+RF2 – Armazenagem de pallet (x2)                        |
+RF2.2.1 – Célula ocupada (x2)                           |
+RF2.2.2. – Erro de sensor / posicionamento (x2)         |
+RF2.3 – Realocação de entrada (x2)                      |
+RF20 – Gestão de ordens de armazenamento de pallets...  |
+RF21 – Gestão de ordens de saída de pallets (x2)        |
+RF3 – Retirada de pallets (x2)                          |
+RF3.2 – Retirada com fracionamento de pallet (x2)       |
+RF3.3 – Confirmação de retirada de pallets (x2)         |
+RF3.5 – Evento de erro ao retirar (x2)                  |
+RF3.5.1 – Célula vazia (x2)                             |
+RF3.5.2 – Erro de sensor/posicionamento (x2)            |
+RF34 – Criação de zona de armazenagem preferencial ...  |
+RF4 – Cancelamento de ordem de entrada ou saída (x2)    |
+RF5 – Sincronização de ciclo de entrada e saída (x2)    |
+RF7 – Algoritmo de escolha de célula para armazenag...  |
+RF7.1 – Sazonalidade (x2)                               |
+RF7.10 – Distância de armazenagem (x2)                  |
+RF7.3 – Distribuição de carga (x2)                      |
+RF7.4 – Utilização dos transelevadores (x2)             |
+RF7.5 – Pulmão de entrada (x2)                          |
+RF7.6 – Carga acumulada por coluna (x2)                 |
+RF7.7 – Disponibilidade dos transelevadores (x2)        |
+RF7.8 – Altura de pallets nas posições (x2)             |
+RF7.9 – Tipo de conservação (x2)                        |
+RF8 – Algoritmo de saída de pallets (x2)                |
+RF8.1 – Tipo de ordem de retirada (x2)                  |
+RF8.2 – Movimentos (x2)                                 |
+RF8.2.4 – Venda futura (x2)                             |
+RF8.3 – Otimização de fracionados (x2)                  |
+Saida / Ordens canceladas                               |
+Scheduler de missões (x7)                               |
+Seladora Automática                                     |
+Simulação de Separação                                  |
+Sugestão de Alocação (x2)                               |
+TABELAS                                                 |
+Tela para Alteração de Itens e Posições                 |
+Transelevador                                           |
+Visibilidade da Categoria do Produto                    |
+WMCATO (Cancelamento) - Retirada (x5)                   |
+WMTOCO (Confirmação) (x7)                               |
+Zona de exportação                                      |
+Área de Recebimento (x2)                                |
+
+## [EXPEDICAO] sorter  (797 seções | 298 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+20 DE OUTUBRO DE 2021                                   |
+3.1 Sorter – 2° passagem.                               |
+3.10 Sorter (x2)                                        |
+5.11.	Estatísticas                                      |
+[SEM TÍTULO]                                            |
+Abertura (x11)                                          |
+Abertura de PTM                                         |
+Adição de tela e funcionalidades                        |
+Agrupamento por Loja                                    |
+Ajuste na geração de volumes Doca                       |
+Ajuste no abastecimento do PBL                          |
+Alarme de transelevador sem comunicação (x2)            |
+Alerta de falha no transelevador (x7)                   |
+Aloca Pallet (x4)                                       |
+ALOCA PALLET / TRANSPORTADORA                           |
+Alocação no PTM                                         |
+Alteração na Etiqueta do Cliente (x2)                   |
+Alteração na Regra do Sorter (x2)                       |
+Alterações posições de buffer                           |
+Arquitetura da Solução                                  |
+Balanceamento de Desvio no Sorter                       |
+Benefícios da Funcionalidade                            |
+By Pass (x3)                                            |
+Cadastro                                                |
+Cadastro de mapa de desvio Velox                        |
+Cadastro de novas posições de PBLs virtuais             |
+Cadastro de produtos (x2)                               |
+Cadastro de Transportadora (x2)                         |
+Cadastros WCS                                           |
+Campos e informações da etiqueta                        |
+Cancelamento de Ordens                                  |
+Cancelamento de OT (CATO)                               |
+Cancelamento de Remessas (x2)                           |
+Cancelamento de Volumes                                 |
+Cancelamento de volumes (avarias)                       |
+Cancelamento de Volumes (Avarias) (x2)                  |
+Características                                         |
+Cenário Atual                                           |
+Cenário de desvio por ID (Remessa, ID ou Pedido)        |
+Cenário Off-Line                                        |
+Cenário Padrão                                          |
+Cenário Proposto (desejado)                             |
+Chaves de Validação Para Reprocessamento - OK           |
+Chegada a um berço de saída (x7)                        |
+Chegada a um ponto de entrega (x2)                      |
+Comportamento e Regras                                  |
+Comportamento Visual das Barras                         |
+Comunicação                                             |
+Comunicação com equipamentos (x2)                       |
+Condição para o SKU em mais de um endereço              |
+Conexão e Acesso Remoto (x2)                            |
+CONFERÊNCIA / REJEITO                                   |
+Conferência Pedido                                      |
+Configuração do Fluxo Físico (x2)                       |
+Configuração Portal de leitura Toledo (x3)              |
+Configurações (x8)                                      |
+Configurações necessarias.                              |
+Confirmação de conferência (CHECKOUT)                   |
+Confirmação de expedição P70 (SORTER/P70/CLOSE CONT...  |
+Confirmação de finalização do batch Picking PTW (BP...  |
+CONFIRMAÇÃO DE SEPARAÇÃO – Posto a Posto                |
+Construir banco de dados (x9)                           |
+Consulta e Resposta                                     |
+Consulta Status (x2)                                    |
+Consulta Volumes                                        |
+Contexto                                                |
+Contexto Atual                                          |
+Contexto do Problema (x2)                               |
+Contexto e Motivação                                    |
+Contexto e Problema Identificado                        |
+Contingencia del sorter (IA)                            |
+Contingência del Sorter (IA)                            |
+Contingência do Sorter (IA) (x5)                        |
+Contingência Sorter (x4)                                |
+Corte de material                                       |
+Crosscheck                                              |
+Crosscheck Desligado                                    |
+Crosscheck — Validação Cruzada PVAR no Sorter           |
+Cubometro (Sorter) (x4)                                 |
+Câmera de Topo                                          |
+Célula                                                  |
+Dashboard de Operação do Sorter                         |
+Dashboard Operacional – Monitoramento por Saída do ...  |
+Dashboards e Relatórios                                 |
+Decisões (x2)                                           |
+Decremento do saldo de estoque                          |
+Dependências e Pré-condições                            |
+Descritivo Operacional                                  |
+Detalhamento e especificação de interfaces com os e...  |
+Detalhes adicionais                                     |
+Dimensões (x2)                                          |
+Diário de operação                                      |
+Doca Principal                                          |
+Docas Auxiliares                                        |
+Envio de informações (x2)                               |
+Equipamentos                                            |
+Erro (x4)                                               |
+Especificaciones                                        |
+Especificación                                          |
+Especificación de los volúmenes inducidos en el sorter  |
+Especificación de volúmenes inducidos en el sorter      |
+Especificação (x54)                                     |
+ESPECIFICAÇÃO (x4)                                      |
+Especificação de volumes full case induzidos no sorter  |
+Especificação de volumes induzidos no Slim Sorter       |
+Especificação de volumes induzidos no sorter (x2)       |
+Especificação de Volumes Induzidos no Sorter (x4)       |
+Especificação Hardware de TI (x11)                      |
+Estação de Rejeito no WCS                               |
+Estrutura do Telegrama                                  |
+Etiqueta para fracionados                               |
+Etiquetas de Produto — Regras de Leitura e Interpre...  |
+Execução de Atividades no Servidor Novo                 |
+Exemplo Aplicado                                        |
+Exemplo Prático de Intercalação (x2)                    |
+Exemplos de etiquetas                                   |
+Expedição (x3)                                          |
+Falha na escrita de dados (x2)                          |
+Falha na leitura de dados (x2)                          |
+Fechadora e Seladora Automática de Caixas               |
+Fechamento de Pallet (VolExp)                           |
+Fechamento do Pallet (x2)                               |
+Final do processo (x2)                                  |
+Fluxo de comunicação do equipamento com servidor (x6)   |
+Fluxo de comunicação do equipamento com servidor lo...  |
+Fluxo de Comunicação do Equipamento com Servidor Lo...  |
+Fluxo de Operação da Saída do Sorter ( PTL )            |
+Fluxo do SORTER                                         |
+Fluxo do Sorter                                         |
+Fluxo Operacional                                       |
+Fluxo Operacional Atualizado                            |
+Fracionados                                             |
+Frente                                                  |
+Full Case (x8)                                          |
+Full Case - Caixa fechada (x3)                          |
+Funcionalidad de mapas del sorter en WCS                |
+Funcionalidad del mapa del sorter en WCS                |
+Funcionalidade de Mapa de Sorter no WCS (x8)            |
+Ganhos Operacionais                                     |
+GAP 01 – Envio SKU                                      |
+Gerenciador de equipamentos (x2)                        |
+Gerenciamento de equipamentos (x2)                      |
+Histórico de leitura IA                                 |
+Homologação                                             |
+Identificação do volume                                 |
+Incidencias (x2)                                        |
+Inclusão do Scanner Prix (No Conversor Já Existente)    |
+Indução                                                 |
+Indução no Sorter                                       |
+Indução Pallet                                          |
+Indução Sorter                                          |
+Indução volumes – Expedição                             |
+Informações Extraídas da Etiqueta                       |
+Iniciar Serviço no MFC (x8)                             |
+Integrações (x10)                                       |
+Invent                                                  |
+Layout de configuração (x2)                             |
+Layout de etiqueta                                      |
+Leitura automática de código de barras                  |
+Leitura de Lote e Validade                              |
+Leitura Inicial                                         |
+Listar Lotes Vênus                                      |
+Listar Produtos Pollux                                  |
+Listar Produtos Vênus                                   |
+Listar Transportadoras Pollux                           |
+Listar Transportadoras Vênus                            |
+Localização e Captura de Imagens                        |
+Log de transação do sistema (x2)                        |
+Lote                                                    |
+Lógica de Processamento                                 |
+Mapa de rota (x12)                                      |
+Mapa de Sorter (x10)                                    |
+Mapa de sorter                                          |
+Mapa de Sorter – Alteração de Regra                     |
+Mapa do Sorter (x4)                                     |
+Mapa Sorter (x3)                                        |
+Mapeamento de ações (x2)                                |
+Mapeamento de decisões (x2)                             |
+Mecanismo de Timer por ACKN                             |
+Metodos de separação                                    |
+Metodos operacionais                                    |
+Modo de operação (x2)                                   |
+Mono (x2)                                               |
+Mono Venus                                              |
+Montagem do pallet                                      |
+Motivos de rechazo del sorter (x2)                      |
+Motivos de Rejeito do Sorter (x16)                      |
+Métodos de separação                                    |
+Múltiplas Confirmações de Picking Pollux                |
+Noread nas linhas expressas                             |
+Nota Fiscal                                             |
+Notificação de consolidação de pallet                   |
+Notificação de expedição de volume                      |
+Notificação de expedição de volume:                     |
+Notificação de expedição do volume/pedido expedido ...  |
+Nova Necessidade                                        |
+Novo telegrama                                          |
+Objetivo do Sistema                                     |
+Operacional (x2)                                        |
+Operação (x2)                                           |
+Operação Atual                                          |
+Operação Futura                                         |
+Operação futura                                         |
+Ordens de transporte canceladas (x2)                    |
+Pallet Sorter                                           |
+Parâmetro (x9)                                          |
+Pedidos (Remessa)                                       |
+Pedidos e volumes                                       |
+PICK MAP                                                |
+Plano de Separação                                      |
+PLC (x12)                                               |
+Ponto de decisão (x12)                                  |
+Pontos de Atenção                                       |
+Por que precisamos dessas permissões no Banco de Da...  |
+Portal de leitura                                       |
+Priorização de Pedidos (x2)                             |
+Processo de Operação do Sorter (x5)                     |
+Processo de Picking                                     |
+Produtividade por balanças                              |
+Produtividade por volumes classificados                 |
+Produtividade portal de leitura de etiquetas de cód...  |
+Produto (x8)                                            |
+Produção                                                |
+PTW - Batch picking (x2)                                |
+Rampa de Rejeito                                        |
+Rampas                                                  |
+Rampas do Sorter                                        |
+Rechazo del sorter                                      |
+Recirculação (x7)                                       |
+Recirculação de Volumes no Sorter (x5)                  |
+Reconexão do Scanner Padrão (Direto no PC)              |
+Regra de Contingência para Volumes em Esteira           |
+Regras de Contingência do Sorter                        |
+Regras Operacionais                                     |
+Regras Ordem de Transporte (OT)                         |
+Reimpressão de Laudos                                   |
+Rejeito (x35)                                           |
+Rejeito do Sorter (x26)                                 |
+Rejeito dos Volumes dos Níveis e Sorter                 |
+Rejeito no Sorter (x4)                                  |
+Rejeito Sorter                                          |
+Rejeito – Octopus MS                                    |
+Rejeito – Octopus SC                                    |
+Rejeitos                                                |
+Relatório de Fila de Entrada Sorter                     |
+Relatório – Pedido x CX Plástica (Ref.7)                |
+Reservas do PBL                                         |
+Resumo                                                  |
+RF14 – Ler valores de tags do PLC (x2)                  |
+RF15 – Escrever valores em tags do PLC (x2)             |
+RF16 – Traduzir as ações (x2)                           |
+RF17 – Traduzir as decisões de movimentação (x2)        |
+RF2.1 – Evento de sucesso ao armazenar (x2)             |
+RF2.2 – Evento de erro ao armazenar (x2)                |
+RF22 – Gestão de ordens de transportes (x2)             |
+RF31 – Monitoramento de transações do sistema (x2)      |
+RF32 – Cadastro (x2)                                    |
+RF40 – Logs de erros na troca de mensagem WCS Velox...  |
+RF41 – Logs de erros na troca de mensagem WCS Velox...  |
+RF6 – Gestão de congestionamento nos transportadore...  |
+RF7.11 – Controlar capacidade dos corredores de ent...  |
+RF8.1.1 – Ordem de transporte (x2)                      |
+RF8.2.1 – Expedição (x2)                                |
+Saida de palete vazios                                  |
+SAP recebe do WCS informações do pallet que agrega ...  |
+Scanners (x10)                                          |
+Se a Transportadora NÃO realiza Paletização (x2)        |
+Separação de itens controlados (x2)                     |
+Separação Pallet Fechado (Pallet Sorter)                |
+Separação Pallet Sorter                                 |
+Separação PBL / Indução                                 |
+Sinaleiro (x7)                                          |
+Skus pendentes                                          |
+Slim Sorter                                             |
+Solução Proposta (x2)                                   |
+Sorter (x73)                                            |
+SORTER (x2)                                             |
+Sorter e Expedição                                      |
+Sorter Map                                              |
+Sorter – 1° Passagem.                                   |
+Status de uma ou mais Ordens de produção – producti...  |
+Status possíveis para cada informação no WCS            |
+Sugestão Alocação de Curva ABC                          |
+TABELA: CAIXA                                           |
+TABELA: MAPA_SAIDA                                      |
+TABELA: MENSAGEM_LOG                                    |
+TABELA: ROTAS                                           |
+TABELA: SAIDAS_ROTAS                                    |
+Tela de Rejeito e Conferência (x3)                      |
+Tela para agrupamento de volumes para Expedição         |
+Testes Funcionais (Novo Server-Homologação)             |
+TORD                                                    |
+Tratamento de Falha de Identificação                    |
+Tratativa de Rejeito (No-Read e Cancelados)             |
+Triagem de Volumes                                      |
+Troca de mensagens (PLCxMFC) (x4)                       |
+Troca de Pallets / Posições PBL Empenhados              |
+Área de Stage para indução no Sorter                    |
+
+## [EXPEDICAO] ptl-alocacao  (206 seções | 80 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+3.11 Put-to-Light (PTL) (x2)                            |
+3.5.3 MODO DE FUNCIONAMENTO (PTW) (x2)                  |
+[SEM TÍTULO] (x4)                                       |
+Abertura de Pallet (VolExp)                             |
+Abertura de PTL                                         |
+Agrupamento por Subárea (x4)                            |
+Alocação via PTL                                        |
+Alteração da Lógica de Fechamento da PTL Manual         |
+Atualização e Conferência Operacional                   |
+Ação em Caso de Divergência                             |
+Balanceamento (1 x 1) (x7)                              |
+Bloqueio de Alocação sem Operador Logado no PTL         |
+Como Funciona o Algoritmo                               |
+Conceito de Estoque Sombra                              |
+Confirmação de Desvio                                   |
+Confirmação de OT (TOCO)                                |
+Confirmação de Separação Concluido                      |
+Confirmação Separação B2C (Put-to-Wall)                 |
+Display 3 Dígitos (FlowRack Frente + Nichos Costas)     |
+Erro (x7)                                               |
+Especificação (x7)                                      |
+Estações (x4)                                           |
+Estações de trabalho (DESKTOP) (x13)                    |
+Exceções do PTL                                         |
+Expedição                                               |
+Fechamento de Pallet (Etiqueta Master)                  |
+Fechamento de PTL                                       |
+GAP 02 – Envia posição SKU                              |
+Gerenciamento de movimentos (x2)                        |
+Gerenciamento de áreas (x2)                             |
+Gestão de Ativação de Rampas e Lógica de Abertura PTL   |
+Identificação Visual via LED                            |
+Inclusão na Tela “Paletes”                              |
+Liberação e bloqueio de estações                        |
+Liberação total de coleta para Matriz Liberada          |
+Mesa Compartilhada (x6)                                 |
+Necessidade Operacional                                 |
+Operação atual                                          |
+Operação de Fracionado (Frente / PBL)                   |
+Painel de Chutes                                        |
+Parâmetros por transportadora (x2)                      |
+PDV (x2)                                                |
+Pedido PTL (x3)                                         |
+Pedido Unitiza (x3)                                     |
+Postos Espelhos no Baixo Giro                           |
+Priorização de pedidos                                  |
+Priorização de Pedidos para Rampas Específicas no PTL   |
+Processo de abertura e fechamento de pallets            |
+Processo de Picking Exceção (x4)                        |
+PTL (x17)                                               |
+PTL (Alto Giro)                                         |
+PTL (Put to Light) – Consolidação Fracionado e Full...  |
+PTL, e Pallets Termolábeis (x4)                         |
+PTM (Put-To-Monitor)                                    |
+PTW (Put – To – Wall) (x2)                              |
+PTW – PUT TO WALL                                       |
+Put To Light (x9)                                       |
+Put To Light (PTL) (x7)                                 |
+Put to Light (PTL) / Aloca Pallet                       |
+Put To Wall (x4)                                        |
+Put to Wall                                             |
+Put to Wall (PTW)                                       |
+Put-to-light (PTL) (x9)                                 |
+Rampas (PTL) (x3)                                       |
+Rampas (PTL) – Octopus MS                               |
+Rampas (PTL) – Octopus SC                               |
+Rampas de Expedição (Fluxo Padrão com PTL)              |
+Rechazo                                                 |
+Relatório de Produtividade no PTL por Operador — Ní...  |
+Relatório de Produtividade no PTL por Operador — Ní...  |
+Reset de abertura de PTL                                |
+Rota x endereço (x11)                                   |
+Saida de material (x2)                                  |
+Separação                                               |
+Separação PTL (x2)                                      |
+Sugestão alocação de curva ABC (x7)                     |
+Sugestão de Alocação (x5)                               |
+Sugestão de Alocação no Picking                         |
+Tela de Rejeito                                         |
+Validação SKU x Pedido                                  |
+
+## [EXPEDICAO] etiquetas  (216 seções | 124 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+11.1	Exemplo de etiquetas                               |
+2.3.36 (x2)                                             |
+4.1.3.	Etiqueta Caixa                                   |
+Adição de informação extra na tela Volumes e impres...  |
+Agrupamento de volumes (x2)                             |
+Ajustes na Tela “Ocorrências”                           |
+Alocação de Volumes (x2)                                |
+Alocação de volumes                                     |
+Alocação no Stage – Pallets Empenhados                  |
+Alterações na Etiqueta                                  |
+Alto Giro (Térreo) (x2)                                 |
+Baixo Giro (1º Andar/Nível) (x2)                        |
+Busca pallets para expedição (BPE) (x2)                 |
+Campos Obrigatórios na Nova Etiqueta                    |
+Cancelamento de Romaneios                               |
+Classificação dos Rejeitos                              |
+Composição do Lote                                      |
+Contexto Operacional                                    |
+Control de Reimpresión de Etiquetas (Usuario y Cont...  |
+Controlados (2º Andar/Nível) (x2)                       |
+Controle de Reimpressão de Etiquetas (Nome de Usuár...  |
+Controle de Reimpressão de Etiquetas (Usuário e Senha)  |
+Detalhe código de barras (Etiqueta produção) (x7)       |
+Diferenciação Visual entre Etiqueta Master e Etique...  |
+Dimensionamento do volume                               |
+Display 6 Digitos (FlowRack Frente)                     |
+Document Objective                                      |
+Especificações das Etiquetas                            |
+Etiqueta (x11)                                          |
+Etiqueta caixa                                          |
+Etiqueta Completa (Padrão GS1)                          |
+Etiqueta de Caixa (ZPL)                                 |
+Etiqueta de Caixa Plástica (x2)                         |
+Etiqueta de pallet                                      |
+Etiqueta de Pedidos                                     |
+Etiqueta de Produção (x7)                               |
+Etiqueta de reimpressão                                 |
+Etiqueta de Volume (x2)                                 |
+Etiqueta de volume de separação (x2)                    |
+Etiqueta de volumen de separación                       |
+Etiqueta de Volumes                                     |
+Etiqueta do Pallet                                      |
+Etiqueta Enjoei                                         |
+Etiqueta Fracionado                                     |
+Etiqueta Full Case (Caixa Fechada) (x7)                 |
+Etiqueta para Full Case                                 |
+Etiqueta PVAR                                           |
+Etiqueta sem Data de Fabricação no Código               |
+Etiqueta sem Lote e sem Código Produtor                 |
+Etiqueta Super Lojas Brasil                             |
+Etiqueta UC – Expedição                                 |
+Etiquetagem (x5)                                        |
+Etiquetagem de Caixas Papelão                           |
+Etiquetas (x10)                                         |
+Etiquetas BRF Salvador                                  |
+Exemplo de Etiqueta                                     |
+Finalização pedido -Reutilização etiquetas              |
+Fluxo de Conferência de NF                              |
+Fluxo de Entrada dos Pedidos                            |
+Fluxo Operacional no PTW (Put to Wall)                  |
+Full Case (Caixa Fechada) (x2)                          |
+Full Case - Caixa fechada (x2)                          |
+Funcionalidade de Troca de Master                       |
+Gerenciamento do armazém (x2)                           |
+Gravação das Etiquetas no WMS Delage                    |
+Identificação e Prefixo de Etiqueta                     |
+Implementação Etiqueta Marketplace                      |
+Impressora de Etiquetas                                 |
+Impressão (x4)                                          |
+Impressão Automática de Etiquetas no Posto de Indução   |
+Impressão de etiqueta (x3)                              |
+Impressão de Etiqueta de PTM                            |
+Impressão de Etiquetas (x6)                             |
+Impressão de etiquetas (x9)                             |
+Impressão de Etiquetas Exceção                          |
+Impressão de Romaneio (x4)                              |
+Impressão e Quebra Automática                           |
+Impressão e Reimpressão de etiquetas (x2)               |
+Impressão no WCS                                        |
+Inclusão de Número de Volume nas Etiquetas              |
+Integrações                                             |
+KPIs alvo das Views (x2)                                |
+Layout da Etiqueta                                      |
+Layout de etiqueta de Volume (x2)                       |
+Layout de etiqueta do produto (x2)                      |
+Layout de impressão (Boleto)                            |
+Layout de impressão (Matriz e Filial)                   |
+Layouts de Impressão                                    |
+Limitações Técnicas (Caixas BIN) (x2)                   |
+Melhoria na Tela de Rejeito                             |
+Modelo de Etiqueta                                      |
+Motivo de Rejeito por Duplicidade                       |
+Necessidade Operacional                                 |
+PDV (x2)                                                |
+Pedido Misto (x3)                                       |
+Pedido Mono Máquina (x2)                                |
+PONTOS A DEFINIR (PENDÊNCIAS)                           |
+Prioridade em Caso de Divergência                       |
+Problema / Impacto Observado (x2)                       |
+Processo de Picking Fracionado                          |
+Processo de Picking Fracionado (Convocação Ativa)       |
+Produto (x3)                                            |
+Produtos de Curva A                                     |
+Produtos de Curva B                                     |
+Produtos de Curva C                                     |
+Rampas (Totem Luminoso) (x2)                            |
+Regras Operacionais: (x2)                               |
+Reimpressão de Etiqueta no Rejeito                      |
+Reimpressão de etiqueta por volume                      |
+Reset                                                   |
+RF7.12 – Informações de lotes (x2)                      |
+Rotas - Sufixo                                          |
+Separación en el puesto                                 |
+Separação FullCase                                      |
+Solução Proposta – Intercalação por Rampa de Destino    |
+String DataMatrix etiqueta do produto (x2)              |
+Tela com log de Reimpressão                             |
+Tela de Impressão Manual                                |
+Tela de Romaneio                                        |
+Tipos de etiquetas (x2)                                 |
+Tipos de Layout de Etiqueta                             |
+Vinculação Física da Etiqueta à Caixa                   |
+Visão Geral do Processo                                 |
+Volumes Não Tratáveis                                   |
+
+## [CONFERENCIA] conferencia  (146 seções | 70 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+Aceitar frações de pacotes                              |
+Alocar volumes Rejeitados                               |
+Balança                                                 |
+Categorias de Conferência                               |
+Cenário 1 – Coleta Sistêmica no Posto Virtual sem a...  |
+Cenários de Rejeito                                     |
+Conferencia                                             |
+Conferencia - Checkout (x2)                             |
+Conferência (x27)                                       |
+CONFERÊNCIA (x2)                                        |
+Conferência - Rejeito (x4)                              |
+Conferência / Auditoria (x10)                           |
+Conferência / Auditoria / Rejeito                       |
+Conferência Clientes Especiais (KIT SKU)                |
+Conferência de Tarefas por Onda no Ponto Final da  ...  |
+Conferência de Tarefas por Onda no Ponto Final da T...  |
+Conferência e Fechamento das Caixas (x2)                |
+Conferência ET                                          |
+Conferência fracionados atual                           |
+Conferência Item (x2)                                   |
+Conferência Manual (Auditoria e Clientes Especiais)     |
+Conferência Manual Padrão                               |
+Conferência Pedido                                      |
+Conferência Peso (x2)                                   |
+Confirmação de conferência (CHECKOUT)                   |
+Consulta de Volumes Direcionados Ainda Não Lidos        |
+Contexto da solicitação do cliente                      |
+Cross-Check Exceção                                     |
+Especificação                                           |
+Especificações de Hardware de TI (x2)                   |
+Estações de Conferência                                 |
+Estações de Conferência/Embalagem (x2)                  |
+Estações de trabalho (DESKTOP) (x7)                     |
+FLUXO DE DECISÃO – Velox (CC Confirmação de Coleta)     |
+Fluxo Detalhado do Processo de Picking                  |
+Fluxo Operacional da Conferência                        |
+Geração do Documento de Romaneio                        |
+Hospital                                                |
+Identificação em tempo real de volumes não lidos        |
+Identificação via Software (x2)                         |
+Impressão de Laudos e Etiquetas na conferência          |
+Inclusão do campo “Soma Total”                          |
+Indicadores do Dashboard                                |
+Induzidos x desviados                                   |
+Limitação de Paletes em Conferência                     |
+Lógica de Processamento                                 |
+Motivos de Desvio para Conferência                      |
+Não escopo                                              |
+Pedido (x7)                                             |
+Pedidos Sem Confirmação de Picking - Pendente           |
+Processo de Conferência (x12)                           |
+Processo de Conferência / Coleta de Itens (x2)          |
+Produtividade do dimensionador por entrada              |
+Produtividade rejeito                                   |
+Regra de Negócio                                        |
+Regra de Negócio (Parâmetro MFC)                        |
+Solicitação de nova para conferênciaParte superior ...  |
+Stage de Paletes                                        |
+Tela de Conferência (x2)                                |
+Tela de conferência                                     |
+Tela de Conferência do Palete                           |
+Tela de Listagem de Paletes a Conferir                  |
+Tela – Conferência (4)                                  |
+Trata rejeito                                           |
+Validação de campo “destino”                            |
+Validação de campo “valida”                             |
+Validação de Lote (Nacional vs. Internacional)          |
+Validação de Peso (Balança Dinâmica)                    |
+Validação SKU x Pedido (Cross Check) (x5)               |
+Área de Recebimento (x2)                                |
+
+## [CONFERENCIA] packing  (114 seções | 63 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+3.4. Mezanino (x2)                                      |
+3.5.2 TELA DO PTW (PDV)                                 |
+3.7 Packing (x2)                                        |
+3.8 Entrada Rápida (x2)                                 |
+4.1.4.	Solicitação Conferência                          |
+[SEM TÍTULO]                                            |
+Abertura e fechamento de gaiola                         |
+Anomalias                                               |
+Análise de Corte (x4)                                   |
+Balança 03 - CrossCheck (x2)                            |
+By-Pass Picking                                         |
+Caixa Adicional (x2)                                    |
+Chegada a um ponto de entrega (x5)                      |
+CMC (x2)                                                |
+Conclusão da Remessa                                    |
+Conferência / Packing (x2)                              |
+Conferência e Packing                                   |
+Configuração da Linha (Layout Lógico)                   |
+Confirmação de finalização do batch Picking PTW (BP...  |
+Confirmação Picking (x3)                                |
+Controle das posições de picking (x2)                   |
+Controle de LEDs (Picking By Light)                     |
+CONTROLE DE POSIÇÕES                                    |
+Controle de posições / Gerenciamento de estoque         |
+Corte de Coleta                                         |
+Código de barras por Posto                              |
+Expedição de volumes B2B                                |
+Fechamento (x2)                                         |
+Fracionado - Picking By Light/Picking To Monitor e ...  |
+GAP 05 – Picking com coletor                            |
+Gerenciamento de faixas (x2)                            |
+Gestão de Endereços de Picking                          |
+Gestão de Posto de Trabalho                             |
+Listagem de ordens de expedição (x2)                    |
+Mudança nas Telas de Fullcase e Packing                 |
+Multi-Volumes (x2)                                      |
+Múltiplas Confirmações de Picking Pollux                |
+Múltiplas Confirmações de Picking Pollux - Pendente     |
+Novas funcionalidades                                   |
+Operação para Full Case                                 |
+Packing (x18)                                           |
+Packing (embalagem) / Pré Expedição                     |
+Packing / Conferência – Octopus MS                      |
+Packing / Conferência – Octopus SC                      |
+Packing e Fechamento de Volume                          |
+Packing ET                                              |
+Packing Fracionado e Packing Termolábil (x4)            |
+Parâmetro de Picking Exceção (x2)                       |
+Pedido Picking (Tarefa) (x4)                            |
+Pendência                                               |
+Pesagem do volume                                       |
+PTW – PUT TO WALL                                       |
+Relatório de Saturação das Rampas                       |
+Repostaje                                               |
+Saida / Fila de expedição                               |
+Separação                                               |
+Separação PBL (Picking By Light) (x7)                   |
+Solicitação Conferência                                 |
+Solicitação de entrada Hospital                         |
+Tela de corte em massa                                  |
+Tela de gerar volumes – Flag Automação/Manual           |
+Tela Onda                                               |
+Área de Conferência, Packing e Sorter                   |
+
+## [ESTOQUE] reabastecimento  (133 seções | 52 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+[SEM TÍTULO] (x2)                                       |
+Abastecimento (x2)                                      |
+Contexto do Problema                                    |
+Dashboard de Reabastecimento                            |
+Envio das caixas para reabastecimento.                  |
+Especificação (x4)                                      |
+ESPECIFICAÇÃO                                           |
+Fluxo de Reabastecimento                                |
+Fluxo de Reabastecimento com Origem no Buffer (x3)      |
+Fluxo de Reabastecimento com Origem no Transfer (x3)    |
+Fluxo Operacional de Reabastecimento (Ciclo da Ramp...  |
+Gatilhos de Reabastecimento                             |
+Gatilhos para Criação da Tarefa de Reabastecimento ...  |
+Gestão de Ciclos (Função Reset)                         |
+Gestão de Estoque e Reabastecimento                     |
+Operação (x2)                                           |
+Origens do Palete                                       |
+Premissas                                               |
+Produtividade recirculação                              |
+Rampa 1: Retorno para Reabastecimento (Fluxo Interno)   |
+Reabasteciemento (x3)                                   |
+Reabastecimento (x52)                                   |
+Reabastecimento das posições Picking                    |
+Reabastecimento de baixo giro (RBG) (x2)                |
+Reabastecimento de Flowrack                             |
+Reabastecimento de médio giro (RMG) (x2)                |
+Reabastecimento do Buffer para Posição de Picking (x2)  |
+Reabastecimento do Transfer para o Buffer               |
+Reabastecimento do Transfer para Posição de Picking     |
+Reabastecimento Estoque Velox (x4)                      |
+Reabastecimento por Capacidade                          |
+Reabastecimento por Demanda                             |
+Reabastecimento por Lotação                             |
+Reabastecimento por Necessidade                         |
+Reabastecimento Preventivo                              |
+REABASTECIMENTO VELOX PARA VELOX                        |
+Reabastecimento – Estoque Velox (x4)                    |
+Reclassificação de Prioridade                           |
+Reindução pós Conferência                               |
+Reset Caixa do Posto                                    |
+Retorno de caixas vazias das posições de FlowRack       |
+RF19 – Gestão de movimentos (x2)                        |
+RF7.2 – Distribuição de produtos (x2)                   |
+RF8.2.3 – Reabastecimento de picking (x2)               |
+Solicitação de Demanda (ZABAST)                         |
+Tipos de Posição do Armazém Automatizado (AA)           |
+Transfer (x4)                                           |
+Tratamento de Pendências                                |
+Tratativa de Disponibilidade e Geração de Reabastec...  |
+Verificar reabastecimento                               |
+worktype: "PICK"                                        |
+Área de Full Case e Reabastecimento (WMS/Híbrido)       |
+
+## [ESTOQUE] inventario  (60 seções | 30 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+[SEM TÍTULO]                                            |
+Alerta de célula vazia (x7)                             |
+Chegada a um ponto de decisão (x2)                      |
+Classificação do Resultado                              |
+Contexto da Alteração                                   |
+Criação e Configuração do Inventário                    |
+Fechamento de PTM (x4)                                  |
+Fechamento do Pallet (x4)                               |
+Fluxos de Processo                                      |
+Inventário                                              |
+Inventário / Pallets (x3)                               |
+Inventário / Pallets Log                                |
+Inventário / Posições (x3)                              |
+Inventário / Produtos                                   |
+Inventário / Relatório de ocupações                     |
+Inventário Cíclico (x4)                                 |
+Inventário de Estoque (x4)                              |
+Inventário do Estoque                                   |
+Inventário Total (x4)                                   |
+KPIs do Período                                         |
+Melhorias nos Processos de Separação Full Case          |
+Priorização - OK                                        |
+Referência de Relatório do Inventário                   |
+Regra de entrada em inventario (x2)                     |
+Regra dos portais de entrada no sistema (x2)            |
+Regras Complementares de Operação                       |
+Regras de Restrição (Mix e Segregação)                  |
+RF25 – Gestão de inventário (x2)                        |
+RF29 – Configuração dos modos de operação (x2)          |
+Validações                                              |
+
+## [INTEGRACAO] integracao  (1236 seções | 550 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+2 – Se conferência = OK. SAP envia ZPL ao WCS para ...  |
+3.9 Cofre – (PAR)                                       |
+4 Integrações (Webservice) (x2)                         |
+4 – WCS envia dados de picking no final de cada est...  |
+4.1 Interface Orders (x2)                               |
+4.1.7.	 Retorno Reindução                               |
+[SEM TÍTULO] (x3)                                       |
+Abertura e fechamento de gaiola (x3)                    |
+Adicional Volume Conferência                            |
+Agendamento                                             |
+AI - Ajuste de Inventário (x2)                          |
+Ajuste de Inventário                                    |
+Alguns exemplos de integrações (x2)                     |
+ALOCA PALLET                                            |
+Aloca Pallet (x2)                                       |
+Aloca Pallet (WCS → WMS) (x3)                           |
+Aloca Pallet – Código Master e Integração de Retorno    |
+Aloca PTL (x9)                                          |
+Aloca PTL (POST) (x8)                                   |
+Aloca PTL – Octopus SC e MS                             |
+Aloca Volumes / Finalização de Transporte               |
+Alocação Automática de Pallet sem confirmação de Po...  |
+Arquitetura da Solução                                  |
+Atualizar informações de contêiner                      |
+Atualização Automática de Status                        |
+Autenticação via Token                                  |
+Automação do Cadastro de Materiais - OK (Wave 2)        |
+Avarias / Short Picking (x3)                            |
+B2C Single e Multi Picking Put to Wall (PTW)            |
+Best Place (x2)                                         |
+BOIX (x2)                                               |
+Cadastrar Lotes Vênus (Batch)                           |
+Cadastrar Produtos Pollux                               |
+Cadastrar Produtos Vênus                                |
+Cadastrar Transportadoras Pollux                        |
+Cadastrar Transportadoras Vênus                         |
+Cadastro de Caixas                                      |
+Cadastro de Categorias                                  |
+Cadastro de Produtos (x5)                               |
+Cadastro de produtos (Materiais)                        |
+Caixa a Caixa (x2)                                      |
+Caixas B2C (Multi e Mono)                               |
+Caja a caja                                             |
+Cancelamento de onda                                    |
+Cancelamento de Pedido (x8)                             |
+Cancelamento de pedido (x3)                             |
+Cancelamento de Pedidos (x2)                            |
+Cancelamento de Pedidos (Fluxo Visual PTM)              |
+Cancelamento de Remessa / Missão (x4)                   |
+Cancelamento de Romaneios                               |
+Cancelamento de Volumes (Ocorrências) (x2)              |
+Cancelamento de Volumes Fracionados                     |
+Cancelamento Volumes                                    |
+CANCELAR PEDIDO - WMS                                   |
+Cancelar uma missão                                     |
+Carregamento e descarregamento de materiais por rol...  |
+Carregamento e descarregamento de material (mission...  |
+CATO - Estorno da OT (x4)                               |
+CC “Confirmação de Coleta” (POST) (x9)                  |
+CET “Confirmação Entrada no Transfer” (POST)            |
+Check Confirm – Confirmação Conferência (x2)            |
+Classificação de Caixa                                  |
+Closing Confirmation (WCS -> WMS)                       |
+Conclusão e Integração (x2)                             |
+Conferência (x2)                                        |
+Conferência (Fracionados) (POST) (x6)                   |
+Conferência (POST)                                      |
+Conferência de Pallets (x2)                             |
+Conferência Final de Palete                             |
+Conferência Pega (POST)                                 |
+Conferência WMS (x2)                                    |
+CONFIRMA BALANÇA                                        |
+CONFIRMA SAIDA CONFERÊNCIA                              |
+Confirmação Conferência (UPDATE) (x2)                   |
+Confirmação de Conferência                              |
+Confirmação de Desvio (x2)                              |
+Confirmação de Faturamento                              |
+Confirmação de Fechamento (WCS -> WMS)                  |
+Confirmação de Pallet Expedido no Sorter (VolExp) (x3)  |
+Confirmação de Picking (x16)                            |
+Confirmação de picking (x2)                             |
+Confirmação de picking (BOXEND)                         |
+Confirmação de Picking / Shortpicking (x3)              |
+Confirmação de picking fracionados                      |
+Confirmação de Picking Full Case                        |
+Confirmação de Picking PTL                              |
+Confirmação de Picking PTL / Parcial                    |
+Confirmação de Reabastecimento                          |
+Confirmação de reabastecimento (confirmreplenishmen...  |
+Confirmação de Recall (x3)                              |
+Confirmação de Recall (WCS → WMS) (x5)                  |
+Confirmação de separação (x2)                           |
+Confirmação de Separação (x2)                           |
+Confirmação de Separação (Picking Confirm) (x9)         |
+Confirmação de separação (picking notification) (x2)    |
+Confirmação de separação / picking (POST)               |
+Confirmação de Separação Volume (Itens devolução) (x2)  |
+Confirmação de Separação Volume (PBL) (x2)              |
+Confirmação de Separação Volume (PBL) - VELOX           |
+Confirmação de Separação – Conferência                  |
+CONFIRMAÇÃO DE SEPARAÇÃO – Posto a Posto                |
+Confirmação de volumes doca (int_conf_vol_doca)         |
+Confirmação finalização pedido -Reutilização etiquetas  |
+Confirmação Finalização Pedido B2C MONO                 |
+Confirmação na Saída do Posto                           |
+Confirmação Separação (x2)                              |
+Confirmação Separação B2C (Put-to-Wall)                 |
+Confirmação Separação P30 (BOXOUTSTATION) (x2)          |
+Considerações Finais                                    |
+Consulta de Aptidão para Desvio                         |
+Consulta informações de área                            |
+Consulta Informações do robô                            |
+Consulta modelo de contêiner                            |
+Consulta nós em uma área                                |
+Consulta Número VolExp (x2)                             |
+Consulta o modelo de contêiner de um ponto e a área...  |
+Consulta Pedido                                         |
+Consulta área de armazenamento recomendada para mod...  |
+Consultar informações do contêiner                      |
+Consultar Status da Etiqueta de Gaiola (Query)          |
+Contingência Integração de Volume Sorter                |
+Continuar Production Order Pollux                       |
+Controle de Alterações de Layout de Picking             |
+Controle de Pedidos (x4)                                |
+CONTROLE DE POSIÇÕES                                    |
+Corte de Item em Andamento                              |
+CPP “Confirmação Por posto” (POST) (x2)                 |
+Criar Production Order Pollux (MFC)                     |
+Criar Production Order Vênus                            |
+CRT  “Confirmação Recebimento Transfer” (POST) (x3)     |
+Cubagem + Caixas                                        |
+Cubometro (x3)                                          |
+Cubômetro (CHECKOUT)                                    |
+Código LV                                               |
+Damage Handling in PTP                                  |
+Dashboard                                               |
+Dashboard Por Rampa                                     |
+Deleta Production Order Pollux                          |
+Deletar Lotes Vênus                                     |
+Deletar Produtos Pollux                                 |
+Deletar Produtos Vênus                                  |
+Deletar Transportadoras Pollux                          |
+Deletar Transportadoras Vênus                           |
+Demais Campos                                           |
+Desvio de Volume (x2)                                   |
+Desvio no Sorter (WCS → WMS) (x2)                       |
+Detalhamento dos Campos Relevantes                      |
+Detalhamento Técnico                                    |
+Detalhes de integração (x3)                             |
+Detalhes de Integração                                  |
+Devolução de Cancelados (x5)                            |
+Devolução de Volumes cancelados (x4)                    |
+Devolução de Volumes Cancelados                         |
+Elaboração do software de integração entre PLC e MF...  |
+Elaboração do Software de Integração Entre PLC e MF...  |
+Elaboração do software de integração entre PLC e VE...  |
+Elaboração do software de integração entre PLC e Ve...  |
+Elaboração do software de integração entre PLC e WC...  |
+Elaboração do software de integração entre PLC e WC...  |
+Elaboração do software de integração entre PLC x MF...  |
+Empilhadeira, garfo e empilhamento de pallets (miss...  |
+Endereçamento (Pick Map) (x2)                           |
+Endereço Inativo/Ativo (x3)                             |
+ENTRADA CONFERÊNCIA                                     |
+Entrada de pedidos (orders) (x2)                        |
+Entrada do contêiner                                    |
+Enviar uma solicitação para acionar a tarefa do nó ...  |
+Envio da Integração                                     |
+Envio de Missão                                         |
+Envio de Volumes                                        |
+Envio dos Eventos de Picking                            |
+Envío de Incidentes                                     |
+Especificação (x2)                                      |
+Estado das posições (x2)                                |
+Estado Ordem de Produção Pollux                         |
+Estrutura do mapeamento XML (x2)                        |
+ET “Entrada no Transfer” (POST) (x4)                    |
+Etapas do Processo                                      |
+Etiqueta Picking Fracionado (x2)                        |
+Etiqueta Picking Pallet e Exceção (x2)                  |
+Etiqueta UC                                             |
+Etiquetas (x5)                                          |
+Exclusões de Escopo                                     |
+Exemplo de Json (x30)                                   |
+Exemplos de Integração:                                 |
+Exemplos Práticos                                       |
+Expedição                                               |
+Falha                                                   |
+Fechamento de Pallet                                    |
+Fechamento de Posição PTL (x3)                          |
+Fechamento Pallet                                       |
+Final do processo                                       |
+Finalização da caixa                                    |
+Fluxo Atual (x2)                                        |
+Fluxo de Entrada de Dados (Pedidos)                     |
+Fluxo geral do processo de integração                   |
+Fluxo Operacional do Order Start Full Case              |
+Full Case                                               |
+Gaiola Fechada (Ship)                                   |
+Gatilho de Integração ao WMS                            |
+Hospital Shortpicking                                   |
+Identificação Produto (x2)                              |
+Identificação Produto (Boxout)                          |
+IDOC - Cancelamento das Remessas (x4)                   |
+IDOC - Remessas (x4)                                    |
+Impactos na Integração (x2)                             |
+Importação de Pedidos (WMS -> WCS)                      |
+Impressão e reimpressão de etiquetas (x3)               |
+Impressão Etiqueta Separação (Venus)                    |
+Inbound Sync (POST) (x7)                                |
+Indução Volumes (x4)                                    |
+Informações                                             |
+Informações da Mensagem de Checkout                     |
+Informações Produto (Boxout)                            |
+Integraciones (x3)                                      |
+Integración de la misión                                |
+Integrations                                            |
+Integrations between Velox and WMS                      |
+Integração (x2)                                         |
+Integração (5)                                          |
+Integração (Tabela de CEPs) (x2)                        |
+Integração (Tabela de CEPS)                             |
+Integração Afetada                                      |
+Integração banco a banco                                |
+Integração cadastro dos produtos                        |
+Integração com a Matriz de Fragilidade (x2)             |
+Integração confirmação de Reabastecimento               |
+Integração Confirmação de separação (picking notifi...  |
+Integração Corte de itens Massa.                        |
+Integração Código Produtivo                             |
+Integração de Abastecimento do Transfer (WMS → WCS)...  |
+Integração de Ajuste de Inventário (POST) (x4)          |
+Integração de Alocação PTL                              |
+Integração de Auditoria de Estoque (x6)                 |
+Integração de Cadastro de Produtos e Embalagens         |
+Integração de cancelar NF (x2)                          |
+Integração de consulta de estoque                       |
+Integração de Consulta Estoque                          |
+Integração de Endereços (x3)                            |
+Integração de Etiqueta Única (x3)                       |
+Integração de Missões                                   |
+Integração de Notificação carregamento (x2)             |
+Integração de notificação carregamento                  |
+Integração de Ondas Dinâmicas                           |
+Integração de Ordem de Entrada (x3)                     |
+Integração de Pedidos                                   |
+Integração de pedidos e volumes (x2)                    |
+Integração de Picking confirm                           |
+Integração de PickMap                                   |
+Integração de Priorizar NF (x3)                         |
+Integração de priorizar NF                              |
+Integração de Produtos                                  |
+Integração de Remessa / Missões (x4)                    |
+Integração de Remessa / Pedido (x8)                     |
+Integração de Retorno (WCS → WMS) (x2)                  |
+Integração de Solicitação de Reabastecimento            |
+Integração de Volume Sorter                             |
+Integração de Volumes (WMS → WCS) (x4)                  |
+Integração do volume                                    |
+Integração e Estrutura de Dados (JSON) (x2)             |
+Integração entre PLC e Velox (x2)                       |
+Integração Fechamento Pallet                            |
+Integração Pedido                                       |
+Integração Pick Map (Ref.2)                             |
+Integração Posto a Posto                                |
+Integração Pós-Packing                                  |
+Integração separação de pedidos (orders)                |
+Integração Shortpicking                                 |
+Integração via JSON                                     |
+Integração via XML                                      |
+Integração WMS Delage → WCS                             |
+Integração WMS ⇄ WCS (Tabela Compartilhada)             |
+Integração – Desvio Sorter (Volume classificado/des...  |
+Integração – INDSORTER                                  |
+Integração – Pedido / Sorter                            |
+Integração: Remoção Forçada de Estoque (WCS → WMS) ...  |
+Integrações (x124)                                      |
+INTEGRAÇÕES (x3)                                        |
+Integrações (Webservice) (x5)                           |
+Integrações (WebService) (x5)                           |
+Integrações de DANFE                                    |
+Integrações de Retorno (WCS → WMS)                      |
+Integrações Solicitação de novo volume (pede caixa)     |
+Integrações Velox (x3)                                  |
+Interface de Reabastecimento                            |
+Interface de Reabastecimento no WCS (x4)                |
+Interface e Filtros                                     |
+Interface ORDERS                                        |
+Interface Orders (x3)                                   |
+Interface ORDERS Picking (x3)                           |
+Interface para cancelamento do item                     |
+Interface para Short Picking / Notificação de Reaba...  |
+Interface produto separado                              |
+Interface Reabastecimento (x3)                          |
+Interface ROADMAP                                       |
+Interface Route                                         |
+Inventário de Estoque                                   |
+Início da operação (x2)                                 |
+Início de Picking                                       |
+Itens Fora de Escopo                                    |
+JSON (x2)                                               |
+Layout (x2)                                             |
+Layout 2D                                               |
+Limpeza da Caixa                                        |
+Listagem de pallets consolidados                        |
+Listagem de Pallets Consolidados                        |
+Listagem de pallets consolidados (somente para Auto...  |
+Listagem de Volumes consolidados (x2)                   |
+Listagem de volumes consolidados                        |
+Lojas (x4)                                              |
+Lote (Batch) – (POST/batch/create)                      |
+Lote – (Batch)                                          |
+Lote/Batch (x2)                                         |
+Lote/Batch – batch/create (x2)                          |
+Mapa de endereçamento dos produtos (PICKMAP) (x2)       |
+Mapa de posições                                        |
+Mapa de separação                                       |
+Mapeamento de tags, ações e decisões (x2)               |
+Matriz de Fragilidade (x3)                              |
+Matriz de Responsabilidades (WCS x WMS)                 |
+Mensagem de status (x2)                                 |
+Mensagens Personalizadas (Custom Messages)              |
+Missões (POST) (x2)                                     |
+Missões – Work (POST) (x3)                              |
+MM – Monitoramento (POST)                               |
+Modelo Json (x3)                                        |
+Movement Type: "REPLENISHMENT"                          |
+MOVIMENTAÇÃO (x2)                                       |
+Movimentação de Estoque                                 |
+Movimentação Forçada de Estoque (WCS → WMS) (x4)        |
+MTO - Mata Trabalhos Ondas (x2)                         |
+MTP - Mata Trabalhos Pedidos (x6)                       |
+MTR - Mata Trabalhos Romaneio (x4)                      |
+Módulo de contingência (x2)                             |
+Notificação de expedição do volume/pedido expedido      |
+Notificação de Shortpicking                             |
+Nova Abordagem Proposta                                 |
+Novos volumes                                           |
+NrDestino                                               |
+NrRecepcaoCliente3d                                     |
+Objetivo del documento (x3)                             |
+Obter Token de Acesso                                   |
+Onda                                                    |
+Onda Pedidos (x2)                                       |
+Operação Normal (Correios)                              |
+Order                                                   |
+Order (Pedidos) (x3)                                    |
+ORDER (PEDIDOS)                                         |
+Order (Pedidos/Remessas) (x7)                           |
+Order (Work)                                            |
+Order Cancellation (PTM Visual Flow)                    |
+Order Start                                             |
+Order Start FlowRack                                    |
+Order Start Fracionado                                  |
+Order Start Full Case                                   |
+Order – Pedidos (x2)                                    |
+Orders                                                  |
+Orders Picking (x3)                                     |
+Padrão de Integrações                                   |
+Pallet (x3)                                             |
+Pallet com ocorrência é fechado sem integração ao WMS   |
+Pallet Montado (x4)                                     |
+Palé montado (x2)                                       |
+Parâmetros de Configuração (x2)                         |
+Pausar Production Order Pollux                          |
+Pede caixa                                              |
+Pede caixa (Etiqueta)                                   |
+Pede Caixa (POST)                                       |
+Pedido                                                  |
+Pedido (onda) (x3)                                      |
+Pedido não iniciado                                     |
+PEDIDO SEPARAÇÃO (x2)                                   |
+Pedido – Work (POST) (x2)                               |
+Pedidos (x5)                                            |
+Pedidos (FullCase) (POST)                               |
+Pedidos (Order) (x2)                                    |
+Pedidos (POST) (x8)                                     |
+Pedidos (Remessa)                                       |
+Pedidos (Wave)                                          |
+Pedidos (Wave) – Octopus MS (x2)                        |
+Pedidos (Wave) – Octopus SC (x2)                        |
+Pedidos B2C Multi (PTW)                                 |
+PEDIDOS SEPARAÇÃO (x2)                                  |
+Pedidos – (production_order/create)                     |
+Pedidos – production_order/create (x2)                  |
+Pick Map (x4)                                           |
+PICK MAP                                                |
+Pick Map – Cadastro de endereço                         |
+Pick Map – Cadastro de produtos                         |
+Picking                                                 |
+Picking Cart Confirm                                    |
+Picking Confirm (x8)                                    |
+Picking Map (x2)                                        |
+Picking Map de Reabastecimento                          |
+Picking Map – Endereço / Produto                        |
+Picking Pollux                                          |
+Plano de Separação                                      |
+Points to Define (Pending Issues)                       |
+Portal Etiquetas                                        |
+Posições (PBL) / Endereços Empenhados (x2)              |
+Posições (PBL)/Endereços Empenhados                     |
+Premade (x2)                                            |
+Premissas                                               |
+Priorização Automática (x5)                             |
+Priorização de Pedidos                                  |
+PROCEDURE: SP_INTEG_CORTE_MATERIAL                      |
+PROCEDURES                                              |
+PROCESSO OPERACIONAL (x2)                               |
+Product                                                 |
+Productivo (empleados)                                  |
+Productivo (Empleados)                                  |
+Produtivo (x2)                                          |
+Produtivo (Funcionários) (x2)                           |
+Produto                                                 |
+Produto (POST) (x11)                                    |
+Produto (SKU) – (POST/product/create)                   |
+Produto (SKU) – product/create (x2)                     |
+Produto Expedido (Boxexit)                              |
+Produto Expedido (Boxout) (x2)                          |
+Produto Expedido (Ship) (x3)                            |
+Produto Expedido (SORTER)                               |
+Produtos (x4)                                           |
+Produtos das Etiquetas (x2)                             |
+Produtos FullCase                                       |
+Prévia Transportes                                      |
+PTM – Put To Monitor (x2)                               |
+Put to Bag                                              |
+Reabastecimento (x5)                                    |
+Reabastecimento (replenishment) (x2)                    |
+Reabastecimento dos Fracionados (x8)                    |
+Recall (x5)                                             |
+Recebimento da Integração de Remessa                    |
+Recebimento de informações (x4)                         |
+Recebimento de remessa (Pedidos)                        |
+Recebimento – Pedidos para Armazenamento                |
+Recepção de pedidos – ERP                               |
+Recepção de pedidos – WMS                               |
+Registro de productos (x2)                              |
+Regra de Negócio Desejada (x2)                          |
+Regra de Rampa principal para o SAP                     |
+Regras de Funcionamento                                 |
+Reindução (UPDATE)                                      |
+Reindução pós Conferência                               |
+Remessas (POST)                                         |
+Remover pedido PTL                                      |
+Repostaje                                               |
+Requisitos de Identificação do Pedido (Delage → Inv...  |
+Requisitos para Configuração da Integração              |
+Resposta                                                |
+Resposta de Reabastecimento                             |
+Ressequenciar Production Order Pollux                   |
+Resultado da Ordem (x2)                                 |
+Resultado da ordem (x2)                                 |
+Resultado da ordem – (orderresultinventpollux)          |
+Resultado da Ordem – (venusconf)                        |
+Resultados do Cubômetro                                 |
+Retorno (x4)                                            |
+Retorno da Conferência                                  |
+Retorno da integração de volume                         |
+Retorno da Separação                                    |
+Retorno de chamada da interface                         |
+Retorno desvio Hospital                                 |
+Retorno Dimensões (UPDATE_TYPE=1)                       |
+Retorno Peso (UPDATE_TYPE=2)                            |
+Retorno Rampa (UPDATE_TYPE=3)                           |
+Retorno Reabastecimento (x6)                            |
+Retorno Reindução (x2)                                  |
+Retorno Volumes                                         |
+RF35 – Envio de missão de saída e entrada manualmen...  |
+RF7.13 – Prioridade (x2)                                |
+Robô carregando um rack (missionType=RACK_MOVE)         |
+Robô em movimento (missionType=MOVE)                    |
+Romaneio                                                |
+Romaneio Pallets (x4)                                   |
+RQ1 – Compatibilidade tecnológica interface SAP WM ...  |
+Saida do contêiner                                      |
+Separation Confirmation                                 |
+Separação (x5)                                          |
+Separação + PTW (x2)                                    |
+Separação Fracionado (x2)                               |
+Separação Full Case                                     |
+Separação – Full Case                                   |
+Shortpicking (x3)                                       |
+Shortpicking / Avarias (x2)                             |
+Simulação Picking                                       |
+Sinaleiros (x7)                                         |
+Sinalização de Pedido Completo (PTW)                    |
+Sistema Velox recebe informações                        |
+Snap Shot (POST) (x6)                                   |
+Solicitação de nova caixa (x2)                          |
+Solicitação de Pallet Empenhado (x4)                    |
+Solicitação de Reabastecimento                          |
+Solicitação de Recall                                   |
+Solicitação de Recall (WMS → WCS) (x4)                  |
+Solução – Leitura automática no portal                  |
+Sorter (x2)                                             |
+ST “Solicitação Transfer” (POST)                        |
+Starter Order                                           |
+Sucesso                                                 |
+Sugestão de Json enviado ao fechar pallet               |
+Sugestão Json recebido, quando pedido bloqueado         |
+TABELA: INT_CAIXA                                       |
+TABELA: INT_CAIXA_CORTE                                 |
+TABELA: INT_PROD_ALTERNATIVO                            |
+TABELA: MAPAS                                           |
+Tarefa (Route)                                          |
+Tarefa de CrossDocking (x2)                             |
+Tarefa Vênus (Recebimento Vênus)                        |
+Tarefas (x3)                                            |
+Tarefas (Venus)                                         |
+Tarefas Liberadas                                       |
+Tarefas – (Venus)                                       |
+Tela de Coleta no Posto e Conferência no Posto (x2)     |
+Tela de Integrações                                     |
+Tela de tratativa de volumes pendentes por pallet       |
+Tela Resumo Coleta                                      |
+Testes de Integrações                                   |
+Tiendas (x2)                                            |
+Tipos de Integração                                     |
+Tipos de integração (x3)                                |
+Tipos de Posições                                       |
+TOCO – Confirmação da OT (x4)                           |
+TORD - Criação da OT (x4)                               |
+Trabalhos – Work (POST) (x4)                            |
+Transportadora – (POST/shipping/create)                 |
+Transportadora – shipping/create (x2)                   |
+Tratamento de Avarias no PTP                            |
+Trava Integração de Pedidos                             |
+Troca de Pallets / Posições PBL Empenhados (x2)         |
+Update Agendamento                                      |
+Visibilidade da Categoria do Produto                    |
+Volume no Sorter                                        |
+Volumes                                                 |
+Volúmenes de inducción                                  |
+Vínculo Box x SHU                                       |
+VÍNCULO CAIXA X PEDIDO (x2)                             |
+Wave (x6)                                               |
+Wave – Onda com diversos pedidos                        |
+Wave – Pedidos (x2)                                     |
+Waves (WMS -> WCS)                                      |
+WMCATO (Cancelamento) (x2)                              |
+WMS  MFC (x4)                                           |
+WMS  WCS (x4)                                           |
+WMS x WCS (x4)                                          |
+WMTORD (Armazena) (x7)                                  |
+WMTORD (Retira) (x7)                                    |
+worktype: "PUT"                                         |
+Zonas de Picking                                        |
+Área de Stage                                           |
+“Confirmação Recebimento Transfer” (POST) (x2)          |
+
+## [SISTEMA] cadastros-acessos  (511 seções | 238 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+1 – WCS envia ao SAP informações da conferência fei...  |
+2.3.12 (x2)                                             |
+2.3.13 (x2)                                             |
+2.3.14 (x2)                                             |
+2.3.15 (x2)                                             |
+2.3.17 (x2)                                             |
+3.5.4 FINALIZAÇÃO DE UMA POSIÇÃO (x2)                   |
+4.1.1.	Caixas de separação                              |
+5.6.	Nível de acesso                                    |
+6.27 (x2)                                               |
+6.31 (x2)                                               |
+[SEM TÍTULO] (x17)                                      |
+Abertura                                                |
+Adição na tela de Separação                             |
+Alocação de Volumes no Pallet (x4)                      |
+Alocação no Stage – Pallets Provenientes do PBL         |
+Alocação por Transportadora                             |
+Alteração do Agrupamento de Categorias                  |
+Alteração Layout Etiqueta                               |
+Alteração no Funcionamento                              |
+Amarração de ULDs                                       |
+Ambiente de Rede e Segurança                            |
+API / REGRA DE VALIDAÇÃO DE LEITURA                     |
+API para Gestão de Usuários (x2)                        |
+Aprovação Manual                                        |
+ATRIBUTOS                                               |
+Auditoria de Estoque (x4)                               |
+Autenticação (x3)                                       |
+Autenticação (Basic Auth + Bearer)                      |
+Autenticação via Cookie                                 |
+Autenticação via SSO (x2)                               |
+Autenticação – Login via SSO (Single Sign-On)           |
+Ações de contingencia (x2)                              |
+Balanceamento entre Rampas de uma Mesma Transportad...  |
+Balanceamento entre Transportadoras (Nível Macro)       |
+Cadastro de Empresas Aéreas                             |
+Cadastro de Grupos                                      |
+Cadastro de Tipos de Inspeção                           |
+Cadastro de Usuários                                    |
+Cadastro de Voos                                        |
+Cadastros (x13)                                         |
+Caixa Adicional                                         |
+Caixa Exclusiva                                         |
+Cancelación de pedido                                   |
+Cancelamento de Pedido                                  |
+Cancelamento de remessa                                 |
+Cenário 2 – Conferência com alteração na lógica da ...  |
+Classificação de prioridade                             |
+Configuração da Matriz de Fragilidade                   |
+Configuração de Exceção de Leitura de Lote e Validade   |
+Configuração geral                                      |
+Configuração no Servidor Novo                           |
+Considerações Finais                                    |
+Construir banco de dados (x3)                           |
+Consulta de Grupos                                      |
+Consulta de ULDs e Cargas Paletizadas                   |
+Consulta de Usuários                                    |
+Controle de Acesso aos Dashboards                       |
+Controle de caixas plasticas                            |
+Controle de Estoque de Duas Empresas Diferentes (x4)    |
+Controle de Funcionalidades                             |
+Controle de Mistura de Categorias no Picking Fracio...  |
+Controle de posições / Gerenciamento de estoque         |
+Controle de Sessão                                      |
+Controle de Tolerância de Peso                          |
+Criar / Editar / Remover nível de acesso (x4)           |
+Criar /editar/remover/ativar mapa de rotas (x11)        |
+Criar/Editar/Remover nível de acesso (x4)               |
+Criar/Editar/Remover usuário (x5)                       |
+Criação da Tarefa de Auditoria (Supervisor)             |
+Criação da Tarefa de Movimentação (Supervisor)          |
+Criação de ULDs e Paletização de Cargas                 |
+CrossCheck na Rampa (x3)                                |
+Decanting                                               |
+Descida de pallet manual (x5)                           |
+Descrição da Funcionalidade                             |
+Descrição da Solução                                    |
+Detalhamento da solicitação adicional                   |
+Detalhamento Funcional                                  |
+Detalhes de transportes                                 |
+Dinâmica de Cores e Separação (Multi-Picking)           |
+Endereço (x11)                                          |
+Endpoint de destino (JSON Rest) (x2)                    |
+Entrada de Cargas                                       |
+Equipamentos dos processos automatizados                |
+Escopo de Telas                                         |
+Escrita e leitura em disco (x2)                         |
+Escrita e notificação de alarmes e dados (x2)           |
+Estações de trabalho (x2)                               |
+Estrutura do Posto de Coleta Virtual (x2)               |
+Etiqueta de Fornecedor Terceiro (sem código produtor)   |
+Etiqueta de pallet                                      |
+Etiqueta de produto                                     |
+Execução da Auditoria                                   |
+Execução da Coleta                                      |
+Exemplo de Configuração (Default)                       |
+Expedição (x2)                                          |
+Fechamento (x9)                                         |
+Fechamento de PTM                                       |
+Fluxo de Autenticação                                   |
+Fracionados (x8)                                        |
+Fracionados A (PBL - Fila Expressa)                     |
+Fracionados A2 & A3 (PBL – Linha Única)                 |
+Gerenciamento de mesas de saída (x2)                    |
+Gerenciamento de Posições de PTM                        |
+Gerenciamento de produtos (x2)                          |
+Gerenciamento de sequência de paletes                   |
+Gerenciamento de sub-áreas (x2)                         |
+Gerenciamento do sistema (x2)                           |
+Grupos de acesso                                        |
+Home (x8)                                               |
+Identificação do Operador                               |
+Inclusão de Usuários no Posto                           |
+Inclusão do campo Data de Finalização                   |
+Inclusão do Campo loteImpresso na Estrutura de Reme...  |
+Inclusão do Campo “Tarefa” na Etiqueta                  |
+Indução Volumes                                         |
+Indução Volumes Pallet Fechado                          |
+Informações disponíveis no PTM                          |
+Integrações                                             |
+Início da Tarefa (Operador)                             |
+Leitura dos itens                                       |
+Liberação de Portas                                     |
+Limitações Conhecidas                                   |
+Limpeza de Canal                                        |
+Listagem de produtos (x2)                               |
+Login (x17)                                             |
+Login de Operador via Crachá                            |
+Logs e Auditoria                                        |
+Lógica de Desvio da Balança                             |
+Lógica de Login e Sessão                                |
+Manutenção de Transporte                                |
+Mapeamento dos processos Velox por View (x2)            |
+Melhorias nos Processos de Separação Fracionados        |
+Missões                                                 |
+Modos de Operação                                       |
+Monitoramento de LED sem Coleta                         |
+Movimentação e Posição no Transfer (Porta-Pallet)       |
+Movimento carga (x2)                                    |
+Multi-Volumes                                           |
+Novas Funcionalidades                                   |
+Nível de acesso (x17)                                   |
+Obtenção do Token                                       |
+Ocorrências (x4)                                        |
+OPC client API (x2)                                     |
+Operação (x7)                                           |
+Operação de Expedição: Put-To-Pallet (PTP)              |
+Operação Velox                                          |
+Opções de impressoras                                   |
+Pallet Box                                              |
+Pallet Closing Triggers                                 |
+Parametrização de Conferência automática                |
+Parametrizações Gerais e Regras de Negócio              |
+Parâmetro (x3)                                          |
+Parâmetros Configuráveis do Sistema                     |
+Parâmetros do sistema (x2)                              |
+PEDIDOS                                                 |
+Perfis de Acesso e Cadastro de Usuários                 |
+Porta-Palete para Canal de Picking dinâmico (x2)        |
+Problema                                                |
+Processo de Coleta PVAR                                 |
+Processo de Movimentação Forçada de Estoque (x7)        |
+Processo de Picking Exceção (x2)                        |
+Produtos                                                |
+Proposito da especificação de software                  |
+Put To Monitor – PTM                                    |
+Randomização de quantidade para coleta                  |
+Realocação de pallets de alta estação (x2)              |
+Realocação de pallets de baixa estação (x2)             |
+Recall (x4)                                             |
+Reconhecimento (Aceite)                                 |
+Reenvio de Tarefa                                       |
+Regras de Decisão no Modo Crosscheck                    |
+Regras de Negócio                                       |
+Regras funcionais (x4)                                  |
+Relatório conferência                                   |
+Relatório – Log (Novo)                                  |
+Requisitos do Sistema (x2)                              |
+Requisitos Funcionais (x7)                              |
+Resultados do Cubômetro                                 |
+Resumo do Fluxo                                         |
+RF13 – Gerenciamento de conexão com servidor OPC do...  |
+RF23 – Gerenciamento de zonas de saída (x2)             |
+RF32.1 – Area (x2)                                      |
+RF32.2 – Subárea (x2)                                   |
+RF32.5 – Motivos de rejeição (x2)                       |
+RF32.6 – Produtos (x2)                                  |
+RF37 – Estatísticas de movimentos do armazém (x2)       |
+RF7.14 – Listar missões (x2)                            |
+RF8.1.2 – Necessidade de transporte (x2)                |
+Rota (x12)                                              |
+Saída da Inspeção                                       |
+Saída do AC para Canais de Picking comuns (x2)          |
+Se a Transportadora Realiza Paletização (x2)            |
+Segurança (x2)                                          |
+Seleção de Lote                                         |
+Separação (Coleta)                                      |
+Separação Fracionados (x3)                              |
+SEPARAÇÃO PBL (PICKING BY LIGHT) (x2)                   |
+Separação – Full Case                                   |
+Sequência de coleta                                     |
+Solicitação de Aditivo (x2)                             |
+Solicitação – Operador com Múltiplas Rampas             |
+Status por Posto                                        |
+Sugestão de Alocação (x2)                               |
+Tabela de Eventos                                       |
+Tabela de Pendência no WMS                              |
+TABELA: ACESSO                                          |
+TABELA: FUNCAO                                          |
+TABELA: GRUPO                                           |
+TABELA: TELA                                            |
+TABELA: USUARIO                                         |
+TABELA: USUARIO_GRUPO                                   |
+Tela de endereços (x2)                                  |
+Tela de Gestão de Endereços (x3)                        |
+Tela de Gestão de Endereços,                            |
+Tela de Login (x5)                                      |
+Tela de login (x2)                                      |
+Tela de Operadores por Posto                            |
+Tela Home (x3)                                          |
+Tela para incluir/editar/remover motivos de reimpre...  |
+Tela principal (x13)                                    |
+Telas do sistema (x2)                                   |
+Tipo de separação                                       |
+Tolerância (x2)                                         |
+Tradução do traceability code (BARCODE) - OK            |
+Transferencia de pallets completos (TPC) (x2)           |
+Transferência de pallets incompletos (x2)               |
+Transporte Aeronave                                     |
+Tratativa SKU Terceiro                                  |
+Triagem dos itens                                       |
+Troca de senha (x2)                                     |
+Usuário (x12)                                           |
+Usuários (x12)                                          |
+Validação na Rampa (x2)                                 |
+Vincular funcionalidades ao perfil (x2)                 |
+Visão Geral do Fluxo                                    |
+ Relatório – Produção por Período (x2)                 |
+
+## [SISTEMA] dashboards-relatorios  (579 seções | 211 únicos)
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+12.2  Desktop Supervisório                              |
+6.29 (x2)                                               |
+[SEM TÍTULO] (x6)                                       |
+Adequação do Dashboard – Relatório Coleta/Posto         |
+Ajustes de sistema Velox                                |
+Alocação do Item                                        |
+Alterações na Box Cubo                                  |
+Anomalias por SKU/Posição                               |
+Arquitetura de Dados — Nova Tabela LOG_RAMPA_CHEIA      |
+Arquivos laudos                                         |
+Auditoria de Estoque (x5)                               |
+Baús Aceitos pela Automação                             |
+Cadastro (x12)                                          |
+Cadastro de equipamentos (x2)                           |
+Caixas                                                  |
+Campos da Tela                                          |
+Campos do Relatório de Inconsistências                  |
+Cancelamento de volumes FullCase                        |
+Carregamento da Doca                                    |
+Ciclo de Validação                                      |
+Configuração Cursor                                     |
+Configurações (x12)                                     |
+Consulta (x11)                                          |
+Consulta de Tipos de Inspeção                           |
+Consulta volume integrado (x15)                         |
+Consultas (x8)                                          |
+Contador de Separados / Pendentes                       |
+Contexto do projeto                                     |
+Controle de Estoque                                     |
+Crosscheck Velox x Dun                                  |
+Dados e Status Iniciais                                 |
+Dashboard (x10)                                         |
+DashBoard                                               |
+Dashboard de Coleta                                     |
+Dashboard de Fechamento de Cargas e Paletes             |
+Dashboard de Previsão Próximos Volumes por Rampa – ...  |
+Dashboard de Saturação de Rampa                         |
+Dashboard de Shorpicking                                |
+Dashboard Gerencial – Planejado vs Realizado            |
+Dashboard IA                                            |
+Dashboard Indução BK25 (MONITOR)                        |
+Dashboard Operacional – Visão por Lista de Remessas...  |
+Dashboard Operacional – Volumes por Loja por Rampa      |
+Dashboard Operação                                      |
+Dashboards                                              |
+Data e Hora                                             |
+Definição do Cálculo                                    |
+Definição Itens Conformes e Inconformes                 |
+Descrição da Funcionalidade                             |
+Desktop Supervisório (x3)                               |
+Escopo de Telas (x2)                                    |
+Escopo do Aditivo                                       |
+Especificação (x2)                                      |
+Estados Visuais dos Volumes                             |
+Estatística (x12)                                       |
+Estatística de downtime (x2)                            |
+Estatística de movimentos (x2)                          |
+Estatística de ocupação (x2)                            |
+Estatística de rejeitos de pallets (x2)                 |
+Estatísticas (x7)                                       |
+Estação de dashboard (x2)                               |
+Estação de supervisório (x4)                            |
+Estação de trabalho (Desktop)                           |
+Estação do Supervisório (x5)                            |
+Estações de trabalho (x4)                               |
+Estações de trabalho (DESKTOP) (x18)                    |
+Estoque                                                 |
+Estrutura do Dashboard                                  |
+Extração da passagem dos volumes                        |
+FlowHack (Baixo Giro)                                   |
+Fluxo de dados (x2)                                     |
+Fluxo de Trabalho (Workflow)                            |
+Fluxo Operacional                                       |
+Gerenciamento de Gaiola                                 |
+Gestão de Estoque                                       |
+Grid de Cards por Rampa                                 |
+Gráfico de Eficiência por Rampa                         |
+Guiado por inducción                                    |
+Heart beat (x2)                                         |
+Histórico de mapas                                      |
+Histórico de rampas                                     |
+Inclusão de LEDs Acionados                              |
+Inclusão de Novas Informações na Tela “Volumes”         |
+Inclusão de Novos Indicadores na Tela do PTM            |
+Indicadores de Cabeçalho                                |
+Indicadores do Dashboard                                |
+Informações exibidas na tela                            |
+Informes (x3)                                           |
+Iniciar Serviços (x3)                                   |
+Itens Incluídos na Nota Fiscal                          |
+KPIs Globais                                            |
+Linha C – Picking by monitor (x2)                       |
+Localizações ocupadas por classe ABC                    |
+Logs de erros (x2)                                      |
+Matriz de cobertura — Campos por View (x2)              |
+Matriz de Mensagens de Rejeito                          |
+Mensagens WS X MFC (x4)                                 |
+Mensagens WS x MFC (x15)                                |
+Mensagens WS x WCS (x3)                                 |
+Monitoramento (x2)                                      |
+Monitoramento de mensagens (x2)                         |
+Máquina de Plastico Bolha                               |
+Notas Fiscais Concluídas                                |
+Notas Fiscal Detalhada                                  |
+Novas Funcionalidades                                   |
+Novo Relatório de Conferência                           |
+Objetivo do Controle                                    |
+Ocorrências (x4)                                        |
+Operação (x5)                                           |
+Opção de Alternância na Tela de Monitoramento           |
+Orientación de inducción                                |
+Painel de KPI                                           |
+Pantalla de dirección                                   |
+Parâmetros de Configuração                              |
+Percentual de ocupação                                  |
+Performance de produtividade por rampa de saída         |
+Processo (Indução, avaliação, aprovação ou rejeito)     |
+Processo Operacional                                    |
+Processos (x7)                                          |
+Processos disparados pelos equipamentos (x2)            |
+Produtividade Operador Triagem                          |
+Produtividade por rampa de entrada                      |
+Produtividade Posto Retirada                            |
+Produtividade Posto Triagem                             |
+Produção (x2)                                           |
+Produção x Rampa                                        |
+Produção x Rejeito                                      |
+PTM (Put to Monitor) (x4)                               |
+Put To Monitor                                          |
+Put to Monitor PTM                                      |
+Regra de Abastecimento do Dashboard                     |
+Regra de Negócio — Chutes                               |
+Regras de Exibição e Contadores                         |
+Relatorios e Telas do sistema                           |
+Relatório da Nota Fiscal                                |
+Relatório de Acompanhamento                             |
+Relatório de Atendimento do Voo                         |
+Relatório de Auditoria de Confirmação de Separação      |
+Relatório de Auditoria de Tarefas                       |
+Relatório de Autonomia da Indução                       |
+Relatório de Conferência                                |
+Relatório de Conferência de Pallets                     |
+Relatório de Consumo de Caixas e Rastreabilidade        |
+Relatório de ocupação (x2)                              |
+Relatório de Produtividade Geral                        |
+Relatório de Produtividade x Posto                      |
+Relatório de Report Geral                               |
+Relatório Histórico da separação do pedido              |
+Relatório Pedido                                        |
+Relatório – Caixa (Ref.3)                               |
+Relatório – Saída por Rota (x2)                         |
+Relatórios (x33)                                        |
+Relatórios de Acompanhamento de produtividade           |
+Relatórios de Caixas Utilizadas                         |
+Relatórios do sistema (x10)                             |
+Relatórios do Sistema                                   |
+RELATÓRIOS DO SISTEMA (x2)                              |
+Relatórios e Consultas                                  |
+Relatórios e Dashboard (x3)                             |
+Relatórios e Telas do Sistema (x16)                     |
+Relatórios e telas do sistema (x7)                      |
+Relatórios e Telas do sistema (x26)                     |
+Relatórios e Telas do Sistema VELOX                     |
+Relatórios estatísticos (x2)                            |
+Relatórios On-line                                      |
+Requisitos do Sistema (x5)                              |
+Resumo de caixas por hora (x19)                         |
+Resumo de unidade por hora (x11)                        |
+Resumo de unidades por hora (x8)                        |
+Resumo de volumes por hora                              |
+Resumo por posto (x17)                                  |
+RF26 – Monitoração de armazém (x2)                      |
+RF27 – Monitoração de missões (x2)                      |
+RF28 – Monitoração dos equipamentos (x2)                |
+RF30 – Monitoramento de mensagens (x2)                  |
+RF36 – Estatísticas de ocupação (x2)                    |
+RF38 – Estatísticas de operação (x2)                    |
+RF39 – Estatísticas de rejeitos (x2)                    |
+RF42 – Relatório de portais ociosos (x2)                |
+RF43 – Relatório de produtividade por portal (x2)       |
+RF44 – Relatório de rejeito por portal (x2)             |
+RF45 – Relatório de pallets com status “Reservado p...  |
+RF46 – Relatório de armazenagem x data de produção ...  |
+Serviços                                                |
+Sinalização de Ociosidade – Alerta Visual da Rampa      |
+Sinalização de Picking Costas Linha Médio Giro          |
+Sinalização visual e encaminhamento para área de au...  |
+Solução Proposta (x2)                                   |
+SOLUÇÃO – NOVA REGRA DE ENVIO DO ShortIndicator         |
+Status do transelevador (x2)                            |
+Status Visual das Matrizes                              |
+Supervisório (x2)                                       |
+Tela 1 – Monitor em Tempo Real                          |
+Tela 2 — Relatório Histórico                            |
+Tela de monitoramento das docas                         |
+Tela de monitoramento por doca única                    |
+Tela de Romaneios (x4)                                  |
+Tela Inicial – Seleção de Rampa                         |
+Telas do Sistema (x2)                                   |
+Telas do sistema (x2)                                   |
+Terminal de consulta (x2)                               |
+Terminal de Consulta                                    |
+Teste IA                                                |
+Utilitários (x19)                                       |
+Validações de Integridade (x4)                          |
+Visão Geral da Tela                                     |
+Visão por Matriz – Barras de Progresso                  |
+Volume x Hora                                           |
+Workflow                                                |
+Zoneamento e Fluxo Físico (Layout)                      |
+ Relatório – Produção por Rampa(saída) (x2)            |
+
+## [INBOX] sem-match  (270 seções | 127 únicos)
+  Estas não foram roteadas para nenhum tópico. Decida o destino.
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+1 – Envio de remessas                                   |
+10.1       Estações de trabalho (DESKTOP)               |
+3 – SAP cria caixas e informa números ao WCS            |
+3.5.2 TELA DO PTW (PDV)                                 |
+3.6 Qualidade (x2)                                      |
+[SEM TÍTULO] (x64)                                      |
+Aplicação do FEFO na Seleção                            |
+Architecture and Hardware                               |
+ATRIBUTOS                                               |
+Atualização de Status                                   |
+Balanceamento                                           |
+Balança (x2)                                            |
+Balança 02 – Intermediaria (x2)                         |
+Base de Equipamentos CLARO                              |
+Cadastro das Cargas do Dia                              |
+Caixas BLUZ                                             |
+Cancelación del pedido                                  |
+Categorias                                              |
+Cenário Código de Barras "Virtual"                      |
+Cenários Operacionais                                   |
+Check List Vazio/Cheio                                  |
+Chegada a um ponto de decisão (x7)                      |
+Cierre del palé                                         |
+Consulta de Cargas do Dia                               |
+Consulta de Cargas Rejeitadas ou em Análise             |
+Consulta de Empresas Aéreas                             |
+Consulta de Voos                                        |
+Contagem das Posições                                   |
+Contexto Operacional                                    |
+Contingência                                            |
+Contingência Pallet (x2)                                |
+Corte de ULD                                            |
+Costas                                                  |
+CSV (x2)                                                |
+Cubing Intelligence and Fragility Matrix                |
+DEFINIÇÕES (x2)                                         |
+Dispenser paper – DSP                                   |
+Dispenser Paper – DSP                                   |
+Edição de Categorias                                    |
+Entregas – Documento RU (x2)                            |
+Equipamentos                                            |
+Especificação dos campos (x2)                           |
+Estação de trabalho (x4)                                |
+Estação de trabalho (Desktop)                           |
+Estação de trabalho - Rejeito                           |
+Estações de trabalho (x7)                               |
+Estações de trabalho (DESKTOP) (x5)                     |
+Estimativas e Reconhecimento                            |
+Etapas de la especificación de software (ES)            |
+Etapas de la Especificación de Software (ES)            |
+Exclusão de Categorias                                  |
+Execução e Continuidade das Coletas                     |
+Exportação                                              |
+Fluxo                                                   |
+Fluxo de comunicação do equipamento com servidor lo...  |
+Fluxograma (x7)                                         |
+Fragility Matrix (1 a 3)                                |
+Funcionalidades na Tela “Paletes”                       |
+Hinode                                                  |
+Identificação por IA                                    |
+Ilha Central (Posto 3 Compartilhado)                    |
+Impressão (x2)                                          |
+Inducción de volúmenes                                  |
+Informações da Mensagem de Checkout                     |
+Informações da Mensagem de Checkout - OK                |
+Inicialização da comunicação (x2)                       |
+Itens Fora da Automação                                 |
+Layout de impressão (Pedidos Shopee)                    |
+Limpeza de Canal de Buffer                              |
+Listagem de pallets (x2)                                |
+Lote Padrão (maioria dos itens)                         |
+Lote PFIX (Peso Fixo)                                   |
+Lógica de Status de Volumes                             |
+Matriz de Fragilidade (1 a 5)                           |
+Modelo de documento                                     |
+Normal                                                  |
+Nova Priorização Manual por Carga                       |
+Nova Tela – Tratamento de Master                        |
+o 3 – Se conferência = NOK. SAP faz a conferência a...  |
+Ocupação do armazém (x2)                                |
+Operação de Full Case                                   |
+Orientação de indução (x4)                              |
+Papel de Cada Sistema                                   |
+Pedido Divergente F9                                    |
+Pesagem e Etiquetagem Individual de Caixas de Papelão   |
+Priorização Manual (x5)                                 |
+Produção por Rampa                                      |
+Rampas                                                  |
+Rastreabilidade do Estoque                              |
+Registro de Cargas Rejeitadas ou em Análise             |
+Regra de Contingência para Volumes em Esteira           |
+Requisitos (x10)                                        |
+Requisição do Servidor Novo                             |
+Restrição a Categorias Cadastradas                      |
+Resultados do Cubômetro - OK                            |
+RF1.2.3 – Disponibilidade de posições livres (x2)       |
+RF1.4 – By-pass para mesa de saída (x2)                 |
+RF12 – Campo quantidade (x2)                            |
+RF18 – Consulta de pallets (x2)                         |
+RF24 – Gestão de pallets rejeitados (x2)                |
+RF3.4 – Priorização na sequência de retirada (x2)       |
+RF32.3 – Zonas (x2)                                     |
+RF32.4 – Movimentos (x2)                                |
+RF32.7 – Centros do SAP (x2)                            |
+RF33 – Configuração de faixas (de prazo de validade...  |
+RF8.2.2 – Transferência (x2)                            |
+RF8.4 – Status do pallet (x2)                           |
+RF9 – Parâmetros de arredondamento de pallets (x2)      |
+RQ2 – Disponibilidade (x5)                              |
+Seção Bicas em Evidência                                |
+Shipping Operation: Put-To-Pallet (PTP)                 |
+Sinaleiros                                              |
+Sistema do cliente valida as informações                |
+Stage de Pallets                                        |
+Status dos transportadores (x2)                         |
+Substituição de Palete da OT                            |
+TABELA: PALLET_ITENS                                    |
+Tela Bloqueio de endereço                               |
+Terminal de rejeito (x2)                                |
+Trata rejeito                                           |
+Tratativas Disponíveis                                  |
+Usar o Token nas Outras Requisições                     |
+Visualização das Matrizes                               |
+Volumes com ocorrência não bloqueiam a liberação de...  |
+Volumes Exceção (x5)                                    |
+XML                                                     |
+YAML (x2)                                               |
+
+## [INBOX] infra-sem-topico  (400 seções | 40 únicos)
+  Infra/hardware já confirmado para INBOX. Marque INFRA para confirmar ou mude.
+----------------------------------------------------------------------
+HEADING                                                 | DECISAO
+----------------------------------------------------------------------
+12.3 Servidor de aplicação + banco de dados             | INFRA
+Acesso Remoto                                           | INFRA
+Arquitetura de Hardware                                 | INFRA
+Especificação de Hardware (x8)                          | INFRA
+Especificação de hardware (x7)                          | INFRA
+ESPECIFICAÇÃO DE HARDWARE (x2)                          | INFRA
+Especificação de hardware de TI (x13)                   | INFRA
+Especificação de Hardware e TI (x2)                     | INFRA
+Hardware                                                | INFRA
+Infra de alimentação rede elétrica trifásica (x71)      | INFRA
+Infraestrutura                                          | INFRA
+Itens Incluídos no Fornecimento                         | INFRA
+Rede de dados e infra (Servidor)                        | INFRA
+Rede de dados e infra de rede e elétrica (Periféric...  | INFRA
+Rede de dados e infra de rede eletrica (Periféricos)    | INFRA
+Rede de dados e infra de rede elétrica (Periféricos...  | INFRA
+Rede de dados e infra de rede elétrica (periféricos...  | INFRA
+Rede de Dados e infra de rede elétrica (periféricos)    | INFRA
+Rede de dados e infra de rede elétrica (Servidor)       | INFRA
+Responsabilidades                                       | INFRA
+Servidor                                                | INFRA
+Servidor  Aplicação + Banco de dados                    | INFRA
+Servidor aplicação + banco (x5)                         | INFRA
+Servidor Aplicação + Banco de dados (x45)               | INFRA
+Servidor aplicação + banco de dados (x3)                | INFRA
+Servidor Aplicação + Banco de Dados (x2)                | INFRA
+Servidor de aplicação (x2)                              | INFRA
+Servidor de aplicação + banco de dados (x25)            | INFRA
+Servidor de aplicação + Banco de dados (x2)             | INFRA
+Servidor de banco de dados (x2)                         | INFRA
+Servidor de QA                                          | INFRA
+Servidor Local (On Premise) (x3)                        | INFRA
+Servidor Nuvem (Cloud) (x8)                             | INFRA
+Servidores (x19)                                        | INFRA
+Servidores – Local (On Premise) (x2)                    | INFRA
+VPN (x85)                                               | INFRA
+VPN e Acesso Remoto (x3)                                | INFRA
+VPN e acesso remoto (x3)                                | INFRA
+VPN E ACESSO REMOTO (x2)                                | INFRA
+VPN e Acesso remoto                                     | INFRA
+
+================================================================================
+TOTAL HEADINGS ÚNICOS: 2319
+================================================================================

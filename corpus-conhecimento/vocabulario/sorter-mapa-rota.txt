@@ -1,0 +1,12 @@
+# Sorter Mapa de Rota
+mapa de rota, mapa de sorter, mapa do sorter, mapa sorter, sorter map
+rampas do sorter, rampas sorter, saídas do sorter, saidas do sorter
+funcionalidade de mapa de sorter, funcionalidade mapa sorter no wcs
+cadastro de mapa de desvio, mapa de desvio velox, desvio sorter
+regras de rota, regra de rampa, rota sorter, regra sorter
+aloca pallet sorter, alocação sorter, transportadora rampa
+ordens de transporte, cancelamento de OT, CATO sorter
+cenário de desvio, alteração na regra do sorter, desvio por ID
+route map sorter, ramp assignment, carrier ramp
+balanceamento entre rampas, balanceamento entre transportadoras
+funcionalidad de mapas del sorter en wcs

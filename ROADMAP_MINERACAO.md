@@ -5,12 +5,37 @@
 
 ---
 
-## Sequência acordada (próximas sessões)
+## Arquitetura v2 — extração desacoplada do roteamento (decisão 23/06/2026)
 
-1. **Scrap 1 concluído** → reclassifier → RAWs validados (OneDrive: ES + Aditivos)
-2. **Scrap 2** → rede da empresa (R:\ ou U:\) → reclassifier novamente
-3. Pedir aprovação antes de prosseguir para síntese
-4. **⚠ Mudar para Opus** → gerar DOSSIE + insights simultaneamente por tópico
+O minerador acoplava abrir-docx + rotear → toda mudança de critério custava 1h de rede.
+Agora separado em etapas; só a etapa A toca a rede (1×), o resto é local e instantâneo:
+
+| Etapa | Script | O que faz | Custo |
+|---|---|---|---|
+| A. Extrair | `extrator.py` | docx → `corpus-full.jsonl` (texto integral, colapsa revisões) | ~30min, última vez na rede |
+| B. Descobrir | `descobridor.py` | clusteriza, revela tópicos órfãos | segundos |
+| C. Rotear | `roteador.py` | critérios → RAWs + `_inbox.jsonl` (lossless) | segundos |
+| D. Auditar | `auditor.py` | regra JSON + coerência | segundos |
+
+**Critérios de roteamento (ordem):** 1) JSON no corpo → integracao (regra dura);
+2) sinal forte integração → integracao; 3) estrutural/proposta → INBOX;
+4) semântico (embed+fuzzy); 5) sem match → INBOX.
+
+**Colapso de revisões:** mantém só a revisão mais recente por (projeto, doc-base).
+601 docs brutos → 338 após colapso.
+
+**INBOX lossless:** `_inbox.jsonl` guarda texto integral + id (não trunca em 200 chars
+como o `_INBOX_REVISAR.md` antigo) → reprocessável fielmente.
+
+## Sequência acordada
+
+1. **Scrap 1+2 concluídos** (legado v1) — OneDrive + Rede, ~2.550 seções em RAWs
+2. **Auditoria revelou:** 8.948 em quarentena truncada (muito conteúdo de integração perdido)
+3. **Re-arquitetura v2:** extrair tudo 1× → rotear/auditar local infinitas vezes
+4. Descoberta de tópicos órfãos → criar vocabs novos (Opus)
+5. Rotear + auditar até quarentena mínima
+6. Resíduo irredutível → validação manual do Raphael
+7. **Depois:** Opus gera DOSSIE + insights por tópico
 
 ---
 

@@ -1,0 +1,33 @@
+# cadastros-acessos — usuários, login, níveis de acesso, segurança, cadastros mestres
+cadastro de usuário
+cadastro de usuários
+criar usuário
+editar usuário
+remover usuário
+criar/editar/remover usuário
+gestão de usuários
+gerenciamento de usuários
+consulta de usuários
+nível de acesso
+níveis de acesso
+grupo de acesso
+grupos de acesso
+perfil de acesso
+perfil de usuário
+controle de acesso
+permissão de acesso
+permissões
+login
+tela de login
+autenticação
+autenticação via sso
+sso
+single sign-on
+credenciais
+senha
+segurança de acesso
+cadastro de produtos
+cadastro de transportadoras
+parametrização
+parâmetros do sistema
+tela de cadastro

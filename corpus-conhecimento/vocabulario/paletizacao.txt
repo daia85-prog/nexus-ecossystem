@@ -1,0 +1,11 @@
+# Paletização
+fechamento do pallet, fechamento de pallet, fechamento de paletes, fechar pallet
+gatilhos de fechamento de pallet, trigger fechamento pallet
+aloca pallet, alocação de pallet, alocação no pallet, pallet allocation
+cubagem de pallet, cubagem de palete, pallet cubing, cubing pallet
+routeiner, roteirizador de pallet, pallet routeiner
+regra de bypass pallet, pallet monocliente, monocliente, bypass pallet
+abertura de pallet, pallet expedição, pallet fechado
+palete fechado, pallet completo, paletização automática
+fechamento do palete, palete completo, finalizar palete
+alocação por pedidos completos no pallet, pallet closing triggers
