@@ -32,3 +32,6 @@ ed-knowledge/output/
 
 # Python virtual environment
 .venv/
+
+# Local Netlify folder
+.netlify

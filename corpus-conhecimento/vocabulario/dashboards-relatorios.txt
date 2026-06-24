@@ -1,0 +1,34 @@
+# dashboards-relatorios — dashboards, relatórios, KPIs, telas de consulta/monitoramento
+dashboard
+dashboards
+dashboard operacional
+painel operacional
+painel de controle
+relatório
+relatórios
+relatório de produtividade
+relatório de ocupação
+relatório de conferência
+relatório de auditoria
+relatório da nota fiscal
+kpi
+kpis
+indicador
+indicadores
+indicadores de desempenho
+indicadores operacionais
+tela de consulta
+telas do sistema
+relatórios e telas do sistema
+monitoramento
+tela de monitoramento
+visão geral do processo
+gráfico de eficiência
+estatística
+estatísticas
+produtividade por rampa
+produtividade por operador
+resumo por posto
+resumo de unidades por hora
+resumo de caixas por hora
+estrutura do dashboard

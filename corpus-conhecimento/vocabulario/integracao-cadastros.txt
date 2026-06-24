@@ -1,0 +1,11 @@
+# Integração Cadastros (Master Data Sync)
+produto POST, produto create, SKU integração, produto API
+cadastrar produtos, deletar produtos, integração de produtos, products API
+lote integração, batch integração, lote POST, cadastrar lotes, deletar lotes
+transportadora integração, cadastrar transportadora, deletar transportadora
+integração de cadastro de produtos e embalagens, master data sync
+dados mestre integração, product master data, SKU master
+produto (post), produto create endpoint
+Pollux produtos, Vênus produtos, listar produtos, listar transportadoras
+embalagem integração, packaging master data
+cadastro de materiais automação, materiais integração

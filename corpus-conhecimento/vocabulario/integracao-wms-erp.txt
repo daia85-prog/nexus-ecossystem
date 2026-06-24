@@ -1,0 +1,12 @@
+# Integração WMS-ERP (SAP)
+WMTORD, wmtord, ordem de transporte SAP, WM order
+WMTOCO, wmtoco, TOCO, confirmação SAP, confirmação de ordem de transporte
+WMCATO, wmcato, CATO, cancelamento SAP, cancelamento de ordem de transporte
+IDOC, iDoc, idoc, remessa SAP, criação de ondas SAP
+SAP WM, SAP EWM, SAP integração, ERP integração, SAP warehouse management
+remessa SAP, ordem de transporte SAP, OT SAP
+cancelamento OT, estorno OT, CATO estorno
+MTO, MTP, MTR, mata trabalhos, cancelamento de trabalhos SAP
+TORD, criação de OT, deleção de ondas
+IDoc remessa, IDoc cancelamento, IDoc ondas
+integração SAP WM, EWM interface

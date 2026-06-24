@@ -15,3 +15,28 @@ conveyor de saída
 conveyor de saida
 esteira de expedição
 esteira de expedicao
+
+# --- PLC e portal de câmera (decisão Raphael 23/06: ficam no sorter) ---
+plc
+clp
+funcionamento do plc
+troca de mensagens plc
+plc x mfc
+plcxmfc
+mfc
+portal de câmera
+portal de camera
+portal de leitura
+câmera de leitura
+camera de leitura
+leitura de câmera
+leitura por câmera
+arco de leitura
+túnel de leitura
+tunel de leitura
+scanner de indução
+leitura automática de código de barras
+recirculação
+rejeito do sorter
+balança do sorter
+dimensionador
