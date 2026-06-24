@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fcaeb09e9e69eb33",
+        "id": "f8e87ccc6c4b1fee",
         "type": "tabs",
         "children": [
           {
-            "id": "cbdc2bf95da838db",
+            "id": "0eb6a7486e017e9d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,12 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "cbdc2bf95da838db",
+  "active": "e6be7af8b013ae9d",
   "lastOpenFiles": [
+    "ptm.md",
+    "picking-pbl.md",
+    "demos/database.md",
+    "corpus-conhecimento/relatorio-auditoria-links-resolvidos.md",
     "src/lib/kickoffMeta.ts.tmp.7020.c69b7b99339b",
     "src/pages/KickoffPage.tsx.tmp.7020.df335f8a8264",
     "src/pages/KickoffPage.tsx.tmp.7020.638fbba920f8",
@@ -189,7 +193,6 @@
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.79c7c9485306",
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.97ff310e3aae",
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.601936030a2b",
-    "ed-knowledge/json-docs-v3.md.tmp.14528.b2f0724edf02",
     "README.md",
     "NEXUS_FEATURES.md",
     "verify_kickoff_open.png",
@@ -220,9 +223,6 @@
     "node_modules/playwright/lib/agents/playwright-test-generator.agent.md",
     "node_modules/playwright/lib/agents/playwright-test-generate.prompt.md",
     "node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md",
-    "node_modules/resolve/SECURITY.md",
-    "node_modules/util-deprecate/History.md",
-    "node_modules/tslib/README.md",
-    "node_modules/eslint-plugin-react-hooks/README.md"
+    "node_modules/resolve/SECURITY.md"
   ]
 }

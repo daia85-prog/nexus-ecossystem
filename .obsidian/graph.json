@@ -2,21 +2,50 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": true,
-  "hideUnresolved": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
+  "colorGroups": [
+    {
+      "query": "path:corpus-conhecimento/blocos  ",
+      "color": {
+        "a": 1,
+        "rgb": 15254807
+      }
+    },
+    {
+      "query": "section:(insights)",
+      "color": {
+        "a": 1,
+        "rgb": 9520080
+      }
+    },
+    {
+      "query": "section:(README)",
+      "color": {
+        "a": 1,
+        "rgb": 1399151
+      }
+    },
+    {
+      "query": "section:(MOC)",
+      "color": {
+        "a": 1,
+        "rgb": 11474968
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.05413136608380901,
-  "close": false
+  "textFadeMultiplier": -2,
+  "nodeSizeMultiplier": 1.14417879417879,
+  "lineSizeMultiplier": 0.492203742203742,
+  "collapse-forces": false,
+  "centerStrength": 0.566528066528067,
+  "repelStrength": 20,
+  "linkStrength": 0.786902286902287,
+  "linkDistance": 500,
+  "scale": 0.05034417736651744,
+  "close": true
 }
