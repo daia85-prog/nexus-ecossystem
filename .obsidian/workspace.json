@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f8e87ccc6c4b1fee",
+        "id": "18171c7d7dbe3f6a",
         "type": "tabs",
         "children": [
           {
-            "id": "0eb6a7486e017e9d",
+            "id": "a7065e119f7ecbed",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 259.5
   },
   "right": {
     "id": "805f28042437da32",
@@ -176,10 +176,21 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "e6be7af8b013ae9d",
+  "active": "a7065e119f7ecbed",
   "lastOpenFiles": [
-    "ptm.md",
+    "insights/order-start.INSIGHTS.md",
+    "corpus-conhecimento/blocos/entrada/order-start/order-start.md",
+    "insights/packing.INSIGHTS.md",
+    "insights",
+    "insights/picking-pallet.INSIGHTS.md",
+    "insights/conferencia-manual.INSIGHTS.md",
+    "insights/put-to-wall.INSIGHTS.md",
+    "corpus-conhecimento/insights/separacao/picking-cart.INSIGHTS.md",
+    "corpus-conhecimento/blocos/separacao/picking-pallet/picking-pallet.md",
+    "corpus-conhecimento/blocos/entrada/order-start/ED_CARD.md",
+    "corpus-conhecimento/blocos/entrada/order-start/order-start.RAW.md",
     "picking-pbl.md",
+    "ptm.md",
     "demos/database.md",
     "corpus-conhecimento/relatorio-auditoria-links-resolvidos.md",
     "src/lib/kickoffMeta.ts.tmp.7020.c69b7b99339b",
@@ -192,7 +203,6 @@
     "src/pages/KickoffPage.tsx.tmp.14528.c5442ed12eff",
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.79c7c9485306",
     "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.97ff310e3aae",
-    "ed-knowledge/PROMPT_SISTEMA_v5_7.md.tmp.14528.601936030a2b",
     "README.md",
     "NEXUS_FEATURES.md",
     "verify_kickoff_open.png",
@@ -211,18 +221,8 @@
     "node_modules/playwright-core/lib/tools/cli-client/skill/references/running-code.md",
     "node_modules/playwright-core/lib/tools/cli-client/skill/references/request-mocking.md",
     "node_modules/playwright-core/lib/tools/cli-client/skill/references/playwright-tests.md",
-    "node_modules/playwright-core/lib/tools/cli-client/skill/references/element-attributes.md",
     "node_modules/playwright-core/lib/vite/dashboard/assets/safari-na3_-uQk.svg",
     "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-nightly-Cp5nfeDT.svg",
-    "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-beta-k3eOH_eK.svg",
-    "node_modules/playwright-core/lib/tools/trace/SKILL.md",
-    "node_modules/playwright/lib/agents/playwright-test-planner.agent.md",
-    "node_modules/playwright/lib/agents/playwright-test-plan.prompt.md",
-    "node_modules/playwright/lib/agents/playwright-test-healer.agent.md",
-    "node_modules/playwright/lib/agents/playwright-test-heal.prompt.md",
-    "node_modules/playwright/lib/agents/playwright-test-generator.agent.md",
-    "node_modules/playwright/lib/agents/playwright-test-generate.prompt.md",
-    "node_modules/playwright/lib/agents/playwright-test-coverage.prompt.md",
-    "node_modules/resolve/SECURITY.md"
+    "node_modules/playwright-core/lib/vite/dashboard/assets/firefox-beta-k3eOH_eK.svg"
   ]
 }

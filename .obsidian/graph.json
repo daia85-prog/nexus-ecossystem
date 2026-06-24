@@ -8,35 +8,49 @@
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:corpus-conhecimento/blocos  ",
+      "query": "file:(RAW)",
       "color": {
         "a": 1,
-        "rgb": 15254807
+        "rgb": 16514816
       }
     },
     {
-      "query": "section:(insights)",
+      "query": "file:(README)",
       "color": {
         "a": 1,
-        "rgb": 9520080
+        "rgb": 10742015
       }
     },
     {
-      "query": "section:(README)",
-      "color": {
-        "a": 1,
-        "rgb": 1399151
-      }
-    },
-    {
-      "query": "section:(MOC)",
+      "query": "file:(MOC)",
       "color": {
         "a": 1,
         "rgb": 11474968
       }
+    },
+    {
+      "query": "file:(DOSSIE)",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "file:(ED_CARD)",
+      "color": {
+        "a": 1,
+        "rgb": 16711867
+      }
+    },
+    {
+      "query": "file:(INSIGHTS)",
+      "color": {
+        "a": 1,
+        "rgb": 16749824
+      }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": -2,
   "nodeSizeMultiplier": 1.14417879417879,
@@ -46,6 +60,6 @@
   "repelStrength": 20,
   "linkStrength": 0.786902286902287,
   "linkDistance": 500,
-  "scale": 0.05034417736651744,
+  "scale": 0.0078125,
   "close": true
 }
