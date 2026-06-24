@@ -1,0 +1,51 @@
+{
+  "topicos_concluidos": [
+    "conferencia-manual"
+  ],
+  "topicos_com_erro": [
+    "order-start",
+    "cubagem",
+    "recebimento-armazenagem",
+    "picking-cart",
+    "picking-fullcase",
+    "picking-pallet",
+    "shortpicking",
+    "picking-pbl",
+    "put-to-wall",
+    "conferencia",
+    "packing",
+    "packing-termolabil",
+    "sorter",
+    "sorter-rejeito",
+    "sorter-inducao",
+    "sorter-mapa-rota",
+    "paletizacao",
+    "ptl-alocacao",
+    "ptm",
+    "etiquetas",
+    "reabastecimento",
+    "inventario",
+    "integracao",
+    "integracao-wcs-wms",
+    "integracao-pedidos",
+    "integracao-wms-erp",
+    "integracao-cadastros",
+    "cadastros-acessos",
+    "dashboards-relatorios"
+  ],
+  "desvios_coletados": {
+    "checklist-carregamento": [
+      {
+        "heading": "Check List Vazio/Cheio",
+        "topico_sugerido": "checklist-carregamento",
+        "bloco_sugerido": "carregamento",
+        "razao": "Descreve checklist de inspeção de caminhão (vazio/cheio) para carregamento, processo distinto da conferência de volumes.",
+        "conteudo_chave": "Tela de configuração de perguntas dos checklists inicial e final de caminhão; regras de início de separação/carregamento conforme tipo de pallet (estivado/palletizado); registro de evidências (foto, motivo, observação); atualização automática de placa via IDOC SAP; campos do checklist final (temperatura, IDs de colaboradores, quantidade/tipo de pallet, lacre); disparo de minuta de carregamento e IDOC ao SAP.",
+        "fonte": "conferencia-manual"
+      }
+    ]
+  },
+  "novos_topicos_criados": [],
+  "fase2_concluida": false,
+  "ultima_atualizacao": "2026-06-24"
+}
