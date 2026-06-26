@@ -1,6 +1,6 @@
 # Mudancas desde snapshot de 16/06/2026
 
-> Ultimo sync: 22/06/2026 07:28
+> Ultimo sync: 26/06/2026 09:15
 > Fork: [daia85-prog/nexus-ecossystem](https://github.com/daia85-prog/nexus-ecossystem)
 > Original: [RaphaelCerri/nexus-ecossystem](https://github.com/RaphaelCerri/nexus-ecossystem)
 
@@ -9,6 +9,13 @@
 ## Commits do Raphael desde o snapshot
 
 ```
+b751116 obisidian
+dac19d4 obisidian
+bd02004 obisidian
+fc648a4 obisidian
+6aced2d backup
+d736c33 Fase 1 - Dossiês
+cdcdd7e scraped and organized
 6595e70 Mineracao Scrap 1+2 + Automacao Apontamento de Horas
 d2afa40 alterações
 b8c1bf4 alterações no ED
@@ -19,53 +26,254 @@ b8c1bf4 alterações no ED
 ## Arquivos modificados desde o snapshot
 
 ```
- .gitignore                                         |     3 +
- .obsidian/graph.json                               |     6 +-
- .obsidian/workspace.json                           |    14 +-
- ROADMAP_MINERACAO.md                               |    97 +
- corpus-conhecimento/_INBOX_REVISAR.md              | 50965 +++++++++++++++++++
+ .gitignore                                         |     6 +
+ .netlify/netlify.toml                              |    45 +
+ .netlify/state.json                                |     3 +
+ .obsidian/graph.json                               |    65 +-
+ .obsidian/workspace.json                           |    82 +-
+ ROADMAP_MINERACAO.md                               |   122 +
+ _VALIDACAO_HEADINGS.txt                            |  2432 ++
+ corpus-conhecimento/.obsidian/app.json             |     1 +
+ corpus-conhecimento/.obsidian/appearance.json      |     1 +
+ corpus-conhecimento/.obsidian/core-plugins.json    |    33 +
+ corpus-conhecimento/.obsidian/graph.json           |    35 +
+ corpus-conhecimento/.obsidian/workspace.json       |   190 +
+ corpus-conhecimento/MOC-Conferencia.md             |    28 +
+ corpus-conhecimento/MOC-Entrada.md                 |    26 +
+ corpus-conhecimento/MOC-Estoque.md                 |    25 +
+ corpus-conhecimento/MOC-Expedicao.md               |    31 +
+ corpus-conhecimento/MOC-Integracao.md              |    28 +
+ corpus-conhecimento/MOC-Separacao.md               |    30 +
+ corpus-conhecimento/_AUDITORIA.md                  |    96 +
+ corpus-conhecimento/_ED/_GUIA_ED.md                |    79 +
+ corpus-conhecimento/_ED/_ROUTER.json               |   209 +
+ corpus-conhecimento/_INBOX_REVISAR.md              |  2924 ++
+ corpus-conhecimento/_REVISAO_TOPICOS.md            |   105 +
  corpus-conhecimento/_ROUTING.md                    |    32 +
+ corpus-conhecimento/_inbox.jsonl                   |   730 +
+ .../carregamento/checklist-carregamento/DOSSIE.md  |    62 +
+ .../carregamento/checklist-carregamento/ED_CARD.md |    91 +
+ .../checklist-carregamento.RAW.md                  |    12 +
+ .../insights/checklist-carregamento.INSIGHTS.md    |    29 +
  corpus-conhecimento/blocos/conferencia/.gitkeep    |     0
- .../conferencia/conferencia/conferencia.RAW.md     |  2714 +
- .../blocos/conferencia/packing/packing.RAW.md      |   761 +
+ .../conferencia/conferencia-manual/DOSSIE.md       |   126 +
+ .../conferencia/conferencia-manual/ED_CARD.md      |    74 +
+ .../conferencia-manual/conferencia-manual.RAW.md   |   119 +
+ .../conferencia-manual/conferencia-manual.md       |    33 +
+ .../insights/conferencia-manual.INSIGHTS.md        |    64 +
+ .../blocos/conferencia/conferencia/DOSSIE.md       |    94 +
+ .../blocos/conferencia/conferencia/ED_CARD.md      |    59 +
+ .../conferencia/conferencia/conferencia.RAW.md     |  1376 +
+ .../blocos/conferencia/conferencia/conferencia.md  |    32 +
+ .../conferencia/insights/conferencia.INSIGHTS.md   |    44 +
+ .../blocos/conferencia/cross-check/DOSSIE.md       |    73 +
+ .../blocos/conferencia/cross-check/ED_CARD.md      |    67 +
+ .../conferencia/cross-check/cross-check.RAW.md     |    28 +
+ .../blocos/conferencia/cross-check/cross-check.md  |    33 +
+ .../cross-check/insights/cross-check.INSIGHTS.md   |    37 +
+ .../conferencia/packing-termolabil/DOSSIE.md       |    71 +
+ .../conferencia/packing-termolabil/ED_CARD.md      |    62 +
+ .../insights/packing-termolabil.INSIGHTS.md        |    38 +
+ .../packing-termolabil/packing-termolabil.RAW.md   |    41 +
+ .../packing-termolabil/packing-termolabil.md       |    32 +
+ .../blocos/conferencia/packing/DOSSIE.md           |    86 +
+ .../blocos/conferencia/packing/ED_CARD.md          |    84 +
+ .../packing/insights/packing.INSIGHTS.md           |    45 +
+ .../blocos/conferencia/packing/packing.RAW.md      |   689 +
+ .../blocos/conferencia/packing/packing.md          |    32 +
  corpus-conhecimento/blocos/entrada/.gitkeep        |     0
- .../blocos/entrada/cubagem/cubagem.RAW.md          |  1314 +
- .../blocos/entrada/order-start/order-start.RAW.md  |  3340 ++
+ .../blocos/entrada/cubagem/DOSSIE.md               |    90 +
+ .../blocos/entrada/cubagem/ED_CARD.md              |    55 +
+ .../blocos/entrada/cubagem/cubagem.RAW.md          |  1546 +
+ .../blocos/entrada/cubagem/cubagem.md              |    33 +
+ .../entrada/cubagem/insights/cubagem.INSIGHTS.md   |    43 +
+ .../blocos/entrada/order-start/DOSSIE.md           |    88 +
+ .../blocos/entrada/order-start/ED_CARD.md          |    64 +
+ .../order-start/insights/order-start.INSIGHTS.md   |    42 +
+ .../blocos/entrada/order-start/order-start.RAW.md  |  4192 +++
+ .../blocos/entrada/order-start/order-start.md      |    33 +
+ .../entrada/recebimento-armazenagem/DOSSIE.md      |    89 +
+ .../entrada/recebimento-armazenagem/ED_CARD.md     |    62 +
+ .../insights/recebimento-armazenagem.INSIGHTS.md   |    45 +
+ .../recebimento-armazenagem.RAW.md                 |  3741 +++
+ .../recebimento-armazenagem.md                     |    34 +
  corpus-conhecimento/blocos/estoque/.gitkeep        |     0
- .../blocos/estoque/inventario/inventario.RAW.md    |   768 +
- .../estoque/reabastecimento/reabastecimento.RAW.md |  1270 +
+ .../blocos/estoque/inventario/DOSSIE.md            |   101 +
+ .../blocos/estoque/inventario/ED_CARD.md           |   109 +
+ .../inventario/insights/inventario.INSIGHTS.md     |    40 +
+ .../blocos/estoque/inventario/inventario.RAW.md    |  1254 +
+ .../blocos/estoque/inventario/inventario.md        |    33 +
+ .../blocos/estoque/reabastecimento/DOSSIE.md       |    89 +
+ .../blocos/estoque/reabastecimento/ED_CARD.md      |    83 +
+ .../insights/reabastecimento.INSIGHTS.md           |    43 +
+ .../estoque/reabastecimento/reabastecimento.RAW.md |  1764 ++
+ .../estoque/reabastecimento/reabastecimento.md     |    32 +
  corpus-conhecimento/blocos/expedicao/.gitkeep      |     0
- .../blocos/expedicao/etiquetas/etiquetas.RAW.md    |  1979 +
- .../expedicao/ptl-alocacao/ptl-alocacao.RAW.md     |  2112 +
- .../blocos/expedicao/sorter/sorter.RAW.md          |  4467 ++
+ .../blocos/expedicao/etiquetas/DOSSIE.md           |    81 +
+ .../blocos/expedicao/etiquetas/ED_CARD.md          |    87 +
+ .../blocos/expedicao/etiquetas/etiquetas.RAW.md    |  2314 ++
+ .../blocos/expedicao/etiquetas/etiquetas.md        |    33 +
+ .../etiquetas/insights/etiquetas.INSIGHTS.md       |    42 +
+ .../blocos/expedicao/paletizacao/DOSSIE.md         |    86 +
+ .../blocos/expedicao/paletizacao/ED_CARD.md        |    82 +
+ .../paletizacao/insights/paletizacao.INSIGHTS.md   |    44 +
+ .../expedicao/paletizacao/paletizacao.RAW.md       |  1055 +
+ .../blocos/expedicao/paletizacao/paletizacao.md    |    33 +
+ .../blocos/expedicao/ptl-alocacao/DOSSIE.md        |    78 +
+ .../blocos/expedicao/ptl-alocacao/ED_CARD.md       |    74 +
+ .../ptl-alocacao/insights/ptl-alocacao.INSIGHTS.md |    44 +
+ .../expedicao/ptl-alocacao/ptl-alocacao.RAW.md     |  2175 ++
+ .../blocos/expedicao/ptl-alocacao/ptl-alocacao.md  |    33 +
+ corpus-conhecimento/blocos/expedicao/ptm/DOSSIE.md |    90 +
+ .../blocos/expedicao/ptm/ED_CARD.md                |    89 +
+ .../blocos/expedicao/ptm/insights/ptm.INSIGHTS.md  |    48 +
+ .../blocos/expedicao/ptm/ptm.RAW.md                |   653 +
+ corpus-conhecimento/blocos/expedicao/ptm/ptm.md    |    33 +
+ .../blocos/expedicao/sorter-inducao/DOSSIE.md      |   100 +
+ .../blocos/expedicao/sorter-inducao/ED_CARD.md     |    91 +
+ .../insights/sorter-inducao.INSIGHTS.md            |    44 +
+ .../expedicao/sorter-inducao/sorter-inducao.RAW.md |   483 +
+ .../expedicao/sorter-inducao/sorter-inducao.md     |    33 +
+ .../blocos/expedicao/sorter-mapa-rota/DOSSIE.md    |    82 +
+ .../blocos/expedicao/sorter-mapa-rota/ED_CARD.md   |    97 +
+ .../insights/sorter-mapa-rota.INSIGHTS.md          |    44 +
+ .../sorter-mapa-rota/sorter-mapa-rota.RAW.md       |   831 +
+ .../expedicao/sorter-mapa-rota/sorter-mapa-rota.md |    33 +
+ .../blocos/expedicao/sorter-rejeito/DOSSIE.md      |    92 +
+ .../blocos/expedicao/sorter-rejeito/ED_CARD.md     |   118 +
+ .../insights/sorter-rejeito.INSIGHTS.md            |    42 +
+ .../expedicao/sorter-rejeito/sorter-rejeito.RAW.md |  1457 +
+ .../expedicao/sorter-rejeito/sorter-rejeito.md     |    34 +
+ .../blocos/expedicao/sorter/DOSSIE.md              |    95 +
+ .../blocos/expedicao/sorter/ED_CARD.md             |   110 +
+ .../expedicao/sorter/insights/sorter.INSIGHTS.md   |    45 +
+ .../blocos/expedicao/sorter/sorter.RAW.md          |  6635 ++++
+ .../blocos/expedicao/sorter/sorter.md              |    32 +
  corpus-conhecimento/blocos/integracao/.gitkeep     |     0
- .../blocos/integracao/integracao/integracao.RAW.md | 20018 ++++++++
+ .../integracao/integracao-cadastros/DOSSIE.md      |    92 +
+ .../integracao/integracao-cadastros/ED_CARD.md     |   114 +
+ .../insights/integracao-cadastros.INSIGHTS.md      |    47 +
+ .../integracao-cadastros.RAW.md                    |  1113 +
+ .../integracao-cadastros/integracao-cadastros.md   |    33 +
+ .../blocos/integracao/integracao-pedidos/DOSSIE.md |    77 +
+ .../integracao/integracao-pedidos/ED_CARD.md       |    97 +
+ .../insights/integracao-pedidos.INSIGHTS.md        |    44 +
+ .../integracao-pedidos/integracao-pedidos.RAW.md   |  3116 ++
+ .../integracao-pedidos/integracao-pedidos.md       |    34 +
+ .../blocos/integracao/integracao-wcs-wms/DOSSIE.md |   114 +
+ .../integracao/integracao-wcs-wms/ED_CARD.md       |   100 +
+ .../insights/integracao-wcs-wms.INSIGHTS.md        |    39 +
+ .../integracao-wcs-wms/integracao-wcs-wms.RAW.md   |   868 +
+ .../integracao-wcs-wms/integracao-wcs-wms.md       |    34 +
+ .../blocos/integracao/integracao-wms-erp/DOSSIE.md |    95 +
+ .../integracao/integracao-wms-erp/ED_CARD.md       |   120 +
+ .../insights/integracao-wms-erp.INSIGHTS.md        |    46 +
+ .../integracao-wms-erp/integracao-wms-erp.RAW.md   |   828 +
+ .../integracao-wms-erp/integracao-wms-erp.md       |    35 +
+ .../blocos/integracao/integracao/integracao.RAW.md | 30963 +++++++++++++++++++
+ .../blocos/integracao/integracao/integracao.md     |    32 +
+ .../separacao/cancelamento-pedidos/DOSSIE.md       |    88 +
+ .../separacao/cancelamento-pedidos/ED_CARD.md      |    67 +
+ .../cancelamento-pedidos.RAW.md                    |    46 +
+ .../cancelamento-pedidos/cancelamento-pedidos.md   |    33 +
+ .../insights/cancelamento-pedidos.INSIGHTS.md      |    37 +
+ .../blocos/separacao/picking-cart/DOSSIE.md        |    87 +
+ .../blocos/separacao/picking-cart/ED_CARD.md       |    82 +
+ .../picking-cart/insights/picking-cart.INSIGHTS.md |    45 +
  .../separacao/picking-cart/picking-cart.DOSSIE.md  |    26 +
- .../separacao/picking-cart/picking-cart.RAW.md     |   312 +
- .../separacao/shortpicking/shortpicking.RAW.md     |    80 +
- .../insights/separacao/picking-cart.INSIGHTS.md    |    23 +
+ .../separacao/picking-cart/picking-cart.RAW.md     |  2503 ++
+ .../blocos/separacao/picking-cart/picking-cart.md  |    33 +
+ .../blocos/separacao/picking-fullcase/DOSSIE.md    |    94 +
+ .../blocos/separacao/picking-fullcase/ED_CARD.md   |    90 +
+ .../insights/picking-fullcase.INSIGHTS.md          |    45 +
+ .../picking-fullcase/picking-fullcase.RAW.md       |   668 +
+ .../separacao/picking-fullcase/picking-fullcase.md |    33 +
+ .../blocos/separacao/picking-pallet/DOSSIE.md      |   104 +
+ .../blocos/separacao/picking-pallet/ED_CARD.md     |    72 +
+ .../insights/picking-pallet.INSIGHTS.md            |    42 +
+ .../separacao/picking-pallet/picking-pallet.RAW.md |   169 +
+ .../separacao/picking-pallet/picking-pallet.md     |    33 +
+ .../blocos/separacao/picking-pbl/DOSSIE.md         |    89 +
+ .../blocos/separacao/picking-pbl/ED_CARD.md        |   100 +
+ .../picking-pbl/insights/picking-pbl.INSIGHTS.md   |    45 +
+ .../separacao/picking-pbl/picking-pbl.RAW.md       |  1196 +
+ .../blocos/separacao/picking-pbl/picking-pbl.md    |    35 +
+ .../blocos/separacao/put-to-wall/DOSSIE.md         |    76 +
+ .../blocos/separacao/put-to-wall/ED_CARD.md        |    59 +
+ .../put-to-wall/insights/put-to-wall.INSIGHTS.md   |    42 +
+ .../separacao/put-to-wall/put-to-wall.RAW.md       |  1088 +
+ .../blocos/separacao/put-to-wall/put-to-wall.md    |    35 +
+ .../blocos/separacao/shortpicking/DOSSIE.md        |    95 +
+ .../blocos/separacao/shortpicking/ED_CARD.md       |    72 +
+ .../shortpicking/insights/shortpicking.INSIGHTS.md |    47 +
+ .../separacao/shortpicking/shortpicking.RAW.md     |   746 +
+ .../blocos/separacao/shortpicking/shortpicking.md  |    34 +
+ .../blocos/sistema/cadastros-acessos/DOSSIE.md     |    76 +
+ .../blocos/sistema/cadastros-acessos/ED_CARD.md    |   113 +
+ .../cadastros-acessos/cadastros-acessos.RAW.md     |  4789 +++
+ .../insights/cadastros-acessos.INSIGHTS.md         |    43 +
+ .../blocos/sistema/dashboards-relatorios/DOSSIE.md |    80 +
+ .../sistema/dashboards-relatorios/ED_CARD.md       |   132 +
+ .../dashboards-relatorios.RAW.md                   |  5682 ++++
+ .../insights/dashboards-relatorios.INSIGHTS.md     |    41 +
+ corpus-conhecimento/corpus-full.jsonl              |  6626 ++++
  corpus-conhecimento/manifesto.json                 |   575 +
+ .../relatorio-auditoria-links-resolvidos.md        |    64 +
+ .../vocabulario/cadastros-acessos.txt              |    33 +
+ .../vocabulario/conferencia-manual.txt             |     8 +
  corpus-conhecimento/vocabulario/conferencia.txt    |    28 +
  corpus-conhecimento/vocabulario/cubagem.txt        |    25 +
+ .../vocabulario/dashboards-relatorios.txt          |    34 +
  corpus-conhecimento/vocabulario/etiquetas.txt      |    21 +
+ .../vocabulario/integracao-cadastros.txt           |    11 +
+ .../vocabulario/integracao-pedidos.txt             |    11 +
+ .../vocabulario/integracao-wcs-wms.txt             |    13 +
+ .../vocabulario/integracao-wms-erp.txt             |    12 +
  corpus-conhecimento/vocabulario/integracao.txt     |    29 +
  corpus-conhecimento/vocabulario/inventario.txt     |    25 +
  corpus-conhecimento/vocabulario/order-start.txt    |    31 +
+ .../vocabulario/packing-termolabil.txt             |     9 +
  corpus-conhecimento/vocabulario/packing.txt        |    20 +
+ corpus-conhecimento/vocabulario/paletizacao.txt    |    11 +
  corpus-conhecimento/vocabulario/picking-cart.txt   |    28 +
+ .../vocabulario/picking-fullcase.txt               |     8 +
+ corpus-conhecimento/vocabulario/picking-pallet.txt |     7 +
+ corpus-conhecimento/vocabulario/picking-pbl.txt    |    35 +
  corpus-conhecimento/vocabulario/ptl-alocacao.txt   |    21 +
+ corpus-conhecimento/vocabulario/ptm.txt            |    19 +
+ corpus-conhecimento/vocabulario/put-to-wall.txt    |    16 +
  .../vocabulario/reabastecimento.txt                |    22 +
+ .../vocabulario/recebimento-armazenagem.txt        |    33 +
  corpus-conhecimento/vocabulario/shortpicking.txt   |    26 +
- corpus-conhecimento/vocabulario/sorter.txt         |    17 +
+ corpus-conhecimento/vocabulario/sorter-inducao.txt |    12 +
+ .../vocabulario/sorter-mapa-rota.txt               |    12 +
+ corpus-conhecimento/vocabulario/sorter-rejeito.txt |    12 +
+ corpus-conhecimento/vocabulario/sorter.txt         |    42 +
+ demos/database.md                                  |     0
+ demos/electron.md                                  |     0
+ demos/xspreadsheet.md                              |     0
  ed-knowledge/ES_PLACEHOLDER_v7.docx                |   Bin 6904976 -> 6910292 bytes
  ed-knowledge/PROMPT_SISTEMA_v5_7.md                |    38 +-
  ed-knowledge/SUPER_MD_v5_5.md                      |   202 +-
  ed-knowledge/build_docx_v5.py                      |    95 +-
+ insights/order-start.INSIGHTS.md                   |     0
+ insights/packing.INSIGHTS.md                       |     0
+ minerador/__pycache__/auditor.cpython-311.pyc      |   Bin 0 -> 32161 bytes
+ minerador/__pycache__/minerador.cpython-311.pyc    |   Bin 0 -> 26651 bytes
+ minerador/__pycache__/reclassifier.cpython-311.pyc |   Bin 0 -> 18448 bytes
+ minerador/__pycache__/sintetizador.cpython-311.pyc |   Bin 0 -> 33277 bytes
+ minerador/_estado_sintetizador.json                |    51 +
+ minerador/auditor.py                               |   673 +
+ minerador/descobridor.py                           |    93 +
+ minerador/extrator.py                              |   160 +
+ minerador/limpar_inbox.py                          |   164 +
  minerador/minerador.py                             |   447 +
  minerador/reclassifier.py                          |   324 +
  minerador/requirements.txt                         |    43 +
+ minerador/roteador.py                              |   112 +
+ minerador/sintetizador.py                          |   762 +
  minerador/smoke_test.py                            |    18 +
- minerador/topicos.json                             |    16 +
+ minerador/topicos.json                             |    34 +
  package-lock.json                                  |   926 +-
  package.json                                       |     4 +-
  public/ES_PLACEHOLDER_v7.docx                      |   Bin 6904976 -> 6909732 bytes
@@ -76,7 +284,7 @@ b8c1bf4 alterações no ED
  src/pages/Documentacao/GerarDocumento.tsx          |    18 +-
  src/pages/Documentacao/index.tsx                   |    16 +-
  src/pages/KickoffPage.tsx                          |    27 +-
- 57 files changed, 94728 insertions(+), 78 deletions(-)
+ 258 files changed, 112950 insertions(+), 120 deletions(-)
 ```
 
 ---
