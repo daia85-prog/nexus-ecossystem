@@ -1,75 +1,11 @@
 # _INBOX_REVISAR.md — Quarentena (lossless via _inbox.jsonl)
 
-> 730 seções sem tópico confiável. Texto integral em _inbox.jsonl.
+> 107 seções sem tópico confiável. Texto integral em _inbox.jsonl.
 
 
-[sem-match] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:f3960ad0cc5f8270  
-Heading: *Reimpressão de Laudos*  
-> Será disponibilizada uma tela exclusiva para reimpressão de laudos, acessível por qualquer operador autorizado do sistema. Deverá ser exibido filtros para selecionar pedidos que contém a opção de impressão de laudos. Fun...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:b82cac3c23b446d7  
-Heading: *Especificação de Hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará as rotinas de Picking, Picking Cart, Conferência,...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:7c0116513c52778a  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiquetas (Tipo Zebra) Conferência (24) 01 (u...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:8624cadec38b6058  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:4d4e3b04dfbb3b62  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação WCS e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação WCS de automação, ou seja, não deverão se...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:867a28e9b230d081  
-Heading: *Servidor Nuvem (Cloud)*  
-> Caso opte pela utilização de servidores em nuvem (cloud), tanto o servidor de aplicação como o de banco de dados deverão ser dedicados exclusivamente à aplicação WCS de automação, ou seja, não deverão ser compartilhados ...
-
-[sem-match] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:e5210031343dd207  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx` | id:5c49102a65875b6b  
-Heading: *Conexão e Acesso Remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, será disponibilizado acesso via Azure Bastion (Jump Host) com os acessos e permissões necessárias na rede de automação, para que os técnic...
-
-[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B.docx` | id:09ba35fa8f31d981  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B.docx` | id:295a3161cb60ec56  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B.docx` | id:6b001310ba782428  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
-
-[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B.docx` | id:a3c95d64b42b0c65  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I25.9022] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx` | id:3d11bbbfd1f1f86d  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I25.9022] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx` | id:b0a4a20d2ae7d5ce  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação WCS e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta do p...
-
-[infra-sem-topico] [I25.9022] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx` | id:b61a8a84daa76b9f  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I25.9022] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx` | id:30a4fc628ea0a85d  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
-
-[infra-sem-topico] [I25.9022] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx` | id:eda2fdf8ee117348  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
+[infra-sem-topico] [I22.199] `I22.199 - ESPECIFICACAO DE SOFTWARE - PROJETO BRF JUNDIAI_REV2..pdf` | id:e93e3fd6f02545f4  
+Heading: *32 VPN e acesso remoto*  
+> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client-to-site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
 
 [infra-sem-topico] [I22.2213] `Especificação de Software - Projeto Reverse_Escopo.docx` | id:7533156b5f49c656  
 Heading: *Base de Equipamentos CLARO*  
@@ -83,2842 +19,414 @@ Heading: *Rede de dados e infra de rede elétrica (Periféricos)*
 Heading: *Infra de alimentação rede elétrica trifásica*  
 > O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
 
+[infra-sem-topico] [I22.2213] `Especificação de Software - Projeto Reverse_REV5.pdf` | id:8416a952e8529f70  
+Heading: *Base de Equipamentos CLARO*  
+> A equipe TPC irá importar todo dia uma planilha que virá com a base de dados de todos os produtos. Estes dados serão utilizados para o sistema WCS validar se o produto está nos cadastros de equipamentos da CLARO ou se é ...
+
+[infra-sem-topico] [I22.2213] `Especificação de Software - Projeto Reverse_REV5.pdf` | id:18862a09e6b6a09a  
+Heading: *10.0 Rede de dados e infra de rede elétrica (Periféricos)*  
+> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
+
+[infra-sem-topico] [I22.2213] `Especificação de Software - Projeto Reverse_REV5.pdf` | id:bfedd5eec6616438  
+Heading: *10.1 Infra de alimentação rede elétrica trifásica*  
+> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
+
 [sem-match] [I23.3503] `I23_3503_ESPECIFICACAO_DE_SOFTWARE_PROJETO_Eletro_REV8 (1).docx` | id:5ad95492290d3abf  
 Heading: *Cross-Check Exceção*  
 > Para os volumes que devem ser desconsiderados (volumes que agregam mais de um SKU/produto, ou outro cenário viável para a operação Britânia), o WCS não irá realizar o Cross-Check do volume, ou seja, não será executada a ...
 
-[sem-match] [I25.3515] `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.docx` | id:fbd73c11399ff96b  
+[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B - Rev 11.1.pdf` | id:9e06c09316e2e562  
+Heading: *8. Especificação de hardware de TI*  
+> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
+
+[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B - Rev 11.1.pdf` | id:bed1fae2cc9e1214  
+Heading: *9. Rede de dados e infra de rede elétrica (Periféricos)*  
+> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
+
+[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B - Rev 11.1.pdf` | id:6b18b9105224dfc8  
+Heading: *Infra de alimentação rede elétrica trifásica*  
+> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
+
+[infra-sem-topico] [I24.117] `I24.117 - ESPECIFICACAO DE SOFTWARE - PROJETO Barbecue B2B - Rev 11.1.pdf` | id:b69ad635a13ba24e  
+Heading: *10. VPN*  
+> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
+
+[sem-match] [I24.203] `I24.203 - Especificação de Software - Beta_REV.9.pdf` | id:83e228caf1f6bbdc  
+Heading: *[INÍCIO]*  
+> CONFIDENCIAL © 2024, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO....
+
+[sem-match] [I24.203] `I24.203 - Especificação de Software - Beta_REV.9.pdf` | id:561a3993b9e6b359  
+Heading: *TAMANHO*  
+> Empresa Código da empresa responsável pela remessa Char Sim Centro Código do centro de distribuição Char Sim codDeposito Código do deposito Char Sim Completo Informa se há mais volumes na remessa, deve ser enviado false ...
+
+[sem-match] [I24.4004] `I24.4004 - ESPECIFICACAO DE SOFTWARE - Projeto GAVIAO - REV.3.pdf` | id:3bc6c4b198b005c7  
+Heading: *Volumes*  
+> WMS→WCS Tabela de envio de volumes será utilizada pelo WMS para transmitir informações cruciais relacionadas aos volumes para o WCS. Essa tabela conterá os dados necessários para que o WCS possa processar e gerenciar cor...
+
+[infra-sem-topico] [I24.4004] `I24.4004 - ESPECIFICACAO DE SOFTWARE - Projeto GAVIAO - REV.3.pdf` | id:2fd479a479d13a23  
+Heading: *8. Especificação de hardware de TI*  
+> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
+
+[infra-sem-topico] [I24.4004] `I24.4004 - ESPECIFICACAO DE SOFTWARE - Projeto GAVIAO - REV.3.pdf` | id:5f4cb6146da7e0c4  
+Heading: *9. Rede de dados e infra de rede elétrica (Periféricos)*  
+> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
+
+[infra-sem-topico] [I24.4004] `I24.4004 - ESPECIFICACAO DE SOFTWARE - Projeto GAVIAO - REV.3.pdf` | id:8b415b81c0c93952  
+Heading: *Infra de alimentação rede elétrica trifásica*  
+> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
+
+[infra-sem-topico] [I24.4004] `I24.4004 - ESPECIFICACAO DE SOFTWARE - Projeto GAVIAO - REV.3.pdf` | id:03906c38ca500085  
+Heading: *10. VPN*  
+> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
+
+[infra-sem-topico] [I25.132] `I25.132- ESPECIFICACAO DE SOFTWARE - PROJETO ESCOPO DIA.pdf` | id:cfc1646abc39bac2  
+Heading: *8. ESPECIFICAÇÃO DE HARDWARE DE TI*  
+> Este documento tem como objetivo estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação (TI). Nele, são especificadas as características técnicas dos principais dispositivos utilizados, in...
+
+[sem-match] [I25.3515] `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.pdf` | id:56ef5eeb23f70787  
+Heading: *Divisão da tarefa entre dois ou mais operadores: O sistema fragmentará o lote*  
+> em subtarefas equilibradas, mantendo a rastreabilidade dos volumes e garantindo que cada operador realize a coleta de parte dos volumes de forma coordenada. Cada subtarefa manterá vinculação ao mesmo pedido e lote origin...
+
+[sem-match] [I25.3515] `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.pdf` | id:c63d9bd14186de5c  
 Heading: *Área de Stage*  
 > A área de stage é obrigatória e utilizada como controle intermediário antes da indução. Cada posição física (endereço) é registrada no coletor, garantindo rastreabilidade. O WCS registra apenas o endereço sistêmico infor...
 
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR.docx` | id:4022388a58f258f0  
-Heading: *Substituição de Palete da OT*  
+[infra-sem-topico] [I25.9044] `I25.9044 - ESPECIFICACAO DE SOFTWARE - PROJETO OPTIMUS PRIME_REV4.pdf` | id:b71052c207464c95  
+Heading: *8.0 Especificação de hardware de TI*  
+> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
+
+[infra-sem-topico] [I25.9044] `I25.9044 - ESPECIFICACAO DE SOFTWARE - PROJETO OPTIMUS PRIME_REV4.pdf` | id:5bf94f76c588b3f6  
+Heading: *9.0 Rede de dados e infra de rede elétrica (Periféricos)*  
+> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
+
+[infra-sem-topico] [I25.9044] `I25.9044 - ESPECIFICACAO DE SOFTWARE - PROJETO OPTIMUS PRIME_REV4.pdf` | id:39275f3cf3a27a8f  
+Heading: *9.1 Infra de alimentação rede elétrica trifásica*  
+> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
+
+[infra-sem-topico] [I25.9044] `I25.9044 - ESPECIFICACAO DE SOFTWARE - PROJETO OPTIMUS PRIME_REV4.pdf` | id:222f432da1208f0d  
+Heading: *10.0 VPN*  
+> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:21e644d5e0abef55  
+Heading: *[INÍCIO]*  
+> CONFIDENCIAL © 2024, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:4969139b525e4e46  
+Heading: *Nome:*  
+> Gustavo Caseri Torres Matheus Gomes...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:587ac77090881c85  
+Heading: *E-Mail:*  
+> gustavo.torres@invent-corp.com matheus.gomes@invent-corp.com...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:8f354e4d53c6fb28  
+Heading: *Depto:*  
+> Desenvolvimento de Software Desenvolvimento de Software...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:aa1f06fd70ae7bd3  
+Heading: *RESPONSAVEL*  
+> 06/04/2026 Especificação de Software Gustavo Torres/Matheus Gomes 08/04/2026 Especificação de Software Gustavo Torres/Matheus Gomes 08/04/2026 Especificação de Software Gustavo Torres/Matheus Gomes...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:ac35313ee129b0f5  
+Heading: *Empresa*  
+> Willy Silva Gestor de projeto MBRF Rafael Fogaça Gestor de projeto MBRF Claudio Amaral Analista pleno MBRF Claiton Schroder Especialista TI MBRF Vinicius Xavier Consultor abap MBRF Matheus Gomes Product Owner...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:54bbd77afe09e15a  
+Heading: *First Expire, First Out – Política de movimentação de estoque na qual os produtos com*  
+> data de validade mais próxima são expedidos prioritariamente, garantindo conformidade com normas sanitárias e redução de perdas....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:20b34065d3a1a77d  
+Heading: *Caixa*  
+> Unidade mínima de venda, correspondendo a uma caixa de papelão lacrada contendo produto acabado. Não é divisível no contexto das operações do CD....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:d6eb7e79681108a6  
+Heading: *Unidade de Depósito – Identificador único atribuído a cada unidade física armazenada*  
+> no CD, permitindo rastreabilidade individual....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:40f10e3d7ad9c6af  
+Heading: *Intermediate Document – Formato padrão SAP para intercâmbio eletrônico de dados.*  
+> Utilizado para comunicação de remessas, cancelamentos e ondas entre o ERP e o WCS....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:0f8bf83feac10b39  
+Heading: *MATMAS*  
+> Mensagem enviada pelo SAP ao WCS contendo o cadastro e atualização de materiais....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:ae69e490e38db114  
+Heading: *ZSDONDA*  
+> Mensagem trocada entre WCS e SAP para informar a criação no WCS....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:86af67a1e8727fac  
+Heading: *Snackbars*  
+> Componentes de UI que exibem mensagens curtas e temporárias...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:54b4aa807aff6f6a  
+Heading: *Velox (WCS)                                                  SAP(WMS)*  
+> WMTORD WMTORD MATMAS TPSDLS TPSDLS ZWMTOCO WMTOCO WMCATO WMCATO ZSDCANCELEXPREM ZSDONDA ZPRIO ZABAST ZWMTOCO...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:73403d406ee2d9df  
+Heading: *8. Caso exista mais de uma necessidade de um mesmo sku e  range de datas de*  
+> fabricação aceitáveis (Shelf de e até) para mais de uma remessa, o WCS deverá consolidar a quantidade de caixas necessárias para atender a demanda da onda e enviar uma única solicitação ao SAP. Caso o range de data de fa...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:7a1141301951c69e  
+Heading: *12. Quando houver um cancelamento de OT por parte do SAP, para uma necessidade*  
+> gerada pelo WCS que está pendente, o WCS nunca fará uma segunda solicitação para a mesma necessidade, sendo assim o WMS deve gerar uma nova OT com o mesmo ID para atender a necessidade cancelada....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:72d7008a80794387  
+Heading: *13. Para todos os CATO recebidos do SAP onde a OT está com status pendente no WCS ele*  
+> deve retornar um cato imediatamente, confirmando o estorno/cancelamento da OT....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:0d20338e0444496d  
+Heading: *CATO*  
+> Estorno SAP/WCS Reverte uma OT que foi iniciada, mas não pode ser concluída. Pode ser enviado pelo SAP ao WCS ou pelo WCS ao SAP, garantindo que ambos os sistemas estejam sincronizados sobre o cancelamento....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:653674414bb9009d  
+Heading: *Substituição de palete: Quando o SAP envia um novo TORD com o mesmo*  
+> identificador, o WCS identifica que se trata de uma troca de palete para a mesma necessidade, e não de uma nova necessidade. •...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:e91999b6e9f68a15  
+Heading: *Status da OT:*  
+> Status OT status dentro do WCS:...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:15df740f8fbd4ba1  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da Tabela de Controle EDI_DC40 MANDT CLNT Mandante (Cliente) EDI_DC40 DOCNUM NUMC Número do IDOC EDI_DC40 DOCREL Versão do Release EDI_DC40 STATUS Status do Processamento EDI_DC40 DIRECT Direção (1-S...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:9dd77bd577b72918  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da Tabela EDI_DC40 DIRECT Direção (Entrada/Saida) EDI_DC40 IDOCTYP Tipo do IDoc EDI_DC40 MESTYP Tipo de Mensagem EDI_DC40 SNDPOR Porta do Remetente EDI_DC40 SNDPRT Tipo de Parceiro Remetente EDI_DC40...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:2c20c85ed65ca1cd  
+Heading: *Informação*  
+> ID_ABASTEC Necessidade Identificador único da necessidade MATNR Necessidade Código/SKU QUANT Necessidade Quantidade Solicitada ZSHELF_DE Necessidade Data de validade mínima ZSHELF_ATE Necessidade Data de validade máxima...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:4bad5b91e79d3913  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da Tabela de Controle EDI_DC40 MANDT NUM Mandante (Cliente SAP) EDI_DC40 DOCNUM NUM Número do Documento IDoc EDI_DC40 DOCREL NUM Versão do Release SAP EDI_DC40 STATUS NUM Status do IDoc EDI_DC40 DIRE...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:805faf4079d83c3d  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da Tabela de Controle EDI_DC40 DIRECT Direção (1-Saída / 2- Entrada) EDI_DC40 IDOCTYP Tipo de IDOC Base (TPSDLS01) EDI_DC40 MESTYP Tipo de Mensagem (TPSDLS) EDI_DC40 SNDPOR Porta do Remetente EDI_DC4...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:cda888fa707dd9f3  
+Heading: *8.5. Substituição de Palete da OT*  
 > O TORD informa qual palete específico o operador deve buscar e em qual posição ele está armazenado. No momento da leitura da UD o SAP identifique que não é o mesmo informado no TORD e ele é compatível para compra neste m...
 
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR.docx` | id:a0825f5a5085a06c  
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:04629e0b432ca607  
+Heading: *Leitura física: O operador se dirige até a posição informada no TORD e no momento da*  
+> leitura da UD o SAP identifica que não é o mesmo informado pelo TORD, porém aquela UD está elegível para compra....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:b5eaf2420b485399  
+Heading: *SAP envia novo TORD com o mesmo identificador único: O SAP identifica a nova UD*  
+> capaz de suprir a mesma necessidade, e envia um novo TORD ao WCS. Esse novo TORD carrega o mesmo identificador único da solicitação original, mas com as informações do novo palete. Não há envio de CATO nesse fluxo. O SAP...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:fa7a4d9dd2a4a6c8  
+Heading: *WCS identifica a substituição e atualiza os dados: Ao receber o novo TORD, o WCS*  
+> compara o identificador único com as necessidades já registradas internamente. Ao identificar que já existe uma necessidade com aquele mesmo identificador, o WCS entende que se trata de uma substituição de palete e não d...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:945a9bb9fd26db12  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da tabela (Estrutura de controle) EDI_DC40 DIRECT Direção (1-Saída, 2- Entrada) EDI_DC40 IDOCTYP Tipo básico do IDoc (ZPRIO01) EDI_DC40 MESTYP Tipo de mensagem (ZPRIO) EDI_DC40 SNDPOR Porta do remete...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:cac6ab98d4abace9  
+Heading: *Categoria de peso*  
+> preparaOndaFragil Preparação de onda PPAD/PFIX Frágil preparaOndaLeve Preparação de onda PPAD/PFIX Leve preparaOndaPesado 35 Preparação de onda PPAD/PFIX Pesado preparaOndaPvar Preparação de onda PVAR - iniciarOndaFragil...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:c8fd796203f60b07  
+Heading: *Tratativa*  
+> Garfo não está no centro Manual Perda Posicionamento X Manual Perda Posicionamento Y Manual PICK - Posição Vazia Automática DROP - Posição Cheia Automática PICK - Garfo Carregado Automática DROP - Garfo Vazio Automática ...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:7bc17323e1f76d6a  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da tabela EDI_DC40 MANDT CLNT Mandante (Cliente) EDI_DC40 DOCNUM NUMC Número do IDOC EDI_DC40 DOCREL Versão do Release EDI_DC40 STATUS Status do Processamento EDI_DC40 DIRECT Direção (1-Saída / 2- En...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:da10f5453c834df7  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome da Tabela de Controle EDI_DC40 DOCNUM NUM Mandante (Cliente) EDI_DC40 IDOCTYP Número do IDOC EDI_DC40 CIMTYP Versão do Release EDI_DC40 MESTYP Status do Processamento <ZTORD> <IDOC BEGIN="1"> <EDI_DC...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:00943e9f256a4443  
+Heading: *Obri*  
+> ZTOCOPERC LGNUM Número do Deposito ZTOCOPERC TANUM Número da OT ZTOCOPERC TAPOS Item da OT ZTOCOPERC LENUM Un. Deposito (Palete) ZTOCOPERC NISTA Qtd Real Encontrada ZTOCOPERC NDIFA Diferença (Teórico- Real) <ZTOCO01> <ID...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:65f068255e95b65a  
+Heading: *Informação*  
+> DELID Missão Número da Remessa SHPPRI Missão Prioridade da remessa ZDOCA Volumes Doca Principal ZTURNO Missão Turno ZPRIO Missão Prioridade ZPLVC Missão Placa do Veículo ZTRANSP. Missão Nome da transportadora QUANT Volum...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:59d9f660ace24be3  
 Heading: *Criar onda*  
 > Ao clicar na opção criar onda, o WCS inicia a validação de dados necessários para criar uma onda e ao finalizar a validação caso ocorra a reprova o WCS informa em sua interface que a onda não foi criada por falta de info...
 
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR.docx` | id:19e0acc24e6d456f  
-Heading: *Status possíveis para cada momento no WCS*  
-> Onda:...
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:e543a314dcc79ba2  
+Heading: *Momento de atribuição*  
+> CRIADA Onda criada PREPARADA Onda preparada CANCELADA Onda excluída EM ANDAMENTO Onda já iniciada ENCERRADA Onda encerrada FINALIZADO Onda 100% concluída...
 
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR.docx` | id:bac16386bf3aca18  
-Heading: *Lote Padrão (maioria dos itens)*  
-> Composto por 7 caracteres, formados por: Exemplo: Lote 3315005 331 → Unidade fabril 5 → Ano 2025 005 → Dia 5 (05 de janeiro de 2025) Observação: Em ano bissexto, o dia 29 de fevereiro é considerado o dia 366 do ano....
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:4a049253d7f22ad1  
+Heading: *Obri*  
+> EDI_DC40 TABNAM Nome Tabela Controle EDI_DC40 DIRECT Direção <ZSDDAREM> <IDOC BEGIN="1"> <EDI_DC40 SEGMENT="1"> <DIRECT>2</DIRECT> <IDOCTYP>TPSDLS01</IDOCTYP> EDI_DC40 IDOCTYP Tipo IDoc (TPSDLS01) EDI_DC40 MESTYP Tipo Ms...
 
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR.docx` | id:bf962c0b46d00244  
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:9025a65e1dc208f8  
+Heading: *Detalhamento por Etapa (Linha 2)*  
+> Concluídos Quantidade adicional de volumes concluídos Volumes / Tarefas Em Separação Quantidade adicional em separação Volumes / Tarefas Em Doca Quantidade adicional em doca Volumes / Tarefas Pendentes Quantidade adicion...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:470d34377dac24d4  
+Heading: *3. Com base no mapa de postos, o WCS distribui as coletas para cada posto, respeitando*  
+> a estrutura operacional definida....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:f0cf102eb79c712d  
+Heading: *Aplicação do FEFO na Seleção*  
+> Dentro da priorização por posição física, o WCS aplica a regra FEFO (First Expire, First Out) para garantir que os produtos com validade mais próxima sejam expedidos primeiro....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:fc63f246fb826467  
+Heading: *Sequência*  
+> sequenciaColetaFragil Materiais com categoria de peso frágil sequenciaColetaLeve Materiais com categoria de peso leve sequenciaColetaPesado Materiais com categoria de peso pesado sequenciaColetaPvar Materiais do tipo de ...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:df5341a6f67a28d7  
+Heading: *Estrutura do SSCC:*  
+> • AI (00) no código de barras •...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:a266b05821bf8fa6  
+Heading: *Informação*  
+> Geral Meta CX/H Para essa informação deverá existir parâmetros no WCS ajustados pela operação, sendo paramentos para temperatura congelado, resfriado e total (WCS não fará calculo sobre esses parâmetros) Geral Real CX/H ...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:fc5a47e60b13698a  
+Heading: *Informação*  
+> MATNR Produtos Código do produto (SKU) QPLOS Produtos Número do Lote de Inspeção VOLEH Produtos Unidade de Volume NWIRM Produtos Peso Real ZPESOL Produtos Peso Líquido...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:3ebc83067e0a767e  
+Heading: *Regra DE/PARA entre SKU e DUN14: O WCS deve manter em seus cadastros uma tabela*  
+> de correspondência (DE/PARA) entre SKU e DUN14 do produto, pois cada layout de etiqueta pode informar um ou outro e até os dois. O sistema deve interpretar corretamente o que receber, convertendo DUN14 para SKU quando ne...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:86b5b3a262631ffd  
+Heading: *1 a 3*  
+> Código da unidade fabril (UP) Último dígito do ano de fabricação...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:c63ea559a085d70a  
+Heading: *5 a 7*  
+> Dia do ano em formato juliano (1 a 366)...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:10b8789e33dac3e2  
+Heading: *5 → Ano 2025*  
+> • 005 → Dia 5 (05 de janeiro de 2025)...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:a9a55a2e469369b4  
 Heading: *Lote PFIX (Peso Fixo)*  
-> Composto por 10 caracteres, seguindo o mesmo formato do lote padrão com a adição da faixa de peso: Exemplo: Lote 3315007070 331 → Unidade fabril 5 → Ano 2025 007 → Dia 7 (07 de janeiro de 2025) 070 → Faixa de peso 7,0 kg...
+> Composto por 10 caracteres, seguindo o mesmo formato do lote padrão com a adição da faixa de peso:...
 
-[sem-match] [I25.115] `I25.115 - ESPECIFICATION DE SOFTWARE - PROYECTO MARKET PERU.docx` | id:f669ffb659f647ce  
-Heading: *Etapas de la especificación de software (ES)*  
-> A continuación se ilustran las etapas del proceso de creación de la Especificación de Software:...
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:588b5720b54183f5  
+Heading: *5 → Ano 2025*  
+> • 007 → Dia 7 (07 de janeiro de 2025) • 070 → Faixa de peso 7,0 kg...
 
-[sem-match] [I25.138] `I25.138 - ESPECIFICATION DE SOFTWARE - PROYECTO GUATEMALA.docx` | id:26802647f6d6a7f3  
-Heading: *Etapas de la Especificación de Software (ES)*  
-> A continuación, se muestra una ilustración de los pasos del proceso de creación de especificaciones de software:...
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:513a92aaa29e3dcc  
+Heading: *Zona 4 — Código de barras GS1-128:*  
+> • (00) SSCC — 8 dígitos depois do prefixo 00 + 9 dígitos sequenciais + 1 dígito verificador • (10) Lote — composto por 3 dígitos do centro produtor + 1 dígito do ano + 3 dígitos dia em formato juliano...
 
-[sem-match] [I25.138] `I25.138 - ESPECIFICATION DE SOFTWARE - PROYECTO GUATEMALA.docx` | id:63c2746523bf4a65  
-Heading: *Pantalla de dirección*  
-> En WCS se dispondrá de una pantalla específica para la visualización, seguimiento y gestión de direcciones logísticas, con el objetivo de proporcionar visibilidad operativa, control y soporte para la toma de decisiones r...
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:2e1c28158b95f3ed  
+Heading: *Regra de formação do lote: O WCS extrai o código produtor do AI (91) e forma o lote*  
+> seguindo a mesma estrutura do lote padrão:...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:2af027a2519feee6  
+Heading: *1 a 3*  
+> Código produtor Extraído do AI (91) Último dígito do ano Extraído da data de fabricação disponível no código...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:0d0669e5528d69bc  
+Heading: *5 a 7*  
+> Data juliana Extraída da data de fabricação disponível no código...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:7f3b36e23c28dc18  
+Heading: *Código Produtor + valor do AI (11)*  
+> Onde “Código Produtor” é um prefixo informado pela operação no cadastro que identifica produtos de terceiros. Para esses casos, deve ser considerado o código da unidade produtora, formado por “Código Produtor” + AI (11),...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:0f54890cdc7d6caf  
+Heading: *Regra especial*  
+> Completa (GS1) No código (01) ou (240) No código (10) No código (11) No código (00), se PVAR Nenhuma — todas as informações disponíveis Sem data de fabricação No código (92) ou marcação DUN14 No código (10)...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:68a9983e06df0f2b  
+Heading: *no código*  
+> — WCS deverá fazer a conversão (juliana → gregoriana) do lote para achar a data de fabricação Sem lote (margarinas) No código (01) ou DUN14...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:55980b99dacebbbe  
+Heading: *no código*  
+> No código (11) — WCS forma o lote a partir do código produtor (91) + data Sem lote e sem produtor No código (02) DUN14...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:6f85801f3c28987f  
+Heading: *Ociosa?*  
+> Transportadora A (Doca 1) 70% livre Transportadora B (Doca 4) 37,5% livre Transportadora C (Doca 7) 83,3% livre O próximo volume do SKU 719287 será direcionado para a Transportadora C (mais ociosa). O volume seguinte ser...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:5b59e93aadfe4f83  
+Heading: *Balanceamento entre skus para desvio*  
+> Para os skus subsequentes, o WCS deve considerar o histórico de carga já direcionada para cada doca na primeira análise, aplicando uma lógica de compensação, onde: • Docas que receberam maior volume anteriormente devem t...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:8bb2e7b8391bc6f6  
+Heading: *Exemplo de Aplicação*  
+> • Análise 1: o SKU X: 80 volumes → direcionado para Doca 01 o SKU Y: 10 volumes → direcionado para Doca 02 • Análise 2: o SKU Z: 80 volumes → direcionado para Doca 02 (doca com menor carga na onda anterior) o SKU W: 10 v...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:0a69f1a738ffab25  
+Heading: *Regra de produto por doca da mesma transportadora: Uma vez que um SKU começa a*  
+> ser desviado para uma determinada doca, todas as caixas daquele mesmo SKU devem continuar sendo enviadas para a mesma doca. Não é permitido dividir o mesmo produto entre docas diferentes da mesma transportadora....
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:a002c69eef2e28e1  
+Heading: *Lote conforme esperado: o WCS consulta quais transportadoras possuem demanda*  
+> aberta para aquele SKU + shelf life e realiza a verificação de ociosidade entre as docas elegíveis. •...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:c46f4acbedab17ea  
+Heading: *Peso unitário (Méd)*  
+> RA06001100 6425798239 1087.9 10.9...
+
+[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR Rev3.pdf` | id:7a2538244459542a  
+Heading: *Campo*  
+> Prioridade Prioridade do item (Sempre informar a prioridade mais urgente para a menos urgente) Material Material do palete Sigla Sigla do material UD Unidade de deposito do material Quantidade Quantidade total do palete ...
+
+[sem-match] [I25.136] `I25.136 - Especificação de Software - Projeto Beta-Esteio - Rev 6.pdf` | id:fb8ef7d64a4db551  
+Heading: *[INÍCIO]*  
+> CONFIDENCIAL © 2024, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO....
+
+[sem-match] [I25.138] `I25.138 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO GUATEMALA - Rev. 3.pdf` | id:044d2c0ea785e3ff  
+Heading: *E-Mail:*  
+> gustavo.torres@invent-corp.com...
+
+[sem-match] [I25.138] `I25.138 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO GUATEMALA - Rev. 3.pdf` | id:2482b8929a95d16a  
+Heading: *RESPONSAVEL*  
+> REV. 1 09/02/2026 Descritivo Funcional Gustavo Torres REV. 2 08/05/2026 Mudanças no Descritivo Gustavo Torres REV. 3 27/05/2026 Adicionado um exemplo da Eitqueta Gustavo Torres...
+
+[sem-match] [I25.138] `I25.138 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO GUATEMALA - Rev. 3.pdf` | id:f44194cd7c96a92e  
+Heading: *Descrição*  
+> E1LTORH LGNUM Número de depósito E1LTORH TANUM Número de orden de transferencia E1LTORH BWLVS Tipo de transferencia (EM) E1LTORH TBPRI Necesidad prioritaria E1LTORH TRART Tipo de operación (transferencia) E1LTORH REFNR G...
+
+[sem-match] [I25.138] `I25.138 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO GUATEMALA - Rev. 3.pdf` | id:44cee404ddd319e7  
+Heading: *Descrição*  
+> E1LTCAH LGNUM Número de almacén / complejo de almacenes E1LTCAH TANUM Número de orden de transferencia E1LTCAH CNAME Usuario solicitante de cancelación E1LTCAH CANRQ Solicitud de cancelación (X) E1LTCAH CANCL Confirmació...
+
+[sem-match] [I25.138] `I25.138 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO GUATEMALA - Rev. 3.pdf` | id:1e855cd8342b473d  
+Heading: *6. Tela de endereços*  
+> Será disponibilizada no WCS uma tela específica para consulta, acompanhamento e gestão...
 
 [sem-match] [I25.163] `I25.163 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO MARKET CHILE.docx` | id:e313f5eaf5901937  
 Heading: *Usar o Token nas Outras Requisições*  
 > Após obter o token, inclua-o no header Authorization de todas as outras requisições: Authorization: Bearer <seu_token_aqui>...
 
-[sem-match] [I25.4066] `I25.4066 - Especificação de Software NavePark.docx` | id:1edd0cb2cf4af023  
-Heading: *Matriz de Responsabilidades (WCS x WMS)*  
-> Ficam estabelecidas as fronteiras de responsabilidade entre os sistemas WMS Spark (Gestão de Armazém Corporativo) e WCS Velox (Controle da Automação), conforme diretrizes aprovadas pela equipe de projetos da Vedamotors:...
+[sem-match] [I25.4066] `I25.4066 - Especificação de Software NavePark - Rev 8.pdf` | id:c44cadfbe6af6ef9  
+Heading: *Responsável*  
+> 26/01/2026 Especificação de Software Raphael Cerri 25/02/2026 Especificação de Software Raphael Cerri 10/03/2026 Especificação de Software Raphael Cerri 11/03/2026 Especificação de Software Raphael Cerri 24/04/2026 Alter...
 
-[sem-match] [I25.4378] `I25.4378 - PROJETO BR - ESPECIFICAO DE SOFTWARE -.docx` | id:8140c74d561fd9c6  
-Heading: *Itens Fora da Automação*  
+[sem-match] [I25.4066] `I25.4066 - Especificação de Software NavePark - Rev 8.pdf` | id:45e2bc4bb3aacd98  
+Heading: *1. Stakeholders ES*  
+> Participante Função Empresa Anderson PMO - Project Management Office Invent Raphael Cerri Caveagna Analista de Negócios Invent Matheus Gomes Desenvolvedor Invent...
+
+[sem-match] [I25.4066] `I25.4066 - Especificação de Software NavePark - Rev 8.pdf` | id:69ca9f49a59fd081  
+Heading: *10.1. Validação de Peso (Balança Dinâmica)*  
+> O primeiro filtro de qualidade é a balança em movimento instalada na linha principal. Pesagem: A caixa passa pela balança sem parada. O WCS captura o peso real. Comparação: O sistema compara: Peso Real Capturado vs Peso ...
+
+[sem-match] [I25.4066] `I25.4066 - Especificação de Software NavePark - Rev 8.pdf` | id:27ba3b3ab407810b  
+Heading: *12.2. Divisão do trabalho entre operadores*  
+> A divisão do escopo entre operadores é híbrida: o WCS parte da divisão por zona física e reequilibra a carga de trabalho quando identifica que uma zona possui peso significativamente maior que as demais, sempre respeitan...
+
+[sem-match] [I25.4378] `I25.4378 - PROJETO BR - ESPECIFICAO DE SOFTWARE - REV 6.pdf` | id:ad7a8baf387f4d16  
+Heading: *9.2. Itens Fora da Automação*  
 > A BR Supply também possui itens que não transitam pela automação (linha branca, escadas, plástico bolha, etc.). Esses itens são separados e levados diretamente à expedição pelo WMS Spark, sem passar pelo WCS....
 
-[infra-sem-topico] [I26.] `I26.xxxx - Especificação de Software - Mustard.docx` | id:4315b4fdfb4716ef  
+[sem-match] [I26.108] `I26.108 - Especificacao de Software - Projeto Payless.docx` | id:8c16205e199ea4c1  
+Heading: *Legenda*  
+> Sigla / Termo | Descrição WCS | Warehouse Control System — sistema que controla a automação do armazém Velox | Nome do sistema WCS da Invent eWM - SAP | Sistema de gestão do cliente (WMS) que envia e recebe as ordens de ...
+
+[infra-sem-topico] [I26.xxxx] `I26.xxxx - Especificação de Software - Mustard.docx` | id:4315b4fdfb4716ef  
 Heading: *Arquitetura de Hardware*  
 > Interface Visual (TV/Monitor): Um monitor de grandes dimensões posicionado estrategicamente na área de expedição, exibindo o mapa das posições (pallets) e o status de preenchimento de cada uma. Identificação de Posição (...
-
-[sem-match] [I21.177] `I21.177 - PTLRJ - ES - PICKING ILHA E LOGIN CRACHÁ.docx` | id:debd4cbaef64248f  
-Heading: *Ilha Central (Posto 3 Compartilhado)*  
-> O projeto original contemplava uma ilha central que foi desativada. O objetivo deste aditivo é reativar o Posto 3 (Mesa do Meio) com uma lógica operacional diferente: ele funcionará como um Pulmão de Itens Complementares...
-
-[sem-match] [I21.177] `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - GEMINI.docx` | id:c1481e2139a849b5  
-Heading: *Volumes MAX/MIN Zerados no JSON - Pendente*  
-> Problema: O cubômetro encontra-se desabilitado por parâmetro devido a uma alta taxa de rejeição (~80%), causada por inconsistências na medição. O campo de volume no JSON está sendo ignorado pela Invent devido a essas fal...
-
-[sem-match] [I24.114] `I24.114 - Aditivos Projeto Andreani - Multiplos Aditivos.docx` | id:bb1cde99cba343a6  
-Heading: *Prioridade de Pedidos por Onda*  
-> A funcionalidade de priorização de ondas permite que o cliente selecione uma onda completa no sistema e a marque como prioridade. Essa ação reorganiza automaticamente a fila de processamento, garantindo que todos os pedi...
-
-[sem-match] [I25.9043] `I25.9043 - Aditivo Projeto Beleza Views Para KPIS e Relatórios.docx` | id:e9ef52cdb7868b97  
-Heading: *Especificação dos campos*  
-> Especificação detalhada de cada campo das Views, contemplando significado funcional, origem, tipo de dado, formato, regras de preenchimento e demais atributos necessários ao desenvolvimento....
-
-[sem-match] [I25.9043] `I25_9043_-_Aditivo_Views_KPIs_Beleza_REV2_tracked.docx` | id:1ecabc24fdf53b2b  
-Heading: *Especificação dos campos*  
-> Especificação detalhada de cada campo das Views, contemplando significado funcional, origem, tipo de dado, formato, regras de preenchimento e demais atributos necessários ao desenvolvimento....
-
-[sem-match] [I24.203] `I24.203 - Aditivo Projeto Beta - API Controle de Usuarios.docx` | id:df26c2b02162b976  
-Heading: *Papel de Cada Sistema*  
-> SENIOR — Fonte Sistema de RH e ERP do cliente. É onde os dados dos funcionários são originados e mantidos. O Senior não se comunica diretamente com o Velox. CPI — Middleware O CPI atua como middleware entre o Senior e o ...
-
-[sem-match] [I25.3513] `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx` | id:d8aa5b1ae2064c0e  
-Heading: *Identificação por IA*  
-> A identificação da caixa/produto por IA mantém a lógica atualmente operacional: vínculo entre a informação NDIR recebida no telegrama e a imagem capturada pelas câmeras laterais....
-
-[sem-match] [I25.3513] `I25.3513 - Aditivo Projeto CDSK - Tela Tratativas de Pallets Rejeitados.docx` | id:bb78141fcd457d4e  
-Heading: *Contexto Operacional*  
-> O WCS disponibilizará uma funcionalidade que permitirá que os pallets sejam fechados mesmo com inconsistência de master, para ser tratado posteriormente através da tela de tratativa de pallets rejeitados, essa funcionali...
-
-[sem-match] [I25.3513] `I25.3513 - Aditivo Projeto CDSK - Tela Tratativas de Pallets Rejeitados.docx` | id:e53506929cc71533  
-Heading: *Nova Tela – Tratamento de Master*  
-> O WCS deverá disponibilizar uma nova tela denominada: “Tratamento de Master” Essa tela será responsável por consolidar todos as masters que houve inconsistência....
-
-[sem-match] [I25.3515] `I25.3515 - Aditivo Projeto Esperanca - Pontos de Melhorias.docx` | id:e131a073f6095ee2  
-Heading: *Funcionalidades na Tela “Paletes”*  
-> Implementar novas funcionalidades na tela “Paletes” com o objetivo de permitir tratamento de exceções operacionais e maior autonomia da operação na gestão dos paletes em andamento. As novas funcionalidades deverão possib...
-
-[sem-match] [I25.9043] `I25.9043 - PROJ MANHATTAM - Tradução AU06 - Pack ILPN Message.docx` | id:57b0de2a93b99e71  
-Heading: *[SEM TÍTULO]*  
-> MANHATTAN ACTIVE AU06 – Pack ILPN Message...
-
-[sem-match] [I25.9043] `I25.9043 - PROJ MANHATTAM - Tradução AU06 - Pack ILPN Message.docx` | id:33963d77aba3ac5b  
-Heading: *Estimativas e Reconhecimento*  
-> Todos os serviços prestados estão em conformidade com os termos e condições do Reconhecimento para simulação de Serviços ou do Contrato de Serviços de Software previamente celebrado entre nossas respectivas empresas... o...
-
-[sem-match] [I20.1409] `I20.1409 - Aditivo Projeto ST - Dashboard Conferência de Pallets - Rev.docx` | id:736f84c15a94be28  
-Heading: *Estados Visuais dos Volumes*  
-> Cada volume monitorado na tela possui um estado visual que informa o conferente sobre sua situação. Os estados possíveis são:...
-
-[sem-match] [I20.1409] `I20.1409 - Aditivo Projeto ST - Dashboard Conferência de Pallets - Rev.docx` | id:ec7cea8c4268024a  
-Heading: *Seção Bicas em Evidência*  
-> Bicas com volumes vermelhos ou laranjas são promovidas automaticamente para a seção Bicas em Evidência, exibida no topo da tela com destaque visual. O objetivo é direcionar o olhar do conferente imediatamente para as bic...
-
-[sem-match] [I20.1409] `I20.1409 - Aditivo Projeto ST - Dashboard Conferência de Pallets - Rev.docx` | id:4763c94bbf47ef60  
-Heading: *Cenários Operacionais*  
-> Cenário 1 — Volume vermelho com pallet aberto na bica: Um volume fica vermelho enquanto o operador ainda está montando o pallet ativo. O conferente visualiza o alerta na tela e vai até a bica verificar. Situações possíve...
-
-[sem-match] [I20.1409] `I20.1409 - Aditivo Projeto ST - Dashboard Conferência de Pallets - Rev.docx` | id:36e96fc72e88ab57  
-Heading: *Tratativas Disponíveis*  
-> Ao clicar em um volume vermelho ou laranja na lista, o conferente acessa as tratativas disponíveis para aquele item. Cada tratativa exige uma ação física e/ou uma confirmação na tela. T1 — Item na bica, ainda não alocado...
-
-[sem-match] [I17.112] `I17.112 - ESPECIFICACAO DE SOFTWARE - PROJETO  DIAMANTE- Adicional PTL Larrus rev3.docx` | id:0d2c162a8ba468a5  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I19.2003] `ESPECIFICACAO DE SOFTWARE REV.1 - ZENATUR.docx` | id:ff38ec504697cd09  
-Heading: *Homologação*  
-> Deve ser fornecido um ambiente de homologação para os testes das funcionalidades detalhadas acima. O ambiente de homologação deve ser fornecido pelo cliente. O MFC será configurado nesse ambiente, para que os testes seja...
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:866ff8556b6d1a62  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO SOFTWARE...
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:eeccfcc79ac39cb7  
-Heading: *DEFINIÇÕES*  
-> Tabela 1 – Definições da interface ROUTE....
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:215c9244a33e200a  
-Heading: *ATRIBUTOS*  
-> Tabela 2 - Descrição dos atributos da interface ROUTE...
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:70bb81b48410b0b1  
-Heading: *DEFINIÇÕES*  
-> Tabela 3 - Definições da interface ROADMAP...
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:505ef99885c7a442  
-Heading: *ATRIBUTOS*  
-> Tabela 4 - Descrição dos atributos da interface ROADMAP...
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:fa3bbf445cc12352  
-Heading: *o 3 – Se conferência = NOK. SAP faz a conferência aleatória e envia resultado ao WCS*  
->  Se a caixa deve voltar para esteira, interface vai com o campo <remessafim> vazia.  Se acaixa foi finalizada com F9, interface vai com o campo <remessafim> marcado com “X”. Nesse caso a caixa deve ser direcionada para...
-
-[sem-match] [I20.1053] `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx` | id:b7680336354c526f  
-Heading: *Pedido Divergente F9*  
-> F9 é um atalho interno do SAP que existe no coletor do operador, para identificar quebra....
-
-[sem-match] [I20.108] `ESPECIFICAÇÃO SOFTWARE - VIRTUAL PTW.docx` | id:e2d955e060417ab3  
-Heading: *3.6 Qualidade*  
-> Para os pedidos MULTI que compõe com algum item de fora da automação, deverá permanecer a regra de enviar para a saída de qualidade....
-
-[sem-match] [I20.108] `I20.108 - ESPECIFICAÇÃO SOFTWARE - VIRTUAL - REV17.docx` | id:160aef1225d025c6  
-Heading: *3.6 Qualidade*  
-> Para os pedidos MULTI que compõe com algum item de fora da automação, deverá permanecer a regra de enviar para a saída de qualidade....
-
-[sem-match] [I20.1409] `I20.1409 - ESPECIFICACAO BANCO DE DADOS - Rev1.docx` | id:991953251df285d3  
-Heading: *PROCEDURE: SP_RETORNO_LEITURA*  
-> Objetivo: Retorna todos os itens separados por pallet....
-
-[infra-sem-topico] [I20.1409] `I20.1409 - ESPECIFICACAO SOFTWARE - Rev6.docx` | id:3e68693364a7bab3  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[infra-sem-topico] [I20.1409] `I20.1409 - ESPECIFICACAO SOFTWARE - Rev6.docx` | id:64f813a8c08d1dcc  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de Dashboard Em cada estação de dashboard, 01 (um) Desktop e 01 (uma) TV auxiliarão o Operador com os principais recursos necessários pa...
-
-[infra-sem-topico] [I20.1409] `I20.1409 - ESPECIFICACAO SOFTWARE - Rev6.docx` | id:602b160d5bc8ba6d  
-Heading: *Servidor aplicação + banco*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra em nuvem/dat...
-
-[infra-sem-topico] [I20.1409] `I20.1409 - ESPECIFICACAO SOFTWARE - Rev6.docx` | id:54b40e84c221aaf5  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I20.1409] `I20.1409 - ESPECIFICACAO SOFTWARE - Rev6.docx` | id:31c5aa7fc10200d0  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário apenas 1 (um) ponto de alimentação, trifásico em 380Vac. A correção do fator de potência, qu...
-
-[infra-sem-topico] [I21.103] `I21.103 - ESPECIFICACAO DE SOFTWARE - ADICIONAL SORTER REISADO REV3.docx` | id:23ad8f861c766031  
-Heading: *Equipamentos*  
-> Para cada rampa será necessário um scanner e um PDV, sendo dessa forma com 11 (onze) rampas destinadas a desvio para rotas (doca) são necessárias ao todo 11 (onze) scanners e 11 (onze) PDVs....
-
-[infra-sem-topico] [I21.103] `I21.103 - ESPECIFICACAO DE SOFTWARE - ADICIONAL SORTER REISADO REV3.docx` | id:3c59e7d2417dcc77  
-Heading: *Infraestrutura*  
-> 11 (onze) pontos de redes que serão conectados nos PDVs, assim também como fazer todo o processo de liberação dos pontos e configurações como em switch e sistemas de infraestruturas....
-
-[infra-sem-topico] [I21.103] `I21.103 - ESPECIFICACAO DE SOFTWARE - ADICIONAL SORTER REISADO REV3.docx` | id:b4eef387499d9565  
-Heading: *Equipamentos*  
-> 11 (onze) PDVs configurados e de especificação escolhida pelo próprio cliente....
-
-[infra-sem-topico] [I21.103] `I21.103 - ESPECIFICACAO DE SOFTWARE - ADICIONAL SORTER REISADO REV3.docx` | id:d74d795c0ac61422  
-Heading: *Servidor*  
-> Servidor Local (on premise)...
-
-[sem-match] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:afc854d7b2c0ce7f  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO REISADO CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos...
-
-[sem-match] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:38cb70d4fb14dddb  
-Heading: *Dispenser paper – DSP*  
-> Após a leitura da caixa no ponto de decisão DPS sendo os dispensers paper de 1 a 4 por braço (Responsabilidade do cliente) e a informação do braço A ou B é atribuída no final do nome do ponto de decisão (EX: 1° dispenser...
-
-[sem-match] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:6075a0c4b989a60e  
-Heading: *Balança 02 – Intermediaria*  
-> Balança para aferição e validação do peso da caixa, nesse ponto de decisão utilizamos a siglas BAL02 onde o sistema WCS verifica se o peso da caixa está dentro da tolerância sendo que a tolerância cadastrada mais a soma ...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:7c48a36cef0563f0  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Order Start; No order start deverá ter uma estação de trabalho disponibilizada pela Eurofarma, 01 (um) Desktop + 1 (um) scanner, que a...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:29c3b966a3722e23  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação MFC de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do servid...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:cabd1b78cdb90db6  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:2b272bcb26e5504b  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:043671033332c9ec  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:5a6750fe430aa7e0  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO REISADO CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos...
-
-[sem-match] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:e0575e12a1c3d4cf  
-Heading: *Dispenser Paper – DSP*  
-> Após a leitura da caixa no ponto de decisão DPS sendo os dispensers paper de 1 a 4 por braço (Responsabilidade do cliente) e a informação do braço A ou B é atribuída no final do nome do ponto de decisão (EX: 1° dispenser...
-
-[sem-match] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:4b5e095ee0d26f3e  
-Heading: *Balança 02 – Intermediaria*  
-> Balança para aferição e validação do peso da caixa, nesse ponto de decisão utilizamos a siglas BAL02 onde o sistema WCS verifica se o peso da caixa está dentro da tolerância sendo que a tolerância cadastrada mais a soma ...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:5b36c3bc52ff89a5  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Order Start; No order start deverá ter uma estação de trabalho disponibilizada pela Eurofarma, 01 (um) Desktop + 1 (um) scanner, que a...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:99a6508b04dcc669  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do servid...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:184a512ef52644fd  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:c75e23bb7cb16c01  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I21.103] `I21.103 -  PROJETO REISADO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev1 (002).docx` | id:9d8ef5068c7a3833  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev 1.docx` | id:63372a15ede0c0ef  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev 1.docx` | id:90faa0461e41b5ea  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de Dashboard Em cada estação de dashboard, 01 (um) Desktop e 01 (uma) TV auxiliarão o Operador com os principais recursos necessários pa...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev 1.docx` | id:28434b0e72f13fb7  
-Heading: *Servidor aplicação + banco*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra em nuvem/dat...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev 1.docx` | id:da7281e6d741924a  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev 1.docx` | id:616c3caf066fb618  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário apenas 1 (um) ponto de alimentação, trifásico em 380Vac. A correção do fator de potência, qu...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev.0 - FASE 2.docx` | id:0d99f1fd14ae0a34  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev.0 - FASE 2.docx` | id:68a04fff58d60f70  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de Dashboard Em cada estação de dashboard, 01 (um) Desktop e 01 (uma) TV auxiliarão o Operador com os principais recursos necessários pa...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev.0 - FASE 2.docx` | id:281056f8af491a83  
-Heading: *Servidor aplicação + banco*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra em nuvem/dat...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev.0 - FASE 2.docx` | id:99c367166c24b515  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev.0 - FASE 2.docx` | id:fed9cc06b8704339  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário apenas 1 (um) ponto de alimentação, trifásico em 380Vac. A correção do fator de potência, qu...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev.0 - FASE 2.docx` | id:f9b94be93efa638f  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev0 - edit.docx` | id:826e9b6dc573407f  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev0 - edit.docx` | id:88f9cd96f9b5482d  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de Dashboard Em cada estação de dashboard, 01 (um) Desktop e 01 (uma) TV auxiliarão o Operador com os principais recursos necessários pa...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev0 - edit.docx` | id:e59bed67e80b9ec9  
-Heading: *Servidor aplicação + banco*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra em nuvem/dat...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev0 - edit.docx` | id:197981238135f73a  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.125] `I21.125 - ESPECIFICACAO SOFTWARE - Rev0 - edit.docx` | id:77f2995470840b27  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário apenas 1 (um) ponto de alimentação, trifásico em 380Vac. A correção do fator de potência, qu...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:199ea4b6e053c8a3  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:5416fdc2f896b153  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:71a32bf530d7f3f6  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:e8bfb24f6bdb948f  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:9f90e66d3988b217  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:739f7ce08508ac7e  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx` | id:553ee3dcf8d7d7fa  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:9e6379cb3081f6b0  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:a00c25964a25caaa  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:6f8073b122e7ff5e  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:82494ba5cad8fa06  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:4e4668734838974d  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:bd52810fed53791c  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:f102aedf546ceb90  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:4c30aefb262842e1  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:2b65ca0b5b60aa66  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:d6ff0432b684fb2f  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:d1fa5914449ca283  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:146c8d99a5b680e0  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:e3f671b285bc044d  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx` | id:3865b6a925b4720b  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.1140] `I21.1140 - ESPECIFICACAO DE SOFTWARE - MONTERREY - DPH.HIGIENE.LIMPEZA REV1.docx` | id:3136bdb84fa3c82b  
-Heading: *Restrição a Categorias Cadastradas*  
-> Para manter a consistência e a integridade dos dados, o Velox permite o agrupamento apenas de categorias que já foram cadastradas previamente no sistema Velox....
-
-[sem-match] [I21.1140] `I21.1140 - ESPECIFICACAO DE SOFTWARE - MONTERREY - DPH.HIGIENE.LIMPEZA REV1.docx` | id:2a210fedce280e45  
-Heading: *Categorias*  
-> O Velox deve permitir uma gestão completa das categorias de produtos, permitindo que os usuários cadastrem, editem e excluam categorias conforme necessário. Esta flexibilidade é crucial para manter o sistema atualizado e...
-
-[sem-match] [I21.1140] `I21.1140 - ESPECIFICACAO DE SOFTWARE - MONTERREY - DPH.HIGIENE.LIMPEZA REV1.docx` | id:df9ccca08812fca6  
-Heading: *Exclusão de Categorias*  
-> Quando uma categoria de produto não é mais necessária, ela pode ser removida do sistema Velox, ajudando a manter a base de dados limpa e eficiente....
-
-[sem-match] [I21.1140] `I21.1140 - PROJETO MONTERREY - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx` | id:711e33e9660e6b29  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MONTERREY CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[infra-sem-topico] [I21.1140] `I21.1140 - PROJETO MONTERREY - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx` | id:a23d6c36396374b3  
-Heading: *Estações de trabalho (DESKTOP)*  
-> Estação de Order Start; No order start deverá ter uma estação de trabalho, 01 (um) Desktop + 1 (um) scanner que auxiliará o Operador com os principais recursos necessários para a operação. (Responsabilidade do Cliente). ...
-
-[infra-sem-topico] [I21.1140] `I21.1140 - PROJETO MONTERREY - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx` | id:4cf37faa5266cab0  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam locais e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. O cliente deverá fornecer...
-
-[infra-sem-topico] [I21.1140] `I21.1140 - PROJETO MONTERREY - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx` | id:da679f525459ffee  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.1140] `I21.1140 - PROJETO MONTERREY - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx` | id:785a9d3c76b73916  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário 3 (TRES) pontos de alimentação, na potência estimada de 100kVA em 220 (trifásica) A correção...
-
-[infra-sem-topico] [I21.1140] `I21.1140 - PROJETO MONTERREY - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx` | id:dd6d7a31db0b88e3  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.131] `- Layout Novo - I21.131 - ESPECIFICACAO DE HARDWARE - PMB REV1.docx` | id:939c3c9e5e00c12b  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO PMB CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos esp...
-
-[infra-sem-topico] [I21.131] `- Layout Novo - I21.131 - ESPECIFICACAO DE HARDWARE - PMB REV1.docx` | id:9a3e4788222ede65  
-Heading: *Estações de trabalho*  
-> Desktops simples serão utilizados na operação para possibilitar o acesso da operação ao MFC via browser. Assim, para cada desktop, um ponto de alimentação elétrica e um ponto de rede deverão ser disponibilizados. A tabel...
-
-[infra-sem-topico] [I21.131] `- Layout Novo - I21.131 - ESPECIFICACAO DE HARDWARE - PMB REV1.docx` | id:65990eed6ad8bb09  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.131] `- Layout Novo - I21.131 - ESPECIFICACAO DE HARDWARE - PMB REV1.docx` | id:1b05ac61d1f94aae  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Todos os periféricos de impressão são de responsabilidade do cliente. ...
-
-[infra-sem-topico] [I21.131] `- Layout Novo - I21.131 - ESPECIFICACAO DE HARDWARE - PMB REV1.docx` | id:d1e44d62d079039a  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.131] `I21.131 - ESPECIFICACAO DE HARDWARE - REV1.docx` | id:4f1f6faa05be22c2  
-Heading: *[SEM TÍTULO]*  
-> Projeto PMB – Philip Morris Brasil – I21.131 – VER.1...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE HARDWARE - REV1.docx` | id:1a97594d7e2f39c6  
-Heading: *Estações de trabalho*  
-> Desktops simples serão utilizados na operação para possibilitar o acesso da operação ao MFC via browser. Assim, para cada desktop, um ponto de alimentação elétrica e um ponto de rede deverão ser disponibilizados. A tabel...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE HARDWARE - REV1.docx` | id:104359de48337909  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE HARDWARE - REV1.docx` | id:aa96f6a9626114e8  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Todos os periféricos de impressão são de responsabilidade do cliente. ...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE HARDWARE - REV1.docx` | id:847acef35c6596f8  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE - REV4.docx` | id:34da462fe6646be3  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO DE SOFTWARE Projeto PMB – I21.131 – Ver.4 27 DE FEVEREIRO DE 2023 SÃO BERNARDO DO CAMPO, SP - BRASIL...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE - REV4.docx` | id:e0c4db7fa543beb6  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[sem-match] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE - REV3 - SEM PTW.docx` | id:406185b6f7f9609b  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO DE SOFTWARE Projeto PMB – I21.131 – Ver.3 27 DE FEVEREIRO DE 2023 SÃO BERNARDO DO CAMPO, SP - BRASIL...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE - REV3 - SEM PTW.docx` | id:17aadd44f7d0b56a  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[sem-match] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx` | id:dc814a1e1fc904d5  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO DE SOFTWARE Projeto PMB – I21.131 – Ver.11 27 DE SETEMBRO DE 2023 SÃO BERNARDO DO CAMPO, SP - BRASIL...
-
-[sem-match] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx` | id:77af499dfe5bd447  
-Heading: *Balanceamento*  
-> O balanceamento das estações deverá ser 1 para 1, sendo uma caixa para cada estação quando o item estiver cadastrado em todas as estações (Curva A). Para itens de Curva A, a caixa deverá seguir para a estação que existem...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx` | id:16ed3e26d75df11e  
-Heading: *Especificação de Hardware*  
-> Esta seção tem por objetivo detalhar o hardware bem como apresentar as opções de software/sistemas Operacionais dos equipamentos de TI a serem utilizados no projeto. As próximas seções descrevem os detalhes do hardware d...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx` | id:d939e279808abd2e  
-Heading: *Estações de trabalho*  
-> Desktops simples serão utilizados na operação para possibilitar o acesso da operação ao MFC via browser. Assim, para cada desktop, um ponto de alimentação elétrica e um ponto de rede deverão ser disponibilizados. A tabel...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx` | id:7b373c4914a2404f  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx` | id:04bcdf2a40722285  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[sem-match] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV3 - SEM PTW.docx` | id:5471595e0aebbbee  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO DE SOFTWARE Projeto PMB – I21.131 – Ver.3 27 DE FEVEREIRO DE 2023 SÃO BERNARDO DO CAMPO, SP - BRASIL...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV3 - SEM PTW.docx` | id:26ed23dd1bd61645  
-Heading: *Especificação de Hardware*  
-> Esta seção tem por objetivo detalhar o hardware bem como apresentar as opções de software/sistemas Operacionais dos equipamentos de TI a serem utilizados no projeto. As próximas seções descrevem os detalhes do hardware d...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV3 - SEM PTW.docx` | id:7f511645866464c7  
-Heading: *Estações de trabalho*  
-> Desktops simples serão utilizados na operação para possibilitar o acesso da operação ao MFC via browser. Assim, para cada desktop, um ponto de alimentação elétrica e um ponto de rede deverão ser disponibilizados. A tabel...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV3 - SEM PTW.docx` | id:0627bc613b532ffb  
-Heading: *12.3 Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV3 - SEM PTW.docx` | id:2b01be38306378ff  
-Heading: *Iniciar Serviço no MFC*  
-> A tela de iniciar serviço MFC permite a inicialização ou parada do serviço MFC. Neste caso, o serviço MFC é a rotina do sistema responsável por comunicar com os equipamentos de chão de fábrica e entregar com o sistema do...
-
-[infra-sem-topico] [I21.131] `I21.131 - ESPECIFICACAO DE SOFTWARE - Aditivo_Servidor_QA_REV.1.docx` | id:3cc452c9f7fa0d1e  
-Heading: *Servidor de QA*  
-> Seguindo a solicitação do cliente Philip Morris será criado um ambiente de QA para uso em demais alterações que forem efetuadas no sistema. Segue abaixo a especificação necessária para este servidor de QA:...
-
-[infra-sem-topico] [I21.131] `I22.2505_-_ESPECIFICACAO_DE_SOFTWARE_-_PHILIP_MORRIS_REV1.docx` | id:4e1b4db450512a75  
-Heading: *Itens Incluídos no Fornecimento*  
-> -Fornecimento do servidor (Responsabilidade do cliente); -Fornecimento da licença e instalação do banco de dados (Responsabilidade do cliente); -Instalação do sistema operacional conforme especificado pelo cliente (ex.: ...
-
-[infra-sem-topico] [I21.131] `I22.2505_-_ESPECIFICACAO_DE_SOFTWARE_-_PHILIP_MORRIS_REV1.docx` | id:2156f0ed1f4b3976  
-Heading: *Testes Funcionais (Novo Server-Homologação)*  
-> -Validar comunicação com PLC + Equipamentos da automação; -Validar acendimento de leds e cadastro dos IP’s e Equipamentos no MFC; -Validar Telegrama de Mensagens entre PLC x MFC após leitura de códigos na automação; -Tes...
-
-[sem-match] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:78177d1dc21056a2  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO Jad Small CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[infra-sem-topico] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:5e586190c20177be  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:3c0b02a597289856  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões:...
-
-[infra-sem-topico] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:174a9280837048a1  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:3ff6a1f491c4f4d0  
-Heading: *Rede de Dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:dba01f3c651dcefc  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.165] `- Layout Novo - I21.165 - ESPECIFICACAO DE SOFTWARE - Jad Small - JadLogREV.1.docx` | id:e942ff6d9a7f8c0c  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:91fe85f256243f63  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO SOFTWARE Projeto Jad Small – I21.165 Ver. 1 22 DE MARÇO DE 2022 SÃO BERNARDO DO CAMPO, SP - BRASIL Sumário...
-
-[infra-sem-topico] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:53d6a6d543316071  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:659b2749ad29bc2f  
-Heading: *10.1       Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões:...
-
-[infra-sem-topico] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:e918ba26b982173c  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:c6544d9d7ab50dfb  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:0ede8dd1a076f656  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:7d5dc3ed3a08077b  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.165] `I21.165 - ESPECIFICACAO DE SOFTWARE - REV.1.docx` | id:830f88c0bc6b0b30  
-Heading: *Modelo de documento*  
-> Manifesto Interno...
-
-[sem-match] [I21.167] `I21.167 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.5.docx` | id:894bff1623f8aacf  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO DE SOFTWARE E HARDWARE Projeto BOMI JOINVILLE – I21.167 – VER.5...
-
-[infra-sem-topico] [I21.167] `I21.167 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.5.docx` | id:8899a65b6a9725b1  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina da automação, tendo como papel fundamental a in...
-
-[infra-sem-topico] [I21.167] `I21.167 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.5.docx` | id:a94dd9ab3cb05785  
-Heading: *Estação de trabalho (Desktop)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: Terminal de consulta Haverá 01 (um) terminal de consulta para acesso as informações do sistema, permitirá também visualizar os relatórios e outras ...
-
-[infra-sem-topico] [I21.167] `I21.167 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.5.docx` | id:55cb9c21c0697239  
-Heading: *Servidor de aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.167] `I21.167 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.5.docx` | id:6b387e26ba760466  
-Heading: *Rede de dados e infra de rede elétrica (Servidor)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Obs.: para uma melhor robustez da infra de rede elétrica, recomendamos...
-
-[infra-sem-topico] [I21.167] `I21.167 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.5.docx` | id:db6ddc68e036d348  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I21.177] `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV7.docx` | id:72b744ef6ce76e4b  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO VENUS CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos e...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:f8a073717c01c440  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:763b91fdc2ff9177  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:6bebfa35d1d3e1fc  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:87ccc029eaa1df1c  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:5a44d8aedce19233  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:a121ef2846bcfeec  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:027145d2ec3e2666  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:66a88c9b71fed8ee  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:21d9065eb01a66c0  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:92b2c817e7a7559e  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:b37b710cc9737b76  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:1eecb81295f2017c  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:1625d16d15f157fd  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx` | id:0a8de6a02e6e8260  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:2f8e4c00c2f77275  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:835d11448ad72b53  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:4b41a56b5afe2dac  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:098b098cc337f28c  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:ab139711419c948a  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:97166e1162865118  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx` | id:2581c4c8dc77bec5  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:a42168915e4ce061  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:acd1899585e76966  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:ab04adc61dccbdd9  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:50b47c13e19503a9  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:94ae9992f48df581  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:26ffcd13dc551d91  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx` | id:729fcd033873dfb0  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:5fb785d97379f4f6  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:9467fbdbea63189d  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:8ec3adf5db80376c  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:481b5addd28a736a  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:922ddef1809b84f9  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:8c42a58f8845fd98  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx` | id:9d686a71da7a477b  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:05b9c9cdc64585a1  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:458e6c232f187f60  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:8dbca5fa5422ef5d  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:948418ae2fc48baf  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:4b0f66a39e6f7f3d  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:563832760efa22ad  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE1 - CUBOMETRO.docx` | id:bf2f256f83f6ffff  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:ccf79b8cc0ebe8d8  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:b137ae7daa272981  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:b871ebb707ee31b4  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:89bc0536674f394c  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:8c766cf8f5a898f1  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:a9bd8ee2132cf4bd  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx` | id:2a8bd31a905638d1  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:8af6d67d8d6edcee  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:339f09fb40f2a16c  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter, tendo como papel fundamental a inter...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:6cfa448c0c432b18  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: • Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários par...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:e21f07400424112f  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:488fb38d0f514579  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:4952084dd50a6f7f  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, serão definidos pela Invent quantos pontos de alimentação serão necessários, trifásico em 380VAC. A correção...
-
-[infra-sem-topico] [I21.177] `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx` | id:29d470ae91dbd7e4  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:a8a3ccbb74f0324f  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO SAGITÁRIO CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:d8d6e5526d115e53  
-Heading: *Construir banco de dados*  
-> Na tela construir banco de dados que está apresentada na figura, serve para atualizar o sistema, quando um técnico especializado no sistema faz alguma adição ou atualização do sistema o cliente clica no botão Construir b...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:6a98068c26cebbb8  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará a rotina de Sorter, tendo como papel fundamental ...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:8f4292bde254afc8  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de Dashboard Em cada estação de dashboard, 01 (um) Desktop e 01 (uma) TV auxiliarão o Operador com os principais recursos necessários pa...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:f44c2f39daf3773a  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra em nuvem/dat...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:c6b6539fedc41bd4  
-Heading: *Rede de dados e infra de rede elétrica (periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:f663c4ee79f336ba  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário apenas 1 (um) ponto de alimentação, trifásico em 380Vac. A correção do fator de potência, qu...
-
-[infra-sem-topico] [I22.1106] `I22.1106 - PROJETO SAGITÁRIO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:ee92c59b1e87f1c8  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:f28787edc5ad82c5  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO GIGA CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos es...
-
-[infra-sem-topico] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:08b47fac6c608672  
-Heading: *Especificação de hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará a rotina de Sorter, tendo como papel fundamental ...
-
-[infra-sem-topico] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:0987f74848ae3db4  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de Dashboard Em cada estação de dashboard, 01 (um) Desktop e 01 (uma) TV auxiliarão o Operador com os principais recursos necessários pa...
-
-[infra-sem-topico] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:021f438f0e38618a  
-Heading: *Servidor aplicação + banco*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra em nuvem/dat...
-
-[infra-sem-topico] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:4693dc9e7bc615dd  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:de6155e6d0d39c21  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário apenas 1 (um) ponto de alimentação, trifásico em 380Vac. A correção do fator de potência, qu...
-
-[infra-sem-topico] [I22.144] `I22.144 - PROJETO GIGA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:8eab332364c2e5bd  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.190] `I22.190 - PROJETO RAV - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV3.docx` | id:c8a9512284550868  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO RAV I22.190 CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? S...
-
-[infra-sem-topico] [I22.190] `I22.190 - PROJETO RAV - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV3.docx` | id:9f5986a15521e860  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões:...
-
-[infra-sem-topico] [I22.190] `I22.190 - PROJETO RAV - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV3.docx` | id:02dbec138cefad90  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (Velox) e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. O histórico que deve ser mantido n...
-
-[infra-sem-topico] [I22.190] `I22.190 - PROJETO RAV - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV3.docx` | id:19d85994ad10375f  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.190] `I22.190 - PROJETO RAV - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV3.docx` | id:60b0d35e6b81b031  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.190] `I22.190 - PROJETO RAV - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV3.docx` | id:0dda97ae605828c4  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um Client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.200] `I22.200 - PROJETO TRISTAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:c4f206566beb2580  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO TRISTAR CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos...
-
-[sem-match] [I22.200] `I22.200 - PROJETO TRISTAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:f0b97737d76c163e  
-Heading: *Corte de ULD*  
-> Nesta tela o operador vai poder gerenciar o corte de ULD´s, essa tela é divida em 3 abas sendo elas: ULD´s cortadas Essa tela serve para o operador consultar as ULD´s que foram cortadas, mas que ainda não foram realocada...
-
-[sem-match] [I22.200] `I22.200 - PROJETO TRISTAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:a758a5a29d0e8ed1  
-Heading: *Consulta de Empresas Aéreas*  
-> Nesta tela o usuário poderá consultar todas as empresas aéreas, com as quais o sistema está trabalhando, que foram registradas anteriormente....
-
-[sem-match] [I22.200] `I22.200 - PROJETO TRISTAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:ed463cf6a1de78b4  
-Heading: *Consulta de Voos*  
-> Nesta tela o gestor consegue listar os voos registrados no sistema VELOX....
-
-[infra-sem-topico] [I22.200] `I22.200 - PROJETO TRISTAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:30e1dacd77b8b53b  
-Heading: *Servidor  Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser exclusivos para a aplicação VELOX, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina qual é o histórico que deve ser ma...
-
-[infra-sem-topico] [I22.200] `I22.200 - PROJETO TRISTAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:51d2f333682e9de2  
-Heading: *Acesso Remoto*  
-> Para o suporte remoto, testes e implantação do sistema VELOX, o cliente forneceu um acesso remoto através da ferramenta de suporte online da empresa QSS: https://remoto.qss.com.br/PassTrixMain.cc...
-
-[sem-match] [I22.2232] `I22.2232-6 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx` | id:4c41630c0c81cc72  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO TOCA DA RAPOSA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent...
-
-[infra-sem-topico] [I22.2232] `I22.2232-6 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx` | id:472f9d9576c876ae  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões:...
-
-[infra-sem-topico] [I22.2232] `I22.2232-6 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx` | id:e52ab4d9691a55dc  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do serv...
-
-[infra-sem-topico] [I22.2232] `I22.2232-6 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx` | id:54cd2be4ce101e52  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2232] `I22.2232-6 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx` | id:f679da5a7eb43fe2  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.2232] `I22.2232-6 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx` | id:c9193d9d6b1f4ddc  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um client to site. A liberação de acesso via V...
-
-[sem-match] [I22.2232] `I21.1140 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:f90fdd91fed7f158  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO TOCA DA RAPOSA CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent...
-
-[infra-sem-topico] [I22.2232] `I21.1140 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:ed4ee1e548cec2e7  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Order Start; No order start deverá ter uma estação de trabalho, 01 (um) Desktop + 1 (um) scanner que auxiliará o Operador com os princ...
-
-[infra-sem-topico] [I22.2232] `I21.1140 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:8783557f46c3c18d  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.2232] `I21.1140 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:58e0c281ef4f0689  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2232] `I21.1140 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:afd692a742f6beec  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.2232] `I21.1140 - PROJETO TOCA DA RAPOSA- ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:e9c5630811c05ee1  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.2241] `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx` | id:551c518ece63eb42  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO EURO CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos es...
-
-[infra-sem-topico] [I22.2241] `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx` | id:35625094066bfe89  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Order Start; No order start deverá ter uma estação de trabalho disponibilizada pela Eurofarma, 01 (um) Desktop + 1 (um) scanner, que a...
-
-[infra-sem-topico] [I22.2241] `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx` | id:8499f34a81b4d661  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação MFC de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do servid...
-
-[infra-sem-topico] [I22.2241] `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx` | id:a0117bb20d6271e8  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2241] `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx` | id:f394f1d48256dfca  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.2241] `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx` | id:7807d74a5501df4e  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:f1f15eea7520802c  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MINUANO CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos...
-
-[infra-sem-topico] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:2d8717c0c8cb6a87  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho disponibilizadas pelo cliente serão distribuídas ao longo das seguintes regiões: Estação de rejeito sorter; Na estação de rejeito na área do sorter, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impr...
-
-[infra-sem-topico] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:c5b368e73b65f0a7  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do serv...
-
-[infra-sem-topico] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:726416103333b49f  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede de Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:22f6053ab7bc5083  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:913235a057b7d934  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.2247] `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx` | id:7b27fe226005fe3e  
-Heading: *Layout*  
-> Segue o layout da planta abaixo:...
-
-[sem-match] [I22.2505] `I22.2505 - PROJETO AUTOMATIZE - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:ac517ab994053a73  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO AUTOMATIZE CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? So...
-
-[infra-sem-topico] [I22.2505] `I22.2505 - PROJETO AUTOMATIZE - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:d863c6d36eeda7d3  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start de Curva A (Responsabilidade do Cliente) Order Start de Curva B (Responsabilidade do Cliente) Order Start de Curva C (Responsabilidad...
-
-[infra-sem-topico] [I22.2505] `I22.2505 - PROJETO AUTOMATIZE - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:3ae389de9f602282  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do serv...
-
-[infra-sem-topico] [I22.2505] `I22.2505 - PROJETO AUTOMATIZE - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:9148f7fa055d4fa3  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2505] `I22.2505 - PROJETO AUTOMATIZE - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:236b046a5db9656d  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.2505] `I22.2505 - PROJETO AUTOMATIZE - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx` | id:5b6d4cab447a10af  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:bb2d749fed99ff87  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:8c4465ee702a176a  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:8db5f07806ef096c  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:f616c3b277b71da7  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:1178e7dd9bdca313  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:d51787ec4d8b1906  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx` | id:d387d0060cac958f  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:ba54ece062a039b4  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:b4be086417cc2d07  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:7ad74f43ac51202b  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:4efe02dd0fbb0b6c  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:6dbe0368cb4785ff  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:efeb83409d73c8a3  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx` | id:079287823bb37f30  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:f229da8a5b342a38  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:968b2b1c1b2488f1  
-Heading: *Volumes Exceção*  
-> Volumes que não podem ser induzidos na esteira devido ao tamanho ou peso serão tratados como volumes (full case) através da estação de trabalho (Rejeito), o colaborador vai ler o volume e o sistema vai indicar em qual ra...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:8cf94c8f5fc79873  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:40000f6c02cb8019  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:49623873fbf3834a  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:597daccb532c96fe  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:82ff2ab4ae06a289  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx` | id:fc2c8a45d8707bfb  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:ae2ec0160b1d5cd3  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:598fcdeeb129e11d  
-Heading: *Volumes Exceção*  
-> Volumes que não podem ser induzidos na esteira devido ao tamanho ou peso serão tratados como volumes (full case) através da estação de trabalho (Rejeito), o colaborador vai ler o volume e o sistema vai indicar em qual ra...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:c348d429ac63c133  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:91ded818c76f066a  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:05bc20d9b11638a1  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:3f5e00961d4b82c3  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:6c557ff4fb39a178  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx` | id:4b03293bc3908249  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:ae2f1e845df78414  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:a84efa7e569cf49d  
-Heading: *Volumes Exceção*  
-> Volumes que não podem ser induzidos na esteira devido ao tamanho ou peso serão tratados como volumes (full case) através da estação de trabalho (Rejeito), o colaborador vai ler o volume e o sistema vai indicar em qual ra...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:88a1e618ed253282  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:a85ffc8552b684b1  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:ad835f5b427c6215  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:7b2bd63334d05cb5  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:9d3e82ec8c79a371  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.402] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx` | id:02df997f4e32d620  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[sem-match] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:ab842f256dcba55c  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO JADLOG CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos ...
-
-[infra-sem-topico] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:5a0582f1f1ce8d24  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina de sorter e PTB (Put to Bag) tendo como papel f...
-
-[infra-sem-topico] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:602520cb180eb5fa  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão discutidas ao longo das seguintes regiões: Estação de dashboard Em cada estação de dashboard, 01 (um) desktop e 01 (uma) TV auxiliarão o operador com os principais recursos necessários para ...
-
-[infra-sem-topico] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:6c5f02370392b65b  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:34beef6d9a144ca2  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:87df7dddeb4acbbf  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I21.165] `I21.165-3 - PROJETO JADLOG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_1.docx` | id:9dd9ae4c353d92e7  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:731f4bc2a9b7e23d  
-Heading: *RF1.2.3 – Disponibilidade de posições livres*  
-> O WCS Velox deve rejeitar pallets entrantes que não possuam posições livres para armazená-los....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:885f59cd4a7ba2b1  
-Heading: *RF1.4 – By-pass para mesa de saída*  
-> O WCS Velox deve tratar pallets identificados com um código padrão (exemplo: 9999999999) para serem transportados diretamente para a mesa de saída do armazém. Neste caso não são aplicadas as validações de entrada aplicad...
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:3d160b8403af9202  
-Heading: *RF3.4 – Priorização na sequência de retirada*  
-> O WCS Velox deve ser capaz de ordenar a retirada dos pallets do armazém segundo prioridade recebida nas ordens de saída advindas do SAP WM....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:7e19286fe7f917e4  
-Heading: *RF8.2.2 – Transferência*  
-> O WCS Velox deve tratar movimentos de transferência de pallets....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:87d977f0f4571c11  
-Heading: *RF8.4 – Status do pallet*  
-> O WCS Velox só poderá retirar pallets cujo seja “Livre” (status de bloqueio proveniente do SAP WM)....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:8b726b6e92cec966  
-Heading: *RF9 – Parâmetros de arredondamento de pallets*  
-> O WCS Velox deve aplicar uma porcentagem de tolerância no atendimento da quantidade solicitada pela ordem de saída do SAP WM quando o produto solicitado possui tipo de controle por peso....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:50f62571be0c927b  
-Heading: *RF12 – Campo quantidade*  
-> O WCS Velox deve interpretar a quantidade recebida de duas maneiras diferentes: Valor inteiro: produtos com controle por unidade (peso padrão) Valor numérico (precisão 3 dígitos): produtos com controle por peso (peso var...
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:7201930bdca07575  
-Heading: *RF18 – Consulta de pallets*  
-> O WCS Velox deve permitir a consulta de todos os pallets existentes no armazém mostrando a localização de cada um deles....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:d4bb90a82c0abefc  
-Heading: *RF32.3 – Zonas*  
-> O WCS Velox deve permitir o cadastro de zonas....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:88c18ac5d266899c  
-Heading: *RF32.4 – Movimentos*  
-> O WCS Velox deve permitir o cadastro de movimentos....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:3088ee28d1ff7a2f  
-Heading: *RF33 – Configuração de faixas (de prazo de validade)*  
-> O WCS Velox deve permitir a configuração de faixas....
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:2378455891153797  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente nos níveis inferior e superior do armazém para que os transportadores possam...
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:e5be75bb541fab69  
-Heading: *Histórico de pallets rejeitados*  
-> Na entrada física do pallet, este pode ser recusado por alguns motivos. A tela para consulta dos motivos de rejeição de um pallet, para que o operador possa identificar o motivo do rejeito, está exibida na imagem abaixo:...
-
-[sem-match] [I22.128] `Especificação Software BRF.docx` | id:51a5a41a5d50ea6a  
-Heading: *Estado das posições*  
-> Essa funcionalidade permite analisar, em forma de lista, as informações das posições no armazém, exibindo o estado de cada uma e o pallet existente, caso esteja ocupada. O WCS Velox deve permitir a inserção de comentário...
-
-[infra-sem-topico] [I22.128] `Especificação Software BRF.docx` | id:62d670e8cdfc1602  
-Heading: *Falha na escrita de dados*  
-> Esta situação ocorre toda vez que o WCS tentar realizar a escrita de informações em TAGs de controle e dados dos PLCs e tal operação não poder ser concluída, devido à falha de escrita através do OPC Client API. Tal situa...
-
-[infra-sem-topico] [I22.128] `Especificação Software BRF.docx` | id:17dcdd45d5b899c2  
-Heading: *Falha na leitura de dados*  
-> Esta situação ocorre toda vez em que o WCS tentar efetuar uma leitura de algum TAG de dado ou controle e não conseguir, devido a timeout de conexão, de leitura ou outra falha na leitura através da OPC Client API. Tal sit...
-
-[infra-sem-topico] [I22.128] `Especificação Software BRF.docx` | id:63e6aedd3ec25640  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de-fábrica....
-
-[infra-sem-topico] [I22.128] `Especificação Software BRF.docx` | id:aac1c017078d60bb  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.128] `Especificação Software BRF.docx` | id:5ca493daa6fe9620  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam local (On Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante ...
-
-[infra-sem-topico] [I22.128] `Especificação Software BRF.docx` | id:17a5428ac8ee6329  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:cae8bc0c5ba29466  
-Heading: *RF1.2.3 – Disponibilidade de posições livres*  
-> O WCS Velox deve rejeitar pallets entrantes que não possuam posições livres para armazená-los....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:bfa113e5134855ae  
-Heading: *RF1.4 – By-pass para mesa de saída*  
-> O WCS Velox deve tratar pallets identificados com um código padrão (exemplo: 9999999999) para serem transportados diretamente para a mesa de saída do armazém. Neste caso não são aplicadas as validações de entrada aplicad...
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:f1240cc1ba1f613d  
-Heading: *RF3.4 – Priorização na sequência de retirada*  
-> O WCS Velox deve ser capaz de ordenar a retirada dos pallets do armazém segundo prioridade recebida nas ordens de saída advindas do SAP WM....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:380ee472b926838b  
-Heading: *RF8.2.2 – Transferência*  
-> O WCS Velox deve tratar movimentos de transferência de pallets....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:5c707b9f0e2ad9b3  
-Heading: *RF8.4 – Status do pallet*  
-> O WCS Velox só poderá retirar pallets cujo seja “Livre” (status de bloqueio proveniente do SAP WM)....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:c62451ed6d14c741  
-Heading: *RF9 – Parâmetros de arredondamento de pallets*  
-> O WCS Velox deve aplicar uma porcentagem de tolerância no atendimento da quantidade solicitada pela ordem de saída do SAP WM quando o produto solicitado possui tipo de controle por peso....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:3b4a6402a96ffd53  
-Heading: *RF12 – Campo quantidade*  
-> O WCS Velox deve interpretar a quantidade recebida de duas maneiras diferentes: Valor inteiro: produtos com controle por unidade (peso padrão) Valor numérico (precisão 3 dígitos): produtos com controle por peso (peso var...
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:2101b2afcb30eb08  
-Heading: *RF18 – Consulta de pallets*  
-> O WCS Velox deve permitir a consulta de todos os pallets existentes no armazém mostrando a localização de cada um deles....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:68cb2a3b4259bd38  
-Heading: *RF32.3 – Zonas*  
-> O WCS Velox deve permitir o cadastro de zonas....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:eebf09d8d2b80479  
-Heading: *RF32.4 – Movimentos*  
-> O WCS Velox deve permitir o cadastro de movimentos....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:d15640092dd28522  
-Heading: *RF33 – Configuração de faixas (de prazo de validade)*  
-> O WCS Velox deve permitir a configuração de faixas....
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:d342444c4019cd87  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente nos níveis inferior e superior do armazém para que os transportadores possam...
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:fe4ffcc32470c1c8  
-Heading: *Histórico de pallets rejeitados*  
-> Na entrada física do pallet, este pode ser recusado por alguns motivos. A tela para consulta dos motivos de rejeição de um pallet, para que o operador possa identificar o motivo do rejeito, está exibida na imagem abaixo:...
-
-[sem-match] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:6a71628804e782c0  
-Heading: *Estado das posições*  
-> Essa funcionalidade permite analisar, em forma de lista, as informações das posições no armazém, exibindo o estado de cada uma e o pallet existente, caso esteja ocupada. O WCS Velox deve permitir a inserção de comentário...
-
-[infra-sem-topico] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:769d5e2c6f6d8d4e  
-Heading: *Falha na escrita de dados*  
-> Esta situação ocorre toda vez que o WCS tentar realizar a escrita de informações em TAGs de controle e dados dos PLCs e tal operação não poder ser concluída, devido à falha de escrita através do OPC Client API. Tal situa...
-
-[infra-sem-topico] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:ab11797d1df9b44d  
-Heading: *Falha na leitura de dados*  
-> Esta situação ocorre toda vez em que o WCS tentar efetuar uma leitura de algum TAG de dado ou controle e não conseguir, devido a timeout de conexão, de leitura ou outra falha na leitura através da OPC Client API. Tal sit...
-
-[infra-sem-topico] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:b48839e9447ef8dd  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de-fábrica....
-
-[infra-sem-topico] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:e44ec3971bc7182c  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:df0e3920ea2a9120  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.128] `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx` | id:4ea7beaf7be13514  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:8b9c4c2e917b6ad3  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:8a24c0294620b893  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das volumes/pedidos, ou seja, esta aplicação executará as rotinas de Separação e Conferência, tendo com...
-
-[infra-sem-topico] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:764c28c004a8809b  
-Heading: *Estações de trabalho (PDV)*  
-> Nas estações de Order Start, separação e conferência deverão ter uma estação de trabalho disponibilizado pelo cliente. Order Start 01 (um) PDV 01 (um) Finger Scanner – (Scanner de dedo) 01 (um) Impressora de etiquetas Po...
-
-[infra-sem-topico] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:1f3298904a4aabe2  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (Velox) e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance total d...
-
-[infra-sem-topico] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:370e49ecdbbf2ab9  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:76fb240706132d96  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.1732] `I23.1615 - PROJETO FLOWER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:67bfce3b4b6ec179  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um Client-To-Site. A lib...
-
-[sem-match] [I22.1732] `PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE.docx` | id:03679c2a761f000f  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I22.1732] `PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE.docx` | id:0aef9c49d510f48b  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam local (On Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante ...
-
-[infra-sem-topico] [I22.1732] `PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE.docx` | id:e81d78107ceffbe1  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.1732] `PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE.docx` | id:2c74a59531b0adce  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I22.1732] `PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE.docx` | id:1d1cee2bbbebe107  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx` | id:0c3b9bf5eedc5dda  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BIZ CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos esp...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx` | id:c1aa381eff86ff4c  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Rejeito Na estação de rejeito deverá ter uma estação de trabalho disponibilizada pela TPC/SIEMENS, 01 (um) Desktop + 1 (um) scanner, q...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx` | id:657b59ed86b04621  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (WCS VELOX) e banco de dados sejam exclusivos para a aplicação WCS VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. Caso a implantação ocorra ...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx` | id:1fc7b5b99116d427  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx` | id:fad8c3f637233dc7  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx` | id:8ca65cfc74b21152  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso via VPN dever...
-
-[sem-match] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:f306440f1d2170b8  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BIZ CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos esp...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:d5381ba4dca63894  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Rejeito Na estação de rejeito deverá ter uma estação de trabalho disponibilizada pela TPC/SIEMENS, 01 (um) Desktop + 1 (um) scanner, q...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:85c720f83ebb2c14  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do serv...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:9fb398b69fd2111d  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:3df38f3462001135  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I22.2250] `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx` | id:a1b434117c28f885  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto,externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso via VPN deverá...
-
-[sem-match] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:e2cdfefba41f2a65  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:b741f314fd87e7dd  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará a rotina de Conferência, tendo como papel funda...
-
-[infra-sem-topico] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:4dfe7307b8dd1b26  
-Heading: *Estações de trabalho*  
-> Estação de consulta 01 (um) desktop 01 (um) leitor de código de barras 01 (uma) impressora de etiquetas (impressão responsabilidade do cliente)...
-
-[infra-sem-topico] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:aab6195be94c5bbe  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:52335e612385bd49  
-Heading: *Rede de dados e infra de rede eletrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout elétrico, com a localização de ca...
-
-[infra-sem-topico] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:817f9936061d3358  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23] `I23-1604 - PROJETO CARDEX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx` | id:c47a5af5a504d919  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma VPN para remoto, externo do time técnico da Invent, sendo esse acesso através de um Client-To-Site. A liberação ...
-
-[infra-sem-topico] [I23] `I23.1604 - ESPECIFICACAO DE SOFTWARE - PROJETO CARDEX 2024.docx` | id:dcce958eb6e12305  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará a rotina de Conferência, tendo como papel funda...
-
-[infra-sem-topico] [I23] `I23.1604 - ESPECIFICACAO DE SOFTWARE - PROJETO CARDEX 2024.docx` | id:97387b1dbd32a37e  
-Heading: *Estações de trabalho*  
-> Estação de consulta 01 (um) desktop 01 (um) leitor de código de barras 01 (uma) impressora de etiquetas (impressão responsabilidade do cliente)...
-
-[infra-sem-topico] [I23] `I23.1604 - ESPECIFICACAO DE SOFTWARE - PROJETO CARDEX 2024.docx` | id:82e7688fb0198575  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23] `I23.1604 - ESPECIFICACAO DE SOFTWARE - PROJETO CARDEX 2024.docx` | id:d6af37eeb3cb0ddf  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout elétrico, com a localização de ca...
-
-[infra-sem-topico] [I23] `I23.1604 - ESPECIFICACAO DE SOFTWARE - PROJETO CARDEX 2024.docx` | id:0c418f99650185a8  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23] `I23.1604 - ESPECIFICACAO DE SOFTWARE - PROJETO CARDEX 2024.docx` | id:9900a101ddd19052  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma VPN para remoto, externo do time técnico da Invent, sendo esse acesso através de um Client-To-Site. A liberação ...
-
-[infra-sem-topico] [I23.103] `I23.103 - PROJETO LOGIN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.1.docx` | id:e9bb6e5fdbaf47f9  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos volumes, ou seja, esta aplicação executará a rotina da automação, tendo como papel fundamental a in...
-
-[infra-sem-topico] [I23.103] `I23.103 - PROJETO LOGIN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.1.docx` | id:c81949d5d6674545  
-Heading: *Estação de trabalho (Desktop)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões:...
-
-[infra-sem-topico] [I23.103] `I23.103 - PROJETO LOGIN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.1.docx` | id:489a4596dc1867f9  
-Heading: *Servidor de aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação e banco de dados sejam exclusivos para a aplicação Invent de automação, ou seja, não deverão ser compartilhados com outras aplicações. Os servidores tanto aplicação quanto banc...
-
-[infra-sem-topico] [I23.103] `I23.103 - PROJETO LOGIN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.1.docx` | id:3b3f6a8067e2729c  
-Heading: *Rede de dados e infra (Servidor)*  
-> Será necessário rede wifi para conectividade do notebook do picking cart com o servidor que está a aplicação. Para isto, este wifi precisa estar na mesma rede que o servidor e o notebook do picking cart, além de que deve...
-
-[infra-sem-topico] [I23.103] `I23.103 - PROJETO LOGIN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV.1.docx` | id:0be85a1b75fb31eb  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:21ca390a408962a9  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará as rotinas de Separação, tendo como papel funda...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:ebc2ffd4d948fb21  
-Heading: *Estações de trabalho*  
-> Order Start – 1 (um) Linha 01 (um) Desktop 01 (um) Finger Scanner – (Scanner de dedo) 01 (um) Impressora de etiquetas Estações de separação – 4 (quatro) estações 01 (um) PDV (Windows) – Por estação 01 (um) Finger Scanner...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:f018f0577490c0d5  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:4cc596bc9295d89a  
-Heading: *Rede de dados e infra de rede e elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso, a equipe de engenharia elétrica Invent, desenvolverá um la...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:f6e508f04646f68c  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:ce93fdb84a6d28d4  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma conexão VPN para acesso remoto externo do time técnico da Invent aos servidores, sendo esse acesso através de um...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:573137b2f6f6297f  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará as rotinas de Separação, tendo como papel funda...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:51aae99227fdd421  
-Heading: *Estações de trabalho*  
-> Order Start – 1 Linha 01 (um) Desktop 01 (um) Finger Scanner – (Scanner de dedo) 01 (um) Impressora de etiquetas Estações de separação – 4 estações 01 (um) PDV (Windows) – Por estação 01 (um) Finger Scanner – (Scanner de...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:1c9df10523fe2ead  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:460d20b667665049  
-Heading: *Rede de dados e infra de rede e elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso, a equipe de engenharia elétrica Invent, desenvolverá um la...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:2faa892a80f80610  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:3dfb62de2bd880e6  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma conexão VPN para acesso remoto externo do time técnico da Invent aos servidores e PLC, sendo esse acesso através...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:6621f7712aec3b8e  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará as rotinas de Separação, tendo como papel funda...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:da1d1cef91185148  
-Heading: *Estações de trabalho*  
-> Order Start – 1 Linha 01 (um) Desktop 01 (um) Finger Scanner – (Scanner de dedo) 01 (um) Impressora de etiquetas Estações de separação – 4 estações 01 (um) PDV (Windows) – Por estação 01 (um) Finger Scanner – (Scanner de...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:a3eaf2de17963ef5  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:4fbe261c382aaa97  
-Heading: *Rede de dados e infra de rede e elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso, a equipe de engenharia elétrica Invent, desenvolverá um la...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:1a8a2f54e925f4b9  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:aa4bbfae81ff1822  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma conexão VPN para acesso remoto externo do time técnico da Invent aos servidores e PLC, sendo esse acesso através...
-
-[sem-match] [I23.125] `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:66e75084ca1a4c19  
-Heading: *Entregas – Documento RU*  
-> Abaixo estão citados os itens considerados como críticos do documento RU, que deverão estar funcionais no sistema Velox para Go-Live desse projeto. O restante dos itens do documento RU – Cristália, serão entregues em par...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:c659fd36d79ac00e  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará as rotinas de Separação, tendo como papel funda...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:2b124d91164d0787  
-Heading: *Estações de trabalho*  
-> Order Start – 2 Linhas 01 (um) Desktop – Por linha 01 (um) Finger Scanner – (Scanner de dedo) – Por linha 01 (um) Impressora de etiquetas – Por linha Estações de separação – 10 estações 01 (um) PDV (Windows) – Por estaçã...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:ef93a1e58da9a832  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:63b6ade584d7d9ce  
-Heading: *Rede de dados e infra de rede e elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso, a equipe de engenharia elétrica Invent, desenvolverá um la...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:b87cac8cb5688780  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:331938d2e43c0de5  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma conexão VPN para acesso remoto externo do time técnico da Invent aos servidores e PLC, sendo esse acesso através...
-
-[sem-match] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:22ebc3db44dd09c4  
-Heading: *Entregas – Documento RU*  
-> Abaixo estão citados os itens considerados como críticos do documento RU, que deverão estar funcionais no sistema Velox para Go-Live desse projeto. O restante dos itens do documento RU – Cristália, serão entregues em par...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:699feb7a7404b365  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará as rotinas de Separação, tendo como papel funda...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:4cd6ee64451eae82  
-Heading: *Estações de trabalho*  
-> Order Start – 2 Linhas 01 (um) Desktop – Por linha 01 (um) Finger Scanner – (Scanner de dedo) – Por linha 01 (um) Impressora de etiquetas – Por linha Estações de separação – 10 estações 01 (um) PDV (Windows) – Por estaçã...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:6307f385534696f1  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:d9fc1861e1662450  
-Heading: *Rede de dados e infra de rede e elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso, a equipe de engenharia elétrica Invent, desenvolverá um la...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:4f7c293fd142ae70  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx` | id:4b6b3762d0970eac  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma conexão VPN para acesso remoto externo do time técnico da Invent aos servidores e PLC, sendo esse acesso através...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:36c693e4bbd54341  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações dos pedidos/ volumes, ou seja, esta aplicação executará as rotinas de Separação, tendo como papel funda...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:91b04d38d48d96a2  
-Heading: *Estações de trabalho*  
-> Order Start – 2 Linhas 01 (um) Desktop – Por linha 01 (um) Finger Scanner – (Scanner de dedo) – Por linha 01 (um) Impressora de etiquetas – Por linha Estações de separação – 10 estações 01 (um) PDV (Windows) – Por estaçã...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:1caa1c757188fda5  
-Heading: *Servidores*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não devem ser compartilhados com outras aplicações. Para atingir a performance total da au...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:05f03f6c65926725  
-Heading: *Rede de dados e infra de rede e elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso, a equipe de engenharia elétrica Invent, desenvolverá um la...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:3b51e31b25de5206  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.125] `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:f8b9e4987023bc5b  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma conexão VPN para acesso remoto externo do time técnico da Invent aos servidores e PLC, sendo esse acesso através...
-
-[sem-match] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:72bd797495ae16f9  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO CANCUN CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:3fa596d1d3c1a240  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação Rejeito (responsabilidade do cliente) Rejeito do Sorter Para a região do rejeito do sorter, 01 (uma) estação de trabalho será necessária ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:50a25b9af66bc095  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:fb4c02adf54e68b9  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:22d4af3d51ca97fa  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx` | id:9e3cb17a57467f55  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:4f853b2a1d1f37e2  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO CANCUN CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:6df6c19a6911e849  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação Rejeito (responsabilidade do cliente) Rejeito do Sorter Para a região do rejeito do sorter, 01 (uma) estação de trabalho será necessária ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:59f096fa7419e82b  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:38f49b373977d863  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:055fcdb4be5c8381  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx` | id:f51271d7c6475a02  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_4.docx` | id:4110b148a5235fa6  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO CANCUN CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_4.docx` | id:a5d3dbf90f32ea4c  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação Rejeito (responsabilidade do cliente) Rejeito do Sorter Para a região do rejeito do sorter, 01 (uma) estação de trabalho será necessária ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_4.docx` | id:358cc8a04f4fe2df  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_4.docx` | id:4524967337026614  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_4.docx` | id:b87bf4b4d6828ada  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_4.docx` | id:26fb75e6de8d25f2  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um cliente, uma vez que a Invent não trabalha com VPN ...
-
-[sem-match] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_5.docx` | id:5bb08ed18a12c0b6  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO CANCUN CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_5.docx` | id:346c049452c7100a  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação Rejeito (responsabilidade do cliente)...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_5.docx` | id:192c9cd520a2be80  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_5.docx` | id:56de574882a3419f  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_5.docx` | id:1924a0c7ea8a36f1  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.1409] `I23.1409 - PROJETO CANCUN - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_5.docx` | id:9fd52f55bf645d62  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um cliente, uma vez que a Invent não trabalha com VPN ...
-
-[sem-match] [I23.1602] `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:82ddbc1073924d4a  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I23.1602] `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:4662134c5a3f4d3d  
-Heading: *Estação de trabalho (DESKTOP)*  
-> Nas estações de order start, conferência e rejeito deverão ter uma estação de trabalho disponibilizada pelo cliente. Order Start 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiqueta...
-
-[infra-sem-topico] [I23.1602] `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:21bb5acb5857a62a  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance propost...
-
-[infra-sem-topico] [I23.1602] `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:0c10f2105360911d  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1602] `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:fc38da45eadb6086  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.1602] `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:5422d02849e39c2b  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso via VPN dever...
-
-[sem-match] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Aditivo Etiqueta.docx` | id:47bde91786dc5344  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[sem-match] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:06c0d40f8b517d52  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[sem-match] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:3cea00ee4467aab9  
-Heading: *Caixas BLUZ*  
-> Nas caixas BLUZ irá apenas produtos BLUZ Existe apenas um tamanho de caixa BLUZ...
-
-[infra-sem-topico] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:e0c00fb96e2b91fd  
-Heading: *Especificações de Hardware de TI*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das volumes/pedidos, ou seja, esta aplicação executará as rotinas de Separação e Conferência, tendo com...
-
-[infra-sem-topico] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:db388c823b260f5f  
-Heading: *Estações de trabalho (PDV)*  
-> Nas estações de Order Start, separação e conferência deverão ter uma estação de trabalho disponibilizado pelo cliente. Order Start 01 (um) PDV 01 (um) Finger Scanner – (Scanner de dedo) 01 (um) Impressora de etiquetas Po...
-
-[infra-sem-topico] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:0b7b3cf63bff9eea  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (Velox) e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance total d...
-
-[infra-sem-topico] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:5e2f29777011d474  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:661297cc5d0e912b  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme o projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.1615] `I23.1615 - PROJETO DANA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx` | id:94ee3ba89cb74996  
-Heading: *VPN*  
-> Para o suporte remoto, testes, implantação do sistema e pós GoLive (suporte), o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um Client-To-Site. A lib...
-
-[sem-match] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx` | id:d4847e7d69dd14bc  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO FOX CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos esp...
-
-[infra-sem-topico] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx` | id:2e092bec9114cec9  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação de Order Start; No order start deverá ter uma estação de trabalho disponibilizada pelo cliente, 01 (um) Desktop + 1 (um) scanner, que aju...
-
-[infra-sem-topico] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx` | id:62ba6dbd7e39bffe  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Os servidores de aplicação e banco de dados devem ser locais (On-Premise) e exclusivos para a aplicação MFC de automação, ou seja, não deverão ser compartilhados com outras aplicações. Ressaltamos a importância do servid...
-
-[infra-sem-topico] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx` | id:f1679ef95ab70d8d  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx` | id:3c38dabb34a69f97  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx` | id:8b87a533619c014b  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.1733] `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 8.docx` | id:44e575c2cad85102  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO FOX CONFIDENCIAL © 2024, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos esp...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 aprovado.docx` | id:5f199cd275255a69  
-Heading: *Estação de trabalho (DESKTOP)*  
-> Nas estações de order start, conferência e rejeito deverão ter uma estação de trabalho disponibilizada pelo cliente. Order Start 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiqueta...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 aprovado.docx` | id:aca0f82f3dca1cba  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação DO WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 aprovado.docx` | id:9be55caa5b013e42  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 aprovado.docx` | id:5e2ffc285662b8d7  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 aprovado.docx` | id:a9e1ac5c0ae73fca  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso via VPN dever...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote-DAI.docx` | id:15a6f23922007eab  
-Heading: *Estação de trabalho (Desktop)*  
-> Nas estações de order start, conferência e rejeito deverão ter uma estação de trabalho disponibilizada pelo cliente. Order Start 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiqueta...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote-DAI.docx` | id:bd029ed868a8ddfe  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação DO WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote-DAI.docx` | id:172bad14c8141c28  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote-DAI.docx` | id:3ec35fbefaeb8eb1  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote-DAI.docx` | id:de6b0b3550eae0ad  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso via VPN dever...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote.docx` | id:28a208f9f410c72b  
-Heading: *Estação de trabalho (DESKTOP)*  
-> Nas estações de order start, conferência e rejeito deverão ter uma estação de trabalho disponibilizada pelo cliente. Order Start 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiqueta...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote.docx` | id:81fa0601d0013e3b  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (WCS) e banco de dados sejam exclusivos para a aplicação DO WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote.docx` | id:daa8ed9fa1330ea1  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote.docx` | id:3efca5662a40cc56  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 SemLote.docx` | id:d0d5c01fa77027c1  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso remoto, externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso via VPN dever...
-
-[sem-match] [I23.3503] `I23.3503- ESPECIFICACAO DE SOFTWARE - PROJETO Eletro REV .1.docx` | id:8620b088399edea8  
-Heading: *Validação SKU x Pedido*  
-> Após...
-
-[infra-sem-topico] [I23.3801] `ESPECIFICAÇÃO INTEGRAÇÕES-SERVIDORES VELOX - OCTOPUS.docx` | id:4e15e481d3a99455  
-Heading: *Servidor Local (On Premise)*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação VELOX de automação, ou seja, não deve...
-
-[infra-sem-topico] [I23.3801] `ESPECIFICAÇÃO INTEGRAÇÕES-SERVIDORES VELOX - OCTOPUS.docx` | id:9ffba47c62f5b5fe  
-Heading: *Servidor Nuvem (Cloud)*  
-> Caso opte pela utilização de servidores em nuvem (cloud), tanto o servidor de aplicação como o de banco de dados deverão ser dedicados exclusivamente à aplicação VELOX de automação, ou seja, não deverão ser compartilhado...
-
-[sem-match] [I23.3801] `ESPECIFICAÇÃO INTEGRAÇÕES-SERVIDORES VELOX - OCTOPUS.docx` | id:435abc463e2b41c9  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: SQL S...
-
-[infra-sem-topico] [I23.3801] `ESPECIFICAÇÃO INTEGRAÇÕES-SERVIDORES VELOX - OCTOPUS.docx` | id:c1c2049923baee9e  
-Heading: *VPN e Acesso Remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client to site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[infra-sem-topico] [I23.3801] `ESPECIFICAÇÃO INTEGRAÇÕES-SERVIDORES VELOX - OCTOPUS.docx` | id:c37708bff251b458  
-Heading: *Servidores*  
-> Concluindo, o documento delineia uma abordagem abrangente para a infraestrutura de servidores necessária para a implementação bem-sucedida do sistema Velox de automação. A recomendação principal é a preferência por servi...
-
-[sem-match] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx` | id:f91843d1a3369b31  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO OCTOPUS I23.3801 – REV.1 – 09/abril/2024...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx` | id:2eb33bb74995d397  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx` | id:4eaca6bffef8455c  
-Heading: *Servidores – Local (On Premise)*  
-> Em um ambiente local, as comunicações entre dispositivos e o servidor ocorrem dentro de uma rede interna, onde a latência é mínima, isso se deve ao fato de que o cabeamento é físico, o que elimina a dependência de links ...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx` | id:24da2e61e3f4dc22  
-Heading: *Servidor de aplicação*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação VELOX de automação, ou seja, não deve...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx` | id:90414189fcdd584f  
-Heading: *Servidor de banco de dados*  
-> O banco de dados deverá ser centralizado, sem a necessidade de usarmos banco de dados descentralizados. Os sistemas centralizados são projetados para oferecer desempenho consistente e escalabilidade eficiente. Ao contrár...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx` | id:1bf466ad57c23765  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso externo do time técnico da Invent, sendo esse acesso através de um client-to-site. A liberação de acess...
-
-[sem-match] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx` | id:51c83053c973ddb3  
-Heading: *[SEM TÍTULO]*  
-> ESPECIFICAÇÃO OCTOPUS I23.3801 – REV.0 – 05/abril/2024...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx` | id:5f07cb4fc76ed5b9  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx` | id:b4d26f3e5657557b  
-Heading: *Servidores – Local (On Premise)*  
-> Em um ambiente local, as comunicações entre dispositivos e o servidor ocorrem dentro de uma rede interna, onde a latência é mínima, isso se deve ao fato de que o cabeamento é físico, o que elimina a dependência de links ...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx` | id:3b624a4221c5ae83  
-Heading: *Servidor de aplicação*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação VELOX de automação, ou seja, não deve...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx` | id:6bedabf471a36755  
-Heading: *Servidor de banco de dados*  
-> O banco de dados deverá ser centralizado, sem a necessidade de usarmos banco de dados descentralizados. Os sistemas centralizados são projetados para oferecer desempenho consistente e escalabilidade eficiente. Ao contrár...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx` | id:c67e370ccdfa1990  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso externo do time técnico da Invent, sendo esse acesso através de um client-to-site. A liberação de acess...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx` | id:d769846b216f54d0  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx` | id:5f10a33d36d4bc02  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta ...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx` | id:39141cc36dbc2bac  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx` | id:6a9105bf3306ee35  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, sera de responsabilidade do c...
-
-[infra-sem-topico] [I23.3801] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx` | id:6901d55e95a57768  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I23.3917] `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx` | id:68508c6b74d7f622  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta ...
-
-[sem-match] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV7.docx` | id:b5dd36305a61c943  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV7.docx` | id:7faf29f3a649dc2d  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação Rejeito (responsabilidade do cliente)...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV7.docx` | id:ff25c4a8da870371  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam local (On Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante ...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV7.docx` | id:364669f987ee66b5  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV7.docx` | id:6c8c2508d3c783b6  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV7.docx` | id:75afdee6bdb65040  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO HARDWARE.docx` | id:e012e6e61892e483  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO HARDWARE.docx` | id:724266b491296bbe  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estação Rejeito (responsabilidade do cliente)...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO HARDWARE.docx` | id:bbbe3805b977fd8a  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam local (On Premise) e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante ...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO HARDWARE.docx` | id:aa1256caa611daaf  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO HARDWARE.docx` | id:be1ff88a0a7590a8  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I23.406] `I23.406 - PROJETO NSR - ESPECIFICAÇÃO HARDWARE.docx` | id:de0617d428bd6b85  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.420] `I23.420 - PROJETO BAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV1.docx` | id:0d75961e85a7ec90  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO ATIVA BAR I23.420 CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Inv...
-
-[infra-sem-topico] [I23.420] `I23.420 - PROJETO BAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV1.docx` | id:95ab77d215bd76cc  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões:...
-
-[infra-sem-topico] [I23.420] `I23.420 - PROJETO BAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV1.docx` | id:18499d91aebc09d5  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (Velox) e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. O histórico que deve ser mantido n...
-
-[infra-sem-topico] [I23.420] `I23.420 - PROJETO BAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV1.docx` | id:e630be2c944be591  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.420] `I23.420 - PROJETO BAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV1.docx` | id:02c2ec99f83f2a7a  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.420] `I23.420 - PROJETO BAR - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV1.docx` | id:a078059a0ba09ad8  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um Client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [Vegas 2] `I23.1714-0  -  PROJETO VEGAS - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.03.docx` | id:2bd53136fa130557  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO VEGAS CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos e...
-
-[infra-sem-topico] [Vegas 2] `I23.1714-0  -  PROJETO VEGAS - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.03.docx` | id:cbecc3e00ef9fe58  
-Heading: *Hardware*  
-> Sugerimos aumentar a memória do servidor de aplicação para 16gb, atualmente o servidor tem 8gb utilizando mais de 70% da capacidade....
-
-[infra-sem-topico] [ADICONAIS DIAMANTE] `Conferência Diamante - ESPECIFICACAO DE SOFTWARE - Rev.2.docx` | id:3cba7b92adbbc5e3  
-Heading: *Responsabilidades*  
-> Responsabilidades das partes envolvidas no processo de desenvolvimento do aditivo (Invent/Hinode)....
-
-[sem-match] [Correios] `ESPECIFICACAO DE SOFTWARE - SLIM SORTER - REV 1.docx` | id:585f16c920092956  
-Heading: *Sistema do cliente valida as informações*  
-> Com as informações recebidas do Velox, sistema do cliente faz as devidas validações....
-
-[sem-match] [Correios] `ESPECIFICACAO DE SOFTWARE - SLIM SORTER - REV 1.docx` | id:46ed5d8f27fada08  
-Heading: *Normal*  
-> Em casos em que o sistema Velox estiver operando com a função de contingência desligada, o sistema Velox, ao receber as informações enviadas pelo cliente fará a validação dos campos “valida” e “destino”....
-
-[sem-match] [Correios] `ESPECIFICACAO DE SOFTWARE - SLIM SORTER - REV 1.docx` | id:ff85b4d24938f595  
-Heading: *Fluxo*  
-> ddd Parte inferior do formulário...
-
-[sem-match] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:5c043bab0af98f45  
-Heading: *[SEM TÍTULO]*  
-> DOCUMENTO DE ESPECIFICAÇÃO DE SERVIDORES Servidores Rede VPN...
-
-[infra-sem-topico] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:a1fe0edcaa312788  
-Heading: *Servidor Local (On Premise)*  
-> Para garantir a máxima eficiência na automação, é recomendado pela Invent, que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação Velox, ou seja, não deve...
-
-[sem-match] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:d0faabe40a95a0e1  
-Heading: *Requisitos*  
-> Servidor Único Aplicação e banco de dados Processador: Xeon 8 núcleos Memória RAM: 32 GB Disco: SSD 1 TB Adaptadores de rede: 2 adaptadores de rede de 10/100/1000 Mbps Sistema operacional: Microsoft Windows Server 2019 o...
-
-[infra-sem-topico] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:0b1f978a4d965985  
-Heading: *Servidor Nuvem (Cloud)*  
-> Caso o cliente opte pela utilização de servidores em nuvem (cloud), tanto o servidor de aplicação como o de banco de dados deverão ser dedicados exclusivamente à aplicação Velox de automação, ou seja, não deverão ser com...
-
-[sem-match] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:be915c574577d604  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:3bf38fe45ad42818  
-Heading: *VPN e Acesso Remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client to site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[infra-sem-topico] [I22.120] `BRF SALVADOR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:918f7d6e87bbd049  
-Heading: *Servidores*  
-> Concluindo, o documento delineia uma abordagem abrangente para a infraestrutura de servidores necessária para a implementação bem-sucedida do sistema Velox de automação. A recomendação principal é a preferência por servi...
-
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR - Etiquetas.docx` | id:5df5dcaffb8019cb  
-Heading: *RQ2 – Disponibilidade*  
-> O ambiente de alta disponibilidade onde o WCS WCS será instalado é de responsabilidade da Brasil Food....
-
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_01.docx` | id:88e3f0ffa73aa4d1  
-Heading: *RQ2 – Disponibilidade*  
-> O ambiente de alta disponibilidade onde o WCS WCS será instalado é de responsabilidade da Brasil Food....
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_01.docx` | id:b54f3cb60d3438fd  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_01.docx` | id:b080eb01dd784a4e  
-Heading: *Estação de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_01.docx` | id:3a72e2e21111df3a  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_02.docx` | id:774a72850748191f  
-Heading: *RQ2 – Disponibilidade*  
-> O ambiente de alta disponibilidade onde o WCS WCS será instalado é de responsabilidade da Brasil Food....
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_02.docx` | id:bde301c4abac136f  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_02.docx` | id:7db1810d107d9105  
-Heading: *Estação de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_02.docx` | id:21573f5eb2f1a158  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_03.docx` | id:791f55fe675f18bf  
-Heading: *RQ2 – Disponibilidade*  
-> O ambiente de alta disponibilidade onde o WCS WCS será instalado é de responsabilidade da Brasil Food....
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_03.docx` | id:b769c7f2b1b660ac  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_03.docx` | id:9d5efa9ed76255d7  
-Heading: *Estação de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_03.docx` | id:4e4b5d96cc0c3de4  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[sem-match] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_5.docx` | id:114023ecd09bb910  
-Heading: *RQ2 – Disponibilidade*  
-> O ambiente de alta disponibilidade onde o WCS WCS será instalado é de responsabilidade da Brasil Food....
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_5.docx` | id:59289a0d833b89ee  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_5.docx` | id:bbd7ee39e5bba1bd  
-Heading: *Estação de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.120] `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_5.docx` | id:e5e6c8947245d767  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I22.1739] `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV8.docx` | id:dae3d43fb04d456a  
-Heading: *Especificação de Hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações de separação, ou seja, esta aplicação executará as rotinas de linha de separação, conferência e control...
-
-[infra-sem-topico] [I22.1739] `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV8.docx` | id:f5f366c176e9ec40  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) (WMS) 01 (um) Desktop 01 (um) Impressora Conferência (01) 01 (um) Desktop 01 (um) Scanner (leitor de código de barras) 01 (um) I...
-
-[infra-sem-topico] [I22.1739] `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV8.docx` | id:3e2d00a998fad9c4  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I22.1739] `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV8.docx` | id:959331179f9e3fd8  
-Heading: *Servidor aplicação + banco de dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação Velox de automação, ou seja, não deve...
-
-[infra-sem-topico] [I22.1739] `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV8.docx` | id:5d33fc9dd75f6b21  
-Heading: *VPN e acesso remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client-to-site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[sem-match] [I22.1739] `3Cor - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:b1490dcd104e7431  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO 3 COR CONFIDENCIAL © 2024, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos e...
-
-[infra-sem-topico] [I22.1739] `3Cor - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:5baad357042acbe4  
-Heading: *Estações de trabalho (DESKTOP)*  
-> Estação de Order Start; No order start deverá ter uma estação de trabalho, 01 (um) Desktop + 1 (um) scanner que auxiliará o Operador com os principais recursos necessários para a operação. (Responsabilidade do Cliente). ...
-
-[infra-sem-topico] [I22.1739] `3Cor - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:426171ee4869aff1  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam locais e exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. O cliente deverá fornecer...
-
-[infra-sem-topico] [I22.1739] `3Cor - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:ffa8c3d15f09b45c  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I22.1739] `3Cor - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:c1f4247e039210fa  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, será necessário 3 (TRES) pontos de alimentação, na potência estimada de 100kVA em 220 (trifásica) A correção...
-
-[infra-sem-topico] [I22.1739] `3Cor - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx` | id:16bc91d70b2e7301  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de cliente, uma vez que a Invent não trabalha com VPN sit...
-
-[infra-sem-topico] [I23.1412] `FDBR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:7a14109b1d23457d  
-Heading: *Servidor Local (On Premise)*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação VELOX de automação, ou seja, não deve...
-
-[sem-match] [I23.1412] `FDBR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:24a8430b361360fa  
-Heading: *Requisitos*  
-> Servidor Único Aplicação e banco de dados Processador: Xeon 8 núcleos Memória RAM: 32 GB Disco: SSD 1 TB Adaptadores de rede: 2 adaptadores de rede de 10/100/1000 Mbps Sistema operacional: Microsoft Windows Server 2012 o...
-
-[infra-sem-topico] [I23.1412] `FDBR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:8931460afac35273  
-Heading: *Servidor Nuvem (Cloud)*  
-> Caso opte pela utilização de servidores em nuvem (cloud), tanto o servidor de aplicação como o de banco de dados deverão ser dedicados exclusivamente à aplicação VELOX de automação, ou seja, não deverão ser compartilhado...
-
-[sem-match] [I23.1412] `FDBR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:2474fb06c7a4938c  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I23.1412] `FDBR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:04a3604582eb81a4  
-Heading: *VPN e Acesso Remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client to site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[infra-sem-topico] [I23.1412] `FDBR - ESPECIFICAÇÃO SERVIDORES VELOX.docx` | id:74091f2cca934000  
-Heading: *Servidores*  
-> Concluindo, o documento delineia uma abordagem abrangente para a infraestrutura de servidores necessária para a implementação bem-sucedida do sistema Velox de automação. A recomendação principal é a preferência por servi...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:b22a14f54219e8d7  
-Heading: *Especificação de Hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará as rotinas de Picking, Picking Cart, Conferência,...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:745acb25a6c8a052  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiquetas (Tipo Zebra) Conferência (24) 01 (u...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:8d31cb7a4e566cd1  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:ae66d351aa75c111  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação WCS e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação WCS de automação, ou seja, não deverão se...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:d9495536c80430dc  
-Heading: *Servidor Nuvem (Cloud)*  
-> Caso opte pela utilização de servidores em nuvem (cloud), tanto o servidor de aplicação como o de banco de dados deverão ser dedicados exclusivamente à aplicação WCS de automação, ou seja, não deverão ser compartilhados ...
-
-[sem-match] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:380acb8280536a41  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I23.1412] `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx` | id:5ff14808d03144d6  
-Heading: *Conexão e Acesso Remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, será disponibilizado acesso via Azure Bastion (Jump Host) com os acessos e permissões necessárias na rede de automação, para que os técnic...
-
-[sem-match] [I23.144] `I22.2505 - PROJETO AUTOMATIZE 2 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-REV.6.docx` | id:d9fff698cef82880  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO AUTOMATIZE 2 CONFIDENCIAL © 2024, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? ...
-
-[infra-sem-topico] [I23.144] `I22.2505 - PROJETO AUTOMATIZE 2 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-REV.6.docx` | id:daf1fda4eb841a1a  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão (Full Case) (Responsabilidade Invent) Leitores de mão (Full Case) (Responsabilidade Invent) Estações de impressão (Fraciona...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1 - editado.docx` | id:cb997cb2d9a517c3  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1 - editado.docx` | id:55b215973727c939  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1 - editado.docx` | id:2b013581e20aefdc  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1 - editado.docx` | id:756bece6be4c4683  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1 - editado.docx` | id:f982998c23850939  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1.docx` | id:fb520e7d4ca3ae29  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1.docx` | id:8fccc0f5be55c82f  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1.docx` | id:e0bba2238b309dae  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1.docx` | id:b77b525a5df88450  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I23.3502] `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1.docx` | id:6ecdb1198889fe02  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I24.101] `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx` | id:d778553423b683da  
-Heading: *Especificação de Hardware e TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I24.101] `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx` | id:0d2ec8185f25ebea  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta ...
-
-[infra-sem-topico] [I24.101] `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx` | id:c2874e7e5fd01650  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I24.101] `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx` | id:786d658ff2dd6a3f  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I24.101] `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx` | id:776dbc641fff0452  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:cbe229008f6c0a51  
-Heading: *ESPECIFICAÇÃO DE HARDWARE*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará as rotinas de Picking, Conferência e Sorter, tend...
-
-[infra-sem-topico] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:42551c0556efd9b3  
-Heading: *Estações de Trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiquetas Estações (14) 700 (um) Displays Pic...
-
-[infra-sem-topico] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:35d8d3e4468aa45e  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:8222e67319edbd02  
-Heading: *Servidor Aplicação + Banco de Dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (MFC) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação MFC de automação, ou seja, não deverão ...
-
-[infra-sem-topico] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:ec2e6eb8d52248ed  
-Heading: *Servidor Nuvem (Cloud)*  
-> Requisitos de Servidores em Nuvem para a Aplicação MFC Caso seja adotado o uso de servidores em nuvem (cloud), tanto o servidor de aplicação quanto o de banco de dados deverão ser dedicados exclusivamente à aplicação MFC...
-
-[sem-match] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:928eb8107c8fbb49  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I24.114] `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES - Rev 2.docx` | id:28247b97b470753b  
-Heading: *VPN E ACESSO REMOTO*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client to site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[infra-sem-topico] [I24.121] `I24.121 - ESPECIFICACAO DE SOFTWARE - PROJETO HYDRA REV6.docx` | id:e91310252de6c8dd  
-Heading: *Especificação de Hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações de separação, ou seja, esta aplicação executará as rotinas de linha de separação, conferência e control...
-
-[infra-sem-topico] [I24.121] `I24.121 - ESPECIFICACAO DE SOFTWARE - PROJETO HYDRA REV6.docx` | id:259adf06ea6d1bdc  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) 01 (um) Desktop 01 (um) Scanner (leitor de código de barras) Conferência (01) 01 (um) Desktop 01 (um) Scanner (leitor de código ...
-
-[infra-sem-topico] [I24.121] `I24.121 - ESPECIFICACAO DE SOFTWARE - PROJETO HYDRA REV6.docx` | id:71e574a713597553  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I24.121] `I24.121 - ESPECIFICACAO DE SOFTWARE - PROJETO HYDRA REV6.docx` | id:b1ba9c947987a94c  
-Heading: *Servidor aplicação + banco de dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (Velox) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação Velox de automação, ou seja, não deve...
-
-[infra-sem-topico] [I24.121] `I24.121 - ESPECIFICACAO DE SOFTWARE - PROJETO HYDRA REV6.docx` | id:f763b966e04eb99f  
-Heading: *VPN e Acesso remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client-to-site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[sem-match] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:7429b3ca78a59409  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[sem-match] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:c63523ee88cb53d3  
-Heading: *Volumes Exceção*  
-> Volumes que não podem ser induzidos na esteira devido ao tamanho ou peso serão tratados como volumes (full case) através da estação de trabalho (Rejeito), o colaborador vai ler o volume e o sistema vai indicar em qual ra...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:f8bdf59d8c05a247  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:29652d14f5a78fbe  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:e9db84f796ec20f8  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:b0c5c1986d239b7a  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:7a57465aaa7394e8  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx` | id:6c66df86cd29a96b  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[sem-match] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:2e45e0a16df1a159  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO MARAVILHA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Som...
-
-[sem-match] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:5972de4daeef5238  
-Heading: *Volumes Exceção*  
-> Volumes que não podem ser induzidos na esteira devido ao tamanho ou peso serão tratados como volumes (full case) através da estação de trabalho (Rejeito), o colaborador vai ler o volume e o sistema vai indicar em qual ra...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:3956bd9a7aa63252  
-Heading: *Estações de trabalho (DESKTOP)*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Estações de impressão conferência Fracionados (responsabilidade do cliente) Estações de conferência (responsabilidade do cliente) Estação Rejeito...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:d732e3ed62c77d9e  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:9a8bfc836980dd30  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicação na rede da Automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:189698e377d85310  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente.   Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do...
-
-[infra-sem-topico] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:539fbcb9185e4132  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I24.1417] `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx` | id:17b77207dc9e5419  
-Heading: *Fluxograma*  
-> Documento de referência: https://miro.com/app/board/uXjVPF4a2PE=/?share_link_id=71264615978...
-
-[infra-sem-topico] [I24.173] `I24.173 - PROJETO CANDELÁRIA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV.2.docx` | id:fd643fed63804e48  
-Heading: *Especificação de hardware de TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I24.173] `I24.173 - PROJETO CANDELÁRIA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV.2.docx` | id:d4002ac4ecbb4bf1  
-Heading: *Estação de trabalho - Rejeito*  
-> Na estação de rejeito deverá conter uma estação de trabalho disponibilizada pelo cliente, sendo: 01 (um) Equipamento desktop 01 (um) Leitor de código de barras – Ex. Honeywell 1470g Abaixo segue a configuração mínima par...
-
-[infra-sem-topico] [I24.173] `I24.173 - PROJETO CANDELÁRIA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV.2.docx` | id:85e2b33ed296cf6b  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação Velox e banco de dados sejam exclusivos para a aplicação Velox de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta ...
-
-[infra-sem-topico] [I24.173] `I24.173 - PROJETO CANDELÁRIA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV.2.docx` | id:b45a16dce9ab6d76  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I24.173] `I24.173 - PROJETO CANDELÁRIA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV.2.docx` | id:05aafd2044bb202f  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I24.173] `I24.173 - PROJETO CANDELÁRIA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE REV.2.docx` | id:b548fb41efffe3e8  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:9b1b0b7afd3abaa6  
-Heading: *ESPECIFICAÇÃO DE HARDWARE*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará as rotinas de Picking, Conferência e Sorter, tend...
-
-[infra-sem-topico] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:3aad980d8174a22d  
-Heading: *Estações de Trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiquetas Estações (14) 700 (um) Displays Pic...
-
-[infra-sem-topico] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:3017f9b87da541e9  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:464a8a1d5f5eb859  
-Heading: *Servidor Aplicação + Banco de Dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (MFC) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação MFC de automação, ou seja, não deverão ...
-
-[infra-sem-topico] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:51e524d2d737c6d8  
-Heading: *Servidor Nuvem (Cloud)*  
-> Requisitos de Servidores em Nuvem para a Aplicação MFC Caso seja adotado o uso de servidores em nuvem (cloud), tanto o servidor de aplicação quanto o de banco de dados deverão ser dedicados exclusivamente à aplicação MFC...
-
-[sem-match] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:a6b3a5ea22a7c5d0  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I24.203] `I24.203 - ESPECIFICACAO DE SOFTWARE - PROJETO BETTA-REV. 1.docx` | id:290823d394d86aaf  
-Heading: *VPN E ACESSO REMOTO*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão VPN (client to site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos: (PLC...
-
-[infra-sem-topico] [I24.205] `I24.205 - ESPECIFICACAO DE SOFTWARE - PROJETO PROMOFARMA _REV1.docx` | id:e521b5a4357e12d0  
-Heading: *Especificação de Hardware e TI*  
-> Este documento foi elaborado com o objetivo de estabelecer diretrizes claras e detalhadas para o ambiente de tecnologia da informação. São detalhadas as características técnicas dos dispositivos utilizados, como desktops...
-
-[infra-sem-topico] [I24.205] `I24.205 - ESPECIFICACAO DE SOFTWARE - PROJETO PROMOFARMA _REV1.docx` | id:1b7b419a938fcb47  
-Heading: *Servidor de aplicação + banco de dados*  
-> Recomendamos que os servidores de aplicação WCS e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta do p...
-
-[infra-sem-topico] [I24.205] `I24.205 - ESPECIFICACAO DE SOFTWARE - PROJETO PROMOFARMA _REV1.docx` | id:c355ff681203879f  
-Heading: *Rede de dados e infra de rede elétrica (Periféricos)*  
-> O fornecimento dos pontos de rede e infra de elétrica, para os equipamentos que comunicarão na rede da automação, são de responsabilidade do cliente. Neste caso desenvolveremos um layout com a localização de cada ponto, ...
-
-[infra-sem-topico] [I24.205] `I24.205 - ESPECIFICACAO DE SOFTWARE - PROJETO PROMOFARMA _REV1.docx` | id:bc7505985ce1bf96  
-Heading: *Infra de alimentação rede elétrica trifásica*  
-> O fornecimento do ponto de rede elétrica trifásica é de responsabilidade do cliente. Para o projeto em questão, conforme projeto elétrico. A correção do fator de potência, quando necessário, será de responsabilidade do c...
-
-[infra-sem-topico] [I24.205] `I24.205 - ESPECIFICACAO DE SOFTWARE - PROJETO PROMOFARMA _REV1.docx` | id:be940779508dd498  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[infra-sem-topico] [I24.210] `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO COUGAR REV. 4.docx` | id:08b79e67a83c2d86  
-Heading: *Especificação de Hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações de separação, ou seja, esta aplicação executará as rotinas de linha de separação, conferência e reabast...
-
-[infra-sem-topico] [I24.210] `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO COUGAR REV. 4.docx` | id:308e90e3e3de98e2  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (01) (WMS) 01 (um) Desktop 01 (um) Impressora Abaixo segue a configuração mínima para os desktops para as estações de trabalho:...
-
-[infra-sem-topico] [I24.210] `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO COUGAR REV. 4.docx` | id:e78cbc04089655ba  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I24.210] `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO COUGAR REV. 4.docx` | id:af415532a3f5b5ab  
-Heading: *Servidor aplicação + banco de dados*  
-> Para garantir a máxima eficiência na automação, é recomendado que os servidores de aplicação (WCS) e banco de dados sejam locais (On Premise) e dedicados exclusivamente à aplicação WCS de automação, ou seja, não deverão ...
-
-[infra-sem-topico] [I24.210] `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO COUGAR REV. 4.docx` | id:4484fa6fbe5677fd  
-Heading: *VPN e acesso remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client-to-site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[sem-match] [POC's] `ESPECIFICACAO INTEGRACOES - KUKA.docx` | id:3b64b1d7023e3b63  
-Heading: *[SEM TÍTULO]*  
-> CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Invent? Somos especialistas e inovadores Antecipa...
-
-[sem-match] [I22.170] `PROJETO - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.3.docx` | id:c1ddfc024e7c0eb1  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BRF EMBU JUNDIAI UBERLANDIA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. P...
-
-[sem-match] [I22.170] `PROJETO - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.3.docx` | id:7d711c1cd69ea829  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente para que os transportadores possam realizar checagens de consistência de dad...
-
-[infra-sem-topico] [I22.170] `PROJETO - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.3.docx` | id:5e30c8280cc4f0d2  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de- fábrica...
-
-[infra-sem-topico] [I22.170] `PROJETO - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.3.docx` | id:05470580e7b3bfb5  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.170] `PROJETO - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.3.docx` | id:64f8fd2e5b053735  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.170] `PROJETO - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.3.docx` | id:27a90af3ffdb145d  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.170] `PROJETO I22.170 - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.2.docx` | id:c38513626ccffa5d  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BRF EMBU JUNDIAI UBERLANDIA CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. P...
-
-[sem-match] [I22.170] `PROJETO I22.170 - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.2.docx` | id:7e4dbeb7351cea4d  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente para que os transportadores possam realizar checagens de consistência de dad...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.2.docx` | id:ef0357c373bfa430  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de- fábrica...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.2.docx` | id:5becd9763fc95c03  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.2.docx` | id:8177731446fe924a  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.2.docx` | id:876e9a1694b7b472  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I22.170] `PROJETO I22.170 - BRF EMBU - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:22ea74e477dac152  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BRF EMBU I22.170 CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que Inve...
-
-[sem-match] [I22.170] `PROJETO I22.170 - BRF EMBU - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:1287b97655143caf  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente para que os transportadores possam realizar checagens de consistência de dad...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF EMBU - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:22b1e8f05e3f553d  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de- fábrica...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF EMBU - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:db0ba527a7948c1c  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF EMBU - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:f5d8fa07ef192865  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I22.170] `PROJETO I22.170 - BRF EMBU - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:ff51bdb1896159ef  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.190] `PROJETO I23.190 - BRF UBERLANDIA - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:9ed1e2c1b60d6b64  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BRF UBERLANDIA I23.190 CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por qu...
-
-[sem-match] [I23.190] `PROJETO I23.190 - BRF UBERLANDIA - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:5e1e7be799462078  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente para que os transportadores possam realizar checagens de consistência de dad...
-
-[infra-sem-topico] [I23.190] `PROJETO I23.190 - BRF UBERLANDIA - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:8df7f4de392304fb  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de- fábrica...
-
-[infra-sem-topico] [I23.190] `PROJETO I23.190 - BRF UBERLANDIA - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:68d3512db10dadd6  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I23.190] `PROJETO I23.190 - BRF UBERLANDIA - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:3f804919ab333c73  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I23.190] `PROJETO I23.190 - BRF UBERLANDIA - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:40b4633b3c074fc5  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I23.199] `PROJETO I23.199 - BRF JUNDIAI - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:c4d535c8547ab76c  
-Heading: *[SEM TÍTULO]*  
-> DESCRITIVO OPERAÇÃO PROJETO BRF JUNDIAI I23.199 CONFIDENCIAL © 2023, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA. MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO. Por que I...
-
-[sem-match] [I23.199] `PROJETO I23.199 - BRF JUNDIAI - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:01608ec50a1ae85e  
-Heading: *Chegada a um ponto de decisão*  
-> Esta ação é disparada quando um pallet chega a um ponto de decisão dentro dos transportadores. Estes pontos estão distribuídos estrategicamente para que os transportadores possam realizar checagens de consistência de dad...
-
-[infra-sem-topico] [I23.199] `PROJETO I23.199 - BRF JUNDIAI - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:0685e286cdb44034  
-Heading: *Especificação de hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações, tendo como papel fundamental a interface entre o sistema SAP do cliente e a automação chão-de- fábrica...
-
-[infra-sem-topico] [I23.199] `PROJETO I23.199 - BRF JUNDIAI - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:33e08673900f23b9  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo de toda automação para possíveis consultas e tomadas de decisões. Estações de trabalho é de responsabilidade do cliente. Abaixo segue a configuração mínima para as esta...
-
-[infra-sem-topico] [I23.199] `PROJETO I23.199 - BRF JUNDIAI - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:81fa0af33d7d81f3  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação (VELOX) e banco de dados sejam exclusivos para a aplicação VELOX de automação, ou seja, não deverão ser compartilhados com outras aplicações. É importante que o cliente defina ...
-
-[infra-sem-topico] [I23.199] `PROJETO I23.199 - BRF JUNDIAI - ESPECIFICACAO DE SOFTWARE E HARDWARE REV.1.docx` | id:74dfb53d656d8709  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implantação do sistema, o cliente deverá fornecer uma VPN para acesso externo do time técnico da Invent, sendo esse acesso através de um client, uma vez que a Invent não trabalha com VPN s...
-
-[sem-match] [I25.8049] `I25.8049 - ESPECIFICACAO DE SOFTWARE - PROJETO TITANO REV. 1.docx` | id:0200f70a081b0366  
-Heading: *Atualização de Status*  
-> Caso o volume seja liberado após a primeira volta, o WMS enviará automaticamente o status atualizado para o WCS. O WCS, então, liberará o desvio do volume assim que ele recircular e for lido novamente....
-
-[infra-sem-topico] [I25.8049] `I25.8049 - ESPECIFICACAO DE SOFTWARE - PROJETO TITANO REV. 1.docx` | id:5dfc1b7c00025a56  
-Heading: *VPN e acesso remoto*  
-> Durante a instalação e configuração dos dispositivos e equipamentos de automação, solicitamos uma conexão via VPN (client-to-site) na rede de automação, para que os técnicos consigam acessar remotamente os equipamentos (...
-
-[infra-sem-topico] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:2d2929fb503a7866  
-Heading: *Especificação de Hardware*  
-> Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará as rotinas de Picking, Picking Cart, Conferência,...
-
-[infra-sem-topico] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:2ea481019fe957df  
-Heading: *Estações de trabalho*  
-> As estações de trabalho serão distribuídas ao longo das seguintes regiões: Order Start (02) 01 (um) Desktop 01 (um) Scanner (Leitor de código de barras) 01 (um) Impressora de Etiquetas (Tipo Zebra) Conferência (01) 01 (u...
-
-[infra-sem-topico] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:9fd1ec1eaf6c6398  
-Heading: *Servidores*  
-> Este documento visa definir os requisitos técnicos dos servidores que serão utilizados no contexto do projeto, abordando aspectos como capacidade de processamento e armazenamento. Ao estabelecer essas especificações de f...
-
-[infra-sem-topico] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:54eb0d6b9207db90  
-Heading: *Servidor Aplicação + Banco de dados*  
-> Recomendamos que os servidores de aplicação WCS e banco de dados sejam exclusivos para a aplicação WCS de automação, ou seja, não deverão ser compartilhados com outras aplicações. Para atingir a performance proposta do p...
-
-[infra-sem-topico] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:0fa96d1c0d8d344f  
-Heading: *Servidor Nuvem (Cloud)*  
-> Caso opte pela utilização de servidores em nuvem (cloud), tanto o servidor de aplicação como o de banco de dados deverão ser dedicados exclusivamente à aplicação WCS de automação, ou seja, não deverão ser compartilhados ...
-
-[sem-match] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:974f008b0cdeb1b3  
-Heading: *Requisitos*  
-> Processador: Intel Xeon / AMD Epyc vCPUs: 8 Memória RAM: 32 GB SSD: 1 TB Adaptadores de rede: 2 portas de rede com velocidade de 1Gbps cada porta Sistema Operacional: Windows Server 2019 ou superior Banco de Dados: Micro...
-
-[infra-sem-topico] [I25.9043] `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx` | id:8ee4f623d84a1bee  
-Heading: *VPN*  
-> Para o suporte remoto, testes e implementação do sistema, o cliente deverá fornecer uma conexão VPN para esse acesso remoto externo do time técnico da Invent, sendo esse acesso através de um client. A liberação de acesso...
-
-[sem-match] [RD GRAVATAI] `I21.1402 - ESPECIFICACAO DE SOFTWARE - RD_GRAVATAI. REV.1.docx` | id:b4ea4da0507ed27c  
-Heading: *Requisição do Servidor Novo*  
-> Conforme a necessidade de efetuar a substituição do servidor antigo/atual, segue a especificação do novo servidor que RD deve obter:...
-
-[infra-sem-topico] [RD GRAVATAI] `I21.1402 - ESPECIFICACAO DE SOFTWARE - RD_GRAVATAI. REV.1.docx` | id:d89923a2fd483279  
-Heading: *Execução de Atividades no Servidor Novo*  
-> Instalação do Sistema operacional Windows Server ou Linux (Responsabilidade RD) Instalação do Banco de Dados "MIF" (Responsabilidade RD) Instalação do Banco de Dados "Oracle"(Responsabilidade RD) Instalação da Aplicação ...
-
-[infra-sem-topico] [RD GRAVATAI] `I21.1402 - ESPECIFICACAO DE SOFTWARE - RD_GRAVATAI. REV.1.docx` | id:b09499cba0f51954  
-Heading: *Por que precisamos dessas permissões no Banco de Dados?*  
-> Porque temos os megatons para garantir que o sistema se auto gestione ao realizar o Deploy do MFC e precisamos dessas permissões apenas para o nosso “Schema” Portanto, desta forma garantimos que nunca teremos problemas d...

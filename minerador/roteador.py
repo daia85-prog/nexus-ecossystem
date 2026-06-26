@@ -34,13 +34,22 @@ INBOX_MD    = rc.RAIZ_COFRE / "_INBOX_REVISAR.md"
 
 def escrever_raw(path: Path, slug: str, registros: list, config: dict):
     rc.garantir_raw(path, slug)
+    # Top 10 (prioridade) PRIMEIRO — viram a "verdade" na síntese; depois por cliente.
+    registros = sorted(
+        registros,
+        key=lambda rm: (0 if rm[0].get("prioridade") else 1, rm[0].get("cliente", "")),
+    )
     with path.open("w", encoding="utf-8") as f:
         f.write(f"# {config[slug]['sub']}.RAW — Evidência Bruta\n\n")
         f.write("<!-- APPEND-ONLY — gerado pelo roteador (corpus-full.jsonl) -->\n")
+        f.write("<!-- Ordem: Top 10 (prioridade) primeiro, depois complementares -->\n")
         for s, motivo in registros:
+            cli = s.get("cliente", s.get("projeto", "?"))
+            prio = "SIM" if s.get("prioridade") else "não"
             f.write(
                 f"\n---\n"
-                f"**Origem:** [{s['projeto']}] {s['ano']} — `{s['arquivo']}`  \n"
+                f"**Origem:** [{cli}] {s['ano']} — `{s['arquivo']}`  \n"
+                f"**Prioridade:** {prio}  \n"
                 f"**Heading:** {s['heading']}  \n"
                 f"**Score:** — ({motivo}) | **ID:** {s['id']}\n\n"
                 f"{s['texto']}\n"
