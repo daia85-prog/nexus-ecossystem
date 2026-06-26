@@ -134,7 +134,7 @@ const selectSx = {
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 interface Props {
-  onLogin: (nome: string, role: Role) => void;
+  onLogin: (nome: string, role: Role, email: string) => void;
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -144,9 +144,9 @@ export function LoginPage({ onLogin }: Props) {
 
   const switchTab = (t: 'login' | 'registro') => { if (t !== tab) setTab(t); };
 
-  const submit = (nome: string, role: Role) => {
+  const submit = (nome: string, role: Role, email: string) => {
     setEntering(true);
-    setTimeout(() => onLogin(nome, role), 320);
+    setTimeout(() => onLogin(nome, role, email), 320);
   };
 
   return (
@@ -250,7 +250,7 @@ export function LoginPage({ onLogin }: Props) {
 }
 
 // ─── Login Form ───────────────────────────────────────────────────────────────
-function LoginForm({ onSubmit }: { onSubmit: (nome: string, role: Role) => void }) {
+function LoginForm({ onSubmit }: { onSubmit: (nome: string, role: Role, email: string) => void }) {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [showSenha, setShowSenha] = useState(false);
@@ -268,7 +268,7 @@ function LoginForm({ onSubmit }: { onSubmit: (nome: string, role: Role) => void 
     const user = findUser(email);
     if (!user) { setError('Usuário não encontrado. Crie uma conta primeiro.'); return; }
     if (!(await checkPassword(user, senha))) { setError('Senha incorreta.'); return; }
-    onSubmit(user.name, user.role);
+    onSubmit(user.name, user.role, email);
   };
 
   const onKey = (e: KeyboardEvent<HTMLDivElement>) => { if (e.key === 'Enter' && canSubmit) handleSubmit(); };
@@ -333,7 +333,7 @@ function LoginForm({ onSubmit }: { onSubmit: (nome: string, role: Role) => void 
 }
 
 // ─── Registro Form ────────────────────────────────────────────────────────────
-function RegistroForm({ onSubmit }: { onSubmit: (nome: string, role: Role) => void }) {
+function RegistroForm({ onSubmit }: { onSubmit: (nome: string, role: Role, email: string) => void }) {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -357,7 +357,7 @@ function RegistroForm({ onSubmit }: { onSubmit: (nome: string, role: Role) => vo
     setError('');
     if (findUser(email)) { setError('E-mail já cadastrado. Faça login.'); return; }
     await createUser(nome.trim(), email, senha, role as Role);
-    onSubmit(nome.trim(), role as Role);
+    onSubmit(nome.trim(), role as Role, email);
   };
 
   const onKey = (e: KeyboardEvent<HTMLDivElement>) => { if (e.key === 'Enter' && canSubmit) handleSubmit(); };

@@ -2,7 +2,7 @@
 
 > Documento vivo. Toda nova ideia entra aqui primeiro.
 > Após triagem: cada item recebe fase, prioridade e status.
-> Atualizado em: 2026-06-11
+> Atualizado em: 2026-06-26
 
 ---
 
@@ -59,19 +59,27 @@
 | F2-05 | Último Layout Aprovado e Último Documento Aprovado por projeto | 🟡 | — | Requer banco + upload |
 | F2-06 | Apontamento de Horas: horário inteligente, associação de cliente, export Excel no formato correto | 🔴 | — | Sub-aba já existe como Coming Soon no módulo Documentação |
 | F2-07 | Aba de Relatório — campos a definir — visualizar lacunas do kickoff por projeto | 🟡 | — | Ver dúvida C5 abaixo |
-| F2-08 | Alerta de passagem de bastão entre etapas (Doc→Dev→Implantação→Pós-vendas) | 🟡 | ❓ | Ver dúvida C6 abaixo |
+| F2-08 | Alerta de passagem de bastão entre etapas (Kickoff→Documentação→Implantação→Pós-Vendas) | 🟡 | — | Notificação automática com pendências críticas em cada transição de responsabilidade entre equipes; requer backend. Ver F2-22 para alerta de conclusão de implantação |
 | F2-09 | Dividir perguntas do kickoff: GESTOR vs OPERACIONAL (doc, infra, engenharia, etc.) | 🔴 | — | Cada setor complementa o projeto com suas próprias perguntas; JSON unificado |
 | F2-10 | Onboarding novo formato: simples, rápido, contextual por papel | 🟡 | — | Substituir intro screen atual por guia interativo |
-| F2-11 | Chat por projeto: perguntar sobre um documento vinculado ou o JSON do kickoff daquele projeto | 🔴 | — | Usa Claude API com contexto do projeto específico; ver tokens disponíveis |
+| F2-11 | Chat por projeto: painel esquerdo flutuante na aba de projetos para interagir via chat com arquivos vinculados ou JSON do kickoff | 🔴 | — | Usa Claude API com contexto do projeto específico; ver F2-13 e F2-14 |
 | F2-12 | Integração com Claude API pelo usuário (user traz sua própria key) | 🔴 | — | Não aceitar plano gratuito; configurar na tela de config |
 | F2-13 | Visibilidade de tokens consumidos em tempo real | 🟡 | — | Contador de tokens na interface durante uso da IA |
-| F2-14 | Alternar entre IA gratuita (ex: Gemini Flash) e Claude na interface | 🟡 | — | Fallback para uso sem custo quando não há key |
+| F2-14 | Seletor de provedor IA: alternar entre LLM Interna On-Premise (gratuita/ilimitada) e Claude API (alta performance) na interface | 🟡 | — | Opção local elimina custos variáveis de API; Claude reservado para tarefas críticas. Depende de F3-01 |
 | F2-15 | Botão "Enviar para revisão" → manda JSON/doc por e-mail para revisor específico | 🟡 | ❓ | Ver dúvida C7 abaixo (quem é "Gomes"?) |
 | F2-16 | NEXUS + Especialista Documentador conectados: botão Gerar Doc puxa JSON kickoff + dados de todos setores | 🔴 | — | Unificação total do pipeline de documentação |
 | F2-17 | DEV precisa ver pontos de decisão e layout do projeto | 🟡 | ❓ | Ver dúvida C8 abaixo — é uma view/aba ou notificação? |
 | F2-18 | RASTREAR e mapear acesso por papel: quais abas, IAs e cards cada papel vê | 🔴 | — | Expansão do featureRegistry para controle granular de UI |
 | F2-19 | Cards Situacionais por papel: blocos de info contextuais que aparecem só para quem precisa | 🟡 | ❓ | Ver dúvida C9 abaixo |
-| F2-20 | Ao gerar doc: sistema envia JSON do kickoff para Claude, Claude gera input.json, NEXUS monta o .docx e salva no SharePoint | 🔴 | — | Pipeline totalmente automatizado; requer F2-12 + F2-04 |
+| F2-20 | Ao gerar doc: sistema envia JSON do kickoff para Claude, Claude gera input.json, NEXUS monta o .docx e salva automaticamente no SharePoint (fluxo principal); download local fica opcional | 🔴 | — | Pipeline totalmente automatizado; requer F2-12 + F2-04. Ver F2-23 e F2-24 |
+| F2-21 | SSO Invent + login automático via Azure AD (Microsoft Entra ID) | 🔴 | ❓ | Requer chamado ao Jonathan (Infra) para liberação de credenciais Azure AD + permissões de Graph API |
+| F2-22 | Alerta de Conclusão de Implantação: ao detectar encerramento da fase, notificar automaticamente equipe Pós-Vendas para início imediato do suporte | 🟡 | — | Complementa F2-08; gatilho diferente — encerramento de fase, não transição de bastão |
+| F2-23 | Upload automático do .docx gerado para SharePoint no diretório parametrizado do projeto (fluxo principal); download local fica secundário | 🔴 | — | Requer integração SharePoint + F2-04; complementa F2-20 |
+| F2-24 | Abertura imediata do arquivo no OneDrive/browser logo após conclusão do upload no SharePoint | 🟡 | — | Usa vínculo nativo do OneDrive habilitado; depende de F2-23 |
+| F2-25 | Hard rule: projetos com PBL (Pick-to-Light / Put-to-Light) → sem coletor de dados na funcionalidade Fullcase | 🟡 | — | Regra de dependência, análoga a F1-08 (IA→TV+IVT); validação automática no motor de regras |
+| F2-26 | Paletização Multi-Tipo: aceitar configuração simultânea de mais de um modelo de paletização no mesmo projeto (ex: PTL + PTM combinados) | 🟡 | — | Hoje o sistema aceita apenas um tipo por vez |
+| F2-27 | Substituição por Sugestão Inteligente: motor do Nexus sugere paletização e fluxo PTL otimizados com base nos dados do projeto | 🟡 | — | Substitui lógicas padrão de paletização quando motor IA disponível |
+| F2-28 | Uploads por projeto: vídeos de reuniões de alinhamento, arquivos de Master-Data (MD), planilhas operacionais e cronogramas | 🟡 | — | Complementa F2-03 (Layouts + Docs aprovados); Supabase Storage ou SharePoint como destino |
 
 ---
 
@@ -92,6 +100,51 @@
 | F3-09 | MCP Server: expor dados do NEXUS como ferramentas para IAs externas | 🟡 | — | `get_project(code)`, `list_projects()`, `search_projects(query)` |
 | F3-10 | Domínio próprio: nexus.invent.com.br | 🟡 | — | Requer Netlify/VPS + configuração DNS |
 | F3-11 | Edição colaborativa em tempo real (Supabase Realtime) | 🟢 | — | Múltiplos usuários editando o mesmo projeto simultaneamente |
+| F3-12 | VEX AI: Pesquisa conversacional semântica na base histórica agregada de todos os projetos | 🔴 | — | Chat aberto para colaboradores autorizados; busca sobre dados históricos, documentos e JSONs |
+| F3-13 | VEX AI: Agentes Especialistas por vertical técnica ou cliente (ex: agente de Integração ERP, agente de Picking) | 🟡 | — | Extração de dados, relatórios e insights segmentados por área |
+| F3-14 | VEX AI: Insights preditivos e sugestões de perguntas complementares gerados automaticamente durante revisão humana | 🟡 | — | IA gera sugestões de aprofundamento na fase de revisão de respostas |
+| F3-15 | Módulo de Arenas: ambiente de revisão crítica de documentos gerados pela LLM + loop de feedback contínuo | 🔴 | — | Correções humanas nos pontos marcados como imprecisos alimentam input.json de feedback → refinamento automático do modelo |
+| F3-16 | Auditoria de segurança FABLE de todo o ecossistema antes do ganho de escala comercial | 🔴 | — | Validação de blindagem contra vazamento de dados corporativos e vulnerabilidades em nível de código |
+
+---
+
+## Fase 4 — O Auge (automação end-to-end)
+
+> Reduzir em até 90% o trabalho braçal de documentação, mantendo o foco humano no Know-How estratégico: condução técnica de reuniões, análise crítica e validação conceitual.
+
+```
+[Nexus Kickoff Manual]
+         ↓
+[Especialista Documentador (ED)]
+         ↓
+[Gerador de Documento (Revisão 1)]
+         ↓
+[Revisão Humana] ──(Validação Rápida)
+         ↓
+[Cowork: Envio Automático de E-mail c/ Documento + Sugestão de Agenda]
+         ↓
+[Primeira Reunião de Alinhamento]
+         ↓
+[Skill: Reunião Doc Análise (Transcrição e Extração de Pontos Chave)]
+         ↓
+[Skill: Alterações Inteligentes Automatizadas no Documento]
+         ↓
+[Análise Crítica: I.A. Gomes]
+         ↓
+[Revisão Humana Final]
+         ↓
+[Cowork: Envio Automático da Próxima Revisão] ──(Inclui Agenda + Resumo de Alterações)
+```
+
+| # | Descrição | Prioridade | Status | Observações |
+|---|---|---|---|---|
+| F4-01 | Cowork: envio automático de e-mail institucional com documento + sugestão de agenda após revisão humana aprovada | 🔴 | — | Requer integração Azure Graph API (F2-21); e-mail enviado pelo NEXUS em nome do responsável |
+| F4-02 | Skill Reunião Doc Análise: transcrição automática de reunião + extração de pontos-chave e decisões | 🔴 | — | Input: gravação ou transcript de texto; Output: JSON estruturado de alterações propostas ao documento |
+| F4-03 | Skill Alterações Inteligentes: aplicar automaticamente as mudanças extraídas da reunião ao documento | 🔴 | — | Gera nova revisão do .docx com log de alterações; depende de F4-02 |
+| F4-04 | Documento Modular Vivo: qualquer alteração em campo do Nexus gera tarefa automática de atualização no documento vinculado | 🟡 | — | Ex: engenharia muda nº de posições no picking → sistema cria alerta de atualização; confirmado pelo analista → aplica no SharePoint em tempo real + gera PDF |
+| F4-05 | Versionamento Semântico Rev [A].[B].[C]: A = escopo/tecnologia macro, B = impacto de outras áreas, C = micro-ajustes textuais | 🟡 | — | Substitui versionamento manual; ex: `Rev 7.1.3`; gerado automaticamente pelo sistema com base no tipo de alteração |
+| F4-06 | Motor Evolutivo SUPER_MD: cada correção humana nas Skills alimenta treinamento supervisionado do ecossistema | 🔴 | — | NEXUS aprende organicamente a cada projeto; registros armazenados e processados pelo SUPER_MD; regras do ED se refinam automaticamente |
+| F4-07 | Etapa de Análise Crítica I.A. Gomes no pipeline de revisão antes do envio da próxima revisão ao cliente | 🟡 | — | Etapa intermediária; alteração aplicada ao arquivo no SharePoint após confirmação do analista por reunião ou e-mail |
 
 ---
 
@@ -106,7 +159,7 @@ Preciso das suas respostas para fechar a triagem desses itens:
 | C3 | "Campos fixos padrão invisíveis" — quais campos você tem em mente? Ex: campos que sempre têm o mesmo valor e não precisam aparecer no form mas devem ir no JSON? | F1-10 |
 | C4 | Integração no início — é mover a seção de Integração (ERP, APIs) para antes das outras no formulário, ou é criar um campo de integração nas Infos Gerais como contexto inicial? | F1-11 |
 | C5 | Aba de Relatório — o que aparece lá? Ex: "campos que ninguém preencheu essa semana", "projetos com mais TBDs", "seções com menor taxa de completude"? | F2-07 |
-| C6 | Passagem de bastão — quais são as etapas exatas? A sequência é: Kickoff → Documentação → Dev → Implantação → Pós-vendas? E o alerta vai para quem exatamente em cada etapa? | F2-08 |
+| C6 | ~~Resolvida:~~ Sequência confirmada — Kickoff → Documentação → Implantação → Pós-Vendas. Alerta automático em cada transição com pendências críticas. Conclusão da Implantação aciona Pós-Vendas imediatamente. Ver F2-08 e F2-22. | F2-08 |
 | C7 | "Botão enviar pro Gomes" — Gomes é uma pessoa específica da empresa com um processo de revisão? O botão seria configurável (qualquer e-mail de revisor) ou fixo para ele? | F2-15 |
 | C8 | "DEV precisa saber pontos de decisão e layout" — é uma view específica para o papel Desenvolvimento dentro do projeto, mostrando só o que é relevante pra eles (decisões técnicas, layouts)? | F2-17 |
 | C9 | "Cards Situacionais" — pode me dar um exemplo concreto? Ex: PMO vê um card de "Projetos atrasados esta semana", Implantação vê um card de "Checklist de comissionamento", etc? | F2-19 |

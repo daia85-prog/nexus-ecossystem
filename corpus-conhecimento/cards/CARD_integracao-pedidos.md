@@ -123,30 +123,30 @@ O WMS realiza um **HTTP POST** para o endpoint `{{integ_endpoint}}` do WCS. O pa
 
 **Campos principais do payload (Inbound — fracionados):**
 
-| Campo | Tipo | Obrig. | Descrição |
-|-------|------|--------|-----------|
-| `onda` | Char | Sim | Identificador da onda de separação |
-| `pedidos` | Array | Sim | Lista de pedidos da onda |
-| `num_pedido` | Char | Sim | Número do pedido |
-| `rota` | Char | Sim | Código da rota de entrega |
-| `cod_cliente` | Char | Sim | Código do cliente |
-| `priority` | Integer | Não | Prioridade operacional (1 = maior prioridade) |
-| `conferencia` | Char | Não | `"Y"` → 100% dos volumes deste pedido vão para conferência |
-| `cliente_novo` | Char | Não | `"Y"` → cliente novo, 100% para conferência |
-| `transportadora` | Char | Não | Código/descrição da transportadora (usado em priorização e desvio de rampa) |
-| `fracionados` | Array | Não | Lista de volumes fracionados do pedido |
-| `num_etiqueta` | Char | Sim | Número da etiqueta do volume (label) |
-| `tipo_cx` | Char | Sim | Tamanho da caixa (P/M/G/GG — definido pelo WMS ou WCS) |
-| `cubagem_total` | Decimal | Sim | Cubagem total do volume em m³ |
-| `zpl` | Char | Sim | Dados da etiqueta ZPL para impressão no Order Start |
-| `peso_total` | Decimal | Sim | Peso total esperado do volume em gramas |
-| `itens` | Array | Sim | Lista de itens do volume |
-| `ean` | Char | Sim | Código EAN do produto (unitário) |
-| `sku` | Char | Sim | Código interno do produto |
-| `posicao` | Char | Sim | Endereço de coleta no FlowRack/picking |
-| `qtde` | Integer | Sim | Quantidade a separar |
-| `pesoun` | Decimal | Sim | Peso unitário do item em gramas |
-| `fullcase` | Array | Não | Lista de volumes fullcase do pedido |
+| Campo | Tipo | Obrig. | Descrição | Tamanho |
+|-------|------|--------|-----------|---------|
+| `onda` | Char | Sim | Identificador da onda de separação | Char(50) |
+| `pedidos` | Array | Sim | Lista de pedidos da onda | Array |
+| `num_pedido` | Char | Sim | Número do pedido | Char(30) |
+| `rota` | Char | Sim | Código da rota de entrega | Char(20) |
+| `cod_cliente` | Char | Sim | Código do cliente | Char(20) |
+| `priority` | Integer | Não | Prioridade operacional (1 = maior prioridade) | Int |
+| `conferencia` | Char | Não | `"Y"` → 100% dos volumes deste pedido vão para conferência | Char(1) |
+| `cliente_novo` | Char | Não | `"Y"` → cliente novo, 100% para conferência | Char(1) |
+| `transportadora` | Char | Não | Código/descrição da transportadora (usado em priorização e desvio de rampa) | Char(50) |
+| `fracionados` | Array | Não | Lista de volumes fracionados do pedido | Array |
+| `num_etiqueta` | Char | Sim | Número da etiqueta do volume (label) | Char(50) |
+| `tipo_cx` | Char | Sim | Tamanho da caixa (P/M/G/GG — definido pelo WMS ou WCS) | Char(5) |
+| `cubagem_total` | Decimal | Sim | Cubagem total do volume em m³ | Dec(10,5) |
+| `zpl` | Char | Sim | Dados da etiqueta ZPL para impressão no Order Start | String |
+| `peso_total` | Decimal | Sim | Peso total esperado do volume em gramas | Dec(10,2) |
+| `itens` | Array | Sim | Lista de itens do volume | Array |
+| `ean` | Char | Sim | Código EAN do produto (unitário) | Char(14) |
+| `sku` | Char | Sim | Código interno do produto | Char(30) |
+| `posicao` | Char | Sim | Endereço de coleta no FlowRack/picking | Char(30) |
+| `qtde` | Integer | Sim | Quantidade a separar | Int |
+| `pesoun` | Decimal | Sim | Peso unitário do item em gramas | Dec(10,2) |
+| `fullcase` | Array | Não | Lista de volumes fullcase do pedido | Array |
 
 > **Nota `conferencia`/`cliente_novo`:** Estes flags são lidos pelo WCS no momento da indução. Se `conferencia = "Y"` ou `cliente_novo = "Y"`, o WCS sinaliza internamente que todos os volumes do pedido devem ser desviados para a estação de conferência após o picking. Dependência direta com [[conferencia]] (RN-07 do CARD de Conferência).
 
@@ -156,16 +156,16 @@ O WMS realiza um **HTTP POST** para o endpoint `{{integ_endpoint}}` do WCS. O pa
 
 Projetos com EWM/SAP e separação fullcase detalhada enviam campos adicionais por item:
 
-| Campo | Tipo | Obrig. | Descrição |
-|-------|------|--------|-----------|
-| `tarefa` | Numc | Sim | Nº Tarefa WMS para separação do item |
-| `ean_dz` | Char | Sim | Código EAN master/dúzia do produto |
-| `qtd_solic` | Decimal | Sim | Quantidade solicitada |
-| `cubagem` | Decimal | Sim | Cubagem unitária em m³ |
-| `altura`/`largura`/`comprimento` | Integer | Sim | Dimensões em mm |
-| `qtd_master` | Decimal | Sim | Qtd unid. por display/master; WCS divide `qtd_solic` por `qtd_master` para calcular qtd LED |
-| `qtd_caixa` | Decimal | Sim | Qtd unid. por caixa fechada; WCS divide para calcular nº de caixas; recusa se divisão < 1 |
-| `dun` | Char | Sim | Código DUN-14 do item (fullcase) |
+| Campo | Tipo | Obrig. | Descrição | Tamanho |
+|-------|------|--------|-----------|---------|
+| `tarefa` | Numc | Sim | Nº Tarefa WMS para separação do item | Numc(10) |
+| `ean_dz` | Char | Sim | Código EAN master/dúzia do produto | Char(14) |
+| `qtd_solic` | Decimal | Sim | Quantidade solicitada | Dec(10,3) |
+| `cubagem` | Decimal | Sim | Cubagem unitária em m³ | Dec(10,5) |
+| `altura`/`largura`/`comprimento` | Integer | Sim | Dimensões em mm | Int |
+| `qtd_master` | Decimal | Sim | Qtd unid. por display/master; WCS divide `qtd_solic` por `qtd_master` para calcular qtd LED | Dec(10,3) |
+| `qtd_caixa` | Decimal | Sim | Qtd unid. por caixa fechada; WCS divide para calcular nº de caixas; recusa se divisão < 1 | Dec(10,3) |
+| `dun` | Char | Sim | Código DUN-14 do item (fullcase) | Char(14) |
 
 **Recusa da integração:**
 Em caso de qualquer inconsistência, o WCS rejeita a integração de forma **total**. Nenhum pedido parcialmente válido é aceito. O WMS recebe HTTP 400 com o motivo do erro e deve corrigir e reenviar a mensagem completa.

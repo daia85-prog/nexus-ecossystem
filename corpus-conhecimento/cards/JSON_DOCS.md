@@ -70,8 +70,9 @@
 ```
 
 - Renderizado como bloco de código escuro com syntax highlight.
-- Precedido automaticamente por "Exemplo Payload (JSON):".
-- Se vier imediatamente antes de uma tabela, o builder reordena para o JSON vir primeiro.
+- Precedido automaticamente pelo builder com o rótulo "Exemplo JSON:" em negrito — **não duplicar no `conteudo`**.
+- Para capítulos de integração: gerar um `json_block` para o payload de envio (Inbound) e, se houver retorno, um segundo `json_block` imediatamente após (Outbound/Resposta). O texto antes do segundo bloco deve ser: `"Resposta/Retorno:"`.
+- Se vier imediatamente antes de uma tabela, o builder mantém o JSON antes da tabela.
 
 ### 2.4 Warning
 
@@ -92,27 +93,154 @@
 
 ---
 
-## 3. Ordem canônica dos capítulos
+## 3. Ordem canônica dos capítulos — Golden Standard
 
-Sempre seguir a ordem abaixo. O ED decide quais tópicos estão "em escopo" com base nos gates do kickoff, e então os ordena dentro dessas 9 fases:
+Sempre seguir a ordem abaixo. É a **sequência universal obrigatória** para qualquer projeto WCS.
 
-| Fase | Tópicos (em ordem dentro da fase) |
-|------|-----------------------------------|
-| 1. Dados do Projeto | cubagem · integracao-pedidos (visão geral de pedidos) |
-| 2. Entrada / Início | recebimento-armazenagem · order-start |
-| 3. Separação | picking-pbl · picking-cart · picking-fullcase · picking-pallet · shortpicking · put-to-wall · cancelamento-pedidos |
-| 4. Conferência & Packing | conferencia · conferencia-manual · cross-check · packing · packing-termolabil |
-| 5. Expedição | sorter · sorter-inducao · sorter-mapa-rota · sorter-rejeito · paletizacao · ptl-alocacao · ptm · etiquetas · checklist-carregamento |
-| 6. Estoque | reabastecimento · inventario |
-| 7. Autenticação | **FIXO no template — NÃO gerar** |
-| 8. Integração | integracao (geral) · integracao-wcs-wms · integracao-wms-erp · integracao-cadastros |
-| 9. Infraestrutura & Sistema | cadastros-acessos · dashboards-relatorios |
+> **Regra de percurso:** Percorra as fases em ordem, da Fase 0 à Fase 9. Para cada tópico dentro da fase, avalie o gate. Se ativo (`yes`), gere o capítulo. Se inativo ou `tbd`, pule. **Não avance para a Fase N+1 sem ter verificado todos os tópicos da Fase N.**
 
-> **Nota:** integracao-pedidos aparece na Fase 1 porque o documento apresenta as integrações de pedidos/ondas antes do fluxo operacional. As demais integrações (Fase 8) descrevem o mecanismo técnico de cada interface.
+| Fase | Tópicos (em ordem obrigatória dentro da fase) |
+|------|-----------------------------------------------|
+| **0. Abertura** _(sempre — ver Seção 4)_ | Objetivo do Documento · Stakeholders ES · Etapas da ES |
+| **0b. Fases do Projeto** _(condicional)_ | Visão Geral das Fases do Projeto — gerar SOMENTE SE `g4 = additive` ou kickoff descreve projeto multifase |
+| **1. Autenticação** | **FIXO no template — NÃO gerar** (injetado pelo docxBuilder entre a Fase 0b e a Fase 2) |
+| **2. Integração** | integracao (visão geral + tabela de interfaces) · integracao-pedidos · integracao-wcs-wms · integracao-wms-erp · integracao-cadastros |
+| **3. Dados** | cubagem |
+| **4. Entrada / Início** | recebimento-armazenagem · order-start |
+| **5. Separação** | picking-pbl · picking-cart · picking-fullcase · picking-pallet · shortpicking · put-to-wall · cancelamento-pedidos |
+| **6. Conferência & Packing** | conferencia · conferencia-manual · cross-check · packing · packing-termolabil |
+| **7. Expedição** | sorter · sorter-inducao · sorter-mapa-rota · sorter-rejeito · paletizacao · ptl-alocacao · ptm · etiquetas · checklist-carregamento |
+| **8. Estoque** | reabastecimento · inventario |
+| **9. Sistema** | cadastros-acessos · dashboards-relatorios |
+
+**Sub-ordem dentro de cada fase é obrigatória.** Os tópicos são listados na sequência em que devem aparecer no documento.
+
+> **Estrutura completa do documento final:**
+> Capa 1 → Capa 2 → Página de Introdução (código, projeto, responsável, e-mail, logo cliente, revisão) → Sumário (F9) → **[Fase 0]** Objetivo do Documento → Stakeholders ES → Etapas da ES → **[Fase 0b]** Visão Geral das Fases (se aplicável) → **[Fase 1]** Métodos de Autenticação (builder) → **[Fase 2]** Integrações (overview + cards) → **[Fases 3–8]** Tópicos operacionais e de sistema → **Aprovação da Proposta** (template)
 
 ---
 
-## 4. Campos do Kickoff — Referência Completa
+## 4. Capítulos de Abertura Obrigatórios (Fase 0)
+
+Estes capítulos devem ser os **primeiros da lista `capitulos[]`** em todo `input_json`. São gerados pelo ED com conteúdo fixo + variáveis do kickoff/meta.
+
+### 4.1 Objetivo do Documento
+
+```json
+{ "nivel": 1, "titulo": "Objetivo do Documento",
+  "conteudo": "Este documento tem por objetivo detalhar as funcionalidades e regras de negócio do sistema {meta.projeto}, desenvolvido para {capa.nome_cliente}. O WCS Velox é responsável por controlar a automação do Centro de Distribuição localizado em {g3}, conectando o {g5} aos equipamentos físicos do armazém.\n\nEste documento contempla o descritivo funcional completo da Especificação de Software e o mapeamento de todas as integrações necessárias, garantindo visibilidade end-to-end do escopo técnico desde o início do projeto." }
+```
+
+- Preencher `{meta.projeto}` → `meta.projeto`; `{capa.nome_cliente}` → `capa.nome_cliente`; `{g3}` → local do CD; `{g5}` → sistema do cliente (WMS/ERP).
+- **SE `g4 = additive`:** adicionar parágrafo: `"Este é um documento aditivo ao escopo original. As funcionalidades descritas complementam o sistema já implantado, conforme detalhado em: {g4a}."` — substituindo `{g4a}` pelo valor de `g4a`.
+
+### 4.2 Stakeholders ES
+
+```json
+{ "nivel": 1, "titulo": "Stakeholders ES" },
+{ "tipo": "tabela",
+  "headers": ["Participante", "Função", "Empresa"],
+  "rows": [
+    ["{capa.nome_responsavel}", "Gerente de Projetos", "Invent Corp"],
+    ["[OBS INTERNA] confirmar demais participantes com a equipe de projetos", "", ""]
+  ]
+}
+```
+
+- Primeira linha: `capa.nome_responsavel` como Gerente de Projetos da Invent Corp.
+- Demais linhas: stakeholders do cliente identificados no kickoff. Se não informados no kickoff, manter apenas a linha de `[OBS INTERNA]`.
+
+### 4.3 Etapas da Especificação de Software (ES)
+
+```json
+{ "nivel": 1, "titulo": "Etapas da Especificação de Software (ES)",
+  "conteudo": "Segue abaixo as etapas do processo de criação e aprovação da Especificação de Software:\n\nCriação — Responsável: Invent. Elaboração da documentação técnica (ES).\n\nApresentação — Responsável: Invent. Apresentação da ES ao cliente para validação.\n\nEnvio — Responsável: Invent. Envio formal do documento.\n\nAprovação da ES — Responsável: Cliente. Aprovação registrada, autorizando início do desenvolvimento e aquisição de hardware.\n\nO processo contempla as seguintes etapas técnicas: Levantamento de Requisitos; Definição de Funcionalidades e Integrações; Desenvolvimento e Implementação; Testes e Validação; Implantação e Monitoramento." }
+```
+
+- **Conteúdo totalmente fixo** — não alterar nem omitir com base no kickoff.
+
+### 4.4 Visão Geral das Fases do Projeto (CONDICIONAL — Fase 0b)
+
+Gerar **somente se** `g4 = additive` ou se o kickoff descrever explicitamente um projeto multifase.
+
+```json
+{ "nivel": 1, "titulo": "Visão Geral das Fases do Projeto",
+  "conteudo": "O projeto {meta.projeto} está estruturado em fases evolutivas, conforme detalhado abaixo:" },
+{ "tipo": "tabela",
+  "headers": ["Fase", "Módulo", "Descrição Resumida"],
+  "rows": [
+    ["Fase 1", "[módulo]", "[descrição]"],
+    ["Fase 2", "[módulo]", "[descrição]"]
+  ]
+},
+{ "tipo": "warning",
+  "texto": "[OBS INTERNA] Preencher fases conforme kickoff ou aditivo. Adicionar/remover linhas conforme o número de fases do projeto." }
+```
+
+---
+
+## 5. Formato Padrão de Seção de Integração
+
+Para cada interface de integração individual (dentro da Fase 2), gerar **obrigatoriamente** nesta sequência:
+
+```
+[nivel 3] Título da interface (ex: "Pedidos — Onda (WMS → WCS)")
+[conteúdo do nivel 3] Parágrafo de direção: "WMS → WCS: [descrição do que é enviado]"
+[conteúdo adicional] Texto de fluxo, observações técnicas, restrições
+[json_block] Exemplo de payload (Inbound / request)
+[nivel 3 se houver retorno] "Resposta / Retorno (WCS → WMS)"
+[json_block] Exemplo de payload de resposta/retorno (se houver)
+[tabela] Campos do payload
+  headers: ["Campo", "Descrição", "Tipo", "Obrigatório", "Tamanho"]
+```
+
+**Colunas obrigatórias da tabela de campos:**
+
+| Coluna | O que preencher |
+|--------|----------------|
+| Campo | Nome exato do campo no JSON (ex: `num_pedido`) |
+| Descrição | O que representa no negócio |
+| Tipo | `String` · `Integer` · `Decimal` · `Array` · `Boolean` · `Char` |
+| Obrigatório | `Sim` ou `Não` |
+| Tamanho | Tamanho máximo (ex: `Char(50)`, `Dec(10,2)`, `Int`) — usar `[a definir]` se desconhecido |
+
+**Exemplo de estrutura no `input_json`:**
+
+```json
+{ "nivel": 3, "titulo": "Pedidos — Onda (WMS → WCS)",
+  "conteudo": "WMS → WCS: o WMS envia ao WCS a onda de separação com todos os pedidos a processar.\n\nO WCS valida os dados e disponibiliza os pedidos na fila do Order Start. A recusa é sempre total — nenhuma integração parcial é aceita. O WMS deve corrigir e reenviar a mensagem completa em caso de erro." },
+{ "tipo": "json_block", "linhas": [
+    "{",
+    "  \"onda\": \"12345\",",
+    "  \"pedidos\": [{ \"num_pedido\": \"547204\", \"rota\": \"SP-001\" }]",
+    "}"
+  ]
+},
+{ "nivel": 3, "titulo": "Resposta / Retorno (WCS → WMS)" ,
+  "conteudo": "WCS → WMS: confirmação de recebimento ou código de erro." },
+{ "tipo": "json_block", "linhas": [
+    "{",
+    "  \"status\": \"OK\",",
+    "  \"mensagem\": \"Onda integrada com sucesso.\"",
+    "}"
+  ]
+},
+{ "tipo": "tabela",
+  "headers": ["Campo", "Descrição", "Tipo", "Obrigatório", "Tamanho"],
+  "rows": [
+    ["onda", "Identificador da onda de separação", "String", "Sim", "Char(50)"],
+    ["pedidos", "Lista de pedidos da onda", "Array", "Sim", "—"],
+    ["num_pedido", "Número único do pedido", "String", "Sim", "Char(30)"],
+    ["rota", "Código da rota de entrega", "String", "Sim", "Char(20)"]
+  ]
+}
+```
+
+> **Direção de integração** no `conteudo` (ex: `"WMS → WCS: ..."`) é renderizada em **negrito** automaticamente pelo docxBuilder.
+
+---
+
+## 6. Campos do Kickoff — Referência Completa
 
 ### Convenções
 
@@ -341,7 +469,7 @@ new_proj=Novo · additive=Aditivo
 
 ---
 
-## 5. Exemplo de `input_json` mínimo
+## 7. Exemplo de `input_json` mínimo
 
 ```json
 {
@@ -378,7 +506,7 @@ new_proj=Novo · additive=Aditivo
 
 ---
 
-## 6. Formato de exportação do kickoff (NEXUS)
+## 8. Formato de exportação do kickoff (NEXUS)
 
 O NEXUS exporta o kickoff em JSON estruturado. Campos multi-select usam `|||` como separador:
 
@@ -407,4 +535,4 @@ O NEXUS exporta o kickoff em JSON estruturado. Campos multi-select usam `|||` co
 
 ---
 
-*Documento atualizado 2026-06-25 — refatorado para o novo sistema de CARDs (sem _ROUTER.json). Substitui a versão anterior em ed-knowledge/JSON_DOCS.md.*
+*Documento atualizado 2026-06-26 — v2: Golden Standard (Fases 0–9), capítulos de abertura obrigatórios (Seção 4), formato padrão de integração por interface (Seção 5). Integração passa para Fase 2 (antes dos tópicos operacionais). Substitui a versão anterior.*

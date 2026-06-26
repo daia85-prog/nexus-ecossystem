@@ -14,6 +14,7 @@ import { ComingSoon } from './pages/ComingSoon';
 import { ConfigPage } from './pages/ConfigPage';
 import { SugestoesPage } from './pages/SugestoesPage';
 import { DocumentacaoPage } from './pages/Documentacao';
+import { AdminPage } from './pages/Admin';
 import { ProjetosPage } from './pages/Projetos';
 import { ProjectOverview } from './pages/Projetos/ProjectOverview';
 import { NewKickoffModal } from './components/NewKickoffModal';
@@ -22,7 +23,7 @@ import { IntroScreen } from './components/IntroScreen';
 import type { NexusProject } from './lib/projectStore';
 import { loadProject } from './lib/projectStore';
 
-type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao';
+type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
 
 const PAGE_TITLES: Record<Page, string> = {
   kickoff:       'Kickoff',
@@ -33,18 +34,32 @@ const PAGE_TITLES: Record<Page, string> = {
   config:        'Configurações',
   sugestoes:     'Sugestões',
   documentacao:  'Documentação',
+  admin:         'Administrador',
 };
 
 const SESSION_KEY = 'nexus_session';
 
-function loadSession(): { name: string; role: Role } | null {
+function loadSession(): { name: string; role: Role; email: string } | null {
   try { return JSON.parse(localStorage.getItem(SESSION_KEY) ?? 'null'); }
   catch { return null; }
+}
+
+function recoverEmail(name: string): string {
+  try {
+    const users = JSON.parse(localStorage.getItem('nexus_users') ?? '{}') as Record<string, { name: string }>;
+    const found = Object.entries(users).find(([, u]) => u.name === name);
+    return found ? found[0] : '';
+  } catch { return ''; }
 }
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => loadSession() !== null);
   const [userName, setUserName] = useState(() => loadSession()?.name ?? '');
+  const [userEmail, setUserEmail] = useState(() => {
+    const s = loadSession();
+    if (!s) return '';
+    return s.email || recoverEmail(s.name);
+  });
   const [showIntro, setShowIntro] = useState(false);
   const [page, setPage] = useState<Page>('projetos');
   const [role, setRole] = useState<Role>(() => loadSession()?.role ?? 'gestao');
@@ -91,6 +106,17 @@ export default function App() {
     const session = loadSession();
     if (session) localStorage.setItem(SESSION_KEY, JSON.stringify({ ...session, role: r }));
   };
+
+  const handleLogout = () => {
+    localStorage.removeItem(SESSION_KEY);
+    setIsAuthenticated(false);
+    setUserName('');
+    setUserEmail('');
+    setRole('gestao');
+    setShowIntro(false);
+    setPage('projetos');
+    setActiveProjectId(null);
+  };;
 
   function renderKickoffLanding() {
     return (
@@ -182,35 +208,29 @@ export default function App() {
       case 'dashboard':
         return <ComingSoon iconType="dashboard" title="Dashboard" description="Métricas e indicadores dos projetos: taxa de preenchimento, seções críticas, timeline." />;
       case 'config':
-        return <ConfigPage role={role} />;
+        return <ConfigPage role={role} isAdmin={userEmail === 'raphael.caveagna@invent-corp.com'} />;
       case 'sugestoes':
         return <SugestoesPage role={role} userName={userName} />;
       case 'documentacao':
         return <DocumentacaoPage />;
+      case 'admin':
+        return <AdminPage role={role} onRoleChange={handleRoleChange} />;
     }
   }
 
   const inKickoffFullscreen = isFullscreen && page === 'kickoff' && !!activeProjectId;
 
-  const handleLogout = () => {
-    localStorage.removeItem(SESSION_KEY);
-    setIsAuthenticated(false);
-    setUserName('');
-    setRole('gestao');
-    setShowIntro(false);
-    setPage('projetos');
-    setActiveProjectId(null);
-  };
 
   if (!isAuthenticated) {
     return (
       <LoginPage
-        onLogin={(nome, r) => {
+        onLogin={(nome, r, email) => {
           setUserName(nome);
+          setUserEmail(email);
           setRole(r);
           setIsAuthenticated(true);
           setShowIntro(true);
-          localStorage.setItem(SESSION_KEY, JSON.stringify({ name: nome, role: r }));
+          localStorage.setItem(SESSION_KEY, JSON.stringify({ name: nome, role: r, email }));
         }}
       />
     );
@@ -221,7 +241,7 @@ export default function App() {
       {showIntro && <IntroScreen onDone={() => setShowIntro(false)} />}
 
       {!inKickoffFullscreen && (
-        <Sidebar current={page as 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config'} onNavigate={handleNavigate} role={role} onRoleChange={handleRoleChange} userName={userName} onLogout={handleLogout} />
+        <Sidebar current={page as Parameters<typeof handleNavigate>[0]} onNavigate={handleNavigate} role={role} onRoleChange={handleRoleChange} userName={userName} userEmail={userEmail} onLogout={handleLogout} />
       )}
 
       <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', minWidth: 0 }}>

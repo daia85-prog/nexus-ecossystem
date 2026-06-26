@@ -32,13 +32,18 @@ NEXUS é uma plataforma SaaS interna da **Invent** para gestão de projetos WCS 
 
 ## Mapa de Versões e Módulos
 
-| Versão | Módulo                 | Status                | Início |
-| ------ | ---------------------- | --------------------- | ------ |
-| **v1** | Kickoff WCS            | ✅ Produção            | 2024   |
-| v2     | Dashboard de Projetos  | 🔧 Em desenvolvimento | —      |
-| v3     | Pendências e Follow-up | 🔧 Em desenvolvimento | —      |
-| v4     | Integração WMS / API   | 📋 Planejado          | —      |
-| v5     | Relatórios e BI        | 📋 Planejado          | —      |
+| Versão   | Módulo                                       | Status                | Início  |
+| -------- | -------------------------------------------- | --------------------- | ------- |
+| **v1**   | Kickoff WCS                                  | ✅ Produção            | 2024    |
+| **v1.2** | Módulo Documentação — Gerar Documento        | ✅ Produção            | 2026-06 |
+| v1.3     | Módulo Documentação — Apontamento de Horas   | 🔧 Em desenvolvimento | —       |
+| v2       | Backend Supabase + Auth Azure AD / SSO Invent + RBAC | 📋 Planejado  | —       |
+| v3       | Integração SharePoint / OneDrive             | 📋 Planejado          | —       |
+| v4       | IA Integrada (Claude API + Chat Contextual)  | 📋 Planejado          | —       |
+| v5       | Kickoff Segmentado (Gestor vs. Operacional)  | 📋 Planejado          | —       |
+| v6       | VEX AI — Pesquisa + Agentes + Insights       | 📋 Planejado          | —       |
+| v7       | LLM On-Premise + Módulo de Arenas            | 📋 Planejado          | —       |
+| v8       | O Auge — Pipeline End-to-End + SUPER_MD      | 📋 Planejado          | —       |
 
 > **NEXUS v1** substitui definitivamente o que antes era chamado de "App Kickoff v3.4". A nomenclatura correta e histórica é **NEXUS v1 — Módulo Kickoff**.
 

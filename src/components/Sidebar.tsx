@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import AdminPanelSettingsRoundedIcon from '@mui/icons-material/AdminPanelSettingsRounded';
 import AssignmentTurnedInRoundedIcon from '@mui/icons-material/AssignmentTurnedInRounded';
 import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
 import BuildRoundedIcon from '@mui/icons-material/BuildRounded';
@@ -17,7 +18,9 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import TipsAndUpdatesRoundedIcon from '@mui/icons-material/TipsAndUpdatesRounded';
 
-type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao';
+type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
+
+const ADMIN_EMAIL = 'raphael.caveagna@invent-corp.com';
 
 export const ROLES = [
   { value: 'gestao',          label: 'Gestão' },
@@ -53,10 +56,12 @@ interface SidebarProps {
   role: Role;
   onRoleChange: (role: Role) => void;
   userName: string;
+  userEmail: string;
   onLogout: () => void;
 }
 
-export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onLogout }: SidebarProps) {
+export function Sidebar({ current, onNavigate, role, onRoleChange, userName, userEmail, onLogout }: SidebarProps) {
+  const isAdmin = userEmail === ADMIN_EMAIL;
   const [collapsed, setCollapsed] = useState(false);
   const [admClicks, setAdmClicks] = useState(0);
   const [admHint, setAdmHint] = useState(false);
@@ -90,6 +95,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
   const NAV = role === 'documentacao'
     ? [...NAV_DEFAULT, NAV_DOC]
     : NAV_DEFAULT;
+  const NAV_ADMIN: NavItem = { id: 'admin', label: 'Administrador', Icon: AdminPanelSettingsRoundedIcon };
   const roleLabel = ROLES.find(r => r.value === role)?.label ?? role;
   const firstName = userName.split(' ')[0] || 'Usuário';
   const initial = firstName[0]?.toUpperCase() ?? 'U';
@@ -228,6 +234,53 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
           <List dense disablePadding sx={{ display: 'flex', flexDirection: 'column' }}>
             {NAV.map(renderNavItem)}
           </List>
+
+          {/* Admin nav item — visible only to raphael.caveagna@invent-corp.com */}
+          {isAdmin && (
+            <Box sx={{ mt: 1.5, pt: 1.5, borderTop: '1px solid rgba(239,68,68,0.15)' }}>
+              {!collapsed && (
+                <Typography sx={{ fontSize: 9.5, color: 'rgba(239,68,68,0.4)', fontWeight: 700, letterSpacing: '1px', px: '6px', pb: '8px', textTransform: 'uppercase' }}>
+                  Acesso Restrito
+                </Typography>
+              )}
+              {(() => {
+                const isActive = current === 'admin';
+                const btn = (
+                  <Box
+                    component="button"
+                    onClick={() => onNavigate('admin')}
+                    sx={{
+                      position: 'relative', borderRadius: '8px', mb: '2px',
+                      pl: collapsed ? 0 : '12px', pr: collapsed ? 0 : '8px',
+                      minHeight: 36, justifyContent: collapsed ? 'center' : 'flex-start',
+                      gap: 1.25, border: 'none', background: 'none', cursor: 'pointer',
+                      display: 'flex', alignItems: 'center', width: '100%',
+                      color: isActive ? '#ef4444' : 'rgba(239,68,68,0.4)',
+                      bgcolor: isActive ? 'rgba(239,68,68,0.08)' : 'transparent',
+                      '&::before': isActive ? {
+                        content: '""', position: 'absolute', left: 0, top: '18%', bottom: '18%',
+                        width: '3px', borderRadius: '0 3px 3px 0', bgcolor: '#ef4444',
+                      } : {},
+                      '&:hover': { bgcolor: 'rgba(239,68,68,0.06)', color: '#ef4444' },
+                      transition: 'background-color 0.15s, color 0.15s',
+                    } as const}
+                  >
+                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: collapsed ? '100%' : 28, height: 36, flexShrink: 0 }}>
+                      <AdminPanelSettingsRoundedIcon sx={{ fontSize: 18 }} />
+                    </Box>
+                    {!collapsed && (
+                      <Typography sx={{ fontSize: 13, fontWeight: isActive ? 600 : 500, lineHeight: 1, whiteSpace: 'nowrap', color: 'inherit' }}>
+                        {NAV_ADMIN.label}
+                      </Typography>
+                    )}
+                  </Box>
+                );
+                return collapsed
+                  ? <Tooltip key="admin" title={NAV_ADMIN.label} placement="right" arrow>{btn}</Tooltip>
+                  : btn;
+              })()}
+            </Box>
+          )}
         </Box>
 
         {/* Bottom section */}
@@ -238,16 +291,18 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
 
           {!collapsed && (
             <>
-              <Select
-                value={role}
-                onChange={(e) => onRoleChange(e.target.value as Role)}
-                fullWidth size="small"
-                sx={{ fontSize: 12 }}
-              >
-                {ROLES.filter(r => r.value !== 'adm' || role === 'adm').map(r => (
-                  <MenuItem key={r.value} value={r.value} sx={{ fontSize: 12 }}>{r.label}</MenuItem>
-                ))}
-              </Select>
+              {isAdmin && (
+                <Select
+                  value={role}
+                  onChange={(e) => onRoleChange(e.target.value as Role)}
+                  fullWidth size="small"
+                  sx={{ fontSize: 12, mb: 1 }}
+                >
+                  {ROLES.map(r => (
+                    <MenuItem key={r.value} value={r.value} sx={{ fontSize: 12 }}>{r.label}</MenuItem>
+                  ))}
+                </Select>
+              )}
 
               <Box
                 sx={{

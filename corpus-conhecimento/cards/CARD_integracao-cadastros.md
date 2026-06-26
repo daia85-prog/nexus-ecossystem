@@ -66,23 +66,23 @@ O payload de Produto é a integração mais crítica do módulo de dados mestres
 
 **Campos-base do payload de Produto (mínimo comum entre projetos):**
 
-| Campo | Tipo | Obrigatório | Descrição |
-|-------|------|-------------|-----------|
-| `codInterno` | string/integer | Sim | Código identificador único do produto (SKU) |
-| `tipo` | string | Sim | Categorização operacional (ex: `Comum`, `Inflamável`, `Aerosol`, `Controlado`, `Refrigerado`) |
-| `categoria` | string | Sim | Família ou categoria do produto |
-| `ativo` | boolean | Sim | Indica se o produto está ativo (`true`/`false`) |
-| `curva` | string/array | Não | Curva de vendas ABC (ex: `"A"` ou `["A","C"]` para multi-empresa) |
-| `codComercial` | string/array | Não | Código de barras EAN-13; em projetos multi-embalagem, array com posições fixas `[EAN, DISPLAY, DUN14]` |
-| `nome` | string | Não | Nome/descrição do produto |
-| `unidadeMedida` | string | Não | Unidade de medida (ex: `"Unidade"`, `"Gramas"`) |
-| `comprimento` | integer/array | Não | Dimensão em milímetros (ou array por embalagem: `[unidade, display, caixa]`) |
-| `largura` | integer/array | Não | Dimensão em milímetros |
-| `altura` | integer/array | Não | Dimensão em milímetros |
-| `peso` | integer/array | Não | Peso em gramas |
-| `qtdFull` | integer | Não | Quantidade de unidades por caixa fechada |
-| `qtdMinimaposicaoPicking` | integer/array | Não | Quantidade mínima na posição de picking |
-| `qtdMaximaposicaoPicking` | integer/array | Não | Quantidade máxima na posição de picking |
+| Campo | Tipo | Obrigatório | Descrição | Tamanho |
+|-------|------|-------------|-----------|---------|
+| `codInterno` | string/integer | Sim | Código identificador único do produto (SKU) | Char(30) |
+| `tipo` | string | Sim | Categorização operacional (ex: `Comum`, `Inflamável`, `Aerosol`, `Controlado`, `Refrigerado`) | Char(50) |
+| `categoria` | string | Sim | Família ou categoria do produto | Char(50) |
+| `ativo` | boolean | Sim | Indica se o produto está ativo (`true`/`false`) | Boolean |
+| `curva` | string/array | Não | Curva de vendas ABC (ex: `"A"` ou `["A","C"]` para multi-empresa) | Char(1) |
+| `codComercial` | string/array | Não | Código de barras EAN-13; em projetos multi-embalagem, array com posições fixas `[EAN, DISPLAY, DUN14]` | Char(14) |
+| `nome` | string | Não | Nome/descrição do produto | Char(200) |
+| `unidadeMedida` | string | Não | Unidade de medida (ex: `"Unidade"`, `"Gramas"`) | Char(20) |
+| `comprimento` | integer/array | Não | Dimensão em milímetros (ou array por embalagem: `[unidade, display, caixa]`) | Int |
+| `largura` | integer/array | Não | Dimensão em milímetros | Int |
+| `altura` | integer/array | Não | Dimensão em milímetros | Int |
+| `peso` | integer/array | Não | Peso em gramas | Int |
+| `qtdFull` | integer | Não | Quantidade de unidades por caixa fechada | Int |
+| `qtdMinimaposicaoPicking` | integer/array | Não | Quantidade mínima na posição de picking | Int |
+| `qtdMaximaposicaoPicking` | integer/array | Não | Quantidade máxima na posição de picking | Int |
 
 > Campos adicionais por projeto: ver **Condicionais** abaixo.
 
@@ -118,13 +118,13 @@ Projetos com controle de validade (FEFO — First Expired, First Out) recebem o 
 
 **Campos do cadastro de Lote:**
 
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| `batch_number` | string | Número/código do lote |
-| `product_id` | string/integer | Referência ao produto (`codInterno`) |
-| `quantity` | integer | Quantidade disponível no lote |
-| `manufacturing_date` | date | Data de fabricação |
-| `expiration_date` | date | Data de validade |
+| Campo | Tipo | Obrigatório | Descrição | Tamanho |
+|-------|------|-------------|-----------|---------|
+| `batch_number` | string | Sim | Número/código do lote | Char(30) |
+| `product_id` | string/integer | Sim | Referência ao produto (`codInterno`) | Char(30) |
+| `quantity` | integer | Sim | Quantidade disponível no lote | Int |
+| `manufacturing_date` | date | Não | Data de fabricação | Date (YYYY-MM-DD) |
+| `expiration_date` | date | Sim | Data de validade | Date (YYYY-MM-DD) |
 
 **Operações:** criar lote · deletar lote.
 
@@ -138,11 +138,11 @@ A lista de transportadoras é enviada ao WCS para que o módulo de Sorter possa 
 
 **Campos básicos:**
 
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| `cnpj` | string | CNPJ da transportadora |
-| `nome` | string | Nome/razão social |
-| `attributes` | object | Atributos adicionais (ex: código IATA para operações aéreas) |
+| Campo | Tipo | Obrigatório | Descrição | Tamanho |
+|-------|------|-------------|-----------|---------|
+| `cnpj` | string | Sim | CNPJ da transportadora | Char(18) |
+| `nome` | string | Sim | Nome/razão social | Char(100) |
+| `attributes` | object | Não | Atributos adicionais (ex: código IATA para operações aéreas) | Object |
 
 ---
 
