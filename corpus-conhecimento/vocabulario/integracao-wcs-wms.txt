@@ -1,0 +1,13 @@
+# Integração WCS-WMS (Interna)
+snap shot, snapshot, instantâneo de estoque, sincronização snapshot
+inbound sync, sincronização inbound, sync entrada
+confirmação de separação, confirmação de picking, picking confirm WCS
+WCS→WMS, wcs para wms, retorno wcs, WCS to WMS
+confirmação de reabastecimento, retorno reabastecimento
+confirmação de recall, retorno recall
+devolução de volumes cancelados, volumes cancelados WCS
+closing confirmation, cc wcs, cet wcs, cpt wcs
+integração de retorno WCS, retorno wcs→wms
+aloca pallet WCS→WMS, retorno paletização
+confirmação de finalização, finalização WCS
+retorno reindução, reindução WCS

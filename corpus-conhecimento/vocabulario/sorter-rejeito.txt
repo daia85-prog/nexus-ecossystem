@@ -1,0 +1,12 @@
+# Sorter Rejeito
+rejeito do sorter, rejeito no sorter, rejeito sorter, motivos de rejeito do sorter
+no-read, noread, falha de leitura, falha de identificação, tratamento de falha
+contingência do sorter, contingencia sorter, sorter contingencia, contingência IA sorter
+recirculação, recirculação de volumes no sorter, volume recirculado, recircular
+estação de rejeito, rampa de rejeito, área de rejeito, corredor de rejeito
+tratativa de rejeito, tratamento de rejeito, handling rejeito, rejeito handling
+rejeito – octopus, rechazo del sorter, rechazo sorter
+motivo de rejeito, classificação de rejeito, código de rejeito
+volume rejeitado, item rejeitado, caixa rejeitada
+noread nas linhas expressas, leitura falha sorter
+regra de contingência para volumes em esteira

@@ -2,21 +2,64 @@
   "collapse-filter": false,
   "search": "",
   "showTags": true,
-  "showAttachments": true,
-  "hideUnresolved": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "file:(RAW)",
+      "color": {
+        "a": 1,
+        "rgb": 16514816
+      }
+    },
+    {
+      "query": "file:(README)",
+      "color": {
+        "a": 1,
+        "rgb": 10742015
+      }
+    },
+    {
+      "query": "file:(MOC)",
+      "color": {
+        "a": 1,
+        "rgb": 11474968
+      }
+    },
+    {
+      "query": "file:(DOSSIE)",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "file:(ED_CARD)",
+      "color": {
+        "a": 1,
+        "rgb": 16711867
+      }
+    },
+    {
+      "query": "file:(INSIGHTS)",
+      "color": {
+        "a": 1,
+        "rgb": 16749824
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.2091316918218904,
-  "close": false
+  "textFadeMultiplier": -2,
+  "nodeSizeMultiplier": 1.14417879417879,
+  "lineSizeMultiplier": 0.492203742203742,
+  "collapse-forces": false,
+  "centerStrength": 0.566528066528067,
+  "repelStrength": 20,
+  "linkStrength": 0.786902286902287,
+  "linkDistance": 500,
+  "scale": 0.05932617187499997,
+  "close": true
 }

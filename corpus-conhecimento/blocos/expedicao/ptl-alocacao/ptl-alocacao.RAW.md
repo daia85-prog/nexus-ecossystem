@@ -1,664 +1,11 @@
 # ptl-alocacao.RAW — Evidência Bruta
 
-<!-- APPEND-ONLY — gerado pelo minerador -->
-
----
-**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - UNIF REV2.docx`  
-**Heading:** Telas do Sistema  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-A tela abaixo é uma sugestão para a visualização dos endereços na tela do posto de trabalho (monitor). Ela deverá ser dividida com a tela de ORDER START já prevista para o ORDER START padrão.
-
----
-**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - UNIFICADO.docx`  
-**Heading:** Telas do Sistema  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-A tela abaixo é uma sugestão para a visualização dos endereços na tela do posto de trabalho (monitor). Ela deverá ser dividida com a tela de ORDER START já prevista para o ORDER START padrão.
-
----
-**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE UNIF REV3.docx`  
-**Heading:** Telas do Sistema  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-A tela abaixo é uma sugestão para a visualização dos endereços na tela do posto de trabalho (monitor). Ela deverá ser dividida com a tela de ORDER START já prevista para o ORDER START padrão.
-
----
-**Origem:** [I21.131] 2022 — `I21.131 - ESPECIFICACAO DE SOFTWARE - REV4.docx`  
-**Heading:** Put to Wall (PTW)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Sistema WCS irá verificar a cubagem da caixa e enviar para o PTW pedidos multi order, (podendo chegar a 8 pedidos por caixa), esses pedidos serão finalizados em cada estação não sendo possível a movimentação entre estações.
-O Sistema WCS deverá verificar se o pedido cabe em uma única posição do PTW antes de aceitar que ele seja um pedido multi order (dimensões de cada posição: Altura 39 cm x Largura 33 cm).
-Esta caixa contendo mais de um pedido, deverá realizar a separação de todos os pedidos que ela contém e após finalizado, ser direcionado para o PTW.
-Na parte da frente do PTW não haverá tela.
-No PTW o operador de cada estação deverá ler a caixa de batch picking em um scanner fixo para abrir o put to wall. Após essa operação o operador deverá ler o EAN de cada produto desmembrando e alocando nas posições a sua frente orientado pela luz verde e confirmando no botão após a alocação de cada produto. Esse processo deverá se repetir até acabar todos os itens desta caixa.
-Na parte de trás do flowrack haverá um computador + uma impressora (Cliente).
-Na parte de trás do Flowrack, o operador deverá bipar em um scanner fixo a caixa Tote para vincular cada pedido conforme a posição de cada luz e posteriormente apertar o botão para validação. Será um Tote para cada pedido. Só podendo alocar a partir do momento que a luz estiver acesa, indicando que não há mais produtos a serem colocados naquela posição.
-Após vincular o pedido a caixa Tote e colocar os produtos dentro da caixa, o operador deverá confirmar no led e soltar a caixa na linha.
-Serão 2 estações de Put to Wall, cada uma delas terá os equipamentos abaixo:
-- 16 leds, sendo 8 frente e 8 costas (Invent) = Total 32 leds
-- 2 scanners, sendo 1 frente e 1 costas (Invent) = Total 4 Scanners
-- 1 computador (fornecimento do cliente) = Total 2 computadores
-- 1 concentrador para todas as posições (Invent) = Total 1 concentrador
-- 1 Impressora (fornecimento do cliente) = Total 2 impressoras.
-
----
-**Origem:** [I21.131] 2022 — `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV4.docx`  
-**Heading:** Put to Wall (PTW)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Sistema WCS irá verificar a cubagem da caixa e enviar para o PTW pedidos multi order, (podendo chegar a 8 pedidos por caixa), esses pedidos serão finalizados em cada estação não sendo possível a movimentação entre estações.
-O Sistema WCS deverá verificar se o pedido cabe em uma única posição do PTW antes de aceitar que ele seja um pedido multi order (dimensões de cada posição: Altura 39 cm x Largura 33 cm).
-Esta caixa contendo mais de um pedido, deverá realizar a separação de todos os pedidos que ela contém e após finalizado, ser direcionado para o PTW.
-Na parte da frente do PTW não haverá tela.
-No PTW o operador de cada estação deverá ler a caixa de batch picking em um scanner fixo para abrir o put to wall. Após essa operação o operador deverá ler o EAN de cada produto desmembrando e alocando nas posições a sua frente orientado pela luz verde e confirmando no botão após a alocação de cada produto. Esse processo deverá se repetir até acabar todos os itens desta caixa.
-Na parte de trás do flowrack haverá um computador + uma impressora (Cliente).
-Na parte de trás do Flowrack, o operador deverá bipar em um scanner fixo a caixa Tote para vincular cada pedido conforme a posição de cada luz e posteriormente apertar o botão para validação. Será um Tote para cada pedido. Só podendo alocar a partir do momento que a luz estiver acesa, indicando que não há mais produtos a serem colocados naquela posição.
-Após vincular o pedido a caixa Tote e colocar os produtos dentro da caixa, o operador deverá confirmar no led e soltar a caixa na linha.
-Serão 2 estações de Put to Wall, cada uma delas terá os equipamentos abaixo:
-- 16 leds, sendo 8 frente e 8 costas (Invent) = Total 32 leds
-- 2 scanners, sendo 1 frente e 1 costas (Invent) = Total 4 Scanners
-- 1 computador (fornecimento do cliente) = Total 2 computadores
-- 1 concentrador para todas as posições (Invent) = Total 1 concentrador
-- 1 Impressora (fornecimento do cliente) = Total 2 impressoras.
-
----
-**Origem:** [I22.2247] 2022 — `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx`  
-**Heading:** Estações de trabalho (DESKTOP)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As estações de trabalho disponibilizadas pelo cliente serão distribuídas ao longo das seguintes regiões:
-Estação de rejeito sorter;
-Na estação de rejeito na área do sorter, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de rejeito, etc.)
-Abaixo segue a configuração mínima para as estações de trabalho:
-Estação de tratamento de erro nos níveis;
-Na estação de tratamento de erro nos níveis, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) para cada nível que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de erro)
-Abaixo segue a configuração mínima para as estações de trabalho:
-
----
-**Origem:** [I22.2247] 2022 — `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
-**Heading:** Estações de trabalho (DESKTOP)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As estações de trabalho disponibilizadas pelo cliente serão distribuídas ao longo das seguintes regiões:
-Estação de rejeito sorter;
-Na estação de rejeito na área do sorter, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de rejeito, etc.).
-Abaixo segue a configuração mínima para as estações de trabalho:
-Estação de tratamento de erro nos níveis;
-Na estação de tratamento de erro nos níveis, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) para cada nível que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de erro).
-Abaixo segue a configuração mínima para as estações de trabalho:
-
----
-**Origem:** [I22.2247] 2022 — `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx`  
-**Heading:** Estações de trabalho (DESKTOP)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As estações de trabalho disponibilizadas pelo cliente serão distribuídas ao longo das seguintes regiões:
-Estação de rejeito sorter;
-Na estação de rejeito na área do sorter, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de rejeito, etc.).
-Abaixo segue a configuração mínima para as estações de trabalho:
-Estação de tratamento de erro no térreo;
-Na estação de tratamento de erro no térreo, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de erro).
-Abaixo segue a configuração mínima para as estações de trabalho:
-
----
-**Origem:** [I22.2247] 2022 — `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.4.docx`  
-**Heading:** Estações de trabalho (DESKTOP)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As estações de trabalho disponibilizadas pelo cliente serão distribuídas ao longo das seguintes regiões:
-Estação de rejeito sorter;
-Na estação de rejeito na área do sorter, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de rejeito, etc.).
-Esta mesma estação servirá de rejeito para as áreas dos níveis e sorter, ou seja, tanto para tratativa dos problemas que podem ocorrer nos níveis de recebimento e expedição, quanto para os problemas que podem ocorrer apíos as caixas passarem pelo portal.
-Abaixo segue a configuração mínima para as estações de trabalho:
-
----
-**Origem:** [I22.2247] 2022 — `I22.2247 -  PROJETO MINUANO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx`  
-**Heading:** Estações de trabalho (DESKTOP)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As estações de trabalho disponibilizadas pelo cliente serão distribuídas ao longo das seguintes regiões:
-Estação de rejeito sorter;
-Na estação de rejeito na área do sorter, 01 (um) Desktop + 1 (um) scanner + 1 (uma) impressora (RFID) que auxiliará o operador com os principais recursos necessários para a operação (Tratativa de rejeito, etc.).
-Esta mesma estação servirá de rejeito para as áreas dos níveis e sorter, ou seja, tanto para tratativa dos problemas que podem ocorrer nos níveis de recebimento e expedição, quanto para os problemas que podem ocorrer apíos as caixas passarem pelo portal.
-Abaixo segue a configuração mínima para as estações de trabalho:
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV1.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV2.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV3.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV4.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV6.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV7.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I22.1739] 2024 — `I22.3322 - ESPECIFICACAO DE SOFTWARE - PROJETO HEART - REV8.docx`  
-**Heading:** PTM (Put-To-Monitor)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTM do sistema Velox, fará o controle dos pallets das saídas, operação poderá abrir até 16 (dezesseis) pallets na mesma saída, essa configuração deve ser feita previamente no sistema Velox, onde será determinado quais os parâmetros para os pallets, se será por rota, transportadora e filial etc.
-Ao iniciar a operação, o operador da saída da saída do sorter deverá abrir as posições pallet (PTM) que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas pelo monitor.
-Com isso, operador ao receber o volume desviado na rampa, deverá realizar a leitura de código de barras (full case) ou QR Code (fracionados), o monitor do PTM indicará qual a posição pallet deverá alocar esse volume.
-Operador aloca o volume no pallet indicado pelo PTM e realiza o mesmo processo com os próximos volumes recebidos na saída.
-
----
-**Origem:** [I24.101] 2024 — `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx`  
-**Heading:** Alocação por Transportadora  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Teremos a possibilidade de atrelar as transportadoras por rampa, sendo somente uma transportadora por rampa, esse mapeamento será usado no processo de alocação automática, onde o Velox verifica se o pedido que passou no portal já tem alguma posição PTM e destina o volume para o respectiva rampa/posição. Se não houver, ele realizará o vínculo desse pedido na primeira posição disponível de acordo com mapa de sorter, podendo a mesma transportadora estar atrelada a uma ou mais rampas.
-OBS: A mesma transportadora pode ser alocada em uma ou mais rampas.
-A disponibilidade das posições do PTM impactam diretamente na liberação das tarefas no Order Start.
-
----
-**Origem:** [I24.101] 2024 — `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 1.docx`  
-**Heading:** Informações disponíveis no PTM  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As informações dispostas na tela de PTM serão visualizadas com facilidade pelo operador durante todo o processo de alocação dos volumes, as disposições de esboços de telas dispostos abaixo os estados (status) em que as posições PTM podem ficar durante todo o processo de alocação dos  volumes passado no sorter.
-Segue esboços da tela:
-PTM fechado  (Sem pallet atrelado)– Borda do quadrado ficará na cor cinza.
-PTM abertos – Cada PTM terá uma cor específica de acordo com as marcações no chão feitas pelo time operacional do cliente.
-PTM alocado automaticamente ou manualmente aguardando abertura de pallet – Borda do quadrado fica com a cor em evidência, porém as informações do quadrado não são preenchidas, ficam aguardando o operador.
-PTM aguardando alocação – Todo o quadrado ficará na cor da borda do quadrado.
-Nota: Quando todos os volumes do pedido forem alocados no pallet de maneira correta o Velox irá indicar no monitor a posição que finalizou o processo de alocação, o quadrado ficará todo preenchido com a cor da borda e o mesmo ficará piscando para chamar a atenção do operador, como mencionado no item de fechamento.
-Existirá um parâmetro no Velox onde é possível habilitar e desabilitar a obrigatoriedade de fazer a leitura do código de pallet para confirmar a alocação do volume no pallet (PTM).
-Descritivo sobre o fluxo do sorter (Descritivo – Fluxo Sorter) contém informações do conceito de PTL que é muito semelhante ao processo do PTM, segue em anexo junto deste descritivo somente para melhor entendimento do processo como um todo, não está contemplado a implementação desse conceito no projeto em questão.
-
----
-**Origem:** [I24.101] 2024 — `I24.101 - ESPECIFICACAO DE SOFTWARE - REV. 01.docx`  
-**Heading:** Informações disponíveis no PTM  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-As informações dispostas na tela de PTM serão visualizadas com facilidade pelo operador durante todo o processo de alocação dos volumes, as disposições de esboços de telas dispostos abaixo os estados (status) em que as posições PTM podem ficar durante todo o processo de alocação dos  volumes passado no sorter.
-Segue esboços da tela:
-PTM fechado  (Sem pallet atrelado)– Borda do quadrado ficará na cor cinza.
-PTM abertos – Cada PTM terá uma cor específica de acordo com as marcações no chão feitas pelo time operacional do cliente.
-PTM alocado automaticamente ou manualmente aguardando abertura de pallet – Borda do quadrado fica com a cor em evidência, porém as informações do quadrado não são preenchidas, ficam aguardando o operador.
-PTM aguardando alocação – Todo o quadrado ficará na cor da borda do quadrado.
-Nota: Quando todos os volumes do pedido forem alocados no pallet de maneira correta o Velox irá indicar no monitor a posição que finalizou o processo de alocação, o quadrado ficará todo preenchido com a cor da borda e o mesmo ficará piscando para chamar a atenção do operador, como mencionado no item de fechamento.
-Existirá um parâmetro no Velox onde é possível habilitar e desabilitar a obrigatoriedade de fazer a leitura do código de pallet para confirmar a alocação do volume no pallet (PTM).
-Descritivo sobre o fluxo do sorter (Descritivo – Fluxo Sorter) contém informações do conceito de PTL que é muito semelhante ao processo do PTM, segue em anexo junto deste descritivo somente para melhor entendimento do processo como um todo, não está contemplado a implementação desse conceito no projeto em questão.
-
----
-**Origem:** [I20.1409] ADITIVO — `I20.1409 - Aditivo Projeto ST - Dashboard Conferência de Pallets - Rev.docx`  
-**Heading:** Tratativas Disponíveis  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Ao clicar em um volume vermelho ou laranja na lista, o conferente acessa as tratativas disponíveis para aquele item. Cada tratativa exige uma ação física e/ou uma confirmação na tela.
-T1 — Item na bica, ainda não alocado
-Conferente vai até a bica e o volume está fisicamente lá, aguardando alocação. Bipa o item diretamente na tela de conferência. O sistema valida, registra e retira o volume do estado vermelho. O volume é alocado normalmente no pallet ativo.
-T2 — Item no pallet aberto, alocado sem bipar
-Conferente vai até a bica, o volume não está mais solto mas o pallet ainda está aberto. Localiza o item fisicamente dentro do pallet. Bipa na tela confirmando a alocação com duplo check. O sistema registra a ocorrência (operador, horário, pallet) e retira o volume do estado vermelho.
-T3 — Item no pallet anterior fechado, alocado sem bipar
-Conferente não encontra o volume na bica nem no pallet aberto. O sistema já exibe o alerta com o RG do pallet anterior. Conferente leva o RG à doca, solicita a retenção física do pallet e localiza o item dentro dele. Bipa na tela confirmando. O sistema registra a ocorrência e encerra o alerta do pallet.
-T4 — Item em bica errada (volume laranja)
-O conferente identifica pela cor laranja que o volume foi bipado em outra bica. A tela exibe a bica onde foi lido e o operador logado naquele momento. O conferente vai até aquela bica e resgata o volume. Em seguida, leva o volume até a bica correta e o deposita fisicamente na bica de destino. Após confirmar que o item está na bica correta, bipa na tela para registrar. Somente após essa confirmação física e a bipagem o sistema encerra o alerta. Caso o último pallet da operação para aquela bica já tenha sido fechado, o conferente deve levar o item até a doca, localizar o pallet correto e incluir o volume manualmente — aplicando em seguida a tratativa T3 para registro.
-T5 — Item não encontrado
-Conferente verificou a bica, o pallet aberto, o pallet anterior e as bicas próximas. Volume não encontrado. Registra a tratativa "Não Encontrado" na tela — requer autenticação do supervisor. O sistema registra em log: horário do desvio, operador logado na bica no momento, todos os locais verificados e a autorização do supervisor. O alerta é encerrado.
-T6 — Substituição por produto igual
-Volume não encontrado mas há estoque disponível do mesmo produto na operação. Conferente registra uma substituição: bipa o novo volume como substituto do original. Requer autenticação do supervisor. O sistema registra ambos os DUNs (original perdido e substituto) na ocorrência e encerra o alerta.
-Obs: As tratativas T5 e T6 requerem autenticação do supervisor. O log de todas as tratativas fica disponível para consulta pelo conferente, supervisor e equipe de suporte Invent, com horário, operador e ação aplicada.
-Tratativas já confirmadas não podem ser canceladas ou revertidas pelo conferente. O registro é permanente e auditável. Em caso de erro de registro, o supervisor deve abrir uma ocorrência manual no log para documentar a correção.
-Para T6, o processo físico de localização e disponibilização do produto substituto é de responsabilidade do cliente. O WCS registra os DUNs envolvidos mas não realiza movimentação de estoque — a atualização do estoque no WMS é de responsabilidade do cliente.
-Ex Tela:
-
----
-**Origem:** [I24.203] ADITIVO — `I24.203 - Aditivo Projeto Beta - PTM + Extrato Sorter.docx`  
-**Heading:** Critérios de Aceitação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Ao concluir o processo de alocação e realizar o fechamento do pallet, serão enviadas automaticamente duas vias de impressão para a impressora previamente cadastrada (Selecionar impressora nas configurações), contendo as informações do Extrato de Pallet (tópico 3.4.1).
-Será disponibilizada uma tela para esse relatório com a opção “Imprimir Relatório Sorter”, na qual o operador poderá selecionar o período desejado para visualização e emissão do relatório.
-O extrato impresso contempla todos os campos definidos no layout (Tópico 3.4.3 e tópico 3.4.3) e segue as regras de negócio (tópico 3.5).
-O documento é impresso na impressora A4 configurada para o ponto de operação.
-
----
-**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Dashboard Relatorios e Cadenciamento - Projeto Esperança.docx`  
-**Heading:** Como Funciona o Algoritmo  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O processo de geração da fila intercalada segue os passos abaixo:
-Operador seleciona a rua e o posto de impressão na tela de OS fragilidade, conforme o fluxo já existente.
-WCS consulta todas as missões pendentes para a rua selecionada.
-WCS identifica a rampa de destino de cada missão com base no mapa de sorter ativo e agrupa os volumes por rampa.
-WCS gera a fila de impressão intercalada: percorre as rampas em ciclo, emitindo 1 etiqueta por rampa a cada rodada. Exemplo com 4 rampas: Rampa 1 → Rampa 2 → Rampa 3 → Rampa 4 → Rampa 1 → Rampa 2 → ...
-Rampas esgotadas saem do ciclo: quando todos os volumes de uma rampa são impressos, ela é removida da rotação. O sistema continua o rodízio apenas entre as rampas restantes.
-Processo se encerra quando todas as rampas tiverem seus volumes totalmente impressos.
-A ordenação dos endereços dentro da rua é mantida (crescente ou decrescente conforme a configuração da impressora). A intercalação atua sobre quais etiquetas são impressas em cada posição da fila, não sobre a ordem dos endereços.
-
----
-**Origem:** [IA] ADITIVO — `Descritivo Funcional - Velox - IA - Copia.docx`  
-**Heading:** Localização e Captura de Imagens  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O sistema opera em um portal de leitura posicionado antes do sorter, composto por:
-Duas câmeras laterais (esquerda e direita)
-Uma câmera superior (topo), atualmente utilizada apenas para leitura simples de códigos de barras
-As câmeras laterais enviam imagens para o serviço de IA por meio de FTP.
-No momento da instalação, o técnico responsável define, em conjunto com a Invent, quais frames de cada câmera serão enviados, buscando o melhor enquadramento possível.
-
----
-**Origem:** [IA] ADITIVO — `Descritivo Funcional - Velox - IA.docx`  
-**Heading:** Localização e Captura de Imagens  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O sistema opera em um portal de leitura posicionado antes do sorter, composto por:
-Duas câmeras laterais (esquerda e direita)
-Uma câmera superior (topo), atualmente utilizada apenas para leitura simples de códigos de barras
-As câmeras laterais enviam imagens para o serviço de IA por meio de FTP.
-No momento da instalação, o técnico responsável define, em conjunto com a Invent, quais frames de cada câmera serão enviados, buscando o melhor enquadramento possível.
-
----
-**Origem:** [I25.9022] 2024 — `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx`  
-**Heading:** PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Ao iniciar a operação, o operador deverá realizar o login na respectiva rampa que será realizada a separação, para que consiga mapear e alocar os volumes nas posições indicadas. Caso esse login não seja realizado o operador não conseguirá alocar os volumes.
-O operador ao receber a caixa na rampa de saída, realiza a leitura do volume desviado, o display da posição PTL deverá acender indicando o local pallet onde o volume deve ser alocado.
-Operador aloca o volume no local indicado, aperta o botão do display confirmando que o volume foi alocado e segue para o próximo volume.
-Conforme a cubagem de pallet realizada pelo sistema WCS, operador verifica fisicamente o status do led, se o pallet está cheio fisicamente o led acenderá na cor “Ex: Laranja” e o operador deve realizar a leitura de uma etiqueta Master e acionar o LED para realizar o fechamento desse pallet e abrir um novo.
-Caso necessário, o operador poderá forçar o fechamento do pallet realizando a leitura do código único da posição e após isso o LED acenderá na cor laranja e será solicitado a master do pallet/routeiner para conclusão do fechamento.
-Quando a posição do PTL estiver com uma ROTA vinculada, o sistema deve realizar os processos de cubagem e alocação dos volumes fracionados no pallet/routeiner normalmente, porém ao fechar o PTL, o WCS não deve enviar integrações ao WMS pois não será utilizada nos processos posteriores.
-Será de responsabilidade do WMS disponibilizar as etiquetas Masters para a Operação.
-
----
-**Origem:** [I22.2213] 2025 — `Especificação de Software - Projeto Reverse_Escopo.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da automação, é necessária uma aplicação que será responsável pelo gerenciamento das informações dos equipamentos triados na operação, ou seja, esta aplicação executara as rotinas de PTW e PTL, tendo como papel fundamental a interface entre os sistemas WMS (Cliente) com WCS Invent.
-A aplicação WCS da Invent necessita de um banco de dados exclusivo para o correto armazenamento e gerenciamento das informações, que serão disponibilizadas pelo cliente (licença + instalação do banco Postgres).
-As informações serão trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um navegador web padrão em cada estação de trabalho (Google Chrome).
-
----
-**Origem:** [I25.136] 2026 — `I25.136 - Especificação de Software - Projeto Beta-Esteio.docx`  
-**Heading:** PTL (Put to Light) – Consolidação Fracionado e Fullcase  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTL atua como vínculo lógico de remessa: cada posição de PTL recebe os volumes Fracionados e Fullcase de uma mesma remessa, garantindo que os volumes do mesmo pedido fiquem agrupados antes da expedição.
-Embora os volumes Full Case nunca sejam depositados em posições de PTL, o operador responsável pela coleta Full Case acessa as posições de PTL ao final da sua tarefa para retirar os volumes Fracionados da mesma remessa, conforme detalhado na seção 7.6.4.
-Nesse contexto, o PTL exerce duas funções complementares no fluxo:
-depósito (entrada): realizado pelos operadores de Picking Fracionado, conforme o fluxo padrão do PTL descrito a seguir;
-retirada (saída): realizada pelo operador de Full Case ao consolidar a remessa para expedição.
-Operação no PTL:
-1. Ao iniciar a operação, o operador da saída realiza login no WCS para mapear e alocar os volumes nas posições indicadas pelo sistema.
-2. O operador realiza a leitura de cada volume Fracionado através do scanner. O WCS acende o LED da posição PTL correspondente, indicando onde depositar o volume.
-3. Caso o volume não pertença a nenhuma posição do posto (cenários típicos: volume não integrado, volume movido erroneamente para a área, volume com etiqueta inválida ou de outra remessa), todos os LEDs acendem em vermelho, sinalizando o erro. O operador deverá tratar a exceção conforme procedimento operacional.
-4. Quando o volume pertence a uma posição, o operador deposita o volume no pallet e confirma com o botão do LED.
-5. Após a finalização do agrupamento de uma remessa, a posição PTL é liberada automaticamente para receber a próxima remessa.
-6. Quando a remessa que ocupa uma posição de PTL também possui volumes Full Case, o operador da coleta Full Case se dirige ao PTL ao concluir sua tarefa e realiza a leitura das etiquetas dos volumes Fracionados conforme lista exibida pelo WCS. Após a leitura de todas as etiquetas esperadas, a posição de PTL é liberada automaticamente, e os volumes Fracionados acompanham o operador até o ponto de expedição em conjunto com os Full Case daquela remessa.
-Obs: Não há fechamento sistêmico de pallet, integração de Aloca Pallet com o EWM/SAP, nem cálculo automático de cubagem/peso por pallet — o agrupamento físico é feito pela operação. A liberação de cada posição de PTL ocorre automaticamente após a retirada de todos os volumes pelo operador da coleta Full Case, em casos com consolidação.
-
----
-**Origem:** [I26.] 2026 — `I26.xxxx - Especificação de Software - Mustard.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTLRJ está de acordo com a proposta I26.xxxx de 24/fevereiro/2026
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PTLRJ - ES - PICKING ILHA E LOGIN CRACHÁ.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL RJ (NESPRESSO) - ADITIVO
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema MFC em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PTLRJ - ES - PICKING ILHA E LOGIN CRACHÁ.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTLRJ está de acordo com a proposta I21.177 de 13/fevereiro/2026
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - Especificação de Software ADITIVOS - Projeto Dolce Gusto.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE - ADITIVOS
-Projeto DG – Dolce Gusto PTL 3.0 – ARAÇARIGUAMA/SP – I21.177
-REV. 1
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - GEMINI.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL - ADITIVO
-I21.177 PTL – 16/10/2025
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema Velox em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - GEMINI.docx`  
-**Heading:** Objetivo do documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Este documento tem como objetivo detalhar as solicitações de melhorias e novas funcionalidades sistêmicas (aditivos) voltadas ao WCS (MFC) para o projeto PTL. Ele visa identificar, descrever e formalizar as necessidades de aprimoramento do sistema, garantindo que as modificações propostas estejam alinhadas às expectativas do cliente e às exigências operacionais, conforme definido em reuniões de alinhamento.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - GEMINI.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 16/outubro/2025
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - REV 0.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL - ADITIVO
-I21.177 PTL – 16/10/2025
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema Velox em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - REV 0.docx`  
-**Heading:** Objetivo do documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Este documento tem como objetivo detalhar as solicitações de melhorias e novas funcionalidades sistêmicas (aditivos) voltadas ao WCS (MFC) para o projeto PTL. Ele visa identificar, descrever e formalizar as necessidades de aprimoramento do sistema, garantindo que as modificações propostas estejam alinhadas às expectativas do cliente e às exigências operacionais, conforme definido em reuniões de alinhamento.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS - REV 0.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 16/outubro/2025
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJ PTLSP - ESPECIFICACAO DE SOFTWARE - ADITIVOS.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 16/outubro/2025
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.3.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL - ADITIVO
-I21.177 PTL – Rev 1.3
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema MFC em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.3.docx`  
-**Heading:** Objetivo do documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Este documento tem como objetivo detalhar as solicitações de melhorias e novas funcionalidades sistêmicas (aditivos) voltadas ao MFC) para o projeto PTL. Ele visa identificar, descrever e formalizar as necessidades de aprimoramento do sistema, garantindo que as modificações propostas estejam alinhadas às expectativas do cliente e às exigências operacionais, conforme definido em reuniões de alinhamento.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.3.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 06/novembro/2025
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.4.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL - ADITIVO
-I21.177 PTL – Rev 1.3
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema MFC em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.4.docx`  
-**Heading:** Objetivo do documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Este documento tem como objetivo detalhar as solicitações de melhorias e novas funcionalidades sistêmicas (aditivos) voltadas ao MFC) para o projeto PTL. Ele visa identificar, descrever e formalizar as necessidades de aprimoramento do sistema, garantindo que as modificações propostas estejam alinhadas às expectativas do cliente e às exigências operacionais, conforme definido em reuniões de alinhamento.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.4.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 10/novembro/2025
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL - ADITIVO
-I21.177 PTL – 16/10/2025
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema Velox em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.docx`  
-**Heading:** Objetivo do documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Este documento tem como objetivo detalhar as solicitações de melhorias e novas funcionalidades sistêmicas (aditivos) voltadas ao WCS (MFC) para o projeto PTL. Ele visa identificar, descrever e formalizar as necessidades de aprimoramento do sistema, garantindo que as modificações propostas estejam alinhadas às expectativas do cliente e às exigências operacionais, conforme definido em reuniões de alinhamento.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS - REV 1.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 16/outubro/2025
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-ESPECIFICAÇÃO DE SOFTWARE
-PROJETO PTL - ADITIVO
-I21.177 PTL – Rev 1.8
-Apresentamos nossa proposta e condições gerais de fornecimento do sistema MFC em referência.
-Agradecemos antecipadamente pela oportunidade e colocamo-nos à disposição para quaisquer esclarecimentos que se fizerem necessários.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS.docx`  
-**Heading:** Objetivo do documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Este documento tem como objetivo detalhar as solicitações de melhorias e novas funcionalidades sistêmicas (aditivos) voltadas ao MFC) para o projeto PTL. Ele visa identificar, descrever e formalizar as necessidades de aprimoramento do sistema, garantindo que as modificações propostas estejam alinhadas às expectativas do cliente e às exigências operacionais, conforme definido em reuniões de alinhamento.
-
----
-**Origem:** [I21.177] ADITIVO — `I21.177 - PROJETO PTLSP - ESPECIFICACAO DE SOFTWARE ADITIVOS.docx`  
-**Heading:** APROVAÇÃO DA PROPOSTA  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O Cliente PTL (Dolce Gusto) está de acordo com a proposta I21.177 de 30/janeiro/2026
-Nome: _______________________________________________________________
-Cargo:________________________________________________________________
-Data:_________________________________________________________________
-Assinatura:____________________________________________________________
-
----
-**Origem:** [I24.203] ADITIVO — `I24.203 - Aditivo Projeto Beta - Dashboards e Acessos.docx`  
-**Heading:** Objetivo  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Incluir ao escopo do Projeto Beta a funcionalidade de impressão do Extrato do Palete (PTL), permitindo que o operador gere um relatório físico com a composição detalhada das remessas alocadas em cada palete ao término do processo de alocação, garantindo rastreabilidade e comprovação junto à transportadora e ao cliente final.
-
----
-**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
-**Heading:** Ação em Caso de Divergência  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Parâmetro complementar que define se, ao identificar uma divergência, a caixa será encaminhada à PTL determinada pela prioridade ou à rampa de rejeito:
-Direcionar à PTL correspondente — segue o destino calculado pela informação prioritária.
-Direcionar a Rejeito — segrega a caixa para tratamento manual, independentemente da informação prioritária.
-
----
-**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
-**Heading:** Painel de KPI  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Será disponibilizado painel de KPI para monitoramento das ocorrências identificadas, permitindo à operação visualizar, por rampa ou PTL, quais caixas/produtos foram desviados com suspeita de divergência. O painel deverá ser acessível por estações de operação e por monitores de chão de fábrica.
-
----
-**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
-**Heading:** Atualização e Conferência Operacional  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O painel deverá atualizar as informações a cada 1 minuto, com a opção de atualizar as informações ao pressionar um botão a qualquer momento. A interface permitirá que o operador identifique rapidamente em qual rampa ou PTL está localizada uma caixa marcada como Suspeita de Divergência, possibilitando o deslocamento até a posição indicada para validação visual e tratativa da ocorrência.
-Exemplo do Painel KPI:
-
----
-**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Tela Tratativas de Pallets Rejeitados.docx`  
-**Heading:** Informações exibidas na tela  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para cada pallet rejeitado, a tela deverá exibir obrigatoriamente:
-Código da Master vinculada
-Loja (Tipespecie) associada ao pallet no momento do fechamento
-Mensagem detalhada do erro
-Posição de PTL onde o pallet foi montado.
-Essa visibilidade permitirá análise rápida do problema.
-
----
-**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Projeto Esperanca - Pontos de Melhorias.docx`  
-**Heading:** Bloqueio de Alocação sem Operador Logado no PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Implementar regra sistêmica que impeça a realização de alocações nos PTLs quando não houver operador devidamente autenticado no dispositivo. A medida tem como finalidade garantir rastreabilidade das ações executadas, assegurar responsabilidade operacional e evitar registros de alocação sem vínculo a um usuário identificado no sistema.
-Escopo Técnico
-Implementar validação obrigatória de login ativo.
-Criar bloqueio sistêmico caso não haja operador logado.
-Acender leds em vermelho indicando de erro.
-Ajustar controle de sessão por dispositivo.
-
----
-**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Projeto Esperanca - Pontos de Melhorias.docx`  
-**Heading:** Inclusão na Tela “Paletes”  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Incluir novos indicadores visuais e informativos na tela “Paletes” que permitam à operação acompanhar a evolução do palete, possibilitando identificação antecipada de paletes com baixa movimentação ou próximos da conclusão. O objetivo é evitar retenção indevida de PTLs por volumes residuais e apoiar a tomada de decisão operacional com base em dados atualizados.
-Escopo Técnico
-Criar cálculo de percentual concluído (volumes alocados / total previsto).
-Criar campo com data e hora da última alocação.
-Ajustar consulta e performance.
-
----
-**Origem:** [I23.1733] ADITIVO — `I23.1733 - Especificação de Software - Projeto FOX 2025.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL (Put-To-Light), tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados exclusivo para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença e instalação do banco).
-As informações serão trocadas entre a aplicação e as estações de trabalho por meio de uma interface Web. Dessa forma, é necessário o uso de um navegador web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox) para acessar a aplicação.
-
----
-**Origem:** [I24.101] ADITIVO — `I24.101 - PROJ TOYS - ESPECIFICACAO DE SOFTWARE - ADITIVOS.docx`  
-**Heading:** Priorização de Pedidos para Rampas Específicas no PTL (!)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O que foi discutido: O Denilson levantou uma necessidade operacional crítica: 95% dos pedidos são da mesma transportadora ("Gala"), mas ele precisa que certos pedidos dessa transportadora sejam direcionados para rampas específicas (ex: Rampa 1 e 2) para carregamento direto no caminhão, enquanto outros pedidos (também "Gala", como Suframa) devem ir para outras rampas.
-Por que falta: Esta é uma nova regra de negócio que não estava prevista. O Thomas e o Raphael anotaram como um novo requisito a ser estudado, que provavelmente exigirá um novo campo na integração para que o WMS possa enviar essa "prioridade de rampa".
-O que adicionar: Você precisa criar um novo tópico no documento para este aditivo, descrevendo a necessidade de o WCS permitir essa priorização de rampa por pedido, mesmo que a transportadora seja a mesma. (NÃO FORMALIZADO)
+<!-- APPEND-ONLY — gerado pelo roteador (corpus-full.jsonl) -->
 
 ---
 **Origem:** [I22.1732] 2023 — `I22.1732 PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE.docx`  
 **Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (nome-topico) | **ID:** a5b53b0746060126
 
 O sistema WCS realizará a gestão das posições de PTL (Put to Light) de forma totalmente dinâmica, sem qualquer parametrização prévia que vincule a posição de PTL a pedidos, ondas ou transportadoras. Todas as posições de PTL iniciarão o processo com paletes vazios, sem pedidos associados.
 Quando uma onda de pedidos for integrada ao sistema, o WCS iniciará automaticamente o processo de alocação, identificando as posições de PTL que estão livres (sem pedido associado). Para cada pedido pertencente à onda recebida, o sistema irá reservar sequencialmente uma posição disponível, cada posição de PTL será associada a apenas um pedido por vez. Caso o pedido necessite de mais de um palete, a posição permanecerá ativa até a finalização do último palete. Os paletes que forem sendo concluídos ao longo do processo serão encaminhados para a área de stage, enquanto a posição de PTL continua disponível para a continuidade do mesmo pedido.
@@ -692,108 +39,864 @@ Exemplo etiqueta de pallet:
 A posição retorna imediatamente ao estado livre, sendo reaberta pelo WCS para um próximo pedido assim que um novo volume da zona for reconhecido.
 
 ---
-**Origem:** [I17.112] 2021 — `I17.112 - ESPECIFICACAO DE SOFTWARE - PROJETO  DIAMANTE- Adicional PTL Larrus rev3.docx`  
-**Heading:** Objetivo do Documento  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I23.125] 2023 — `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - CRISTAL.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** a9ade72c91794be5
 
-Este documento tem por objetivo detalhar as funcionalidades necessárias para atender a necessidade do cliente na operação de produção que envolvem a filial Larrus. Necessidade de que os as posições dos PTL destinados a filial Larrus possam ser fechadas a qualquer momento mesmo que todas as caixas do pedido não estejam alocadas no pallet/PTL.
-As próximas seções descrevem os detalhes do software necessários para o projeto em questão.
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no início da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 11.docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** edcb8ce25a31b4ef
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD Fagron, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Exemplo de Exibição:
+Incluir código do produto, descrição do produto, unidade de medida.
+Qual objetivo de visualizar o status e data de alocação nessa tela?
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I25.9022] 2024 — `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 98c8db050e5a4f02
+
+Ao iniciar a operação, o operador deverá realizar o login na respectiva rampa que será realizada a separação, para que consiga mapear e alocar os volumes nas posições indicadas. Caso esse login não seja realizado o operador não conseguirá alocar os volumes.
+O operador ao receber a caixa na rampa de saída, realiza a leitura do volume desviado, o display da posição PTL deverá acender indicando o local pallet onde o volume deve ser alocado.
+Operador aloca o volume no local indicado, aperta o botão do display confirmando que o volume foi alocado e segue para o próximo volume.
+Conforme a cubagem de pallet realizada pelo sistema WCS, operador verifica fisicamente o status do led, se o pallet está cheio fisicamente o led acenderá na cor “Ex: Laranja” e o operador deve realizar a leitura de uma etiqueta Master e acionar o LED para realizar o fechamento desse pallet e abrir um novo.
+Caso necessário, o operador poderá forçar o fechamento do pallet realizando a leitura do código único da posição e após isso o LED acenderá na cor laranja e será solicitado a master do pallet/routeiner para conclusão do fechamento.
+Quando a posição do PTL estiver com uma ROTA vinculada, o sistema deve realizar os processos de cubagem e alocação dos volumes fracionados no pallet/routeiner normalmente, porém ao fechar o PTL, o WCS não deve enviar integrações ao WMS pois não será utilizada nos processos posteriores.
+Será de responsabilidade do WMS disponibilizar as etiquetas Masters para a Operação.
+
+---
+**Origem:** [I22.2213] 2025 — `Especificação de Software - Projeto Reverse_Escopo.docx`  
+**Heading:** PTL (Alto Giro)  
+**Score:** — (semantico) | **ID:** 2c4571c5088d4cf5
+
+Nesta parte da célula, contamos com 6 posições de PTL, onde cada uma representa um carrinho/pallet individual destinado ao laboratório do CD para tratamento dos equipamentos.
+Cada carrinho possui uma posição exclusiva no WCS com seu respectivo PTL. O picking map definirá quais SKUs devem ser direcionados para cada carrinho/pallet, sendo importante destacar que uma mesma posição poderá receber mais de um SKU, conforme o mapeamento estabelecido.
+Quando o MAC Address for lido no PDV e o SKU validado visualmente pelo operador, o WCS acenderá na cor verde o LED da posição de PTL correspondente ao carrinho indicado no picking map, direcionando o operador para a alocação correta. Após depositar o item, o operador confirmará a ação pressionando o LED, e o status do item será automaticamente alterado para "alocado".
+
+---
+**Origem:** [I24.203] 2025 — `I24.203 - Especificação de Software - Projeto Beta-ATT.docx`  
+**Heading:** Parâmetros por transportadora  
+**Score:** — (semantico) | **ID:** d31528d47dcbacdd
+
+Campo de Configuração Principal
+Realiza Paletização? (Sim / Não)
+Não → O WCS atualiza o status do volume imediatamente após o volume ser desviado na rampa.
+Sim → O WCS realiza o fluxo completo de alocação, atualizando o status do volume somente após a alocação.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJ BP.docx`  
+**Heading:** Agrupamento por Subárea  
+**Score:** — (semantico) | **ID:** 7489976c495552a3
+
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, e sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+Essa mudança garante que o agrupamento dos volumes e pallets siga a lógica operacional de transporte do cliente, refletindo com precisão a divisão logística estabelecida no WMS.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJ BP.docx`  
+**Heading:** Processo de Picking Exceção  
+**Score:** — (semantico) | **ID:** f55bd6853dd077f3
+
+O Picking Exceção será utilizado para itens que não se enquadram nos parâmetros da automação, mas que devem ser alocados manualmente no processo de PTL (Put to Light). O fluxo operacional será semelhante ao processo de Full Case, mas com a diferença de que os itens não farão parte da automação e serão direcionados manualmente para a alocação no PTL.
+Fluxo Operacional de Picking Exceção:
+O operador realiza o login no WCS utilizando o coletor Android.
+O operador seleciona a tela de Picking Exceção, onde escolhe o posto de impressão em que está fisicamente para retirar as etiquetas.
+Após selecionar o posto de impressão, o operador escolhe a rua da qual ele irá fazer o Picking Exceção. O sistema exibirá a lista de tarefas de separação de acordo com a rua selecionada e os volumes disponíveis.
+As tarefas de Picking Exceção serão segregadas por rampa do Sorter, permitindo que o operador saiba para qual rampa deve levar os itens após a coleta.
+O operador seleciona quantas tarefas deseja iniciar.
+O WCS imprime a quantidade selecionada, seguindo a lógica de impressão do processo de Full Case.
+O coletor é direcionado para a tela de coleta, onde o operador deve se deslocar até o endereço especificado no coletor.
+O operador realiza a leitura do endereço para iniciar a coleta do item.
+O operador realiza a leitura da etiqueta impressa e depois realiza a leitura do código do item, colocando o item no carrinho.
+O operador se desloca para o próximo endereço e repete o processo até concluir todas as coletas.
+Alocação no PTL:
+Após finalizar todas as coletas, o WCS informa em qual rampa do sorter os itens coletados devem ser alocados.
+Ele deixará o os volumes a disposição do operador de PTL responsável a rampa onde ele fará o processo de PTL
+Cada volume será associado à sua respectiva posição de PTL, e o operador deverá alocar os itens manualmente, confirmando a alocação no PTL.
+Esse processo de Picking Exceção garante que itens que não se enquadram no processo automatizado sejam tratados manualmente de forma eficiente e organizada, mantendo a rastreabilidade e a precisão durante a separação dos volumes e a alocação nas posições de PTL.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJ BP.docx`  
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** 85a3a7a86ae3e188
+
+O sistema WCS realiza a abertura automática das posições PTL no momento em que os romaneios são iniciados na tela de romaneios, o WCS irá distribuir os romaneios para as posições de ptl de forma dinâmica priorizando manter um romaneio em uma única rampa sempre que for possível. 
+
+Para iniciar a operação do PTL, o operador da rampa deve realizar login no sistema, realizando a leitura do código de usuário, possibilitando o mapeamento e a alocação correta dos volumes.
+Ao receber uma caixa na rampa, o operador realiza a leitura do QR code da etiqueta do volume. Em seguida, o display da posição PTL correspondente acende, indicando o local (posição do pallet) onde o volume deve ser alocado um mesmo led será utilizado para dois endereços, no led deve exibir o final do código do endereço para que o operador saiba em qual posição colocar. O operador aloca o volume na posição indicada e confirma o posicionamento pressionando o botão do display, encerrando a tarefa daquele volume.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza essas informações no sistema. Após a alocação e confirmação no display, o operador retorna à rampa para processar o próximo volume.
+Cada rampa do sorter conta com 24 posições de PTL, totalizando 192 posições no total. Cada posição é equipada com um LED que fará a sinalização visual do local correto para alocação do volume.
+A cubagem do pallet será realizada pelo WCS previamente, através do cadastro de parâmetros. O fechamento do PTL poderá ocorrer por peso ou cubagem atingida, ou ainda pela totalidade do pedido. O operador poderá realizar o fechamento do pallet manualmente, caso julgue necessário. No entanto, o WCS não permitirá o fechamento do pallet quando ainda houver volumes pendentes, conforme a quantidade parametrizada, garantindo que não seja aberto um novo pallet para a alocação de poucos volumes.
+Após o fechamento do pallet é impresso uma etiqueta na rampa do sorter para que o operador identifique o pallet e confirme o fechamento, tornando a posição disponível novamente nesse momento é enviado a integração de expedição informando o conteúdo do pallet para que o wms siga com o faturamento. O WCS reserva o lugar de cada volume nos pallets antes mesmo do volume chegar na rampa, sendo possível assim colocar os volumes no pallet respectivo respeitando a sequência de entrega.
+
+
+Tratamento de Volumes com Itens Perigosos
+Para volumes que contenham itens classificados como perigosos, o WCS deve aplicar uma regra específica de manuseio e agrupamento. Esses volumes não podem ser misturados aos demais e deverão ser agrupados em um pallet exclusivo, segregado dos pallets comuns.
+Além disso, o sistema deve garantir que esse pallet com itens perigosos seja identificado de forma distinta e programado para ser o último a ser carregado
+
+PTL Exclusivo para Produtos Específicos
+Será incluído um campo no cadastro de produtos para identificar quais itens exigem PTL exclusivo durante o processo de alocação. Quando um produto for marcado com essa flag, o sistema WCS irá automaticamente reservar uma posição de PTL exclusiva para ele, garantindo que os volumes contendo esses itens sejam alocados de forma segregada. Este pallet deve ser programado para ser o penúltimo a ser carregado.
+Essa configuração será aplicada a todos os produtos pertencentes ao mesmo romaneio, desde que esses produtos tenham a flag de PTL exclusivo ativada no cadastro. Ao receber um pedido contendo produtos com essa característica, o sistema realizará a alocação de forma a garantir que todos os volumes relacionados a esses itens sejam direcionados para as posições de PTL previamente reservadas, sem misturá-los com outros volumes no processo de alocação.
+Para produtos com a flag de PTL exclusivo ativa que ultrapassem qualquer uma das dimensões do pallet o WCS deve considerar uma cubagem mínima sendo possível alocalos ao pallet
+Agrupamento por Subárea (Transportadoras Diferentes de “Própria”)
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, mas sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+O campo subArea enviado na integração será utilizado pelo WCS como agrupador logístico principal, permitindo que os volumes sejam separados fisicamente por destino final, para transportadoras parceiras.
+Regras operacionais:
+Quando transportadora ≠ “Própria”, o WCS deve agrupar os volumes e pallets por subárea, ignorando o agrupamento por romaneio.
+Cada subárea será considerada uma entidade independente de agrupamento, possuindo sua própria posição de PTL na rampa correspondente.
+O fechamento dos pallets ocorrerá de forma individual por subárea, seguindo as mesmas regras de cubagem e peso.
+O sistema deve permitir que múltiplas subáreas coexistam em uma mesma rampa, desde que cada uma possua posição reservada exclusiva.
+Exemplo:
+Se um romaneio contiver volumes destinados às subáreas “Porto Alegre”, “Canoas” e “Esteio”, o WCS criará três agrupamentos distintos no PTL, um para cada subárea, alocando os volumes em posições exclusivas de acordo com o destino logístico.
+Essa regra assegura rastreabilidade por destino, e atende da melhor forma o trabalho das transportadoras parceiras, auxiliando na segregação dos volumes que hoje é feita manualmente.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJ BP.docx`  
+**Heading:** PTL, e Pallets Termolábeis  
+**Score:** — (semantico) | **ID:** 76c8e37b5166a128
+
+Para os pallets gerados nos processos de PTL e Picking Termolábil, será utilizado o seguinte layout de impressão:
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJETO BP REV .2.docx`  
+**Heading:** Agrupamento por Subárea  
+**Score:** — (semantico) | **ID:** 7b9aa429d5b6f892
+
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, e sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+Essa mudança garante que o agrupamento dos volumes e pallets siga a lógica operacional de transporte do cliente, refletindo com precisão a divisão logística estabelecida no WMS.
+Regras Operacionais:
+Quando o campo transportadora da integração de Trabalhos – Work vier com valor diferente de “Própria”, o WCS deve utilizar o campo subArea como agrupador logístico principal.
+O agrupamento dos pallets passará a ocorrer por subárea, e não mais por romaneio, permitindo a separação física e lógica dos volumes conforme o destino final.
+Cada subárea será considerada uma entidade independente de agrupamento, possuindo suas próprias posições de PTL.
+O WCS deve reservar uma posição de PTL para cada subárea ativa alocada à rampa correspondente no sorter, assegurando que os volumes sejam direcionados e alocados corretamente.
+O fechamento de cada pallet ocorrerá de forma individual por subárea, respeitando as mesmas regras de cubagem e peso configuradas para o processo de PTL.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJETO BP REV .2.docx`  
+**Heading:** Processo de Picking Exceção  
+**Score:** — (semantico) | **ID:** fe72d732c1df4dfc
+
+O Picking Exceção será utilizado para itens que não se enquadram nos parâmetros da automação, mas que devem ser alocados manualmente no processo de PTL (Put to Light). O fluxo operacional será semelhante ao processo de Full Case, mas com a diferença de que os itens não farão parte da automação e serão direcionados manualmente para a alocação no PTL.
+Fluxo Operacional de Picking Exceção:
+O operador realiza o login no WCS utilizando o coletor Android.
+O operador seleciona a tela de Picking Exceção, onde escolhe o posto de impressão em que está fisicamente para retirar as etiquetas.
+Após selecionar o posto de impressão, o operador escolhe a rua da qual ele irá fazer o Picking Exceção. O sistema exibirá a lista de tarefas de separação de acordo com a rua selecionada e os volumes disponíveis.
+As tarefas de Picking Exceção serão segregadas por rampa do Sorter, permitindo que o operador saiba para qual rampa deve levar os itens após a coleta.
+O operador seleciona quantas tarefas deseja iniciar.
+O WCS imprime a quantidade selecionada, seguindo a lógica de impressão do processo de Full Case.
+O coletor é direcionado para a tela de coleta, onde o operador deve se deslocar até o endereço especificado no coletor.
+O operador realiza a leitura do endereço para iniciar a coleta do item.
+O operador realiza a leitura da etiqueta impressa e depois realiza a leitura do código do item, colocando o item no carrinho.
+O operador se desloca para o próximo endereço e repete o processo até concluir todas as coletas.
+Alocação no PTL:
+Após finalizar todas as coletas, o WCS informa em qual rampa do sorter os itens coletados devem ser alocados.
+Ele deixará o os volumes a disposição do operador de PTL responsável a rampa onde ele fará o processo de PTL
+Cada volume será associado à sua respectiva posição de PTL, e o operador deverá alocar os itens manualmente, confirmando a alocação no PTL.
+Esse processo de Picking Exceção garante que itens que não se enquadram no processo automatizado sejam tratados manualmente de forma eficiente e organizada, mantendo a rastreabilidade e a precisão durante a separação dos volumes e a alocação nas posições de PTL.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJETO BP REV .2.docx`  
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** 0d441507701ead23
+
+O sistema WCS realiza a abertura automática das posições PTL no momento em que os romaneios são iniciados na tela de romaneios, o WCS irá distribuir os romaneios para as posições de ptl de forma dinâmica priorizando manter um romaneio em uma única rampa sempre que for possível. 
+
+Para iniciar a operação do PTL, o operador da rampa deve realizar login no sistema, realizando a leitura do código de usuário, possibilitando o mapeamento e a alocação correta dos volumes.
+Ao receber uma caixa na rampa, o operador realiza a leitura do QR code da etiqueta do volume. Em seguida, o display da posição PTL correspondente acende, indicando o local (posição do pallet) onde o volume deve ser alocado. O operador aloca o volume na posição indicada e confirma o posicionamento pressionando o botão do display, encerrando a tarefa daquele volume.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza essas informações no sistema. Após a alocação e confirmação no display, o operador retorna à rampa para processar o próximo volume.
+Cada rampa do sorter conta com 24 posições de PTL, totalizando 192 posições no total. Cada posição é equipada com um LED que fará a sinalização visual do local correto para alocação do volume.
+A cubagem do pallet será realizada pelo WCS previamente, através do cadastro de parâmetros. O fechamento do PTL poderá ocorrer por peso ou cubagem atingida, ou ainda pela totalidade do pedido. O operador poderá realizar o fechamento do pallet manualmente, caso julgue necessário. No entanto, o WCS não permitirá o fechamento do pallet quando ainda houver volumes pendentes, conforme a quantidade parametrizada, garantindo que não seja aberto um novo pallet para a alocação de poucos volumes.
+Após o fechamento do pallet é impresso uma etiqueta na rampa do sorter para que o operador identifique o pallet e confirme o fechamento, tornando a posição disponível novamente nesse momento é enviado a integração de expedição informando o conteúdo do pallet para que o wms siga com o faturamento. O WCS reserva o lugar de cada volume nos pallets antes mesmo do volume chegar na rampa, sendo possível assim colocar os volumes no pallet respectivo respeitando a sequência de entrega.
+
+
+Tratamento de Volumes com Itens Perigosos
+Para volumes que contenham itens classificados como perigosos, o WCS deve aplicar uma regra específica de manuseio e agrupamento. Esses volumes não podem ser misturados aos demais e deverão ser agrupados em um pallet exclusivo, segregado dos pallets comuns.
+Além disso, o sistema deve garantir que esse pallet com itens perigosos seja identificado de forma distinta e programado para ser o último a ser carregado
+
+PTL Exclusivo para Produtos Específicos
+Será incluído um campo no cadastro de produtos para identificar quais itens exigem PTL exclusivo durante o processo de alocação. Quando um produto for marcado com essa flag, o sistema WCS irá automaticamente reservar uma posição de PTL exclusiva para ele, garantindo que os volumes contendo esses itens sejam alocados de forma segregada. Este pallet deve ser programado para ser o penúltimo a ser carregado.
+Essa configuração será aplicada a todos os produtos pertencentes ao mesmo romaneio, desde que esses produtos tenham a flag de PTL exclusivo ativada no cadastro. Ao receber um pedido contendo produtos com essa característica, o sistema realizará a alocação de forma a garantir que todos os volumes relacionados a esses itens sejam direcionados para as posições de PTL previamente reservadas, sem misturá-los com outros volumes no processo de alocação.
+Para produtos com a flag de PTL exclusivo ativa que ultrapassem qualquer uma das dimensões do pallet o WCS deve considerar uma cubagem mínima sendo possível alocalos ao pallet
+Agrupamento por Subárea (Transportadoras Diferentes de “Própria”)
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, mas sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+O campo subArea enviado na integração será utilizado pelo WCS como agrupador logístico principal, permitindo que os volumes sejam separados fisicamente por destino final, para transportadoras parceiras.
+Regras operacionais:
+Quando transportadora ≠ “Própria”, o WCS deve agrupar os volumes e pallets por subárea, ignorando o agrupamento por romaneio.
+Cada subárea será considerada uma entidade independente de agrupamento, possuindo sua própria posição de PTL na rampa correspondente.
+O fechamento dos pallets ocorrerá de forma individual por subárea, seguindo as mesmas regras de cubagem e peso.
+O sistema deve permitir que múltiplas subáreas coexistam em uma mesma rampa, desde que cada uma possua posição reservada exclusiva.
+Exemplo:
+Se um romaneio contiver volumes destinados às subáreas “Porto Alegre”, “Canoas” e “Esteio”, o WCS criará três agrupamentos distintos no PTL, um para cada subárea, alocando os volumes em posições exclusivas de acordo com o destino logístico.
+Essa regra assegura rastreabilidade por destino, e atende da melhor forma o trabalho das transportadoras parceiras, auxiliando na segregação dos volumes que hoje é feita manualmente.
+
+---
+**Origem:** [I24.215] 2025 — `I24.215 - ESPECIFICACAO DE SOFTWARE - PROJETO BP REV .2.docx`  
+**Heading:** PTL, e Pallets Termolábeis  
+**Score:** — (semantico) | **ID:** 1e86d1865a8c3614
+
+Para os pallets gerados nos processos de PTL e Picking Termolábil, será utilizado o seguinte layout de impressão:
+
+---
+**Origem:** [I24.215] 2025 — `I24_215_ESPECIFICACAO_SOFTWARE_PROJ_BP_Rev12.docx`  
+**Heading:** Agrupamento por Subárea  
+**Score:** — (semantico) | **ID:** a23724e6c9c6bc40
+
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, e sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+Essa mudança garante que o agrupamento dos volumes e pallets siga a lógica operacional de transporte do cliente, refletindo com precisão a divisão logística estabelecida no WMS.
+
+---
+**Origem:** [I24.215] 2025 — `I24_215_ESPECIFICACAO_SOFTWARE_PROJ_BP_Rev12.docx`  
+**Heading:** Processo de Picking Exceção  
+**Score:** — (semantico) | **ID:** 4f232965b4a99c5a
+
+O Picking Exceção será utilizado para itens que não se enquadram nos parâmetros da automação, mas que devem ser alocados manualmente no processo de PTL (Put to Light). O fluxo operacional será semelhante ao processo de Full Case, mas com a diferença de que os itens não farão parte da automação e serão direcionados manualmente para a alocação no PTL.
+Fluxo Operacional de Picking Exceção:
+O operador realiza o login no WCS utilizando o coletor Android.
+O operador seleciona a tela de Picking Exceção, onde escolhe o posto de impressão em que está fisicamente para retirar as etiquetas.
+Após selecionar o posto de impressão, o operador escolhe a rua da qual ele irá fazer o Picking Exceção. O sistema exibirá a lista de tarefas de separação de acordo com a rua selecionada e os volumes disponíveis.
+As tarefas de Picking Exceção serão segregadas por rampa do Sorter, permitindo que o operador saiba para qual rampa deve levar os itens após a coleta.
+O operador seleciona quantas tarefas deseja iniciar.
+O WCS imprime a quantidade selecionada, seguindo a lógica de impressão do processo de Full Case.
+O coletor é direcionado para a tela de coleta, onde o operador deve se deslocar até o endereço especificado no coletor.
+O operador realiza a leitura do endereço para iniciar a coleta do item.
+O operador realiza a leitura da etiqueta impressa e depois realiza a leitura do código do item, colocando o item no carrinho.
+O operador se desloca para o próximo endereço e repete o processo até concluir todas as coletas.
+Alocação no PTL:
+Após finalizar todas as coletas, o WCS informa em qual rampa do sorter os itens coletados devem ser alocados.
+Ele deixará o os volumes a disposição do operador de PTL responsável a rampa onde ele fará o processo de PTL
+Cada volume será associado à sua respectiva posição de PTL, e o operador deverá alocar os itens manualmente, confirmando a alocação no PTL.
+Esse processo de Picking Exceção garante que itens que não se enquadram no processo automatizado sejam tratados manualmente de forma eficiente e organizada, mantendo a rastreabilidade e a precisão durante a separação dos volumes e a alocação nas posições de PTL.
+
+---
+**Origem:** [I24.215] 2025 — `I24_215_ESPECIFICACAO_SOFTWARE_PROJ_BP_Rev12.docx`  
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** 9e3b309fee4f3e61
+
+O sistema WCS realiza a abertura automática das posições PTL no momento em que os romaneios são iniciados na tela de romaneios, o WCS irá distribuir os romaneios para as posições de ptl de forma dinâmica priorizando manter um romaneio em uma única rampa sempre que for possível. 
+
+Para iniciar a operação do PTL, o operador da rampa deve realizar login no sistema, realizando a leitura do código de usuário, possibilitando o mapeamento e a alocação correta dos volumes.
+Ao receber uma caixa na rampa, o operador realiza a leitura do QR code da etiqueta do volume. Em seguida, o display da posição PTL correspondente acende, indicando o local (posição do pallet) onde o volume deve ser alocado um mesmo led será utilizado para dois endereços, no led deve exibir o final do código do endereço para que o operador saiba em qual posição colocar. O operador aloca o volume na posição indicada e confirma o posicionamento pressionando o botão do display, encerrando a tarefa daquele volume.
+O LED do PTL possui display numérico de 3 dígitos. Serão exibidos os 3 últimos caracteres do código da posição de PTL para identificação pelo operador.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza essas informações no sistema. Após a alocação e confirmação no display, o operador retorna à rampa para processar o próximo volume.
+Cada rampa do sorter conta com 24 posições de PTL, totalizando 192 posições no total. Cada posição é equipada com um LED que fará a sinalização visual do local correto para alocação do volume.
+A cubagem do pallet será realizada pelo WCS previamente, através do cadastro de parâmetros. O fechamento do PTL poderá ocorrer por peso ou cubagem atingida, ou ainda pela totalidade do pedido. O operador poderá realizar o fechamento do pallet manualmente, caso julgue necessário. No entanto, o WCS não permitirá o fechamento do pallet quando ainda houver volumes pendentes, conforme a quantidade parametrizada, garantindo que não seja aberto um novo pallet para a alocação de poucos volumes.
+Após o fechamento do pallet é impresso uma etiqueta na rampa do sorter para que o operador identifique o pallet e confirme o fechamento, tornando a posição disponível novamente nesse momento é enviado a integração de expedição informando o conteúdo do pallet para que o wms siga com o faturamento. O WCS reserva o lugar de cada volume nos pallets antes mesmo do volume chegar na rampa, sendo possível assim colocar os volumes no pallet respectivo respeitando a sequência de entrega.
+
+
+Tratamento de Volumes com Itens Perigosos
+Para volumes que contenham itens classificados como perigosos, o WCS deve aplicar uma regra específica de manuseio e agrupamento. Esses volumes não podem ser misturados aos demais e deverão ser agrupados em um pallet exclusivo, segregado dos pallets comuns.
+Além disso, o sistema deve garantir que esse pallet com itens perigosos seja identificado de forma distinta e programado para ser o último a ser carregado
+
+PTL Exclusivo para Produtos Específicos
+Será incluído um campo no cadastro de produtos para identificar quais itens exigem PTL exclusivo durante o processo de alocação. Quando um produto for marcado com essa flag, o sistema WCS irá automaticamente reservar uma posição de PTL exclusiva para ele, garantindo que os volumes contendo esses itens sejam alocados de forma segregada. Este pallet deve ser programado para ser o penúltimo a ser carregado.
+Essa configuração será aplicada a todos os produtos pertencentes ao mesmo romaneio, desde que esses produtos tenham a flag de PTL exclusivo ativada no cadastro. Ao receber um pedido contendo produtos com essa característica, o sistema realizará a alocação de forma a garantir que todos os volumes relacionados a esses itens sejam direcionados para as posições de PTL previamente reservadas, sem misturá-los com outros volumes no processo de alocação.
+Para produtos com a flag de PTL exclusivo ativa que ultrapassem qualquer uma das dimensões do pallet o WCS deve considerar uma cubagem mínima sendo possível alocalos ao pallet
+Agrupamento por Subárea (Transportadoras Diferentes de “Própria”)
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, mas sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+O campo subArea enviado na integração será utilizado pelo WCS como agrupador logístico principal, permitindo que os volumes sejam separados fisicamente por destino final, para transportadoras parceiras.
+Regras operacionais:
+Quando transportadora ≠ “Própria”, o WCS deve agrupar os volumes e pallets por subárea, ignorando o agrupamento por romaneio.
+Cada subárea será considerada uma entidade independente de agrupamento, possuindo sua própria posição de PTL na rampa correspondente.
+O fechamento dos pallets ocorrerá de forma individual por subárea, seguindo as mesmas regras de cubagem e peso.
+O sistema deve permitir que múltiplas subáreas coexistam em uma mesma rampa, desde que cada uma possua posição reservada exclusiva.
+Exemplo:
+Se um romaneio contiver volumes destinados às subáreas “Porto Alegre”, “Canoas” e “Esteio”, o WCS criará três agrupamentos distintos no PTL, um para cada subárea, alocando os volumes em posições exclusivas de acordo com o destino logístico.
+Essa regra assegura rastreabilidade por destino, e atende da melhor forma o trabalho das transportadoras parceiras, auxiliando na segregação dos volumes que hoje é feita manualmente.
+
+---
+**Origem:** [I24.215] 2025 — `I24_215_ESPECIFICACAO_SOFTWARE_PROJ_BP_Rev12.docx`  
+**Heading:** PTL, e Pallets Termolábeis  
+**Score:** — (semantico) | **ID:** 5c84be8acd22436f
+
+Para os pallets gerados nos processos de PTL e Picking Termolábil, será utilizado o seguinte layout de impressão:
+
+---
+**Origem:** [I25.3513] 2025 — `2- ESPECIFICACAO DE SOFTWARE - PROJETO ESCOPO CDSK-Revisado.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 02861a0a50f8409a
+
+Ao iniciar a operação, o operador da saída do sorter deverá realizar o login na rampa para que consiga mapear e alocar os volumes nas posições indicadas.
+Após o desvio do volume na rampa correta o operador pode realizar a leitura do volume (caixa) através do scanner da rampa, uma vez que o WCS recebe a informação do código da caixa ele acende o led da posição de PTL informando onde o operador deve colocar o volume ou acenderá todos os leds do posto de PTL vinculado ao scanner que realizou a leitura na cor vermelha informando que o volume não pertence a nenhuma das posições presentes no posto PTL.
+Quando o volume pertence a uma posição do posto o WCS acenderá o led correspondente a posição PTL como informado acima e o operador deve colocar o volume no pallet e em seguida confirmar apertando o botão do led, assim o WCS identifica a alocação e guarda essas informações para enviar posteriormente ao WMS.
+No decorrer das alocações de volumes ao pallet o WCS verifica a cubagem e peso como mencionado do item Cubagem de pallet, indicando que o pallet deve ser fechado ao operador através de uma cor especifica no led, sendo que a cada pallet fechado é retornado uma integração para o WMS.
+Quando for solicitado o fechamento do pallet nas saídas das rampas, o operador deverá realizar a leitura de um código master impresso previamente pelo WMS que será vinculado aos volumes que foram alocados a este pallet. A master (Avulsa) é impressa sem um destino definido (LOJA).
+O WCS não deve permitir a reutilização desses códigos.
+A disponibilização desta etiqueta master será de responsabilidade do cliente.
+Em caso de rejeito, o operador terá uma tela que irá exibir o diagnóstico de erro deste volume e poderá induzir novamente caso for necessário.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.docx`  
+**Heading:** Sugestão de Alocação  
+**Score:** — (semantico) | **ID:** 694250084b346d62
+
+O sistema WCS é responsável por sugerir a alocação estratégica dos produtos (CD) Comercial Esperança, utilizando como base a análise da curva ABC e outras características operacionais relevantes. Essa alocação visa maximizar a eficiência operacional e otimizar o fluxo de trabalho.
+Nota: Para garantir a organização e facilitar o manuseio, o sistema impede a mistura de famílias de produtos em posições próximas.
+Benefícios esperados
+Com a alocação sugerida pelo WCS, o Comercial Esperança pode:
+Maximizar a produtividade dos operadores;
+Minimizar os deslocamentos internos;
+Melhorar o fluxo operacional do CD;
+Reduzir os tempos de separação e a ocorrência de erros.
+Estratégia de Alocação por Zona
+Produtos de Higiene, Limpeza e Bazar: Alocados nas extremidades do CD, ocupando cerca de 15% da área de picking em cada lado, devido à menor rotatividade ou características específicas de manuseio desses produtos.
+Produtos Alimentícios: Serão alocados na área central do CD, correspondendo a cerca de 70% da área de picking, devido à sua alta rotatividade e prioridade no processo de separação.
+Critérios de Alocação com base na Curva ABC
+A curva ABC é uma técnica que classifica os produtos conforme seu impacto na movimentação, baseada em dados históricos de coleta e separação:
+Itens da Curva A:
+Produtos de alta rotatividade e maior valor em volume de movimentação. Serão alocados nas posições mais acessíveis, próximas aos pontos de indução, para reduzir tempo e distância na separação.
+Itens da Curva B:
+Produtos com média rotatividade. Serão alocados em posições de acessibilidade e ocupação intermediárias.
+Itens da Curva C:
+Produtos de baixa rotatividade. Serão posicionados em áreas menos prioritárias e mais distantes, otimizando o uso do espaço para itens de maior demanda.
+Funcionamento do Sistema de Sugestão de Alocação
+O WCS realiza uma análise contínua dos índices de movimentação e frequência de separação para atualizar a classificação da curva ABC e ajustar as sugestões de alocação.
+As sugestões são integradas ao planejamento operacional, permitindo a realocação estratégica conforme a demanda e sazonalidade.
+Essa abordagem contribui para um fluxo de trabalho mais eficiente, redução de custos operacionais, minimizando desperdícios.
+Nota: O WCS baseia suas sugestões exclusivamente em dados de movimentação e coleta dos SKUs, não considerando a quantidade física em estoque.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** f078bd7436466e7a
+
+O sistema WCS realiza a abertura automática das posições PTL no momento em que o volume é desviado para a rampa de saída. Para iniciar a operação, o operador da rampa deve realizar login no sistema, possibilitando o mapeamento e a alocação correta dos volumes.
+Ao receber uma caixa na rampa, o operador realiza a leitura do código de barras da etiqueta do volume. Em seguida, o display da posição PTL correspondente acende, indicando o local (posição do pallet) onde o volume deve ser alocado. O operador aloca o volume na posição indicada e confirma o posicionamento pressionando o botão do display, encerrando a tarefa daquele volume.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza essas informações diretamente no WMS, volume a volume a nível de item, caracterizando o processo de conferência. Esse mecanismo garante que todos os itens que compõem o volume sejam corretamente marcados como conferidos no sistema do WMS.
+Nota: Enquanto a inteligência artificial (IA) não estiver plenamente implantada no processo, o sistema exigirá uma conferência dupla, com leitura do código de barras da etiqueta do volume e do produto. Essa exigência será controlada por um parâmetro de sistema, podendo ser ativado ou desativado conforme a necessidade operacional. A regra de aplicação será definida pelo time Invent durante o período de testes e implantação.
+Após a alocação e confirmação no display, o operador retorna à rampa para processar o próximo volume.
+A cubagem do pallet não será realizada pelo WCS, pois os dados de roteirização e definição de pallet já são informados no início da operação pelo WMS. O fechamento do PTL será realizado manualmente pelo operador, conforme instruções operacionais do cliente.
+Cada loja ou cliente configurado no mapa do sorter terá duas posições PTL associadas, respeitando a matriz de fragilidade previamente definida.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.docx`  
+**Heading:** Alocação via PTL  
+**Score:** — (semantico) | **ID:** 1b2048978a556f4a
+
+As 20 rampas totalizam 168 posições PTL, processo realizado após o volume ser desviado no chute:
+O operador com coletor em mãos realiza a leitura da etiqueta da caixa, display PTL acende imediatamente após a leitura do volume, indicando a posição correta.
+O operador deposita a caixa na posição, confirma pressionando o botão do display, e o WCS atualiza os dados de conferência no WMS.
+O controle de cubagem do pallet é feito pelo WMS
+Cada rota pode ocupar 2 a 3 posições PTL, respeitando a matriz de fragilidade.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** e3958b47db77ae16
+
+Indicam status das rampas:
+Verde: rampa disponível
+Amarelo piscando: rampa cheia
+Vermelho piscando: emergência
+Todas piscando simultaneamente: falha de comunicação com o sistema WCS
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - ESPECIFICACAO DE SOFTWARE - PROJETO ESPERANCA REV .7.docx`  
+**Heading:** Sugestão de Alocação no Picking  
+**Score:** — (semantico) | **ID:** b3a5b0e7067c5302
+
+O WCS sugere alocação estratégica conforme curva ABC, mantendo separação entre produtos alimentícios e não alimentícios, maximizando eficiência.
+Curva A: posições centrais e mais acessíveis
+Curva B: posições intermediárias
+Curva C: extremidades
+
+---
+**Origem:** [I25.9043] 2025 — `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA FASE2-REV2-s.docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** dd56dc946ea307c1
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD C&A, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA.
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Sugestão de Exibição:
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I23.3502] 2026 — `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO DE SOFTWARE REV_1 - Final.docx`  
+**Heading:** Sugestão de Alocação  
+**Score:** — (semantico) | **ID:** 959e78069ece9efc
+
+O WCS possui uma funcionalidade inteligente que armazena e analisa o histórico de separações realizadas pela automação, considerando a quantidade de unidades coletadas por item e a frequência de visitas a cada endereço de picking. Com base nesses dados, o sistema gera uma sugestão otimizada de alocação dos produtos dentro dos postos de separação.
+O princípio da sugestão consiste em alocar os itens com maiores números de coletas e visitas nas posições mais próximas ao operador, distribuindo os itens de menor movimentação nas extremidades de cada posto. Essa reorganização tem como objetivo aumentar a produtividade da linha de picking, reduzindo deslocamentos e otimizando o tempo de separação.
+Para gerar a sugestão, o usuário informa o período desejado de análise, com data inicial e final. O sistema então apresenta um relatório com o ranking de coleta de todos os itens da base, contendo: código do produto, descrição, endereço atual e posto sugerido. Essa funcionalidade permite que a operação reorganize periodicamente o layout dos postos de forma estratégica, com base em dados reais da própria operação.
+As informações geradas pela sugestão de alocação podem ser exportadas via Excel, facilitando a análise e a implementação prática das melhorias sugeridas.
+
+---
+**Origem:** [I25.111] 2026 — `I25.111 - Especificação de Software - Projeto Beta Full SP.docx`  
+**Heading:** Parâmetros por transportadora  
+**Score:** — (semantico) | **ID:** 19854851d861a77f
+
+Campo de Configuração Principal
+Realiza Paletização? (Sim / Não)
+Não → O WCS atualiza o status do volume imediatamente após o volume ser desviado na rampa.
+Sim → O WCS realiza o fluxo completo de alocação, atualizando o status do volume somente após a alocação.
+
+---
+**Origem:** [I25.115] 2026 — `I25.115 - ESPECIFICATION DE SOFTWARE - PROYECTO MARKET PERU - Rev..docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 4020850e212eb0ce
+
+Al iniciar la operación, el operador de salida del sorter deberá iniciar sesión en la rampa para poder mapear y asignar los volúmenes en las posiciones indicadas.
+Etiquetas utilizadas en el proceso PTL:
+Etiqueta PTL: QR Code fijo instalado en cada posición de la estación PTL. Utilizada para la apertura y cierre del palet.
+Etiqueta OLPN: Generada por el WMS, contiene un código único de 18 dígitos. Identifica de forma única cada palet de salida y garantiza la trazabilidad.
+Apertura del palet (obligatoria antes de iniciar la inducción): Antes de que las cajas comiencen a ser inducidas en el sorter, el operador debe abrir el palet realizando dos lecturas secuenciales: primero escanea la Etiqueta PTL (QR Code) de la posición y luego escanea una Etiqueta OLPN (18 dígitos). Esto crea el vínculo entre la OLPN y la posición PTL. Solo después de este proceso el sistema permitirá la asignación de volúmenes.
+Asignación de volúmenes — Doble Confirmación (configurable): El sistema dispone de una opción en la pantalla de configuración llamada Doble Confirmación de Escaneo:
+Activada: El proceso de asignación requiere dos lecturas. En la primera, el operador escanea la etiqueta del volumen (IVT) y el LED se enciende en naranja (primera lectura aceptada, espera segunda confirmación). En la segunda, escanea el código de la caja (DUN/EAN) y el LED cambia a azul (vinculación completa).
+Desactivada: Solo se requiere una lectura. El operador escanea la etiqueta IVT/DUN y el LED se enciende directamente en azul.
+En ambos modos, si el volumen no pertenece a ninguna de las posiciones de la estación PTL, el WCS encenderá todos los LEDs de la estación en rojo.
+Cuando el LED está en azul y el volumen pertenece a la posición, el operador debe depositar la caja en el palet y confirmar presionando el botón del LED azul. En ese momento, el WCS registra la asignación y envía la integración caja a caja al WMS.
+Cierre del palet (manual): El cierre del palet es realizado manualmente por el operador, quien evalúa visualmente cuándo el palet alcanza un tamaño adecuado. No hay control automático de cubaje ni peso. Para cerrar, el operador escanea la Etiqueta PTL (QR Code) — los LEDs se encienden en naranja — y luego escanea la Etiqueta OLPN — el LED cambia a azul confirmando el cierre. El operador pega la etiqueta OLPN en el palet físico y presiona el botón. En ese momento, el WCS envía la integración de palet montado al WMS.
+Continuación de la operación (reapertura): Si después del cierre aún hay cajas pendientes para esa posición PTL, el operador debe abrir un nuevo palet escaneando nuevamente la Etiqueta PTL (QR Code) y una nueva Etiqueta OLPN (nuevo código de 18 dígitos generado por el WMS), creando un nuevo vínculo. El flujo de asignación continúa normalmente.
+El WCS no debe permitir la reutilización de códigos OLPN. La disponibilidad de las etiquetas OLPN es responsabilidad del cliente (WMS).
+En caso de rechazo, el sistema mostrará una pantalla con el diagnóstico del error de ese volumen, permitiendo al operador intentar recuperarlo nuevamente si es necesario.
+Etiqueta de PTL:
+En todos los procesos, una vez finalizado el palet, enviamos la información descrita en el apartado "5.6 Palet Montado" al WMS para que realice las gestiones necesarias.
+La impresión de la etiqueta OLPN es responsabilidad del WMS.
+
+---
+**Origem:** [I25.115] 2026 — `I25.115 - ESPECIFICATION DE SOFTWARE - PROYECTO MARKET PERU.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** d3a5fc7eef2a78c2
+
+Al iniciar la operación, el operador de la salida del sorter deberá iniciar sesión en la rampa para poder mapear y asignar los volúmenes en las posiciones indicadas.
+Después de desviar el volumen a la rampa correcta, el operador puede leer el volumen (caja) con el escáner de la rampa, una vez que el WCS recibe la información del código de la caja, enciende el led de la posición PTL indicando dónde debe colocar el operador el volumen o encenderá todos los leds del puesto PTL vinculado al escáner que realizó la lectura en color rojo indicando que el volumen no pertenece a ninguna de las posiciones presentes en el puesto PTL.
+Cuando el volumen pertenece a una posición del puesto, el WCS encenderá el led correspondiente a la posición PTL como se ha indicado anteriormente y el operador deberá colocar el volumen en el palé y, a continuación, confirmar pulsando el botón del led, de modo que el WCS identifique la asignación y guarde esta información para enviarla posteriormente al WMS.
+Durante la asignación de volúmenes al palé, el WCS verifica el volumen y el peso, tal y como se menciona en el apartado «Volumen del palé», indicando al operador que debe cerrar el palé mediante un color específico en el led, y cada palé cerrado se devuelve al WMS.
+Cuando se solicite el cierre del palé en las salidas de las rampas, el operador deberá leer un código maestro impreso previamente por el WMS que se vinculará a los volúmenes que se han asignado a este palé. El maestro (suelto) se imprime sin un destino definido (TIENDA).
+El WCS no debe permitir la reutilización de estos códigos.
+La disponibilidad de esta etiqueta maestra será responsabilidad del cliente.
+En caso de rechazo, el operador verá una pantalla que mostrará el diagnóstico de error de este volumen y podrá volver a introducirlo si es necesario.
+
+---
+**Origem:** [I25.115] 2026 — `I25.115 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO MARKET PERU.docx`  
+**Heading:** Indução Volumes  
+**Score:** — (semantico) | **ID:** 9ee775468763acd7
+
+A indução de volumes será gerenciada e cadenciada pela Operação. O processo começa com o WMS, que realiza o processo de separação e deixa os paletes das tarefas que foram concluídas em uma área chamada “Stage In”, nesse momento é enviado uma integração Etiquetas (5.3) que contém a informação ilpnPtl para cada pallet. Com essas informações, o WCS gera uma listagem orientativa de forma sequencial de indução, onde informa qual pallet deve ser induzido em cada momento, respeitando as condições de disponibilidade e matriz de fragilidade.
+A partir da integração dos paletes enviada pelo WMS o WCS já deve permitir que pallets sejam consumidos e induzidos no sorter.
+O WCS não monitora o processo de indução; a pedido do cliente, esse processo será controlado pelo Operador, que será responsável por garantir que a indução dos volumes seja realizada de acordo com a matriz de fragilidade previamente fornecida.
+
+---
+**Origem:** [I25.115] 2026 — `I25.115 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO MARKET PERU.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** d24eebb815c13b41
+
+Ao iniciar a operação, o operador da saída do sorter deverá realizar o login na rampa para que consiga mapear e alocar os volumes nas posições indicadas.
+Etiquetas utilizadas no processo PTL:
+Etiqueta PTL: QR Code fixo instalado em cada posição da estação PTL. Utilizada para abertura e fechamento do palete.
+Etiqueta OLPN: Gerada pelo WMS, contém um código único de 18 dígitos. Identifica de forma única cada palete de saída e garante a rastreabilidade.
+Abertura do palete (obrigatória antes de iniciar a indução): Antes que as caixas comecem a ser induzidas no sorter, o operador deve abrir o palete realizando duas leituras sequenciais: primeiro escaneia a Etiqueta PTL (QR Code) da posição e em seguida escaneia uma Etiqueta OLPN (18 dígitos). Isso cria o vínculo entre a OLPN e a posição PTL. Somente após esse processo o sistema permitirá a alocação de volumes.
+Alocação de volumes — Dupla Confirmação (configurável): O sistema possui uma opção na tela de configuração chamada Dupla Confirmação de Bipagem:
+Ativada: O processo de alocação exige duas leituras. Na primeira, o operador escaneia a etiqueta do volume (IVT) e o LED acende em laranja (primeira leitura aceita, aguarda segunda confirmação). Na segunda, escaneia o código da caixa (DUN/EAN) e o LED muda para azul (vinculação completa).
+Desativada: Apenas uma leitura é necessária. O operador escaneia a etiqueta IVT ou o DUN do volume e o LED acende diretamente em azul.
+Em ambos os modos, caso o volume não pertença a nenhuma das posições da estação PTL, o WCS acenderá todos os LEDs da estação em vermelho.
+Quando o LED está em azul e o volume pertence à posição, o operador deve depositar a caixa no palete e confirmar apertando o botão do LED azul. Nesse momento, o WCS registra a alocação e envia a integração caixa a caixa ao WMS.
+Fechamento do palete (manual): O fechamento do palete é realizado manualmente pelo operador, que avalia visualmente quando o palete atinge um tamanho adequado. Não há controle automático de cubagem nem peso. Para fechar, o operador escaneia a Etiqueta PTL (QR Code) os LEDs acendem em laranja e em seguida escaneia a Etiqueta OLPN, o LED muda para azul confirmando o fechamento. O operador cola a etiqueta OLPN no palete físico e aperta o botão. Nesse momento, o WCS envia a integração de palete montado ao WMS.
+Continuação da operação (reabertura): Se após o fechamento ainda houver caixas pendentes para aquela posição PTL, o operador deve abrir um novo palete escaneando novamente a Etiqueta PTL (QR Code) e uma nova Etiqueta OLPN (novo código de 18 dígitos gerado pelo WMS), criando um novo vínculo. O fluxo de alocação segue normalmente.
+O WCS não deve permitir a reutilização de códigos OLPN. A disponibilidade das etiquetas OLPN é de responsabilidade do cliente (WMS).
+Em caso de rejeição, o sistema exibirá uma tela mostrando o diagnóstico de erros para esse volume, permitindo ao operador tentar recuperá-lo novamente, se necessário.
+Etiqueta de PTL:
+Em todos os processos após a finalização do pallet enviamos as informações descritas no tópico “5.5 Pallet Montado” para o WMS fazer as tratativas necessárias.
+A impressão da etiqueta OLPN é de responsabilidade do WMS.
+
+---
+**Origem:** [I25.136] 2026 — `I25.136 - Especificação de Software - Projeto Beta-Esteio.docx`  
+**Heading:** PTL (Put to Light) – Consolidação Fracionado e Fullcase  
+**Score:** — (semantico) | **ID:** 054d144b41586ce0
+
+O PTL atua como vínculo lógico de remessa: cada posição de PTL recebe os volumes Fracionados e Fullcase de uma mesma remessa, garantindo que os volumes do mesmo pedido fiquem agrupados antes da expedição.
+Embora os volumes Full Case nunca sejam depositados em posições de PTL, o operador responsável pela coleta Full Case acessa as posições de PTL ao final da sua tarefa para retirar os volumes Fracionados da mesma remessa, conforme detalhado na seção 7.6.4.
+Nesse contexto, o PTL exerce duas funções complementares no fluxo:
+depósito (entrada): realizado pelos operadores de Picking Fracionado, conforme o fluxo padrão do PTL descrito a seguir;
+retirada (saída): realizada pelo operador de Full Case ao consolidar a remessa para expedição.
+Operação no PTL:
+1. Ao iniciar a operação, o operador da saída realiza login no WCS para mapear e alocar os volumes nas posições indicadas pelo sistema.
+2. O operador realiza a leitura de cada volume Fracionado através do scanner. O WCS acende o LED da posição PTL correspondente, indicando onde depositar o volume.
+3. Caso o volume não pertença a nenhuma posição do posto (cenários típicos: volume não integrado, volume movido erroneamente para a área, volume com etiqueta inválida ou de outra remessa), todos os LEDs acendem em vermelho, sinalizando o erro. O operador deverá tratar a exceção conforme procedimento operacional.
+4. Quando o volume pertence a uma posição, o operador deposita o volume no pallet e confirma com o botão do LED.
+5. Após a finalização do agrupamento de uma remessa, a posição PTL é liberada automaticamente para receber a próxima remessa.
+6. Quando a remessa que ocupa uma posição de PTL também possui volumes Full Case, o operador da coleta Full Case se dirige ao PTL ao concluir sua tarefa e realiza a leitura das etiquetas dos volumes Fracionados conforme lista exibida pelo WCS. Após a leitura de todas as etiquetas esperadas, a posição de PTL é liberada automaticamente, e os volumes Fracionados acompanham o operador até o ponto de expedição em conjunto com os Full Case daquela remessa.
+Obs: Não há fechamento sistêmico de pallet, integração de Aloca Pallet com o EWM/SAP, nem cálculo automático de cubagem/peso por pallet — o agrupamento físico é feito pela operação. A liberação de cada posição de PTL ocorre automaticamente após a retirada de todos os volumes pelo operador da coleta Full Case, em casos com consolidação.
+
+---
+**Origem:** [I25.163] 2026 — `I25.163 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO MARKET CHILE.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 981c6294d088f2a0
+
+Ao iniciar a operação, o operador da saída do sorter deverá realizar o login na rampa por meio da leitura de um código de produtivo para que consiga mapear e alocar os volumes nas posições indicadas.
+Etiquetas utilizadas no processo PTL:
+Etiqueta PTL: QR Code fixo instalado em cada posição da estação PTL. Utilizada para abertura e fechamento do palete.
+Etiqueta OLPN: Gerada pelo WMS, contém um código único de 15 a 18 dígitos. Identifica de forma única cada palete de saída e garante a rastreabilidade.
+Abertura do palete (obrigatória antes de iniciar a indução): O operador faz duas leituras sequenciais — primeiro a Etiqueta PTL (QR Code) da posição, depois uma Etiqueta OLPN (15 a 18 dígitos) — criando o vínculo OLPN ↔ posição PTL. Só então o sistema permite a alocação.
+Alocação de volumes — Dupla Confirmação (configurável): O sistema possui uma opção na tela de configuração chamada Dupla Confirmação de Bipagem:
+Ativada: Primeiro a etiqueta do volume (IVT) — LED laranja (aguarda 2ª confirmação); depois o código da caixa (DUN/EAN) — LED azul (vínculo completo).
+Desativada: Apenas uma leitura é necessária. O operador escaneia a etiqueta IVT ou o DUN do volume e o LED acende diretamente em azul.
+Em ambos os modos, caso o volume não pertença a nenhuma das posições da estação PTL, o WCS acenderá todos os LEDs da estação em vermelho.
+Quando o LED está em azul e o volume pertence à posição, o operador deve depositar a caixa no palete e confirmar apertando o botão do LED azul. Nesse momento, o WCS registra a alocação e envia a integração caixa a caixa ao WMS.
+Fechamento do palete (manual): O fechamento do palete é realizado manualmente pelo operador, que avalia visualmente quando o palete atinge um tamanho adequado. Para fechar, o operador escaneia a Etiqueta PTL (QR Code) os LEDs acendem em laranja e em seguida escaneia a Etiqueta OLPN, o LED muda para azul confirmando o fechamento. O operador cola a etiqueta OLPN no palete físico e aperta o botão. Nesse momento, o WCS envia a integração de palete montado ao WMS.
+Continuação da operação (reabertura): Se após o fechamento ainda houver caixas pendentes para aquela posição PTL, o operador deve abrir um novo palete escaneando novamente a Etiqueta PTL (QR Code) e uma nova Etiqueta OLPN (novo código de 15 a 18 dígitos gerado pelo WMS), criando um novo vínculo. O fluxo de alocação segue normalmente.
+O WCS não deve permitir a reutilização de códigos OLPN. A disponibilidade das etiquetas OLPN é de responsabilidade do cliente (WMS).
+Em caso de rejeição, o sistema exibirá uma tela mostrando o diagnóstico de erros para esse volume, permitindo ao operador tentar recuperá-lo novamente, se necessário.
+Etiqueta de PTL:
+Em todos os processos após a finalização do pallet enviamos as informações descritas no tópico “Pallet Montado” para o WMS fazer as tratativas necessárias.
+A impressão da etiqueta OLPN é de responsabilidade do WMS.
+
+---
+**Origem:** [I25.163] 2026 — `I25.163 - ESPECIFICAÇÃO DE SOFTWARE - PROJETO MARKET CHILE.docx`  
+**Heading:** Exceções do PTL  
+**Score:** — (semantico) | **ID:** a97653ff6aebbd01
+
+Reativação do PTL e janela de fechamento/reabertura
+Após o fechamento de um pallet, o PTL só volta ao estado ativo após ação manual do operador:
+Princípio do desvio: a decisão de desvio é tomada quando a caixa passa pelo portal do sorter. Definida a rampa de destino, a decisão fica vinculada à caixa e não muda, mesmo que o operador feche temporariamente o pallet para trocar o Olpn e reabrir o PTL.
+Critério de elegibilidade e prioridade: ao passar pelo portal, o WCS avalia todas as rampas elegíveis para o SKU/destino. Prioriza as rampas com PTL ativo e distribui as caixas de forma balanceada entre elas; uma rampa com PTL fechado continua sendo opção válida, porém com menor prioridade. Esgotada a capacidade das opções de maior prioridade, o WCS desvia para a rampa de PTL ainda não reativado, desde que haja capacidade física.
+Durante o intervalo entre fechamento (0) e reabertura (1)/(2):
+Caixas já analisadas pelo portal com destino àquela rampa continuam sendo desviadas para ela.
+Caixas que já estão na rampa permanecem nela, aguardando a reabertura do PTL para continuar a operação normal.
+Integração de Pedidos recebidas do WMS para a loja associada seguem a mesma regra, desde que exista posição válida para o destino.
+Capacidade física e elegibilidade da rampa
+Quando a caixa vai ao rejeito:
+A rampa possui um sensor de rampa cheia. Enquanto a caixa não atinge esse sensor, há “capacidade física disponível” e a rampa permanece elegível. Quando o sensor é acionado, a rampa fica inelegível e as caixas destinadas a ela são enviadas ao rejeito pelo motivo “Rampa Cheia”.
+A rampa só se torna inelegível quando está cheia (sensor acionado). O PTL estar fechado não a torna inelegível e não há tempo máximo (timeout) de PTL fechado, a rampa segue elegível até encher.
+A caixa é enviada ao rejeito somente quando, ao passar pelo portal, não há nenhuma rampa elegível com capacidade disponível para o destino. O PTL estar temporariamente fechado, por si só, não envia a caixa ao rejeito.
+Demais exceções do PTL
+Etiqueta inválida: ao bipar uma etiqueta inválida (incluindo OLPN repetida ou fora do comprimento válido), o LED do PTL que o operador está tentando vincular acende em vermelho.
+Falta de OLPN para abrir/reabrir: o comportamento não muda, o pallet permanece fechado até a chegada de novas etiquetas OLPN.
+Validação da OLPN: feita por comprimento, código de 15 a 18 dígitos.
+Pallet incompleto (short pick): o WCS nunca bloqueia o fechamento manual do pallet. Se o operador fechar faltando itens, a integração Pallet Montado é enviada com a quantidade efetivamente montada (totalvolPallet < totalvolEsper). Não há alerta do sistema, mas o operador visualiza que o esperado era X e o pallet foi fechado com Y.
+
+---
+**Origem:** [I25.4066] 2026 — `I25.4066 - Especificação de Software NavePark.docx`  
+**Heading:** Sugestão de Alocação  
+**Score:** — (semantico) | **ID:** 64b4fb556a0b4f63
+
+O WCS Velox é responsável pela sugestão de alocação por Curva ABC. O objetivo é otimizar a eficiência operacional do CD, definir as prioridades das posições e organizar os produtos nas posições de picking. O conceito é baseado em Tarefas: o número de tarefas de separação que passam por cada produto no período é o índice que define sua curva.
+Administração de Tarefas. O WCS gerencia o ciclo completo, da definição dos critérios à execução das alocações. O processo é iniciado automaticamente a partir do primeiro mês de operação e é configurável conforme a necessidade.
+Range de data para a sugestão. O WCS possui um parâmetro configurável que define a janela de dados históricos considerada ao gerar as sugestões (ex.: 7, 15 ou 30 dias). O administrador define o intervalo por meio de tela própria, e o sistema usa esse intervalo para gerar as sugestões automaticamente, considerando o histórico de separações e a demanda no período.
+Classificação por curva. Com base no número de tarefas por produto no período, o WCS classifica os itens e sugere o posicionamento:
+Curva A — itens de alta frequência; alocados nas posições de picking mais acessíveis e próximas ao ponto de saída, reduzindo o deslocamento do operador.
+Curva B — itens de frequência intermediária; alocados em posições de fácil acesso, não necessariamente tão próximas quanto as da Curva A.
+Curva C — itens de baixa frequência; alocados nas posições mais distantes do ponto de saída, de visita menos frequente.
+Respeito à Matriz de Fragilidade. A sugestão de alocação respeita obrigatoriamente a Matriz de Fragilidade: independentemente da curva, os itens mais pesados são posicionados nos primeiros postos da sequência de coleta, garantindo que sejam coletados primeiro no picking fracionado (caixa plástica) e protegendo os itens frágeis.
+Sugestão x decisão. A sugestão é gerada pelo WCS; a decisão de alterar o mapeamento é da operação. O operador verifica a sugestão e, se necessário, ajusta o posicionamento dos produtos nos endereços indicados. O WCS exibe a quantidade de tarefas por produto em tela de acompanhamento (com filtros por produto, categoria ou data) e gera relatório dos itens de maior saída e suas classificações, para revisão e rebalanceamento periódico.
+Exemplo da tela de Tarefas por Produto:
+
+---
+**Origem:** [I25.4066] 2026 — `I25.4066 - Especificação de Software NavePark.docx`  
+**Heading:** Rampas de Expedição (Fluxo Padrão com PTL)  
+**Score:** — (semantico) | **ID:** 82bac9ea92ad12bc
+
+As demais rampas são agrupadas logicamente por Transportadora. Opcionalmente, uma mesma rampa pode agrupar até duas transportadoras, conforme configuração do Mapa do Sorter — não é obrigatório, sendo o padrão uma transportadora por rampa. O processo de paletização é assistido por Put-to-Light (PTL), garantindo que o operador monte o pallet correto sem precisar ler etiquetas.
+Passo a Passo:
+Descida: A caixa desliza pela rampa e para na mesa de acumulação.
+Identificação: O operador pega a caixa e realiza a leitura do LPN com um scanner de mão.
+Sinalização (PTL):
+Imediatamente, o display PTL posicionado acima do pallet correspondente acende.
+O display mostra a quantidade acumulada ou apenas confirma o local.
+Montagem: O operador deposita a caixa sobre o pallet indicado pela luz.
+Confirmação: O operador pressiona o botão do PTL para confirmar que a caixa foi alocada.
+Erro: Se o operador bipar uma caixa e tentar colocar no pallet errado (não confirmar o botão ou bipar local errado), o sistema emite alerta sonoro.
+
+---
+**Origem:** [I25.4378] 2026 — `I25.4378 - PROJETO BR - ESPECIFICAO DE SOFTWARE -.docx`  
+**Heading:** Put to Light (PTL) / Aloca Pallet  
+**Score:** — (semantico) | **ID:** b0b9d829f01941c3
+
+O Put to Light é o processo de alocação de volumes nos pallets de expedição. O WCS controla as posições PTL de forma exclusiva. A expedição é compartilhada entre WCS e WMS.
+O projeto possui 28 posições PTL com displays dedicados. O agrupamento principal (master) é por transportadora. Dentro de cada transportadora, o WCS aplica um sub-agrupamento por pedido, buscando concentrar os volumes de um mesmo pedido no menor número de pallets possível, evitando dispersão entre posições PTL. A abertura das posições PTL disponíveis é automática.
+Para iniciar a operação do PTL, o operador da rampa realiza login bipando o crachá no leitor da posição. O WCS registra o vínculo entre o operador e a posição PTL, possibilitando o mapeamento, a alocação correta dos volumes e a rastreabilidade das operações realizadas. Para encerrar a sessão, o operador bipa o crachá novamente no mesmo leitor, e o WCS registra o horário de saída e libera o vínculo com a posição.
+Fluxo Operacional:
+Ao receber uma caixa na rampa, o operador realiza a leitura da etiqueta do volume.
+O display da posição PTL correspondente acende, indicando a posição do pallet onde o volume deve ser alocado.
+O operador aloca o volume na posição indicada e confirma pressionando o botão do display, encerrando a tarefa daquele volume.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza o sistema.
+O operador retorna à rampa para processar o próximo volume.
+Abertura de Posição PTL:
+A abertura da posição PTL é automática quando o primeiro volume de uma transportadora sai do Order Start. O WCS prioriza alocar volumes do mesmo pedido na mesma posição PTL, abrindo nova posição somente quando a atual atingir o limite de cubagem ou peso. O WCS reserva o lugar de cada volume nos pallets antes mesmo do volume chegar na rampa, sendo possível colocar os volumes no pallet respectivo respeitando a sequência de entrega.
+Otimização de Alocação por Tamanho de Caixa:
+O WCS deverá realizar a alocação dos volumes no pallet com base na melhor otimização de espaço, considerando os tamanhos de caixa (P, M, G) definidos pelo WMS Spark na cubagem. O sistema organizará a distribuição dos volumes visando o melhor aproveitamento da cubagem e peso do pallet, priorizando a estabilidade e o empilhamento adequado.
+Cubagem e Peso do Pallet:
+A cubagem do pallet será realizada pelo WCS previamente, através do cadastro de parâmetros. O operador deverá cadastrar no WCS a cubagem (m³) e peso (kg) máximo suportado no pallet.
+
+---
+**Origem:** [I24.203] ADITIVO — `I24.203 - Aditivo Projeto Beta - Crosscheck, Alocação Automatica, Pedidos, Dashboard e Ajustes Impressão.docx`  
+**Heading:** Alocação Automática de Pallet sem confirmação de Posição  
+**Score:** — (semantico) | **ID:** 5b05efac51e21545
+
+Será criado um novo parâmetro para reduzir o tempo de operação no aloca pallet eliminando a etapa de confirmação física da posição. A proposta é que, após a bipagem da caixa, o sistema apresente automaticamente o pallet de destino na tela e libere o volume para ser levado até o local, sem que o operador precise bipar o endereço da posição.
+Comportamento Atual (sem o aditivo)
+O operador bipa a caixa.
+O sistema indica a posição do pallet de destino.
+O operador se desloca até a posição e bipa o endereço da posição para confirmar (double check).
+Apenas após essa confirmação a alocação é registrada.
+Comportamento Proposto
+O operador bipa a caixa.
+O sistema apresenta o pallet de destino na tela.
+A alocação é registrada automaticamente, sem exigir bipagem da posição.
+O operador se desloca até o local e deposita o volume.
+Exemplo de texto na TV ao bipar o volume:
+Tratamento de Bipagem Duplicada
+Caso o operador bipe novamente, por engano, uma caixa que já foi alocada, o sistema exibirá em tela uma mensagem informativa diferenciada (não bloqueante), indicando que aquele produto já está alocado e qual é a posição de destino. Isso permite que o operador, mesmo bipando por engano, visualize rapidamente onde a caixa deve ser depositada.
+Exemplo tela:
+Parametrização
+Esta funcionalidade será parametrizável (ligar/desligar) por cliente. Quando desligada, o sistema mantém o fluxo atual com double check (bipagem da caixa + bipagem da posição). Quando ligada, opera no fluxo proposto, sem exigência de confirmação da posição.
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
+**Heading:** Classificação do Resultado  
+**Score:** — (semantico) | **ID:** 59f12616866ecf78
+
+Compatível — quando a identificação da etiqueta e da IA convergem para a mesma loja/produto. Caixa segue para a rampa/PTL prevista.
+Suspeita de Divergência — quando há desacordo entre as duas leituras. Caixa entra na regra de decisão por prioridade.
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
+**Heading:** Ação em Caso de Divergência  
+**Score:** — (semantico) | **ID:** 739cf2b60d6c48cb
+
+Parâmetro complementar que define se, ao identificar uma divergência, a caixa será encaminhada à PTL determinada pela prioridade ou à rampa de rejeito:
+Direcionar à PTL correspondente — segue o destino calculado pela informação prioritária.
+Direcionar a Rejeito — segrega a caixa para tratamento manual, independentemente da informação prioritária.
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
+**Heading:** Atualização e Conferência Operacional  
+**Score:** — (semantico) | **ID:** dfe8ccf742ab6e05
+
+O painel deverá atualizar as informações a cada 1 minuto, com a opção de atualizar as informações ao pressionar um botão a qualquer momento. A interface permitirá que o operador identifique rapidamente em qual rampa ou PTL está localizada uma caixa marcada como Suspeita de Divergência, possibilitando o deslocamento até a posição indicada para validação visual e tratativa da ocorrência.
+Exemplo do Painel KPI:
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
+**Heading:** Necessidade Operacional  
+**Score:** — (semantico) | **ID:** 201056713f388e4b
+
+O processo atual de fechamento de paletes na PTL realiza a leitura do código da etiqueta master e dispara imediatamente a integração de aloca pallet ao WMS. Não existe etapa intermediária de conferência que valide se todos os volumes vinculados logicamente ao palete master estão fisicamente presentes no momento do fechamento.
+A ausência dessa etapa permite que paletes finalizados sejam enviados à etapa seguinte do processo logístico contendo, eventualmente, divergências entre a quantidade sistêmica e a quantidade física, sem que haja registro auditável dessa diferença. A presente evolução introduz uma camada de auditoria opcional, baseada na leitura do código produtivo do conferente, que substitui o disparo imediato da integração por uma atividade de conferência subsequente.
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
+**Heading:** Alteração da Lógica de Fechamento da PTL Manual  
+**Score:** — (semantico) | **ID:** 18711f67207eddcd
+
+A lógica de fechamento da PTL Manual será alterada para reconhecer dois caminhos possíveis após a leitura do código de endereço da PTL:
+Leitura do código da etiqueta master — mantém o comportamento atual (fechamento direto, com integração imediata ao WMS).
+Leitura do código produtivo do conferente — ativa o caminho de conferência, no qual a posição é liberada, porém a integração ao WMS é retida até que a conferência seja confirmada.
+A escolha do caminho é feita pelo próprio operador no momento da leitura, sem necessidade de seleção em tela adicional.
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Conferência e Crosscheck IA.docx`  
+**Heading:** Identificação Visual via LED  
+**Score:** — (semantico) | **ID:** 5fd8f9bd5df2b3df
+
+Quando o caminho de conferência for ativado, o LED da posição PTL deverá alterar de cor para rosa e começara a piscar indicando visualmente que aquela posição não está em fechamento normal, e sim em fluxo de auditoria, o operador deve apertar o botão e bipar a master do palete para que seja feito o vínculo de conferência com a master de fechamento do palete.
+
+---
+**Origem:** [I25.3513] ADITIVO — `I25.3513 - Aditivo Projeto CDSK - Tela Tratativas de Pallets Rejeitados.docx`  
+**Heading:** Informações exibidas na tela  
+**Score:** — (semantico) | **ID:** 150bd0f627dd0a07
+
+Para cada pallet rejeitado, a tela deverá exibir obrigatoriamente:
+Código da Master vinculada
+Loja (Tipespecie) associada ao pallet no momento do fechamento
+Mensagem detalhada do erro
+Posição de PTL onde o pallet foi montado.
+Essa visibilidade permitirá análise rápida do problema.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Dashboard Relatorios e Cadenciamento - Projeto Esperança.docx`  
+**Heading:** Relatório de Produtividade no PTL por Operador — Nível PTL  
+**Score:** — (semantico) | **ID:** eb352797c09bcfd9
+
+Objetivo: Mensurar a produtividade individual dos operadores no nível de posição PTL, considerando volume alocado e tempo médio entre o desvio no Sorter e a efetiva alocação.
+Colunas: Rampa | PTL | Operador | Volumes Alocados por PTL | Tempo Médio (seg) | Produtividade (vol/h).
+Tempo médio por volume = média (hora alocação − hora desvio no Sorter). Produtividade = volumes alocados / tempo trabalhado. Troca de operador: dividir volumes automaticamente respeitando login/logout.
+Estrutura do relatório:
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Dashboard Relatorios e Cadenciamento - Projeto Esperança.docx`  
+**Heading:** Relatório de Produtividade no PTL por Operador — Nível Rampa  
+**Score:** — (semantico) | **ID:** 87f1f45fdb72d2d9
+
+Objetivo: Mensurar a produtividade por rampa de saída do Sorter, consolidando todos os PTLs da rampa em uma única linha por operador.
+Colunas: Rampa | Operador | Volumes Alocados | Tempo Médio (seg) | Produtividade (vol/h). Mesmas regras de cálculo e troca de operador do relatório 5.4.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Projeto Esperanca - Pontos de Melhorias.docx`  
+**Heading:** Bloqueio de Alocação sem Operador Logado no PTL  
+**Score:** — (semantico) | **ID:** fd5417dd12731806
+
+Implementar regra sistêmica que impeça a realização de alocações nos PTLs quando não houver operador devidamente autenticado no dispositivo. A medida tem como finalidade garantir rastreabilidade das ações executadas, assegurar responsabilidade operacional e evitar registros de alocação sem vínculo a um usuário identificado no sistema.
+Escopo Técnico
+Implementar validação obrigatória de login ativo.
+Criar bloqueio sistêmico caso não haja operador logado.
+Acender leds em vermelho indicando de erro.
+Ajustar controle de sessão por dispositivo.
+
+---
+**Origem:** [I25.3515] ADITIVO — `I25.3515 - Aditivo Projeto Esperanca - Pontos de Melhorias.docx`  
+**Heading:** Inclusão na Tela “Paletes”  
+**Score:** — (semantico) | **ID:** a1b6bbed497f4da1
+
+Incluir novos indicadores visuais e informativos na tela “Paletes” que permitam à operação acompanhar a evolução do palete, possibilitando identificação antecipada de paletes com baixa movimentação ou próximos da conclusão. O objetivo é evitar retenção indevida de PTLs por volumes residuais e apoiar a tomada de decisão operacional com base em dados atualizados.
+Escopo Técnico
+Criar cálculo de percentual concluído (volumes alocados / total previsto).
+Criar campo com data e hora da última alocação.
+Ajustar consulta e performance.
+
+---
+**Origem:** [I23.1733] ADITIVO — `I23.1733 - Especificação de Software - Projeto FOX 2025.docx`  
+**Heading:** Especificação  
+**Score:** — (semantico) | **ID:** 5c8c2f861959ceb0
+
+Para o correto funcionamento da automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL (Put-To-Light), tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
+A aplicação da INVENT necessita de um banco de dados exclusivo para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença e instalação do banco).
+As informações serão trocadas entre a aplicação e as estações de trabalho por meio de uma interface Web. Dessa forma, é necessário o uso de um navegador web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox) para acessar a aplicação.
+
+---
+**Origem:** [I23.1733] ADITIVO — `I23.1733 - Especificação de Software - Projeto FOX 2025.docx`  
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** 95585f52909c2118
+
+O processo de Put to Light será realizado nas saídas do sorter pelo operador para separação dos volumes. O sistema conta com 3 rampas, cada uma com 8 posições de PTL, totalizando 24 posições de PTL disponíveis para alocação.
+Cada posição de PTL é equipada com 1 LED de 3 dígitos para sinalização visual. As rampas que possuem PTL terão um scanner de responsabilidade da DellaVolpe para leitura dos códigos dos volumes.
+A abertura do pallet ocorre de forma automática quando o primeiro produto é bipado em um pallet não iniciado. O sistema WCS controla a sequência de código de pallets, atribuindo os códigos sequencialmente aos PTLs.
+Para o fechamento, o sistema realiza o encerramento automaticamente quando todos os volumes da nota fiscal são alocados na posição PTL correspondente. Quando todos os itens de todas as notas fiscais atribuídas à rota vinculada ao PTL são alocados, o WCS fecha o pallet automaticamente.
+Os leitores de código de barras (Honeywell) para o sistema de Put-To-Light serão de responsabilidade do cliente.
+
+---
+**Origem:** [I23.1410] ADITIVO — `I23.1410 - NORMANDIA - OTIMIZAÇÃO DE COLETA - ADITIVO.docx`  
+**Heading:** Visão Geral do Fluxo  
+**Score:** — (semantico) | **ID:** 720dd34c489706cc
+
+O WCS realiza a abertura automática das posições PTL, definindo as posições ativas e, consequentemente, quais produtos/romaneios deverão ser separados na operação.
+O WCS mantém as tarefas bloqueadas enquanto a Matriz de Fragilidade estiver pendente de liberação (quando aplicável ao processo).
+Após a liberação da matriz, o WCS realiza a liberação completa da coleta, disponibilizando todas as tarefas elegíveis para execução.
+Os pallets finalizados (tanto empenhados quanto provenientes do PBL) são alocados em Stage, garantindo rastreabilidade, organização e melhor fluidez operacional.
+No Posto de Indução, o WCS executa a impressão automática das etiquetas necessárias, conforme os pallets vinculados e o Stage de origem.
+Antes do início da indução, o WCS realiza o consumo da Master (validação e lock operacional do agrupamento), assegurando consistência e impedindo processamento duplicado.
+Somente após a confirmação de sucesso nas etapas anteriores, o WCS libera a indução, habilitando o desvio no sorter e a alocação para o destino conforme parametrização do processo.
+
+---
+**Origem:** [I23.1410] ADITIVO — `I23.1410 - NORMANDIA - OTIMIZAÇÃO DE COLETA - ADITIVO.docx`  
+**Heading:** Liberação total de coleta para Matriz Liberada  
+**Score:** — (semantico) | **ID:** 187af9aadb5efbd4
+
+Regra principal:
+Uma vez que a Matriz de Fragilidade esteja liberada em uma posição PTL aberta, o WCS deverá liberar a coleta de todos os itens/ tarefas vinculados à matriz em questão, independentemente do momento de alocação nas posições PTL.
+O controle operacional será realizado na Indução, não mais no Order Start.
+Fluxo
+O WCS identifica as posições PTL abertas e as Matrizes de Fragilidade atualmente solicitados para essas posições.
+Ao confirmar que a matriz está liberada, o WCS realiza a liberação total de coleta:
+libera todas as tarefas de separação vinculadas à matriz em questão;
+não restringe a liberação somente às tarefas já aptas/visíveis para alocação imediata nas posições PTL abertas.
+O operador executa a separação normalmente e, ao concluir a formação dos pallets correspondentes, disponibiliza os pallets no Stage de Indução, mantendo-os rastreáveis e prontos para a etapa posterior.
+Resultado esperado
+Tarefas vinculadas à matriz ficam liberadas para coleta assim que a matriz estiver liberada e demandada pelo PTL.
+A indução passa a ser o ponto de controle para validações e consumo (substituindo o papel anterior do Order Start nesse aspecto).
+
+---
+**Origem:** [I23.1410] ADITIVO — `I23.1410 - PROJ NORMANDIA - ESPECIFICACAO DE SOFTWARE - ADITIVO 2 2025.docx`  
+**Heading:** Gestão de Ativação de Rampas e Lógica de Abertura PTL  
+**Score:** — (semantico) | **ID:** 8e6e0fe560bd1796
+
+Diferente do modelo tradicional de ondas estáticas (onde se processa uma onda por vez), o WCS Velox operará com Integração de Ondas Dinâmicas. Isso significa que o WMS poderá enviar novas ondas de pedidos a qualquer momento, sem a necessidade de aguardar a finalização da onda anterior. O WCS receberá e acumulará essas demandas em uma fila única de processamento.
+Lógica de Controle e Liberação (Start da Onda)
+Para garantir que a operação flua sem gargalos e que a etiqueta do volume contenha a informação correta do destino, o controle de fluxo será realizado no momento do Start da Onda (quando o operador ou o sistema coloca a onda "Em Andamento"):
+Fila de Espera (Backlog): Todos os pedidos integrados entram em um backlog ordenado por prioridade e ordem de chegada.
+Validação de Capacidade: Antes de efetivar o início da onda, o WCS verifica em tempo real se há uma posição de PTL disponível na rampa de destino (seguindo a regra de distribuição alternada/sequencial).
+Reserva Antecipada:
+Se houver PTL livre: O sistema reserva imediatamente a posição no momento do Start. Dessa forma, quando o operador solicitar a impressão, a etiqueta já será gerada com o Número do PTL correto.
+Se não houver PTL livre: A onda (ou o pedido específico) permanece em stand-by na fila com status de "Aguardando Posição". O sistema não permite o Start efetivo, evitando que volumes sejam liberados para separação sem destino definido.
+Liberação Automática: Assim que uma posição de PTL é finalizada e esvaziada na expedição, o WCS identifica automaticamente o próximo pedido da fila que pode ocupar aquela vaga, executa o Start e libera o pedido para impressão instantaneamente.
+Essa lógica assegura uma operação contínua, onde a capacidade do Sorter é utilizada ao máximo (100% dos PTLs ocupados), sem o risco de gerar volumes "órfãos" na linha ou etiquetas sem informação de destino.
+
+---
+**Origem:** [I24.101] ADITIVO — `I24.101 - PROJ TOYS - ESPECIFICACAO DE SOFTWARE - ADITIVOS - Wave 2.docx`  
+**Heading:** Priorização de Pedidos para Rampas Específicas no PTL  
+**Score:** — (semantico) | **ID:** 85938dd9c6c2691a
+
+Atualmente, cerca de 95% dos pedidos estão vinculados à mesma transportadora (“Gala/Transap”), responsável por volumes destinados à redistribuição. Dentro desse mesmo grupo, porém, existem pedidos com características logísticas distintas — como cargas para Zona Franca (Suframa) e cargas que exigem carregamento imediato diretamente nos caminhões.
+Devido à limitação física de rampas de expedição no PTM (Put to Monitor), tornou-se necessário segregar e priorizar o direcionamento desses pedidos. Para atender essa necessidade, o WCS deverá permitir a configuração de prioridades de rampa por pedido, garantindo que determinados volumes sejam sempre enviados para as Rampas com o agrupador especial alocado, enquanto os demais pedidos seguem o fluxo padrão do agrupamento de redistribuição.
+Regras de Negócio
+1. Segregação de Fluxo
+O WCS deverá disponibilizar uma tela contendo a listagem dos pedidos pertencentes à transportadora “Gala/Transap”.
+Nessa tela, o operador poderá selecionar os pedidos que deverão receber tratamento prioritário, garantindo que sejam agrupados nas posições especiais.
+2. Direcionamento Prioritário
+Quando pedidos forem marcados como prioritários:
+O algoritmo de distribuição do WCS deverá alocá-los preferencialmente nas posições com o agrupador especial.
+Essa priorização deve ocorrer imediatamente após o fechamento do pedido atualmente vinculado à posição.
+3. Objetivo Operacional
+A priorização visa evitar travamentos na operação, garantindo que:
+Pedidos de carregamento rápido não disputem espaço com pedidos de redistribuição;
+Pedidos com características fiscais específicas (ex.: Suframa) não misturem seus fluxos;
+A ocupação das rampas seja otimizada de acordo com a criticidade de cada carga.
+4. Agrupador Especial
+Para a transportadora “Gala/Transap”, será criado um agrupador especial que terá o seguinte comportamento:
+Primeira prioridade: alocar os pedidos selecionados na tela de priorização.
+Na ausência de pedidos prioritários: utilizar o agrupador padrão, mantendo o fluxo regular da operação.
+Observação:
+Pedidos priorizados na tela mencionada só podem desviar em posições especiais, caso não haja posições disponíveis eles devem entrar na fila até que a posição seja liberada.
 
 ---
 **Origem:** [I17.112] 2021 — `I17.112 - ESPECIFICACAO DE SOFTWARE - PROJETO  DIAMANTE- Adicional PTL Larrus rev3.docx`  
-**Heading:** Layout de configuração  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Processo de abertura e fechamento de pallets  
+**Score:** — (semantico) | **ID:** bbc5a20ad6647574
 
-Para posições PTL atreladas serem atreladas aos pedidos da filial Larrus, sistema MFC deve disponibilizar uma nova aba, para visualização por PTL.
-Essa configuração será por onda, da mesma forma que existe atualmente está disponível em homologação para o ecommerce.
-Segue abaixo exemplo da aba para tratativa de posições PTL que irão atender os pedidos da filial Larrus:
-
----
-**Origem:** [I17.112] 2021 — `I17.112 - ESPECIFICACAO DE SOFTWARE - PROJETO  DIAMANTE- Adicional PTL Larrus rev3.docx`  
-**Heading:** Configurações necessarias.  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento dos endereçamentos dos PTLs voltados a Larrus o time operacional da Hinode deve realizar os cadastros de UFs faltantes e criar as regiões que irão atender cada UF dentro do MFC assim garantindo que todas as regiões informadas na tela de Onda Larrus estejam condizentes as regiões vinculadas ao PTL.
+Os processos de abertura e fechamento dos pallets não sofreram mudanças, serão exatamente como é hoje, porém para os PTLs que atenderam os pedidos da filial Larrus, o operador pode realizar o fechamento do pallet a qualquer momento, para realizar esse fechamento o mesmo deve fazer a leitura do código de barras da posição do PTL e em seguida realizar a leitura do código do pallet, como já é realizado hoje.
+Após o fechamento o MFC irá verificar se existe volumes pendente para o pedido que estava alocado no PTL em questão, se for o caso o pedido será vinculado ao PLT novamente para que o operador realize a abertura do PLT vinculando um novo pallet e seguindo assim o processo até que todos os volumes do pedido sejam alocados, assim nenhum pedido pode entrar no PTL até que o pedido Larrus seja totalmente finalizado.
 
 ---
 **Origem:** [I17.112] 2021 — `I17.112 - ESPECIFICACAO DE SOFTWARE - PROJETO  DIAMANTE- Adicional PTL Larrus rev3.docx`  
 **Heading:** Priorização de pedidos  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** c5ce1a78bc680ea9
 
 Devido a necessidade de o pedido permanecer no mesmo PTL a regra de priorização de pedidos não se aplicam aos pedidos da filial Larrus, que sempre será prioridade máxima na ocupação do PLT até que todos os volumes de todos os pedidos destinados ao PTL sejam finalizados, ou seja, se houver um pedido franquia ou e-commerce a ser alocado na mesma posição do PLT onde há um pedido da filial Larrus, esses pedidos só serão alocados após o término de todos os pedidos Larrus para o PTL.
 
 ---
-**Origem:** [I17.112] 2021 — `Diamante Adicionais - ESPECIFICACAO DE SOFTWARE - Rev.2.docx`  
-**Heading:** Operação futura  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I20.1053] 2021 — `I20.1053 - ESPECIFICACAO SOFTWARE - Rev8 - FASE 1-2.docx`  
+**Heading:** GAP 02 – Envia posição SKU  
+**Score:** — (semantico) | **ID:** 703eb7531ab61d93
 
-O MFC deve permitir a alocação da mesma transportadora para uma rampa ou PTL ao mesmo tempo, podendo utilizar uma transportadora para tratar franquia e e-commerce na mesma operação.
-Para isso o MFC irá validar o valor do campo "order_ERPWMS" , se o campo vier como a informação “E” trata-se de um pedido e-commerce e só pode ser tratado na tela de Onda, na aba e-commerce, se não houver um PTL previamente configurado com a transportadora que irá atender pedido e-commerce e salvo, o MFC não permitirá a geração de volumes por falta de rota para destinar a caixa na rampa e PTL corretos no sorter.
-Uma vez que uma transportadora é atrelada a um PTL ela não pode ser atrelada a outro PTL, sendo somente um PTL por transportadora. A operação pode escolher em quais PTLs as transportadoras irão ser vinculada.
-Não existira abertura ou fechamento de pallet para nenhum pedido E-commerce, assim também como no display de 6 (seis) dígitos do PTL não irá informar o número de pedido e sim irá informar de forma fixa a informação “Econ”.
-O MFC irá contabilizar a quantidade de caixas destinadas aquela transportadora e irá a presentar a quantidade de caixas faltantes, assim todas as vezes que uma caixa for alocada no PTL o número diminui, como já ocorre nos casos de franquias onde o PTL informa de maneira decrescente a quantidade de caixas.
-Não existirá mais os tipos de transportadora E-Commerce ou Franquia, serão os seguintes tipos, Normal, para todas as transportadoras usada para comercio nacional e que entraram na regra mencionada acima onde temo uma única transportadora podendo operar ao memo tempo como E-Commerce ou franquia, e termos o tipo exportação, onde serão selecionadas transportadoras como a Larrus que tem uma tratava particular e não se encaixa a essas regras mencionadas acima. (Tratativas da Larrus estão presentes no documento “Projeto Diamante - Adicional PTL Larrus”).
-Uma vez que a transportadora é selecionada somente na tela de rampa ela não irá receber pedidos de E-Commerce, somente os pedidos de franquia, assim também para caso em que a transportadora está vinculada somente ao PTL, os pedidos de franquias não irão ser processados na automação por falta de rota de destino.
-
----
-**Origem:** [I17.112] 2021 — `Diamante Adicionais - ESPECIFICACAO DE SOFTWARE - Rev.2.docx`  
-**Heading:** Layout de configuração  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para franquia o MFC deve manter o layout atual.
-Segue exemplo abaixa:
-Para E-Comm, o MFC deve disponibilizar uma nova aba na tela de onda, para visualizar por PTLs, podendo selecionar a transportadora que será atrelada aquele único PTL. A configuração será por onda como é na feita a configuração de rampa para franquias.
-Segue exemplo abaixo:
-
----
-**Origem:** [I17.112] 2021 — `Diamante Adicionais - ESPECIFICACAO DE SOFTWARE - Rev.2.docx`  
-**Heading:** Cadastro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para franquia, manter a configuração existente. Para E-Comm, sistema MFC deve disponibilizar uma nova tela onde o cliente possa realizar o cadastro da transportadora por PTL.
-
----
-**Origem:** [I17.112] 2021 — `Diamante Adicionais - ESPECIFICACAO DE SOFTWARE - Rev.2.docx`  
-**Heading:** Tela de Rejeito  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Na tela de rejeito (já existente), acrescentar funções para leitura de EAN e Lote, tanto para full-case quanto pallet
-deixando os volumes em situação para locação no PTL.
+Existe uma tabela de cadastro no SAP, onde preenchem qual a estação, sku e se é pick by light ou não. Lembrando que a estação será os 2(dois) primeiros números e os 3(tres) últimos a posição.
+Exemplo: 10001 – estação 10 e posição 001.
+Nessa interface é definido a identificação do material que estará alocado em cada estação, serão até 9(nove) posições por estação. Estação 10001 a 10009.
+SAP  WCS
 
 ---
 **Origem:** [I20.108] 2021 — `ESPECIFICAÇÃO SOFTWARE - VIRTUAL PTW.docx`  
 **Heading:** 3.11 Put-to-Light (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTL deve ser cadastrado por box, com o controle dos paletes dentro do sistema WCS, sem interface com o WMS nessa fase.
-A etiqueta do palete deverá ser emitida pela Invent que deverá ter a identificação visual do box/loja.
-Uma mesma posição de PTL pode conter mais de um box cadastrado.
-Cada saída, terá um PDV onde o operador ao realizar a leitura do volume, terá a informação da posição PTL onde deve ser alocado o volume, além disso o led da posição tambem será aceso. O operador ao alocar o volume e apertar o botão do PTL, apaga o led da posição e da tela do PDV.
-
----
-**Origem:** [I20.108] 2021 — `I20.108 - ESPECIFICAÇÃO SOFTWARE - VIRTUAL - REV13.docx`  
-**Heading:** 3.11 Put-to-Light (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTL deve ser cadastrado por box, com o controle dos paletes dentro do sistema WCS, sem interface com o WMS nessa fase.
-A etiqueta do palete deverá ser emitida pela Invent que deverá ter a identificação visual do box/loja.
-Uma mesma posição de PTL pode conter mais de um box cadastrado.
-Cada saída, terá um PDV onde o operador ao realizar a leitura do volume, terá a informação da posição PTL onde deve ser alocado o volume, além disso o led da posição tambem será aceso. O operador ao alocar o volume e apertar o botão do PTL, apaga o led da posição e da tela do PDV.
-
----
-**Origem:** [I20.108] 2021 — `I20.108 - ESPECIFICAÇÃO SOFTWARE - VIRTUAL - REV14.docx`  
-**Heading:** 3.11 Put-to-Light (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O PTL deve ser cadastrado por box, com o controle dos paletes dentro do sistema WCS, sem interface com o WMS nessa fase.
-A etiqueta do palete deverá ser emitida pela Invent que deverá ter a identificação visual do box/loja.
-Uma mesma posição de PTL pode conter mais de um box cadastrado.
-Cada saída, terá um PDV onde o operador ao realizar a leitura do volume, terá a informação da posição PTL onde deve ser alocado o volume, além disso o led da posição tambem será aceso. O operador ao alocar o volume e apertar o botão do PTL, apaga o led da posição e da tela do PDV.
-
----
-**Origem:** [I20.108] 2021 — `I20.108 - ESPECIFICAÇÃO SOFTWARE - VIRTUAL - REV16.docx`  
-**Heading:** 3.11 Put-to-Light (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 3ec782cb38a45700
 
 O PTL deve ser cadastrado por box, com o controle dos paletes dentro do sistema WCS, sem interface com o WMS nessa fase.
 A etiqueta do palete deverá ser emitida pela Invent que deverá ter a identificação visual do box/loja.
@@ -803,7 +906,7 @@ Cada saída, terá um PDV onde o operador ao realizar a leitura do volume, terá
 ---
 **Origem:** [I20.108] 2021 — `I20.108 - ESPECIFICAÇÃO SOFTWARE - VIRTUAL - REV17.docx`  
 **Heading:** 3.11 Put-to-Light (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** b2185698a1a8b63a
 
 O PTL deve ser cadastrado por box, com o controle dos paletes dentro do sistema WCS, sem interface com o WMS nessa fase.
 A etiqueta do palete deverá ser emitida pela Invent que deverá ter a identificação visual do box/loja.
@@ -811,9 +914,60 @@ Uma mesma posição de PTL pode conter mais de um box cadastrado.
 Cada saída, terá um PDV onde o operador ao realizar a leitura do volume, terá a informação da posição PTL onde deve ser alocado o volume, além disso o led da posição tambem será aceso. O operador ao alocar o volume e apertar o botão do PTL, apaga o led da posição e da tela do PDV.
 
 ---
+**Origem:** [I20.1406] 2021 — `I20.1406  - ESPECIFICACAO SOFTWARE - Rev1.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** fdff818e44d9933c
+
+PTL
+Cada uma das 12 saídas irá referenciar suas praças correspondentes, às quais conterão cada uma 28 posições, totalizando 336 posições para alocação de produtos.
+Scanners
+Cada estação de Put-to-Light possuirá 02 (dois) scanners (de fornecimento/responsabilidade do cliente).  A função deste dispositivo será realizar a leitura do volume, acendendo o LED da posição do PTL correspondente para alocação.
+Rejeito do Sorter
+Para a região do rejeito do sorter, 01(uma) estação de trabalho será necessária para verificação dos motivos de rejeito, bem como tratativas dos volumes (reimpressão de etiquetas, volume não encontrado etc.)
+Cancelamento de volume por falta de produto (Corte)
+O sistema Invent deverá respeitar a falta de um produto (quando ocorrer). Neste caso a informação de falta referente ao SKU em específico será recebida pelo sistema da Invent e processada de acordo com uma regra de prioridade definida conforme abaixo:
+Item pertence à um pallet que ainda não foi aberto
+Remover o item de um lote/pedido que possuir a maior quantidade de itens pendentes
+
+---
+**Origem:** [I20.1409] 2021 — `I20.1409 - ESPECIFICACAO SOFTWARE - Rev6.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** 7af23648a4a50466
+
+PTL
+As 04 (quatro) primeiras saídas do sorter alocarão 04 (quatro) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+Todas as outras 36 (trinta e seis) saídas possuirão apenas uma única posição-pallet, sem identificação por LED.
+OBS: Apresentaremos o layout executivo considerando todos os pontos de rede e alimentação elétrica necessários para compor a infraestrutura de 4 LEDs para cada uma das 40 saídas do sistema. Desta forma, caso o Tenda Atacado realize uma ampliação futura, basta adquirir o hardware de LED’s com os respectivos acessórios e a parametrização do software contemplando os novos endereços de IP dos componentes.
+Scanners
+Cada estação de Put-to-light possuirá 01 (um) scanner (de fornecimento/responsabilidade do cliente).  A função deste dispositivo será disparar os comandos de abertura e fechamento de pallet.
+Sinaleiros
+Cada saída contará 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema MFC e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I21.] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx`  
+**Heading:** Mesa Compartilhada  
+**Score:** — (semantico) | **ID:** 606b498a9db4f971
+
+Na estação de picking, existe uma mesa compartilhada, onde os operadores utilizam a mesma mesa/posto de picking.
+Visando maior flexibilidade, será disponibilizada a configuração do equipamento PTL para que haja a possibilidade de compartilhamento de mesas, este compartilhamento visa aumento da capacidade de armazenagem de SKU’s para atendimento de demandas especificas.
+O equipamento deverá dispor de funcionalidade de separação como estação única ou compartilhada com as estações vizinhas.
+Como o formato é compartilhado, a estação de trabalho deverá ter a capacidade de acender diferentes cores de forma aos pickers das mesas vizinhas identificarem que o produto destacado na mesa central corresponde a um item dentro do pedido em separação, e por caixa e sub-caixa.
+Nesse caso, quando o operador 1 realizar a leitura da etiqueta, ele terá a prioridade na separação de produtos na mesa compartilhada.
+Operador 2 terá que aguardar o operador 1 concluir a separação, para conseguir prosseguir e concluir a sua separação.
+Ao final do processo de picking, existe uma integração de retorno para o WMS informando que o picking foi concluído, e quais produtos e quantidades foram separados, onde o WCS disponibiliza as informações para o WMS realizar a expedição.
+
+---
+**Origem:** [I21.] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.1-Fase 1.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** 5ab0848f7a9c0ad7
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
+
+---
 **Origem:** [I21.] 2022 — `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx`  
 **Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** bc465cdc03b6ca05
 
 DESCRITIVO
 OPERAÇÃO
@@ -829,11 +983,104 @@ Contribuímos para aumentar a competitividade dos nossos clientes
 Nos preocupamos com a imagem e os resultados de nossos clientes
 
 ---
-**Origem:** [I21.] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.1.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I21.] 2022 — `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx`  
+**Heading:** Mesa Compartilhada  
+**Score:** — (semantico) | **ID:** fe4461015576b3e5
 
-DESCRITIVO OPERAÇÃO PROJETO PTL 2.0 DG – RIO GRANDE DO SUL/RS
+Na estação de picking, existe uma mesa compartilhada, onde os operadores utilizam a mesma mesa/posto de picking.
+Visando maior flexibilidade, será disponibilizada a configuração do equipamento PTL para que haja a possibilidade de compartilhamento de mesas, este compartilhamento visa aumento da capacidade de armazenagem de SKU’s para atendimento de demandas especificas.
+O equipamento deverá dispor de funcionalidade de separação como estação única ou compartilhada com as estações vizinhas.
+Como o formato é compartilhado, a estação de trabalho deverá ter a capacidade de acender diferentes cores de forma aos pickers das mesas vizinhas identificarem que o produto destacado na mesa central corresponde a um item dentro do pedido em separação, e por caixa e sub-caixa.
+Nesse caso, quando o operador 1 realizar a leitura da etiqueta, ele terá a prioridade na separação de produtos na mesa compartilhada.
+Operador 2 terá que aguardar o operador 1 concluir a separação, para conseguir prosseguir e concluir a sua separação.
+Ao final do processo de picking, existe uma integração de retorno para o WMS informando que o picking foi concluído, e quais produtos e quantidades foram separados, onde o WCS disponibiliza as informações para o WMS realizar a expedição.
+
+---
+**Origem:** [I21.] 2022 — `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** 55dde45f008cacd7
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
+
+---
+**Origem:** [I21.] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx`  
+**Heading:** Mesa Compartilhada  
+**Score:** — (semantico) | **ID:** 11126dfeb0e82f18
+
+Na estação de picking, existe uma mesa compartilhada, onde os operadores utilizam a mesma mesa/posto de picking.
+Visando maior flexibilidade, será disponibilizada a configuração do equipamento PTL para que haja a possibilidade de compartilhamento de mesas, este compartilhamento visa aumento da capacidade de armazenagem de SKU’s para atendimento de demandas especificas.
+O equipamento deverá dispor de funcionalidade de separação como estação única ou compartilhada com as estações vizinhas.
+Como o formato é compartilhado, a estação de trabalho deverá ter a capacidade de acender diferentes cores de forma aos pickers das mesas vizinhas identificarem que o produto destacado na mesa central corresponde a um item dentro do pedido em separação, e por caixa e sub-caixa.
+Nesse caso, quando o operador 1 realizar a leitura da etiqueta, ele terá a prioridade na separação de produtos na mesa compartilhada.
+Operador 2 terá que aguardar o operador 1 concluir a separação, para conseguir prosseguir e concluir a sua separação.
+Ao final do processo de picking, existe uma integração de retorno para o WMS informando que o picking foi concluído, e quais produtos e quantidades foram separados, onde o WCS disponibiliza as informações para o WMS realizar a expedição.
+
+---
+**Origem:** [I21.] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RS - Rev.3.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** 984292bd9e6167a2
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
+
+---
+**Origem:** [I21.131] 2022 — `I21.131 - ESPECIFICACAO DE SOFTWARE - REV4.docx`  
+**Heading:** Estações  
+**Score:** — (semantico) | **ID:** 090ab2dc0ebcf6ad
+
+Na estação existe um display que indica o número da caixa e a quantidade de posições picking que estão faltando.
+MFC também será disponibilizado caso haja a necessidade de realocação dos endereços de picking
+Ao todo são 12 estações, sendo:
+ 9 - Curva A
+ 2 - Curva B
+ 1 - Curva C
+
+---
+**Origem:** [I21.131] 2022 — `I21.131 - ESPECIFICACAO DE SOFTWARE - REV3 - SEM PTW.docx`  
+**Heading:** Estações  
+**Score:** — (semantico) | **ID:** 44695a787606102f
+
+Na estação existe um display que indica o número da caixa e a quantidade de posições picking que estão faltando.
+MFC também será disponibilizado caso haja a necessidade de realocação dos endereços de picking
+Ao todo são 12 estações, sendo:
+ 9 - Curva A
+ 2 - Curva B
+ 1 - Curva C
+
+---
+**Origem:** [I21.131] 2022 — `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV11.docx`  
+**Heading:** Estações  
+**Score:** — (semantico) | **ID:** b6e95047cdced28c
+
+Na estação existe um display que indica o número da caixa e a quantidade de posições picking que estão faltando.
+MFC também será disponibilizado caso haja a necessidade de realocação dos endereços de picking
+Ao todo são 13 estações, sendo:
+ 9 - Curva A
+ 3 - Curva B
+ 1 - Curva C
+
+---
+**Origem:** [I21.131] 2022 — `I21.131 - ESPECIFICACAO DE SOFTWARE E HARDWARE - REV3 - SEM PTW.docx`  
+**Heading:** Estações  
+**Score:** — (semantico) | **ID:** 6786189dba34c661
+
+Na estação existe um display que indica o número da caixa e a quantidade de posições picking que estão faltando.
+MFC também será disponibilizado caso haja a necessidade de realocação dos endereços de picking
+Ao todo são 12 estações, sendo:
+ 9 - Curva A
+ 2 - Curva B
+ 1 - Curva C
+
+---
+**Origem:** [I21.177] 2022 — `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx`  
+**Heading:** [SEM TÍTULO]  
+**Score:** — (semantico) | **ID:** 98a0715838900d47
+
+DESCRITIVO
+OPERAÇÃO
+PROJETO
+PTL 2.0 DG   RIO DE JANEIRO/RJ
 CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA.
 MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO.
 Por que Invent?
@@ -841,16 +1088,33 @@ Somos especialistas e inovadores
 Antecipamos tendências e a colocamos em prática
 Oferecemos soluções eficientes
 Contribuímos para aumentar a competitividade dos nossos clientes
-Nos preocupamos com a imagem e os
-resultados de nossos clientes
-DESCRITIVO OPERACIONAL
-PROJETO PTL 2.0 DG – RIO GRANDE DO SUL/RS
-I22.167 – REV.1 – 25/julho/2022
+Nos preocupamos com a imagem e os resultados de nossos clientes
 
 ---
 **Origem:** [I21.177] 2022 — `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx`  
+**Heading:** Mesa Compartilhada  
+**Score:** — (semantico) | **ID:** 7191b77017394ca3
+
+Na estação de picking, existe uma mesa compartilhada, onde os operadores utilizam a mesma mesa/posto de picking.
+Visando maior flexibilidade, será disponibilizada a configuração do equipamento PTL para que haja a possibilidade de compartilhamento de mesas, este compartilhamento visa aumento da capacidade de armazenagem de SKU’s para atendimento de demandas especificas.
+O equipamento deverá dispor de funcionalidade de separação como estação única ou compartilhada com as estações vizinhas.
+Como o formato é compartilhado, a estação de trabalho deverá ter a capacidade de acender diferentes cores de forma aos pickers das mesas vizinhas identificarem que o produto destacado na mesa central corresponde a um item dentro do pedido em separação, e por caixa e sub-caixa.
+Nesse caso, quando o operador 1 realizar a leitura da etiqueta, ele terá a prioridade na separação de produtos na mesa compartilhada.
+Operador 2 terá que aguardar o operador 1 concluir a separação, para conseguir prosseguir e concluir a sua separação.
+Ao final do processo de picking, existe uma integração de retorno para o WMS informando que o picking foi concluído, e quais produtos e quantidades foram separados, onde o WCS disponibiliza as informações para o WMS realizar a expedição.
+
+---
+**Origem:** [I21.177] 2022 — `- Layout Novo - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** d2f5a0a5e4403b20
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
+
+---
+**Origem:** [I21.177] 2022 — `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx`  
 **Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 7b7043eab9dccd79
 
 DESCRITIVO
 OPERAÇÃO
@@ -867,26 +1131,50 @@ Nos preocupamos com a imagem e os resultados de nossos clientes
 
 ---
 **Origem:** [I21.177] 2022 — `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx`  
-**Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Mesa Compartilhada  
+**Score:** — (semantico) | **ID:** 2ac7c0f8cf8a5af1
 
-DESCRITIVO
-OPERAÇÃO
-PROJETO
-PTL 2.0 DG   RIO DE JANEIRO/RJ
-CONFIDENCIAL © 2022, INVENT COMÉRCIO E SERVIÇOS EMPRESARIAIS LTDA.
-MATERIAL CONFIDENCIAL, PROIBIDA SUA REPRODUÇÃO E DIVULGAÇÃO À TERCEIROS SEM PRÉVIA AUTORIZAÇÃO.
-Por que Invent?
-Somos especialistas e inovadores
-Antecipamos tendências e a colocamos em prática
-Oferecemos soluções eficientes
-Contribuímos para aumentar a competitividade dos nossos clientes
-Nos preocupamos com a imagem e os resultados de nossos clientes
+Na estação de picking, existe uma mesa compartilhada, onde os operadores utilizam a mesma mesa/posto de picking.
+Visando maior flexibilidade, será disponibilizada a configuração do equipamento PTL para que haja a possibilidade de compartilhamento de mesas, este compartilhamento visa aumento da capacidade de armazenagem de SKU’s para atendimento de demandas especificas.
+O equipamento deverá dispor de funcionalidade de separação como estação única ou compartilhada com as estações vizinhas.
+Como o formato é compartilhado, a estação de trabalho deverá ter a capacidade de acender diferentes cores de forma aos pickers das mesas vizinhas identificarem que o produto destacado na mesa central corresponde a um item dentro do pedido em separação, e por caixa e sub-caixa.
+Nesse caso, quando o operador 1 realizar a leitura da etiqueta, ele terá a prioridade na separação de produtos na mesa compartilhada.
+Operador 2 terá que aguardar o operador 1 concluir a separação, para conseguir prosseguir e concluir a sua separação.
+Ao final do processo de picking, existe uma integração de retorno para o WMS informando que o picking foi concluído, e quais produtos e quantidades foram separados, onde o WCS disponibiliza as informações para o WMS realizar a expedição.
+
+---
+**Origem:** [I21.177] 2022 — `NOVO LAYOUT - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.5.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** 81aa59392003e14f
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
+
+---
+**Origem:** [I21.177] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx`  
+**Heading:** Mesa Compartilhada  
+**Score:** — (semantico) | **ID:** 45a7534e07273fda
+
+Na estação de picking, existe uma mesa compartilhada, onde os operadores utilizam a mesma mesa/posto de picking.
+Visando maior flexibilidade, será disponibilizada a configuração do equipamento PTL para que haja a possibilidade de compartilhamento de mesas, este compartilhamento visa aumento da capacidade de armazenagem de SKU’s para atendimento de demandas especificas.
+O equipamento deverá dispor de funcionalidade de separação como estação única ou compartilhada com as estações vizinhas.
+Como o formato é compartilhado, a estação de trabalho deverá ter a capacidade de acender diferentes cores de forma aos pickers das mesas vizinhas identificarem que o produto destacado na mesa central corresponde a um item dentro do pedido em separação, e por caixa e sub-caixa.
+Nesse caso, quando o operador 1 realizar a leitura da etiqueta, ele terá a prioridade na separação de produtos na mesa compartilhada.
+Operador 2 terá que aguardar o operador 1 concluir a separação, para conseguir prosseguir e concluir a sua separação.
+Ao final do processo de picking, existe uma integração de retorno para o WMS informando que o picking foi concluído, e quais produtos e quantidades foram separados, onde o WCS disponibiliza as informações para o WMS realizar a expedição.
+
+---
+**Origem:** [I21.177] 2022 — `ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-RJ - Rev.8.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** 005cb83f914fecc2
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
 
 ---
 **Origem:** [I21.177] 2022 — `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx`  
 **Heading:** [SEM TÍTULO]  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 0302562dbb4c0cde
 
 DESCRITIVO
 OPERAÇÃO
@@ -904,120 +1192,112 @@ Nos preocupamos com a imagem e os resultados de nossos clientes
 
 ---
 **Origem:** [I21.177] 2022 — `- Layout Novo - I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - SP Rev.5.docx`  
-**Heading:** Pedido Unitiza  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Pedido PTL  
+**Score:** — (semantico) | **ID:** c1fa1ce00d8c7db1
 
-Quando o pedido é tipo Unitiza, WMS envia a informação no código de barras. O pedido é iniciado pela POLLUX, nesse pedido existirão mais de 1 caixa no mesmo pedido, e não terá produtos a serem separados na estação de PTL esse tipo de pedido será desviado para a estação de Unitiza, para que o operador realize o processo de unitização das caixas desse pedido. Operador recebe o primeiro volume, e ao realizar a leitura do código de barras, na tela do WCS, visualiza a informação que esse pedido se trata de pedido unitiza e que existem mais caixas para que seja unitizado e concluído, imprime a etiqueta de expedição, recebe a próxima caixa que fará parte do mesmo pedido, então o operador unifica as caixas em um envelope de papelão, fixa a etiqueta de expedição impressa, fecha o envelope. E solta novamente na linha para que a caixa siga para o sorter.
+No pedido PTL, operador visualiza na tela do order start quantos pedidos e tamanhos de caixas deverá soltar na linha de picking, leitor fixo ao realizar a leitura do tamanho de caixa o sistema WCS irá fazer a associação dessa caixa com o primeiro pedido a ser expedido por aquele tamanho, realiza a impressão da etiqueta do pedido associado através de uma impressora do cliente, fixa essa etiqueta na caixa e a caixa segue para o posto de PTL, caso tenha produtos a serem separados nesse posto, as posições de picking irão acender com suas respectivas quantidades.
+Em cada posto de picking haverá um scanner automático para leitura dos códigos de barras das caixas. Caso o volume lido possuir picking a ser feito no posto, o sistema INVENT inicia o processo acendendo os LEDS nas posições e quantidades de itens daquele posto de picking.
+Após passar por todos os postos PTL da estação, caixa seguira para a estação de packing, onde ela é fechada manualmente e induzida novamente na esteira, seguindo para o sorter.
+
+---
+**Origem:** [I21.177] 2022 — `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - FASE.1 VER.1.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** 4a045fd879f3b7f5
+
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
 
 ---
 **Origem:** [I21.177] 2022 — `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx`  
-**Heading:** Pedido Unitiza  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Pedido PTL  
+**Score:** — (semantico) | **ID:** 3f36d1345f151dc2
 
-Quando o pedido é tipo Unitiza, WMS envia a informação no código de barras. O pedido é iniciado pela POLLUX, nesse pedido existirão mais de 1 caixa no mesmo pedido, e não terá produtos a serem separados na estação de PTL esse tipo de pedido será desviado para a estação PTL para que o operador realize o processo de unitização das caixas desse pedido. Operador recebe o primeiro volume, e ao realizar a leitura do código de barras, na tela do WCS, visualiza a informação que esse pedido se trata de pedido unitiza e que existem mais caixas para que seja unitizado e concluído, imprime a etiqueta de expedição, recebe a próxima caixa que fará parte do mesmo pedido, então o operador unifica as caixas em um envelope de papelão, fixa a etiqueta de expedição impressa, fecha o envelope. E solta novamente na linha para que a caixa siga para o sorter.
+No pedido PTL, operador visualiza na tela do order start quantos pedidos e tamanhos de caixas deverá soltar na linha de picking, leitor fixo ao realizar a leitura do tamanho de caixa o sistema WCS irá fazer a associação dessa caixa com o primeiro pedido a ser expedido por aquele tamanho, realiza a impressão da etiqueta do pedido associado através de uma impressora do cliente, fixa essa etiqueta na caixa e a caixa segue para o posto de PTL, caso tenha produtos a serem separados nesse posto, as posições de picking irão acender com suas respectivas quantidades.
+Em cada posto de picking haverá um scanner automático para leitura dos códigos de barras das caixas. Caso o volume lido possuir picking a ser feito no posto, o sistema INVENT inicia o processo acendendo os LEDS nas posições e quantidades de itens daquele posto de picking.
+Após passar por todos os postos PTL da estação, caixa seguira para a estação de packing, onde ela é fechada manualmente e induzida novamente na esteira, seguindo para o sorter.
 
 ---
-**Origem:** [I21.177] 2022 — `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.4.docx`  
-**Heading:** Pedido Unitiza  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I21.177] 2022 — `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.1 - Fase 1.docx`  
+**Heading:** Rota x endereço  
+**Score:** — (semantico) | **ID:** f8e9a96644f072bc
 
-Quando o pedido é tipo Unitiza, WMS envia a informação no código de barras. O pedido é iniciado pela POLLUX, nesse pedido existirão mais de 1 caixa no mesmo pedido, e não terá produtos a serem separados na estação de PTL esse tipo de pedido será desviado para a estação PTL para que o operador realize o processo de unitização das caixas desse pedido. Operador recebe o primeiro volume, e ao realizar a leitura do código de barras, na tela do WCS, visualiza a informação que esse pedido se trata de pedido unitiza e que existem mais caixas para que seja unitizado e concluído, imprime a etiqueta de expedição, recebe a próxima caixa que fará parte do mesmo pedido, então o operador unifica as caixas em um envelope de papelão, fixa a etiqueta de expedição impressa, fecha o envelope. E solta novamente na linha para que a caixa siga para o sorter.
+Para relacionar uma rota com um endereço de consolidação, a tela de rota x endereço é disponibilizada pelo MFC. Assim, para cada rota, o usuário deverá especificar um posto de trabalho e um endereço.
+A Figura mostra um exemplo dessa tela onde as rotas BGZ_AER e RIO_AER foram alocadas em dois endereços do posto 1.
 
 ---
 **Origem:** [I21.177] 2022 — `I21.177 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev.5.docx`  
-**Heading:** Pedido Unitiza  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Pedido PTL  
+**Score:** — (semantico) | **ID:** 222a1ea532c5bfa4
 
-Quando o pedido é tipo Unitiza, WMS envia a informação no código de barras. O pedido é iniciado pela POLLUX, nesse pedido existirão mais de 1 caixa no mesmo pedido, e não terá produtos a serem separados na estação de PTL esse tipo de pedido será desviado para a estação de Unitiza, para que o operador realize o processo de unitização das caixas desse pedido. Operador recebe o primeiro volume, e ao realizar a leitura do código de barras, na tela do WCS, visualiza a informação que esse pedido se trata de pedido unitiza e que existem mais caixas para que seja unitizado e concluído, imprime a etiqueta de expedição, recebe a próxima caixa que fará parte do mesmo pedido, então o operador unifica as caixas em um envelope de papelão, fixa a etiqueta de expedição impressa, fecha o envelope. E solta novamente na linha para que a caixa siga para o sorter.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
+No pedido PTL, operador visualiza na tela do order start quantos pedidos e tamanhos de caixas deverá soltar na linha de picking, leitor fixo ao realizar a leitura do tamanho de caixa o sistema WCS irá fazer a associação dessa caixa com o primeiro pedido a ser expedido por aquele tamanho, realiza a impressão da etiqueta do pedido associado através de uma impressora do cliente, fixa essa etiqueta na caixa e a caixa segue para o posto de PTL, caso tenha produtos a serem separados nesse posto, as posições de picking irão acender com suas respectivas quantidades.
+Em cada posto de picking haverá um scanner automático para leitura dos códigos de barras das caixas. Caso o volume lido possuir picking a ser feito no posto, o sistema INVENT inicia o processo acendendo os LEDS nas posições e quantidades de itens daquele posto de picking.
+Após passar por todos os postos PTL da estação, caixa seguira para a estação de packing, onde ela é fechada manualmente e induzida novamente na esteira, seguindo para o sorter.
 
 ---
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.1.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE UNIF REV3.docx`  
+**Heading:** Separação PTL  
+**Score:** — (semantico) | **ID:** ee5037e9712a3ad9
 
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o led 1 será referente a rua 1 de PTL e o led 2 referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
+É considerado um pedido Separação PTL para Venus quando tivermos premades de 10 e/ou máquina de café. Desta forma o operador ao realizar a leitura da caixa recebe a informação do tipo de caixa para aquele pedido, realiza a leitura do QR Code do tamanho da caixa, onde o sistema irá vincular o tamanho da caixa com o pedido, realiza a impressão da etiqueta de expedição do pedido, fixa na nova caixa e solta para o posto de PTL, no posto PTL leitor fixo realiza a leitura da caixa de expedição e caso tenha produtos a serem separados nesse posto, as posições de picking irão acender com suas respectivas quantidades.
+Caso a caixa de expedição a ser induzida seja de tamanho diferente da sugestão, operador terá que selecionar manualmente na tela, uma opção(DE>PARA) de troca de caixa e informar o tamanho da caixa que será colocado para atender aquele pedido, operador deverá realizar esse processo de troca de caixa quando houver a necessidade, devido a falta fisica de caixas.
+Após passar por todos os postos da estação PTL, caixa seguira para a estação de packing, onde ela é fechada manualmente e induzida novamente na esteira, seguindo para o sorter.
+Para caixas Venus, serão incluídas proteções dentro das caixas, para evitar que os premades sejam danificados.
+O peso dessas proteções deverão ser cadastradas juntamente com a caixa, para que seja considerado no cubometro.
 
 ---
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.10.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE UNIF REV3.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** e4d3215638fc84fb
 
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led na cor verde, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levará até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-No caso de ter mais de uma caixa para o mesmo representante/pedido, as demais caixas devem estar no mesmo pallet, para que o transporte seja único.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o SAP o retorno com quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
+O pedido que houver produtos das posições cadastradas de Flow Rack e Picking Rack, serão iniciados no Picking Rack;
+Com o leitor de dedo (Ring Scan), operador realiza a leitura do QR Code da caixa, conforme sugestão de caixa por pedidos
+MFC realiza o vínculo com o primeiro pedido com o tamanho da caixa sugerido/lido
+MFC realiza a impressão da etiqueta de expedição do pedido
+MFC disponibiliza na tela informações do pedido para separação
+Operador se desloca até os endereços indicados pelo sistema
+Operador realiza a separação dos itens
+Operador confirma a separação dos itens na tela do Picking Rack
+Confirmação feita manual por item separado
+Ao confirmar separação do item, item terá o status alterado na tela
+Ao finalizar toda a separação do pedido, operador confirma a separação
+Ao confirmar a separação do pedido, pedido é ocultado da tela de Picking Rack
+Após realizar a separação dos produtos de Picking Rack, operador irá induzir manualmente a caixa no Order Start da PTL para finalização da separação do restante dos itens cadastrados nos Flow Racks PTL. No order start da PTL, inicia o processo de separação padrão de pedido PTL.
+
+---
+**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - UNIFICADO.docx`  
+**Heading:** Separação PTL  
+**Score:** — (semantico) | **ID:** 1d996ba2f9ed5a9c
+
+É considerado um pedido Separação PTL para Venus quando tivermos premades de 10 e/ou máquina de café. Desta forma o operador ao realizar a leitura da caixa recebe a informação do tipo de caixa para aquele pedido, realiza a leitura do QR Code do tamanho da caixa, onde o sistema irá vincular o tamanho da caixa com o pedido, realiza a impressão da etiqueta de expedição do pedido, fixa na nova caixa e solta para o posto de PTL, no posto PTL leitor fixo realiza a leitura da caixa de expedição e caso tenha produtos a serem separados nesse posto, as posições de picking irão acender com suas respectivas quantidades.
+Caso a caixa de expedição a ser induzida seja de tamanho diferente da sugestão, operador terá que selecionar manualmente na tela, uma opção(DE>PARA) de troca de caixa e informar o tamanho da caixa que será colocado para atender aquele pedido, operador deverá realizar esse processo de troca de caixa quando houver a necessidade, devido a falta fisica de caixas
+[Tela DE>PARA em desenvolvimento por Invent]
+Após passar por todos os postos da estação PTL, caixa seguira para a estação de packing, onde ela é fechada manualmente e induzida novamente na esteira, seguindo para o sorter.
+Para caixas Venus, serão incluídas proteções dentro das caixas, para evitar que os premades sejam danificados.
+O peso dessas proteções deverão ser cadastradas juntamente com a caixa, para que seja considerado no cubometro.
+
+---
+**Origem:** [I21.177] 2022 — `I22.150 - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - UNIFICADO.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** a7e1377f9cff9fa3
+
+O pedido que houver produtos das posições cadastradas de Flow Rack e Picking Rack, serão iniciados no Picking Rack;
+Operador realiza a leitura do QR Code da caixa, conforme sugestão de caixa por pedidos
+MFC realiza o vínculo com o primeiro pedido com o tamanho da caixa sugerido/lido
+MFC realiza a impressão da etiqueta de expedição do pedido
+MFC disponibiliza na tela informações do pedido para separação
+Operador se desloca até os endereços indicados pelo sistema
+Operador realiza a separação dos itens
+Operador confirma a separação dos itens na tela do Picking Rack
+Confirmação feita manual por item separado
+Ao confirmar separação do item, item terá o status alterado na tela
+Ao finalizar toda a separação do pedido, operador confirma a separação
+Ao confirmar a separação do pedido, pedido é ocultado da tela de Picking Rack
+Após realizar a separação dos produtos de Picking Rack, operador irá induzir manualmente a caixa no Order Start da PTL para finalização da separação do restante dos itens cadastrados nos Flow Racks PTL. No order start da PTL, inicia o processo de separação padrão de pedido PTL.
 
 ---
 **Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.11.docx`  
 **Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (nome-topico) | **ID:** 8dc4668df5662556
 
 O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
 Ao bipar essa caixa e acender o led na cor verde, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
@@ -1026,661 +1306,316 @@ Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de 
 Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
 No caso de ter mais de uma caixa para o mesmo representante/pedido, as demais caixas devem estar no mesmo pallet, para que o transporte seja único.
 Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o led 1 será referente a rua 1 de PTL e o led 2 referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o led 1 será referente a rua 1 de PTL e o led 2 referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.4.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.4.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o led 1 será referente a rua 1 de PTL e o led 2 referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.5.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o led 1 será referente a rua 1 de PTL e o led 2 referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.6.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-Exemplo de sugestão de json com os campos mínimos para separação.
-Obs.: Json utilizado como base de sugestão inicial de campos mínimos para separação, no json final, os campos não serão necessariamente os mesmos.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.7.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levar até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o sistema SAP o retorno com a confirmação de separação e quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.8.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.8.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led na cor verde, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levará até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o SAP o retorno com quais caixas estão alocadas no pallet.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.9.docx`  
-**Heading:** Aloca PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-MFC  WMS
-Após o pedido ser alocado em um dos PTL’s, sistema MFC irá disponibilizar as informações com a confirmação de todas as caixas alocadas no pallet. O WMS irá receber as informações via API.
-{
-"numero_identificador": "6542587",
-"usr_bica": "C000012344",
-"onda": "123564",
-"transportadora": "Nome da transportadora",
-"codigoTransportadora": "123456789",
-"caixas": [
-{
-"remessa": "123456784",
-"cliente": "32145 - Marcelo",
-"codProduto": "07891317465025",
-"quantidade": "9"
-},
-{
-"remessa": "123456786",
-"cliente": "14785 - Eduardo",
-"codProduto": "07891317465025",
-"quantidade": "14"
-},
-{
-"remessa": "123456785",
-"cliente": "25852 - Julio",
-"codProduto": "07891317465025",
-"quantidade": "5"
-},
-{
-"remessa": "123456782",
-"cliente": "36523 - Carlos",
-"codProduto": "07891317465025",
-"quantidade": "3"
-},
-{
-"remessa": "123456781",
-"cliente": "98563 - Felipe",
-"codProduto": "07891317465025",
-"quantidade": "24"
-},
-{
-"remessa": "123456780",
-"cliente": "02198 - Luis",
-"codProduto": "07891317465025",
-"quantidade": "13"
-}
-]
-}
-
----
-**Origem:** [I22.2241] 2022 — `I22.2241 -  PROJETO EURO - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.9.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led na cor verde, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levará até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-No caso de ter mais de uma caixa para o mesmo representante/pedido, as demais caixas devem estar no mesmo pallet, para que o transporte seja único.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Após o fechamento do pallet, o sistema MFC enviará para o SAP o retorno com quais caixas estão alocadas no pallet.
 Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
 
 ---
 **Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
 **Heading:** Put-to-light (PTL)  
-**Score:** 0.7 (embed-desempate) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 7bdd9deba06b1014
 
 As 06 (seis) saídas do sorter alocarão 04 (quatro) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
 
 ---
 **Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** 0e8ff8bf91b544c4
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** e60766786c57deb0
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
 **Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** bcd19e9005a630d4
+
+As 06 (seis) saídas do sorter alocarão 06 (seis) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** 3f8e30fbe6de5d97
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_3.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 33dfdb2f90468e41
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
 **Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** 85f8149903b36467
+
+As 06 (seis) saídas do sorter alocarão 06 (seis) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** 5c2f357c238c23ed
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_4.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 246c5d9ff5211e8a
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
 **Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** 6db8310a9fa13968
+
+As 06 (seis) saídas do sorter alocarão 06 (seis) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** 87dfeb432e172650
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_7.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 6a1f021ef53e999a
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
 **Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** 3584ad444cd85f96
+
+As 06 (seis) saídas do sorter alocarão 06 (seis) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** 384132d0f742a69e
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I22.402] 2022 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_8.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 32b17a37b061e32f
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
 **Origem:** [I22.128] 2023 — `Especificação Software BRF.docx`  
-**Heading:** Ocupação do armazém  
-**Score:** 87.5 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Gerenciamento de movimentos  
+**Score:** — (semantico) | **ID:** 1d2ac742a3d11989
 
-Essa funcionalidade permite ver o estado corrente de cada locação do armazém de forma gráfica, permitindo assim verificar quais posições estão ocupadas e o que está presente em cada locação.
-O botão “Bloquear” exibe a tela abaixo, permitindo inserir o motivo pelo qual deseja bloquear a posição.
-Nota: Os motivos deverão ser consultados na tela de log de transações do sistema. P motivo não será mostrado na tela de ocupação
-O botão “Detalhes” mostra os detalhes da ocupação de uma dada posição, poderão ser verificados ao selecionar a célula e clicar no botão “Detalhes”.
-Na tela que abrir, deve permitir bloquear ou desbloquear a locação, além de possibilitar a alteração para outros possíveis estados, na opção “Alterar Estado”.
-Assim como a função bloquear, ao ser acionada deve abrir a tela de solicitando o motivo.
-Ao clicar no botão “Alterar estado” deve abrir uma tela com os possíveis estados da localização serão exibidos na opção “Legenda”.
-As imagens com o símbolo “A bloquear” (ilustrado no ícone da imagem acima) indicam que as posições serão bloqueadas quando o pallet deixar a célula.
-Os possíveis estados bloqueados serão:
+É possivel visualizar e editar movimentos cadastrados no sistema, assim como criar novos, através da tela exibida na imagem abaixo.
+A partir da imagem abaixo pode-se criar um novo registro, selecionando a opção “Novo”, ou visualizar e editar detalhes do movimento, na opção “Detalhes”.
+A tela de criação de um novo registro é idêntica a imagem acima, com os campos em branco e com a opção “Excluir” desabilitada.
+
+---
+**Origem:** [I22.128] 2023 — `Especificação Software BRF.docx`  
+**Heading:** Gerenciamento de áreas  
+**Score:** — (semantico) | **ID:** b0e327b6f7602f31
+
+A divisão em áreas do armazém pode ser gerenciada pela tela na imagem abaixo.
+Nessa imagem acima, é possivel criar uma área ou visualizar e editar uma já existente.
+A criação de uma nova área exibe uma tela semelhante a imagem acima, porém com os campos em branco.
+
+---
+**Origem:** [I22.128] 2023 — `Especificação Software BRF.docx`  
+**Heading:** Módulo de contingência  
+**Score:** — (semantico) | **ID:** e37f61d35a897b24
+
+Essa funcionalidade, chamada a partir da imagem mostrada abaixo, permite atualizar a localização do pallet em contingência, seguindo as regras descritas a seguir.
+A opção “Entrada” permite atualizar a localização para “Entrada no sistema”, para pallets com localização:
+Indo para a entrada do transelevador
+Armazenado
+A opção “Saida” atualiza a localização do pallet seguindo as regras da tabela abaixo:
+Quando a localização for atualizada, o sistema irá atualizar o status de todos os itens de ordens de vendas (autorizados a serem entregues) associados ao pallet para “Entregue”.
+A opção “Cancelar” permite cancelar os itens de ordens de saída relacionadas com o pallet, além de atualizar a localização para “Cancelado”. Somente pallets com as seguintes localizações podem ser cancelados por essa opção:
+Armazenando
+Indo para a entrada do transelevador
+Rejeitado
+Nota: esta funcionalidade só é habilitada se o sistema estiver em modo de operação “Online”
 
 ---
 **Origem:** [I22.128] 2023 — `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx`  
-**Heading:** Ocupação do armazém  
-**Score:** 87.5 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Gerenciamento de movimentos  
+**Score:** — (semantico) | **ID:** 9d5f0bc426a5b385
 
-Essa funcionalidade permite ver o estado corrente de cada locação do armazém de forma gráfica, permitindo assim verificar quais posições estão ocupadas e o que está presente em cada locação.
-O botão “Bloquear” exibe a tela abaixo, permitindo inserir o motivo pelo qual deseja bloquear a posição.
-Nota: Os motivos deverão ser consultados na tela de log de transações do sistema. P motivo não será mostrado na tela de ocupação
-O botão “Detalhes” mostra os detalhes da ocupação de uma dada posição, poderão ser verificados ao selecionar a célula e clicar no botão “Detalhes”.
-Na tela que abrir, deve permitir bloquear ou desbloquear a locação, além de possibilitar a alteração para outros possíveis estados, na opção “Alterar Estado”.
-Assim como a função bloquear, ao ser acionada deve abrir a tela de solicitando o motivo.
-Ao clicar no botão “Alterar estado” deve abrir uma tela com os possíveis estados da localização serão exibidos na opção “Legenda”.
-As imagens com o símbolo “A bloquear” (ilustrado no ícone da imagem acima) indicam que as posições serão bloqueadas quando o pallet deixar a célula.
-Os possíveis estados bloqueados serão:
+É possivel visualizar e editar movimentos cadastrados no sistema, assim como criar novos, através da tela exibida na imagem abaixo.
+A partir da imagem abaixo pode-se criar um novo registro, selecionando a opção “Novo”, ou visualizar e editar detalhes do movimento, na opção “Detalhes”.
+A tela de criação de um novo registro é idêntica a imagem acima, com os campos em branco e com a opção “Excluir” desabilitada.
 
 ---
-**Origem:** [I22.2250] 2023 — `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.01.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I22.128] 2023 — `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx`  
+**Heading:** Gerenciamento de áreas  
+**Score:** — (semantico) | **ID:** d40267fcd5b30b2e
 
-O operador irá pegar a caixa da rampa e bipar a etiqueta com scanner fixo da rampa, na rampa haverá 2 leds onde o 1º led será referente a rua 1 de PTL e o 2º led referente a rua 2 de PTL.
-Ao bipar essa caixa e acender o led na cor verde, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
-Ao chegar no limite do pallet outro operador irá retirar esse pallet e levará até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
-Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
-No caso de ter mais de uma caixa para o mesmo representante/pedido, as demais caixas devem estar no mesmo pallet, para que o transporte seja único.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
+A divisão em áreas do armazém pode ser gerenciada pela tela na imagem abaixo.
+Nessa imagem acima, é possivel criar uma área ou visualizar e editar uma já existente.
+A criação de uma nova área exibe uma tela semelhante a imagem acima, porém com os campos em branco.
 
 ---
-**Origem:** [I22.2250] 2023 — `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.2.docx`  
-**Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I22.128] 2023 — `PROJETO BRF - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE.docx`  
+**Heading:** Módulo de contingência  
+**Score:** — (semantico) | **ID:** 90f4a90513fd64ba
 
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo VELOX) que será a etiqueta de pallet.
-Serão 25 posições de PTL contendo 1 led com botão para cada posição.
-Após a caixa ser desviada, o operador deve ler o código de barras e, nesse momento, o LED correspondente à transportadora/loja deve acender, indicando o local (pallet) em que a caixa deve ser alocada. Após alocar a caixa, o operador deve pressionar o botão (LED) para apagá-lo e confirmar que a caixa está nesse palete.
-Se um volume diferente daquele previsto para a posição do PTL for lido, o LED acenderá em vermelho, indicando que o volume não corresponde àquela saída. Nesse caso, o operador deve mover manualmente a caixa para a estação de rejeito para tratamento.
-Após o operador realizar o processo de fechamento do pallet, realizando a leitura da etiqueta de fechamento de pallet, o sistema Velox enviará por meio da integração (Aloca PTL), as informações das caixas alocadas no pallet.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-Reabertura de pallet
-O sistema Velox deverá permitir a reabertura de pallet, para casos de fechamento indevido.
+Essa funcionalidade, chamada a partir da imagem mostrada abaixo, permite atualizar a localização do pallet em contingência, seguindo as regras descritas a seguir.
+A opção “Entrada” permite atualizar a localização para “Entrada no sistema”, para pallets com localização:
+Indo para a entrada do transelevador
+Armazenado
+A opção “Saida” atualiza a localização do pallet seguindo as regras da tabela abaixo:
+Quando a localização for atualizada, o sistema irá atualizar o status de todos os itens de ordens de vendas (autorizados a serem entregues) associados ao pallet para “Entregue”.
+A opção “Cancelar” permite cancelar os itens de ordens de saída relacionadas com o pallet, além de atualizar a localização para “Cancelado”. Somente pallets com as seguintes localizações podem ser cancelados por essa opção:
+Armazenando
+Indo para a entrada do transelevador
+Rejeitado
+Nota: esta funcionalidade só é habilitada se o sistema estiver em modo de operação “Online”
+
+---
+**Origem:** [I22.1732] 2023 — `I22.1732 PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE REV_1.docx`  
+**Heading:** Put To Light  
+**Score:** — (nome-topico) | **ID:** 5f9d36935873e843
+
+Para o processo de Put to Light serão destinados 28 posições para a expedição dos produtos após a conferência e Packing que são divididas em duas zonas separadas: Transportadora Jamef com 18 posições e as demais transportadoras com 10 posições.
+Com as informações enviadas nas integrações, o sistema realizara a triagem das caixas que serão expedidas pela transportadora Jamef (lado direita) e para as demais transportadoras (lado esquerdo). É obrigatório que os operadores abram as posições para que o sistema permita alocar as caixas de acordo com sua rota.
+Para realizar a abertura de uma posição será necessário que o operador realize a leitura de uma etiqueta identificadora da posição, etiqueta do pallet e código de identificação do operador. Será aceso o LED na cor verde para informar o sucesso na abertura da posição ou em vermelho em caso de erro na sequência da leitura das etiquetas. Operador deve pressionar o Led para confirmar a abertura da posição.
+Independente da transportadora será um pedido por posição e sempre que for alocado o último volume do pedido, acenderá o LED na cor azul para informar ao operador que aquele pedido finalizou e ficará disponível para o próximo pedido da fila. Operador deve pressionar o Led para o fechamento da posição.
+Em casos que houver a necessidade de fechar um pallet manulmente, basta o operador realizar a leitura de uma etiqueta padrão daquela posição com o comando de fechar o pallet e o operador poderá retirar a carga. Lembrando que o operador deve realizar novamente o processo de abertura para prosseguir alocando outras caixas do mesmo pedido que estarão no Order Start ou realizando os processos da esteira.
+
+---
+**Origem:** [I22.1732] 2023 — `- ESPECIFICACAO DE SOFTWARE - PROJETO FLOWER .docx`  
+**Heading:** Agrupamento por Subárea  
+**Score:** — (semantico) | **ID:** 7200291bd744199e
+
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, e sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+Essa mudança garante que o agrupamento dos volumes e pallets siga a lógica operacional de transporte do cliente, refletindo com precisão a divisão logística estabelecida no WMS.
+Regras Operacionais:
+Quando o campo transportadora da integração de Trabalhos – Work vier com valor diferente de “Própria”, o WCS deve utilizar o campo subArea como agrupador logístico principal.
+O agrupamento dos pallets passará a ocorrer por subárea, e não mais por romaneio, permitindo a separação física e lógica dos volumes conforme o destino final.
+Cada subárea será considerada uma entidade independente de agrupamento, possuindo suas próprias posições de PTL.
+O WCS deve reservar uma posição de PTL para cada subárea ativa alocada à rampa correspondente no sorter, assegurando que os volumes sejam direcionados e alocados corretamente.
+O fechamento de cada pallet ocorrerá de forma individual por subárea, respeitando as mesmas regras de cubagem e peso configuradas para o processo de PTL.
+
+---
+**Origem:** [I22.1732] 2023 — `- ESPECIFICACAO DE SOFTWARE - PROJETO FLOWER .docx`  
+**Heading:** Processo de Picking Exceção  
+**Score:** — (semantico) | **ID:** 713717c73db22a6a
+
+O Picking Exceção será utilizado para itens que não se enquadram nos parâmetros da automação, mas que devem ser alocados manualmente no processo de PTL (Put to Light). O fluxo operacional será semelhante ao processo de Full Case, mas com a diferença de que os itens não farão parte da automação e serão direcionados manualmente para a alocação no PTL.
+Fluxo Operacional de Picking Exceção:
+O operador realiza o login no WCS utilizando o coletor Android.
+O operador seleciona a tela de Picking Exceção, onde escolhe o posto de impressão em que está fisicamente para retirar as etiquetas.
+Após selecionar o posto de impressão, o operador escolhe a rua da qual ele irá fazer o Picking Exceção. O sistema exibirá a lista de tarefas de separação de acordo com a rua selecionada e os volumes disponíveis.
+As tarefas de Picking Exceção serão segregadas por rampa do Sorter, permitindo que o operador saiba para qual rampa deve levar os itens após a coleta.
+O operador seleciona quantas tarefas deseja iniciar.
+O WCS imprime a quantidade selecionada, seguindo a lógica de impressão do processo de Full Case.
+O coletor é direcionado para a tela de coleta, onde o operador deve se deslocar até o endereço especificado no coletor.
+O operador realiza a leitura do endereço para iniciar a coleta do item.
+O operador realiza a leitura da etiqueta impressa e depois realiza a leitura do código do item, colocando o item no carrinho.
+O operador se desloca para o próximo endereço e repete o processo até concluir todas as coletas.
+Alocação no PTL:
+Após finalizar todas as coletas, o WCS informa em qual rampa do sorter os itens coletados devem ser alocados.
+Ele deixará o os volumes a disposição do operador de PTL responsável a rampa onde ele fará o processo de PTL
+Cada volume será associado à sua respectiva posição de PTL, e o operador deverá alocar os itens manualmente, confirmando a alocação no PTL.
+Esse processo de Picking Exceção garante que itens que não se enquadram no processo automatizado sejam tratados manualmente de forma eficiente e organizada, mantendo a rastreabilidade e a precisão durante a separação dos volumes e a alocação nas posições de PTL.
+
+---
+**Origem:** [I22.1732] 2023 — `- ESPECIFICACAO DE SOFTWARE - PROJETO FLOWER .docx`  
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** bf922a9f1925fc96
+
+O sistema WCS realiza a abertura automática das posições PTL no momento em que os romaneios são iniciados na tela de romaneios, o WCS irá distribuir os romaneios para as posições de ptl de forma dinâmica priorizando manter um romaneio em uma única rampa sempre que for possível. 
+
+Para iniciar a operação do PTL, o operador da rampa deve realizar login no sistema, realizando a leitura do código de usuário, possibilitando o mapeamento e a alocação correta dos volumes.
+Ao receber uma caixa na rampa, o operador realiza a leitura do QR code da etiqueta do volume. Em seguida, o display da posição PTL correspondente acende, indicando o local (posição do pallet) onde o volume deve ser alocado. O operador aloca o volume na posição indicada e confirma o posicionamento pressionando o botão do display, encerrando a tarefa daquele volume.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza essas informações no sistema. Após a alocação e confirmação no display, o operador retorna à rampa para processar o próximo volume.
+Cada rampa do sorter conta com 12 posições de PTL, totalizando 96 posições no total. Cada posição é equipada com um LED que fará a sinalização visual do local correto para alocação do volume.
+A cubagem do pallet será realizada pelo WCS previamente, através do cadastro de parâmetros. O fechamento do PTL poderá ocorrer por peso ou cubagem atingida, ou ainda pela totalidade do pedido. O operador poderá realizar o fechamento do pallet manualmente, caso julgue necessário. No entanto, o WCS não permitirá o fechamento do pallet quando ainda houver volumes pendentes, conforme a quantidade parametrizada, garantindo que não seja aberto um novo pallet para a alocação de poucos volumes.
+Após o fechamento do pallet é colado uma etiqueta pode ser impressa uma etiqueta na rampa do sorter para que o operador identifique o pallet e confirme o fechamento, tornando a posição disponível novamente nesse momento é enviado a integração de expedição informando o conteúdo do pallet para que o wms siga com o faturamento. O WCS reserva o lugar de cada volume nos pallets antes mesmo do volume chegar na rampa, sendo possível assim colocar os volumes no pallet respectivo respeitando a sequência de entrega.
+
+Tratamento de Volumes com Itens Perigosos
+Para volumes que contenham itens classificados como perigosos, o WCS deve aplicar uma regra específica de manuseio e agrupamento. Esses volumes não podem ser misturados aos demais e deverão ser agrupados em um pallet exclusivo, segregado dos pallets comuns.
+Além disso, o sistema deve garantir que esse pallet com itens perigosos seja identificado de forma distinta e programado para ser o último a ser carregado
+
+PTL Exclusivo para Produtos Específicos
+Será incluído um campo no cadastro de produtos para identificar quais itens exigem PTL exclusivo durante o processo de alocação. Quando um produto for marcado com essa flag, o sistema WCS irá automaticamente reservar uma posição de PTL exclusiva para ele, garantindo que os volumes contendo esses itens sejam alocados de forma segregada. Este pallet deve ser programado para ser o penúltimo a ser carregado.
+Essa configuração será aplicada a todos os produtos pertencentes ao mesmo romaneio, desde que esses produtos tenham a flag de PTL exclusivo ativada no cadastro. Ao receber um pedido contendo produtos com essa característica, o sistema realizará a alocação de forma a garantir que todos os volumes relacionados a esses itens sejam direcionados para as posições de PTL previamente reservadas, sem misturá-los com outros volumes no processo de alocação.
+Agrupamento por Subárea (Transportadoras Diferentes de “Própria”)
+Para pedidos cuja transportadora seja diferente de “Própria”, o agrupamento dos pallets no PTL não será realizado com base no romaneio, mas sim na subárea informada na integração de Trabalhos – Work (item 6.4).
+O campo subArea enviado na integração será utilizado pelo WCS como agrupador logístico principal, permitindo que os volumes sejam separados fisicamente por destino final, para transportadoras parceiras.
+Regras operacionais:
+Quando transportadora ≠ “Própria”, o WCS deve agrupar os volumes e pallets por subárea, ignorando o agrupamento por romaneio.
+Cada subárea será considerada uma entidade independente de agrupamento, possuindo sua própria posição de PTL na rampa correspondente.
+O fechamento dos pallets ocorrerá de forma individual por subárea, seguindo as mesmas regras de cubagem e peso.
+O sistema deve permitir que múltiplas subáreas coexistam em uma mesma rampa, desde que cada uma possua posição reservada exclusiva.
+Exemplo:
+Se um romaneio contiver volumes destinados às subáreas “Porto Alegre”, “Canoas” e “Esteio”, o WCS criará três agrupamentos distintos no PTL, um para cada subárea, alocando os volumes em posições exclusivas de acordo com o destino logístico.
+Essa regra assegura rastreabilidade por destino, e atende da melhor forma o trabalho das transportadoras parceiras, auxiliando na segregação dos volumes que hoje é feita manualmente.
+
+---
+**Origem:** [I22.1732] 2023 — `- ESPECIFICACAO DE SOFTWARE - PROJETO FLOWER .docx`  
+**Heading:** PTL, e Pallets Termolábeis  
+**Score:** — (semantico) | **ID:** fa98f2486e48a2cb
+
+Para os pallets gerados nos processos de PTL e Picking Termolábil, será utilizado o seguinte layout de impressão:
+
+---
+**Origem:** [I22.1732] 2023 — `I22.1732 PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE REV_1-meninos.docx`  
+**Heading:** Put To Light  
+**Score:** — (nome-topico) | **ID:** 32223a4c466e7e29
+
+Para o processo de Put to Light serão destinados 28 posições para a expedição dos produtos após a conferência e Packing que são divididas em duas zonas separadas: Transportadora Jamef com 18 posições e as demais transportadoras com 10 posições.
+Com as informações enviadas nas integrações, o sistema realizara a triagem das caixas que serão expedidas pela transportadora Jamef (lado direita) e para as demais transportadoras (lado esquerdo). É obrigatório que os operadores abram as posições para que o sistema permita alocar as caixas de acordo com sua rota.
+Para realizar a abertura de uma posição será necessário que o operador realize a leitura de uma etiqueta identificadora da posição, etiqueta do pallet e código de identificação do operador. Será aceso o LED na cor verde para informar o sucesso na abertura da posição ou em vermelho em caso de erro na sequência da leitura das etiquetas. Operador deve pressionar o Led para confirmar a abertura da posição.
+Independente da transportadora será um pedido por posição e sempre que for alocado o último volume do pedido, acenderá o LED na cor azul para informar ao operador que aquele pedido finalizou e ficará disponível para o próximo pedido da fila. Operador deve pressionar o Led para o fechamento da posição.
+Em casos que houver a necessidade de fechar um pallet manulmente, basta o operador realizar a leitura de uma etiqueta padrão daquela posição com o comando de fechar o pallet e o operador poderá retirar a carga. Lembrando que o operador deve realizar novamente o processo de abertura para prosseguir alocando outras caixas do mesmo pedido que estarão no Order Start ou realizando os processos da esteira.
+
+---
+**Origem:** [I22.1732] 2023 — `I22.1732 PROJETO FLOWER - ESPECIFICAÇÃO HARDWARE REV_1-meninos1.docx`  
+**Heading:** Put To Light  
+**Score:** — (nome-topico) | **ID:** bd52a83b2b9bc4a5
+
+O sistema WCS realiza a abertura automática das posições de PTL no momento da recepção dos pedidos via integração. Com base nas informações recebidas, o WCS irá distribuir automaticamente os pedidos entre as posições de PTL, considerando a transportadora responsável por sua expedição.
+Serão destinadas 28 posições de PTL para a etapa de expedição após a conferência e o packing, sendo divididas em duas zonas físicas distintas:
+18 posições dedicadas à Transportadora Jamef (lado direito).
+10 posições destinadas às demais transportadoras (lado esquerdo).
+A triagem dos volumes entre as zonas será realizada automaticamente pelo WCS, conforme a transportadora informada na integração do pedido. Cada posição de PTL corresponde a um único pedido, garantindo rastreabilidade e controle no processo de expedição.
+Fluxo Operacional
+Abertura das Posições
+Assim que o pedido é integrado, o WCS abre automaticamente uma posição de PTL conforme a transportadora do pedido.
+O pedido permanece vinculado à posição até que todos os volumes daquele pedido sejam alocados e confirmados.
+Login do Operador
+Para iniciar o processo, o operador da zona realiza login no sistema, escaneando o seu código de identificação.
+Esse login permite o mapeamento correto das ações executadas por operador.
+Alocação dos Volumes
+Ao receber uma caixa na zona correspondente, o operador realiza a leitura do QR Code da etiqueta do volume.
+Imediatamente o display da posição PTL acende, indicando o local onde o volume deve ser alocado.
+O operador posiciona o volume e confirma a alocação pressionando o botão físico do display.
+Registro e Controle
+Cada confirmação é registrada pelo WCS, atualizando a quantidade conferida e vinculando o volume à
+Fechamento da Posição
+Quando o último volume do pedido for alocado e confirmado:
+O sistema encerra automaticamente o pedido naquela posição (fechamento normal).
+Alternativamente, o operador poderá realizar um fechamento manual, caso seja necessário (fechamento forçado).
+Após o fechamento, o operador deve ler uma etiqueta de identificação do pallet/expedição.
+A posição retorna imediatamente ao estado livre, sendo reaberta pelo WCS para um próximo pedido assim que um novo volume da zona for reconhecido.
 
 ---
 **Origem:** [I22.2250] 2023 — `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.3.docx`  
 **Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (nome-topico) | **ID:** c33d2a9f1c06ec48
 
 Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo VELOX) que será a etiqueta de pallet.
 Serão 25 posições de PTL contendo 1 led com botão para cada posição.
@@ -1694,7 +1629,7 @@ O sistema Velox deverá permitir a reabertura de pallet, para casos de fechament
 ---
 **Origem:** [I22.2250] 2023 — `I22.2250 -  PROJETO BIZ - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev.docx`  
 **Heading:** Put To Light  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (nome-topico) | **ID:** d805f81ce65fa7e9
 
 Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
 Após a caixa ser desviada, o operador deve ler o código de barras e, nesse momento, o LED correspondente à transportadora/loja deve acender, indicando o local (pallet) em que a caixa deve ser alocada. Após alocar a caixa, o operador deve pressionar o botão (LED) para apagá-lo e confirmar que a caixa está nesse palete.
@@ -1705,40 +1640,63 @@ O sistema Velox fará a cubagem do pallet, e o operador somente conseguirá fech
 Serão 25 posições de PTL contendo 1 led com botão para cada posição.
 
 ---
-**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx`  
+**Origem:** [I23.125] 2023 — `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** 93ea0e7a8e7e848d
+
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no inicio da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.125] 2023 — `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** 48abf91e85c814a6
+
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no início da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.125] 2023 — `I23.125 - PROJETO CRISTAL - P.ALEGRE MG - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** ef476c810cb57070
+
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no início da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.125] 2023 — `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_3.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** 3bf9ae157e6a291d
+
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no início da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.125] 2023 — `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_1.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** 826149a7edd42a90
+
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no início da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.125] 2023 — `I23.125 - PROJETO CRISTAL - ITAPIRA SP - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - Rev_2.docx`  
+**Heading:** Balanceamento (1 x 1)  
+**Score:** — (semantico) | **ID:** d78a84b53682d2fb
+
+O sistema Velox estará preparado, caso exista a necessidade de alocação de 1 (um) mesmo item cadastrado em estações diferente.
+Mesmo item cadastrado nas 5 (cinco) estações de separação:
+Velox fará o balanceamento cadenciando as caixas, realizando a separação de 1 (um) volume por posto, ou seja, se tivermos 3 (três) volumes solicitando a separação do mesmo item que está cadastrado nas 5 (cinco) estações, o Velox irá realizar a separação da primeira caixa na estação 5 (cinco) no final da linha, o segundo volume será separado na estação 4 (quatro), o terceiro volume será separado na estação 3 (três), o segundo volume será separado na estação 2 (dois) e o primeiro volume será separado na estação 1 (um) no início da linha, com isso a linha de separação segue com máxima fluidez.
+
+---
+**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx`  
 **Heading:** PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo VELOX) que será a etiqueta de pallet.
-Serão 32 posições de PTL contendo 1 led com botão para cada posição.
-Após a caixa ser desviada, o operador deve ler o código de barras e, nesse momento, o LED correspondente à transportadora/loja deve acender, indicando o local (pallet) em que a caixa deve ser alocada. Após alocar a caixa, o operador deve pressionar o botão (LED) para apagá-lo e confirmar que a caixa está nesse palete.
-Se um volume diferente daquele previsto para a posição do PTL for lido, o LED acenderá em vermelho, indicando que o volume não corresponde àquela saída. Nesse caso, o operador deve mover manualmente a caixa para a estação de rejeito para tratamento.
-Após o operador realizar o processo de fechamento do pallet, realizando a leitura da etiqueta de fechamento de pallet, o sistema Velox enviará por meio da integração (Aloca PTL), as informações das caixas alocadas no pallet.
-Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-
----
-**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx`  
-**Heading:** Abertura de PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para abrir a posição PTL no pallet, operado deve realizar uma rotina de abertura na seguinte sequência:
-1° Realiza a leitura do código de barras da posição PTL.
-2° Realiza a leitura do código de barras do crachá do operador que irá operar naquela saída.
-3° Realiza a leitura do código de barras da etiqueta do RG do pallet.
-Obs.: Etiqueta posição PTL ficará fixada na barra do PTL, próximo ao led. Etiqueta RG Pallet será sequencial e impressa conforme a operação.
-
----
-**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV1.docx`  
-**Heading:** Reset de abertura de PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Caso o operador ao realizar a rotina acima, faça o processo invertido o pallet não será aberto e ocasionara erro na rotina, com isso o operador poderá fazer a leitura de reset para reiniciar a rotina de abertura.
-Obs.: Etiqueta reset PTL ficará fixada na barra do PTL, próximo ao led.
-
----
-**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV2.docx`  
-**Heading:** PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (nome-topico) | **ID:** 4697e0d44ca7c979
 
 Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo VELOX) que será a etiqueta de pallet.
 Serão 32 posições de PTL contendo 1 led com botão para cada posição.
@@ -1749,364 +1707,469 @@ Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operad
 
 ---
 **Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx`  
-**Heading:** PTL  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Abertura de PTL  
+**Score:** — (semantico) | **ID:** ba5e5fee9568048e
 
-Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo VELOX) que será a etiqueta de pallet.
-Serão 32 posições de PTL contendo 1 led com botão para cada posição.
-Após a caixa ser desviada, o operador deve ler o código de barras e, nesse momento, o LED correspondente à transportadora/loja deve acender, indicando o local (pallet) em que a caixa deve ser alocada. Após alocar a caixa, o operador deve pressionar o botão (LED) para apagá-lo e confirmar que a caixa está nesse palete.
-Se um volume diferente daquele previsto para a posição do PTL for lido, o LED acenderá em vermelho, indicando que o volume não corresponde àquela saída. Nesse caso, o operador deve mover manualmente a caixa para a estação de rejeito para tratamento.
-Após o operador realizar o processo de fechamento do pallet, realizando a leitura da etiqueta de fechamento de pallet, o sistema Velox enviará por meio da integração (Aloca PTL), as informações das caixas alocadas no pallet.
+Para abrir a posição PTL no pallet, operado deve realizar uma rotina de abertura na seguinte sequência:
+1° Realiza a leitura do código de barras da posição PTL.
+Código sequencial sendo posição 1 (um) código de barras "AP0001", posição 2 (dois) código de barras "AP0002" e assim por diante.
+Exemplo de etiqueta, fixada próximo ao botão da posição PTL, 1 (uma) etiqueta por posição PTL:
+2° Realiza a leitura do código de barras do crachá do operador que irá operar naquela saída.
+Exemplo de etiqueta, fixada no crachá do operador:
+Responsabilidade cliente.
+3° Realiza a leitura do código de barras da etiqueta do RG do pallet.
+Exemplo de etiqueta sequencial, fixada no próprio pallet.
+Obs.: Etiqueta posição PTL ficará fixada na barra do PTL, 1 (uma) etiqueta em cada posição com seu respectivo número, próximo ao botão. Etiqueta RG Pallet será sequencial e impressa conforme a operação.
+
+---
+**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx`  
+**Heading:** Reset de abertura de PTL  
+**Score:** — (semantico) | **ID:** 37456c749991e43f
+
+Caso o operador ao realizar a rotina acima, faça o processo invertido o pallet não será aberto e ocasionara erro na rotina, com isso o operador poderá fazer a leitura de reset para reiniciar a rotina de abertura.
+Código sequencial sendo posição 1 (um) código de barras "RP0001", posição 2 (dois) código de barras "RP0002" e assim por diante.
+Exemplo de etiqueta, fixada próximo ao botão da posição PTL, 1 (uma) etiqueta por posição PTL:
+Obs.: Etiqueta reset PTL ficará fixada na barra do PTL, próximo ao botão.
+
+---
+**Origem:** [I23.1602] 2023 — `I23-1602 - PROJETO PETER - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE - REV3.docx`  
+**Heading:** Fechamento de PTL  
+**Score:** — (semantico) | **ID:** d5e3ae7d28b4df25
+
+Quando o operado verificar fisicamente o tamanho do pallet e entender que o mesmo poderá ser fechado deverá realizar a leitura de fechamento de pallet.
+Código sequencial sendo posição 1 (um) código de barras "FP0001", posição 2 (dois) código de barras "FP0002" e assim por diante.
+Exemplo de etiqueta, fixada próximo ao botão da posição PTL, 1 (uma) etiqueta por posição PTL:
+Operador poderá realizar o fechamento do pallet a qualquer momento.
+Sistema Velox não controla a cubagem de pallet.
+Obs.: Etiqueta fechar PTL ficará fixada na barra do PTL, próximo ao botão.
+
+---
+**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx`  
+**Heading:** Especificação  
+**Score:** — (semantico) | **ID:** 14271058f4b4950b
+
+Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
+A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
+
+---
+**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx`  
+**Heading:** Put To Light  
+**Score:** — (nome-topico) | **ID:** f4f7e5f7ca34fa70
+
+O processo de Put to Light será realizado nas saídas do sorter pelo operador para que seja possível separar os volumes.
+Ao bipar essa caixa e acender o led na cor verde, o operador irá colocar essa caixa no pallet indicado pelo led, após isso ele irá confirmar apertando o botão do led.
+Ao chegar no limite do pallet outro operador irá retirar esse pallet e levará até a rua correspondente, e com o scanner de mão irá bipar caixa por caixa, onde a cada caixa bipada irá acender um led correspondente a sua posição.
+Antes de alocar uma caixa a um pallet o operador deverá realizar o processo de abertura de pallet através do scanner de mão, realizando a leitura da etiqueta de posição PTL e bipar uma etiqueta sequencial (Impressa pelo MFC) que será a etiqueta de pallet.
+Este operador irá alocar a caixa na posição através do scanner de mão e confirmar no led do PTL.
+No caso de ter mais de uma caixa para o mesmo representante/pedido, as demais caixas devem estar no mesmo pallet, para que o transporte seja único.
 Operador visualiza fisicamente o limite do pallet, ao atingir o limite, o operador realiza o processo de fechamento de pallet. Realizando a leitura da etiqueta de fechamento com o scanner de mão.
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
+Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
+Os leitores de código de barras (Honeywell) para o sistema de Put-To-Light serão de responsabilidade do cliente.
 
 ---
 **Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1[1].docx`  
 **Heading:** Especificação Hardware de TI  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** df2e170315d719ca
 
 Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará a rotina de  PTL, tendo como papel fundamental a interface entre o sistema ERP/WMS da DellaVolpe e a automação chão-de-fábrica INVENT.
 A aplicação da INVENT necessita de um banco de dados dedicado, para o correto armazenamento e gerenciamento das informações, que deverá ser disponibilizado pelo DellaVolpe (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome, ou Mozilla Firefox)
 
 ---
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 5.docx`  
+**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 8.docx`  
 **Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 6.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 7.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 1.docx`  
-**Heading:** Especificação Hardware de TI  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará a rotina de  PTL, tendo como papel fundamental a interface entre o sistema ERP/WMS da DellaVolpe e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados dedicado, para o correto armazenamento e gerenciamento das informações, que deverá ser disponibilizado pelo DellaVolpe (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome, ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 2.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 2.docx`  
-**Heading:** Especificação Hardware de TI  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas/pedidos, ou seja, esta aplicação executará a rotina de  PTL, tendo como papel fundamental a interface entre o sistema ERP/WMS da DellaVolpe e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados dedicado, para o correto armazenamento e gerenciamento das informações, que deverá ser disponibilizado pelo DellaVolpe (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome, ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 3.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 4.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** e589a53fc2f3df2f
 
 Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
 A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
 
 ---
 **Origem:** [I23.1733] 2023 — `I23.1733  -  PROJETO FOX - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev 8.docx`  
-**Heading:** Especificação  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Put To Light  
+**Score:** — (nome-topico) | **ID:** 40483ec2a05ac41a
 
-Para o correto funcionamento da Automação, é necessária uma aplicação responsável pelo gerenciamento das informações das caixas, ou seja, esta aplicação executará a rotina de PTL tendo como papel fundamental a interface entre os sistemas ERP/WMS do cliente e a automação chão-de-fábrica INVENT.
-A aplicação da INVENT necessita de um banco de dados para o correto armazenamento e gerenciamento das informações, que será disponibilizado pelo cliente (licença + instalação do banco). As informações são trocadas entre a aplicação e as estações de trabalho através de interface Web, desta forma, se faz necessário o uso de um Navegador Web padrão em cada estação de trabalho (Microsoft Edge, Google Chrome ou Mozilla Firefox)
-
----
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 1.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Projeto não contempla PTL
-
----
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 2.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Projeto não contempla PTL
+O processo de Put to Light será realizado nas saídas do sorter pelo operador para que seja possível separar os volumes.
+A abertura do pallet ocorre de forma automática ao bipar o primeiro produto destinado a um pallet não iniciado. Assim que o processo de fechamento de pallet é concluído o sistema MFC realiza a abertura de pallet de acordo com o número sequencial de pallet, ou seja o sistema MFC controla a sequência de código de pallets, assim atribuindo os códigos aos PTLs.
+Para o fechamento, ele é realizado logo ao finalizar toda a separação esperada para um determinado pallet/nf. Nesse ponto da separação, o WCS recebe a informação que todos os volumes foram finalizados e nos envia a etiqueta única. Quando todos os itens de todas as notas fiscais atribuídas a rota que está vinculada ao PTL são alocados, o sistema MFC fecha o pallet automaticamente.
+Disposição física:
+O Sorter possui 3 (três) rampas com 8 (oito) posições PTL cada rampa e 1 (uma) rampa para rejeito e ou stage.
+Disposição sistêmica:
+O Sorter possui 2 (duas) rampas com 12 (doze) posições PTL cada rampa, 1 (uma) rampa para rejeito e 1 (uma) rampa de stage.
+Para o processo operacional no caso da disposição sistêmica quando o operador realizar a leitura do código de barras do volume e a posição (PTL) onde esse volume deve ser alocado não está nas 8 (oito) posições dispostas fisicamente em frente a rampa, todas as 8 posições deve acender na cor rosa para informar ao operador que o volume deve ser alocado em uma posição que esta fisicamente em frente a outra rampa e o led a posição correspondente deve acender na cor verde para que o operador possa identificar a posição onde ele deve alocar o volume.
+Após a alocação do volume na posição e a confirmação no led, todas as 8 (oito) posições que estão com o led acesso na cor rosa devem apagar.
+Serão 24 posições de PTL contendo 1 led com 3 dígitos para cada posição.
+Os leitores de código de barras (Honeywell) para o sistema de Put-To-Light serão de responsabilidade do cliente.
 
 ---
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 3.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I23.3801] 2023 — `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx`  
+**Heading:** Rampas (PTL) – Octopus SC  
+**Score:** — (semantico) | **ID:** 9b0372a4ba8527a4
 
-Projeto não contempla PTL
-
----
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 4.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Projeto não contempla PTL
-
----
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 5.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Projeto não contempla PTL
+Em cada saída/rampa do sorter deverá conter os equipamentos listados abaixo, para que o operador consiga realizar a leitura do volume desviado.
+Quantidades abaixo, por rampa.
+01 (um) Leitor de código de barras – Ex. Honeywell 1470g (com cabo serial db9)
+01 (um) Conversor RS232 – Modelo HF5111B
+No caso do projeto do CD de Santa Catarina, onde o sorter terá 18 (dezoito) rampas de saída, será necessário 18 (dezoito) unidades de leitores de código de barras e 18 (dezoito) conversores RS232, mencionados acima.
+Obs.: pendente definição se seguiremos com leitor fixo ou de gatilho, caso seja fixo os equipamentos acima, não serão necessários.
+Leitores de código de barras e conversores RS232 citados acima, responsabilidade Invent.
 
 ---
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 6.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I23.3801] 2023 — `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS 1.docx`  
+**Heading:** Rampas (PTL) – Octopus MS  
+**Score:** — (semantico) | **ID:** a533c36292096ef2
 
-Projeto não contempla PTL
-
----
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 7.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Projeto não contempla PTL
-
----
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 8.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
-
-Projeto não contempla PTL
+O sorter deverá conter os equipamentos listados abaixo, para que o operador consiga realizar a leitura do volume desviado.
+Quantidades abaixo, para serem distribuídos nas rampas do sorter.
+01 (um) Leitor de código de barras – Ex. Honeywell 1470g (com cabo serial db9)
+01 (um) Conversor RS232 – Modelo HF5111B
+No caso do projeto do CD de Santa Catarina, onde o sorter terá 18 (dezoito) rampas de saída, será necessário 10 (dez) unidades de leitores de código de barras e 10 (dez) conversores RS232, mencionados acima.
+Obs.: pendente definição se seguiremos com leitor fixo ou de gatilho, caso seja fixo os equipamentos acima, não serão necessários.
+Leitores de código de barras e conversores RS232 citados acima, responsabilidade Invent.
 
 ---
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 9.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I23.3801] 2023 — `I23.3801 - ESPECIFICACAO DE INTEGRACOES E HARDWARE - OCTOPUS.docx`  
+**Heading:** Rampas (PTL)  
+**Score:** — (semantico) | **ID:** d64bd22da61d1e80
 
-Projeto não contempla PTL
+Em cada saída/rampa do sorter deverá conter os equipamentos listados abaixo, para que o operador consiga realizar a leitura do volume desviado.
+Quantidades abaixo, por rampa.
+01 (um) Leitor de código de barras – Ex. Honeywell 1470g (com cabo serial db9)
+01 (um) Conversor RS232 – Modelo HF5111B
+No caso do projeto do CD de Santa Catarina, onde o sorter terá 18 (dezoito) rampas de saída, será necessário 18 (dezoito) unidades de leitores de código de barras e 18 (dezoito) conversores RS232, mencionados acima.
+Leitores de código de barras e conversores RS232 citados acima, responsabilidade Invent.
 
 ---
-**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 9_Old.docx`  
-**Heading:** Montagem de pallet (PTL)  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Origem:** [I23.3801] 2024 — `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 83bf1804b72f42d5
 
-Projeto não contempla PTL
+Ao iniciar a operação, o operador da saída do sorter deverá abrir as posições PTL que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas.
+Com isso, o operador ao receber a caixa na rampa de saída, ao realizar a leitura do volume desviado, o display da posição PTL deverá acender indicando o local pallet onde o volume deve ser alocado.
+Operador aloca o volume no local indicado, aperta o botão do display confirmando que o volume foi alocado e segue para o próximo volume.
+Conforme a cubagem de pallet realizada pelo sistema Velox, operador verifica fisicamente o status do led, se o pallet está cheio fisicamente o led acenderá na cor “Ex: Laranja” e o operador deve realizar o fechamento desse pallet e abrir um novo.
+
+---
+**Origem:** [I23.3801] 2024 — `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS SC REV.4.docx`  
+**Heading:** Rampas (PTL)  
+**Score:** — (semantico) | **ID:** f1fb662c4186e9d0
+
+Em cada saída/rampa do sorter deverá conter os equipamentos listados abaixo, para que o operador consiga realizar a leitura do volume desviado.
+Quantidades abaixo, por rampa.
+01 (um) Leitor de código de barras – Ex. Honeywell 1470g (com cabo serial db9)
+01 (um) Conversor RS232 – Modelo HF5111B
+No caso do projeto do CD de Santa Catarina, onde o sorter terá 18 (dezoito) rampas de saída, será necessário 18 (dezoito) unidades de leitores de código de barras e 18 (dezoito) conversores RS232, mencionados acima.
+
+---
+**Origem:** [I23.3917] 2023 — `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 94218c01d4f13447
+
+Ao iniciar a operação, o operador da saída do sorter deverá abrir as posições PTL que deseja utilizar na operação atual, para que consiga mapear e alocar os volumes nas posições indicadas.
+Com isso, o operador ao receber a caixa na rampa de saída, ao realizar a leitura do volume desviado, o display da posição PTL deverá acender indicando o local pallet onde o volume deve ser alocado.
+Operador aloca o volume no local indicado, aperta o botão do display confirmando que o volume foi alocado e segue para o próximo volume.
+Conforme a cubagem de pallet realizada pelo sistema Velox, operador verifica fisicamente o status do led, se o pallet está cheio fisicamente o led acenderá na cor “Ex: Laranja” e o operador deve realizar o fechamento desse pallet e abrir um novo.
+
+---
+**Origem:** [I23.3917] 2023 — `I23.3801 - ESPECIFICACAO DE SOFTWARE - OCTOPUS MS.docx`  
+**Heading:** Rampas (PTL)  
+**Score:** — (semantico) | **ID:** 70e06918d349b77b
+
+Em cada saída/rampa do sorter deverá conter os equipamentos listados abaixo, para que o operador consiga realizar a leitura do volume desviado.
+Quantidades abaixo, por rampa.
+01 (um) Leitor de código de barras – Ex. Honeywell 1470g (com cabo serial db9)
+01 (um) Conversor RS232 – Modelo HF5111B
+No caso do projeto do CD de Santa Catarina, onde o sorter terá 18 (dezoito) rampas de saída, será necessário 18 (dezoito) unidades de leitores de código de barras e 18 (dezoito) conversores RS232, mencionados acima.
+
+---
+**Origem:** [I23.1410] 2024 — `I23.1410 - ESPECIFICACAO DE SOFTWARE - NORMANDIA.docx`  
+**Heading:** Abertura de Pallet (VolExp)  
+**Score:** — (semantico) | **ID:** e25b653b5de4fcc3
+
+Operador para abrir um novo pallet na posição PTL, com o leitor de código de barras deverá realizar a leitura do código da posição PTL, com isso o Velox consulta o WMS para gerar um novo número VolExp (3.10.	Consulta Número VolExp), e utiliza o número informado pelo WMS para atrelar ao VolExp aberto.
+Com isso o pallet está apto a receber novas caixas vindas do sorter.
+
+---
+**Origem:** [I23.1412] 2024 — `I23.1412 - ESPECIFICACAO DE SOFTWARE - PROJETO FDBR - Rev 10(Revisado In Loco).docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** 4d4c2119970b235f
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD Fagron, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Exemplo de Exibição:
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I23.3502] 2024 — `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1 - editado.docx`  
+**Heading:** Sugestão de Alocação  
+**Score:** — (semantico) | **ID:** d1d4b038a668b07d
+
+O Velox possui uma inteligência que armazena os registros das separações realizadas pela automação Invent e faz uma análise dos itens de acordo com a quantidade de unidades coletadas deste item e quantas visitas no endereço é feita para a separação.
+Com essa análise feita, o Velox apresenta uma relação com sugestões de alocação dos itens de acordo com o levantamento realizado da própria operação do cliente.
+Nesta apresentação o Velox solicita a data inicial e final que a base deve ser analisada, informando o ranking de coleta de todos os itens possuídos na base e mostrando a sugestão para posto, endereço, código do produto e descrição.
+A sugestão tem como princípio alocar os itens com maiores números de coletas e visitas próximos ao operador e os demais dispersarem nas extremidades de cada posto de coleta. Sendo assim, otimizando o processo de separação ganhando em performance na linha de picking.
+Velox permitirá que esses dados sejam exportados via Excel.
+Pendente de análise
+
+---
+**Origem:** [I23.3502] 2024 — `I23.3502 PROJETO MASTER - ESPECIFICAÇÃO HARDWARE REV_1.docx`  
+**Heading:** Sugestão de Alocação  
+**Score:** — (semantico) | **ID:** adbd81ac0b86089b
+
+O Velox possui uma inteligência que armazena os registros das separações realizadas pela automação Invent e faz uma análise dos itens de acordo com a quantidade de unidades coletadas deste item e quantas visitas no endereço é feita para a separação.
+Com essa análise feita, o Velox apresenta uma relação com sugestões de alocação dos itens de acordo com o levantamento realizado da própria operação do cliente.
+Nesta apresentação o Velox solicita a data inicial e final que a base deve ser analisada, informando o ranking de coleta de todos os itens possuídos na base e mostrando a sugestão para posto, endereço, código do produto e descrição.
+A sugestão tem como princípio alocar os itens com maiores números de coletas e visitas próximos ao operador e os demais dispersarem nas extremidades de cada posto de coleta. Sendo assim, otimizando o processo de separação ganhando em performance na linha de picking.
+Velox permitirá que esses dados sejam exportados via Excel.
+Pendente de análise
+
+---
+**Origem:** [I24.114] 2024 — `I24.114 - ESPECIFICACAO DE SOFTWARE - PROJETO ANDREANI_ES_ADITIVO_POSTOS_ESPELHOS -_REV1.docx`  
+**Heading:** Postos Espelhos no Baixo Giro  
+**Score:** — (semantico) | **ID:** 0d44b621d9bea200
+
+Atualmente a linha de separação de baixo giro possuem 4 estações no sistema WCS. Será necessario replicar cada estação 3 vezes, sendo assim cada endereço será repetido nas 4 estações espelho.
+Com o espelhamento dos postos será possivel 4 operadores coletarem simultanemanete caixas diferentes no mesmo posto físico. O WCS não será responsavél por realizar o balanceamento dos volumes nos postos, este processo será feito manualmente pela operação.
+O processo de separação nos postos espelhos serão realizados via coletor. Os dados necessarios para as telas dedicadas para a separação no coletor são: Posto atual, campo de leitura do código de barras, Endereço, EAN, quantidade esperada/coletada, Botão que abra a opção de selecionar a quantidade separada (mais ou menos) e o botão de confirmação de separação.
+As telas de separação que serão disponibilizadas para o coletor devem ser responsivas.
+
+---
+**Origem:** [I24.1417] 2024 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** d7f8bfc0af03b464
+
+As 06 (seis) saídas do sorter alocarão 06 (seis) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+
+---
+**Origem:** [I24.1417] 2024 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** c5c9d71348201d56
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
 
 ---
 **Origem:** [I24.1417] 2024 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_5.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** 4c8ba6f62c1b2618
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
 **Origem:** [I24.1417] 2024 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx`  
+**Heading:** Put-to-light (PTL)  
+**Score:** — (semantico) | **ID:** 8dcc725952c5213e
+
+As 06 (seis) saídas do sorter alocarão 06 (seis) pallets em cada posição do Put-to-Light (segregados cada um por um LED).
+
+---
+**Origem:** [I24.1417] 2024 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx`  
+**Heading:** Sinaleiros  
+**Score:** — (nome-topico) | **ID:** f1ae34e04228d27e
+
+Cada saída contará com 01 (um) sinaleiro, que servirá como ponte na interação entre o sistema VELOX e os operadores, indicando de maneira visual o que foi retornado pelo sistema quando ao estado atual do pallet (aberto, fechado ou pendente de finalização), funcionando assim como um recurso orientativo para a operação.
+
+---
+**Origem:** [I24.1417] 2024 — `I22.402 - PROJETO MARAVILHA - ESPECIFICAÇÃO DE SOFTWARE E HARDWARE-Rev_6.docx`  
 **Heading:** Erro  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Score:** — (semantico) | **ID:** e61d509ee1e1addd
 
 Na ocasião de realizar a leitura de um volume que não corresponde àquela posição do PTL, o sinaleiro permanecerá com o LED vermelho, indicando que o volume não pertence à saída correspondente ou o código de barras lido não representa um volume esperado naquela posição.
 
 ---
-**Origem:** [I22.120] 2024 — `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_01.docx`  
-**Heading:** Escopo de Telas  
-**Score:** 93.3 (fuzzy) | **Data:** 2026-06-19
-
-Para apresentar uma base das telas que serão realizadas para atender as necessidades da operação, segue os modelos e as funcionalidades abaixo:
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-O escopo acima representa o monitor que ficará responsável pelas questões de Abastecimento que ficará espelhado no setor BK25.
-Para garantir maior flexibilidade na operação, o sistema oferece as seguintes opções:
-Desativação do envio automático de ressuprimento para o AA – Possibilidade de desabilitar o envio automático das solicitações de reabastecimento.
-Envio manual de IDOCs para o SAP – Permite a seleção dos pallets gerados, com um botão para envio manual do IDOC ao SAP, restringindo o envio automático para solicitações pendentes.
-Alteração de prioridade das solicitações pendentes – Disponibiliza a seleção de pallets que ainda não tiveram a primeira etapa da OT confirmada, permitindo a alteração manual da prioridade por meio de um botão específico.
-Filtros e personalização de layout – Opção de filtro para todas as colunas da interface, além da possibilidade de configuração personalizada do layout.
-Exibição de informações filtradas – Permite a aplicação de filtros diretamente na tela de seleção, garantindo que apenas as informações desejadas sejam exibidas.
-Estorno de solicitações – Possibilidade de estornar solicitações que ainda não foram iniciadas, mediante a obrigatoriedade de informar um motivo para o estorno. Esta opção só pode ser aceita se o status da solicitação estiver em “Gerado”.
-Exportação de dados – Opção de exportação das informações para os formatos Excel, Word, PDF, entre outros.
-Gravar em Log qualquer alteração, exclusão que será feita no monitor de abastecimento.
-Esse conjunto de funcionalidades garante maior controle operacional e flexibilidade na gestão do abastecimento do AA, otimizando a tomada de decisões e melhorando a eficiência do processo.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Além disso teremos este monitor, exibido acima, de acompanhamento dos processos de abastecimento com o objetivo de o usuário ter toda a visão de cada etapa da operação de reabastecimento de maneira macro.
-No sistema também teremos um monitor para o setor do BK25 + Parte externa para exibir os pallets que estão pendentes para estes setores. Segue o Escopo da tela abaixo:
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-A tela abaixo representa o log das integrações onde iremos informar todas as remessas recebidas na integração (IDOC) enviadas pelo SAP. Caso ocorra qualquer erro nesta comunicação será apresentado o status e no campo observação será informado o motivo do erro.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Haverá uma coluna de seleção das remessas onde o usuário deve selecionar quais remessas ele deseja excluir e apertar o botão Excluir Remessas. Com esta ação iremos enviar o IDOC Cancelamento das Remessas para o SAP.
-A próxima etapa é a criação de uma onda com base nos transportes das remessas recebidos na fase anterior.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-OBS: Adição de uma coluna “Placa Secundária” para auxiliar a operação a entender qual transporte e TSP
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-O usuário terá como ferramenta um botão (“Verificar reabastecimento”) que após selecionar os transportes que não possuem onda, ao ser acionado será exibido um levantamento de quantas solicitações de reabastecimento e quantas demandas de pallet fechado e separação de curva C e D serão geradas com aquela respectiva demanda que está sendo selecionada. Sendo assim, o operador terá mais informações para a sua tomada de decisão.
-O Operador terá a opção de “Preparar a onda” onde o sistema já irá disparar (mesmo que o disparo automático para o SAP esteja desativado) previamente as Ordens de Ressuprimentos planejadas para atender aquela onda e caso tenha pallet fechado e separação curva C e D ja irá disparar a necessidade para o Sap. Esta ação não dará início as separações da onda.
-Com estas informações apresentadas na imagem acima, o operador deverá selecionar os transportes escolhidos para formar uma onda e acionar o botão “Criar onda”. Para ser validado a criação, só podem ser escolhidos transportes com status LIVRE, caso contrário deverá apresentar erro.
-Com a mensagem de sucesso, o WCS deve solicitar os turnos e as prioridades dos transportes para ordenar a saídas dos volumes dentro da onda. O campo que informa o turno não terá uso nas lógicas do WCS, apenas será enviado para o SAP. A prioridade pode ser alterada com o transporte em andamento, porém caso a separação já esteja sendo realizada não há ações que o WCS possa fazer.
-Com o campo “onda” preenchido, o WCS deve permitir selecionar as ondas e cancelar. Para esta ação a onda não deve ter sido iniciada, caso contrário só será permitido com um usuário master cadastrado pelo time BRF. Deve ser possível apenas desvincular um transporte daquela respectiva onda e a regra que permita esta ação segue a mesma do cancelamento da onda.
-Caso uma onda seja cancelada em processo de expedição, o WCS deve direcionar todas as caixas pendentes para rejeito e disparar ao SAP um IDOC com apenas os volumes que já desceram pelas rampas. O SAP irá entender que os volumes que não foram enviados no IDOC não foram atendidos e fará as tratativas necessárias.
-Pode ocorrer um complemento na roteirização dos transportes onde o operador irá precisar acrescentar um transporte em uma onda já em andamento. Neste caso o sistema deve permitir essa ação e colocar como prioridade máxima a separação destes itens para serem expedidos o mais rápido possível.
-O sistema deverá sugerir listar as docas por disponibilidade/percentual de carregamento da doca. Lembrando que o sistema deve validar as seguintes premissas referentes a doca:
-Validar se a doca não está em manutenção
-Validar se tem restrição de tipo veículo
-Validação do cadastro de docas
-O sistema devera destacar de forma visível (coloração diferente) após a atribuição de docas realizada com sucesso.
-Quando o usuário selecionar a onda, o WCS deve solicitar se os congelados e resfriados serão separados ao mesmo tempo ou não. Esta decisão poderá ser alterada ou não até o start da onda. O campo “Temp. Onda”, “Doca Cong” e “Doca Resf” estão conectadas nessa escolha.
-Com a parametrização da onda, caso a escolha for mista o WCS deve solicitar automaticamente todas as docas que serão envolvidas para esta onda e pedir para o usuário informar a temperatura de cada uma delas.
-Tudo que for editado, excluído a respeito das remessas, ondas e transportes devem estar registrados em logs com os usuários dos responsáveis.
-O WCS ficará responsável pelo detalhamento do processo de separação em tempo real dos status que está acontecendo durante a execução do processo.
-Segue abaixo modelo de KPI para usar como base nas informações que devem ser apresentadas para a operação.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-
----
-**Origem:** [I22.120] 2024 — `I22.120 - ESPECIFICAÇÃO DE SOFTWARE - BRF - SALVADOR_SPRT_02.docx`  
-**Heading:** Escopo de Telas  
-**Score:** 93.3 (fuzzy) | **Data:** 2026-06-19
-
-Para apresentar uma base das telas que serão realizadas para atender as necessidades da operação, segue os modelos e as funcionalidades abaixo:
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-O escopo acima representa o monitor que ficará responsável pelas questões de Abastecimento que ficará espelhado no setor BK25.
-Para garantir maior flexibilidade na operação, o sistema oferece as seguintes opções:
-Desativação do envio automático de ressuprimento para o AA – Possibilidade de desabilitar o envio automático das solicitações de reabastecimento.
-Envio manual de IDOCs para o SAP – Permite a seleção dos pallets gerados, com um botão para envio manual do IDOC ao SAP, restringindo o envio automático para solicitações pendentes.
-Alteração de prioridade das solicitações pendentes – Disponibiliza a seleção de pallets que ainda não tiveram a primeira etapa da OT confirmada, permitindo a alteração manual da prioridade por meio de um botão específico.
-Filtros e personalização de layout – Opção de filtro para todas as colunas da interface, além da possibilidade de configuração personalizada do layout.
-Exibição de informações filtradas – Permite a aplicação de filtros diretamente na tela de seleção, garantindo que apenas as informações desejadas sejam exibidas.
-Estorno de solicitações – Possibilidade de estornar solicitações que ainda não foram iniciadas, mediante a obrigatoriedade de informar um motivo para o estorno. Esta opção só pode ser aceita se o status da solicitação estiver em “Solicitado”.
-Exportação de dados – Opção de exportação das informações para os formatos Excel, Word, PDF, entre outros.
-Gravar em Log qualquer alteração, exclusão que será feita no monitor de abastecimento.
-Esse conjunto de funcionalidades garante maior controle operacional e flexibilidade na gestão do abastecimento do AA, otimizando a tomada de decisões e melhorando a eficiência do processo.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Além disso teremos este monitor, exibido acima, de acompanhamento dos processos de abastecimento com o objetivo de o usuário ter toda a visão de cada etapa da operação de reabastecimento de maneira macro.
-No sistema também teremos um monitor para o setor do BK25 + Parte externa para exibir os pallets que estão pendentes para estes setores. Segue o Escopo da tela abaixo:
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-A tela abaixo representa o log das integrações onde iremos informar todas as remessas recebidas na integração (IDOC) enviadas pelo SAP. Caso ocorra qualquer erro nesta comunicação será apresentado o status e no campo observação será informado o motivo do erro.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Haverá uma coluna de seleção das remessas onde o usuário deve selecionar quais remessas ele deseja excluir e apertar o botão Excluir Remessas. Com esta ação iremos enviar o IDOC Cancelamento das Remessas para o SAP.
-A próxima etapa é a criação de uma onda com base nos transportes das remessas recebidos na fase anterior.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-OBS: Adição de uma coluna “Placa Secundária” para auxiliar a operação a entender qual transporte é TSP.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-O usuário terá como ferramenta um botão (“Verificar reabastecimento”) que após selecionar os transportes que não possuem onda, ao ser acionado será exibido um levantamento de quantas solicitações de reabastecimento, quantas demandas de pallet fechado e separação de curva C e D serão geradas com aquela respectiva demanda que está sendo selecionada. Sendo assim, o operador terá mais informações para a sua tomada de decisão.
-O Operador terá a opção de “Preparar a onda” onde o sistema já irá disparar (mesmo que o disparo automático para o SAP esteja desativado) previamente as Ordens de Ressuprimentos planejadas para atender aquela onda e caso tenha pallet fechado e separação curva C e D ja irá disparar a necessidade para o Sap. Esta ação NÃO dará início as separações da onda.
-A operação poderá ter, de forma resumida, um resumo do processo de reabastecimento de uma onda através dos status da coluna “Status reabastecimento”. Nela podemos ter os seguinte cenários:
-N/A – Não necessita reabastecimento para onda.
-Indisponível – Não tem produto disponível para atender a necessidade de abastecimento
-Em andamento Total – Existe demanda de abastecimento destinada para o AA.
-Em andamento Parcial - Existe demanda de abastecimento que foi atendida parcialmente em andamento
-Finalizado Total – Todos os abastecimentos foram finalizados.
-Finalizado Parcial – Finalizado os itens disponíveis e pendente apenas itens que não possuem estoque.
-Com estas informações apresentadas na imagem acima, o operador deverá selecionar os transportes escolhidos para formar uma onda e acionar o botão “Criar onda”. Para ser validado a criação, só podem ser escolhidos transportes com status LIVRE, caso contrário deverá apresentar erro.
-Haverá um botão “detalhes Transporte” que o sistema irá levantar os detalhes de atendimento das remessas/itens dentro de um transporte. Segue exemplo abaixo:
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Descrição dos Status:
-D - Finalizado e Atendido Parcial
-C – Finalizado e Atendido Total
-B – Em andamento
-A – Não iniciado
-Com a mensagem de sucesso, o WCS deve solicitar os turnos e as prioridades dos transportes para ordenar a saídas dos volumes dentro da onda. O campo que informa o turno não terá uso nas lógicas do WCS, apenas será enviado para o SAP. A prioridade pode ser alterada com o transporte em andamento, porém caso a separação já esteja sendo realizada não há ações que o WCS possa fazer.
-Com o campo “onda” preenchido, o WCS deve permitir selecionar as ondas e cancelar. Para esta ação a onda não deve ter sido iniciada, caso contrário só será permitido com um usuário master cadastrado pelo time BRF. Deve ser possível apenas desvincular um transporte daquela respectiva onda e a regra que permita esta ação segue a mesma do cancelamento da onda.
-Caso uma onda seja cancelada em processo de expedição, o WCS deve direcionar todas as caixas pendentes para rejeito e disparar ao SAP um IDOC com apenas os volumes que já desceram pelas rampas. O SAP irá entender que os volumes que não foram enviados no IDOC não foram atendidos e fará as tratativas necessárias.
-Pode ocorrer um complemento na roteirização dos transportes onde o operador irá precisar acrescentar um transporte em uma onda já em andamento. Neste caso o sistema deve permitir essa ação e colocar como prioridade máxima a separação destes itens para serem expedidos o mais rápido possível.
-O sistema deverá sugerir listar as docas por disponibilidade/percentual de carregamento da doca. Lembrando que o sistema deve validar as seguintes premissas referentes a doca:
-Validar se a doca não está em manutenção
-Validar se tem restrição de tipo veículo
-Validação do cadastro de docas
-O sistema devera destacar de forma visível (coloração diferente) após a atribuição de docas realizada com sucesso.
-Quando o usuário criar a onda, o WCS deve solicitar se os congelados e resfriados serão separados ao mesmo tempo ou não. Esta decisão poderá ser alterada ou não até o start da onda. O campo “Temp. Onda”, “Doca Cong” e “Doca Resf” estão conectadas nessa escolha.
-Com a parametrização da onda, caso a escolha for mista o WCS deve solicitar automaticamente todas as docas que serão envolvidas para esta onda e pedir para o usuário informar a temperatura de cada uma delas.
-Quando ocorrer uma falta e o SKU não chegar à doca nem ao rejeito, o monitor de separação do WMS deverá disponibilizar uma opção de botão "SKUs Faltantes" no transporte, acionando o Picking to Light para esses SKUs.
-Observação: Este botão somente poderá ser utilizado quando não houver picking pendentes na onda. O uso inadequado desse botão pela operação poderá ocasionar rejeito de volumes duplicados.
-Exibir na tela a quantidade atendida e a quantidade indisponível no AA, permitindo as tratativas necessárias, tais como:
-Reabastecimento do buffer para o canal;
-Reabastecimento do buffer para a posição De-Para (quando não houver produto cadastrado);
-Reabastecimento do AC.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Estas tratativas devem ser realizadas automaticamente pelo sistema WCS
-As verificações acima devem ser realizadas em um intervalo de tempo, que será parametrizável, após o início da onda. Ao iniciar a separação da onda , as indisponibilidades devem aparecer com o status:
-Indisponível - Não possui estoque tanto no AA quanto no AC para a demanda
-Em reabastecimento - possui estoque no AC, mas não possui no AA e deve ser reabastecido
-Disponível - A quantidade solicitada possui no AA.
-Tudo que for editado, excluído a respeito das remessas, ondas e transportes devem estar registrados em logs com os usuários dos responsáveis.
-O WCS ficará responsável pelo detalhamento do processo de separação em tempo real dos status que está acontecendo durante a execução do processo.
-Cadastros de Colaboradores
-O cadastro solicitará:
-Usuário
-Nível
-Temperatura
-PBL
-Impressora PVAR
-Este ponto impactara diretamente no acendimento dos Pickings em cada Nível.
-Segue abaixo modelo de KPI para usar como base nas informações que devem ser apresentadas para a operação.
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-KPI TV (Monitor Geral): Placas, volume/peso, quantidade de caixas separadas, chutadas e as pendências em valor e %, tempo carregamento por doca, tipo de frota, informação de transportador e próximos veículo na doca com o tipo e transportador
-Segue exemplo abaixo:
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Relatórios produtividade CX/H/dia - CX/H/d
-O relatório deverá levar em consideração o que foi executado por cada separador seja no AC quanto no AA com as seguintes informações:
-ID do colaborador
-Nome do colaborador
-Quantidade de caixas separadas
-Peso separado
-Tempo de separação e tempo de ociosidade
-Se separou congelado, resfriado ou os dois
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Relatório de produtividade dos operadores
-ID do colaborador
-Nome do colaborador
-Quantidade de paletes baixados no processo
-Tempo de separação (Início e fim da atividade) SAP deverá informar no IDOC
-Tempo de ociosidade (Tempo entre uma confirmação de palete e outra)
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-Relatório de produtividade dos transpaleteiras
-D do colaborador
-Nome do colaborador
-Quantidade de paletes movimentados no processo
-Tempo da movimentação e ociosidade
-(Imagem meramente ilustrativa para uso como base no desenvolvimento)
-
----
 **Origem:** [I24.210] 2024 — `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO COUGAR_B2C REV. 1.docx`  
-**Heading:** Confirmação Finalização Pedido B2C MONO  
-**Score:** 100.0 (fuzzy) | **Data:** 2026-06-19
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** a7e0d6eefa1bf71a
 
-WMS → WCS (POST)
-Os números das caixas plásticas poderão ser reutilizados desde que a caixa tenha completado todo o seu fluxo na operação e tenha sido transformada em um pacote final, pronto para ser enviado ao cliente.
-O Container Code fornecido pelo cliente não será reutilizado, sendo mantido apenas para rastreabilidade do processo.
-Esta integração deve ser enviada sempre que o processo for finalizado nas estações B2B e B2C (Mono). Após o recebimento, o WCS considerará o volume como encerrado e a caixa plástica estará disponível para reutilização do seu número físico.
-Estrutura da Integração (JSON):
-{
-"operation": "packing",
-"label": "SHU0000001",
-"picked": true,
-"packed": true
-}
+Após a conclusão do processo no PTW (Put to Wall), os volumes serão encaminhados para a área de packing, onde o WMS imprimirá uma nova etiqueta para cada volume. O WCS depende dessa etiqueta para que o sistema de PTL (Pick to Light) possa agrupar os volumes conforme a transportadora responsável pelo frete.
+Fluxo Operacional – Alocação PTL após Finalização do packing
+Encaminhamento do volume do packing para o PTL
+Após a finalização do pedido no PTW (Put to Wall), o volume é automaticamente direcionado para a área de packing e em sequência para área de alocação do PTL.
+Leitura do código de barras do volume
+O operador realiza a leitura (bipagem) da etiqueta do volume com um coletor android.
+Sinalização da posição de alocação via LED
+Com base na transportadora associada ao volume, o WCS aciona o LED correspondente à posição de pallet onde o volume deve ser agrupado.
+Alocação física do volume
+O operador identifica o LED aceso, desloca-se até a posição sinalizada e deposita fisicamente o volume.
+Confirmação da alocação
+Após posicionar o volume, o operador pressiona o botão do PTL para confirmar a conclusão da alocação. Nesse momento é disparado a integração informando o volume e a gaiola vinculada
+Repetição do processo
+O sistema está apto a processar o próximo volume em sequência, repetindo o ciclo descrito acima até o encerramento do lote.
+OBS: A operação poderá utilizar a mesma etiqueta ou prisma para o parcelContainer (gaiola) desde que não seja na mesma onda de separação ou outra transportadora da mesma onda, quando for realizada a leitura de um volume de outra onda o WCS entenderá que a gaiola está livre e começará a armazenar os volumes dessa nova onda, realizando assim automaticamente o fechamento da gaiola.
+
+---
+**Origem:** [I25.132] 2025 — `I25.132- ESPECIFICACAO DE SOFTWARE - PROJETO ESCOPO DIA.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** de4eb33421a341da
+
+Ao iniciar a operação, o operador responsável pelas saídas do sorter deve realizar o login na rampa para mapear e alocar os volumes nas posições indicadas.
+Quando o operador recebe um volume na rampa de saída, ele realiza a leitura do código de barras do volume desviado. O display da posição PTL correspondente acenderá, indicando o local do pallet onde o volume deve ser alocado.
+Após alocar o volume no local indicado, o operador deve pressionar o botão do display para confirmar que o volume foi alocado. O operador, então, prossegue para o próximo volume.
+Fechamento do Pallet:
+O sistema Velox realiza a cubagem do pallet, e o operador deve verificar fisicamente o status do LED. Se o pallet estiver cheio, o LED acenderá em laranja como indicação. Nesse momento, o operador deve proceder com o fechamento do pallet realizando a leitura de um código fantasia para ser feito a associação de todos os volumes alocados a um pallet e o sistema abrirá automaticamente o próximo pallet.
+Além disso, o operador tem a opção de forçar o fechamento do pallet. Para isso, ele deve realizar a leitura de um comando pré-definido em cada posição PTL, permitindo o fechamento do pallet antes que a cubagem definida no Velox seja atingida. O processo de leitura de um código fantasia se mantém o mesmo nestes casos.
+Com isso realizamos o envio da integração de Fechamento do Pallet para a Consinco.
+
+---
+**Origem:** [I25.132] 2025 — `Opção 02 - Consinco - ESPECIFICACAO DE SOFTWARE docx.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 1c03bc5b5bab7a9b
+
+Ao iniciar a operação, o operador responsável pelas saídas do sorter deve realizar o login na rampa para mapear e alocar os volumes nas posições indicadas.
+Quando o operador recebe um volume na rampa de saída, ele realiza a leitura do código de barras do volume desviado. O display da posição PTL correspondente acenderá, indicando o local do pallet onde o volume deve ser alocado.
+Após alocar o volume no local indicado, o operador deve pressionar o botão do display para confirmar que o volume foi alocado. O operador, então, prossegue para o próximo volume.
+Fechamento do Pallet:
+O sistema Velox realiza a cubagem do pallet, e o operador deve verificar fisicamente o status do LED. Se o pallet estiver cheio, o LED acenderá em laranja como indicação. Nesse momento, o operador deve proceder com o fechamento do pallet realizando a leitura de um código fantasia para ser feito a associação de todos os volumes alocados a um pallet e o sistema abrirá automaticamente o próximo pallet.
+Além disso, o operador tem a opção de forçar o fechamento do pallet. Para isso, ele deve realizar a leitura de um comando pré-definido em cada posição PTL, permitindo o fechamento do pallet antes que a cubagem definida no Velox seja atingida. O processo de leitura de um código fantasia se mantém o mesmo nestes casos.
+Com isso realizamos o envio da integração de Fechamento do Pallet para a Consinco.
+
+---
+**Origem:** [I25.215] 2025 — `I24.210 - ESPECIFICACAO DE SOFTWARE - PROJETO BP REV. 1.docx`  
+**Heading:** Put To Light (PTL)  
+**Score:** — (semantico) | **ID:** 89532ca25623064f
+
+O sistema WCS realiza a abertura automática das posições PTL no momento em que recebe a integração dos pedidos baseado. O WCS só libera para picking pedidos que tenham posição de PTL garantida para expedição. Para iniciar a operação, o operador da rampa deve realizar login no sistema, realizando a leitura do código de usuário, possibilitando o mapeamento e a alocação correta dos volumes.
+Ao receber uma caixa na rampa, o operador realiza a leitura do QR code da etiqueta do volume. Em seguida, o display da posição PTL correspondente acende, indicando o local (posição do pallet) onde o volume deve ser alocado. O operador aloca o volume na posição indicada e confirma o posicionamento pressionando o botão do display, encerrando a tarefa daquele volume.
+A cada confirmação de alocação, o WCS registra a quantidade conferida e atualiza essas informações no sistema. Após a alocação e confirmação no display, o operador retorna à rampa para processar o próximo volume.
+Cada rampa do sorter conta com 12 posições de PTL, totalizando 96 posições no total. Cada posição é equipada com um LED que fará a sinalização visual do local correto para alocação do volume.
+A cubagem do pallet será realizada pelo WCS previamente, através do cadastro de parâmetros. O fechamento do PTL poderá ocorrer por peso ou cubagem atingida, ou ainda pela totalidade do pedido. O operador poderá realizar o fechamento do pallet manualmente, caso julgue necessário. No entanto, o WCS não permitirá o fechamento do pallet quando ainda houver volumes pendentes, conforme a quantidade parametrizada, garantindo que não seja aberto um novo pallet para a alocação de poucos volumes.
+O WCS não permitirá o fechamento do pallet caso ainda haja poucos volumes pendentes, conforme a quantidade parametrizada, garantindo que não seja aberto um novo pallet para alocação de poucos volumes.
+
+---
+**Origem:** [I25.9043] 2025 — `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA FASE1.docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** 264230c923d276fe
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD C&A, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA.
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Exemplo de Exibição:
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I25.9043] 2025 — `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA FASE2-REV2.docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** aae8885f100f7dde
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD C&A, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA.
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Exemplo de Exibição:
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I25.9043] 2025 — `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA REV.2.docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** 67215745157dc7ac
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD C&A, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA.
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Exemplo de Exibição:
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I25.9043] 2025 — `I25.9043 - ESPECIFICACAO DE SOFTWARE - PROJETO BELEZA_Escopo.docx`  
+**Heading:** Sugestão alocação de curva ABC  
+**Score:** — (semantico) | **ID:** 37727c7ea6d4417f
+
+O sistema WCS será responsável pela sugestão de alocação de curva ABC.
+O principal objetivo da sugestão de alocação de curva ABC é otimizar a eficiência operacional no CD C&A, determinar as prioridades de posições e organizar os produtos nas posições de picking. O Conceito será por PEGA.
+Administração PEGA: O sistema WCS será responsável por gerenciar o ciclo completo de pega, desde a definição de critérios até a execução das alocações. Esse processo será iniciado automaticamente a partir do primeiro mês de operação, sendo configurável conforme as necessidades da operação.
+Parâmetro para definir o range de data para Sugestão de Alocação: Será necessário incluir um parâmetro de configuração no sistema WCS para definir o range de data a ser considerado ao gerar sugestões de alocação.
+Definição do Range de Data: O range de data será configurável, permitindo que o administrador do sistema defina intervalos de tempo para quando a sugestão de alocação deverá ser gerada. Por exemplo, o parâmetro pode ser ajustado para sugerir alocações para uma janela de 7, 15 ou 30 dias, conforme as necessidades.
+Função do Parâmetro: Este parâmetro será utilizado para gerar automaticamente sugestões de alocação dentro do intervalo de datas selecionado, considerando dados históricos de vendas, demanda, e outras variáveis relevantes.
+Interface de Configuração: O administrador do sistema WCS terá acesso a uma interface de fácil utilização para configurar e ajustar esse parâmetro.
+Exibição na tela Quantidade de PEGAS por Produto: A quantidade de pegas por produto será exibida em uma tela de dashboard ou relatório, com filtros para visualizar por produto, categoria ou data.
+Para facilitar o acompanhamento e o controle, a tela do sistema WCS deverá mostrar a quantidade de PEGAS por produto. Essa exibição permitirá aos operadores e gestores visualizarem rapidamente a alocação de cada item, o que melhora a tomada de decisão.
+Exemplo de Exibição:
+Itens curva A – Itens de alta prioridade devem ficar alocados nas áreas de picking mais acessíveis e próximas ao ponto de saída. Com isso, reduzimos o tempo de deslocamento dos operadores, aumentando a eficiência dos responsáveis pela separação.
+Itens curva B – Itens de prioridade intermediaria, devem ficar alocados em áreas de facil acesso, mas não necessariamente tão próximas quanto os itens de curva A.
+Itens curva C – Itens de baixa prioridade, devem ficar alocados nas áreas mais distantes dos pontos de saída, onde a visita nesses endereços é menos frequente.
+O sistema WCS, baseado nos índices de produtos por separação, fará a sugestão de alocação de curva ABC, operador assim terá a possibilidade de verificar a sugestão do sistema WCS, e caso seja necessário realizar alteração, deverá alterar o posicionamento dos produtos nos endereços sugeridos pelo WCS.
+A sugestão de alocação será no sistema do WCS, a decisão de alterar o mapeamento dos produtos, será da operação.
+O sistema WCS deverá gerar um relatório para analisar os itens que mais vendem e suas classificações para revisão operacional e rebalanceamento.
+
+---
+**Origem:** [I25.] 2025 — `- ESPECIFICACAO DE SOFTWARE - PROJETO ESCOPO CDSK.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 78068b333c1316d0
+
+Ao iniciar a operação, o operador da saída do sorter deverá realizar o login na rampa para que consiga mapear e alocar os volumes nas posições indicadas.
+Após o desvio do volume na rampa correta o operador pode realizar a leitura do volume (caixa) através do scanner da rampa, uma vez que o WCS recebe a informação do código da caixa ele acende o led da posição PTL informando onde o operador deve colocar o volume ou acenderá todos os leds do posto PTL vinculado ao scanner que realizou a leitura na cor vermelha informando que o volume não pertence a nenhuma das posições presentes no posto PTL.
+Quando o volume pertence a uma posição do posto o WCS acenderá o led correspondente a posição PTL como informado acima e o operador deve colocar o volume no pallet e em seguida confirmar apertando o botão do led, assim o WCS identifica a alocação e guarda essas informações para enviar posteriormente as informações ao WMS.
+No decorrer das alocações de volumes ao pallet o WCS verifica a cubagem e peso como mencionado do item Cubagem de pallet, indicando que o pallet deve ser fechado ao operador através de uma cor especifica no led, sendo que a cada pallet fechado é retornado uma integração para o WMS.
+Quando for solicitado o fechamento do pallet nas saídas das rampas, o operador deverá realizar a leitura de um código master que será vinculado aos volumes que foram alocados a este pallet.
+A disponibilização desta etiqueta master será de responsabilidade do cliente.
+Em caso de rejeito, o operador terá uma tela que irá exibir o diagnóstico de erro deste volume e poderá induzir novamente caso for possível.
+Para a posição do PTL que for dedicada aos volumes rejeitados, quando o volume for lido será acesso o led na cor rosa e para esta posição em especifico. O WCS não fara o controle de cubagem de pallet, sendo assim será de responsabilidade da operação tirar os volumes da posição e tratar individualmente cada um deles e induzi-los novamente.
+
+---
+**Origem:** [I25.] 2025 — `2- ESPECIFICACAO DE SOFTWARE - PROJETO ESCOPO CDSK.docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** 075b81b8a34dcfe1
+
+Ao iniciar a operação, o operador da saída do sorter deverá realizar o login na rampa para que consiga mapear e alocar os volumes nas posições indicadas.
+Após o desvio do volume na rampa correta o operador pode realizar a leitura do volume (caixa) através do scanner da rampa, uma vez que o WCS recebe a informação do código da caixa ele acende o led da posição de PTL informando onde o operador deve colocar o volume ou acenderá todos os leds do posto de PTL vinculado ao scanner que realizou a leitura na cor vermelha informando que o volume não pertence a nenhuma das posições presentes no posto PTL.
+Quando o volume pertence a uma posição do posto o WCS acenderá o led correspondente a posição PTL como informado acima e o operador deve colocar o volume no pallet e em seguida confirmar apertando o botão do led, assim o WCS identifica a alocação e guarda essas informações para enviar posteriormente ao WMS.
+No decorrer das alocações de volumes ao pallet o WCS verifica a cubagem e peso como mencionado do item Cubagem de pallet, indicando que o pallet deve ser fechado ao operador através de uma cor especifica no led, sendo que a cada pallet fechado é retornado uma integração para o WMS.
+Quando for solicitado o fechamento do pallet nas saídas das rampas, o operador deverá realizar a leitura de um código master impresso previamente pelo WMS que será vinculado aos volumes que foram alocados a este pallet. A master (Avulsa) é impressa sem um destino definido (LOJA).
+O WCS não deve permitir a reutilização desses códigos.
+A disponibilização desta etiqueta master será de responsabilidade do cliente.
+Em caso de rejeito, o operador terá uma tela que irá exibir o diagnóstico de erro deste volume e poderá induzir novamente caso for necessário.
+
+---
+**Origem:** [I25.] 2025 — `Opção 02 - sem contole de indução ESPECIFICACAO DE SOFTWARE - .docx`  
+**Heading:** PTL  
+**Score:** — (nome-topico) | **ID:** e7ac72f917af86cb
+
+Ao iniciar a operação, o operador da saída do sorter deverá realizar o login na rampa para que consiga mapear e alocar os volumes nas posições indicadas.
+Após o desvio do volume na rampa correta o operador pode realizar a leitura do volume (caixa) através do scanner da rampa, uma vez que o WCS recebe a informação do código da caixa ele acende o led da posição PTL informando onde o operador deve colocar o volume ou acenderá todos os leds do posto PTL vinculado ao scanner que realizou a leitura na cor vermelha informando que o volume não pertence a nenhuma das posições presentes no posto PTL.
+Quando o volume pertence a uma posição do posto o WCS acenderá o led correspondente a posição PTL como informado acima e o operador deve colocar o volume no pallet e em seguida confirmar apertando o botão do led, assim o WCS identifica a alocação e guarda essas informações para enviar posteriormente as informações ao WMS.
+No decorrer das alocações de volumes ao pallet o WCS verifica a cubagem e peso como mencionado do item Cubagem de pallet, indicando que o pallet deve ser fechado ao operador através de uma cor especifica no led, sendo que a cada pallet fechado é retornado uma integração para o WMS.
+Quando for solicitado o fechamento do pallet nas saídas das rampas, o operador deverá realizar a leitura de um código master que será vinculado aos volumes que foram alocados a este pallet.
+A disponibilização desta etiqueta master será de responsabilidade do cliente.
+Em caso de rejeito, o operador terá uma tela que irá exibir o diagnóstico de erro deste volume e poderá induzir novamente caso for possível.
+Para a posição do PTL que for dedicada aos volumes rejeitados, quando o volume for lido será acesso o led na cor rosa e para esta posição em especifico. O WCS não fara o controle de cubagem de pallet, sendo assim será de responsabilidade da operação tirar os volumes da posição e tratar individualmente cada um deles e induzi-los novamente.

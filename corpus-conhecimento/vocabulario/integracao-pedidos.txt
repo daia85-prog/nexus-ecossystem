@@ -1,0 +1,11 @@
+# Integração Pedidos (Order Ingestion)
+pedidos POST, pedido integração, order ingestion, orders API
+importação de pedidos, WMS→WCS pedidos, importar pedidos
+remessa, integração de remessa, interface pedidos, remessa integração
+wave, onda pedidos, waves WMS→WCS, wave WCS
+interface orders, interface orders picking, orders interface
+recepção de pedidos ERP, recepção de pedidos WMS, order reception
+integração de pedidos, pedido WMS para WCS
+order (pedidos), order pedidos remessas
+recebimento da integração de remessa
+pedido entrante, inbound order, entrada de pedidos

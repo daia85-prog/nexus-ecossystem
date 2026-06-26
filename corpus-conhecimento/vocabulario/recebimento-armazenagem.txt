@@ -1,0 +1,33 @@
+# recebimento-armazenagem — entrada, crossdocking, berços, transelevador/células (ASRS), putaway
+recebimento
+recebimento de mercadoria
+recebimento de mercadorias
+entrada de mercadoria
+entrada no armazém
+portal de entrada
+chegada ao portal de entrada
+berço de entrada
+berço de saída
+chegada a um berço de entrada
+chegada a um berço de saída
+crossdocking
+cross docking
+crossdocking de entrada
+regras de entrada
+armazenagem
+armazenamento
+putaway
+put away
+guarda de pallet
+endereçamento
+transelevador
+transelevadores
+célula de armazenagem
+células
+estoque automático
+asrs
+estrutura porta-pallet
+descarregamento
+descarregamento de materiais
+ordem de entrada
+rejeito de entrada no armazém
