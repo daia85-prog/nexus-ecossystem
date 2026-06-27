@@ -123,6 +123,30 @@ Gestor preenche o Kickoff no NEXUS
 
 ---
 
+### VEX AI *(Planejado — v6)*
+
+Módulo voltado à democratização do acesso à informação técnica através de linguagem natural corporativa.
+
+- **Pesquisa Conversacional:** chat semântico aberto para qualquer colaborador autorizado consultar a base histórica agregada de todos os projetos (documentos, JSONs, histórico de kickoffs)
+- **Agentes Especialistas:** agentes focados por vertical técnica ou cliente — ex: agente de Integração ERP, agente de Picking Fracionado — para extração de relatórios e insights específicos
+- **Insights Preditivos:** durante a revisão de respostas pela equipe humana, a I.A. gera automaticamente sugestões de aprofundamento e perguntas complementares
+
+---
+
+### O Auge *(Planejado — v8)*
+
+Pipeline end-to-end que reduz em até 90% o trabalho braçal de documentação, concentrando o foco humano na condução técnica de reuniões, análise crítica e validação conceitual.
+
+**Pilares do pipeline automatizado:**
+- **Cowork:** envio automático de e-mail institucional com documento + sugestão de agenda ao cliente, após revisão humana aprovada
+- **Skill Reunião Doc Análise:** transcrição automática de reuniões + extração de pontos-chave e decisões técnicas
+- **Skill Alterações Inteligentes:** aplicação automatizada das mudanças detectadas na reunião diretamente no documento
+- **Documento Modular Vivo:** qualquer dado alterado no Nexus gera tarefa de atualização automática no documento vinculado no SharePoint
+- **Versionamento Semântico Rev [A].[B].[C]:** A = mudanças de escopo/tecnologia, B = impacto de outras áreas, C = micro-ajustes textuais
+- **Motor Evolutivo SUPER_MD:** cada correção humana alimenta treinamento supervisionado — o Nexus aprende organicamente a cada projeto executado
+
+---
+
 ## Sistema de papéis
 
 | Papel | Acesso |
@@ -133,6 +157,8 @@ Gestor preenche o Kickoff no NEXUS
 | `documentacao` | Kickoff, Projetos + **aba Documentação** |
 | `desenvolvimento` | Kickoff, Projetos, Sugestões |
 | `eletrica` | Kickoff, Projetos, Sugestões |
+| `comercial` | Kickoff (campos de escopo comercial), Projetos *(em breve)* |
+| `operacional` | Kickoff + campos técnicos exclusivos por especialidade *(em breve)* |
 
 Funcionalidades exclusivas por papel são registradas em `src/lib/featureRegistry.ts` e aparecem automaticamente em **Configurações → Administração** — sem precisar alterar a UI.
 
@@ -245,11 +271,13 @@ Acesse `http://localhost:5173`.
 | **v1.0** | Kickoff WCS completo — 25 features | ✅ Produção |
 | **v1.2** | Módulo Documentação — Gerar Documento no browser | ✅ Produção |
 | **v1.3** | Módulo Documentação — Apontamento de Horas | 🔧 Em desenvolvimento |
-| **v2** | Dashboard — métricas, timeline, taxas de completude | 📋 Planejado |
-| **v3** | Backend Supabase — projetos na nuvem, multi-usuário | 📋 Planejado |
-| **v4** | Auth real — login e-mail/senha, RLS por papel | 📋 Planejado |
-| **v5** | Claude API — geração de 80% da ES via IA | 📋 Planejado |
-| **v6** | MCP Server — dados NEXUS como ferramentas de IA | 📋 Planejado |
+| **v2** | Backend Supabase + Auth Azure AD / SSO Invent + RBAC completo por papel | 📋 Planejado |
+| **v3** | Integração SharePoint/OneDrive — upload automático de documentos + abertura nativa | 📋 Planejado |
+| **v4** | IA Integrada — Claude API, geração automática de ES, chat contextual por projeto, monitor de tokens | 📋 Planejado |
+| **v5** | Kickoff Segmentado — formulários Gestor vs. Operacional, preenchimento por especialidade | 📋 Planejado |
+| **v6** | VEX AI — pesquisa conversacional semântica, agentes especialistas, insights preditivos na revisão | 📋 Planejado |
+| **v7** | LLM On-Premise — servidor interno, seletor de provedor (local vs. Claude), Módulo de Arenas | 📋 Planejado |
+| **v8** | O Auge — pipeline end-to-end: Cowork, Skill Reunião, Documento Modular Vivo, Rev A.B.C, SUPER_MD | 📋 Planejado |
 
 ---
 

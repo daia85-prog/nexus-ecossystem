@@ -11,6 +11,7 @@ import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import AdminPanelSettingsRoundedIcon from '@mui/icons-material/AdminPanelSettingsRounded';
+import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
@@ -34,7 +35,7 @@ const ROLE_COLOR: Record<Role, string> = {
   adm:             '#ef4444',
 };
 
-export function ConfigPage({ role }: { role?: Role }) {
+export function ConfigPage({ role, isAdmin }: { role?: Role; isAdmin?: boolean }) {
   const [tab, setTab] = useState(0);
 
   // ── Administração
@@ -79,6 +80,22 @@ export function ConfigPage({ role }: { role?: Role }) {
   const listaUsedCategories = PAGE_CATEGORIES.filter(c => lista.some(i => i.categoria === c.value));
   const listaRolesUsed = ROLES.filter(r => lista.some(i => i.role === r.value));
   const donePct = lista.length > 0 ? Math.round((lista.filter(i => i.done).length / lista.length) * 100) : 0;
+
+  if (!isAdmin) {
+    return (
+      <Box className="page-enter" sx={{ p: 3, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Box sx={{ textAlign: 'center', maxWidth: 320 }}>
+          <SettingsRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', opacity: 0.3, mb: 1.5 }} />
+          <Typography sx={{ fontSize: 14, fontWeight: 600, color: 'text.secondary', mb: '6px' }}>
+            Configurações
+          </Typography>
+          <Typography sx={{ fontSize: 13, color: 'text.disabled', lineHeight: 1.6 }}>
+            Nenhuma configuração disponível para o seu perfil no momento.
+          </Typography>
+        </Box>
+      </Box>
+    );
+  }
 
   return (
     <Box className="page-enter" sx={{ p: 3, flex: 1 }}>
