@@ -1,6 +1,6 @@
 # Mudancas desde snapshot de 16/06/2026
 
-> Ultimo sync: 26/06/2026 09:15
+> Ultimo sync: 27/06/2026 13:43
 > Fork: [daia85-prog/nexus-ecossystem](https://github.com/daia85-prog/nexus-ecossystem)
 > Original: [RaphaelCerri/nexus-ecossystem](https://github.com/RaphaelCerri/nexus-ecossystem)
 
@@ -9,6 +9,8 @@
 ## Commits do Raphael desde o snapshot
 
 ```
+ed0d885 ED agora faz integrações e teve a ordenação corrigida
+378c246 ED 3.0 Cards novos e estrutura nova
 b751116 obisidian
 dac19d4 obisidian
 bd02004 obisidian
@@ -30,9 +32,13 @@ b8c1bf4 alterações no ED
  .netlify/netlify.toml                              |    45 +
  .netlify/state.json                                |     3 +
  .obsidian/graph.json                               |    65 +-
- .obsidian/workspace.json                           |    82 +-
+ .obsidian/workspace.json                           |    83 +-
+ BACKLOG.md                                         |    65 +-
+ NEXUS_FEATURES.md                                  |    19 +-
+ README.md                                          |    38 +-
  ROADMAP_MINERACAO.md                               |   122 +
- _VALIDACAO_HEADINGS.txt                            |  2432 ++
+ _VALIDACAO_HEADINGS.txt                            |  2432 +++++
+ cadastros-acessos.md                               |     0
  corpus-conhecimento/.obsidian/app.json             |     1 +
  corpus-conhecimento/.obsidian/appearance.json      |     1 +
  corpus-conhecimento/.obsidian/core-plugins.json    |    33 +
@@ -47,10 +53,10 @@ b8c1bf4 alterações no ED
  corpus-conhecimento/_AUDITORIA.md                  |    96 +
  corpus-conhecimento/_ED/_GUIA_ED.md                |    79 +
  corpus-conhecimento/_ED/_ROUTER.json               |   209 +
- corpus-conhecimento/_INBOX_REVISAR.md              |  2924 ++
+ corpus-conhecimento/_INBOX_REVISAR.md              |   432 +
  corpus-conhecimento/_REVISAO_TOPICOS.md            |   105 +
  corpus-conhecimento/_ROUTING.md                    |    32 +
- corpus-conhecimento/_inbox.jsonl                   |   730 +
+ corpus-conhecimento/_inbox.jsonl                   |   107 +
  .../carregamento/checklist-carregamento/DOSSIE.md  |    62 +
  .../carregamento/checklist-carregamento/ED_CARD.md |    91 +
  .../checklist-carregamento.RAW.md                  |    12 +
@@ -58,12 +64,12 @@ b8c1bf4 alterações no ED
  corpus-conhecimento/blocos/conferencia/.gitkeep    |     0
  .../conferencia/conferencia-manual/DOSSIE.md       |   126 +
  .../conferencia/conferencia-manual/ED_CARD.md      |    74 +
- .../conferencia-manual/conferencia-manual.RAW.md   |   119 +
+ .../conferencia-manual/conferencia-manual.RAW.md   |   115 +
  .../conferencia-manual/conferencia-manual.md       |    33 +
  .../insights/conferencia-manual.INSIGHTS.md        |    64 +
  .../blocos/conferencia/conferencia/DOSSIE.md       |    94 +
  .../blocos/conferencia/conferencia/ED_CARD.md      |    59 +
- .../conferencia/conferencia/conferencia.RAW.md     |  1376 +
+ .../conferencia/conferencia/conferencia.RAW.md     |   584 ++
  .../blocos/conferencia/conferencia/conferencia.md  |    32 +
  .../conferencia/insights/conferencia.INSIGHTS.md   |    44 +
  .../blocos/conferencia/cross-check/DOSSIE.md       |    73 +
@@ -74,103 +80,103 @@ b8c1bf4 alterações no ED
  .../conferencia/packing-termolabil/DOSSIE.md       |    71 +
  .../conferencia/packing-termolabil/ED_CARD.md      |    62 +
  .../insights/packing-termolabil.INSIGHTS.md        |    38 +
- .../packing-termolabil/packing-termolabil.RAW.md   |    41 +
+ .../packing-termolabil/packing-termolabil.RAW.md   |   102 +
  .../packing-termolabil/packing-termolabil.md       |    32 +
  .../blocos/conferencia/packing/DOSSIE.md           |    86 +
  .../blocos/conferencia/packing/ED_CARD.md          |    84 +
  .../packing/insights/packing.INSIGHTS.md           |    45 +
- .../blocos/conferencia/packing/packing.RAW.md      |   689 +
+ .../blocos/conferencia/packing/packing.RAW.md      |   241 +
  .../blocos/conferencia/packing/packing.md          |    32 +
  corpus-conhecimento/blocos/entrada/.gitkeep        |     0
  .../blocos/entrada/cubagem/DOSSIE.md               |    90 +
  .../blocos/entrada/cubagem/ED_CARD.md              |    55 +
- .../blocos/entrada/cubagem/cubagem.RAW.md          |  1546 +
+ .../blocos/entrada/cubagem/cubagem.RAW.md          |   461 +
  .../blocos/entrada/cubagem/cubagem.md              |    33 +
  .../entrada/cubagem/insights/cubagem.INSIGHTS.md   |    43 +
  .../blocos/entrada/order-start/DOSSIE.md           |    88 +
  .../blocos/entrada/order-start/ED_CARD.md          |    64 +
  .../order-start/insights/order-start.INSIGHTS.md   |    42 +
- .../blocos/entrada/order-start/order-start.RAW.md  |  4192 +++
+ .../blocos/entrada/order-start/order-start.RAW.md  |  1169 +++
  .../blocos/entrada/order-start/order-start.md      |    33 +
  .../entrada/recebimento-armazenagem/DOSSIE.md      |    89 +
  .../entrada/recebimento-armazenagem/ED_CARD.md     |    62 +
  .../insights/recebimento-armazenagem.INSIGHTS.md   |    45 +
- .../recebimento-armazenagem.RAW.md                 |  3741 +++
+ .../recebimento-armazenagem.RAW.md                 |  1103 ++
  .../recebimento-armazenagem.md                     |    34 +
  corpus-conhecimento/blocos/estoque/.gitkeep        |     0
  .../blocos/estoque/inventario/DOSSIE.md            |   101 +
  .../blocos/estoque/inventario/ED_CARD.md           |   109 +
  .../inventario/insights/inventario.INSIGHTS.md     |    40 +
- .../blocos/estoque/inventario/inventario.RAW.md    |  1254 +
+ .../blocos/estoque/inventario/inventario.RAW.md    |   344 +
  .../blocos/estoque/inventario/inventario.md        |    33 +
  .../blocos/estoque/reabastecimento/DOSSIE.md       |    89 +
  .../blocos/estoque/reabastecimento/ED_CARD.md      |    83 +
  .../insights/reabastecimento.INSIGHTS.md           |    43 +
- .../estoque/reabastecimento/reabastecimento.RAW.md |  1764 ++
+ .../estoque/reabastecimento/reabastecimento.RAW.md |  1110 ++
  .../estoque/reabastecimento/reabastecimento.md     |    32 +
  corpus-conhecimento/blocos/expedicao/.gitkeep      |     0
  .../blocos/expedicao/etiquetas/DOSSIE.md           |    81 +
  .../blocos/expedicao/etiquetas/ED_CARD.md          |    87 +
- .../blocos/expedicao/etiquetas/etiquetas.RAW.md    |  2314 ++
+ .../blocos/expedicao/etiquetas/etiquetas.RAW.md    |   499 +
  .../blocos/expedicao/etiquetas/etiquetas.md        |    33 +
  .../etiquetas/insights/etiquetas.INSIGHTS.md       |    42 +
  .../blocos/expedicao/paletizacao/DOSSIE.md         |    86 +
  .../blocos/expedicao/paletizacao/ED_CARD.md        |    82 +
  .../paletizacao/insights/paletizacao.INSIGHTS.md   |    44 +
- .../expedicao/paletizacao/paletizacao.RAW.md       |  1055 +
+ .../expedicao/paletizacao/paletizacao.RAW.md       |   657 ++
  .../blocos/expedicao/paletizacao/paletizacao.md    |    33 +
  .../blocos/expedicao/ptl-alocacao/DOSSIE.md        |    78 +
  .../blocos/expedicao/ptl-alocacao/ED_CARD.md       |    74 +
  .../ptl-alocacao/insights/ptl-alocacao.INSIGHTS.md |    44 +
- .../expedicao/ptl-alocacao/ptl-alocacao.RAW.md     |  2175 ++
+ .../expedicao/ptl-alocacao/ptl-alocacao.RAW.md     |   839 ++
  .../blocos/expedicao/ptl-alocacao/ptl-alocacao.md  |    33 +
  corpus-conhecimento/blocos/expedicao/ptm/DOSSIE.md |    90 +
  .../blocos/expedicao/ptm/ED_CARD.md                |    89 +
  .../blocos/expedicao/ptm/insights/ptm.INSIGHTS.md  |    48 +
- .../blocos/expedicao/ptm/ptm.RAW.md                |   653 +
+ .../blocos/expedicao/ptm/ptm.RAW.md                |   333 +
  corpus-conhecimento/blocos/expedicao/ptm/ptm.md    |    33 +
  .../blocos/expedicao/sorter-inducao/DOSSIE.md      |   100 +
  .../blocos/expedicao/sorter-inducao/ED_CARD.md     |    91 +
  .../insights/sorter-inducao.INSIGHTS.md            |    44 +
- .../expedicao/sorter-inducao/sorter-inducao.RAW.md |   483 +
+ .../expedicao/sorter-inducao/sorter-inducao.RAW.md |   264 +
  .../expedicao/sorter-inducao/sorter-inducao.md     |    33 +
  .../blocos/expedicao/sorter-mapa-rota/DOSSIE.md    |    82 +
  .../blocos/expedicao/sorter-mapa-rota/ED_CARD.md   |    97 +
  .../insights/sorter-mapa-rota.INSIGHTS.md          |    44 +
- .../sorter-mapa-rota/sorter-mapa-rota.RAW.md       |   831 +
+ .../sorter-mapa-rota/sorter-mapa-rota.RAW.md       |   373 +
  .../expedicao/sorter-mapa-rota/sorter-mapa-rota.md |    33 +
  .../blocos/expedicao/sorter-rejeito/DOSSIE.md      |    92 +
  .../blocos/expedicao/sorter-rejeito/ED_CARD.md     |   118 +
  .../insights/sorter-rejeito.INSIGHTS.md            |    42 +
- .../expedicao/sorter-rejeito/sorter-rejeito.RAW.md |  1457 +
+ .../expedicao/sorter-rejeito/sorter-rejeito.RAW.md |  1003 ++
  .../expedicao/sorter-rejeito/sorter-rejeito.md     |    34 +
  .../blocos/expedicao/sorter/DOSSIE.md              |    95 +
  .../blocos/expedicao/sorter/ED_CARD.md             |   110 +
  .../expedicao/sorter/insights/sorter.INSIGHTS.md   |    45 +
- .../blocos/expedicao/sorter/sorter.RAW.md          |  6635 ++++
+ .../blocos/expedicao/sorter/sorter.RAW.md          |  2859 ++++++
  .../blocos/expedicao/sorter/sorter.md              |    32 +
  corpus-conhecimento/blocos/integracao/.gitkeep     |     0
  .../integracao/integracao-cadastros/DOSSIE.md      |    92 +
  .../integracao/integracao-cadastros/ED_CARD.md     |   114 +
  .../insights/integracao-cadastros.INSIGHTS.md      |    47 +
- .../integracao-cadastros.RAW.md                    |  1113 +
+ .../integracao-cadastros.RAW.md                    |   452 +
  .../integracao-cadastros/integracao-cadastros.md   |    33 +
  .../blocos/integracao/integracao-pedidos/DOSSIE.md |    77 +
  .../integracao/integracao-pedidos/ED_CARD.md       |    97 +
  .../insights/integracao-pedidos.INSIGHTS.md        |    44 +
- .../integracao-pedidos/integracao-pedidos.RAW.md   |  3116 ++
+ .../integracao-pedidos/integracao-pedidos.RAW.md   |  1009 ++
  .../integracao-pedidos/integracao-pedidos.md       |    34 +
  .../blocos/integracao/integracao-wcs-wms/DOSSIE.md |   114 +
  .../integracao/integracao-wcs-wms/ED_CARD.md       |   100 +
  .../insights/integracao-wcs-wms.INSIGHTS.md        |    39 +
- .../integracao-wcs-wms/integracao-wcs-wms.RAW.md   |   868 +
+ .../integracao-wcs-wms/integracao-wcs-wms.RAW.md   |   518 +
  .../integracao-wcs-wms/integracao-wcs-wms.md       |    34 +
  .../blocos/integracao/integracao-wms-erp/DOSSIE.md |    95 +
  .../integracao/integracao-wms-erp/ED_CARD.md       |   120 +
  .../insights/integracao-wms-erp.INSIGHTS.md        |    46 +
- .../integracao-wms-erp/integracao-wms-erp.RAW.md   |   828 +
+ .../integracao-wms-erp/integracao-wms-erp.RAW.md   |   284 +
  .../integracao-wms-erp/integracao-wms-erp.md       |    35 +
- .../blocos/integracao/integracao/integracao.RAW.md | 30963 +++++++++++++++++++
+ .../blocos/integracao/integracao/integracao.RAW.md | 10079 +++++++++++++++++++
  .../blocos/integracao/integracao/integracao.md     |    32 +
  .../separacao/cancelamento-pedidos/DOSSIE.md       |    88 +
  .../separacao/cancelamento-pedidos/ED_CARD.md      |    67 +
@@ -181,43 +187,116 @@ b8c1bf4 alterações no ED
  .../blocos/separacao/picking-cart/ED_CARD.md       |    82 +
  .../picking-cart/insights/picking-cart.INSIGHTS.md |    45 +
  .../separacao/picking-cart/picking-cart.DOSSIE.md  |    26 +
- .../separacao/picking-cart/picking-cart.RAW.md     |  2503 ++
+ .../separacao/picking-cart/picking-cart.RAW.md     |  1030 ++
  .../blocos/separacao/picking-cart/picking-cart.md  |    33 +
  .../blocos/separacao/picking-fullcase/DOSSIE.md    |    94 +
  .../blocos/separacao/picking-fullcase/ED_CARD.md   |    90 +
  .../insights/picking-fullcase.INSIGHTS.md          |    45 +
- .../picking-fullcase/picking-fullcase.RAW.md       |   668 +
+ .../picking-fullcase/picking-fullcase.RAW.md       |   298 +
  .../separacao/picking-fullcase/picking-fullcase.md |    33 +
  .../blocos/separacao/picking-pallet/DOSSIE.md      |   104 +
  .../blocos/separacao/picking-pallet/ED_CARD.md     |    72 +
  .../insights/picking-pallet.INSIGHTS.md            |    42 +
- .../separacao/picking-pallet/picking-pallet.RAW.md |   169 +
+ .../separacao/picking-pallet/picking-pallet.RAW.md |   141 +
  .../separacao/picking-pallet/picking-pallet.md     |    33 +
  .../blocos/separacao/picking-pbl/DOSSIE.md         |    89 +
  .../blocos/separacao/picking-pbl/ED_CARD.md        |   100 +
  .../picking-pbl/insights/picking-pbl.INSIGHTS.md   |    45 +
- .../separacao/picking-pbl/picking-pbl.RAW.md       |  1196 +
+ .../separacao/picking-pbl/picking-pbl.RAW.md       |   710 ++
  .../blocos/separacao/picking-pbl/picking-pbl.md    |    35 +
  .../blocos/separacao/put-to-wall/DOSSIE.md         |    76 +
  .../blocos/separacao/put-to-wall/ED_CARD.md        |    59 +
  .../put-to-wall/insights/put-to-wall.INSIGHTS.md   |    42 +
- .../separacao/put-to-wall/put-to-wall.RAW.md       |  1088 +
+ .../separacao/put-to-wall/put-to-wall.RAW.md       |   246 +
  .../blocos/separacao/put-to-wall/put-to-wall.md    |    35 +
  .../blocos/separacao/shortpicking/DOSSIE.md        |    95 +
  .../blocos/separacao/shortpicking/ED_CARD.md       |    72 +
  .../shortpicking/insights/shortpicking.INSIGHTS.md |    47 +
- .../separacao/shortpicking/shortpicking.RAW.md     |   746 +
+ .../separacao/shortpicking/shortpicking.RAW.md     |   442 +
  .../blocos/separacao/shortpicking/shortpicking.md  |    34 +
  .../blocos/sistema/cadastros-acessos/DOSSIE.md     |    76 +
  .../blocos/sistema/cadastros-acessos/ED_CARD.md    |   113 +
- .../cadastros-acessos/cadastros-acessos.RAW.md     |  4789 +++
+ .../cadastros-acessos/cadastros-acessos.RAW.md     |  2201 ++++
  .../insights/cadastros-acessos.INSIGHTS.md         |    43 +
  .../blocos/sistema/dashboards-relatorios/DOSSIE.md |    80 +
  .../sistema/dashboards-relatorios/ED_CARD.md       |   132 +
- .../dashboards-relatorios.RAW.md                   |  5682 ++++
+ .../dashboards-relatorios.RAW.md                   |  1678 +++
  .../insights/dashboards-relatorios.INSIGHTS.md     |    41 +
- corpus-conhecimento/corpus-full.jsonl              |  6626 ++++
- corpus-conhecimento/manifesto.json                 |   575 +
+ .../cards/CARD_cadastros-acessos.md                |   218 +
+ .../cards/CARD_cancelamento-pedidos.md             |   170 +
+ .../cards/CARD_checklist-carregamento.md           |   152 +
+ .../cards/CARD_conferencia-manual.md               |   163 +
+ corpus-conhecimento/cards/CARD_conferencia.md      |   154 +
+ corpus-conhecimento/cards/CARD_cross-check.md      |   159 +
+ corpus-conhecimento/cards/CARD_cubagem.md          |   175 +
+ .../cards/CARD_dashboards-relatorios.md            |   230 +
+ corpus-conhecimento/cards/CARD_etiquetas.md        |   155 +
+ .../cards/CARD_integracao-cadastros.md             |   464 +
+ .../cards/CARD_integracao-pedidos.md               |   367 +
+ .../cards/CARD_integracao-wcs-wms.md               |   350 +
+ .../cards/CARD_integracao-wms-erp.md               |   211 +
+ corpus-conhecimento/cards/CARD_integracao.md       |   268 +
+ corpus-conhecimento/cards/CARD_inventario.md       |   165 +
+ corpus-conhecimento/cards/CARD_order-start.md      |   194 +
+ .../cards/CARD_packing-termolabil.md               |   158 +
+ corpus-conhecimento/cards/CARD_packing.md          |   153 +
+ corpus-conhecimento/cards/CARD_paletizacao.md      |   176 +
+ corpus-conhecimento/cards/CARD_picking-cart.md     |   209 +
+ corpus-conhecimento/cards/CARD_picking-fullcase.md |   204 +
+ corpus-conhecimento/cards/CARD_picking-pallet.md   |   174 +
+ corpus-conhecimento/cards/CARD_picking-pbl.md      |   226 +
+ corpus-conhecimento/cards/CARD_ptl-alocacao.md     |   184 +
+ corpus-conhecimento/cards/CARD_ptm.md              |   167 +
+ corpus-conhecimento/cards/CARD_put-to-wall.md      |   141 +
+ corpus-conhecimento/cards/CARD_reabastecimento.md  |   168 +
+ .../cards/CARD_recebimento-armazenagem.md          |   162 +
+ corpus-conhecimento/cards/CARD_shortpicking.md     |   162 +
+ corpus-conhecimento/cards/CARD_sorter-inducao.md   |   172 +
+ corpus-conhecimento/cards/CARD_sorter-mapa-rota.md |   205 +
+ corpus-conhecimento/cards/CARD_sorter-rejeito.md   |   214 +
+ corpus-conhecimento/cards/CARD_sorter.md           |   202 +
+ corpus-conhecimento/cards/JSON_DOCS.md             |   538 +
+ corpus-conhecimento/cards/PROMPT_ED.md             |   234 +
+ corpus-conhecimento/cards/_AUDITOR.md              |   223 +
+ corpus-conhecimento/cards/_KICKOFF_FIELDS.md       |    91 +
+ corpus-conhecimento/corpus-full.jsonl              |  1344 +++
+ .../ed-knowledge/CARD_cadastros-acessos.md         |   113 +
+ .../ed-knowledge/CARD_cancelamento-pedidos.md      |    67 +
+ .../ed-knowledge/CARD_checklist-carregamento.md    |    91 +
+ .../ed-knowledge/CARD_conferencia-manual.md        |    74 +
+ .../ed-knowledge/CARD_conferencia.md               |    59 +
+ .../ed-knowledge/CARD_cross-check.md               |    67 +
+ corpus-conhecimento/ed-knowledge/CARD_cubagem.md   |    55 +
+ .../ed-knowledge/CARD_dashboards-relatorios.md     |   132 +
+ corpus-conhecimento/ed-knowledge/CARD_etiquetas.md |    87 +
+ .../ed-knowledge/CARD_integracao-cadastros.md      |   114 +
+ .../ed-knowledge/CARD_integracao-pedidos.md        |    97 +
+ .../ed-knowledge/CARD_integracao-wcs-wms.md        |   100 +
+ .../ed-knowledge/CARD_integracao-wms-erp.md        |   120 +
+ .../ed-knowledge/CARD_inventario.md                |   109 +
+ .../ed-knowledge/CARD_order-start.md               |    64 +
+ .../ed-knowledge/CARD_packing-termolabil.md        |    62 +
+ corpus-conhecimento/ed-knowledge/CARD_packing.md   |    84 +
+ .../ed-knowledge/CARD_paletizacao.md               |    82 +
+ .../ed-knowledge/CARD_picking-cart.md              |    82 +
+ .../ed-knowledge/CARD_picking-fullcase.md          |    90 +
+ .../ed-knowledge/CARD_picking-pallet.md            |    72 +
+ .../ed-knowledge/CARD_picking-pbl.md               |   100 +
+ .../ed-knowledge/CARD_ptl-alocacao.md              |    74 +
+ corpus-conhecimento/ed-knowledge/CARD_ptm.md       |    89 +
+ .../ed-knowledge/CARD_put-to-wall.md               |    59 +
+ .../ed-knowledge/CARD_reabastecimento.md           |    83 +
+ .../ed-knowledge/CARD_recebimento-armazenagem.md   |    62 +
+ .../ed-knowledge/CARD_shortpicking.md              |    72 +
+ .../ed-knowledge/CARD_sorter-inducao.md            |    91 +
+ .../ed-knowledge/CARD_sorter-mapa-rota.md          |    97 +
+ .../ed-knowledge/CARD_sorter-rejeito.md            |   118 +
+ corpus-conhecimento/ed-knowledge/CARD_sorter.md    |   110 +
+ corpus-conhecimento/ed-knowledge/JSON_DOCS.md      |   408 +
+ corpus-conhecimento/ed-knowledge/PROMPT_ED.md      |    46 +
+ corpus-conhecimento/ed-knowledge/_GUIA_ED.md       |    79 +
+ corpus-conhecimento/ed-knowledge/_ROUTER.json      |   209 +
+ corpus-conhecimento/manifesto.json                 |   575 ++
  .../relatorio-auditoria-links-resolvidos.md        |    64 +
  .../vocabulario/cadastros-acessos.txt              |    33 +
  .../vocabulario/conferencia-manual.txt             |     8 +
@@ -249,6 +328,7 @@ b8c1bf4 alterações no ED
  .../vocabulario/sorter-mapa-rota.txt               |    12 +
  corpus-conhecimento/vocabulario/sorter-rejeito.txt |    12 +
  corpus-conhecimento/vocabulario/sorter.txt         |    42 +
+ dashboards-relatorios.md                           |     0
  demos/database.md                                  |     0
  demos/electron.md                                  |     0
  demos/xspreadsheet.md                              |     0
@@ -263,28 +343,34 @@ b8c1bf4 alterações no ED
  minerador/__pycache__/reclassifier.cpython-311.pyc |   Bin 0 -> 18448 bytes
  minerador/__pycache__/sintetizador.cpython-311.pyc |   Bin 0 -> 33277 bytes
  minerador/_estado_sintetizador.json                |    51 +
- minerador/auditor.py                               |   673 +
+ minerador/auditor.py                               |   673 ++
  minerador/descobridor.py                           |    93 +
- minerador/extrator.py                              |   160 +
+ minerador/extrator.py                              |   400 +
  minerador/limpar_inbox.py                          |   164 +
  minerador/minerador.py                             |   447 +
  minerador/reclassifier.py                          |   324 +
  minerador/requirements.txt                         |    43 +
- minerador/roteador.py                              |   112 +
- minerador/sintetizador.py                          |   762 +
+ minerador/roteador.py                              |   121 +
+ minerador/sintetizador.py                          |   762 ++
  minerador/smoke_test.py                            |    18 +
  minerador/topicos.json                             |    34 +
  package-lock.json                                  |   926 +-
  package.json                                       |     4 +-
- public/ES_PLACEHOLDER_v7.docx                      |   Bin 6904976 -> 6909732 bytes
+ public/ES_PLACEHOLDER_v7.docx                      |   Bin 6904976 -> 6922109 bytes
+ src/App.tsx                                        |    50 +-
+ src/components/Sidebar.tsx                         |    79 +-
  src/lib/docxBuilder.ts                             |    74 +-
  src/lib/featureRegistry.ts                         |     9 +
  src/lib/kickoffMeta.ts                             |     4 +-
- src/pages/Documentacao/ApontamentoHoras.tsx        |  1376 +
+ src/pages/Admin/index.tsx                          |   541 +
+ src/pages/ConfigPage.tsx                           |    19 +-
+ src/pages/Documentacao/ApontamentoHoras.tsx        |  1376 +++
  src/pages/Documentacao/GerarDocumento.tsx          |    18 +-
  src/pages/Documentacao/index.tsx                   |    16 +-
  src/pages/KickoffPage.tsx                          |    27 +-
- 258 files changed, 112950 insertions(+), 120 deletions(-)
+ src/pages/LoginPage.tsx                            |    14 +-
+ vite.config.ts                                     |     5 +
+ 342 files changed, 63946 insertions(+), 173 deletions(-)
 ```
 
 ---
@@ -292,6 +378,258 @@ b8c1bf4 alterações no ED
 ## Diff completo (o que mudou no codigo)
 
 ```diff
+diff --git a/src/App.tsx b/src/App.tsx
+index 986cd48..86c4b39 100644
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -14,6 +14,7 @@ import { ComingSoon } from './pages/ComingSoon';
+ import { ConfigPage } from './pages/ConfigPage';
+ import { SugestoesPage } from './pages/SugestoesPage';
+ import { DocumentacaoPage } from './pages/Documentacao';
++import { AdminPage } from './pages/Admin';
+ import { ProjetosPage } from './pages/Projetos';
+ import { ProjectOverview } from './pages/Projetos/ProjectOverview';
+ import { NewKickoffModal } from './components/NewKickoffModal';
+@@ -22,7 +23,7 @@ import { IntroScreen } from './components/IntroScreen';
+ import type { NexusProject } from './lib/projectStore';
+ import { loadProject } from './lib/projectStore';
+ 
+-type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao';
++type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
+ 
+ const PAGE_TITLES: Record<Page, string> = {
+   kickoff:       'Kickoff',
+@@ -33,18 +34,32 @@ const PAGE_TITLES: Record<Page, string> = {
+   config:        'Configurações',
+   sugestoes:     'Sugestões',
+   documentacao:  'Documentação',
++  admin:         'Administrador',
+ };
+ 
+ const SESSION_KEY = 'nexus_session';
+ 
+-function loadSession(): { name: string; role: Role } | null {
++function loadSession(): { name: string; role: Role; email: string } | null {
+   try { return JSON.parse(localStorage.getItem(SESSION_KEY) ?? 'null'); }
+   catch { return null; }
+ }
+ 
++function recoverEmail(name: string): string {
++  try {
++    const users = JSON.parse(localStorage.getItem('nexus_users') ?? '{}') as Record<string, { name: string }>;
++    const found = Object.entries(users).find(([, u]) => u.name === name);
++    return found ? found[0] : '';
++  } catch { return ''; }
++}
++
+ export default function App() {
+   const [isAuthenticated, setIsAuthenticated] = useState(() => loadSession() !== null);
+   const [userName, setUserName] = useState(() => loadSession()?.name ?? '');
++  const [userEmail, setUserEmail] = useState(() => {
++    const s = loadSession();
++    if (!s) return '';
++    return s.email || recoverEmail(s.name);
++  });
+   const [showIntro, setShowIntro] = useState(false);
+   const [page, setPage] = useState<Page>('projetos');
+   const [role, setRole] = useState<Role>(() => loadSession()?.role ?? 'gestao');
+@@ -92,6 +107,17 @@ export default function App() {
+     if (session) localStorage.setItem(SESSION_KEY, JSON.stringify({ ...session, role: r }));
+   };
+ 
++  const handleLogout = () => {
++    localStorage.removeItem(SESSION_KEY);
++    setIsAuthenticated(false);
++    setUserName('');
++    setUserEmail('');
++    setRole('gestao');
++    setShowIntro(false);
++    setPage('projetos');
++    setActiveProjectId(null);
++  };;
++
+   function renderKickoffLanding() {
+     return (
+       <Box
+@@ -182,35 +208,29 @@ export default function App() {
+       case 'dashboard':
+         return <ComingSoon iconType="dashboard" title="Dashboard" description="Métricas e indicadores dos projetos: taxa de preenchimento, seções críticas, timeline." />;
+       case 'config':
+-        return <ConfigPage role={role} />;
++        return <ConfigPage role={role} isAdmin={userEmail === 'raphael.caveagna@invent-corp.com'} />;
+       case 'sugestoes':
+         return <SugestoesPage role={role} userName={userName} />;
+       case 'documentacao':
+         return <DocumentacaoPage />;
++      case 'admin':
++        return <AdminPage role={role} onRoleChange={handleRoleChange} />;
+     }
+   }
+ 
+   const inKickoffFullscreen = isFullscreen && page === 'kickoff' && !!activeProjectId;
+ 
+-  const handleLogout = () => {
+-    localStorage.removeItem(SESSION_KEY);
+-    setIsAuthenticated(false);
+-    setUserName('');
+-    setRole('gestao');
+-    setShowIntro(false);
+-    setPage('projetos');
+-    setActiveProjectId(null);
+-  };
+ 
+   if (!isAuthenticated) {
+     return (
+       <LoginPage
+-        onLogin={(nome, r) => {
++        onLogin={(nome, r, email) => {
+           setUserName(nome);
++          setUserEmail(email);
+           setRole(r);
+           setIsAuthenticated(true);
+           setShowIntro(true);
+-          localStorage.setItem(SESSION_KEY, JSON.stringify({ name: nome, role: r }));
++          localStorage.setItem(SESSION_KEY, JSON.stringify({ name: nome, role: r, email }));
+         }}
+       />
+     );
+@@ -221,7 +241,7 @@ export default function App() {
+       {showIntro && <IntroScreen onDone={() => setShowIntro(false)} />}
+ 
+       {!inKickoffFullscreen && (
+-        <Sidebar current={page as 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config'} onNavigate={handleNavigate} role={role} onRoleChange={handleRoleChange} userName={userName} onLogout={handleLogout} />
++        <Sidebar current={page as Parameters<typeof handleNavigate>[0]} onNavigate={handleNavigate} role={role} onRoleChange={handleRoleChange} userName={userName} userEmail={userEmail} onLogout={handleLogout} />
+       )}
+ 
+       <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', minWidth: 0 }}>
+diff --git a/src/components/Sidebar.tsx b/src/components/Sidebar.tsx
+index 8769bd7..16cdd79 100644
+--- a/src/components/Sidebar.tsx
++++ b/src/components/Sidebar.tsx
+@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
+ import Select from '@mui/material/Select';
+ import Tooltip from '@mui/material/Tooltip';
+ import Typography from '@mui/material/Typography';
++import AdminPanelSettingsRoundedIcon from '@mui/icons-material/AdminPanelSettingsRounded';
+ import AssignmentTurnedInRoundedIcon from '@mui/icons-material/AssignmentTurnedInRounded';
+ import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
+ import BuildRoundedIcon from '@mui/icons-material/BuildRounded';
+@@ -17,7 +18,9 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
+ import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
+ import TipsAndUpdatesRoundedIcon from '@mui/icons-material/TipsAndUpdatesRounded';
+ 
+-type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao';
++type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
++
++const ADMIN_EMAIL = 'raphael.caveagna@invent-corp.com';
+ 
+ export const ROLES = [
+   { value: 'gestao',          label: 'Gestão' },
+@@ -53,10 +56,12 @@ interface SidebarProps {
+   role: Role;
+   onRoleChange: (role: Role) => void;
+   userName: string;
++  userEmail: string;
+   onLogout: () => void;
+ }
+ 
+-export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onLogout }: SidebarProps) {
++export function Sidebar({ current, onNavigate, role, onRoleChange, userName, userEmail, onLogout }: SidebarProps) {
++  const isAdmin = userEmail === ADMIN_EMAIL;
+   const [collapsed, setCollapsed] = useState(false);
+   const [admClicks, setAdmClicks] = useState(0);
+   const [admHint, setAdmHint] = useState(false);
+@@ -90,6 +95,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
+   const NAV = role === 'documentacao'
+     ? [...NAV_DEFAULT, NAV_DOC]
+     : NAV_DEFAULT;
++  const NAV_ADMIN: NavItem = { id: 'admin', label: 'Administrador', Icon: AdminPanelSettingsRoundedIcon };
+   const roleLabel = ROLES.find(r => r.value === role)?.label ?? role;
+   const firstName = userName.split(' ')[0] || 'Usuário';
+   const initial = firstName[0]?.toUpperCase() ?? 'U';
+@@ -228,6 +234,53 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
+           <List dense disablePadding sx={{ display: 'flex', flexDirection: 'column' }}>
+             {NAV.map(renderNavItem)}
+           </List>
++
++          {/* Admin nav item — visible only to raphael.caveagna@invent-corp.com */}
++          {isAdmin && (
++            <Box sx={{ mt: 1.5, pt: 1.5, borderTop: '1px solid rgba(239,68,68,0.15)' }}>
++              {!collapsed && (
++                <Typography sx={{ fontSize: 9.5, color: 'rgba(239,68,68,0.4)', fontWeight: 700, letterSpacing: '1px', px: '6px', pb: '8px', textTransform: 'uppercase' }}>
++                  Acesso Restrito
++                </Typography>
++              )}
++              {(() => {
++                const isActive = current === 'admin';
++                const btn = (
++                  <Box
++                    component="button"
++                    onClick={() => onNavigate('admin')}
++                    sx={{
++                      position: 'relative', borderRadius: '8px', mb: '2px',
++                      pl: collapsed ? 0 : '12px', pr: collapsed ? 0 : '8px',
++                      minHeight: 36, justifyContent: collapsed ? 'center' : 'flex-start',
++                      gap: 1.25, border: 'none', background: 'none', cursor: 'pointer',
++                      display: 'flex', alignItems: 'center', width: '100%',
++                      color: isActive ? '#ef4444' : 'rgba(239,68,68,0.4)',
++                      bgcolor: isActive ? 'rgba(239,68,68,0.08)' : 'transparent',
++                      '&::before': isActive ? {
++                        content: '""', position: 'absolute', left: 0, top: '18%', bottom: '18%',
++                        width: '3px', borderRadius: '0 3px 3px 0', bgcolor: '#ef4444',
++                      } : {},
++                      '&:hover': { bgcolor: 'rgba(239,68,68,0.06)', color: '#ef4444' },
++                      transition: 'background-color 0.15s, color 0.15s',
++                    } as const}
++                  >
++                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: collapsed ? '100%' : 28, height: 36, flexShrink: 0 }}>
++                      <AdminPanelSettingsRoundedIcon sx={{ fontSize: 18 }} />
++                    </Box>
++                    {!collapsed && (
++                      <Typography sx={{ fontSize: 13, fontWeight: isActive ? 600 : 500, lineHeight: 1, whiteSpace: 'nowrap', color: 'inherit' }}>
++                        {NAV_ADMIN.label}
++                      </Typography>
++                    )}
++                  </Box>
++                );
++                return collapsed
++                  ? <Tooltip key="admin" title={NAV_ADMIN.label} placement="right" arrow>{btn}</Tooltip>
++                  : btn;
++              })()}
++            </Box>
++          )}
+         </Box>
+ 
+         {/* Bottom section */}
+@@ -238,16 +291,18 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
+ 
+           {!collapsed && (
+             <>
+-              <Select
+-                value={role}
+-                onChange={(e) => onRoleChange(e.target.value as Role)}
+-                fullWidth size="small"
+-                sx={{ fontSize: 12 }}
+-              >
+-                {ROLES.filter(r => r.value !== 'adm' || role === 'adm').map(r => (
+-                  <MenuItem key={r.value} value={r.value} sx={{ fontSize: 12 }}>{r.label}</MenuItem>
+-                ))}
+-              </Select>
++              {isAdmin && (
++                <Select
++                  value={role}
++                  onChange={(e) => onRoleChange(e.target.value as Role)}
++                  fullWidth size="small"
++                  sx={{ fontSize: 12, mb: 1 }}
++                >
++                  {ROLES.map(r => (
++                    <MenuItem key={r.value} value={r.value} sx={{ fontSize: 12 }}>{r.label}</MenuItem>
++                  ))}
++                </Select>
++              )}
+ 
+               <Box
+                 sx={{
 diff --git a/src/lib/docxBuilder.ts b/src/lib/docxBuilder.ts
 index ce815a1..46fd094 100644
 --- a/src/lib/docxBuilder.ts
@@ -431,6 +769,597 @@ index 06547e0..10b6ed5 100644
 -  'if_titul','if_ambiente','if_s','if1','if2','if3','if4','if5','if6',
 +  'if_resp_infra','if_resp_srv','if_ambiente','if_s','if1','if2','if3','if4','if5','if6',
  ]);
+diff --git a/src/pages/Admin/index.tsx b/src/pages/Admin/index.tsx
+new file mode 100644
+index 0000000..d1cefd7
+--- /dev/null
++++ b/src/pages/Admin/index.tsx
+@@ -0,0 +1,541 @@
++import { useState, useEffect, useCallback } from 'react';
++import Box from '@mui/material/Box';
++import Button from '@mui/material/Button';
++import Chip from '@mui/material/Chip';
++import IconButton from '@mui/material/IconButton';
++import MenuItem from '@mui/material/MenuItem';
++import Paper from '@mui/material/Paper';
++import Select from '@mui/material/Select';
++import Tab from '@mui/material/Tab';
++import Tabs from '@mui/material/Tabs';
++import TextField from '@mui/material/TextField';
++import Tooltip from '@mui/material/Tooltip';
++import Typography from '@mui/material/Typography';
++
++import AddRoundedIcon from '@mui/icons-material/AddRounded';
++import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
++import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
++import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
++import EditRoundedIcon from '@mui/icons-material/EditRounded';
++import SlideshowRoundedIcon from '@mui/icons-material/SlideshowRounded';
++import SaveRoundedIcon from '@mui/icons-material/SaveRounded';
++
++import { ROLES } from '../../components/Sidebar';
++import type { Role } from '../../components/Sidebar';
++
++// ─── Types ───────────────────────────────────────────────────────────────────
++
++type TagColor = 'gold' | 'blue' | 'green';
++
++interface PSlide {
++  id: string;
++  tag: string;
++  tagColor: TagColor;
++  title: string;
++  body: string;
++}
++
++interface PData {
++  title: string;
++  date: string;
++  slides: PSlide[];
++  missaoTag: string;
++  missaoTitle: string;
++  missaoBody: string;
++}
++
++// ─── Storage ─────────────────────────────────────────────────────────────────
++
++const STORAGE_KEY = 'nexus_presentation_v1';
++
++const DEFAULT_DATA: PData = {
++  title: 'NEXUS — Atualização de Sistema',
++  date: 'Junho 2026',
++  slides: [
++    {
++      id: '1', tag: 'Novas Skills', tagColor: 'gold',
++      title: 'Inteligência Pós-Reunião: duas Skills que fecham o ciclo',
++      body: 'Duas novas habilidades automatizam o ciclo pós-reunião. A primeira converte a transcrição em bullet points organizados; a segunda lê esses pontos com o documento atual e diz exatamente a ação a tomar — inserir, substituir ou excluir. Qualquer definição de reunião vira instrução precisa para o documento, sem margem para interpretação.',
++    },
++    {
++      id: '2', tag: 'Motor de Documentos', tagColor: 'gold',
++      title: 'Gerador de Docs: Métodos de Autenticação integrado com precisão cirúrgica',
++      body: 'O capítulo de Métodos de Autenticação — com formatação rica, JSONs, tabelas e exemplos — agora é extraído diretamente do template e reinjetado na posição exata. Foi resolvido um problema técnico sofisticado: o Word fragmenta internamente os marcadores no XML, causando falhas silenciosas. O motor detecta e reconstrói esses fragmentos, garantindo saída idêntica ao template original.',
++    },
++    {
++      id: '3', tag: 'Stakeholder', tagColor: 'blue',
++      title: 'Arenas acessando o sistema direto do banco de dados',
++      body: 'O Arenas já está operando diretamente contra o banco de dados do NEXUS, visualizando os dados que lhe competem de forma autônoma. A integração está ativa e funcional. A validação ainda está em curso — a cobrança aguarda o aval definitivo.',
++    },
++    {
++      id: '4', tag: 'Integração', tagColor: 'blue',
++      title: 'Azure + Microsoft 365: o NEXUS entra no ecossistema corporativo',
++      body: 'Com o apoio do Gomes, o NEXUS começa a se conectar ao Azure — a camada de IA da Microsoft integrada ao e-mail, Teams, Planner e calendário corporativo. Um leque enorme de automações se abre dentro das ferramentas que a equipe já usa no dia a dia.',
++    },
++    {
++      id: '5', tag: 'Próximo Grande Passo', tagColor: 'gold',
++      title: 'O Scrapper: construindo a Bíblia Suprema do conhecimento operacional',
++      body: 'O próximo passo é o Scrapper — sistema que coleta e organiza o conhecimento real dos processos. O Oráculo passa a responder perguntas das equipes com profundidade genuína. Os dados alimentam a versão definitiva da Base de Conhecimento: insights, problemas comuns por processo (como picking), padrões operacionais e variantes por cliente.',
++    },
++    {
++      id: '6', tag: 'Produtividade', tagColor: 'gold',
++      title: 'Automação de Apontamento de Horas',
++      body: 'Em desenvolvimento junto com o Gu: automação que elimina o processo manual de apontamento. Registros de tempo passam a acontecer de forma automática ou semi-automática, integrados ao fluxo natural de trabalho.',
++    },
++    {
++      id: '7', tag: 'Visão de Futuro', tagColor: 'gold',
++      title: 'Especialista Documentador 3.0 — quando o Scrapper estiver rodando',
++      body: 'Com o Scrapper maduro e a Base de Conhecimento completa, o Especialista Documentador evolui para sua versão mais poderosa. Alimentado por dados reais e variantes de clientes, ele deixa de ser um gerador de documentos e passa a ser um especialista genuíno — capaz de antecipar inconsistências e gerar especificações com precisão inédita.',
++    },
++  ],
++  missaoTag: 'Próxima Missão — Infraestrutura',
++  missaoTitle: 'Igor e o servidor da Invent: o ecossistema precisa de uma casa',
++  missaoBody: 'Para que o NEXUS funcione de forma plena e independente, o próximo passo institucional é instalar o sistema, o banco de dados e o modelo de IA no servidor da Invent. O Igor precisa ser alinhado agora — quanto antes ele entender o escopo, mais rápido a infraestrutura fica disponível e o NEXUS opera com total autonomia dentro da empresa.',
++};
++
++function loadPData(): PData {
++  try {
++    const raw = localStorage.getItem(STORAGE_KEY);
++    if (raw) {
++      const parsed = JSON.parse(raw) as Partial<PData>;
++      return { ...DEFAULT_DATA, ...parsed };
++    }
++  } catch { /* ignore */ }
++  return { ...DEFAULT_DATA, slides: DEFAULT_DATA.slides.map(s => ({ ...s })) };
++}
++
++function savePData(d: PData) {
++  localStorage.setItem(STORAGE_KEY, JSON.stringify(d));
++}
++
++function genId() {
++  return Math.random().toString(36).slice(2, 9);
++}
++
++// ─── Presentation Overlay ─────────────────────────────────────────────────────
++
++function PresentationOverlay({ data, onClose }: { data: PData; onClose: () => void }) {
++  useEffect(() => {
++    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
++    window.addEventListener('keydown', handler);
++    return () => window.removeEventListener('keydown', handler);
++  }, [onClose]);
++
++  const tagColor = (c: TagColor) =>
++    c === 'gold' ? '#C98A22' : c === 'blue' ? '#3E87CF' : '#2DB87A';
++
++  const borderColor = (c: TagColor) =>
++    c === 'blue' ? '#2A5E96' : c === 'green' ? '#1A4033' : '#263347';
++
++  return (
++    <div style={{
++      position: 'fixed', inset: 0,
++      background: '#0F1520',
++      zIndex: 9999,
++      overflowY: 'auto',
++      fontFamily: "'Segoe UI', system-ui, -apple-system, sans-serif",
++      WebkitFontSmoothing: 'antialiased',
++    }}>
++      {/* ESC button */}
++      <button
++        onClick={onClose}
++        style={{
++          position: 'fixed', top: 16, right: 20,
++          background: 'rgba(255,255,255,0.06)',
++          border: '1px solid rgba(255,255,255,0.1)',
++          borderRadius: 6, color: '#7A96B0',
++          cursor: 'pointer', padding: '6px 14px',
++          fontSize: 11.5, zIndex: 10000,
++          letterSpacing: '0.06em',
++        }}
++      >
++        ESC · Fechar
++      </button>
++
++      <div style={{ maxWidth: 720, margin: '0 auto', padding: '52px 36px 96px' }}>
++        {/* Header */}
++        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', paddingBottom: 28, borderBottom: '1px solid #263347', marginBottom: 44 }}>
++          <div>
++            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#C98A22' }}>NEXUS</div>
++            <div style={{ fontSize: 12, color: '#7A96B0', letterSpacing: '0.04em', marginTop: 4 }}>Sistema de Inteligência Documental</div>
++          </div>
++          <div style={{ textAlign: 'right', fontSize: 11.5, color: '#3E5268', letterSpacing: '0.06em', lineHeight: 1.8 }}>
++            {data.title}<br />{data.date}
++          </div>
++        </div>
++
++        {/* Lead */}
++        <div style={{ borderLeft: '3px solid #C98A22', padding: '14px 18px', background: 'rgba(201,138,34,0.06)', borderRadius: '0 4px 4px 0', fontFamily: "Georgia, Cambria, serif", fontSize: 14, color: '#7A96B0', lineHeight: 1.8, marginBottom: 52 }}>
++          Resumo das evoluções implementadas. Cada tópico cobre uma entrega ou avanço concreto — do motor de documentos às novas integrações e ao roadmap em andamento.
++        </div>
++
++        {/* Slides */}
++        {data.slides.map((slide, i) => (
++          <div key={slide.id} style={{ padding: '30px 0 30px 24px', borderLeft: `2px solid ${borderColor(slide.tagColor)}`, marginBottom: 4 }}>
++            <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.16em', color: '#3E5268', marginBottom: 4 }}>
++              {String(i + 1).padStart(2, '0')}
++            </div>
++            <div style={{ fontSize: 10.5, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: tagColor(slide.tagColor), marginBottom: 8 }}>
++              {slide.tag}
++            </div>
++            <h2 style={{ fontSize: 20, fontWeight: 600, lineHeight: 1.3, color: '#DCE8F4', marginBottom: 14, letterSpacing: '-0.01em' }}>
++              {slide.title}
++            </h2>
++            <p style={{ fontFamily: "Georgia, Cambria, serif", fontSize: 14.5, lineHeight: 1.82, color: '#A8BDD4', maxWidth: 620, margin: 0 }}>
++              {slide.body}
++            </p>
++          </div>
++        ))}
++
++        {/* Missão callout */}
++        <div style={{ marginTop: 48, background: 'linear-gradient(135deg, #0E1E18 0%, #0D1A22 100%)', border: '1px solid #1E3828', borderLeft: '4px solid #2DB87A', borderRadius: '0 8px 8px 0', padding: 28 }}>
++          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#2DB87A', marginBottom: 10 }}>
++            {data.missaoTag || 'Próxima Missão'}
++          </div>
++          <h2 style={{ fontSize: 18, fontWeight: 600, color: '#DCE8F4', marginBottom: 12, lineHeight: 1.3 }}>
++            {data.missaoTitle}
++          </h2>
++          <p style={{ fontFamily: "Georgia, Cambria, serif", fontSize: 14, lineHeight: 1.85, color: '#7AADA0', margin: 0 }}>
++            {data.missaoBody}
++          </p>
++        </div>
++
++        {/* Footer */}
++        <div style={{ marginTop: 72, paddingTop: 24, borderTop: '1px solid #263347', fontSize: 11, color: '#3E5268', display: 'flex', justifyContent: 'space-between' }}>
++          <span>NEXUS · Sistema de Inteligência Documental</span>
++          <span>{data.date}</span>
++        </div>
++      </div>
++    </div>
++  );
++}
++
++// ─── Slide Edit Card ──────────────────────────────────────────────────────────
++
++const TAG_COLOR_OPTIONS: { value: TagColor; label: string; color: string }[] = [
++  { value: 'gold',  label: 'Dourado',  color: '#C98A22' },
++  { value: 'blue',  label: 'Azul',     color: '#3E87CF' },
++  { value: 'green', label: 'Verde',    color: '#2DB87A' },
++];
++
++function SlideCard({
++  slide, index, total,
++  onUpdate, onDelete, onMoveUp, onMoveDown,
++}: {
++  slide: PSlide; index: number; total: number;
++  onUpdate: (s: PSlide) => void;
++  onDelete: () => void;
++  onMoveUp: () => void;
++  onMoveDown: () => void;
++}) {
++  const [open, setOpen] = useState(false);
++  const [draft, setDraft] = useState<PSlide>(slide);
++
++  const handleSave = () => {
++    onUpdate(draft);
++    setOpen(false);
++  };
++
++  const accentColor = TAG_COLOR_OPTIONS.find(o => o.value === slide.tagColor)?.color ?? '#C98A22';
++
++  return (
++    <Paper elevation={0} sx={{ border: '1px solid', borderColor: open ? 'primary.main' : 'divider', borderLeft: `3px solid ${accentColor}`, transition: 'border-color .15s' }}>
++      <Box sx={{ display: 'flex', alignItems: 'center', p: '10px 12px', gap: 1 }}>
++        <Typography sx={{ fontSize: 10, color: 'text.disabled', minWidth: 22, fontFamily: 'monospace', fontWeight: 600 }}>
++          {String(index + 1).padStart(2, '0')}
++        </Typography>
++        <Chip
++          label={slide.tag || '—'}
++          size="small"
++          sx={{ fontSize: 10, height: 18, bgcolor: `${accentColor}18`, color: accentColor, border: `1px solid ${accentColor}44`, fontWeight: 600 }}
++        />
++        <Typography sx={{ fontSize: 13, fontWeight: 600, color: 'text.primary', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
++          {slide.title || <span style={{ color: 'rgba(255,255,255,0.2)', fontStyle: 'italic' }}>Sem título</span>}
++        </Typography>
++        <Box sx={{ display: 'flex', gap: '2px', flexShrink: 0 }}>
++          <Tooltip title="Mover para cima"><span>
++            <IconButton size="small" disabled={index === 0} onClick={onMoveUp} sx={{ color: 'text.disabled', '&:hover': { color: 'text.primary' }, p: '4px' }}>
++              <ArrowUpwardRoundedIcon sx={{ fontSize: 14 }} />
++            </IconButton>
++          </span></Tooltip>
++          <Tooltip title="Mover para baixo"><span>
++            <IconButton size="small" disabled={index === total - 1} onClick={onMoveDown} sx={{ color: 'text.disabled', '&:hover': { color: 'text.primary' }, p: '4px' }}>
++              <ArrowDownwardRoundedIcon sx={{ fontSize: 14 }} />
++            </IconButton>
++          </span></Tooltip>
++          <Tooltip title={open ? 'Fechar' : 'Editar'}>
++            <IconButton size="small" onClick={() => { setDraft({ ...slide }); setOpen(o => !o); }} sx={{ color: open ? 'primary.main' : 'text.disabled', '&:hover': { color: 'text.primary' }, p: '4px' }}>
++              <EditRoundedIcon sx={{ fontSize: 14 }} />
++            </IconButton>
++          </Tooltip>
++          <Tooltip title="Remover slide">
++            <IconButton size="small" onClick={onDelete} sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, p: '4px' }}>
++              <DeleteRoundedIcon sx={{ fontSize: 14 }} />
++            </IconButton>
++          </Tooltip>
++        </Box>
++      </Box>
++
++      {open && (
++        <Box sx={{ p: '0 14px 14px', display: 'flex', flexDirection: 'column', gap: 1.5 }}>
++          <Box sx={{ display: 'flex', gap: 1 }}>
++            <TextField
++              label="Tag" size="small" fullWidth
++              value={draft.tag}
++              onChange={e => setDraft(d => ({ ...d, tag: e.target.value }))}
++              sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
++            />
++            <Select
++              value={draft.tagColor} size="small"
++              onChange={e => setDraft(d => ({ ...d, tagColor: e.target.value as TagColor }))}
++              sx={{ fontSize: 13, minWidth: 110 }}
++            >
++              {TAG_COLOR_OPTIONS.map(o => (
++                <MenuItem key={o.value} value={o.value} sx={{ fontSize: 12 }}>
++                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
++                    <Box sx={{ width: 8, height: 8, borderRadius: '50%', bgcolor: o.color }} />
++                    {o.label}
++                  </Box>
++                </MenuItem>
++              ))}
++            </Select>
++          </Box>
++          <TextField
++            label="Título" size="small" fullWidth
++            value={draft.title}
++            onChange={e => setDraft(d => ({ ...d, title: e.target.value }))}
++            sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
++          />
++          <TextField
++            label="Texto" size="small" fullWidth multiline minRows={3}
++            value={draft.body}
++            onChange={e => setDraft(d => ({ ...d, body: e.target.value }))}
++            sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
++          />
++          <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end' }}>
++            <Button size="small" variant="outlined" onClick={() => setOpen(false)} sx={{ fontSize: 12, textTransform: 'none' }}>Cancelar</Button>
++            <Button size="small" variant="contained" onClick={handleSave} startIcon={<SaveRoundedIcon sx={{ fontSize: 14 }} />} sx={{ fontSize: 12, textTransform: 'none' }}>Salvar</Button>
++          </Box>
++        </Box>
++      )}
++    </Paper>
++  );
++}
++
++// ─── AdminPage ────────────────────────────────────────────────────────────────
++
++interface AdminPageProps {
++  role: Role;
++  onRoleChange: (r: Role) => void;
++}
++
++export function AdminPage({ role, onRoleChange }: AdminPageProps) {
++  const [tab, setTab] = useState(0);
++  const [data, setData] = useState<PData>(loadPData);
++  const [presenting, setPresenting] = useState(false);
++  const [dirty, setDirty] = useState(false);
++
++  const update = useCallback((updater: (d: PData) => PData) => {
++    setData(d => { const next = updater(d); return next; });
++    setDirty(true);
++  }, []);
++
++  const handleSave = () => {
++    savePData(data);
++    setDirty(false);
++  };
++
++  // ── Slide operations
++  const addSlide = () => {
++    update(d => ({
++      ...d,
++      slides: [...d.slides, { id: genId(), tag: 'Nova Feature', tagColor: 'gold', title: '', body: '' }],
++    }));
++  };
++
++  const updateSlide = (id: string, s: PSlide) => {
++    update(d => ({ ...d, slides: d.slides.map(x => x.id === id ? s : x) }));
++  };
++
++  const deleteSlide = (id: string) => {
++    update(d => ({ ...d, slides: d.slides.filter(x => x.id !== id) }));
++  };
++
++  const moveSlide = (index: number, dir: -1 | 1) => {
++    update(d => {
++      const arr = [...d.slides];
++      const target = index + dir;
++      if (target < 0 || target >= arr.length) return d;
++      [arr[index], arr[target]] = [arr[target], arr[index]];
++      return { ...d, slides: arr };
++    });
++  };
++
++  const ROLE_COLOR: Record<Role, string> = {
++    gestao: '#6366f1', engenharia: '#0ea5e9', documentacao: '#8b5cf6',
++    pmo: '#ffc500', desenvolvimento: '#22c55e', eletrica: '#f59e0b', adm: '#ef4444',
++  };
++
++  return (
++    <>
++      {presenting && <PresentationOverlay data={data} onClose={() => setPresenting(false)} />}
++
++      <Box className="page-enter" sx={{ p: 3, flex: 1 }}>
++        <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: '4px', flexWrap: 'wrap', gap: 1 }}>
++          <Box>
++            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: '4px' }}>
++              <Typography sx={{ fontSize: 20, fontWeight: 800, color: 'text.primary', letterSpacing: '-.3px' }}>
++                Administrador
++              </Typography>
++              <Chip label="ADM" size="small" sx={{ fontSize: 10, fontWeight: 700, bgcolor: 'rgba(239,68,68,0.1)', color: '#ef4444', border: '1px solid rgba(239,68,68,0.25)', height: 18 }} />
++            </Box>
++            <Typography sx={{ fontSize: 13, color: 'text.disabled' }}>
++              Acesso exclusivo · raphael.caveagna@invent-corp.com
++            </Typography>
++          </Box>
++          {dirty && (
++            <Button size="small" variant="contained" onClick={handleSave} startIcon={<SaveRoundedIcon sx={{ fontSize: 14 }} />} sx={{ fontSize: 12, textTransform: 'none', fontWeight: 700 }}>
++              Salvar alterações
++            </Button>
++          )}
++        </Box>
++
++        <Tabs
++          value={tab}
++          onChange={(_, v) => setTab(v)}
++          sx={{
++            borderBottom: '1px solid', borderColor: 'divider', mb: 3, mt: 2.5,
++            '& .MuiTab-root': { fontSize: 12, fontWeight: 600, textTransform: 'none', minHeight: 40, px: 2 },
++            '& .Mui-selected': { color: 'primary.main' },
++            '& .MuiTabs-indicator': { bgcolor: 'primary.main' },
++          }}
++        >
++          <Tab label="Apresentação" icon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
++          <Tab label="Papéis" />
++        </Tabs>
++
++        {/* ── Tab 0: Apresentação ── */}
++        {tab === 0 && (
++          <Box>
++            {/* Header fields */}
++            <Box sx={{ display: 'flex', gap: 1.5, mb: 3, flexWrap: 'wrap', alignItems: 'flex-end' }}>
++              <TextField
++                label="Título da apresentação" size="small" sx={{ flex: 2, minWidth: 220, '& .MuiInputBase-root': { fontSize: 13 } }}
++                value={data.title}
++                onChange={e => update(d => ({ ...d, title: e.target.value }))}
++              />
++              <TextField
++                label="Data / Contexto" size="small" sx={{ width: 160, '& .MuiInputBase-root': { fontSize: 13 } }}
++                value={data.date}
++                onChange={e => update(d => ({ ...d, date: e.target.value }))}
++                placeholder="ex: Julho 2026"
++              />
++              <Button
++                variant="contained" size="small"
++                startIcon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />}
++                onClick={() => setPresenting(true)}
++                sx={{ fontSize: 13, fontWeight: 700, textTransform: 'none', px: 2.5, height: 40, bgcolor: '#C98A22', '&:hover': { bgcolor: '#B07718' }, flexShrink: 0 }}
++              >
++                Modo Apresentação
++              </Button>
++            </Box>
++
++            {/* Slides */}
++            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}>
++              <Typography sx={{ fontSize: 12, fontWeight: 700, color: 'text.secondary', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
++                Tópicos · {data.slides.length}
++              </Typography>
++              <Button size="small" startIcon={<AddRoundedIcon sx={{ fontSize: 14 }} />} onClick={addSlide} sx={{ fontSize: 12, textTransform: 'none', color: 'text.secondary', '&:hover': { color: 'primary.main' } }}>
++                Novo tópico
++              </Button>
++            </Box>
++
++            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '6px', mb: 3 }}>
++              {data.slides.map((slide, i) => (
++                <SlideCard
++                  key={slide.id}
++                  slide={slide}
++                  index={i}
++                  total={data.slides.length}
++                  onUpdate={s => updateSlide(slide.id, s)}
++                  onDelete={() => deleteSlide(slide.id)}
++                  onMoveUp={() => moveSlide(i, -1)}
++                  onMoveDown={() => moveSlide(i, 1)}
++                />
++              ))}
++            </Box>
++
++            {/* Próxima Missão */}
++            <Box sx={{ borderTop: '1px solid', borderColor: 'divider', pt: 3, mt: 1 }}>
++              <Typography sx={{ fontSize: 12, fontWeight: 700, color: '#2DB87A', textTransform: 'uppercase', letterSpacing: '0.08em', mb: 1.5 }}>
++                Próxima Missão (callout verde)
++              </Typography>
++              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5, p: 2, border: '1px solid rgba(45,184,122,0.2)', borderLeft: '3px solid #2DB87A', borderRadius: '0 6px 6px 0', bgcolor: 'rgba(45,184,122,0.04)' }}>
++                <TextField
++                  label="Label da missão" size="small" fullWidth
++                  value={data.missaoTag}
++                  onChange={e => update(d => ({ ...d, missaoTag: e.target.value }))}
++                  sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
++                  placeholder="ex: Próxima Missão — Infraestrutura"
++                />
++                <TextField
++                  label="Título" size="small" fullWidth
++                  value={data.missaoTitle}
++                  onChange={e => update(d => ({ ...d, missaoTitle: e.target.value }))}
++                  sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
++                />
++                <TextField
++                  label="Texto" size="small" fullWidth multiline minRows={3}
++                  value={data.missaoBody}
++                  onChange={e => update(d => ({ ...d, missaoBody: e.target.value }))}
++                  sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
++                />
++              </Box>
++            </Box>
++          </Box>
++        )}
++
++        {/* ── Tab 1: Papéis ── */}
++        {tab === 1 && (
++          <Box sx={{ maxWidth: 480 }}>
++            <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>
++              Papel atual da sessão
++            </Typography>
++            <Typography sx={{ fontSize: 12, color: 'text.disabled', mb: 2.5 }}>
++              Apenas o administrador pode transitar entre funções. Útil para debugar a plataforma e visualizar o sistema como cada perfil.
++            </Typography>
++
++            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
++              {ROLES.map(r => {
++                const active = role === r.value;
++                return (
++                  <Box
++                    key={r.value}
++                    component="button"
++                    onClick={() => onRoleChange(r.value)}
++                    sx={{
++                      width: '100%', display: 'flex', alignItems: 'center', gap: 1.5,
++                      p: '10px 14px', border: '1px solid', borderRadius: 1.5, cursor: 'pointer',
++                      bgcolor: active ? `${ROLE_COLOR[r.value]}12` : 'transparent',
++                      borderColor: active ? ROLE_COLOR[r.value] : 'divider',
++                      transition: '.15s',
++                      '&:hover': { borderColor: ROLE_COLOR[r.value], bgcolor: `${ROLE_COLOR[r.value]}0A` },
++                    }}
++                  >
++                    <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
++                    <Typography sx={{ fontSize: 13, fontWeight: active ? 700 : 500, color: active ? ROLE_COLOR[r.value] : 'text.secondary', flex: 1, textAlign: 'left' }}>
++                      {r.label}
++                    </Typography>
++                    {active && (
++                      <Chip label="ativo" size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r.value]}20`, color: ROLE_COLOR[r.value], border: `1px solid ${ROLE_COLOR[r.value]}44`, fontWeight: 700 }} />
++                    )}
++                  </Box>
++                );
++              })}
++            </Box>
++          </Box>
++        )}
++      </Box>
++    </>
++  );
++}
+diff --git a/src/pages/ConfigPage.tsx b/src/pages/ConfigPage.tsx
+index eefb6ef..026347f 100644
+--- a/src/pages/ConfigPage.tsx
++++ b/src/pages/ConfigPage.tsx
+@@ -11,6 +11,7 @@ import TextField from '@mui/material/TextField';
+ import Tooltip from '@mui/material/Tooltip';
+ import Typography from '@mui/material/Typography';
+ import AdminPanelSettingsRoundedIcon from '@mui/icons-material/AdminPanelSettingsRounded';
++import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
+ import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
+ import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
+ import EditRoundedIcon from '@mui/icons-material/EditRounded';
+@@ -34,7 +35,7 @@ const ROLE_COLOR: Record<Role, string> = {
+   adm:             '#ef4444',
+ };
+ 
+-export function ConfigPage({ role }: { role?: Role }) {
++export function ConfigPage({ role, isAdmin }: { role?: Role; isAdmin?: boolean }) {
+   const [tab, setTab] = useState(0);
+ 
+   // ── Administração
+@@ -80,6 +81,22 @@ export function ConfigPage({ role }: { role?: Role }) {
+   const listaRolesUsed = ROLES.filter(r => lista.some(i => i.role === r.value));
+   const donePct = lista.length > 0 ? Math.round((lista.filter(i => i.done).length / lista.length) * 100) : 0;
+ 
++  if (!isAdmin) {
++    return (
++      <Box className="page-enter" sx={{ p: 3, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
++        <Box sx={{ textAlign: 'center', maxWidth: 320 }}>
++          <SettingsRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', opacity: 0.3, mb: 1.5 }} />
++          <Typography sx={{ fontSize: 14, fontWeight: 600, color: 'text.secondary', mb: '6px' }}>
++            Configurações
++          </Typography>
++          <Typography sx={{ fontSize: 13, color: 'text.disabled', lineHeight: 1.6 }}>
++            Nenhuma configuração disponível para o seu perfil no momento.
++          </Typography>
++        </Box>
++      </Box>
++    );
++  }
++
+   return (
+     <Box className="page-enter" sx={{ p: 3, flex: 1 }}>
+       <Typography sx={{ fontSize: 20, fontWeight: 800, color: 'text.primary', letterSpacing: '-.3px', mb: '4px' }}>
 diff --git a/src/pages/Documentacao/ApontamentoHoras.tsx b/src/pages/Documentacao/ApontamentoHoras.tsx
 new file mode 100644
 index 0000000..ebee4d1
@@ -1449,525 +2378,6 @@ index 0000000..ebee4d1
 +      if (!src?.atividades.length || dst.atividades.length) continue;
 +      newDays[dstKey] = { ...dst, atividades: src.atividades.map(a => ({ ...a, id: nextId++, blocos: [], ajustada: false })) };
 +      copied += src.atividades.length;
-+    }
-+    setState(prev => ({ ...prev, days: newDays, nextActId: nextId }));
-+    toast(copied ? `${copied} atividade(s) copiada(s). Revise e distribua.` : 'Nada para copiar.');
-+  };
-+
-+  // ── Activity CRUD
-+  const addActivity = (key: string, projetoId: number, descricao: string, peso: number) => {
-+    setState(prev => {
-+      const day = getDay(prev.days, key);
-+      const newAct: Atividade = { id: prev.nextActId, projetoId, descricao, peso, ordem: day.atividades.length, blocos: [], ajustada: false };
-+      return { ...prev, nextActId: prev.nextActId + 1, days: { ...prev.days, [key]: { ...day, atividades: [...day.atividades.map(a => ({ ...a, blocos: [], ajustada: false })), newAct] } } };
-+    });
-+    setEditing(null);
-+  };
-+
-+  const editActivity = (key: string, actId: number, projetoId: number, descricao: string, peso: number) => {
-+    updateDay(key, day => ({
-+      ...day,
-+      atividades: day.atividades.map(a =>
-+        a.id === actId ? { ...a, projetoId, descricao, peso, blocos: [], ajustada: false } : { ...a, blocos: [], ajustada: false }
-+      ),
-+    }));
-+    setEditing(null);
-+  };
-+
-+  const deleteActivity = (key: string, actId: number) => {
-+    updateDay(key, day => ({
-+      ...day,
-+      atividades: day.atividades.filter(a => a.id !== actId)
-+        .sort((a, b) => a.ordem - b.ordem)
-+        .map((a, i) => ({ ...a, ordem: i, blocos: [], ajustada: false })),
-+    }));
-+  };
-+
-+  const duplicateActivity = (key: string, actId: number) => {
-+    setState(prev => {
-+      const day = getDay(prev.days, key);
-+      const a = day.atividades.find(x => x.id === actId);
-+      if (!a) return prev;
-+      const newAct: Atividade = { ...a, id: prev.nextActId, ordem: day.atividades.length, blocos: [], ajustada: false };
-+      return { ...prev, nextActId: prev.nextActId + 1, days: { ...prev.days, [key]: { ...day, atividades: [...day.atividades.map(x => ({ ...x, blocos: [], ajustada: false })), newAct] } } };
-+    });
-+  };
-+
-+  const moveActivity = (key: string, actId: number, dir: -1 | 1) => {
-+    updateDay(key, day => {
-+      const sorted = [...day.atividades].sort((a, b) => a.ordem - b.ordem);
-+      const i = sorted.findIndex(a => a.id === actId);
-+      const j = i + dir;
-+      if (j < 0 || j >= sorted.length) return day;
-+      [sorted[i].ordem, sorted[j].ordem] = [sorted[j].ordem, sorted[i].ordem];
-+      return { ...day, atividades: sorted.map(a => ({ ...a, blocos: [], ajustada: false })) };
-+    });
-+  };
-+
-+  // ── Profile / Projects
-+  const saveProfile = (p: ApontProfile) => { setState(prev => ({ ...prev, profile: p })); setProfileOpen(false); toast('Perfil salvo.'); };
-+  const addProject = (nome: string) => setState(prev => ({ ...prev, projects: [...prev.projects, { id: prev.nextProjId, nome, ativo: true }], nextProjId: prev.nextProjId + 1 }));
-+  const toggleProject = (id: number) => setState(prev => ({ ...prev, projects: prev.projects.map(p => p.id === id ? { ...p, ativo: !p.ativo } : p) }));
-+
-+  // ── Day type
-+  const saveDayType = (key: string, tipo: DayTipo, cargaCustom?: number) => {
-+    const day = getDay(state.days, key);
-+    if (TIPOS_OFF.includes(tipo) && day.atividades.length && !confirm(`Marcar como ${TIPO_LABEL[tipo]} remove as atividades do dia. Continuar?`)) return;
-+    updateDay(key, () => ({
-+      tipo, cargaCustom,
-+      atividades: TIPOS_OFF.includes(tipo) ? [] : day.atividades.map(a => ({ ...a, blocos: [], ajustada: false })),
-+    }));
-+    setDayTypeKey(null);
-+  };
-+
-+  // ── Adjust
-+  const saveAdjust = (key: string, updated: Atividade[]) => {
-+    updateDay(key, day => ({ ...day, atividades: updated }));
-+    setAdjustKey(null);
-+    toast('Ajustes salvos.');
-+  };
-+
-+  // ── Export Excel + save to history
-+  const exportExcel = async () => {
-+    // Auto-distribute any day in 'rascunho' state (has activities but no blocks yet)
-+    let workingDays = { ...state.days };
-+    let didAutoDistribute = false;
-+    const distErrors: string[] = [];
-+    dates.forEach((d, i) => {
-+      const key = fmtKey(d);
-+      const day = getDay(workingDays, key);
-+      if (TIPOS_OFF.includes(day.tipo) || !day.atividades.length) return;
-+      const { cls } = dayStatus(day);
-+      if (cls !== 'rascunho') return; // already distributed or manually adjusted — leave it
-+      const { ok, error: distErr, result } = distributeActivities(day.atividades, d, day);
-+      if (!ok) { distErrors.push(`${DOW_SHORT[i]} ${fmtShort(d)}: ${distErr ?? 'Erro'}`); return; }
-+      workingDays[key] = { ...day, atividades: result };
-+      didAutoDistribute = true;
-+    });
-+    if (distErrors.length) {
-+      alert('Não foi possível distribuir automaticamente:\n\n' + distErrors.join('\n'));
-+      return;
-+    }
-+    if (didAutoDistribute) {
-+      setState(prev => ({ ...prev, days: workingDays }));
-+      toast('Distribuição automática aplicada antes de exportar.');
-+    }
-+
-+    // Warn about completely empty days (no activities at all)
-+    const vazios: string[] = [];
-+    dates.forEach((d, i) => {
-+      const day = getDay(workingDays, fmtKey(d));
-+      if (TIPOS_OFF.includes(day.tipo)) return;
-+      if (!day.atividades.length) vazios.push(`${DOW_SHORT[i]} ${fmtShort(d)} (sem atividades)`);
-+    });
-+    if (vazios.length && !confirm(`Atenção — dias sem atividades:\n\n${vazios.join('\n')}\n\nExportar mesmo assim?`)) return;
-+
-+    const rows = buildExcelRows(monday, workingDays, state.profile, w, state.projects);
-+    if (rows.length === 1) { alert('Nada a exportar: a semana não tem blocos distribuídos.'); return; }
-+
-+    const fname = `Apontamento de Horas - Semana ${w.week} - ${state.profile.nome} - ${w.year}`;
-+    await writeExcel(rows, fname);
-+
-+    // Build days snapshot using the (possibly auto-distributed) workingDays
-+    const daysSnapshot: Record<string, DayData> = {};
-+    dates.forEach(d => { const k = fmtKey(d); daysSnapshot[k] = getDay(workingDays, k); });
-+
-+    const hash = weekHash(monday, workingDays);
-+    const mondayISO = fmtKey(monday);
-+    const weekLabel = `Semana ${w.week} · ${fmtShort(dates[0])}–${fmtBR(dates[4])}`;
-+
-+    const entry: ApontHistoryEntry = {
-+      id: `${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-+      userName: state.profile.nome,
-+      weekKey: wkKey(monday),
-+      weekNum: w.week,
-+      weekYear: w.year,
-+      mondayISO,
-+      weekLabel,
-+      exportedAt: new Date().toISOString(),
-+      contentHash: hash,
-+      daysSnapshot,
-+      projectsSnapshot: state.projects,
-+      profile: state.profile,
-+    };
-+    upsertHistoryEntry(entry);
-+
-+    setState(prev => ({ ...prev, exports: { ...prev.exports, [wkKey(monday)]: hash } }));
-+    toast(`Exportado: ${fname}.xlsx · salvo no histórico.`);
-+  };
-+
-+  // ── Render
-+  const adjustDay = adjustKey ? getDay(state.days, adjustKey) : null;
-+  const dayTypeDay = dayTypeKey ? getDay(state.days, dayTypeKey) : null;
-+
-+  return (
-+    <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
-+
-+      {/* Top bar */}
-+      <Box sx={{ px: 2.5, py: 1.5, borderBottom: '1px solid', borderColor: 'divider', flexShrink: 0, display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 1.5, justifyContent: 'space-between' }}>
-+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-+          <IconButton size="small" onClick={() => shiftWeek(-1)}><ChevronLeftRoundedIcon fontSize="small" /></IconButton>
-+          <Box sx={{ px: 1.5, minWidth: 210, textAlign: 'center' }}>
-+            <Typography sx={{ fontSize: 15, fontWeight: 700, letterSpacing: 0.3 }}>SEMANA {w.week}</Typography>
-+            <Typography sx={{ fontSize: 11, color: 'text.secondary' }}>{fmtShort(dates[0])} – {fmtBR(dates[4])}</Typography>
-+          </Box>
-+          <IconButton size="small" onClick={() => shiftWeek(1)}><ChevronRightRoundedIcon fontSize="small" /></IconButton>
-+          <Button size="small" color="inherit" onClick={goToday} sx={{ fontSize: 11, ml: 0.5 }}>Hoje</Button>
-+        </Box>
-+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-+          {isDirty && (
-+            <Typography sx={{ fontSize: 11, color: 'warning.main', bgcolor: 'rgba(255,197,0,0.08)', px: 1.5, py: 0.5, borderRadius: 1, border: '1px solid rgba(255,197,0,0.2)' }}>
-+              ⚠ Semana alterada após exportação
-+            </Typography>
-+          )}
-+          <Button size="small" color="inherit" startIcon={<ContentCopyRoundedIcon sx={{ fontSize: '15px !important' }} />} onClick={copyPrevWeek}>Copiar semana anterior</Button>
-+          <Button size="small" color="inherit" startIcon={<FolderRoundedIcon sx={{ fontSize: '15px !important' }} />} onClick={() => setProjectsOpen(true)}>Projetos</Button>
-+          <Button size="small" color="inherit" startIcon={<PersonRoundedIcon sx={{ fontSize: '15px !important' }} />} onClick={() => setProfileOpen(true)}>Perfil</Button>
-+          <Button size="small" color="inherit" startIcon={<HistoryRoundedIcon sx={{ fontSize: '15px !important' }} />} onClick={() => setHistoryOpen(true)}>Histórico</Button>
-+          <Button size="small" variant="outlined" color="inherit" startIcon={<AutoFixHighRoundedIcon sx={{ fontSize: '15px !important' }} />} onClick={distributeWeek}>Distribuir semana</Button>
-+          <Button size="small" variant="contained" startIcon={<FileDownloadRoundedIcon sx={{ fontSize: '15px !important' }} />} onClick={exportExcel}>Exportar Excel</Button>
-+        </Box>
-+      </Box>
-+
-+      {/* Week grid */}
-+      <Box sx={{ flex: 1, overflow: 'auto', p: 2 }}>
-+        <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(5, minmax(220px, 1fr))', gap: 1.5, minWidth: 1160 }}>
-+          {dates.map((d, i) => {
-+            const key = fmtKey(d);
-+            const day = getDay(state.days, key);
-+            const off = TIPOS_OFF.includes(day.tipo);
-+            const carga = cargaMin(d, day);
-+            const { cls, label } = dayStatus(day);
-+            const aloc = day.atividades.reduce((s, a) => s + a.blocos.reduce((x, b) => x + b.fim - b.ini, 0), 0);
-+            const fimJ = off ? 18 * 60 : jornadaFim(d, day);
-+            const span = fimJ - JORNADA[1].ini;
-+            const pct = (m: number) => ((m - JORNADA[1].ini) / span * 100);
-+            const isToday = key === todayKey;
-+            const sorted = [...day.atividades].sort((a, b) => a.ordem - b.ordem);
-+            const hasDistributed = sorted.some(a => a.blocos.length > 0);
-+            const isEditingDay = editing?.dayKey === key;
-+
-+            return (
-+              <Paper key={key} sx={{
-+                display: 'flex', flexDirection: 'column', minHeight: 380,
-+                borderColor: isToday ? 'primary.main' : 'divider',
-+                boxShadow: isToday ? '0 0 0 1px rgba(255,197,0,0.25)' : 'none',
-+                bgcolor: off ? 'rgba(255,255,255,0.01)' : 'background.paper',
-+              }}>
-+                {/* Day header */}
-+                <Box sx={{ px: 1.5, pt: 1.25, pb: 1, borderBottom: '1px solid', borderColor: 'divider' }}>
-+                  <Box sx={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', mb: 0.75 }}>
-+                    <Typography sx={{ fontSize: 11, fontWeight: 800, letterSpacing: 1, color: isToday ? 'primary.main' : 'text.primary' }}>
-+                      {DOW_SHORT[i]}
-+                    </Typography>
-+                    <Typography sx={{ fontSize: 11, color: 'text.disabled', fontFamily: 'monospace' }}>{fmtShort(d)}</Typography>
-+                  </Box>
-+                  <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1 }}>
-+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
-+                      <Box sx={{ width: 6, height: 6, borderRadius: '50%', bgcolor: off ? '#444' : STATUS_DOT[cls] }} />
-+                      <Typography sx={{ fontSize: 10.5, color: 'text.secondary' }}>{off ? TIPO_LABEL[day.tipo] : label}</Typography>
-+                    </Box>
-+                    {!off && (
-+                      <Typography sx={{ fontSize: 10.5, color: 'text.secondary', fontFamily: 'monospace' }}>
-+                        <Box component="span" sx={{ color: aloc > 0 && aloc === carga ? 'success.main' : 'text.primary', fontWeight: 700 }}>{durFmt(aloc)}</Box>
-+                        /{durFmt(carga)}
-+                      </Typography>
-+                    )}
-+                  </Box>
-+                  {!off && (
-+                    <Box>
-+                      <Box sx={{ height: 7, borderRadius: 1, bgcolor: '#2a2a2a', position: 'relative', overflow: 'hidden', border: '1px solid #333' }}>
-+                        {fimJ > LUNCH.ini && (
-+                          <Box sx={{ position: 'absolute', top: 0, bottom: 0, left: `${pct(LUNCH.ini)}%`, width: `${pct(LUNCH.fim) - pct(LUNCH.ini)}%`, backgroundImage: 'repeating-linear-gradient(45deg, #3a3a3a 0 2px, transparent 2px 5px)' }} />
-+                        )}
-+                        {sorted.flatMap(a => a.blocos.map((b, bi) => {
-+                          const [, fg] = projColor(a.projetoId);
-+                          return <Box key={`${a.id}-${bi}`} sx={{ position: 'absolute', top: 0, bottom: 0, left: `${pct(b.ini)}%`, width: `${pct(b.fim) - pct(b.ini)}%`, bgcolor: fg, opacity: a.ajustada ? 1 : 0.72 }} />;
-+                        }))}
-+                      </Box>
-+                      <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 0.25 }}>
-+                        <Typography sx={{ fontSize: 8.5, color: '#555', fontFamily: 'monospace' }}>08:00</Typography>
-+                        <Typography sx={{ fontSize: 8.5, color: '#555', fontFamily: 'monospace' }}>{hm(fimJ)}</Typography>
-+                      </Box>
-+                    </Box>
-+                  )}
-+                </Box>
-+
-+                {/* Day controls — right below progress bar, before activities */}
-+                <Box sx={{ px: 0.75, pt: 0.5, pb: 0.25, display: 'flex', gap: 0.5, borderBottom: '1px solid', borderColor: 'divider' }}>
-+                  <Button size="small" color="inherit" fullWidth sx={{ fontSize: 10, py: 0.4 }} onClick={() => setDayTypeKey(key)}>Tipo de dia</Button>
-+                  <Button size="small" color="inherit" fullWidth sx={{ fontSize: 10, py: 0.4 }} disabled={off || !sorted.length} onClick={() => distributeDaySafe(key, d)}>Distribuir</Button>
-+                  <Button size="small" color="inherit" fullWidth sx={{ fontSize: 10, py: 0.4 }} disabled={off || !hasDistributed} onClick={() => setAdjustKey(key)}>Ajustar</Button>
-+                </Box>
-+
-+                {/* Day body */}
-+                <Box sx={{ flex: 1, p: 1, display: 'flex', flexDirection: 'column', gap: 0.75 }}>
-+                  {off ? (
-+                    <Box sx={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px dashed', borderColor: 'divider', borderRadius: 1.5 }}>
-+                      <Typography sx={{ fontSize: 12, color: 'text.disabled', textAlign: 'center' }}>
-+                        {TIPO_LABEL[day.tipo]}<br /><span style={{ fontSize: 10 }}>sem apontamentos</span>
-+                      </Typography>
-+                    </Box>
-+                  ) : (
-+                    <>
-+                      {sorted.map((a, idx) => {
-+                        const p = projById(a.projetoId);
-+                        const [bg, fg] = projColor(a.projetoId);
-+                        if (isEditingDay && editing!.actId === a.id) {
-+                          return (
-+                            <ActivityForm key={a.id} projects={state.projects} initial={a}
-+                              onSave={(pId, desc, peso) => editActivity(key, a.id, pId, desc, peso)}
-+                              onCancel={() => setEditing(null)} />
-+                          );
-+                        }
-+                        return (
-+                          <Box key={a.id} sx={{ border: '1px solid', borderColor: 'divider', borderRadius: 1.5, p: 1, bgcolor: 'rgba(255,255,255,0.02)', '&:hover .act-actions': { opacity: 1 } }}>
-+                            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 0.5, mb: 0.5 }}>
-+                              <Box sx={{ fontSize: 10.5, fontWeight: 700, px: 1, py: 0.25, borderRadius: 10, bgcolor: bg, color: fg, maxWidth: 130, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={p?.nome}>
-+                                {p?.nome ?? '?'}
-+                              </Box>
-+                              <Typography sx={{ fontSize: 10, color: 'rgba(255,197,0,0.7)', fontFamily: 'monospace', bgcolor: 'rgba(255,197,0,0.07)', px: 0.75, py: 0.2, borderRadius: 0.75, border: '1px solid rgba(255,197,0,0.12)' }}>
-+                                p{a.peso}
-+                              </Typography>
-+                            </Box>
-+                            <Typography sx={{ fontSize: 11.5, color: 'text.secondary', wordBreak: 'break-word', mb: a.blocos.length ? 0.5 : 0 }}>
-+                              {a.descricao}
-+                            </Typography>
-+                            {a.blocos.length > 0 && (
-+                              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.15 }}>
-+                                {a.blocos.map((b, bi) => (
-+                                  <Typography key={bi} sx={{ fontSize: 10.5, fontFamily: 'monospace', color: a.ajustada ? 'warning.main' : '#7EB3E0' }}>
-+                                    {hm(b.ini)} – {hm(b.fim)}
-+                                  </Typography>
-+                                ))}
-+                              </Box>
-+                            )}
-+                            <Box className="act-actions" sx={{ display: 'flex', gap: 0.25, mt: 0.75, opacity: 0, transition: 'opacity .12s' }}>
-+                              <Tooltip title="Mover para cima"><span>
-+                                <IconButton size="small" disabled={idx === 0} onClick={() => moveActivity(key, a.id, -1)} sx={{ p: 0.4 }}>
-+                                  <KeyboardArrowUpRoundedIcon sx={{ fontSize: 14 }} />
-+                                </IconButton>
-+                              </span></Tooltip>
-+                              <Tooltip title="Mover para baixo"><span>
-+                                <IconButton size="small" disabled={idx === sorted.length - 1} onClick={() => moveActivity(key, a.id, 1)} sx={{ p: 0.4 }}>
-+                                  <KeyboardArrowDownRoundedIcon sx={{ fontSize: 14 }} />
-+                                </IconButton>
-+                              </span></Tooltip>
-+                              <Tooltip title="Editar">
-+                                <IconButton size="small" onClick={() => setEditing({ dayKey: key, actId: a.id })} sx={{ p: 0.4 }}>
-+                                  <EditRoundedIcon sx={{ fontSize: 13 }} />
-+                                </IconButton>
-+                              </Tooltip>
-+                              <Tooltip title="Duplicar">
-+                                <IconButton size="small" onClick={() => duplicateActivity(key, a.id)} sx={{ p: 0.4 }}>
-+                                  <ContentCopyRoundedIcon sx={{ fontSize: 13 }} />
-+                                </IconButton>
-+                              </Tooltip>
-+                              <Tooltip title="Excluir">
-+                                <IconButton size="small" color="error" onClick={() => deleteActivity(key, a.id)} sx={{ p: 0.4 }}>
-+                                  <DeleteRoundedIcon sx={{ fontSize: 13 }} />
-+                                </IconButton>
-+                              </Tooltip>
-+                            </Box>
-+                          </Box>
-+                        );
-+                      })}
-+
-+                      {isEditingDay && editing!.actId === null ? (
-+                        <ActivityForm projects={state.projects}
-+                          onSave={(pId, desc, peso) => addActivity(key, pId, desc, peso)}
-+                          onCancel={() => setEditing(null)} />
-+                      ) : (
-+                        <Button size="small" color="inherit"
-+                          startIcon={<AddRoundedIcon sx={{ fontSize: '15px !important' }} />}
-+                          onClick={() => setEditing({ dayKey: key, actId: null })}
-+                          sx={{ justifyContent: 'flex-start', fontSize: 11.5, color: 'text.disabled', border: '1px dashed', borderColor: 'divider', borderRadius: 1.5, py: 0.75, '&:hover': { borderColor: 'primary.main', color: 'primary.main', bgcolor: 'rgba(255,197,0,0.04)' } }}>
-+                          Atividade
-+                        </Button>
-+                      )}
-+                    </>
-+                  )}
-+                </Box>
-+
-+              </Paper>
-+            );
-+          })}
-+        </Box>
-+      </Box>
-+
-+      {/* Modals */}
-+      <ProfileModal open={profileOpen} profile={state.profile} onClose={() => setProfileOpen(false)} onSave={saveProfile} />
-+      <ProjectsModal open={projectsOpen} projects={state.projects} onClose={() => setProjectsOpen(false)} onAdd={addProject} onToggle={toggleProject} />
-+      <HistoryModal open={historyOpen} userName={state.profile.nome} onClose={() => setHistoryOpen(false)} />
-+      {dayTypeKey && dayTypeDay && (
-+        <DayTypeModal open={!!dayTypeKey} dayKey={dayTypeKey} tipo={dayTypeDay.tipo} cargaCustom={dayTypeDay.cargaCustom}
-+          onClose={() => setDayTypeKey(null)} onSave={(tipo, cargaCustom) => saveDayType(dayTypeKey, tipo, cargaCustom)} />
-+      )}
-+      {adjustKey && adjustDay && (
-+        <AdjustModal open={!!adjustKey} dayKey={adjustKey} day={adjustDay} projects={state.projects}
-+          onClose={() => setAdjustKey(null)} onSave={updated => saveAdjust(adjustKey, updated)} />
-+      )}
-+
-+      <Snackbar open={!!snack} autoHideDuration={2800} onClose={() => setSnack(null)}
-+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }} message={snack} />
-+    </Box>
-+  );
-+}
-diff --git a/src/pages/Documentacao/GerarDocumento.tsx b/src/pages/Documentacao/GerarDocumento.tsx
-index 1dd7580..2a4f6dd 100644
---- a/src/pages/Documentacao/GerarDocumento.tsx
-+++ b/src/pages/Documentacao/GerarDocumento.tsx
-@@ -88,17 +88,19 @@ export function GerarDocumento() {
-       setRemovedCount(result.internalBlocksRemoved.length);
-       setLastGenerated(result.filename);
- 
--      // Save JSON version to the linked project
-+      // Save JSON version — dedup by content: same JSON updates date instead of adding duplicate
-       if (project && inputJson && inputFilename) {
-         const existing = loadProject(project.id);
-         if (existing) {
--          const version: JsonVersion = {
--            id: generateId(),
--            filename: inputFilename,
--            content: JSON.stringify(inputJson),
--            createdAt: new Date().toISOString(),
--          };
--          upsertProject({ ...existing, jsonVersions: [...(existing.jsonVersions ?? []), version] });
-+          const content = JSON.stringify(inputJson);
-+          const versions = existing.jsonVersions ?? [];
-+          const dupIdx = versions.findIndex(v => v.content === content);
-+          if (dupIdx >= 0) {
-+            upsertProject({ ...existing, jsonVersions: versions.map((v, i) => i === dupIdx ? { ...v, createdAt: new Date().toISOString() } : v) });
-+          } else {
-+            const version: JsonVersion = { id: generateId(), filename: inputFilename, content, createdAt: new Date().toISOString() };
-+            upsertProject({ ...existing, jsonVersions: [...versions, version] });
-+          }
-         }
-       }
-     } catch (err) {
-diff --git a/src/pages/Documentacao/index.tsx b/src/pages/Documentacao/index.tsx
-index 813e525..1c7aa79 100644
---- a/src/pages/Documentacao/index.tsx
-+++ b/src/pages/Documentacao/index.tsx
-@@ -2,8 +2,8 @@ import { useState } from 'react';
- import Box from '@mui/material/Box';
- import Tab from '@mui/material/Tab';
- import Tabs from '@mui/material/Tabs';
--import { ComingSoon } from '../ComingSoon';
- import { GerarDocumento } from './GerarDocumento';
-+import { ApontamentoHoras } from './ApontamentoHoras';
- 
- type DocTab = 'gerar' | 'horas';
- 
-@@ -33,15 +33,13 @@ export function DocumentacaoPage() {
-         </Tabs>
-       </Box>
- 
--      <Box sx={{ flex: 1, overflow: 'auto' }}>
--        {tab === 'gerar' && <GerarDocumento />}
--        {tab === 'horas' && (
--          <ComingSoon
--            iconType="config"
--            title="Apontamento de Horas"
--            description="Registro de horas por projeto, tarefa e colaborador. Em breve."
--          />
-+      <Box sx={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-+        {tab === 'gerar' && (
-+          <Box sx={{ flex: 1, overflow: 'auto' }}>
-+            <GerarDocumento />
-+          </Box>
-         )}
-+        {tab === 'horas' && <ApontamentoHoras />}
-       </Box>
-     </Box>
-   );
-diff --git a/src/pages/KickoffPage.tsx b/src/pages/KickoffPage.tsx
-index 3cde8e3..cd877df 100644
---- a/src/pages/KickoffPage.tsx
-+++ b/src/pages/KickoffPage.tsx
-@@ -54,6 +54,7 @@ var O = {
-   pdv_dev:'PDV',col_dev:'Coletor',
-   dest_pbl:'Completa PBL',dest_conf:'Conferência',dest_pack:'Packing',
-   fc_coletor:'Coletor',fc_etiq_led:'Etiq+LED',fc_etiq:'Etiqueta',
-+  fc_hw_col:'Coletor Android',fc_hw_pdv:'PDV + Scanner de Mão',
-   invent:'Invent',client:'Cliente',both_resp:'Ambos',
-   led3:'LED 3 dig',led10:'LED 10 dig',
-   sc_hand:'Scanner de mão',sc_fixed:'Scanner fixo',
-@@ -137,8 +138,9 @@ var SEC = [
-     Q('fc2b','Metodo','select',1,['fc_coletor','fc_etiq_led','fc_etiq','tbd'],0,'fc_r:both_wms_wcs'),
-     Q('fc_i','Tem impressora?','select',1,YN),
-     Q('fc_if','Quem fornece a impressora?','select',1,FN,0,'fc_i:yes'),
--    Q('fc_re','Quem fornece equip. Full Case?','select',1,FN),
--    Q('fc_qe','Quantos equip.?','text',0),
-+    Q('fc_conf','Tem Conferência?','select',1,['yes','no','tbd']),
-+    Q('fc_conf_hw','Hardware de conferência','select',1,['fc_hw_col','fc_hw_pdv','tbd'],0,'fc_conf:yes'),
-+    Q('fc_conf_forn','Coletor Android — fornecimento','select',1,FN,0,'fc_conf:no'),
-   ]},
-   {id:'pk',n:'9',t:'Conferência & Packing',dept:'gest',q:[
-     Q('cf_gate','Tem Conferência?','select',1,['yes','no','tbd']),
-@@ -201,7 +203,10 @@ var SEC = [
-     Q('et_dist','Distribuição','text',0),
-   ]},
-   {id:'if',n:'14',t:'Infraestrutura',dept:'infra',q:[
--    Q('if_titul','Titular da infra','select',1,['srv_invent','srv_client','srv_shared','tbd']),
-+    Q('if_resp_infra','Responsável Infraestrutura','select',1,['srv_invent','srv_client','srv_shared','tbd']),
-+    Q('if_resp_infra_cli','Resp. Infra — Cliente','text',0,0,0,'if_resp_infra:srv_shared','Descreva as responsabilidades de infra do cliente (rede, hardware, acesso físico, cabeamento...)'),
-+    Q('if_resp_infra_inv','Resp. Infra — Invent','text',0,0,0,'if_resp_infra:srv_shared','Descreva as responsabilidades de infra da Invent (instalação, configuração, equipamentos, suporte...)'),
-+    Q('if_resp_srv','Responsável Servidores','select',1,['srv_invent','srv_client','srv_shared','tbd']),
-     Q('if_ambiente','Tipo de ambiente','select',1,['onprem','saas','cloud','hybrid','tbd']),
-     Q('if_s','Servidor: unico ou separado?','select',1,['single_srv','sep_srv','tbd']),
-     Q('if_ambientes','Tem PRD + HML?','select',0,YN),
-@@ -241,7 +246,7 @@ function getTriggers(a) {
-   if(a.st11==='yes'&&a.et_r==='no'){ts.push({color:'#f59e0b',effect:'ATENÇÃO: IA Sorter requer IVT/Etiquetas — revisar "Etiquetas" (seção 11)',cause:'IA=Sim, Etiquetas=Não'});}
-   if(a.pt_ptm==='yes'&&a.pt_ptm_qtd)ts.push({color:'#38bdf8',effect:'Comprar '+a.pt_ptm_qtd+' monitores PTM',cause:'PTM ativo'});
-   if(a.pt_tvs_ptl&&parseInt(a.pt_tvs_ptl)>0)ts.push({color:'#38bdf8',effect:'Comprar '+a.pt_tvs_ptl+' monitores PTL',cause:'TVs PTL definidas'});
--  if(a.if_titul==='srv_invent'&&a.if_ambientes==='yes')ts.push({color:'#f59e0b',effect:'Verificar custo 2 ambientes Invent no contrato',cause:'Titular Invent + PRD+HML'});
-+  if(a.if_resp_srv==='srv_invent'&&a.if_ambientes==='yes')ts.push({color:'#f59e0b',effect:'Verificar custo 2 ambientes Invent no contrato',cause:'Servidores Invent + PRD+HML'});
-   if(!a.in1||a.in1==='tbd')ts.push({color:'#4a90d9',effect:'Definir protocolo de integracao WCS-WMS',cause:'Tipo integracao indefinido'});
-   if(a.st1==='yes'&&(!a.if1||!a.if2))ts.push({color:'#9b82f3',effect:'Preencher detalhes técnicos da Infra',cause:'Sorter confirmado'});
-   return ts;
-@@ -343,8 +348,9 @@ var DESC = {
-   fc2b:'Método de operação do Full Case quando gerenciado por ambos (WCS + WMS).',
-   fc_i:'Se há impressora de etiquetas dedicada ao processo de Full Case.',
-   fc_if:'Responsável pelo fornecimento da impressora do Full Case.',
--  fc_re:'Responsável pelo fornecimento do hardware do processo Full Case.',
--  fc_qe:'Quantidade de equipamentos (coletores/PDVs) utilizados no Full Case.',
-+  fc_conf:'Indica se o processo Full Case inclui etapa de conferência. Sincronizado automaticamente com a seção Conferência & Packing.',
-+  fc_conf_hw:'Hardware utilizado na estação de conferência do Full Case: Coletor Android ou PDV com scanner de mão.',
-+  fc_conf_forn:'Responsável pelo fornecimento do Coletor Android utilizado no processo de Full Case.',
-   // Seção 9 — Conferência & Packing
-   cf_gate:'Define se existe processo de conferência de caixas neste CD.',
-   cf_t1:'Método de conferência das caixas desviadas: cega (sem ver o pedido), item a item, multiplicador ou EAN.',
-@@ -406,7 +412,10 @@ var DESC = {
-   in_endpoint:'URL base da API de integração do WMS/ERP para configuração no WCS.',
-   in3:'Tempo máximo (ms) de espera por resposta da API antes de abortar a chamada. Ex: 5000.',
-   // Seção 14 — Infraestrutura
--  if_titul:'Responsável pelos servidores: Invent (cloud/SaaS), Cliente (on-premise) ou compartilhado.',
-+  if_resp_infra:'Define quem é responsável pela infraestrutura geral do projeto: Invent, Cliente ou compartilhada (ambos). Quando compartilhada, detalhar as responsabilidades de cada parte.',
-+  if_resp_infra_cli:'Descreva o que fica sob responsabilidade do cliente na infraestrutura (rede, hardware, acesso físico, cabeamento, etc.).',
-+  if_resp_infra_inv:'Descreva o que fica sob responsabilidade da Invent na infraestrutura (instalação, configuração, equipamentos, suporte, etc.).',
-+  if_resp_srv:'Define quem fornece e mantém os servidores do WCS: Invent (cloud/SaaS), Cliente (on-premise) ou compartilhado.',
-   if_ambiente:'Modelo de deploy do WCS: On-premise (servidores no CD), SaaS, Cloud ou Híbrido.',
-   if_s:'Produção e homologação no mesmo servidor (único) ou em máquinas separadas.',
-   if_ambientes:'Se o projeto inclui dois ambientes distintos: Produção (PRD) e Homologação (HML).',
-@@ -1010,7 +1019,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
-     return function() { clearTimeout(tid1); clearTimeout(tid2); clearTimeout(tid3); };
-   }, [pendingScrollQId]);
- 
--  var ch = useCallback(function(id,v){setA(function(p){var n=Object.assign({},p);n[id]=v;return n;});},[]);
-+  var ch = useCallback(function(id,v){setA(function(p){var n=Object.assign({},p);n[id]=v;if(id==='fc_conf')n['cf_gate']=v;if(id==='cf_gate')n['fc_conf']=v;return n;});},[]);
-   var nc = useCallback(function(id,v){setN(function(p){var n=Object.assign({},p);n[id]=v;return n;});},[]);
-   var tgo = useCallback(function(id){setSo(function(p){var n=Object.assign({},p);n[id]=!p[id];return n;});},[]);
- 
-@@ -1459,7 +1468,7 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
-         <Box sx={{ height:3, borderRadius:'2px', bgcolor:deptColor, mb:2.5, opacity:.5 }} />
- 
-         {/* Infra cost warning */}
--        {s.id==='if' && a.if_titul==='srv_invent' && a.if_ambientes==='yes' && (
-+        {s.id==='if' && a.if_resp_srv==='srv_invent' && a.if_ambientes==='yes' && (
-           <Paper elevation={0} sx={{ display:'flex', gap:1.25, p:'10px 13px', borderRadius:1.5, bgcolor:'rgba(245,158,11,0.08)', borderColor:'rgba(245,158,11,0.25)', mb:1.75 }}>
-             <WarningAmberRoundedIcon sx={{ fontSize:18, color:'#f59e0b', flexShrink:0, mt:'1px' }} />
-             <Box>
 ```
 
 _Diff limitado a 2000 linhas. Para ver tudo: `git diff snapshot/2026-06-16 upstream/main`_
