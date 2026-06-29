@@ -16,7 +16,7 @@
 - **Bloco:** separacao
 - **Gate:** `ct1 = yes`
 - **Subtópicos com CARD próprio:** nenhum (picking cart é tratado integralmente aqui)
-- **Depende de:** [[order-start]] (cria o volume/pega e imprime etiqueta), [[picking-pbl]] (pode ser complementar ao cart no mesmo fluxo), [[wave-integração]] (prioridade das tarefas vem da integração)
+- **Depende de:** [[order-start]] (cria o volume/pega e imprime etiqueta), [[picking-pbl]] (pode ser complementar ao cart no mesmo fluxo), [[wave-integracao]] (prioridade das tarefas vem da integração)
 - **Influencia:** [[conferencia]] (volumes do cart seguem para balança/conferência), [[picking-pbl]] (cart → indução na linha do FlowRack), [[shortpicking]] (cortes registrados no cart alimentam conferência)
 - **Cruza com:** [[reabastecimento]] (uso secundário do cart para reabastecimento de bins no Beta), [[packing]] (destino direto quando `ct6 = dest_pack`), [[sorter]] (destino via rampa quando aplicável)
 
@@ -204,6 +204,6 @@ O ED deve:
   - `ct6 = dest_pbl` → [[picking-pbl]] (indução na linha) → [[conferencia]] → [[packing]]
   - `ct6 = dest_conf` → [[conferencia]] → [[packing]]
   - `ct6 = dest_pack` → [[packing]] direto
-- **Consulta/alimenta:** [[wave-integração]] (prioridade das tarefas), [[shortpicking]] (cortes registrados no cart), [[reabastecimento]] (uso dual em Beta)
+- **Consulta/alimenta:** [[wave-integracao]] (prioridade das tarefas), [[shortpicking]] (cortes registrados no cart), [[reabastecimento]] (uso dual em Beta)
 - **Variante paralela:** [[picking-pbl]] (fluxo automatizado para alto giro; picking cart cobre o baixo giro)
 - **Pós-coleta especial:** [[packing]] + [[paletizacao]] (fluxo Termolábil — BP)

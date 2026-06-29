@@ -23,8 +23,8 @@
 | Hosting | Netlify | Deploy simples, CI/CD via git push |
 | Banco de dados | Supabase (PostgreSQL) | Auth, realtime, storage, REST API — tudo em um |
 | Auth (fase 2) | Supabase Auth | E-mail + senha, depois OAuth Google |
-| AI (fase 4) | Claude API (Anthropic) | Projetos RAG já criados, integração via API |
-| MCP (fase 4) | MCP Server customizado | Acesso aos dados NEXUS como ferramenta de IA |
+| AI (fase 4) | LLM On-Premise (servidor próprio Invent) | LLM open-source (Llama / Mistral) rodando em servidor dedicado; sem custo por requisição, sem dependência externa |
+| MCP (fase 4) | MCP Server customizado | Expõe dados do NEXUS como ferramentas para IAs externas (`get_project`, `list_projects`, `search_projects`) |
 
 ---
 

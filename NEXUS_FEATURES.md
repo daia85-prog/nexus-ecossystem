@@ -39,7 +39,7 @@ NEXUS é uma plataforma SaaS interna da **Invent** para gestão de projetos WCS 
 | v1.3     | Módulo Documentação — Apontamento de Horas   | 🔧 Em desenvolvimento | —       |
 | v2       | Backend Supabase + Auth Azure AD / SSO Invent + RBAC | 📋 Planejado  | —       |
 | v3       | Integração SharePoint / OneDrive             | 📋 Planejado          | —       |
-| v4       | IA Integrada (Claude API + Chat Contextual)  | 📋 Planejado          | —       |
+| v4       | IA Integrada (LLM corporativa + Chat Contextual) | 📋 Planejado       | —       |
 | v5       | Kickoff Segmentado (Gestor vs. Operacional)  | 📋 Planejado          | —       |
 | v6       | VEX AI — Pesquisa + Agentes + Insights       | 📋 Planejado          | —       |
 | v7       | LLM On-Premise + Módulo de Arenas            | 📋 Planejado          | —       |

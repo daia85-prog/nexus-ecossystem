@@ -14,7 +14,7 @@
 - **Gate:** sem gate exclusivo no kickoff — ocorre em projetos com `pt_gate = yes` e alto volume de full pallet (`pt1` contém `ptl_opt`, `ptm_opt` ou `aloca_opt`), ou quando sinalizado em texto livre como variante de picking fullcase
 - **Subtópicos com CARD próprio:** [[paletizacao-ptl]] (displays PTL, gate `pt_tem_ptl`), [[aloca-pallet]] (processo de Aloca Pallet/PTL pós-picking), [[picking-fullcase]] (fluxo pai do qual o picking pallet é variante)
 - **Depende de:** [[order-start]] (criação da onda/tarefa), [[picking-fullcase]] (fluxo base de coleta), [[integracao-pedidos]] (recebimento da onda com tarefas pallet)
-- **Influencia:** [[aloca-pallet]] (pallet pode ir direto para stage, contornando PTL), [[etiquetas]] (etiqueta única de UC de pallet), [[expedição]] (rampa de destino direta), [[sorter]] (bypassa o sorter)
+- **Influencia:** [[aloca-pallet]] (pallet pode ir direto para stage, contornando PTL), [[etiquetas]] (etiqueta única de UC de pallet), [[expedicao]] (rampa de destino direta), [[sorter]] (bypassa o sorter)
 - **Cruza com:** [[paletizacao-ptl]] · [[shortpicking]] · [[integracao-pedidos]] (campos de onda com tipo pallet) · [[pesagem]] (matriz de fragilidade, cubagem)
 
 ## Variáveis (slot → campo do kickoff → opções)
@@ -168,7 +168,7 @@ O ED deve:
 
 ## Dependências (grafo)
 - **Entra depois de:** [[integracao-pedidos]] (onda com tarefas pallet) → [[order-start]] → [[picking-fullcase]] (fluxo pai) ou [[picking-excecao]] (fluxo pai alternativo)
-- **Sai para:** [[expedição]] (stage/rampa direta) — bypassa [[sorter]] e [[paletizacao-ptl]]
+- **Sai para:** [[expedicao]] (stage/rampa direta) — bypassa [[sorter]] e [[paletizacao-ptl]]
 - **Consulta/alimenta:** [[integracao-pedidos]] (integração de Aloca Pallet ao WMS), [[etiquetas]] (etiqueta de UC de pallet + romaneio), [[aloca-pallet]] (parâmetro ativo/inativo)
 - **Variante especializada de:** [[picking-fullcase]]
 - **Influenciada por:** [[pesagem]] / cubagem (para cálculo de rota quando `pt_frag = yes`)

@@ -18,7 +18,7 @@
 - **Sub-CARDs com escopo próprio:** [[integracao-wcs-wms]] · [[integracao-pedidos]] · [[integracao-wms-erp]] · [[integracao-cadastros]]
 - **Depende de:** [[order-start]] (recebe pedidos/remessas) · [[picking-pbl]] · [[picking-fullcase]] · [[picking-cart]] (geram confirmações) · [[conferencia]] (dispara CC após conferência) · [[sorter]] (desvio de volume) · [[ptl-alocacao]] (pallet montado) · [[gestao-estoque]] (auditoria, recall, mov. forçada)
 - **Influencia:** todos os fluxos operacionais — integração é o eixo que conecta WCS ao WMS/ERP
-- **Cruza com:** [[etiquetas]] (dados de etiqueta vêm na integração) · [[cubagem]] (campos de dimensão no payload) · [[shortpicking]] (ShortIndicator / qtd_coletado) · [[cancelamento-pedido]] (MTP/MTR)
+- **Cruza com:** [[etiquetas]] (dados de etiqueta vêm na integração) · [[cubagem]] (campos de dimensão no payload) · [[shortpicking]] (ShortIndicator / qtd_coletado) · [[cancelamento-pedidos]] (MTP/MTR)
 
 ## Variáveis (slot → campo do kickoff → opções)
 | Slot | Campo | Tipo | Opções / Tradução |

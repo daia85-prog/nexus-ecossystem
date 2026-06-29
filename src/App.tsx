@@ -23,14 +23,13 @@ import { IntroScreen } from './components/IntroScreen';
 import type { NexusProject } from './lib/projectStore';
 import { loadProject } from './lib/projectStore';
 
-type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
+type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
 
 const PAGE_TITLES: Record<Page, string> = {
   kickoff:       'Kickoff',
   projetos:      'Projetos',
   overview:      'Projeto',
   ferramentas:   'Ferramentas I.A',
-  dashboard:     'Dashboard',
   config:        'Configurações',
   sugestoes:     'Sugestões',
   documentacao:  'Documentação',
@@ -205,10 +204,8 @@ export default function App() {
         );
       case 'ferramentas':
         return <ComingSoon iconType="config" title="Ferramentas I.A" description="Automações, assistente de kickoff, geração de documentos com I.A e muito mais em breve." />;
-      case 'dashboard':
-        return <ComingSoon iconType="dashboard" title="Dashboard" description="Métricas e indicadores dos projetos: taxa de preenchimento, seções críticas, timeline." />;
       case 'config':
-        return <ConfigPage role={role} isAdmin={userEmail === 'raphael.caveagna@invent-corp.com'} />;
+        return <ConfigPage role={role} userName={userName} />;
       case 'sugestoes':
         return <SugestoesPage role={role} userName={userName} />;
       case 'documentacao':

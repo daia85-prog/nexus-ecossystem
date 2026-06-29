@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1782742047204,
+      "title": "Gráfico Célula",
+      "options": {
+        "collapse-filter": false,
+        "search": "",
+        "showTags": true,
+        "showAttachments": false,
+        "hideUnresolved": false,
+        "showOrphans": true,
+        "collapse-color-groups": false,
+        "colorGroups": [
+          {
+            "query": "file:(RAW)",
+            "color": {
+              "a": 1,
+              "rgb": 16514816
+            }
+          },
+          {
+            "query": "file:(README)",
+            "color": {
+              "a": 1,
+              "rgb": 10742015
+            }
+          },
+          {
+            "query": "file:(MOC)",
+            "color": {
+              "a": 1,
+              "rgb": 11474968
+            }
+          },
+          {
+            "query": "file:(DOSSIE)",
+            "color": {
+              "a": 1,
+              "rgb": 5431473
+            }
+          },
+          {
+            "query": "file:(ED_CARD)",
+            "color": {
+              "a": 1,
+              "rgb": 16711867
+            }
+          },
+          {
+            "query": "file:(INSIGHTS)",
+            "color": {
+              "a": 1,
+              "rgb": 16749824
+            }
+          }
+        ],
+        "collapse-display": true,
+        "showArrow": false,
+        "textFadeMultiplier": -2,
+        "nodeSizeMultiplier": 1.14417879417879,
+        "lineSizeMultiplier": 0.492203742203742,
+        "collapse-forces": true,
+        "centerStrength": 0.566528066528067,
+        "repelStrength": 20,
+        "linkStrength": 0.786902286902287,
+        "linkDistance": 500,
+        "scale": 0.05932617187499966,
+        "close": true
+      }
+    },
+    {
+      "type": "graph",
+      "ctime": 1782749710743,
+      "title": "Gráfico N1",
+      "options": {
+        "collapse-filter": false,
+        "search": "",
+        "showTags": true,
+        "showAttachments": false,
+        "hideUnresolved": false,
+        "showOrphans": true,
+        "collapse-color-groups": false,
+        "colorGroups": [
+          {
+            "query": "file:(RAW)",
+            "color": {
+              "a": 1,
+              "rgb": 16514816
+            }
+          },
+          {
+            "query": "file:(README)",
+            "color": {
+              "a": 1,
+              "rgb": 10742015
+            }
+          },
+          {
+            "query": "file:(MOC)",
+            "color": {
+              "a": 1,
+              "rgb": 9175295
+            }
+          },
+          {
+            "query": "file:(DOSSIE)",
+            "color": {
+              "a": 1,
+              "rgb": 5431473
+            }
+          },
+          {
+            "query": "file:(ED_CARD)",
+            "color": {
+              "a": 1,
+              "rgb": 16711867
+            }
+          },
+          {
+            "query": "file:(INSIGHTS)",
+            "color": {
+              "a": 1,
+              "rgb": 16749824
+            }
+          },
+          {
+            "query": "file:Radar_Claude",
+            "color": {
+              "a": 1,
+              "rgb": 16711680
+            }
+          }
+        ],
+        "collapse-display": true,
+        "showArrow": false,
+        "textFadeMultiplier": -2,
+        "nodeSizeMultiplier": 1.14417879417879,
+        "lineSizeMultiplier": 0.492203742203742,
+        "collapse-forces": true,
+        "centerStrength": 0.566528066528067,
+        "repelStrength": 20,
+        "linkStrength": 0.786902286902287,
+        "linkDistance": 500,
+        "scale": 0.05932617187499963,
+        "close": true
+      }
+    }
+  ]
+}

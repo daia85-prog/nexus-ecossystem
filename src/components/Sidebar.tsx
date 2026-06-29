@@ -12,13 +12,12 @@ import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
 import BuildRoundedIcon from '@mui/icons-material/BuildRounded';
 import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import TipsAndUpdatesRoundedIcon from '@mui/icons-material/TipsAndUpdatesRounded';
 
-type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
+type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
 
 const ADMIN_EMAIL = 'raphael.caveagna@invent-corp.com';
 
@@ -40,8 +39,6 @@ const NAV_DEFAULT: NavItem[] = [
   { id: 'projetos',    label: 'Projetos',       Icon: FolderRoundedIcon },
   { id: 'kickoff',     label: 'Kickoff',         Icon: AssignmentTurnedInRoundedIcon },
   { id: 'ferramentas', label: 'Ferramentas I.A', Icon: BuildRoundedIcon },
-  { id: 'dashboard',   label: 'Dashboard',       Icon: DashboardRoundedIcon },
-  { id: 'sugestoes',   label: 'Sugestões',       Icon: TipsAndUpdatesRoundedIcon },
 ];
 
 const NAV_DOC: NavItem = { id: 'documentacao', label: 'Documentação', Icon: ArticleRoundedIcon };
