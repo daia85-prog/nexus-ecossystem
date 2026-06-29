@@ -11,7 +11,6 @@ export const PAGE_CATEGORIES: PageCategory[] = [
   { value: 'projetos',     label: 'Projetos',       color: '#6366f1' },
   { value: 'kickoff',      label: 'Kickoff',         color: '#0ea5e9' },
   { value: 'ferramentas',  label: 'Ferramentas I.A', color: '#a855f7' },
-  { value: 'dashboard',    label: 'Dashboard',       color: '#22c55e' },
   { value: 'config',       label: 'Configurações',   color: '#f59e0b' },
   { value: 'sugestoes',    label: 'Sugestões',       color: '#ec4899' },
   { value: 'login',        label: 'Login / Acesso',  color: '#14b8a6' },

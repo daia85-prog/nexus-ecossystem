@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "file:(RAW)",
@@ -25,7 +25,7 @@
       "query": "file:(MOC)",
       "color": {
         "a": 1,
-        "rgb": 11474968
+        "rgb": 9175295
       }
     },
     {
@@ -48,6 +48,13 @@
         "a": 1,
         "rgb": 16749824
       }
+    },
+    {
+      "query": "file:Radar_Claude",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
     }
   ],
   "collapse-display": true,
@@ -55,11 +62,11 @@
   "textFadeMultiplier": -2,
   "nodeSizeMultiplier": 1.14417879417879,
   "lineSizeMultiplier": 0.492203742203742,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.566528066528067,
   "repelStrength": 20,
   "linkStrength": 0.786902286902287,
   "linkDistance": 500,
-  "scale": 0.05153466680081588,
+  "scale": 0.05932617187499982,
   "close": true
 }

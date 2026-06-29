@@ -22,6 +22,7 @@ import SaveRoundedIcon from '@mui/icons-material/SaveRounded';
 
 import { ROLES } from '../../components/Sidebar';
 import type { Role } from '../../components/Sidebar';
+import { FeaturesAdminTab, PendenciasTab, ROLE_COLOR } from '../ConfigPage';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -371,10 +372,6 @@ export function AdminPage({ role, onRoleChange }: AdminPageProps) {
     });
   };
 
-  const ROLE_COLOR: Record<Role, string> = {
-    gestao: '#6366f1', engenharia: '#0ea5e9', documentacao: '#8b5cf6',
-    pmo: '#ffc500', desenvolvimento: '#22c55e', eletrica: '#f59e0b', adm: '#ef4444',
-  };
 
   return (
     <>
@@ -410,12 +407,37 @@ export function AdminPage({ role, onRoleChange }: AdminPageProps) {
             '& .MuiTabs-indicator': { bgcolor: 'primary.main' },
           }}
         >
-          <Tab label="Apresentação" icon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
           <Tab label="Papéis" />
+          <Tab label="Apresentação" icon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
+          <Tab label="Funcionalidades" />
+          <Tab label="Backlog" />
         </Tabs>
 
-        {/* ── Tab 0: Apresentação ── */}
+        {/* ── Tab 0: Papéis ── */}
         {tab === 0 && (
+          <Box sx={{ maxWidth: 480 }}>
+            <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Papel atual da sessão</Typography>
+            <Typography sx={{ fontSize: 12, color: 'text.disabled', mb: 2.5 }}>
+              Apenas o administrador pode transitar entre funções. Útil para debugar a plataforma e visualizar o sistema como cada perfil.
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+              {ROLES.map(r => {
+                const active = role === r.value;
+                return (
+                  <Box key={r.value} component="button" onClick={() => onRoleChange(r.value)}
+                    sx={{ width: '100%', display: 'flex', alignItems: 'center', gap: 1.5, p: '10px 14px', border: '1px solid', borderRadius: 1.5, cursor: 'pointer', bgcolor: active ? `${ROLE_COLOR[r.value]}12` : 'transparent', borderColor: active ? ROLE_COLOR[r.value] : 'divider', transition: '.15s', '&:hover': { borderColor: ROLE_COLOR[r.value], bgcolor: `${ROLE_COLOR[r.value]}0A` } }}>
+                    <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
+                    <Typography sx={{ fontSize: 13, fontWeight: active ? 700 : 500, color: active ? ROLE_COLOR[r.value] : 'text.secondary', flex: 1, textAlign: 'left' }}>{r.label}</Typography>
+                    {active && <Chip label="ativo" size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r.value]}20`, color: ROLE_COLOR[r.value], border: `1px solid ${ROLE_COLOR[r.value]}44`, fontWeight: 700 }} />}
+                  </Box>
+                );
+              })}
+            </Box>
+          </Box>
+        )}
+
+        {/* ── Tab 1: Apresentação ── */}
+        {tab === 1 && (
           <Box>
             {/* Header fields */}
             <Box sx={{ display: 'flex', gap: 1.5, mb: 3, flexWrap: 'wrap', alignItems: 'flex-end' }}>
@@ -495,46 +517,11 @@ export function AdminPage({ role, onRoleChange }: AdminPageProps) {
           </Box>
         )}
 
-        {/* ── Tab 1: Papéis ── */}
-        {tab === 1 && (
-          <Box sx={{ maxWidth: 480 }}>
-            <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>
-              Papel atual da sessão
-            </Typography>
-            <Typography sx={{ fontSize: 12, color: 'text.disabled', mb: 2.5 }}>
-              Apenas o administrador pode transitar entre funções. Útil para debugar a plataforma e visualizar o sistema como cada perfil.
-            </Typography>
+        {/* ── Tab 2: Funcionalidades ── */}
+        {tab === 2 && <FeaturesAdminTab />}
 
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              {ROLES.map(r => {
-                const active = role === r.value;
-                return (
-                  <Box
-                    key={r.value}
-                    component="button"
-                    onClick={() => onRoleChange(r.value)}
-                    sx={{
-                      width: '100%', display: 'flex', alignItems: 'center', gap: 1.5,
-                      p: '10px 14px', border: '1px solid', borderRadius: 1.5, cursor: 'pointer',
-                      bgcolor: active ? `${ROLE_COLOR[r.value]}12` : 'transparent',
-                      borderColor: active ? ROLE_COLOR[r.value] : 'divider',
-                      transition: '.15s',
-                      '&:hover': { borderColor: ROLE_COLOR[r.value], bgcolor: `${ROLE_COLOR[r.value]}0A` },
-                    }}
-                  >
-                    <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
-                    <Typography sx={{ fontSize: 13, fontWeight: active ? 700 : 500, color: active ? ROLE_COLOR[r.value] : 'text.secondary', flex: 1, textAlign: 'left' }}>
-                      {r.label}
-                    </Typography>
-                    {active && (
-                      <Chip label="ativo" size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r.value]}20`, color: ROLE_COLOR[r.value], border: `1px solid ${ROLE_COLOR[r.value]}44`, fontWeight: 700 }} />
-                    )}
-                  </Box>
-                );
-              })}
-            </Box>
-          </Box>
-        )}
+        {/* ── Tab 3: Backlog ── */}
+        {tab === 3 && <PendenciasTab />}
       </Box>
     </>
   );

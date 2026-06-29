@@ -4,15 +4,13 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
 import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
-import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 
-type IconType = 'projetos' | 'pendencias' | 'dashboard' | 'config';
+type IconType = 'projetos' | 'pendencias' | 'config';
 
 const ICONS: Record<IconType, React.ElementType> = {
   projetos:   FolderRoundedIcon,
   pendencias: WarningAmberRoundedIcon,
-  dashboard:  DashboardRoundedIcon,
   config:     SettingsRoundedIcon,
 };
 

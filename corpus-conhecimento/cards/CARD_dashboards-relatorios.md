@@ -17,7 +17,7 @@
 - **Bloco:** sistema
 - **Gate:** sem gate dedicado — presente em praticamente todos os projetos
 - **Subtópicos com CARD próprio:** nenhum (dashboards e relatórios são tratados neste CARD)
-- **Depende de:** [[order-start]] (indução/OS), [[picking-pbl]] · [[picking-fullcase]] · [[picking-cart]] (produtividade de picking), [[sorter]] (throughput, rejeitos, Read/NoRead), [[conferencia]] (produtividade de conferência), [[ptl-alocacao]] (produtividade por operador PTL), [[expedição]] (remessas, transportadoras, docas)
+- **Depende de:** [[order-start]] (indução/OS), [[picking-pbl]] · [[picking-fullcase]] · [[picking-cart]] (produtividade de picking), [[sorter]] (throughput, rejeitos, Read/NoRead), [[conferencia]] (produtividade de conferência), [[ptl-alocacao]] (produtividade por operador PTL), [[expedicao]] (remessas, transportadoras, docas)
 - **Influencia:** gestão operacional, tomada de decisão da liderança, indicadores de turno
 - **Cruza com:** [[integracao-pedidos]] (status de pedidos/missões), [[shortpicking]] (corte), [[recirculacao]] (volumes recirculados no sorter)
 
@@ -224,7 +224,7 @@ Não há campos de kickoff dedicados a dashboards/relatórios. As observações 
 
 ## Dependências (grafo)
 
-- **Consome dados de:** [[order-start]] (taxa de indução), [[picking-pbl]] · [[picking-cart]] · [[picking-fullcase]] (produtividade de picking/estações), [[sorter]] (throughput, rejeitos, Read/NoRead, recirculação), [[conferencia]] (produtividade de conferência, itens cortados), [[ptl-alocacao]] (produtividade por operador PTL), [[expedição]] (remessas, docas, transportadoras), [[shortpicking]] (corte/separação)
+- **Consome dados de:** [[order-start]] (taxa de indução), [[picking-pbl]] · [[picking-cart]] · [[picking-fullcase]] (produtividade de picking/estações), [[sorter]] (throughput, rejeitos, Read/NoRead, recirculação), [[conferencia]] (produtividade de conferência, itens cortados), [[ptl-alocacao]] (produtividade por operador PTL), [[expedicao]] (remessas, docas, transportadoras), [[shortpicking]] (corte/separação)
 - **Referenciado por:** todos os capítulos operacionais → o capítulo de Dashboards e Relatórios fecha o documento como visão consolidada da operação
 - **Não gera gate:** este bloco não condiciona nenhum outro bloco
 - **Paralelos/variantes:** [[conferencia-manual]] (relatório de amostragem/auditoria pode alimentar o capítulo), [[recirculacao]] (relatório específico quando `st_rc = yes`)
