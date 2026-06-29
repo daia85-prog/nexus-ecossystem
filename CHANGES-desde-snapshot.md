@@ -1,6 +1,6 @@
 # Mudancas desde snapshot de 16/06/2026
 
-> Ultimo sync: 27/06/2026 13:43
+> Ultimo sync: 29/06/2026 18:01
 > Fork: [daia85-prog/nexus-ecossystem](https://github.com/daia85-prog/nexus-ecossystem)
 > Original: [RaphaelCerri/nexus-ecossystem](https://github.com/RaphaelCerri/nexus-ecossystem)
 
@@ -9,6 +9,7 @@
 ## Commits do Raphael desde o snapshot
 
 ```
+2927ebf arrumação geral das infos
 ed0d885 ED agora faz integrações e teve a ordenação corrigida
 378c246 ED 3.0 Cards novos e estrutura nova
 b751116 obisidian
@@ -31,31 +32,39 @@ b8c1bf4 alterações no ED
  .gitignore                                         |     6 +
  .netlify/netlify.toml                              |    45 +
  .netlify/state.json                                |     3 +
- .obsidian/graph.json                               |    65 +-
- .obsidian/workspace.json                           |    83 +-
+ .obsidian/app.json                                 |     4 +-
+ .obsidian/bookmarks.json                           |   151 +
+ .obsidian/community-plugins.json                   |     3 +
+ .obsidian/graph.json                               |    72 +-
+ .../plugins/obsidian-local-rest-api/data.json      |    11 +
+ .obsidian/plugins/obsidian-local-rest-api/main.js  | 87229 +++++++++++++++++++
+ .../plugins/obsidian-local-rest-api/manifest.json  |    10 +
+ .../plugins/obsidian-local-rest-api/styles.css     |    55 +
+ .obsidian/workspace.json                           |    88 +-
  BACKLOG.md                                         |    65 +-
  NEXUS_FEATURES.md                                  |    19 +-
- README.md                                          |    38 +-
+ NEXUS_PLANO.md                                     |     4 +-
+ README.md                                          |   134 +-
  ROADMAP_MINERACAO.md                               |   122 +
- _VALIDACAO_HEADINGS.txt                            |  2432 +++++
- cadastros-acessos.md                               |     0
+ Radar_Claude.md                                    |    12 +
+ _VALIDACAO_HEADINGS.txt                            |  2432 +
  corpus-conhecimento/.obsidian/app.json             |     1 +
  corpus-conhecimento/.obsidian/appearance.json      |     1 +
  corpus-conhecimento/.obsidian/core-plugins.json    |    33 +
  corpus-conhecimento/.obsidian/graph.json           |    35 +
  corpus-conhecimento/.obsidian/workspace.json       |   190 +
+ corpus-conhecimento/MOC-Carregamento.md            |    26 +
  corpus-conhecimento/MOC-Conferencia.md             |    28 +
  corpus-conhecimento/MOC-Entrada.md                 |    26 +
  corpus-conhecimento/MOC-Estoque.md                 |    25 +
  corpus-conhecimento/MOC-Expedicao.md               |    31 +
  corpus-conhecimento/MOC-Integracao.md              |    28 +
  corpus-conhecimento/MOC-Separacao.md               |    30 +
+ corpus-conhecimento/MOC-Sistema.md                 |    30 +
  corpus-conhecimento/_AUDITORIA.md                  |    96 +
- corpus-conhecimento/_ED/_GUIA_ED.md                |    79 +
- corpus-conhecimento/_ED/_ROUTER.json               |   209 +
  corpus-conhecimento/_INBOX_REVISAR.md              |   432 +
  corpus-conhecimento/_REVISAO_TOPICOS.md            |   105 +
- corpus-conhecimento/_ROUTING.md                    |    32 +
+ corpus-conhecimento/_ROUTING.md                    |   119 +
  corpus-conhecimento/_inbox.jsonl                   |   107 +
  .../carregamento/checklist-carregamento/DOSSIE.md  |    62 +
  .../carregamento/checklist-carregamento/ED_CARD.md |    91 +
@@ -69,7 +78,7 @@ b8c1bf4 alterações no ED
  .../insights/conferencia-manual.INSIGHTS.md        |    64 +
  .../blocos/conferencia/conferencia/DOSSIE.md       |    94 +
  .../blocos/conferencia/conferencia/ED_CARD.md      |    59 +
- .../conferencia/conferencia/conferencia.RAW.md     |   584 ++
+ .../conferencia/conferencia/conferencia.RAW.md     |   584 +
  .../blocos/conferencia/conferencia/conferencia.md  |    32 +
  .../conferencia/insights/conferencia.INSIGHTS.md   |    44 +
  .../blocos/conferencia/cross-check/DOSSIE.md       |    73 +
@@ -87,23 +96,32 @@ b8c1bf4 alterações no ED
  .../packing/insights/packing.INSIGHTS.md           |    45 +
  .../blocos/conferencia/packing/packing.RAW.md      |   241 +
  .../blocos/conferencia/packing/packing.md          |    32 +
+ .../blocos/conferencia/pesagem/DOSSIE.md           |    67 +
+ .../pesagem/insights/pesagem.INSIGHTS.md           |    32 +
+ .../blocos/conferencia/pesagem/pesagem.md          |    38 +
  corpus-conhecimento/blocos/entrada/.gitkeep        |     0
  .../blocos/entrada/cubagem/DOSSIE.md               |    90 +
  .../blocos/entrada/cubagem/ED_CARD.md              |    55 +
  .../blocos/entrada/cubagem/cubagem.RAW.md          |   461 +
  .../blocos/entrada/cubagem/cubagem.md              |    33 +
  .../entrada/cubagem/insights/cubagem.INSIGHTS.md   |    43 +
+ .../blocos/entrada/matriz-fragilidade/DOSSIE.md    |    65 +
+ .../insights/matriz-fragilidade.INSIGHTS.md        |    31 +
+ .../matriz-fragilidade/matriz-fragilidade.md       |    37 +
  .../blocos/entrada/order-start/DOSSIE.md           |    88 +
  .../blocos/entrada/order-start/ED_CARD.md          |    64 +
  .../order-start/insights/order-start.INSIGHTS.md   |    42 +
- .../blocos/entrada/order-start/order-start.RAW.md  |  1169 +++
+ .../blocos/entrada/order-start/order-start.RAW.md  |  1169 +
  .../blocos/entrada/order-start/order-start.md      |    33 +
  .../entrada/recebimento-armazenagem/DOSSIE.md      |    89 +
  .../entrada/recebimento-armazenagem/ED_CARD.md     |    62 +
  .../insights/recebimento-armazenagem.INSIGHTS.md   |    45 +
- .../recebimento-armazenagem.RAW.md                 |  1103 ++
+ .../recebimento-armazenagem.RAW.md                 |  1103 +
  .../recebimento-armazenagem.md                     |    34 +
  corpus-conhecimento/blocos/estoque/.gitkeep        |     0
+ .../blocos/estoque/gestao-estoque/DOSSIE.md        |    70 +
+ .../estoque/gestao-estoque/gestao-estoque.md       |    37 +
+ .../insights/gestao-estoque.INSIGHTS.md            |    32 +
  .../blocos/estoque/inventario/DOSSIE.md            |   101 +
  .../blocos/estoque/inventario/ED_CARD.md           |   109 +
  .../inventario/insights/inventario.INSIGHTS.md     |    40 +
@@ -112,29 +130,41 @@ b8c1bf4 alterações no ED
  .../blocos/estoque/reabastecimento/DOSSIE.md       |    89 +
  .../blocos/estoque/reabastecimento/ED_CARD.md      |    83 +
  .../insights/reabastecimento.INSIGHTS.md           |    43 +
- .../estoque/reabastecimento/reabastecimento.RAW.md |  1110 ++
+ .../estoque/reabastecimento/reabastecimento.RAW.md |  1110 +
  .../estoque/reabastecimento/reabastecimento.md     |    32 +
  corpus-conhecimento/blocos/expedicao/.gitkeep      |     0
+ .../blocos/expedicao/aloca-pallet/DOSSIE.md        |    73 +
+ .../blocos/expedicao/aloca-pallet/aloca-pallet.md  |    38 +
+ .../aloca-pallet/insights/aloca-pallet.INSIGHTS.md |    32 +
  .../blocos/expedicao/etiquetas/DOSSIE.md           |    81 +
  .../blocos/expedicao/etiquetas/ED_CARD.md          |    87 +
  .../blocos/expedicao/etiquetas/etiquetas.RAW.md    |   499 +
  .../blocos/expedicao/etiquetas/etiquetas.md        |    33 +
  .../etiquetas/insights/etiquetas.INSIGHTS.md       |    42 +
+ .../blocos/expedicao/paletizacao-ptl/DOSSIE.md     |    70 +
+ .../insights/paletizacao-ptl.INSIGHTS.md           |    32 +
+ .../expedicao/paletizacao-ptl/paletizacao-ptl.md   |    38 +
  .../blocos/expedicao/paletizacao/DOSSIE.md         |    86 +
  .../blocos/expedicao/paletizacao/ED_CARD.md        |    82 +
  .../paletizacao/insights/paletizacao.INSIGHTS.md   |    44 +
- .../expedicao/paletizacao/paletizacao.RAW.md       |   657 ++
+ .../expedicao/paletizacao/paletizacao.RAW.md       |   657 +
  .../blocos/expedicao/paletizacao/paletizacao.md    |    33 +
  .../blocos/expedicao/ptl-alocacao/DOSSIE.md        |    78 +
  .../blocos/expedicao/ptl-alocacao/ED_CARD.md       |    74 +
  .../ptl-alocacao/insights/ptl-alocacao.INSIGHTS.md |    44 +
- .../expedicao/ptl-alocacao/ptl-alocacao.RAW.md     |   839 ++
+ .../expedicao/ptl-alocacao/ptl-alocacao.RAW.md     |   839 +
  .../blocos/expedicao/ptl-alocacao/ptl-alocacao.md  |    33 +
  corpus-conhecimento/blocos/expedicao/ptm/DOSSIE.md |    90 +
  .../blocos/expedicao/ptm/ED_CARD.md                |    89 +
  .../blocos/expedicao/ptm/insights/ptm.INSIGHTS.md  |    48 +
  .../blocos/expedicao/ptm/ptm.RAW.md                |   333 +
  corpus-conhecimento/blocos/expedicao/ptm/ptm.md    |    33 +
+ .../blocos/expedicao/recirculacao/DOSSIE.md        |    69 +
+ .../recirculacao/insights/recirculacao.INSIGHTS.md |    32 +
+ .../blocos/expedicao/recirculacao/recirculacao.md  |    36 +
+ .../blocos/expedicao/romaneio/DOSSIE.md            |    69 +
+ .../romaneio/insights/romaneio.INSIGHTS.md         |    32 +
+ .../blocos/expedicao/romaneio/romaneio.md          |    37 +
  .../blocos/expedicao/sorter-inducao/DOSSIE.md      |   100 +
  .../blocos/expedicao/sorter-inducao/ED_CARD.md     |    91 +
  .../insights/sorter-inducao.INSIGHTS.md            |    44 +
@@ -145,16 +175,20 @@ b8c1bf4 alterações no ED
  .../insights/sorter-mapa-rota.INSIGHTS.md          |    44 +
  .../sorter-mapa-rota/sorter-mapa-rota.RAW.md       |   373 +
  .../expedicao/sorter-mapa-rota/sorter-mapa-rota.md |    33 +
+ .../blocos/expedicao/sorter-rampas/DOSSIE.md       |    70 +
+ .../insights/sorter-rampas.INSIGHTS.md             |    32 +
+ .../expedicao/sorter-rampas/sorter-rampas.md       |    39 +
  .../blocos/expedicao/sorter-rejeito/DOSSIE.md      |    92 +
  .../blocos/expedicao/sorter-rejeito/ED_CARD.md     |   118 +
  .../insights/sorter-rejeito.INSIGHTS.md            |    42 +
- .../expedicao/sorter-rejeito/sorter-rejeito.RAW.md |  1003 ++
+ .../expedicao/sorter-rejeito/sorter-rejeito.RAW.md |  1003 +
  .../expedicao/sorter-rejeito/sorter-rejeito.md     |    34 +
  .../blocos/expedicao/sorter/DOSSIE.md              |    95 +
  .../blocos/expedicao/sorter/ED_CARD.md             |   110 +
  .../expedicao/sorter/insights/sorter.INSIGHTS.md   |    45 +
- .../blocos/expedicao/sorter/sorter.RAW.md          |  2859 ++++++
+ .../blocos/expedicao/sorter/sorter.RAW.md          |  2859 +
  .../blocos/expedicao/sorter/sorter.md              |    32 +
+ .../expedicao/transelevador/transelevador.md       |    35 +
  corpus-conhecimento/blocos/integracao/.gitkeep     |     0
  .../integracao/integracao-cadastros/DOSSIE.md      |    92 +
  .../integracao/integracao-cadastros/ED_CARD.md     |   114 +
@@ -164,7 +198,7 @@ b8c1bf4 alterações no ED
  .../blocos/integracao/integracao-pedidos/DOSSIE.md |    77 +
  .../integracao/integracao-pedidos/ED_CARD.md       |    97 +
  .../insights/integracao-pedidos.INSIGHTS.md        |    44 +
- .../integracao-pedidos/integracao-pedidos.RAW.md   |  1009 ++
+ .../integracao-pedidos/integracao-pedidos.RAW.md   |  1009 +
  .../integracao-pedidos/integracao-pedidos.md       |    34 +
  .../blocos/integracao/integracao-wcs-wms/DOSSIE.md |   114 +
  .../integracao/integracao-wcs-wms/ED_CARD.md       |   100 +
@@ -176,7 +210,8 @@ b8c1bf4 alterações no ED
  .../insights/integracao-wms-erp.INSIGHTS.md        |    46 +
  .../integracao-wms-erp/integracao-wms-erp.RAW.md   |   284 +
  .../integracao-wms-erp/integracao-wms-erp.md       |    35 +
- .../blocos/integracao/integracao/integracao.RAW.md | 10079 +++++++++++++++++++
+ .../integracao/insights/integracao.INSIGHTS.md     |    27 +
+ .../blocos/integracao/integracao/integracao.RAW.md | 10079 +++
  .../blocos/integracao/integracao/integracao.md     |    32 +
  .../separacao/cancelamento-pedidos/DOSSIE.md       |    88 +
  .../separacao/cancelamento-pedidos/ED_CARD.md      |    67 +
@@ -186,9 +221,9 @@ b8c1bf4 alterações no ED
  .../blocos/separacao/picking-cart/DOSSIE.md        |    87 +
  .../blocos/separacao/picking-cart/ED_CARD.md       |    82 +
  .../picking-cart/insights/picking-cart.INSIGHTS.md |    45 +
- .../separacao/picking-cart/picking-cart.DOSSIE.md  |    26 +
- .../separacao/picking-cart/picking-cart.RAW.md     |  1030 ++
+ .../separacao/picking-cart/picking-cart.RAW.md     |  1030 +
  .../blocos/separacao/picking-cart/picking-cart.md  |    33 +
+ .../separacao/picking-excecao/picking-excecao.md   |    39 +
  .../blocos/separacao/picking-fullcase/DOSSIE.md    |    94 +
  .../blocos/separacao/picking-fullcase/ED_CARD.md   |    90 +
  .../insights/picking-fullcase.INSIGHTS.md          |    45 +
@@ -202,7 +237,7 @@ b8c1bf4 alterações no ED
  .../blocos/separacao/picking-pbl/DOSSIE.md         |    89 +
  .../blocos/separacao/picking-pbl/ED_CARD.md        |   100 +
  .../picking-pbl/insights/picking-pbl.INSIGHTS.md   |    45 +
- .../separacao/picking-pbl/picking-pbl.RAW.md       |   710 ++
+ .../separacao/picking-pbl/picking-pbl.RAW.md       |   710 +
  .../blocos/separacao/picking-pbl/picking-pbl.md    |    35 +
  .../blocos/separacao/put-to-wall/DOSSIE.md         |    76 +
  .../blocos/separacao/put-to-wall/ED_CARD.md        |    59 +
@@ -214,14 +249,19 @@ b8c1bf4 alterações no ED
  .../shortpicking/insights/shortpicking.INSIGHTS.md |    47 +
  .../separacao/shortpicking/shortpicking.RAW.md     |   442 +
  .../blocos/separacao/shortpicking/shortpicking.md  |    34 +
+ .../sistema/cadastro-caixas/cadastro-caixas.md     |    37 +
+ .../sistema/cadastro-produtos/cadastro-produtos.md |    37 +
  .../blocos/sistema/cadastros-acessos/DOSSIE.md     |    76 +
  .../blocos/sistema/cadastros-acessos/ED_CARD.md    |   113 +
- .../cadastros-acessos/cadastros-acessos.RAW.md     |  2201 ++++
+ .../cadastros-acessos/cadastros-acessos.RAW.md     |  2201 +
  .../insights/cadastros-acessos.INSIGHTS.md         |    43 +
  .../blocos/sistema/dashboards-relatorios/DOSSIE.md |    80 +
  .../sistema/dashboards-relatorios/ED_CARD.md       |   132 +
- .../dashboards-relatorios.RAW.md                   |  1678 +++
+ .../dashboards-relatorios.RAW.md                   |  1678 +
  .../insights/dashboards-relatorios.INSIGHTS.md     |    41 +
+ .../blocos/sistema/infraestrutura/DOSSIE.md        |    71 +
+ .../sistema/infraestrutura/infraestrutura.md       |    38 +
+ .../insights/infraestrutura.INSIGHTS.md            |    32 +
  .../cards/CARD_cadastros-acessos.md                |   218 +
  .../cards/CARD_cancelamento-pedidos.md             |   170 +
  .../cards/CARD_checklist-carregamento.md           |   152 +
@@ -259,44 +299,7 @@ b8c1bf4 alterações no ED
  corpus-conhecimento/cards/PROMPT_ED.md             |   234 +
  corpus-conhecimento/cards/_AUDITOR.md              |   223 +
  corpus-conhecimento/cards/_KICKOFF_FIELDS.md       |    91 +
- corpus-conhecimento/corpus-full.jsonl              |  1344 +++
- .../ed-knowledge/CARD_cadastros-acessos.md         |   113 +
- .../ed-knowledge/CARD_cancelamento-pedidos.md      |    67 +
- .../ed-knowledge/CARD_checklist-carregamento.md    |    91 +
- .../ed-knowledge/CARD_conferencia-manual.md        |    74 +
- .../ed-knowledge/CARD_conferencia.md               |    59 +
- .../ed-knowledge/CARD_cross-check.md               |    67 +
- corpus-conhecimento/ed-knowledge/CARD_cubagem.md   |    55 +
- .../ed-knowledge/CARD_dashboards-relatorios.md     |   132 +
- corpus-conhecimento/ed-knowledge/CARD_etiquetas.md |    87 +
- .../ed-knowledge/CARD_integracao-cadastros.md      |   114 +
- .../ed-knowledge/CARD_integracao-pedidos.md        |    97 +
- .../ed-knowledge/CARD_integracao-wcs-wms.md        |   100 +
- .../ed-knowledge/CARD_integracao-wms-erp.md        |   120 +
- .../ed-knowledge/CARD_inventario.md                |   109 +
- .../ed-knowledge/CARD_order-start.md               |    64 +
- .../ed-knowledge/CARD_packing-termolabil.md        |    62 +
- corpus-conhecimento/ed-knowledge/CARD_packing.md   |    84 +
- .../ed-knowledge/CARD_paletizacao.md               |    82 +
- .../ed-knowledge/CARD_picking-cart.md              |    82 +
- .../ed-knowledge/CARD_picking-fullcase.md          |    90 +
- .../ed-knowledge/CARD_picking-pallet.md            |    72 +
- .../ed-knowledge/CARD_picking-pbl.md               |   100 +
- .../ed-knowledge/CARD_ptl-alocacao.md              |    74 +
- corpus-conhecimento/ed-knowledge/CARD_ptm.md       |    89 +
- .../ed-knowledge/CARD_put-to-wall.md               |    59 +
- .../ed-knowledge/CARD_reabastecimento.md           |    83 +
- .../ed-knowledge/CARD_recebimento-armazenagem.md   |    62 +
- .../ed-knowledge/CARD_shortpicking.md              |    72 +
- .../ed-knowledge/CARD_sorter-inducao.md            |    91 +
- .../ed-knowledge/CARD_sorter-mapa-rota.md          |    97 +
- .../ed-knowledge/CARD_sorter-rejeito.md            |   118 +
- corpus-conhecimento/ed-knowledge/CARD_sorter.md    |   110 +
- corpus-conhecimento/ed-knowledge/JSON_DOCS.md      |   408 +
- corpus-conhecimento/ed-knowledge/PROMPT_ED.md      |    46 +
- corpus-conhecimento/ed-knowledge/_GUIA_ED.md       |    79 +
- corpus-conhecimento/ed-knowledge/_ROUTER.json      |   209 +
- corpus-conhecimento/manifesto.json                 |   575 ++
+ corpus-conhecimento/corpus-full.jsonl              |  1344 +
  .../relatorio-auditoria-links-resolvidos.md        |    64 +
  .../vocabulario/cadastros-acessos.txt              |    33 +
  .../vocabulario/conferencia-manual.txt             |     8 +
@@ -328,22 +331,12 @@ b8c1bf4 alterações no ED
  .../vocabulario/sorter-mapa-rota.txt               |    12 +
  corpus-conhecimento/vocabulario/sorter-rejeito.txt |    12 +
  corpus-conhecimento/vocabulario/sorter.txt         |    42 +
- dashboards-relatorios.md                           |     0
- demos/database.md                                  |     0
- demos/electron.md                                  |     0
- demos/xspreadsheet.md                              |     0
  ed-knowledge/ES_PLACEHOLDER_v7.docx                |   Bin 6904976 -> 6910292 bytes
  ed-knowledge/PROMPT_SISTEMA_v5_7.md                |    38 +-
  ed-knowledge/SUPER_MD_v5_5.md                      |   202 +-
  ed-knowledge/build_docx_v5.py                      |    95 +-
- insights/order-start.INSIGHTS.md                   |     0
- insights/packing.INSIGHTS.md                       |     0
- minerador/__pycache__/auditor.cpython-311.pyc      |   Bin 0 -> 32161 bytes
- minerador/__pycache__/minerador.cpython-311.pyc    |   Bin 0 -> 26651 bytes
- minerador/__pycache__/reclassifier.cpython-311.pyc |   Bin 0 -> 18448 bytes
- minerador/__pycache__/sintetizador.cpython-311.pyc |   Bin 0 -> 33277 bytes
  minerador/_estado_sintetizador.json                |    51 +
- minerador/auditor.py                               |   673 ++
+ minerador/auditor.py                               |   673 +
  minerador/descobridor.py                           |    93 +
  minerador/extrator.py                              |   400 +
  minerador/limpar_inbox.py                          |   164 +
@@ -351,26 +344,72 @@ b8c1bf4 alterações no ED
  minerador/reclassifier.py                          |   324 +
  minerador/requirements.txt                         |    43 +
  minerador/roteador.py                              |   121 +
- minerador/sintetizador.py                          |   762 ++
+ minerador/sintetizador.py                          |   762 +
  minerador/smoke_test.py                            |    18 +
  minerador/topicos.json                             |    34 +
+ nexus.md                                           |     0
+ .../blocos/conferencia/conferencia/DOSSIE.md       |     0
+ .../conferencia/insights/conferencia.INSIGHTS.md   |     0
+ .../blocos/conferencia/pesagem/DOSSIE.md           |     0
+ .../pesagem/insights/pesagem.INSIGHTS.md           |     0
+ .../blocos/conferencia/pesagem/pesagem.md          |     0
+ .../blocos/entrada/cubagem/DOSSIE.md               |     0
+ .../blocos/entrada/matriz-fragilidade/DOSSIE.md    |     0
+ .../insights/matriz-fragilidade.INSIGHTS.md        |     0
+ .../matriz-fragilidade/matriz-fragilidade.md       |     0
+ .../blocos/estoque/gestao-estoque/DOSSIE.md        |     0
+ .../estoque/gestao-estoque/gestao-estoque.md       |     0
+ .../insights/gestao-estoque.INSIGHTS.md            |     0
+ .../blocos/estoque/inventario/DOSSIE.md            |     0
+ .../blocos/estoque/reabastecimento/DOSSIE.md       |     0
+ .../blocos/expedicao/aloca-pallet/DOSSIE.md        |     0
+ .../blocos/expedicao/aloca-pallet/aloca-pallet.md  |     0
+ .../aloca-pallet/insights/aloca-pallet.INSIGHTS.md |     0
+ .../blocos/expedicao/paletizacao-ptl/DOSSIE.md     |     0
+ .../insights/paletizacao-ptl.INSIGHTS.md           |     0
+ .../expedicao/paletizacao-ptl/paletizacao-ptl.md   |     0
+ .../blocos/expedicao/paletizacao/DOSSIE.md         |     0
+ .../blocos/expedicao/ptl-alocacao/DOSSIE.md        |     0
+ .../blocos/expedicao/recirculacao/DOSSIE.md        |     0
+ .../recirculacao/insights/recirculacao.INSIGHTS.md |     0
+ .../blocos/expedicao/recirculacao/recirculacao.md  |     0
+ .../blocos/expedicao/romaneio/DOSSIE.md            |     0
+ .../romaneio/insights/romaneio.INSIGHTS.md         |     0
+ .../blocos/expedicao/romaneio/romaneio.md          |     0
+ .../blocos/expedicao/sorter-inducao/DOSSIE.md      |     0
+ .../blocos/expedicao/sorter-rampas/DOSSIE.md       |     0
+ .../insights/sorter-rampas.INSIGHTS.md             |     0
+ .../expedicao/sorter-rampas/sorter-rampas.md       |     0
+ .../blocos/expedicao/sorter-rejeito/DOSSIE.md      |     0
+ .../blocos/expedicao/sorter/DOSSIE.md              |     0
+ .../blocos/expedicao/sorter/sorter.md              |     0
+ .../blocos/sistema/cadastros-acessos/DOSSIE.md     |     0
+ .../blocos/sistema/infraestrutura/DOSSIE.md        |     0
+ .../sistema/infraestrutura/infraestrutura.md       |     0
+ .../insights/infraestrutura.INSIGHTS.md            |     0
+ .../cards/CARD_dashboards-relatorios.md            |     0
+ nexus/corpus-conhecimento/cards/CARD_integracao.md |     0
+ .../corpus-conhecimento/cards/CARD_picking-cart.md |     0
+ .../cards/CARD_picking-pallet.md                   |     0
  package-lock.json                                  |   926 +-
  package.json                                       |     4 +-
  public/ES_PLACEHOLDER_v7.docx                      |   Bin 6904976 -> 6922109 bytes
- src/App.tsx                                        |    50 +-
- src/components/Sidebar.tsx                         |    79 +-
+ src/App.tsx                                        |    53 +-
+ src/components/Sidebar.tsx                         |    82 +-
  src/lib/docxBuilder.ts                             |    74 +-
  src/lib/featureRegistry.ts                         |     9 +
  src/lib/kickoffMeta.ts                             |     4 +-
- src/pages/Admin/index.tsx                          |   541 +
- src/pages/ConfigPage.tsx                           |    19 +-
- src/pages/Documentacao/ApontamentoHoras.tsx        |  1376 +++
+ src/lib/pageCategories.ts                          |     1 -
+ src/pages/Admin/index.tsx                          |   528 +
+ src/pages/ComingSoon.tsx                           |     4 +-
+ src/pages/ConfigPage.tsx                           |   702 +-
+ src/pages/Documentacao/ApontamentoHoras.tsx        |  1376 +
  src/pages/Documentacao/GerarDocumento.tsx          |    18 +-
  src/pages/Documentacao/index.tsx                   |    16 +-
  src/pages/KickoffPage.tsx                          |    27 +-
  src/pages/LoginPage.tsx                            |    14 +-
  vite.config.ts                                     |     5 +
- 342 files changed, 63946 insertions(+), 173 deletions(-)
+ 380 files changed, 148863 insertions(+), 684 deletions(-)
 ```
 
 ---
@@ -379,7 +418,7 @@ b8c1bf4 alterações no ED
 
 ```diff
 diff --git a/src/App.tsx b/src/App.tsx
-index 986cd48..86c4b39 100644
+index 986cd48..a6eee31 100644
 --- a/src/App.tsx
 +++ b/src/App.tsx
 @@ -14,6 +14,7 @@ import { ComingSoon } from './pages/ComingSoon';
@@ -390,16 +429,19 @@ index 986cd48..86c4b39 100644
  import { ProjetosPage } from './pages/Projetos';
  import { ProjectOverview } from './pages/Projetos/ProjectOverview';
  import { NewKickoffModal } from './components/NewKickoffModal';
-@@ -22,7 +23,7 @@ import { IntroScreen } from './components/IntroScreen';
+@@ -22,29 +23,42 @@ import { IntroScreen } from './components/IntroScreen';
  import type { NexusProject } from './lib/projectStore';
  import { loadProject } from './lib/projectStore';
  
 -type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao';
-+type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
++type Page = 'kickoff' | 'projetos' | 'overview' | 'ferramentas' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
  
  const PAGE_TITLES: Record<Page, string> = {
    kickoff:       'Kickoff',
-@@ -33,18 +34,32 @@ const PAGE_TITLES: Record<Page, string> = {
+   projetos:      'Projetos',
+   overview:      'Projeto',
+   ferramentas:   'Ferramentas I.A',
+-  dashboard:     'Dashboard',
    config:        'Configurações',
    sugestoes:     'Sugestões',
    documentacao:  'Documentação',
@@ -433,7 +475,7 @@ index 986cd48..86c4b39 100644
    const [showIntro, setShowIntro] = useState(false);
    const [page, setPage] = useState<Page>('projetos');
    const [role, setRole] = useState<Role>(() => loadSession()?.role ?? 'gestao');
-@@ -92,6 +107,17 @@ export default function App() {
+@@ -92,6 +106,17 @@ export default function App() {
      if (session) localStorage.setItem(SESSION_KEY, JSON.stringify({ ...session, role: r }));
    };
  
@@ -451,12 +493,15 @@ index 986cd48..86c4b39 100644
    function renderKickoffLanding() {
      return (
        <Box
-@@ -182,35 +208,29 @@ export default function App() {
-       case 'dashboard':
-         return <ComingSoon iconType="dashboard" title="Dashboard" description="Métricas e indicadores dos projetos: taxa de preenchimento, seções críticas, timeline." />;
+@@ -179,38 +204,30 @@ export default function App() {
+         );
+       case 'ferramentas':
+         return <ComingSoon iconType="config" title="Ferramentas I.A" description="Automações, assistente de kickoff, geração de documentos com I.A e muito mais em breve." />;
+-      case 'dashboard':
+-        return <ComingSoon iconType="dashboard" title="Dashboard" description="Métricas e indicadores dos projetos: taxa de preenchimento, seções críticas, timeline." />;
        case 'config':
 -        return <ConfigPage role={role} />;
-+        return <ConfigPage role={role} isAdmin={userEmail === 'raphael.caveagna@invent-corp.com'} />;
++        return <ConfigPage role={role} userName={userName} />;
        case 'sugestoes':
          return <SugestoesPage role={role} userName={userName} />;
        case 'documentacao':
@@ -493,7 +538,7 @@ index 986cd48..86c4b39 100644
          }}
        />
      );
-@@ -221,7 +241,7 @@ export default function App() {
+@@ -221,7 +238,7 @@ export default function App() {
        {showIntro && <IntroScreen onDone={() => setShowIntro(false)} />}
  
        {!inKickoffFullscreen && (
@@ -503,10 +548,10 @@ index 986cd48..86c4b39 100644
  
        <Box sx={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', minWidth: 0 }}>
 diff --git a/src/components/Sidebar.tsx b/src/components/Sidebar.tsx
-index 8769bd7..16cdd79 100644
+index 8769bd7..24bbf7a 100644
 --- a/src/components/Sidebar.tsx
 +++ b/src/components/Sidebar.tsx
-@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
+@@ -6,18 +6,20 @@ import MenuItem from '@mui/material/MenuItem';
  import Select from '@mui/material/Select';
  import Tooltip from '@mui/material/Tooltip';
  import Typography from '@mui/material/Typography';
@@ -514,18 +559,31 @@ index 8769bd7..16cdd79 100644
  import AssignmentTurnedInRoundedIcon from '@mui/icons-material/AssignmentTurnedInRounded';
  import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
  import BuildRoundedIcon from '@mui/icons-material/BuildRounded';
-@@ -17,7 +18,9 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
+ import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
+ import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
+-import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
+ import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
+ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
  import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
  import TipsAndUpdatesRoundedIcon from '@mui/icons-material/TipsAndUpdatesRounded';
  
 -type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao';
-+type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'dashboard' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
++type Page = 'kickoff' | 'projetos' | 'ferramentas' | 'config' | 'sugestoes' | 'documentacao' | 'admin';
 +
 +const ADMIN_EMAIL = 'raphael.caveagna@invent-corp.com';
  
  export const ROLES = [
    { value: 'gestao',          label: 'Gestão' },
-@@ -53,10 +56,12 @@ interface SidebarProps {
+@@ -37,8 +39,6 @@ const NAV_DEFAULT: NavItem[] = [
+   { id: 'projetos',    label: 'Projetos',       Icon: FolderRoundedIcon },
+   { id: 'kickoff',     label: 'Kickoff',         Icon: AssignmentTurnedInRoundedIcon },
+   { id: 'ferramentas', label: 'Ferramentas I.A', Icon: BuildRoundedIcon },
+-  { id: 'dashboard',   label: 'Dashboard',       Icon: DashboardRoundedIcon },
+-  { id: 'sugestoes',   label: 'Sugestões',       Icon: TipsAndUpdatesRoundedIcon },
+ ];
+ 
+ const NAV_DOC: NavItem = { id: 'documentacao', label: 'Documentação', Icon: ArticleRoundedIcon };
+@@ -53,10 +53,12 @@ interface SidebarProps {
    role: Role;
    onRoleChange: (role: Role) => void;
    userName: string;
@@ -539,7 +597,7 @@ index 8769bd7..16cdd79 100644
    const [collapsed, setCollapsed] = useState(false);
    const [admClicks, setAdmClicks] = useState(0);
    const [admHint, setAdmHint] = useState(false);
-@@ -90,6 +95,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
+@@ -90,6 +92,7 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
    const NAV = role === 'documentacao'
      ? [...NAV_DEFAULT, NAV_DOC]
      : NAV_DEFAULT;
@@ -547,7 +605,7 @@ index 8769bd7..16cdd79 100644
    const roleLabel = ROLES.find(r => r.value === role)?.label ?? role;
    const firstName = userName.split(' ')[0] || 'Usuário';
    const initial = firstName[0]?.toUpperCase() ?? 'U';
-@@ -228,6 +234,53 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
+@@ -228,6 +231,53 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
            <List dense disablePadding sx={{ display: 'flex', flexDirection: 'column' }}>
              {NAV.map(renderNavItem)}
            </List>
@@ -601,7 +659,7 @@ index 8769bd7..16cdd79 100644
          </Box>
  
          {/* Bottom section */}
-@@ -238,16 +291,18 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
+@@ -238,16 +288,18 @@ export function Sidebar({ current, onNavigate, role, onRoleChange, userName, onL
  
            {!collapsed && (
              <>
@@ -769,12 +827,24 @@ index 06547e0..10b6ed5 100644
 -  'if_titul','if_ambiente','if_s','if1','if2','if3','if4','if5','if6',
 +  'if_resp_infra','if_resp_srv','if_ambiente','if_s','if1','if2','if3','if4','if5','if6',
  ]);
+diff --git a/src/lib/pageCategories.ts b/src/lib/pageCategories.ts
+index 622d592..dfb9a50 100644
+--- a/src/lib/pageCategories.ts
++++ b/src/lib/pageCategories.ts
+@@ -11,7 +11,6 @@ export const PAGE_CATEGORIES: PageCategory[] = [
+   { value: 'projetos',     label: 'Projetos',       color: '#6366f1' },
+   { value: 'kickoff',      label: 'Kickoff',         color: '#0ea5e9' },
+   { value: 'ferramentas',  label: 'Ferramentas I.A', color: '#a855f7' },
+-  { value: 'dashboard',    label: 'Dashboard',       color: '#22c55e' },
+   { value: 'config',       label: 'Configurações',   color: '#f59e0b' },
+   { value: 'sugestoes',    label: 'Sugestões',       color: '#ec4899' },
+   { value: 'login',        label: 'Login / Acesso',  color: '#14b8a6' },
 diff --git a/src/pages/Admin/index.tsx b/src/pages/Admin/index.tsx
 new file mode 100644
-index 0000000..d1cefd7
+index 0000000..a56c078
 --- /dev/null
 +++ b/src/pages/Admin/index.tsx
-@@ -0,0 +1,541 @@
+@@ -0,0 +1,528 @@
 +import { useState, useEffect, useCallback } from 'react';
 +import Box from '@mui/material/Box';
 +import Button from '@mui/material/Button';
@@ -799,6 +869,7 @@ index 0000000..d1cefd7
 +
 +import { ROLES } from '../../components/Sidebar';
 +import type { Role } from '../../components/Sidebar';
++import { FeaturesAdminTab, PendenciasTab, ROLE_COLOR } from '../ConfigPage';
 +
 +// ─── Types ───────────────────────────────────────────────────────────────────
 +
@@ -1148,10 +1219,6 @@ index 0000000..d1cefd7
 +    });
 +  };
 +
-+  const ROLE_COLOR: Record<Role, string> = {
-+    gestao: '#6366f1', engenharia: '#0ea5e9', documentacao: '#8b5cf6',
-+    pmo: '#ffc500', desenvolvimento: '#22c55e', eletrica: '#f59e0b', adm: '#ef4444',
-+  };
 +
 +  return (
 +    <>
@@ -1187,12 +1254,37 @@ index 0000000..d1cefd7
 +            '& .MuiTabs-indicator': { bgcolor: 'primary.main' },
 +          }}
 +        >
-+          <Tab label="Apresentação" icon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
 +          <Tab label="Papéis" />
++          <Tab label="Apresentação" icon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
++          <Tab label="Funcionalidades" />
++          <Tab label="Backlog" />
 +        </Tabs>
 +
-+        {/* ── Tab 0: Apresentação ── */}
++        {/* ── Tab 0: Papéis ── */}
 +        {tab === 0 && (
++          <Box sx={{ maxWidth: 480 }}>
++            <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Papel atual da sessão</Typography>
++            <Typography sx={{ fontSize: 12, color: 'text.disabled', mb: 2.5 }}>
++              Apenas o administrador pode transitar entre funções. Útil para debugar a plataforma e visualizar o sistema como cada perfil.
++            </Typography>
++            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
++              {ROLES.map(r => {
++                const active = role === r.value;
++                return (
++                  <Box key={r.value} component="button" onClick={() => onRoleChange(r.value)}
++                    sx={{ width: '100%', display: 'flex', alignItems: 'center', gap: 1.5, p: '10px 14px', border: '1px solid', borderRadius: 1.5, cursor: 'pointer', bgcolor: active ? `${ROLE_COLOR[r.value]}12` : 'transparent', borderColor: active ? ROLE_COLOR[r.value] : 'divider', transition: '.15s', '&:hover': { borderColor: ROLE_COLOR[r.value], bgcolor: `${ROLE_COLOR[r.value]}0A` } }}>
++                    <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
++                    <Typography sx={{ fontSize: 13, fontWeight: active ? 700 : 500, color: active ? ROLE_COLOR[r.value] : 'text.secondary', flex: 1, textAlign: 'left' }}>{r.label}</Typography>
++                    {active && <Chip label="ativo" size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r.value]}20`, color: ROLE_COLOR[r.value], border: `1px solid ${ROLE_COLOR[r.value]}44`, fontWeight: 700 }} />}
++                  </Box>
++                );
++              })}
++            </Box>
++          </Box>
++        )}
++
++        {/* ── Tab 1: Apresentação ── */}
++        {tab === 1 && (
 +          <Box>
 +            {/* Header fields */}
 +            <Box sx={{ display: 'flex', gap: 1.5, mb: 3, flexWrap: 'wrap', alignItems: 'flex-end' }}>
@@ -1272,94 +1364,874 @@ index 0000000..d1cefd7
 +          </Box>
 +        )}
 +
-+        {/* ── Tab 1: Papéis ── */}
-+        {tab === 1 && (
-+          <Box sx={{ maxWidth: 480 }}>
-+            <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>
-+              Papel atual da sessão
-+            </Typography>
-+            <Typography sx={{ fontSize: 12, color: 'text.disabled', mb: 2.5 }}>
-+              Apenas o administrador pode transitar entre funções. Útil para debugar a plataforma e visualizar o sistema como cada perfil.
-+            </Typography>
++        {/* ── Tab 2: Funcionalidades ── */}
++        {tab === 2 && <FeaturesAdminTab />}
 +
-+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-+              {ROLES.map(r => {
-+                const active = role === r.value;
-+                return (
-+                  <Box
-+                    key={r.value}
-+                    component="button"
-+                    onClick={() => onRoleChange(r.value)}
-+                    sx={{
-+                      width: '100%', display: 'flex', alignItems: 'center', gap: 1.5,
-+                      p: '10px 14px', border: '1px solid', borderRadius: 1.5, cursor: 'pointer',
-+                      bgcolor: active ? `${ROLE_COLOR[r.value]}12` : 'transparent',
-+                      borderColor: active ? ROLE_COLOR[r.value] : 'divider',
-+                      transition: '.15s',
-+                      '&:hover': { borderColor: ROLE_COLOR[r.value], bgcolor: `${ROLE_COLOR[r.value]}0A` },
-+                    }}
-+                  >
-+                    <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
-+                    <Typography sx={{ fontSize: 13, fontWeight: active ? 700 : 500, color: active ? ROLE_COLOR[r.value] : 'text.secondary', flex: 1, textAlign: 'left' }}>
-+                      {r.label}
-+                    </Typography>
-+                    {active && (
-+                      <Chip label="ativo" size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r.value]}20`, color: ROLE_COLOR[r.value], border: `1px solid ${ROLE_COLOR[r.value]}44`, fontWeight: 700 }} />
-+                    )}
-+                  </Box>
-+                );
-+              })}
-+            </Box>
-+          </Box>
-+        )}
++        {/* ── Tab 3: Backlog ── */}
++        {tab === 3 && <PendenciasTab />}
 +      </Box>
 +    </>
 +  );
 +}
+diff --git a/src/pages/ComingSoon.tsx b/src/pages/ComingSoon.tsx
+index 7b17bf7..51416c6 100644
+--- a/src/pages/ComingSoon.tsx
++++ b/src/pages/ComingSoon.tsx
+@@ -4,15 +4,13 @@ import Paper from '@mui/material/Paper';
+ import Typography from '@mui/material/Typography';
+ import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
+ import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
+-import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
+ import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
+ 
+-type IconType = 'projetos' | 'pendencias' | 'dashboard' | 'config';
++type IconType = 'projetos' | 'pendencias' | 'config';
+ 
+ const ICONS: Record<IconType, React.ElementType> = {
+   projetos:   FolderRoundedIcon,
+   pendencias: WarningAmberRoundedIcon,
+-  dashboard:  DashboardRoundedIcon,
+   config:     SettingsRoundedIcon,
+ };
+ 
 diff --git a/src/pages/ConfigPage.tsx b/src/pages/ConfigPage.tsx
-index eefb6ef..026347f 100644
+index eefb6ef..f701512 100644
 --- a/src/pages/ConfigPage.tsx
 +++ b/src/pages/ConfigPage.tsx
-@@ -11,6 +11,7 @@ import TextField from '@mui/material/TextField';
+@@ -5,12 +5,9 @@ import Checkbox from '@mui/material/Checkbox';
+ import Chip from '@mui/material/Chip';
+ import IconButton from '@mui/material/IconButton';
+ import Paper from '@mui/material/Paper';
+-import Tab from '@mui/material/Tab';
+-import Tabs from '@mui/material/Tabs';
+ import TextField from '@mui/material/TextField';
  import Tooltip from '@mui/material/Tooltip';
  import Typography from '@mui/material/Typography';
- import AdminPanelSettingsRoundedIcon from '@mui/icons-material/AdminPanelSettingsRounded';
-+import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
+-import AdminPanelSettingsRoundedIcon from '@mui/icons-material/AdminPanelSettingsRounded';
  import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
  import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
  import EditRoundedIcon from '@mui/icons-material/EditRounded';
-@@ -34,7 +35,7 @@ const ROLE_COLOR: Record<Role, string> = {
+@@ -18,13 +15,14 @@ import FormatListBulletedRoundedIcon from '@mui/icons-material/FormatListBullete
+ import RadioButtonUncheckedRoundedIcon from '@mui/icons-material/RadioButtonUncheckedRounded';
+ import { ROLES } from '../components/Sidebar';
+ import type { Role } from '../components/Sidebar';
+-import type { RoleFeature, KpiEntry } from '../lib/featureRegistry';
++import type { RoleFeature } from '../lib/featureRegistry';
+ import { loadFeatures, saveFeature } from '../lib/featuresStore';
+ import { PAGE_CATEGORIES, getCategoryColor, getCategoryLabel } from '../lib/pageCategories';
+ import { loadLista, toggleListaItem, removeFromLista } from '../lib/listaStore';
+ import type { ListaItem } from '../lib/listaStore';
++import { SugestoesPage } from './SugestoesPage';
+ 
+-const ROLE_COLOR: Record<Role, string> = {
++export const ROLE_COLOR: Record<Role, string> = {
+   gestao:          '#6366f1',
+   engenharia:      '#0ea5e9',
+   documentacao:    '#8b5cf6',
+@@ -34,554 +32,119 @@ const ROLE_COLOR: Record<Role, string> = {
    adm:             '#ef4444',
  };
  
 -export function ConfigPage({ role }: { role?: Role }) {
-+export function ConfigPage({ role, isAdmin }: { role?: Role; isAdmin?: boolean }) {
-   const [tab, setTab] = useState(0);
+-  const [tab, setTab] = useState(0);
++// ─── ConfigPage: Sugestões para todos ────────────────────────────────────────
  
-   // ── Administração
-@@ -80,6 +81,22 @@ export function ConfigPage({ role }: { role?: Role }) {
-   const listaRolesUsed = ROLES.filter(r => lista.some(i => i.role === r.value));
-   const donePct = lista.length > 0 ? Math.round((lista.filter(i => i.done).length / lista.length) * 100) : 0;
+-  // ── Administração
+-  const [features, setFeatures] = useState<RoleFeature[]>(() => loadFeatures());
+-  const [roleFilter, setRoleFilter] = useState<Role | 'all'>('all');
+-  const [pageFilter, setPageFilter] = useState<string | 'all'>('all');
+-
+-  const refreshFeatures = () => setFeatures(loadFeatures());
+-
+-  const handleSaveFeature = (updated: RoleFeature) => {
+-    saveFeature(updated);
+-    refreshFeatures();
+-  };
+-
+-  const usedPages = new Set(features.map(f => f.page));
+-  const pagePages = PAGE_CATEGORIES.filter(c => usedPages.has(c.label));
+-
+-  const filtered = features.filter(f => {
+-    const matchRole = roleFilter === 'all' || f.roles.includes(roleFilter);
+-    const matchPage = pageFilter === 'all' || f.page === pageFilter;
+-    return matchRole && matchPage;
+-  });
+-
+-  const byRole = ROLES.map(r => ({
+-    ...r,
+-    features: features.filter(f => f.roles.includes(r.value)),
+-  })).filter(r => r.features.length > 0);
+-
+-  // ── Pendências
+-  const [lista, setLista] = useState<ListaItem[]>(() => loadLista());
+-  const [listaRoleFilter, setListaRoleFilter] = useState<Role | 'all'>('all');
+-  const [listaCatFilter, setListaCatFilter] = useState<string | 'all'>('all');
+-
+-  const refreshLista = () => setLista(loadLista());
+-
+-  const listaFiltrada = lista.filter(i => {
+-    const matchRole = listaRoleFilter === 'all' || i.role === listaRoleFilter;
+-    const matchCat = listaCatFilter === 'all' || i.categoria === listaCatFilter;
+-    return matchRole && matchCat;
+-  });
+-
+-  const listaUsedCategories = PAGE_CATEGORIES.filter(c => lista.some(i => i.categoria === c.value));
+-  const listaRolesUsed = ROLES.filter(r => lista.some(i => i.role === r.value));
+-  const donePct = lista.length > 0 ? Math.round((lista.filter(i => i.done).length / lista.length) * 100) : 0;
+-
+-  return (
+-    <Box className="page-enter" sx={{ p: 3, flex: 1 }}>
+-      <Typography sx={{ fontSize: 20, fontWeight: 800, color: 'text.primary', letterSpacing: '-.3px', mb: '4px' }}>
+-        Configurações
+-      </Typography>
+-      <Typography sx={{ fontSize: 13, color: 'text.disabled', mb: 3 }}>
+-        Gerencie preferências, integrações e administração da plataforma.
+-      </Typography>
+-
+-      <Tabs
+-        value={tab}
+-        onChange={(_, v) => setTab(v)}
+-        sx={{
+-          borderBottom: '1px solid',
+-          borderColor: 'divider',
+-          mb: 3,
+-          '& .MuiTab-root': { fontSize: 12, fontWeight: 600, textTransform: 'none', minHeight: 40, px: 2 },
+-          '& .Mui-selected': { color: 'primary.main' },
+-          '& .MuiTabs-indicator': { bgcolor: 'primary.main' },
+-        }}
+-      >
+-        <Tab label="Administração" icon={<AdminPanelSettingsRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
+-        <Tab
+-          label={`Pendências${lista.length > 0 ? ` (${lista.length})` : ''}`}
+-          icon={<FormatListBulletedRoundedIcon sx={{ fontSize: 16 }} />}
+-          iconPosition="start"
+-        />
+-      </Tabs>
+-
+-      {/* ── Tab 0: Administração ── */}
+-      {tab === 0 && (
+-        <Box>
+-          <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
+-            <Box>
+-              <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>
+-                Funcionalidades por Função
+-              </Typography>
+-              <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>
+-                Lista de recursos exclusivos ou diferenciados por setor. Clique em editar para ajustar título, descrição, funções ou página.
+-              </Typography>
+-            </Box>
+-            <Chip
+-              label={`${features.filter(f => f.implemented).length} / ${features.length} implementadas`}
+-              size="small"
+-              sx={{ bgcolor: 'rgba(255,197,0,0.08)', color: '#ffc500', border: '1px solid rgba(255,197,0,0.2)', fontSize: 11, fontWeight: 600 }}
+-            />
+-          </Box>
+-
+-          {/* Filters */}
+-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
+-            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+-              <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Função:</Typography>
+-              <Chip
+-                label="Todas"
+-                size="small"
+-                onClick={() => setRoleFilter('all')}
+-                sx={{
+-                  fontSize: 11, fontWeight: 600,
+-                  bgcolor: roleFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent',
+-                  borderColor: roleFilter === 'all' ? 'rgba(255,255,255,0.3)' : 'divider',
+-                  color: roleFilter === 'all' ? 'text.primary' : 'text.disabled',
+-                  border: '1px solid',
+-                }}
+-              />
+-              {ROLES.map(r => (
+-                <Chip
+-                  key={r.value}
+-                  label={r.label}
+-                  size="small"
+-                  onClick={() => setRoleFilter(roleFilter === r.value ? 'all' : r.value)}
+-                  sx={{
+-                    fontSize: 11, fontWeight: 600,
+-                    bgcolor: roleFilter === r.value ? `${ROLE_COLOR[r.value]}22` : 'transparent',
+-                    borderColor: roleFilter === r.value ? ROLE_COLOR[r.value] : 'divider',
+-                    color: roleFilter === r.value ? ROLE_COLOR[r.value] : 'text.disabled',
+-                    border: '1px solid',
+-                    '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] },
+-                  }}
+-                />
+-              ))}
+-            </Box>
+-
+-            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+-              <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Categoria:</Typography>
+-              <Chip
+-                label="Todas"
+-                size="small"
+-                onClick={() => setPageFilter('all')}
+-                sx={{
+-                  fontSize: 11,
+-                  bgcolor: pageFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent',
+-                  borderColor: pageFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider',
+-                  color: pageFilter === 'all' ? 'text.secondary' : 'text.disabled',
+-                  border: '1px solid',
+-                }}
+-              />
+-              {pagePages.map(cat => (
+-                <Chip
+-                  key={cat.value}
+-                  label={cat.label}
+-                  size="small"
+-                  onClick={() => setPageFilter(pageFilter === cat.label ? 'all' : cat.label)}
+-                  sx={{
+-                    fontSize: 11, fontWeight: 600,
+-                    bgcolor: pageFilter === cat.label ? `${cat.color}20` : 'transparent',
+-                    borderColor: pageFilter === cat.label ? cat.color : 'divider',
+-                    color: pageFilter === cat.label ? cat.color : 'text.disabled',
+-                    border: '1px solid',
+-                    '&:hover': { borderColor: cat.color, color: cat.color },
+-                  }}
+-                />
+-              ))}
+-            </Box>
+-          </Box>
+-
+-          {/* Feature list */}
+-          {filtered.length === 0 ? (
+-            <Typography sx={{ fontSize: 13, color: 'text.disabled', fontStyle: 'italic' }}>
+-              Nenhuma funcionalidade encontrada para os filtros selecionados.
+-            </Typography>
+-          ) : roleFilter === 'all' ? (
+-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+-              {byRole
+-                .filter(r => pageFilter === 'all' || r.features.some(f => f.page === pageFilter))
+-                .map(r => (
+-                  <Box key={r.value}>
+-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
+-                      <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
+-                      <Typography sx={{ fontSize: 11, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', color: ROLE_COLOR[r.value] }}>
+-                        {r.label}
+-                      </Typography>
+-                      <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>
+-                        · {r.features.filter(f => pageFilter === 'all' || f.page === pageFilter).length} item(s)
+-                      </Typography>
+-                    </Box>
+-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+-                      {r.features
+-                        .filter(f => pageFilter === 'all' || f.page === pageFilter)
+-                        .map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={role === 'adm'} />)}
+-                    </Box>
+-                  </Box>
+-                ))}
+-            </Box>
+-          ) : (
+-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+-              {filtered.map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={role === 'adm'} />)}
+-            </Box>
+-          )}
+-        </Box>
+-      )}
+-
+-      {/* ── Tab 1: Pendências ── */}
+-      {tab === 1 && (
+-        <Box>
+-          <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
+-            <Box>
+-              <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>
+-                Lista de Pendências
+-              </Typography>
+-              <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>
+-                Sugestões marcadas para acompanhamento. Marque como concluídas conforme forem implementadas.
+-              </Typography>
+-            </Box>
+-            {lista.length > 0 && (
+-              <Chip
+-                label={`${lista.filter(i => i.done).length} / ${lista.length} concluídas (${donePct}%)`}
+-                size="small"
+-                sx={{ bgcolor: 'rgba(34,197,94,0.08)', color: '#22c55e', border: '1px solid rgba(34,197,94,0.2)', fontSize: 11, fontWeight: 600 }}
+-              />
+-            )}
+-          </Box>
+-
+-          {lista.length > 0 && (
+-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
+-              <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+-                <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Função:</Typography>
+-                <Chip
+-                  label={`Todas (${lista.length})`}
+-                  size="small"
+-                  onClick={() => setListaRoleFilter('all')}
+-                  sx={{
+-                    fontSize: 11, fontWeight: 600,
+-                    bgcolor: listaRoleFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent',
+-                    borderColor: listaRoleFilter === 'all' ? 'rgba(255,255,255,0.25)' : 'divider',
+-                    color: listaRoleFilter === 'all' ? 'text.primary' : 'text.disabled',
+-                    border: '1px solid',
+-                  }}
+-                />
+-                {listaRolesUsed.map(r => (
+-                  <Chip
+-                    key={r.value}
+-                    label={`${r.label} (${lista.filter(i => i.role === r.value).length})`}
+-                    size="small"
+-                    onClick={() => setListaRoleFilter(listaRoleFilter === r.value ? 'all' : r.value)}
+-                    sx={{
+-                      fontSize: 11, fontWeight: 600,
+-                      bgcolor: listaRoleFilter === r.value ? `${ROLE_COLOR[r.value]}20` : 'transparent',
+-                      borderColor: listaRoleFilter === r.value ? ROLE_COLOR[r.value] : 'divider',
+-                      color: listaRoleFilter === r.value ? ROLE_COLOR[r.value] : 'text.disabled',
+-                      border: '1px solid',
+-                      '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] },
+-                    }}
+-                  />
+-                ))}
+-              </Box>
+-
+-              {listaUsedCategories.length > 0 && (
+-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+-                  <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Categoria:</Typography>
+-                  <Chip
+-                    label="Todas"
+-                    size="small"
+-                    onClick={() => setListaCatFilter('all')}
+-                    sx={{
+-                      fontSize: 11,
+-                      bgcolor: listaCatFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent',
+-                      borderColor: listaCatFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider',
+-                      color: listaCatFilter === 'all' ? 'text.secondary' : 'text.disabled',
+-                      border: '1px solid',
+-                    }}
+-                  />
+-                  {listaUsedCategories.map(c => (
+-                    <Chip
+-                      key={c.value}
+-                      label={c.label}
+-                      size="small"
+-                      onClick={() => setListaCatFilter(listaCatFilter === c.value ? 'all' : c.value)}
+-                      sx={{
+-                        fontSize: 11, fontWeight: 600,
+-                        bgcolor: listaCatFilter === c.value ? `${c.color}20` : 'transparent',
+-                        borderColor: listaCatFilter === c.value ? c.color : 'divider',
+-                        color: listaCatFilter === c.value ? c.color : 'text.disabled',
+-                        border: '1px solid',
+-                        '&:hover': { borderColor: c.color, color: c.color },
+-                      }}
+-                    />
+-                  ))}
+-                </Box>
+-              )}
+-            </Box>
+-          )}
+-
+-          {listaFiltrada.length === 0 ? (
+-            <Box sx={{ textAlign: 'center', py: 6 }}>
+-              <FormatListBulletedRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', mb: 1.5, opacity: 0.4 }} />
+-              <Typography sx={{ fontSize: 13, color: 'text.disabled' }}>
+-                {lista.length === 0
+-                  ? 'Nenhuma pendência ainda. Marque sugestões com o bookmark na aba Sugestões.'
+-                  : 'Nenhum item para esse filtro.'}
+-              </Typography>
+-            </Box>
+-          ) : (
+-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+-              {listaFiltrada.map(item => {
+-                const rl = ROLES.find(r => r.value === item.role);
+-                const catColor = item.categoria ? getCategoryColor(item.categoria) : null;
+-                const catLabel = item.categoria ? getCategoryLabel(item.categoria) : null;
+-                const date = new Date(item.addedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+-                return (
+-                  <Paper
+-                    key={item.id}
+-                    elevation={0}
+-                    sx={{ p: '12px 16px', display: 'flex', gap: 1.5, alignItems: 'flex-start', opacity: item.done ? 0.5 : 1, transition: 'opacity .2s' }}
+-                  >
+-                    <Checkbox
+-                      checked={item.done}
+-                      onChange={() => { toggleListaItem(item.id); refreshLista(); }}
+-                      size="small"
+-                      sx={{ p: '2px', mt: '1px', flexShrink: 0, color: 'text.disabled', '&.Mui-checked': { color: '#22c55e' } }}
+-                    />
+-                    <Box sx={{ flex: 1, minWidth: 0 }}>
+-                      {item.title && (
+-                        <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary', mb: '4px', textDecoration: item.done ? 'line-through' : 'none' }}>
+-                          {item.title}
+-                        </Typography>
+-                      )}
+-                      <Typography sx={{ fontSize: 13, color: item.title ? 'text.secondary' : 'text.primary', lineHeight: 1.7, whiteSpace: 'pre-wrap', wordBreak: 'break-word', textDecoration: item.done ? 'line-through' : 'none' }}>
+-                        {item.texto}
+-                      </Typography>
+-                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: '6px', flexWrap: 'wrap' }}>
+-                        <Chip label={rl?.label ?? item.role} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[item.role]}18`, color: ROLE_COLOR[item.role], border: `1px solid ${ROLE_COLOR[item.role]}44`, fontWeight: 600 }} />
+-                        {catLabel && catColor && (
+-                          <Chip label={catLabel} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${catColor}18`, color: catColor, border: `1px solid ${catColor}44`, fontWeight: 600 }} />
+-                        )}
+-                        {item.userName && <Typography sx={{ fontSize: 11, fontWeight: 600, color: 'text.secondary' }}>{item.userName}</Typography>}
+-                        <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>{date}</Typography>
+-                      </Box>
+-                    </Box>
+-                    <Tooltip title="Remover da lista">
+-                      <IconButton size="small" onClick={() => { removeFromLista(item.id); refreshLista(); }} sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0, mt: '2px' }}>
+-                        <DeleteRoundedIcon sx={{ fontSize: 15 }} />
+-                      </IconButton>
+-                    </Tooltip>
+-                  </Paper>
+-                );
+-              })}
+-            </Box>
+-          )}
+-        </Box>
+-      )}
+-    </Box>
+-  );
++export function ConfigPage({ role, userName }: { role?: Role; userName?: string }) {
++  return <SugestoesPage role={role ?? 'gestao'} userName={userName ?? ''} />;
+ }
  
-+  if (!isAdmin) {
-+    return (
-+      <Box className="page-enter" sx={{ p: 3, flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-+        <Box sx={{ textAlign: 'center', maxWidth: 320 }}>
-+          <SettingsRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', opacity: 0.3, mb: 1.5 }} />
-+          <Typography sx={{ fontSize: 14, fontWeight: 600, color: 'text.secondary', mb: '6px' }}>
-+            Configurações
-+          </Typography>
-+          <Typography sx={{ fontSize: 13, color: 'text.disabled', lineHeight: 1.6 }}>
-+            Nenhuma configuração disponível para o seu perfil no momento.
-+          </Typography>
+-function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave: (f: RoleFeature) => void; isAdm?: boolean }) {
++// ─── FeatureCard ─────────────────────────────────────────────────────────────
++
++export function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave: (f: RoleFeature) => void; isAdm?: boolean }) {
+   const [editing, setEditing] = useState(false);
+   const [draft, setDraft] = useState<RoleFeature>({ ...feature });
+ 
+-  const handleEdit = () => {
+-    setDraft({ ...feature });
+-    setEditing(true);
+-  };
+-
++  const handleEdit = () => { setDraft({ ...feature }); setEditing(true); };
+   const handleSave = () => {
+     if (!draft.title.trim()) return;
+     onSave({ ...draft, title: draft.title.trim(), description: draft.description.trim() });
+     setEditing(false);
+   };
+-
+   const toggleRole = (r: Role) => {
+-    setDraft(d => ({
+-      ...d,
+-      roles: d.roles.includes(r) ? d.roles.filter(x => x !== r) : [...d.roles, r],
+-    }));
++    setDraft(d => ({ ...d, roles: d.roles.includes(r) ? d.roles.filter(x => x !== r) : [...d.roles, r] }));
+   };
+ 
+   if (editing) {
+     return (
+       <Paper elevation={0} sx={{ p: '16px', display: 'flex', flexDirection: 'column', gap: 2, border: '1px solid', borderColor: 'primary.main' }}>
+-        {/* Title */}
+-        <TextField
+-          label="Título"
+-          size="small"
+-          fullWidth
+-          value={draft.title}
++        <TextField label="Título" size="small" fullWidth value={draft.title}
+           onChange={e => setDraft(d => ({ ...d, title: e.target.value }))}
+-          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
+-        />
+-
+-        {/* Description */}
+-        <TextField
+-          label="Descrição"
+-          size="small"
+-          fullWidth
+-          multiline
+-          minRows={2}
+-          value={draft.description}
++          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }} />
++        <TextField label="Descrição" size="small" fullWidth multiline minRows={2} value={draft.description}
+           onChange={e => setDraft(d => ({ ...d, description: e.target.value }))}
+-          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
+-        />
+-
+-        {/* Page */}
++          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }} />
+         <Box>
+           <Typography sx={{ fontSize: 11, color: 'text.disabled', mb: '6px' }}>Página</Typography>
+           <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap' }}>
+             {PAGE_CATEGORIES.map(c => {
+               const selected = draft.page === c.label;
+               return (
+-                <Chip
+-                  key={c.value}
+-                  label={c.label}
+-                  size="small"
+-                  onClick={() => setDraft(d => ({ ...d, page: c.label }))}
+-                  sx={{
+-                    fontSize: 10, height: 20, fontWeight: 600,
+-                    bgcolor: selected ? `${c.color}22` : 'transparent',
+-                    borderColor: selected ? c.color : 'divider',
+-                    color: selected ? c.color : 'text.disabled',
+-                    border: '1px solid',
+-                    '&:hover': { borderColor: c.color, color: c.color },
+-                  }}
+-                />
++                <Chip key={c.value} label={c.label} size="small" onClick={() => setDraft(d => ({ ...d, page: c.label }))}
++                  sx={{ fontSize: 10, height: 20, fontWeight: 600, bgcolor: selected ? `${c.color}22` : 'transparent', borderColor: selected ? c.color : 'divider', color: selected ? c.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: c.color, color: c.color } }} />
+               );
+             })}
+           </Box>
+         </Box>
+-
+-        {/* Roles */}
+         <Box>
+           <Typography sx={{ fontSize: 11, color: 'text.disabled', mb: '6px' }}>
+             Funções
+-            {draft.roles.length === ROLES.length && (
+-              <Box component="span" sx={{ color: '#22c55e', ml: '6px' }}>· Todas selecionadas (disponível para todos)</Box>
+-            )}
++            {draft.roles.length === ROLES.length && <Box component="span" sx={{ color: '#22c55e', ml: '6px' }}>· Todas selecionadas</Box>}
+           </Typography>
+           <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap' }}>
+             {ROLES.map(r => {
+               const selected = draft.roles.includes(r.value);
+               return (
+-                <Chip
+-                  key={r.value}
+-                  label={r.label}
+-                  size="small"
+-                  onClick={() => toggleRole(r.value)}
+-                  sx={{
+-                    fontSize: 10, height: 20, fontWeight: 600,
+-                    bgcolor: selected ? `${ROLE_COLOR[r.value]}22` : 'transparent',
+-                    borderColor: selected ? ROLE_COLOR[r.value] : 'divider',
+-                    color: selected ? ROLE_COLOR[r.value] : 'text.disabled',
+-                    border: '1px solid',
+-                    '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] },
+-                  }}
+-                />
++                <Chip key={r.value} label={r.label} size="small" onClick={() => toggleRole(r.value)}
++                  sx={{ fontSize: 10, height: 20, fontWeight: 600, bgcolor: selected ? `${ROLE_COLOR[r.value]}22` : 'transparent', borderColor: selected ? ROLE_COLOR[r.value] : 'divider', color: selected ? ROLE_COLOR[r.value] : 'text.disabled', border: '1px solid', '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] } }} />
+               );
+             })}
+           </Box>
+         </Box>
+-
+-        {/* Implemented toggle */}
+         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+           <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>Status:</Typography>
+-          <Chip
+-            label={draft.implemented ? 'Implementado' : 'Planejado'}
+-            size="small"
++          <Chip label={draft.implemented ? 'Implementado' : 'Planejado'} size="small"
+             onClick={() => setDraft(d => ({ ...d, implemented: !d.implemented }))}
+-            sx={{
+-              fontSize: 11, fontWeight: 600, cursor: 'pointer',
+-              bgcolor: draft.implemented ? 'rgba(34,197,94,0.1)' : 'rgba(255,197,0,0.06)',
+-              color: draft.implemented ? '#22c55e' : '#ffc500',
+-              border: `1px solid ${draft.implemented ? 'rgba(34,197,94,0.3)' : 'rgba(255,197,0,0.2)'}`,
+-            }}
+-          />
++            sx={{ fontSize: 11, fontWeight: 600, cursor: 'pointer', bgcolor: draft.implemented ? 'rgba(34,197,94,0.1)' : 'rgba(255,197,0,0.06)', color: draft.implemented ? '#22c55e' : '#ffc500', border: `1px solid ${draft.implemented ? 'rgba(34,197,94,0.3)' : 'rgba(255,197,0,0.2)'}` }} />
+         </Box>
+-
+-        {/* KPIs — ADM only */}
+         {isAdm && (
+           <Box>
+             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: '6px' }}>
+               <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>KPIs <Box component="span" sx={{ color: '#ef4444', ml: '4px', fontSize: 10 }}>ADM</Box></Typography>
+-              <Button
+-                size="small" variant="text"
+-                onClick={() => setDraft(d => ({ ...d, kpis: [...(d.kpis ?? []), { label: '', value: '', unit: '' }] }))}
+-                sx={{ fontSize: 11, p: '2px 6px', minWidth: 0, color: 'text.disabled', '&:hover': { color: 'primary.main' } }}
+-              >
++              <Button size="small" variant="text" onClick={() => setDraft(d => ({ ...d, kpis: [...(d.kpis ?? []), { label: '', value: '', unit: '' }] }))}
++                sx={{ fontSize: 11, p: '2px 6px', minWidth: 0, color: 'text.disabled', '&:hover': { color: 'primary.main' } }}>
+                 + KPI
+               </Button>
+             </Box>
+-            {(draft.kpis ?? []).length === 0 && (
+-              <Typography sx={{ fontSize: 11, color: 'rgba(255,255,255,0.2)', fontStyle: 'italic' }}>Nenhum KPI cadastrado.</Typography>
+-            )}
++            {(draft.kpis ?? []).length === 0 && <Typography sx={{ fontSize: 11, color: 'rgba(255,255,255,0.2)', fontStyle: 'italic' }}>Nenhum KPI cadastrado.</Typography>}
+             {(draft.kpis ?? []).map((k, i) => (
+               <Box key={i} sx={{ display: 'flex', gap: 0.75, mb: 0.75, alignItems: 'center' }}>
+-                <TextField
+-                  size="small" placeholder="Métrica"
+-                  value={k.label}
++                <TextField size="small" placeholder="Métrica" value={k.label}
+                   onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, label: e.target.value } : x) }))}
+-                  sx={{ flex: 2, '& .MuiInputBase-root': { fontSize: 12 } }}
+-                />
+-                <TextField
+-                  size="small" placeholder="Valor"
+-                  value={k.value}
++                  sx={{ flex: 2, '& .MuiInputBase-root': { fontSize: 12 } }} />
++                <TextField size="small" placeholder="Valor" value={k.value}
+                   onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, value: e.target.value } : x) }))}
+-                  sx={{ flex: 1, '& .MuiInputBase-root': { fontSize: 12 } }}
+-                />
+-                <TextField
+-                  size="small" placeholder="Unid."
+-                  value={k.unit ?? ''}
++                  sx={{ flex: 1, '& .MuiInputBase-root': { fontSize: 12 } }} />
++                <TextField size="small" placeholder="Unid." value={k.unit ?? ''}
+                   onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, unit: e.target.value } : x) }))}
+-                  sx={{ width: 64, '& .MuiInputBase-root': { fontSize: 12 } }}
+-                />
+-                <IconButton
+-                  size="small"
+-                  onClick={() => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).filter((_, j) => j !== i) }))}
+-                  sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0 }}
+-                >
++                  sx={{ width: 64, '& .MuiInputBase-root': { fontSize: 12 } }} />
++                <IconButton size="small" onClick={() => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).filter((_, j) => j !== i) }))}
++                  sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0 }}>
+                   <DeleteRoundedIcon sx={{ fontSize: 14 }} />
+                 </IconButton>
+               </Box>
+             ))}
+           </Box>
+         )}
+-
+-        {/* Actions */}
+         <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end' }}>
+-          <Button size="small" variant="outlined" onClick={() => setEditing(false)} sx={{ fontSize: 12, textTransform: 'none' }}>
+-            Cancelar
+-          </Button>
+-          <Button size="small" variant="contained" onClick={handleSave} disabled={!draft.title.trim()} sx={{ fontSize: 12, textTransform: 'none' }}>
+-            Salvar
+-          </Button>
++          <Button size="small" variant="outlined" onClick={() => setEditing(false)} sx={{ fontSize: 12, textTransform: 'none' }}>Cancelar</Button>
++          <Button size="small" variant="contained" onClick={handleSave} disabled={!draft.title.trim()} sx={{ fontSize: 12, textTransform: 'none' }}>Salvar</Button>
+         </Box>
+       </Paper>
+     );
+   }
+ 
+-  // ── View mode ──
+   return (
+     <Paper elevation={0} sx={{ p: '12px 16px', display: 'flex', alignItems: 'flex-start', gap: 2 }}>
+       <Box sx={{ mt: '2px', flexShrink: 0 }}>
+         {feature.implemented
+           ? <CheckCircleRoundedIcon sx={{ fontSize: 16, color: '#22c55e' }} />
+-          : <RadioButtonUncheckedRoundedIcon sx={{ fontSize: 16, color: 'text.disabled' }} />
+-        }
++          : <RadioButtonUncheckedRoundedIcon sx={{ fontSize: 16, color: 'text.disabled' }} />}
+       </Box>
+-
+       <Box sx={{ flex: 1, minWidth: 0 }}>
+         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap', mb: '4px' }}>
+           <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary' }}>{feature.title}</Typography>
+           <Chip label={feature.page} size="small" sx={{ fontSize: 10, height: 16, bgcolor: 'rgba(255,255,255,0.05)', color: 'text.disabled', border: 'none' }} />
+-          {!feature.implemented && (
+-            <Chip label="Planejado" size="small" sx={{ fontSize: 10, height: 16, bgcolor: 'rgba(255,197,0,0.06)', color: 'rgba(255,197,0,0.5)', border: '1px solid rgba(255,197,0,0.15)' }} />
+-          )}
++          {!feature.implemented && <Chip label="Planejado" size="small" sx={{ fontSize: 10, height: 16, bgcolor: 'rgba(255,197,0,0.06)', color: 'rgba(255,197,0,0.5)', border: '1px solid rgba(255,197,0,0.15)' }} />}
+         </Box>
+         <Typography sx={{ fontSize: 12, color: 'text.secondary', lineHeight: 1.6 }}>{feature.description}</Typography>
+         {(feature.kpis?.length ?? 0) > 0 && (
+@@ -590,9 +153,7 @@ function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave:
+             {feature.kpis!.map((k, i) => (
+               <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: '3px' }}>
+                 <Typography sx={{ fontSize: 12, color: 'text.secondary', flex: 1 }}>{k.label}</Typography>
+-                <Typography sx={{ fontSize: 12, fontWeight: 700, color: 'primary.main', fontFamily: 'monospace' }}>
+-                  {k.value}{k.unit ? ` ${k.unit}` : ''}
+-                </Typography>
++                <Typography sx={{ fontSize: 12, fontWeight: 700, color: 'primary.main', fontFamily: 'monospace' }}>{k.value}{k.unit ? ` ${k.unit}` : ''}</Typography>
+               </Box>
+             ))}
+           </Box>
+@@ -600,16 +161,13 @@ function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave:
+         <Box sx={{ display: 'flex', gap: 0.75, mt: 1, flexWrap: 'wrap', alignItems: 'center' }}>
+           {feature.roles.map(r => {
+             const rl = ROLES.find(x => x.value === r)?.label ?? r;
+-            return (
+-              <Chip key={r} label={rl} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r]}18`, color: ROLE_COLOR[r], border: `1px solid ${ROLE_COLOR[r]}44` }} />
+-            );
++            return <Chip key={r} label={rl} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r]}18`, color: ROLE_COLOR[r], border: `1px solid ${ROLE_COLOR[r]}44` }} />;
+           })}
+           <Typography sx={{ fontSize: 10, color: 'text.disabled', ml: 'auto' }}>
+             {new Date(feature.addedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' })}
+           </Typography>
+         </Box>
+       </Box>
+-
+       <Tooltip title="Editar">
+         <IconButton size="small" onClick={handleEdit} sx={{ color: 'text.disabled', '&:hover': { color: 'text.primary' }, flexShrink: 0, mt: '2px' }}>
+           <EditRoundedIcon sx={{ fontSize: 14 }} />
+@@ -618,3 +176,185 @@ function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave:
+     </Paper>
+   );
+ }
++
++// ─── FeaturesAdminTab ─────────────────────────────────────────────────────────
++
++export function FeaturesAdminTab() {
++  const [features, setFeatures] = useState<RoleFeature[]>(() => loadFeatures());
++  const [roleFilter, setRoleFilter] = useState<Role | 'all'>('all');
++  const [pageFilter, setPageFilter] = useState<string | 'all'>('all');
++
++  const refreshFeatures = () => setFeatures(loadFeatures());
++  const handleSaveFeature = (updated: RoleFeature) => { saveFeature(updated); refreshFeatures(); };
++
++  const usedPages = new Set(features.map(f => f.page));
++  const pagePages = PAGE_CATEGORIES.filter(c => usedPages.has(c.label));
++  const filtered = features.filter(f => {
++    const matchRole = roleFilter === 'all' || f.roles.includes(roleFilter);
++    const matchPage = pageFilter === 'all' || f.page === pageFilter;
++    return matchRole && matchPage;
++  });
++  const byRole = ROLES.map(r => ({ ...r, features: features.filter(f => f.roles.includes(r.value)) })).filter(r => r.features.length > 0);
++
++  return (
++    <Box>
++      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
++        <Box>
++          <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Funcionalidades por Função</Typography>
++          <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>Lista de recursos exclusivos ou diferenciados por setor. Clique em editar para ajustar.</Typography>
++        </Box>
++        <Chip label={`${features.filter(f => f.implemented).length} / ${features.length} implementadas`} size="small"
++          sx={{ bgcolor: 'rgba(255,197,0,0.08)', color: '#ffc500', border: '1px solid rgba(255,197,0,0.2)', fontSize: 11, fontWeight: 600 }} />
++      </Box>
++
++      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
++        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++          <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Função:</Typography>
++          <Chip label="Todas" size="small" onClick={() => setRoleFilter('all')}
++            sx={{ fontSize: 11, fontWeight: 600, bgcolor: roleFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent', borderColor: roleFilter === 'all' ? 'rgba(255,255,255,0.3)' : 'divider', color: roleFilter === 'all' ? 'text.primary' : 'text.disabled', border: '1px solid' }} />
++          {ROLES.map(r => (
++            <Chip key={r.value} label={r.label} size="small" onClick={() => setRoleFilter(roleFilter === r.value ? 'all' : r.value)}
++              sx={{ fontSize: 11, fontWeight: 600, bgcolor: roleFilter === r.value ? `${ROLE_COLOR[r.value]}22` : 'transparent', borderColor: roleFilter === r.value ? ROLE_COLOR[r.value] : 'divider', color: roleFilter === r.value ? ROLE_COLOR[r.value] : 'text.disabled', border: '1px solid', '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] } }} />
++          ))}
++        </Box>
++        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++          <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Categoria:</Typography>
++          <Chip label="Todas" size="small" onClick={() => setPageFilter('all')}
++            sx={{ fontSize: 11, bgcolor: pageFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent', borderColor: pageFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider', color: pageFilter === 'all' ? 'text.secondary' : 'text.disabled', border: '1px solid' }} />
++          {pagePages.map(cat => (
++            <Chip key={cat.value} label={cat.label} size="small" onClick={() => setPageFilter(pageFilter === cat.label ? 'all' : cat.label)}
++              sx={{ fontSize: 11, fontWeight: 600, bgcolor: pageFilter === cat.label ? `${cat.color}20` : 'transparent', borderColor: pageFilter === cat.label ? cat.color : 'divider', color: pageFilter === cat.label ? cat.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: cat.color, color: cat.color } }} />
++          ))}
 +        </Box>
 +      </Box>
-+    );
-+  }
 +
-   return (
-     <Box className="page-enter" sx={{ p: 3, flex: 1 }}>
-       <Typography sx={{ fontSize: 20, fontWeight: 800, color: 'text.primary', letterSpacing: '-.3px', mb: '4px' }}>
++      {filtered.length === 0 ? (
++        <Typography sx={{ fontSize: 13, color: 'text.disabled', fontStyle: 'italic' }}>Nenhuma funcionalidade encontrada para os filtros selecionados.</Typography>
++      ) : roleFilter === 'all' ? (
++        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
++          {byRole.filter(r => pageFilter === 'all' || r.features.some(f => f.page === pageFilter)).map(r => (
++            <Box key={r.value}>
++              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
++                <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
++                <Typography sx={{ fontSize: 11, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', color: ROLE_COLOR[r.value] }}>{r.label}</Typography>
++                <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>· {r.features.filter(f => pageFilter === 'all' || f.page === pageFilter).length} item(s)</Typography>
++              </Box>
++              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
++                {r.features.filter(f => pageFilter === 'all' || f.page === pageFilter).map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={true} />)}
++              </Box>
++            </Box>
++          ))}
++        </Box>
++      ) : (
++        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
++          {filtered.map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={true} />)}
++        </Box>
++      )}
++    </Box>
++  );
++}
++
++// ─── PendenciasTab ────────────────────────────────────────────────────────────
++
++export function PendenciasTab() {
++  const [lista, setLista] = useState<ListaItem[]>(() => loadLista());
++  const [listaRoleFilter, setListaRoleFilter] = useState<Role | 'all'>('all');
++  const [listaCatFilter, setListaCatFilter] = useState<string | 'all'>('all');
++
++  const refreshLista = () => setLista(loadLista());
++
++  const listaFiltrada = lista.filter(i => {
++    const matchRole = listaRoleFilter === 'all' || i.role === listaRoleFilter;
++    const matchCat = listaCatFilter === 'all' || i.categoria === listaCatFilter;
++    return matchRole && matchCat;
++  });
++  const listaUsedCategories = PAGE_CATEGORIES.filter(c => lista.some(i => i.categoria === c.value));
++  const listaRolesUsed = ROLES.filter(r => lista.some(i => i.role === r.value));
++  const donePct = lista.length > 0 ? Math.round((lista.filter(i => i.done).length / lista.length) * 100) : 0;
++
++  return (
++    <Box>
++      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
++        <Box>
++          <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Backlog de Pendências</Typography>
++          <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>Sugestões marcadas para acompanhamento. Marque como concluídas conforme forem implementadas.</Typography>
++        </Box>
++        {lista.length > 0 && (
++          <Chip label={`${lista.filter(i => i.done).length} / ${lista.length} concluídas (${donePct}%)`} size="small"
++            sx={{ bgcolor: 'rgba(34,197,94,0.08)', color: '#22c55e', border: '1px solid rgba(34,197,94,0.2)', fontSize: 11, fontWeight: 600 }} />
++        )}
++      </Box>
++
++      {lista.length > 0 && (
++        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
++          <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++            <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Função:</Typography>
++            <Chip label={`Todas (${lista.length})`} size="small" onClick={() => setListaRoleFilter('all')}
++              sx={{ fontSize: 11, fontWeight: 600, bgcolor: listaRoleFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent', borderColor: listaRoleFilter === 'all' ? 'rgba(255,255,255,0.25)' : 'divider', color: listaRoleFilter === 'all' ? 'text.primary' : 'text.disabled', border: '1px solid' }} />
++            {listaRolesUsed.map(r => (
++              <Chip key={r.value} label={`${r.label} (${lista.filter(i => i.role === r.value).length})`} size="small"
++                onClick={() => setListaRoleFilter(listaRoleFilter === r.value ? 'all' : r.value)}
++                sx={{ fontSize: 11, fontWeight: 600, bgcolor: listaRoleFilter === r.value ? `${ROLE_COLOR[r.value]}20` : 'transparent', borderColor: listaRoleFilter === r.value ? ROLE_COLOR[r.value] : 'divider', color: listaRoleFilter === r.value ? ROLE_COLOR[r.value] : 'text.disabled', border: '1px solid', '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] } }} />
++            ))}
++          </Box>
++          {listaUsedCategories.length > 0 && (
++            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++              <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Categoria:</Typography>
++              <Chip label="Todas" size="small" onClick={() => setListaCatFilter('all')}
++                sx={{ fontSize: 11, bgcolor: listaCatFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent', borderColor: listaCatFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider', color: listaCatFilter === 'all' ? 'text.secondary' : 'text.disabled', border: '1px solid' }} />
++              {listaUsedCategories.map(c => (
++                <Chip key={c.value} label={c.label} size="small" onClick={() => setListaCatFilter(listaCatFilter === c.value ? 'all' : c.value)}
++                  sx={{ fontSize: 11, fontWeight: 600, bgcolor: listaCatFilter === c.value ? `${c.color}20` : 'transparent', borderColor: listaCatFilter === c.value ? c.color : 'divider', color: listaCatFilter === c.value ? c.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: c.color, color: c.color } }} />
++              ))}
++            </Box>
++          )}
++        </Box>
++      )}
++
++      {listaFiltrada.length === 0 ? (
++        <Box sx={{ textAlign: 'center', py: 6 }}>
++          <FormatListBulletedRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', mb: 1.5, opacity: 0.4 }} />
++          <Typography sx={{ fontSize: 13, color: 'text.disabled' }}>
++            {lista.length === 0 ? 'Nenhuma pendência ainda. Marque sugestões com o bookmark na aba Sugestões.' : 'Nenhum item para esse filtro.'}
++          </Typography>
++        </Box>
++      ) : (
++        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
++          {listaFiltrada.map(item => {
++            const rl = ROLES.find(r => r.value === item.role);
++            const catColor = item.categoria ? getCategoryColor(item.categoria) : null;
++            const catLabel = item.categoria ? getCategoryLabel(item.categoria) : null;
++            const date = new Date(item.addedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
++            return (
++              <Paper key={item.id} elevation={0} sx={{ p: '12px 16px', display: 'flex', gap: 1.5, alignItems: 'flex-start', opacity: item.done ? 0.5 : 1, transition: 'opacity .2s' }}>
++                <Checkbox checked={item.done} onChange={() => { toggleListaItem(item.id); refreshLista(); }} size="small"
++                  sx={{ p: '2px', mt: '1px', flexShrink: 0, color: 'text.disabled', '&.Mui-checked': { color: '#22c55e' } }} />
++                <Box sx={{ flex: 1, minWidth: 0 }}>
++                  {item.title && (
++                    <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary', mb: '4px', textDecoration: item.done ? 'line-through' : 'none' }}>
++                      {item.title}
++                    </Typography>
++                  )}
++                  <Typography sx={{ fontSize: 13, color: item.title ? 'text.secondary' : 'text.primary', lineHeight: 1.7, whiteSpace: 'pre-wrap', wordBreak: 'break-word', textDecoration: item.done ? 'line-through' : 'none' }}>
++                    {item.texto}
++                  </Typography>
++                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: '6px', flexWrap: 'wrap' }}>
++                    <Chip label={rl?.label ?? item.role} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[item.role]}18`, color: ROLE_COLOR[item.role], border: `1px solid ${ROLE_COLOR[item.role]}44`, fontWeight: 600 }} />
++                    {catLabel && catColor && <Chip label={catLabel} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${catColor}18`, color: catColor, border: `1px solid ${catColor}44`, fontWeight: 600 }} />}
++                    {item.userName && <Typography sx={{ fontSize: 11, fontWeight: 600, color: 'text.secondary' }}>{item.userName}</Typography>}
++                    <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>{date}</Typography>
++                  </Box>
++                </Box>
++                <Tooltip title="Remover da lista">
++                  <IconButton size="small" onClick={() => { removeFromLista(item.id); refreshLista(); }} sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0, mt: '2px' }}>
++                    <DeleteRoundedIcon sx={{ fontSize: 15 }} />
++                  </IconButton>
++                </Tooltip>
++              </Paper>
++            );
++          })}
++        </Box>
++      )}
++    </Box>
++  );
++}
 diff --git a/src/pages/Documentacao/ApontamentoHoras.tsx b/src/pages/Documentacao/ApontamentoHoras.tsx
 new file mode 100644
 index 0000000..ebee4d1
@@ -1545,839 +2417,6 @@ index 0000000..ebee4d1
 +// ─── Domain helpers ───────────────────────────────────────────────────────────
 +function cargaMin(dateObj: Date, day: DayData): number {
 +  if (TIPOS_OFF.includes(day.tipo)) return 0;
-+  if (day.tipo === 'CUSTOM' && day.cargaCustom) return Math.round(day.cargaCustom * 60);
-+  const dw = ((dateObj.getDay() + 6) % 7) + 1;
-+  if (dw > 5) return 0;
-+  return JORNADA[dw].fim - JORNADA[dw].ini - (LUNCH.fim - LUNCH.ini);
-+}
-+
-+function jornadaFim(dateObj: Date, day: DayData): number {
-+  const dw = ((dateObj.getDay() + 6) % 7) + 1;
-+  if (day.tipo === 'CUSTOM' && day.cargaCustom) {
-+    const total = Math.round(day.cargaCustom * 60);
-+    const fim = JORNADA[1].ini + total;
-+    return fim > LUNCH.ini ? fim + (LUNCH.fim - LUNCH.ini) : fim;
-+  }
-+  return dw <= 5 ? JORNADA[dw].fim : 18 * 60;
-+}
-+
-+function dayStatus(day: DayData): { cls: string; label: string } {
-+  if (!day.atividades.length) return { cls: 'vazio', label: 'Vazio' };
-+  if (day.atividades.some(a => a.ajustada)) return { cls: 'ajustado', label: 'Ajustado' };
-+  if (day.atividades.every(a => a.blocos.length)) return { cls: 'distribuido', label: 'Distribuído' };
-+  return { cls: 'rascunho', label: 'Rascunho' };
-+}
-+
-+function projColor(id: number): [string, string] { return PROJ_COLORS[id % PROJ_COLORS.length]; }
-+
-+// ─── Brazilian national holidays ──────────────────────────────────────────────
-+// Meeus/Jones/Butcher algorithm — works for Gregorian calendar (1583+)
-+function easterDate(year: number): Date {
-+  const a = year % 19, b = Math.floor(year / 100), c = year % 100;
-+  const d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25);
-+  const g = Math.floor((b - f + 1) / 3);
-+  const h = (19 * a + b - d - g + 15) % 30;
-+  const i = Math.floor(c / 4), k = c % 4;
-+  const l = (32 + 2 * e + 2 * i - h - k) % 7;
-+  const m = Math.floor((a + 11 * h + 22 * l) / 451);
-+  const month = Math.floor((h + l - 7 * m + 114) / 31);
-+  const day = ((h + l - 7 * m + 114) % 31) + 1;
-+  return new Date(year, month - 1, day);
-+}
-+
-+function brazilianHolidays(year: number): Set<string> {
-+  const s = new Set<string>();
-+  const add = (m: number, d: number) => s.add(fmtKey(new Date(year, m - 1, d)));
-+  // Fixed national holidays
-+  add(1, 1);   // Confraternização Universal
-+  add(4, 21);  // Tiradentes
-+  add(5, 1);   // Dia do Trabalho
-+  add(9, 7);   // Independência do Brasil
-+  add(10, 12); // Nossa Senhora Aparecida
-+  add(11, 2);  // Finados
-+  add(11, 15); // Proclamação da República
-+  add(11, 20); // Consciência Negra (nacional desde 2024)
-+  add(12, 25); // Natal
-+  // Mobile holidays based on Easter (Páscoa)
-+  const easter = easterDate(year);
-+  const mobile = (offset: number) => {
-+    const d = new Date(easter); d.setDate(d.getDate() + offset); s.add(fmtKey(d));
-+  };
-+  mobile(-2);  // Sexta-feira Santa (Good Friday)
-+  mobile(60);  // Corpus Christi
-+  return s;
-+}
-+
-+// ─── Distribution algorithm ───────────────────────────────────────────────────
-+function distributeActivities(
-+  acts: Atividade[], dateObj: Date, day: DayData,
-+  lunch: { ini: number; fim: number } = LUNCH,
-+): { ok: boolean; error?: string; result: Atividade[] } {
-+  if (TIPOS_OFF.includes(day.tipo)) return { ok: true, result: acts };
-+  const carga = cargaMin(dateObj, day);
-+  const slots = Math.round(carga / GRAN);
-+  if (acts.length > slots) return { ok: false, error: `Há mais atividades (${acts.length}) do que blocos de 30 min (${slots}). Consolide atividades.`, result: acts };
-+
-+  const sorted = [...acts].sort((a, b) => a.ordem - b.ordem);
-+  const somaPesos = sorted.reduce((s, a) => s + Number(a.peso || 1), 0);
-+  const raw = sorted.map(a => (Number(a.peso || 1) / somaPesos) * slots);
-+  const base = raw.map(r => Math.max(1, Math.floor(r)));
-+  let rem = slots - base.reduce((s, b) => s + b, 0);
-+
-+  if (rem > 0) {
-+    const order = raw.map((r, i) => ({ i, frac: r - Math.floor(r), peso: sorted[i].peso }))
-+      .sort((a, b) => b.frac - a.frac || b.peso - a.peso);
-+    let k = 0;
-+    while (rem > 0) { base[order[k % order.length].i]++; rem--; k++; }
-+  } else {
-+    while (rem < 0) {
-+      let idx = -1, best = -1;
-+      base.forEach((b, i) => { if (b > 1 && b > best) { best = b; idx = i; } });
-+      if (idx < 0) break;
-+      base[idx]--; rem++;
-+    }
-+  }
-+
-+  const fimJ = jornadaFim(dateObj, day);
-+  let cursor = JORNADA[1].ini;
-+
-+  const newActs = sorted.map((a, i) => {
-+    let restante = base[i] * GRAN;
-+    const blocos: Bloco[] = [];
-+    while (restante > 0 && cursor < fimJ) {
-+      if (cursor >= lunch.ini && cursor < lunch.fim) cursor = lunch.fim;
-+      const limite = cursor < lunch.ini && lunch.ini < fimJ ? Math.min(lunch.ini, fimJ) : fimJ;
-+      const segFim = Math.min(cursor + restante, limite);
-+      if (segFim > cursor) { blocos.push({ ini: cursor, fim: segFim }); restante -= segFim - cursor; cursor = segFim; }
-+      else break;
-+    }
-+    return { ...a, blocos, ajustada: false };
-+  });
-+
-+  return { ok: true, result: newActs.sort((a, b) => a.ordem - b.ordem) };
-+}
-+
-+// ─── Excel builder (shared between live export and history re-export) ─────────
-+// Only first + last name in the Colaborador column regardless of how many names the user has
-+function twoNames(name: string): string {
-+  const p = name.trim().split(/\s+/);
-+  return p.length <= 2 ? name.trim() : `${p[0]} ${p[p.length - 1]}`;
-+}
-+
-+function buildExcelRows(
-+  monday: Date,
-+  days: Record<string, DayData>,
-+  profile: ApontProfile,
-+  w: { week: number; year: number },
-+  projects: ApontProject[],
-+): (string | number)[][] {
-+  const header = ['Colaborador', 'Projeto', 'Data', 'Dia da semana', 'Semana', 'Hora de Início', 'Hora Termino', 'Horas', 'Horas Decimais', 'Fase', 'Atividade', 'Observacao', 'Fase Controladora', 'Setor', 'Recurso'];
-+  const rows: (string | number)[][] = [header];
-+  weekDates(monday).forEach((d, i) => {
-+    const day = getDay(days, fmtKey(d));
-+    if (TIPOS_OFF.includes(day.tipo)) return;
-+    [...day.atividades].sort((a, b) => a.ordem - b.ordem).forEach(a => {
-+      const p = projects.find(x => x.id === a.projetoId);
-+      [...a.blocos].sort((x, y) => x.ini - y.ini).forEach(b => {
-+        const dur = b.fim - b.ini;
-+        rows.push([
-+          twoNames(profile.nome), p?.nome ?? '?', fmtBR(d), DOW_FULL[i], w.week,
-+          hms(b.ini), hms(b.fim), hms(dur),
-+          Number((dur / 60).toFixed(2)),
-+          '', profile.atividade, a.descricao, profile.faseControladora,
-+          'Documentação', profile.recurso,
-+        ]);
-+      });
-+    });
-+  });
-+  return rows;
-+}
-+
-+async function writeExcel(rows: (string | number)[][], filename: string): Promise<void> {
-+  const wb = new ExcelJS.Workbook();
-+  const ws = wb.addWorksheet('SISTEMAS');
-+
-+  // Column widths (chars)
-+  const colWidths = [18, 26, 12, 16, 9, 13, 13, 11, 15, 9, 12, 55, 24, 14, 10];
-+  ws.columns = colWidths.map(width => ({ width }));
-+
-+  // "HH:MM:SS" string → fraction of day (Excel time serial)
-+  const toFrac = (v: string | number): number => {
-+    const p = String(v).split(':').map(Number);
-+    return (p[0] * 3600 + (p[1] || 0) * 60 + (p[2] || 0)) / 86400;
-+  };
-+
-+  // Header row — gold background, WHITE bold Calibri 11, centered
-+  const headerRow = ws.addRow(rows[0] as string[]);
-+  headerRow.height = 35.27;
-+  headerRow.eachCell(cell => {
-+    cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFFC000' } };
-+    cell.font = { name: 'Calibri', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
-+    cell.alignment = { horizontal: 'center', vertical: 'middle' };
-+  });
-+
-+  // Data rows — alternating white / light gray, centered
-+  // Columns with special handling (0-indexed):
-+  //   2  Data           → real Date value   (dd/mm/yyyy)
-+  //   4  Semana         → formula WEEKNUM   (0)
-+  //   5  Hora de Início → time fraction     (hh:mm:ss)
-+  //   6  Hora Termino   → time fraction     (hh:mm:ss)
-+  //   7  Horas          → formula G-F       ([h]:mm:ss)
-+  //   8  Horas Decimais → formula HOUR+MIN  (0.00)
-+  rows.slice(1).forEach((row, i) => {
-+    const r = i + 2; // 1-indexed Excel row (row 1 = header)
-+    const wsRow = ws.addRow([]);
-+    const bg = i % 2 === 0 ? 'FFFFFFFF' : 'FFF2F2F2';
-+
-+    const sc = (ci: number, numFmt?: string) => {
-+      const c = wsRow.getCell(ci + 1);
-+      c.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: bg } };
-+      c.font = { name: 'Calibri', size: 10, color: { argb: 'FF000000' } };
-+      c.alignment = { horizontal: 'center', vertical: 'middle' };
-+      if (numFmt) c.numFmt = numFmt;
-+      return c;
-+    };
-+
-+    row.forEach((val, ci) => {
-+      switch (ci) {
-+        case 2: { // Data — real date value so WEEKNUM formula works
-+          const [dd, mm, yy] = String(val).split('/').map(Number);
-+          sc(ci, 'dd/mm/yyyy').value = new Date(yy, mm - 1, dd);
-+          break;
-+        }
-+        case 4: // Semana — WEEKNUM formula (type 1 = week starts Sunday, as per original)
-+          sc(ci, '0').value = { formula: `IF(C${r}="","",WEEKNUM(C${r},1))`, result: Number(val) };
-+          break;
-+        case 5: // Hora de Início — real time serial
-+        case 6: // Hora Termino
-+          sc(ci, 'hh:mm:ss').value = toFrac(val);
-+          break;
-+        case 7: // Horas — formula: Hora Termino − Hora de Início
-+          sc(ci, '[h]:mm:ss').value = { formula: `G${r}-F${r}`, result: toFrac(val) };
-+          break;
-+        case 8: // Horas Decimais — formula: HOUR(Horas)+MINUTE(Horas)/60
-+          sc(ci, '0.00').value = { formula: `HOUR(H${r})+MINUTE(H${r})/60`, result: Number(val) };
-+          break;
-+        default:
-+          sc(ci).value = val === '' ? null : val;
-+      }
-+    });
-+
-+    wsRow.height = 35.27; // ExcelJS scales by 18/23 before writing; 35.27 × (18/23) ≈ 27.6 in Excel
-+  });
-+
-+  // Auto-filter dropdowns on header
-+  const lastColLetter = String.fromCharCode(64 + (rows[0].length));
-+  ws.autoFilter = `A1:${lastColLetter}1`;
-+
-+  // Download
-+  const buffer = await wb.xlsx.writeBuffer();
-+  const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-+  const url = URL.createObjectURL(blob);
-+  const a = document.createElement('a');
-+  a.href = url;
-+  a.download = filename + '.xlsx';
-+  document.body.appendChild(a);
-+  a.click();
-+  document.body.removeChild(a);
-+  URL.revokeObjectURL(url);
-+}
-+
-+// ─── Persistence ──────────────────────────────────────────────────────────────
-+const STORAGE_KEY = 'nexus_apontamento_v1';
-+const HISTORY_KEY = 'nexus_apontamento_history_v1';
-+
-+function loadApontState(): ApontState {
-+  try {
-+    const raw = localStorage.getItem(STORAGE_KEY);
-+    if (raw) {
-+      const saved = JSON.parse(raw) as ApontState;
-+      // If nome is still the default placeholder, sync from active session
-+      if (saved.profile.nome === 'Colaborador') {
-+        try {
-+          const s = JSON.parse(localStorage.getItem('nexus_session') ?? 'null') as { name?: string } | null;
-+          if (s?.name) { saved.profile.nome = s.name; saved.profile.recurso = getInitials(s.name); }
-+        } catch { /* empty */ }
-+      }
-+      return saved;
-+    }
-+  } catch { /* empty */ }
-+  return mkInitialState();
-+}
-+
-+function mkInitialState(): ApontState {
-+  let nome = 'Colaborador';
-+  try {
-+    const s = JSON.parse(localStorage.getItem('nexus_session') ?? 'null') as { name?: string } | null;
-+    if (s?.name) nome = s.name;
-+  } catch { /* empty */ }
-+  return {
-+    profile: { nome, recurso: getInitials(nome), atividade: 'Execução', faseControladora: 'Fase 09 - Documentação' },
-+    projects: [{ id: 1, nome: 'INTERNO', ativo: true }, { id: 2, nome: 'NEXUS', ativo: true }],
-+    nextProjId: 3, nextActId: 10,
-+    days: {}, exports: {},
-+  };
-+}
-+
-+function getDay(days: Record<string, DayData>, key: string): DayData {
-+  return days[key] ?? { tipo: 'NORMAL', atividades: [] };
-+}
-+
-+function weekHash(monday: Date, days: Record<string, DayData>): string {
-+  return JSON.stringify(weekDates(monday).map(d => {
-+    const day = getDay(days, fmtKey(d));
-+    return [day.tipo, day.cargaCustom ?? 0, day.atividades.map(a => [a.projetoId, a.descricao, a.peso, a.ordem, a.blocos])];
-+  }));
-+}
-+
-+function loadHistory(userName: string): ApontHistoryEntry[] {
-+  try {
-+    const raw = localStorage.getItem(HISTORY_KEY);
-+    const all: ApontHistoryEntry[] = raw ? (JSON.parse(raw) as ApontHistoryEntry[]) : [];
-+    return all.filter(e => e.userName === userName);
-+  } catch { return []; }
-+}
-+
-+function upsertHistoryEntry(entry: ApontHistoryEntry): void {
-+  try {
-+    const raw = localStorage.getItem(HISTORY_KEY);
-+    const all: ApontHistoryEntry[] = raw ? (JSON.parse(raw) as ApontHistoryEntry[]) : [];
-+    // Same week + same content = update date only (dedup)
-+    const dupIdx = all.findIndex(e => e.userName === entry.userName && e.weekKey === entry.weekKey && e.contentHash === entry.contentHash);
-+    if (dupIdx >= 0) {
-+      all[dupIdx].exportedAt = entry.exportedAt;
-+    } else {
-+      all.push(entry);
-+    }
-+    localStorage.setItem(HISTORY_KEY, JSON.stringify(all));
-+  } catch { /* empty */ }
-+}
-+
-+function deleteHistoryById(id: string): void {
-+  try {
-+    const raw = localStorage.getItem(HISTORY_KEY);
-+    const all: ApontHistoryEntry[] = raw ? (JSON.parse(raw) as ApontHistoryEntry[]) : [];
-+    localStorage.setItem(HISTORY_KEY, JSON.stringify(all.filter(e => e.id !== id)));
-+  } catch { /* empty */ }
-+}
-+
-+// ─── Profile Modal ────────────────────────────────────────────────────────────
-+function ProfileModal({ open, profile, onClose, onSave }: {
-+  open: boolean; profile: ApontProfile;
-+  onClose: () => void; onSave: (p: ApontProfile) => void;
-+}) {
-+  const [f, setF] = useState(profile);
-+  useEffect(() => { if (open) setF(profile); }, [open, profile]);
-+  return (
-+    <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-+      <DialogTitle>Perfil de apontamento</DialogTitle>
-+      <DialogContent sx={{ display: 'flex', flexDirection: 'column', gap: 2, pt: '16px !important' }}>
-+        <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-+          Estes valores preenchem as colunas fixas do Excel. Configure uma vez.
-+        </Typography>
-+        <TextField label="Colaborador" value={f.nome} onChange={e => setF(x => ({ ...x, nome: e.target.value }))} />
-+        <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
-+          <TextField label="Recurso (sigla)" value={f.recurso} onChange={e => setF(x => ({ ...x, recurso: e.target.value }))} helperText='Ex: "R.C"' />
-+          <TextField label="Atividade" value={f.atividade} onChange={e => setF(x => ({ ...x, atividade: e.target.value }))} helperText='Padrão: "Execução"' />
-+        </Box>
-+        <TextField label="Fase Controladora" value={f.faseControladora} onChange={e => setF(x => ({ ...x, faseControladora: e.target.value }))} helperText='Ex: "Fase 09 - Documentação"' />
-+        <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>Setor: <strong>Documentação</strong> · preenchido automaticamente</Typography>
-+      </DialogContent>
-+      <DialogActions>
-+        <Button onClick={onClose} color="inherit">Cancelar</Button>
-+        <Button variant="contained" onClick={() => onSave(f)}>Salvar</Button>
-+      </DialogActions>
-+    </Dialog>
-+  );
-+}
-+
-+// ─── Projects Modal ───────────────────────────────────────────────────────────
-+function ProjectsModal({ open, projects, onClose, onAdd, onToggle }: {
-+  open: boolean; projects: ApontProject[];
-+  onClose: () => void; onAdd: (nome: string) => void; onToggle: (id: number) => void;
-+}) {
-+  const [newNome, setNewNome] = useState('');
-+  const handleAdd = () => {
-+    const nome = newNome.trim();
-+    if (!nome) return;
-+    if (projects.some(p => p.nome.toLowerCase() === nome.toLowerCase())) { alert('Já existe um projeto com este nome.'); return; }
-+    onAdd(nome); setNewNome('');
-+  };
-+  return (
-+    <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-+      <DialogTitle>Projetos</DialogTitle>
-+      <DialogContent sx={{ pt: '8px !important' }}>
-+        <Typography sx={{ fontSize: 12, color: 'text.secondary', mb: 2 }}>
-+          Projetos inativos não aparecem em novos apontamentos, mas permanecem no histórico.
-+        </Typography>
-+        <Paper sx={{ maxHeight: 280, overflow: 'auto', mb: 2 }}>
-+          {projects.map(p => (
-+            <Box key={p.id} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', px: 2, py: 1.25, borderBottom: '1px solid', borderColor: 'divider', '&:last-child': { borderBottom: 'none' } }}>
-+              <Typography sx={{ fontSize: 13, fontWeight: 600, color: p.ativo ? 'text.primary' : 'text.disabled', textDecoration: p.ativo ? 'none' : 'line-through' }}>
-+                {p.nome}
-+              </Typography>
-+              <Button size="small" color="inherit" onClick={() => onToggle(p.id)} sx={{ fontSize: 11, minWidth: 0 }}>
-+                {p.ativo ? 'Inativar' : 'Reativar'}
-+              </Button>
-+            </Box>
-+          ))}
-+        </Paper>
-+        <Box sx={{ display: 'flex', gap: 1 }}>
-+          <TextField size="small" fullWidth placeholder='Ex.: I25.201 - NOVO CLIENTE' value={newNome}
-+            onChange={e => setNewNome(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleAdd(); }} />
-+          <Button variant="contained" onClick={handleAdd} sx={{ whiteSpace: 'nowrap' }}>Adicionar</Button>
-+        </Box>
-+      </DialogContent>
-+      <DialogActions><Button onClick={onClose} color="inherit">Fechar</Button></DialogActions>
-+    </Dialog>
-+  );
-+}
-+
-+// ─── DayType Modal ────────────────────────────────────────────────────────────
-+function DayTypeModal({ open, dayKey, tipo, cargaCustom, onClose, onSave }: {
-+  open: boolean; dayKey: string; tipo: DayTipo; cargaCustom?: number;
-+  onClose: () => void; onSave: (tipo: DayTipo, cargaCustom?: number) => void;
-+}) {
-+  const [selTipo, setSelTipo] = useState<DayTipo>(tipo);
-+  const [selCarga, setSelCarga] = useState(cargaCustom ?? 4);
-+  useEffect(() => { if (open) { setSelTipo(tipo); setSelCarga(cargaCustom ?? 4); } }, [open, tipo, cargaCustom]);
-+  const d = new Date(dayKey + 'T12:00:00');
-+  return (
-+    <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
-+      <DialogTitle>Tipo de dia · {DOW_FULL[(d.getDay() + 6) % 7]} {fmtShort(d)}</DialogTitle>
-+      <DialogContent sx={{ display: 'flex', flexDirection: 'column', gap: 2, pt: '16px !important' }}>
-+        <FormControl fullWidth size="small">
-+          <InputLabel>Tipo</InputLabel>
-+          <Select label="Tipo" value={selTipo} onChange={e => setSelTipo(e.target.value as DayTipo)}>
-+            <MenuItem value="NORMAL">Normal (jornada padrão)</MenuItem>
-+            <MenuItem value="FERIADO">Feriado</MenuItem>
-+            <MenuItem value="FERIAS">Férias</MenuItem>
-+            <MenuItem value="ATESTADO">Atestado</MenuItem>
-+            <MenuItem value="FOLGA">Folga</MenuItem>
-+            <MenuItem value="CUSTOM">Jornada customizada</MenuItem>
-+          </Select>
-+        </FormControl>
-+        {selTipo === 'CUSTOM' && (
-+          <TextField label="Carga líquida do dia (horas)" type="number" size="small" value={selCarga}
-+            onChange={e => setSelCarga(Number(e.target.value))} inputProps={{ min: 0.5, max: 14, step: 0.5 }}
-+            helperText="Começa às 08:00, respeita almoço se necessário" />
-+        )}
-+      </DialogContent>
-+      <DialogActions>
-+        <Button onClick={onClose} color="inherit">Cancelar</Button>
-+        <Button variant="contained" onClick={() => onSave(selTipo, selTipo === 'CUSTOM' ? selCarga : undefined)}>Salvar</Button>
-+      </DialogActions>
-+    </Dialog>
-+  );
-+}
-+
-+// ─── Adjust Modal ─────────────────────────────────────────────────────────────
-+interface AdjRow { actId: number; nome: string; desc: string; ini: number; fim: number; }
-+
-+const LUNCH_OPTIONS = [
-+  { label: '11:00', ini: 11 * 60 },
-+  { label: '11:30', ini: 11 * 60 + 30 },
-+  { label: '12:00', ini: 12 * 60 },
-+  { label: '12:30', ini: 12 * 60 + 30 },
-+  { label: '13:00', ini: 13 * 60 },
-+];
-+
-+function AdjustModal({ open, dayKey, day, projects, onClose, onSave }: {
-+  open: boolean; dayKey: string; day: DayData; projects: ApontProject[];
-+  onClose: () => void; onSave: (updated: Atividade[]) => void;
-+}) {
-+  const [rows, setRows] = useState<AdjRow[]>([]);
-+  const [lunchIni, setLunchIni] = useState(LUNCH.ini);
-+
-+  useEffect(() => {
-+    if (!open) return;
-+    setLunchIni(LUNCH.ini);
-+    const r: AdjRow[] = [];
-+    [...day.atividades].sort((a, b) => a.ordem - b.ordem).forEach(a => {
-+      const p = projects.find(x => x.id === a.projetoId);
-+      a.blocos.forEach(b => r.push({ actId: a.id, nome: p?.nome ?? '?', desc: a.descricao, ini: b.ini, fim: b.fim }));
-+    });
-+    setRows(r);
-+  }, [open, day, projects]);
-+
-+  const d = new Date(dayKey + 'T12:00:00');
-+  const carga = cargaMin(d, day);
-+  const lunchFim = lunchIni + 60;
-+  const customLunch = { ini: lunchIni, fim: lunchFim };
-+
-+  const sorted = [...rows].sort((a, b) => a.ini - b.ini);
-+  const total = rows.reduce((s, r) => s + Math.max(0, r.fim - r.ini), 0);
-+
-+  const errs = new Set<string>();
-+  sorted.forEach((r, i) => {
-+    if (r.fim <= r.ini) errs.add('Bloco com término antes do início.');
-+    if (r.ini < JORNADA[1].ini) errs.add('Bloco antes das 08:00.');
-+    if (r.ini < lunchFim && r.fim > lunchIni) errs.add(`Bloco sobrepõe o almoço (${hm(lunchIni)}–${hm(lunchFim)}).`);
-+    if (i > 0 && r.ini < sorted[i - 1].fim) errs.add('Blocos sobrepostos.');
-+  });
-+  const hasErr = errs.size > 0;
-+
-+  const setField = (origIdx: number, field: 'ini' | 'fim', val: string) => {
-+    const [h, m] = val.split(':').map(Number);
-+    const min = Math.round((h * 60 + m) / GRAN) * GRAN;
-+    setRows(prev => prev.map((r, i) => i === origIdx ? { ...r, [field]: min } : r));
-+  };
-+
-+  const handleRedistribute = () => {
-+    const { ok, error, result } = distributeActivities(day.atividades, d, day, customLunch);
-+    if (!ok) { alert(error); return; }
-+    const r: AdjRow[] = [];
-+    [...result].sort((a, b) => a.ordem - b.ordem).forEach(a => {
-+      const p = projects.find(x => x.id === a.projetoId);
-+      a.blocos.forEach(b => r.push({ actId: a.id, nome: p?.nome ?? '?', desc: a.descricao, ini: b.ini, fim: b.fim }));
-+    });
-+    setRows(r);
-+  };
-+
-+  const handleSave = () => {
-+    if (hasErr) return;
-+    if (total !== carga && !confirm(`Total alocado (${durFmt(total)}) difere da carga (${durFmt(carga)}). Pode ser hora extra. Salvar?`)) return;
-+    const updated = day.atividades.map(a => {
-+      const aRows = rows.filter(r => r.actId === a.id).sort((x, y) => x.ini - y.ini);
-+      return aRows.length ? { ...a, blocos: aRows.map(r => ({ ini: r.ini, fim: r.fim })), ajustada: true } : a;
-+    });
-+    onSave(updated);
-+  };
-+
-+  const timeInput = (val: number, onChange: (v: string) => void) => (
-+    <input type="time" step={1800} value={hm(val)} onChange={e => onChange(e.target.value)}
-+      style={{ fontFamily: 'monospace', fontSize: 12, padding: '4px 6px', background: '#1a1a1a', border: '1px solid #3a3a3a', borderRadius: 6, color: '#e0e0e0', width: '100%' }} />
-+  );
-+
-+  return (
-+    <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
-+      <DialogTitle>Ajustar horas · {DOW_FULL[(d.getDay() + 6) % 7]} {fmtShort(d)}</DialogTitle>
-+      <DialogContent sx={{ pt: '8px !important' }}>
-+        {/* Lunch time picker */}
-+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mb: 2, p: 1.25, bgcolor: 'rgba(255,255,255,0.03)', borderRadius: 1.5, border: '1px solid', borderColor: 'divider' }}>
-+          <Typography sx={{ fontSize: 12, color: 'text.secondary', flexShrink: 0 }}>Horário do almoço:</Typography>
-+          <Box sx={{ display: 'flex', gap: 0.5 }}>
-+            {LUNCH_OPTIONS.map(opt => (
-+              <Button key={opt.ini} size="small" variant={lunchIni === opt.ini ? 'contained' : 'outlined'}
-+                color={lunchIni === opt.ini ? 'primary' : 'inherit'}
-+                onClick={() => setLunchIni(opt.ini)}
-+                sx={{ fontSize: 11, py: 0.3, px: 1, minWidth: 0 }}>
-+                {opt.label}
-+              </Button>
-+            ))}
-+          </Box>
-+          <Button size="small" variant="outlined" color="primary" onClick={handleRedistribute}
-+            sx={{ fontSize: 11, py: 0.3, ml: 'auto', whiteSpace: 'nowrap' }}>
-+            Redistribuir
-+          </Button>
-+        </Box>
-+
-+        <Typography sx={{ fontSize: 12, color: 'text.secondary', mb: 1.5 }}>
-+          Passos de 30 min. Almoço ({hm(lunchIni)}–{hm(lunchFim)}) bloqueado.
-+        </Typography>
-+
-+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-+          {sorted.map((r, i) => {
-+            const origIdx = rows.indexOf(r);
-+            const showLunch = r.ini >= lunchFim && (i === 0 || sorted[i - 1].ini < lunchFim);
-+            const hasRowErr = r.fim <= r.ini || r.ini < JORNADA[1].ini || (r.ini < lunchFim && r.fim > lunchIni) || (i > 0 && r.ini < sorted[i - 1].fim);
-+            return (
-+              <Box key={origIdx}>
-+                {showLunch && (
-+                  <Box sx={{ textAlign: 'center', fontSize: 11, color: 'text.disabled', py: 0.5, mb: 0.75, bgcolor: 'rgba(255,255,255,0.03)', borderRadius: 1 }}>
-+                    Almoço · {hm(lunchIni)} – {hm(lunchFim)}
-+                  </Box>
-+                )}
-+                <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 88px auto 88px 52px', gap: 1, alignItems: 'center', p: 1, border: '1px solid', borderColor: hasRowErr ? 'error.main' : 'divider', borderRadius: 1.5, bgcolor: hasRowErr ? 'rgba(220,38,38,0.06)' : 'transparent' }}>
-+                  <Box sx={{ overflow: 'hidden' }}>
-+                    <Typography sx={{ fontSize: 11, fontWeight: 700, color: 'text.primary', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{r.nome}</Typography>
-+                    <Typography sx={{ fontSize: 10, color: 'text.disabled', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{r.desc}</Typography>
-+                  </Box>
-+                  {timeInput(r.ini, v => setField(origIdx, 'ini', v))}
-+                  <Typography sx={{ fontSize: 11, color: 'text.disabled', textAlign: 'center' }}>→</Typography>
-+                  {timeInput(r.fim, v => setField(origIdx, 'fim', v))}
-+                  <Typography sx={{ fontSize: 11, color: 'text.secondary', textAlign: 'right', fontFamily: 'monospace' }}>
-+                    {durFmt(Math.max(0, r.fim - r.ini))}
-+                  </Typography>
-+                </Box>
-+              </Box>
-+            );
-+          })}
-+        </Box>
-+        <Box sx={{ mt: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-+          <Typography sx={{ fontSize: 12, color: total !== carga ? 'warning.main' : 'text.secondary' }}>Total alocado</Typography>
-+          <Typography sx={{ fontSize: 13, fontFamily: 'monospace', color: total !== carga ? 'warning.main' : 'success.main', fontWeight: 700 }}>
-+            {durFmt(total)} / {durFmt(carga)} {total !== carga ? '⚠' : '✓'}
-+          </Typography>
-+        </Box>
-+        {[...errs].map((e, i) => <Alert key={i} severity="error" sx={{ mt: 1, fontSize: 11 }}>{e}</Alert>)}
-+      </DialogContent>
-+      <DialogActions>
-+        <Button onClick={onClose} color="inherit">Cancelar</Button>
-+        <Button variant="contained" disabled={hasErr} onClick={handleSave}>Salvar ajustes</Button>
-+      </DialogActions>
-+    </Dialog>
-+  );
-+}
-+
-+// ─── History Modal ────────────────────────────────────────────────────────────
-+function HistoryModal({ open, userName, onClose }: {
-+  open: boolean; userName: string; onClose: () => void;
-+}) {
-+  const [entries, setEntries] = useState<ApontHistoryEntry[]>([]);
-+
-+  useEffect(() => {
-+    if (open) {
-+      setEntries(
-+        loadHistory(userName).sort((a, b) => b.exportedAt.localeCompare(a.exportedAt))
-+      );
-+    }
-+  }, [open, userName]);
-+
-+  const handleDelete = (id: string) => {
-+    if (!confirm('Excluir esta entrada do histórico?')) return;
-+    deleteHistoryById(id);
-+    setEntries(prev => prev.filter(e => e.id !== id));
-+  };
-+
-+  const handleDownloadExcel = async (entry: ApontHistoryEntry) => {
-+    const monday = new Date(entry.mondayISO + 'T12:00:00');
-+    const w = { week: entry.weekNum, year: entry.weekYear };
-+    const rows = buildExcelRows(monday, entry.daysSnapshot, entry.profile, w, entry.projectsSnapshot);
-+    if (rows.length <= 1) { alert('Esta entrada não tem blocos distribuídos.'); return; }
-+    const fname = `Apontamento de Horas - Semana ${entry.weekNum} - ${entry.profile.nome} - ${entry.weekYear}`;
-+    await writeExcel(rows, fname);
-+  };
-+
-+  const handleDownloadJSON = (entry: ApontHistoryEntry) => {
-+    const data = { weekKey: entry.weekKey, exportedAt: entry.exportedAt, profile: entry.profile, days: entry.daysSnapshot };
-+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-+    const a = document.createElement('a');
-+    a.href = URL.createObjectURL(blob);
-+    a.download = `Apontamento_S${entry.weekNum}_${entry.weekYear}_${entry.profile.nome.replace(/\s+/g, '')}.json`;
-+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-+    URL.revokeObjectURL(a.href);
-+  };
-+
-+  const btnSx = { p: 0.75, '&:hover': { bgcolor: 'rgba(255,255,255,0.06)' } };
-+
-+  return (
-+    <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
-+      <DialogTitle sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-+        <HistoryRoundedIcon sx={{ fontSize: 20, color: 'primary.main' }} />
-+        Histórico de Exportações
-+        <Box component="span" sx={{ ml: 'auto', fontSize: 11, fontWeight: 700, bgcolor: 'primary.main', color: '#1a1a1a', px: 1, py: 0.25, borderRadius: 1 }}>
-+          {entries.length}
-+        </Box>
-+      </DialogTitle>
-+      <DialogContent sx={{ p: 0 }}>
-+        {entries.length === 0 ? (
-+          <Typography sx={{ color: 'text.disabled', fontSize: 13, textAlign: 'center', py: 5 }}>
-+            Nenhuma exportação registrada ainda.<br />
-+            <span style={{ fontSize: 11 }}>As exportações aparecem aqui automaticamente ao clicar em "Exportar Excel".</span>
-+          </Typography>
-+        ) : (
-+          <Box>
-+            {entries.map((entry, i) => (
-+              <Box key={entry.id} sx={{
-+                display: 'flex', alignItems: 'center', gap: 1,
-+                px: 2.5, py: 1.5,
-+                borderBottom: i < entries.length - 1 ? '1px solid' : 'none',
-+                borderColor: 'divider',
-+                '&:hover': { bgcolor: 'rgba(255,255,255,0.02)' },
-+              }}>
-+                <Box sx={{ width: 32, height: 32, borderRadius: 1, bgcolor: 'rgba(255,197,0,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-+                  <TableChartRoundedIcon sx={{ fontSize: 17, color: 'primary.main' }} />
-+                </Box>
-+                <Box sx={{ flex: 1, overflow: 'hidden', ml: 0.5 }}>
-+                  <Typography sx={{ fontSize: 13, fontWeight: 600, color: 'text.primary', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-+                    {entry.weekLabel}
-+                  </Typography>
-+                  <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>
-+                    {new Date(entry.exportedAt).toLocaleString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
-+                    {' · '}{entry.profile.nome}
-+                  </Typography>
-+                </Box>
-+                <Tooltip title="Baixar Excel (.xlsx)">
-+                  <IconButton size="small" onClick={() => handleDownloadExcel(entry)} sx={btnSx}>
-+                    <FileDownloadRoundedIcon sx={{ fontSize: 17, color: 'success.main' }} />
-+                  </IconButton>
-+                </Tooltip>
-+                <Tooltip title="Baixar dados em JSON">
-+                  <IconButton size="small" onClick={() => handleDownloadJSON(entry)} sx={btnSx}>
-+                    <CodeRoundedIcon sx={{ fontSize: 16, color: 'text.secondary' }} />
-+                  </IconButton>
-+                </Tooltip>
-+                <Tooltip title="Excluir do histórico">
-+                  <IconButton size="small" onClick={() => handleDelete(entry.id)} sx={{ ...btnSx, '&:hover': { bgcolor: 'rgba(220,38,38,0.1)' } }}>
-+                    <DeleteRoundedIcon sx={{ fontSize: 16, color: 'error.main' }} />
-+                  </IconButton>
-+                </Tooltip>
-+              </Box>
-+            ))}
-+          </Box>
-+        )}
-+      </DialogContent>
-+      <DialogActions sx={{ px: 2.5 }}>
-+        <Typography sx={{ flex: 1, fontSize: 11, color: 'text.disabled' }}>
-+          Exportações com o mesmo conteúdo atualizam a data em vez de criar duplicatas.
-+        </Typography>
-+        <Button onClick={onClose} color="inherit">Fechar</Button>
-+      </DialogActions>
-+    </Dialog>
-+  );
-+}
-+
-+// ─── Activity Form ────────────────────────────────────────────────────────────
-+function ActivityForm({ projects, initial, onSave, onCancel }: {
-+  projects: ApontProject[]; initial?: Atividade;
-+  onSave: (projetoId: number, descricao: string, peso: number) => void;
-+  onCancel: () => void;
-+}) {
-+  const activeProjs = projects.filter(p => p.ativo || p.id === initial?.projetoId);
-+  const [projetoId, setProjetoId] = useState(initial?.projetoId ?? activeProjs[0]?.id ?? 0);
-+  const [descricao, setDescricao] = useState(initial?.descricao ?? '');
-+  const [peso, setPeso] = useState(initial?.peso ?? 1);
-+
-+  const handleSave = () => {
-+    if (!projetoId) { alert('Selecione um projeto.'); return; }
-+    if (!descricao.trim()) { alert('A descrição é obrigatória — vira a coluna Observação do Excel.'); return; }
-+    if (!(peso > 0)) { alert('O peso deve ser maior que zero.'); return; }
-+    onSave(projetoId, descricao.trim(), peso);
-+  };
-+
-+  const infoTip = (title: string) => (
-+    <Tooltip title={title} placement="top">
-+      <InfoOutlinedIcon sx={{ fontSize: 12, color: 'text.disabled', cursor: 'help', flexShrink: 0 }} />
-+    </Tooltip>
-+  );
-+  const fsm = { '& .MuiInputLabel-root': { fontSize: 11 }, '& .MuiInputBase-input': { fontSize: 12 } };
-+
-+  return (
-+    <Paper sx={{ p: 1.25, border: '1px solid', borderColor: 'primary.main', bgcolor: 'rgba(255,197,0,0.03)', display: 'flex', flexDirection: 'column', gap: 1.25 }}>
-+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-+        <FormControl fullWidth size="small" sx={fsm}>
-+          <InputLabel sx={{ fontSize: 11 }}>Projeto</InputLabel>
-+          <Select label="Projeto" value={projetoId} onChange={e => setProjetoId(Number(e.target.value))}
-+            sx={{ fontSize: 12 }}>
-+            {activeProjs.map(p => <MenuItem key={p.id} value={p.id} sx={{ fontSize: 12 }}>{p.nome}{p.ativo ? '' : ' (inativo)'}</MenuItem>)}
-+          </Select>
-+        </FormControl>
-+        {infoTip('Projeto que receberá o apontamento no Excel.')}
-+      </Box>
-+      <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 0.5 }}>
-+        <TextField label="Descrição" size="small" fullWidth multiline rows={1}
-+          value={descricao} onChange={e => setDescricao(e.target.value)} autoFocus
-+          onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSave(); } }}
-+          sx={fsm} />
-+        <Box sx={{ mt: 1 }}>{infoTip('Vira a coluna Observação no Excel. Descreva a atividade realizada.')}</Box>
-+      </Box>
-+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-+        <TextField label="Peso" type="number" size="small" value={peso}
-+          onChange={e => setPeso(Number(e.target.value))} inputProps={{ min: 0.5, step: 0.5 }}
-+          sx={{ width: 68, ...fsm }} />
-+        {infoTip('Peso relativo de tempo. Peso 2 recebe o dobro de blocos que peso 1.')}
-+      </Box>
-+      <Box sx={{ display: 'flex', gap: 0.5, justifyContent: 'flex-end' }}>
-+        <Button size="small" color="inherit" onClick={onCancel} sx={{ fontSize: 11, py: 0.3 }}>Cancelar</Button>
-+        <Button size="small" variant="contained" onClick={handleSave} sx={{ fontSize: 11, py: 0.3 }}>{initial ? 'Salvar' : 'Adicionar'}</Button>
-+      </Box>
-+    </Paper>
-+  );
-+}
-+
-+// ─── Main Component ───────────────────────────────────────────────────────────
-+export function ApontamentoHoras() {
-+  const [state, setState] = useState<ApontState>(() => loadApontState());
-+  const [monday, setMonday] = useState<Date>(() => mondayOf(new Date()));
-+  const [editing, setEditing] = useState<{ dayKey: string; actId: number | null } | null>(null);
-+  const [snack, setSnack] = useState<string | null>(null);
-+  const [profileOpen, setProfileOpen] = useState(false);
-+  const [projectsOpen, setProjectsOpen] = useState(false);
-+  const [historyOpen, setHistoryOpen] = useState(false);
-+  const [dayTypeKey, setDayTypeKey] = useState<string | null>(null);
-+  const [adjustKey, setAdjustKey] = useState<string | null>(null);
-+
-+  useEffect(() => { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }, [state]);
-+
-+  // Auto-mark Brazilian national holidays on first visit to a week
-+  // Only triggers when the day key doesn't yet exist in state (never touched by user)
-+  useEffect(() => {
-+    const wd = weekDates(monday);
-+    const years = new Set(wd.map(d => d.getFullYear()));
-+    const holidays = new Set<string>();
-+    years.forEach(y => brazilianHolidays(y).forEach(k => holidays.add(k)));
-+    setState(prev => {
-+      let changed = false;
-+      const newDays = { ...prev.days };
-+      wd.forEach(d => {
-+        const key = fmtKey(d);
-+        if (holidays.has(key) && !prev.days[key]) {
-+          newDays[key] = { tipo: 'FERIADO', atividades: [] };
-+          changed = true;
-+        }
-+      });
-+      return changed ? { ...prev, days: newDays } : prev;
-+    });
-+  }, [monday]); // eslint-disable-line react-hooks/exhaustive-deps
-+
-+  const toast = (msg: string) => setSnack(msg);
-+  const dates = weekDates(monday);
-+  const todayKey = fmtKey(new Date());
-+  const w = isoWeek(monday);
-+  const isDirty = (() => { const exp = state.exports[wkKey(monday)]; return exp ? exp !== weekHash(monday, state.days) : false; })();
-+
-+  const projById = (id: number) => state.projects.find(p => p.id === id);
-+
-+  const updateDay = (key: string, updater: (d: DayData) => DayData) => {
-+    setState(prev => ({ ...prev, days: { ...prev.days, [key]: updater(getDay(prev.days, key)) } }));
-+  };
-+
-+  // ── Navigation
-+  const shiftWeek = (n: number) => { setEditing(null); setMonday(d => addDays(d, n * 7)); };
-+  const goToday = () => { setEditing(null); setMonday(mondayOf(new Date())); };
-+
-+  // ── Distribution
-+  const distributeDaySafe = (key: string, dateObj: Date) => {
-+    const day = getDay(state.days, key);
-+    if (day.atividades.some(a => a.ajustada) && !confirm('Este dia tem ajustes manuais. Redistribuir descarta os ajustes. Continuar?')) return;
-+    const { ok, error, result } = distributeActivities(day.atividades, dateObj, day);
-+    if (!ok) { alert(error); return; }
-+    updateDay(key, () => ({ ...day, atividades: result }));
-+    toast('Dia distribuído.');
-+  };
-+
-+  const distributeWeek = () => {
-+    const hasManual = dates.some(d => getDay(state.days, fmtKey(d)).atividades.some(a => a.ajustada));
-+    if (hasManual && !confirm('Há dias com ajustes manuais. Redistribuir descarta os ajustes. Continuar?')) return;
-+    const newDays = { ...state.days };
-+    let ok = true;
-+    dates.forEach(d => {
-+      const key = fmtKey(d);
-+      const day = getDay(newDays, key);
-+      if (TIPOS_OFF.includes(day.tipo) || !day.atividades.length) return;
-+      const { ok: dayOk, error, result } = distributeActivities(day.atividades, d, day);
-+      if (!dayOk) { alert(error); ok = false; return; }
-+      newDays[key] = { ...day, atividades: result };
-+    });
-+    setState(prev => ({ ...prev, days: newDays }));
-+    if (ok) toast('Semana distribuída.');
-+  };
-+
-+  // ── Copy prev week
-+  const copyPrevWeek = () => {
-+    const prev = addDays(monday, -7);
-+    let copied = 0;
-+    let nextId = state.nextActId;
-+    const newDays = { ...state.days };
-+    for (let i = 0; i < 5; i++) {
-+      const srcKey = fmtKey(addDays(prev, i));
-+      const dstKey = fmtKey(addDays(monday, i));
-+      const src = newDays[srcKey];
-+      const dst = getDay(newDays, dstKey);
-+      if (!src?.atividades.length || dst.atividades.length) continue;
-+      newDays[dstKey] = { ...dst, atividades: src.atividades.map(a => ({ ...a, id: nextId++, blocos: [], ajustada: false })) };
-+      copied += src.atividades.length;
 ```
 
 _Diff limitado a 2000 linhas. Para ver tudo: `git diff snapshot/2026-06-16 upstream/main`_
