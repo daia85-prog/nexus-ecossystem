@@ -1,6 +1,6 @@
 # Mudancas desde snapshot de 16/06/2026
 
-> Ultimo sync: 29/06/2026 18:01
+> Ultimo sync: 04/07/2026 13:27
 > Fork: [daia85-prog/nexus-ecossystem](https://github.com/daia85-prog/nexus-ecossystem)
 > Original: [RaphaelCerri/nexus-ecossystem](https://github.com/RaphaelCerri/nexus-ecossystem)
 
@@ -9,6 +9,7 @@
 ## Commits do Raphael desde o snapshot
 
 ```
+1abdcf1 muitas alterações
 2927ebf arrumação geral das infos
 ed0d885 ED agora faz integrações e teve a ordenação corrigida
 378c246 ED 3.0 Cards novos e estrutura nova
@@ -40,13 +41,13 @@ b8c1bf4 alterações no ED
  .obsidian/plugins/obsidian-local-rest-api/main.js  | 87229 +++++++++++++++++++
  .../plugins/obsidian-local-rest-api/manifest.json  |    10 +
  .../plugins/obsidian-local-rest-api/styles.css     |    55 +
- .obsidian/workspace.json                           |    88 +-
+ .obsidian/workspace.json                           |    91 +-
  BACKLOG.md                                         |    65 +-
  NEXUS_FEATURES.md                                  |    19 +-
  NEXUS_PLANO.md                                     |     4 +-
  README.md                                          |   134 +-
  ROADMAP_MINERACAO.md                               |   122 +
- Radar_Claude.md                                    |    12 +
+ Radar_Claude.md                                    |     8 +
  _VALIDACAO_HEADINGS.txt                            |  2432 +
  corpus-conhecimento/.obsidian/app.json             |     1 +
  corpus-conhecimento/.obsidian/appearance.json      |     1 +
@@ -348,49 +349,6 @@ b8c1bf4 alterações no ED
  minerador/smoke_test.py                            |    18 +
  minerador/topicos.json                             |    34 +
  nexus.md                                           |     0
- .../blocos/conferencia/conferencia/DOSSIE.md       |     0
- .../conferencia/insights/conferencia.INSIGHTS.md   |     0
- .../blocos/conferencia/pesagem/DOSSIE.md           |     0
- .../pesagem/insights/pesagem.INSIGHTS.md           |     0
- .../blocos/conferencia/pesagem/pesagem.md          |     0
- .../blocos/entrada/cubagem/DOSSIE.md               |     0
- .../blocos/entrada/matriz-fragilidade/DOSSIE.md    |     0
- .../insights/matriz-fragilidade.INSIGHTS.md        |     0
- .../matriz-fragilidade/matriz-fragilidade.md       |     0
- .../blocos/estoque/gestao-estoque/DOSSIE.md        |     0
- .../estoque/gestao-estoque/gestao-estoque.md       |     0
- .../insights/gestao-estoque.INSIGHTS.md            |     0
- .../blocos/estoque/inventario/DOSSIE.md            |     0
- .../blocos/estoque/reabastecimento/DOSSIE.md       |     0
- .../blocos/expedicao/aloca-pallet/DOSSIE.md        |     0
- .../blocos/expedicao/aloca-pallet/aloca-pallet.md  |     0
- .../aloca-pallet/insights/aloca-pallet.INSIGHTS.md |     0
- .../blocos/expedicao/paletizacao-ptl/DOSSIE.md     |     0
- .../insights/paletizacao-ptl.INSIGHTS.md           |     0
- .../expedicao/paletizacao-ptl/paletizacao-ptl.md   |     0
- .../blocos/expedicao/paletizacao/DOSSIE.md         |     0
- .../blocos/expedicao/ptl-alocacao/DOSSIE.md        |     0
- .../blocos/expedicao/recirculacao/DOSSIE.md        |     0
- .../recirculacao/insights/recirculacao.INSIGHTS.md |     0
- .../blocos/expedicao/recirculacao/recirculacao.md  |     0
- .../blocos/expedicao/romaneio/DOSSIE.md            |     0
- .../romaneio/insights/romaneio.INSIGHTS.md         |     0
- .../blocos/expedicao/romaneio/romaneio.md          |     0
- .../blocos/expedicao/sorter-inducao/DOSSIE.md      |     0
- .../blocos/expedicao/sorter-rampas/DOSSIE.md       |     0
- .../insights/sorter-rampas.INSIGHTS.md             |     0
- .../expedicao/sorter-rampas/sorter-rampas.md       |     0
- .../blocos/expedicao/sorter-rejeito/DOSSIE.md      |     0
- .../blocos/expedicao/sorter/DOSSIE.md              |     0
- .../blocos/expedicao/sorter/sorter.md              |     0
- .../blocos/sistema/cadastros-acessos/DOSSIE.md     |     0
- .../blocos/sistema/infraestrutura/DOSSIE.md        |     0
- .../sistema/infraestrutura/infraestrutura.md       |     0
- .../insights/infraestrutura.INSIGHTS.md            |     0
- .../cards/CARD_dashboards-relatorios.md            |     0
- nexus/corpus-conhecimento/cards/CARD_integracao.md |     0
- .../corpus-conhecimento/cards/CARD_picking-cart.md |     0
- .../cards/CARD_picking-pallet.md                   |     0
  package-lock.json                                  |   926 +-
  package.json                                       |     4 +-
  public/ES_PLACEHOLDER_v7.docx                      |   Bin 6904976 -> 6922109 bytes
@@ -400,7 +358,7 @@ b8c1bf4 alterações no ED
  src/lib/featureRegistry.ts                         |     9 +
  src/lib/kickoffMeta.ts                             |     4 +-
  src/lib/pageCategories.ts                          |     1 -
- src/pages/Admin/index.tsx                          |   528 +
+ src/pages/Admin/index.tsx                          |  1223 +
  src/pages/ComingSoon.tsx                           |     4 +-
  src/pages/ConfigPage.tsx                           |   702 +-
  src/pages/Documentacao/ApontamentoHoras.tsx        |  1376 +
@@ -408,8 +366,8 @@ b8c1bf4 alterações no ED
  src/pages/Documentacao/index.tsx                   |    16 +-
  src/pages/KickoffPage.tsx                          |    27 +-
  src/pages/LoginPage.tsx                            |    14 +-
- vite.config.ts                                     |     5 +
- 380 files changed, 148863 insertions(+), 684 deletions(-)
+ vite.config.ts                                     |     7 +
+ 337 files changed, 149558 insertions(+), 685 deletions(-)
 ```
 
 ---
@@ -841,16 +799,17 @@ index 622d592..dfb9a50 100644
    { value: 'login',        label: 'Login / Acesso',  color: '#14b8a6' },
 diff --git a/src/pages/Admin/index.tsx b/src/pages/Admin/index.tsx
 new file mode 100644
-index 0000000..a56c078
+index 0000000..b805a06
 --- /dev/null
 +++ b/src/pages/Admin/index.tsx
-@@ -0,0 +1,528 @@
+@@ -0,0 +1,1223 @@
 +import { useState, useEffect, useCallback } from 'react';
 +import Box from '@mui/material/Box';
 +import Button from '@mui/material/Button';
 +import Chip from '@mui/material/Chip';
 +import IconButton from '@mui/material/IconButton';
 +import MenuItem from '@mui/material/MenuItem';
++import Checkbox from '@mui/material/Checkbox';
 +import Paper from '@mui/material/Paper';
 +import Select from '@mui/material/Select';
 +import Tab from '@mui/material/Tab';
@@ -869,7 +828,7 @@ index 0000000..a56c078
 +
 +import { ROLES } from '../../components/Sidebar';
 +import type { Role } from '../../components/Sidebar';
-+import { FeaturesAdminTab, PendenciasTab, ROLE_COLOR } from '../ConfigPage';
++import { FeaturesAdminTab, ROLE_COLOR } from '../ConfigPage';
 +
 +// ─── Types ───────────────────────────────────────────────────────────────────
 +
@@ -1170,6 +1129,684 @@ index 0000000..a56c078
 +  );
 +}
 +
++// ─── Corpus Knowledge Map ────────────────────────────────────────────────────
++
++interface TopicCard {
++  n: number;
++  slug: string;
++  desc: string;
++  approx?: boolean;
++  badge?: 'NOVO' | 'SPLIT';
++  wide?: boolean;
++  ghost?: boolean;
++}
++
++interface BlockSub {
++  label: string;
++  topics: TopicCard[];
++}
++
++interface CorpusBlock {
++  seq: string;
++  label: string;
++  total: string;
++  sys?: boolean;
++  topics?: TopicCard[];
++  sub?: BlockSub[];
++}
++
++const CORPUS_UPDATED = '23 Jun 2026';
++const CORPUS_TOTAL   = 6626;
++const CORPUS_ROUTED  = 5200;
++
++const CORPUS_BLOCKS: CorpusBlock[] = [
++  {
++    seq: '01', label: 'Entrada', total: '~910',
++    topics: [
++      { n: 348, slug: 'order-start',           desc: 'ondas, priorização, cancelamentos, cargas do dia' },
++      { n: 160, slug: 'cubagem',                desc: 'dimensionamento, peso, matrizes de fragilidade' },
++      { n: 402, slug: 'recebimento-armazenagem',desc: 'portais, crossdocking, transelevadores (ASRS), putaway' },
++    ],
++  },
++  {
++    seq: '02', label: 'Separação', total: '~418',
++    sub: [
++      {
++        label: 'Por tipo de mercadoria',
++        topics: [
++          { n: 120, slug: 'picking-cart',      desc: 'picking fracionado via cart+tablet — processo padrão', approx: true },
++          { n: 87,  slug: 'picking-pbl',       desc: 'picking via flowrack + LEDs (Pick by Light)', badge: 'NOVO' },
++          { n: 50,  slug: 'picking-fullcase',  desc: 'caixas fechadas, picking tunnel, fullcase perigoso', approx: true, badge: 'SPLIT' },
++          { n: 20,  slug: 'picking-pallet',    desc: 'pallets inteiros, pallet direto, exceção pallet', approx: true, badge: 'SPLIT' },
++        ],
++      },
++      {
++        label: 'Pós-picking e exceções',
++        topics: [
++          { n: 72, slug: 'put-to-wall',  desc: 'mural de consolidação, posições por pedido', badge: 'NOVO' },
++          { n: 69, slug: 'shortpicking', desc: 'ruptura de estoque, corte, divergência' },
++        ],
++      },
++    ],
++  },
++  {
++    seq: '03', label: 'Conferência', total: '~200',
++    topics: [
++      { n: 105, slug: 'conferencia',        desc: 'scanner automático, auditoria, checkout, peso dinâmico', approx: true },
++      { n: 20,  slug: 'conferencia-manual', desc: 'clientes especiais, Kit SKU, laudo manual, sem scanner', approx: true, badge: 'SPLIT' },
++      { n: 83,  slug: 'packing',            desc: 'embalagem, fechamento de caixa, plástico bolha' },
++    ],
++  },
++  {
++    seq: '04', label: 'Expedição', total: '~1.249',
++    topics: [
++      { n: 790, slug: 'sorter',       desc: 'classificador automático, PLC, câmeras, balança de linha' },
++      { n: 172, slug: 'ptl-alocacao', desc: 'put-to-light, alocação por luz, put-to-pallet' },
++      { n: 70,  slug: 'ptm',          desc: 'put-to-monitor, supervisório, alocação por tela', badge: 'NOVO' },
++      { n: 217, slug: 'etiquetas',    desc: 'SSCC, impressão, etiqueta de pallet e produto' },
++    ],
++  },
++  {
++    seq: '05', label: 'Estoque', total: '~184',
++    topics: [
++      { n: 124, slug: 'reabastecimento', desc: 'abastecimento de posições, replenishment, gatilhos' },
++      { n: 60,  slug: 'inventario',      desc: 'contagem rotativa, rastreabilidade, FEFO, auditoria' },
++    ],
++  },
++  {
++    seq: '06', label: 'Integração', total: '~1.238', sys: true,
++    topics: [
++      { n: 1238, slug: 'integracao', wide: true, desc: 'WMS ↔ WCS · SAP WM (WMTORD / TOCO / CATO) · APIs REST · JSON, XML, YAML · tabelas compartilhadas · mensageria EWM / ERP' },
++    ],
++  },
++  {
++    seq: '07', label: 'Sistema', total: '~968', sys: true,
++    topics: [
++      { n: 470, slug: 'cadastros-acessos',     desc: 'login, SSO, usuários, grupos, níveis de acesso, token, master data' },
++      { n: 498, slug: 'dashboards-relatorios', desc: 'KPIs, produtividade, relatórios, telas de monitoramento' },
++    ],
++  },
++];
++
++const CORPUS_INBOX: TopicCard[] = [
++  { n: 7,   slug: 'infra-WCS',  desc: 'hardware físico WCS (AMR, sinaleiros, etc.) — revisar se algum tem conteúdo de processo', ghost: true },
++  { n: 168, slug: 'sem-match',  desc: 'conteúdo sem similaridade semântica confiável — revisão manual pendente' },
++];
++
++const CORPUS_CSS = `
++@keyframes corpus-convey {
++  0%   { top: -8px; opacity: 0; }
++  4%   { opacity: 1; }
++  88%  { opacity: 0.7; }
++  100% { top: calc(100% + 8px); opacity: 0; }
++}
++.corpus-dot { animation: corpus-convey 3.6s linear infinite; }
++.corpus-dot:nth-child(2) { animation-delay: -1.2s; }
++.corpus-dot:nth-child(3) { animation-delay: -2.4s; }
++`;
++
++function CorpusTopicCard({ t }: { t: TopicCard }) {
++  const badgeColor  = t.badge === 'NOVO' ? '#F59D00' : '#22C55E';
++  const badgeBg     = t.badge === 'NOVO' ? 'rgba(245,157,0,0.1)' : 'rgba(34,197,94,0.1)';
++  const badgeBorder = t.badge === 'NOVO' ? 'rgba(245,157,0,0.25)' : 'rgba(34,197,94,0.25)';
++  const cardBorder  = t.badge === 'SPLIT' ? 'rgba(34,197,94,0.25)' :
++                      t.badge === 'NOVO'  ? 'rgba(245,157,0,0.28)' : '#1F3550';
++  const cardBg      = t.badge === 'SPLIT' ? 'linear-gradient(135deg,#152233 0%,rgba(34,197,94,0.04) 100%)' :
++                      t.badge === 'NOVO'  ? 'linear-gradient(135deg,#152233 0%,rgba(245,157,0,0.04) 100%)' :
++                      '#152233';
++  const countColor  = t.ghost ? '#2E4A68' : t.approx ? '#A36A00' : '#E2EBF5';
++  const slugColor   = t.ghost ? '#3A5A70' : '#4A9EFF';
++
++  return (
++    <div style={{
++      background: cardBg, border: `1px solid ${cardBorder}`, borderRadius: 5,
++      padding: '13px 15px', flex: t.wide ? '1 1 280px' : '1 1 130px',
++      maxWidth: t.wide ? 460 : 210, minWidth: 115, position: 'relative',
++    }}>
++      {t.badge && (
++        <span style={{
++          position: 'absolute', top: 7, right: 7,
++          fontSize: 7.5, fontWeight: 800, letterSpacing: '0.18em',
++          color: badgeColor, background: badgeBg, border: `1px solid ${badgeBorder}`,
++          borderRadius: 2, padding: '1px 5px',
++        }}>{t.badge}</span>
++      )}
++      <div style={{
++        fontFamily: "ui-monospace,'Cascadia Code','JetBrains Mono',monospace",
++        fontSize: 28, fontWeight: 700, letterSpacing: '-0.04em',
++        lineHeight: 1, color: countColor, marginBottom: 5,
++      }}>
++        {t.approx ? '~' : ''}{t.n.toLocaleString('pt-BR')}
++      </div>
++      <div style={{
++        fontFamily: 'ui-monospace,monospace', fontSize: 10.5, fontWeight: 700,
++        color: slugColor, marginBottom: 5, letterSpacing: '0.03em',
++      }}>{t.slug}</div>
++      <div style={{ fontSize: 11, color: '#5A7A95', lineHeight: 1.45 }}>{t.desc}</div>
++    </div>
++  );
++}
++
++function CorpusKnowledgeTab() {
++  const coverage = Math.round((CORPUS_ROUTED / CORPUS_TOTAL) * 100);
++
++  return (
++    <div style={{
++      background: '#0D1B2A', borderRadius: 8, overflow: 'hidden',
++      border: '1px solid #1F3550',
++      fontFamily: "-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif",
++    }}>
++      <style>{CORPUS_CSS}</style>
++
++      {/* ── Hero Stats ── */}
++      <div style={{ padding: '28px 28px 24px 60px', borderBottom: '1px solid #1F3550', position: 'relative' }}>
++        <div style={{ position: 'absolute', left: 28, top: 0, bottom: 0, width: 2, background: '#F59D00' }} />
++
++        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#F59D00', marginBottom: 8 }}>
++          Invent Corp · Nexus WCS · {CORPUS_UPDATED}
++        </div>
++        <div style={{ fontSize: 20, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#E2EBF5', lineHeight: 1.1, marginBottom: 20 }}>
++          Corpus<span style={{ color: '#F59D00' }}>-</span>Conhecimento{' '}
++          <span style={{ color: '#A3BACF', fontWeight: 400 }}>WMS / WCS</span>
++        </div>
++
++        {/* Big numbers */}
++        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px 32px', marginBottom: 20 }}>
++          {([
++            { n: CORPUS_TOTAL.toLocaleString('pt-BR'), label: 'seções mineradas',    color: '#E2EBF5' },
++            { n: `~${CORPUS_ROUTED.toLocaleString('pt-BR')}`, label: 'roteadas em tópicos', color: '#F59D00', note: `${coverage}% cobertura` },
++            { n: '21 tópicos',  label: '7 blocos temáticos',  color: '#4A9EFF' },
++            { n: '175',         label: 'em quarentena',        color: '#E2EBF5' },
++            { n: '757',         label: 'boilerplate descartado', color: '#5A7A95' },
++          ] as { n: string; label: string; color: string; note?: string }[]).map((s, i) => (
++            <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
++              <div style={{
++                fontFamily: "ui-monospace,'Cascadia Code','JetBrains Mono',monospace",
++                fontSize: 24, fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, color: s.color,
++              }}>{s.n}</div>
++              <div style={{ fontSize: 9.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5A7A95' }}>
++                {s.label}
++              </div>
++              {s.note && (
++                <div style={{ fontSize: 9, color: '#F59D00', fontWeight: 700, letterSpacing: '0.08em' }}>{s.note}</div>
++              )}
++            </div>
++          ))}
++        </div>
++
++        {/* Coverage bar */}
++        <div>
++          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
++            <span style={{ fontSize: 9.5, color: '#5A7A95', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 700 }}>
++              Cobertura do corpus
++            </span>
++            <span style={{ fontSize: 9.5, color: '#F59D00', fontWeight: 700, fontFamily: 'monospace' }}>
++              {coverage}% · {CORPUS_ROUTED.toLocaleString('pt-BR')} / {CORPUS_TOTAL.toLocaleString('pt-BR')} seções
++            </span>
++          </div>
++          <div style={{ height: 5, background: '#1F3550', borderRadius: 3, overflow: 'hidden' }}>
++            <div style={{
++              height: '100%', width: `${coverage}%`,
++              background: 'linear-gradient(90deg,#F59D00 0%,#4A9EFF 100%)',
++              borderRadius: 3,
++            }} />
++          </div>
++        </div>
++      </div>
++
++      {/* ── Blocks ── */}
++      <div style={{ position: 'relative', padding: '0 28px 28px 60px' }}>
++        {/* Animated left track */}
++        <div style={{
++          position: 'absolute', left: 28, top: 0, bottom: 40, width: 2, overflow: 'hidden',
++          background: 'linear-gradient(to bottom,#F59D00 0%,#A36A00 55%,#2E4A68 85%,transparent 100%)',
++        }}>
++          {[0, 1, 2].map(i => (
++            <div key={i} className="corpus-dot" style={{
++              position: 'absolute', left: '50%', transform: 'translateX(-50%)',
++              width: 7, height: 7, borderRadius: '50%',
++              background: '#F59D00', boxShadow: '0 0 8px 3px rgba(245,157,0,0.55)',
++            }} />
++          ))}
++        </div>
++
++        {CORPUS_BLOCKS.map(block => (
++          <div key={block.seq} style={{ paddingTop: 24, paddingBottom: 4 }}>
++            {/* Block header */}
++            <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, marginBottom: 10, flexWrap: 'wrap' }}>
++              <span style={{
++                fontFamily: 'ui-monospace,monospace', fontSize: 10, fontWeight: 700,
++                color: block.sys ? '#4A9EFF' : '#F59D00', letterSpacing: '0.1em',
++                border: `1px solid ${block.sys ? 'rgba(74,158,255,0.4)' : '#A36A00'}`,
++                borderRadius: 3, padding: '1px 6px', lineHeight: 1.6,
++              }}>{block.seq}</span>
++              <span style={{ fontSize: 13, fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#E2EBF5' }}>
++                {block.label}
++              </span>
++              <span style={{ marginLeft: 'auto', fontFamily: 'ui-monospace,monospace', fontSize: 11, color: '#5A7A95' }}>
++                {block.total} seções
++              </span>
++            </div>
++            <div style={{ height: 1, background: '#1F3550', marginBottom: 12 }} />
++
++            {block.sub ? block.sub.map((sub, si) => (
++              <div key={si}>
++                <div style={{
++                  fontSize: 9.5, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase',
++                  color: '#5A7A95', margin: si > 0 ? '14px 0 8px' : '0 0 8px',
++                  paddingBottom: 4, borderBottom: '1px dashed #1F3550',
++                }}>{sub.label}</div>
++                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 9 }}>
++                  {sub.topics.map((t, ti) => <CorpusTopicCard key={ti} t={t} />)}
++                </div>
++              </div>
++            )) : (
++              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 9 }}>
++                {block.topics?.map((t, ti) => <CorpusTopicCard key={ti} t={t} />)}
++              </div>
++            )}
++          </div>
++        ))}
++
++        {/* ── INBOX ── */}
++        <div style={{ marginTop: 24, paddingTop: 18, borderTop: '1px dashed #1F3550' }}>
++          <div style={{
++            fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase',
++            color: '#5A7A95', marginBottom: 12,
++            display: 'flex', alignItems: 'center', gap: 12,
++          }}>
++            Quarentena — INBOX
++            <span style={{ fontFamily: 'ui-monospace,monospace', letterSpacing: 0, color: '#2E4A68' }}>
++              175 seções
++            </span>
++          </div>
++          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 9 }}>
++            {CORPUS_INBOX.map((t, i) => <CorpusTopicCard key={i} t={t} />)}
++          </div>
++        </div>
++      </div>
++
++      {/* ── Footer ── */}
++      <div style={{
++        display: 'flex', flexWrap: 'wrap', gap: 16, alignItems: 'center',
++        padding: '14px 28px', borderTop: '1px solid #1F3550',
++        background: 'rgba(255,255,255,0.015)',
++      }}>
++        <div>
++          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F59D00', marginBottom: 3 }}>
++            Próxima fase
++          </div>
++          <div style={{ fontSize: 12, color: '#5A7A95' }}>
++            Geração de <strong style={{ color: '#E2EBF5' }}>DOSSIE</strong> + insights por tópico ·{' '}
++            modelo <strong style={{ color: '#E2EBF5' }}>Claude Opus</strong>
++          </div>
++        </div>
++        <div style={{ marginLeft: 'auto', display: 'flex', gap: 14, flexWrap: 'wrap', alignItems: 'center' }}>
++          {([
++            { badge: 'NOVO',  label: 'novo MD',      color: '#F59D00', bg: 'rgba(245,157,0,0.1)',   border: 'rgba(245,157,0,0.25)' },
++            { badge: 'SPLIT', label: 'desmembrado',  color: '#22C55E', bg: 'rgba(34,197,94,0.1)',   border: 'rgba(34,197,94,0.25)' },
++          ] as { badge: string; label: string; color: string; bg: string; border: string }[]).map(l => (
++            <div key={l.badge} style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 10, color: '#5A7A95' }}>
++              <span style={{
++                fontSize: 7.5, fontWeight: 800, letterSpacing: '0.15em', borderRadius: 2, padding: '1px 5px',
++                color: l.color, background: l.bg, border: `1px solid ${l.border}`,
++              }}>{l.badge}</span>
++              {l.label}
++            </div>
++          ))}
++        </div>
++      </div>
++    </div>
++  );
++}
++
++// ─── Backlog ──────────────────────────────────────────────────────────────────
++
++type BStatus = 'done' | 'pending' | 'unclear';
++type BPriority = 'high' | 'medium' | 'low';
++
++interface BItem {
++  id: string;
++  desc: string;
++  priority: BPriority;
++  status: BStatus;
++  notes?: string;
++}
++
++interface BPhase {
++  id: string;
++  label: string;
++  sub: string;
++  color: string;
++  items: BItem[];
++}
++
++type BItemExt = BItem & { phaseId: string; phaseColor: string };
++
++const BSTATUS_META: Record<BStatus, { label: string; color: string; bg: string }> = {
++  done:    { label: 'Entregue',   color: '#22c55e', bg: 'rgba(34,197,94,0.1)'  },
++  pending: { label: 'Pendente',   color: '#5A7A95', bg: 'rgba(90,122,149,0.1)' },
++  unclear: { label: 'Aguardando', color: '#f59e0b', bg: 'rgba(245,158,11,0.1)' },
++};
++
++const BPRIO_META: Record<BPriority, { label: string; color: string }> = {
++  high:   { label: '🔴 Alta',  color: '#ef4444' },
++  medium: { label: '🟡 Média', color: '#f59e0b' },
++  low:    { label: '🟢 Baixa', color: '#22c55e' },
++};
++
++const BACKLOG_PHASES: BPhase[] = [
++  {
++    id: 'F1', label: 'Fase 1 — Curto prazo', sub: 'Sem backend — melhorias no app atual com localStorage', color: '#22c55e',
++    items: [
++      { id: 'F1-01', desc: 'Nome do cliente e projeto aparecer preenchido no header do kickoff', priority: 'high', status: 'done', notes: 'Strip com cliente + codinome no topo de cada seção; pre-fill automático ao abrir' },
++      { id: 'F1-02', desc: 'Campo "Go-Live" nas Infos Gerais do projeto', priority: 'high', status: 'done', notes: 'Campo g_golive com máscara de data' },
++      { id: 'F1-03', desc: 'Campo "Layout do Projeto Semelhante ao:" nas Infos Gerais', priority: 'medium', status: 'done', notes: 'Campo g_layout_ref adicionado após GoLive' },
++      { id: 'F1-04', desc: 'Retirar validação numérica dos campos de quantidade — aceitar texto livre', priority: 'high', status: 'done' },
++      { id: 'F1-05', desc: 'IA no kickoff não deve ser pergunta opcional', priority: 'high', status: 'done', notes: 'st11 obrigatório dentro do Sorter' },
++      { id: 'F1-06', desc: 'Recirculação e IA no Sorter não devem ser perguntas opcionais', priority: 'medium', status: 'done' },
++      { id: 'F1-07', desc: 'Remover seção Conferência inteira do kickoff', priority: 'high', status: 'done' },
++      { id: 'F1-08', desc: 'Dependências entre funcionalidades: se tem IA → sempre tem TV e IVT/etiqueta', priority: 'medium', status: 'done', notes: 'Trigger laranja se IA=Sim e Etiquetas=Não' },
++      { id: 'F1-09', desc: 'PTM/IA: gerar campos de TV da IA ou TV do PTM e quantidade', priority: 'medium', status: 'done' },
++      { id: 'F1-10', desc: 'Revisar campos fixos padrão: torná-los invisíveis na UI mas manter no JSON', priority: 'medium', status: 'unclear', notes: 'Aguardando definição — quais campos especificamente?' },
++      { id: 'F1-11', desc: 'Integração mover para o início do formulário', priority: 'medium', status: 'done', notes: 'Seção in movida para Phase 0, antes de Order Start' },
++      { id: 'F1-12', desc: 'Notas rápidas (bloco de texto livre) visível no lado esquerdo do kickoff', priority: 'medium', status: 'done', notes: 'Scratchpad no painel esquerdo, auto-save no projeto' },
++      { id: 'F1-13', desc: 'Conta ADM: easter egg — 10 cliques no logo NEXUS + Y para acessar', priority: 'low', status: 'done' },
++      { id: 'F1-14', desc: 'KPIs linkados e visíveis na seção Administração do Config', priority: 'medium', status: 'done' },
++      { id: 'F1-15', desc: 'ADM pode editar os valores de KPI de cada funcionalidade no painel Config', priority: 'medium', status: 'done' },
++      { id: 'F1-16', desc: 'Separar "Nome do Projeto" (codinome) de "Nome do Cliente" como campos distintos', priority: 'high', status: 'done' },
++      { id: 'F1-17', desc: 'Texto com "definir" em qualquer campo → tratado como [A DEFINIR]', priority: 'medium', status: 'done', notes: 'isADefinir() detecta campos com "definir" em texto livre' },
++      { id: 'F1-18', desc: 'Versionamento de input.json por projeto: accordion no Overview, baixar/excluir/gerar por versão', priority: 'high', status: 'done', notes: 'Visível só para papel documentacao; confirmação "ALERTA, TEM CERTEZA?"' },
++    ],
++  },
++  {
++    id: 'F2', label: 'Fase 2 — Médio prazo', sub: 'Requer backend Supabase + autenticação real + integrações externas', color: '#3E87CF',
++    items: [
++      { id: 'F2-01', desc: 'Login automático se já autenticado naquele navegador (session persistente)', priority: 'high', status: 'pending', notes: 'Supabase Auth + localStorage token' },
++      { id: 'F2-02', desc: 'Registro via código enviado por e-mail (magic link / OTP)', priority: 'high', status: 'pending', notes: 'Login não precisa de código, só o registro' },
++      { id: 'F2-03', desc: 'Upload de documentos no projeto: Layout Mecânico, Elétrico, Docs aprovados', priority: 'high', status: 'pending', notes: 'Supabase Storage; vincular ao projeto' },
++      { id: 'F2-04', desc: 'Link do SharePoint por projeto (campo + abertura direta)', priority: 'medium', status: 'done', notes: 'Implementado em localStorage — campo de URL no Overview com botão "Abrir no SharePoint"' },
++      { id: 'F2-05', desc: 'Último Layout Aprovado e Último Documento Aprovado por projeto', priority: 'medium', status: 'pending', notes: 'Requer banco + upload' },
++      { id: 'F2-06', desc: 'Apontamento de Horas: horário inteligente, associação de cliente, export Excel', priority: 'high', status: 'pending', notes: 'Sub-aba já existe como Coming Soon no módulo Documentação' },
++      { id: 'F2-07', desc: 'Aba de Relatório — visualizar lacunas do kickoff e taxa de completude por projeto', priority: 'medium', status: 'pending', notes: 'Ex: campos sem preenchimento, projetos com mais TBDs, seções com menor completude' },
++      { id: 'F2-08', desc: 'Alerta de passagem de bastão entre etapas (Kickoff→Documentação→Implantação→Pós-Vendas)', priority: 'medium', status: 'pending', notes: 'Notificação automática com pendências críticas em cada transição; requer backend' },
++      { id: 'F2-09', desc: 'Dividir perguntas do kickoff: GESTOR vs OPERACIONAL por setor', priority: 'high', status: 'pending', notes: 'Cada setor complementa o projeto com suas próprias perguntas; JSON unificado' },
++      { id: 'F2-10', desc: 'Onboarding novo formato: simples, rápido, contextual por papel', priority: 'medium', status: 'pending', notes: 'Substituir intro screen atual por guia interativo' },
++      { id: 'F2-11', desc: 'Chat por projeto: painel flutuante com Claude API + contexto do JSON do kickoff', priority: 'high', status: 'pending' },
++      { id: 'F2-12', desc: 'Integração com Claude API — usuário traz sua própria API key', priority: 'high', status: 'pending', notes: 'Não aceitar plano gratuito; configurar na tela de config' },
++      { id: 'F2-13', desc: 'Visibilidade de tokens consumidos em tempo real durante uso da IA', priority: 'medium', status: 'pending' },
++      { id: 'F2-14', desc: 'Seletor de provedor IA: LLM On-Premise (gratuita) vs Claude API (alta performance)', priority: 'medium', status: 'pending', notes: 'LLM local elimina custo variável; Claude reservado para tarefas críticas. Depende de F3-01' },
++      { id: 'F2-15', desc: 'Botão "Enviar para revisão" → manda JSON/doc por e-mail para revisor específico', priority: 'medium', status: 'unclear', notes: 'Aguardando definição do fluxo de revisão e do revisor' },
++      { id: 'F2-16', desc: 'NEXUS + Especialista Documentador: botão Gerar Doc puxa JSON kickoff + dados de todos setores', priority: 'high', status: 'pending', notes: 'Unificação total do pipeline de documentação' },
++      { id: 'F2-17', desc: 'DEV precisa ver pontos de decisão e layout do projeto', priority: 'medium', status: 'unclear', notes: 'View específica para o papel Desenvolvimento com decisões técnicas e layouts' },
++      { id: 'F2-18', desc: 'RASTREAR e mapear acesso por papel: quais abas, IAs e cards cada papel vê', priority: 'high', status: 'pending', notes: 'Expansão do featureRegistry para controle granular de UI' },
++      { id: 'F2-19', desc: 'Cards Situacionais por papel: blocos de info contextuais que aparecem só para quem precisa', priority: 'medium', status: 'unclear', notes: 'Ex: PMO vê "Projetos atrasados", Implantação vê "Checklist de comissionamento"' },
++      { id: 'F2-20', desc: 'Ao gerar doc: Claude gera input.json, NEXUS monta .docx e salva no SharePoint automaticamente', priority: 'high', status: 'pending', notes: 'Pipeline totalmente automatizado; download local fica opcional. Requer F2-12 + F2-04' },
++      { id: 'F2-21', desc: 'SSO Invent + login automático via Azure AD (Microsoft Entra ID)', priority: 'high', status: 'unclear', notes: 'Requer chamado ao Jonathan (Infra) para liberação de credenciais Azure AD' },
++      { id: 'F2-22', desc: 'Alerta de Conclusão de Implantação: notificar Pós-Vendas automaticamente no encerramento da fase', priority: 'medium', status: 'pending' },
++      { id: 'F2-23', desc: 'Upload automático do .docx gerado para SharePoint no diretório parametrizado do projeto', priority: 'high', status: 'pending', notes: 'Requer integração SharePoint + F2-04; download local fica secundário' },
++      { id: 'F2-24', desc: 'Abertura imediata do arquivo no OneDrive após conclusão do upload no SharePoint', priority: 'medium', status: 'pending', notes: 'Usa vínculo nativo do OneDrive; depende de F2-23' },
++      { id: 'F2-25', desc: 'Hard rule: projetos com PBL (Pick-to-Light) → sem coletor de dados na funcionalidade Fullcase', priority: 'medium', status: 'pending', notes: 'Validação automática no motor de regras, análoga a F1-08' },
++      { id: 'F2-26', desc: 'Paletização Multi-Tipo: aceitar mais de um modelo de paletização no mesmo projeto simultaneamente', priority: 'medium', status: 'pending', notes: 'Ex: PTL + PTM combinados; hoje o sistema aceita apenas um tipo por vez' },
++      { id: 'F2-27', desc: 'Substituição por Sugestão Inteligente: motor sugere paletização e fluxo PTL otimizados com base nos dados', priority: 'medium', status: 'pending' },
++      { id: 'F2-28', desc: 'Uploads por projeto: vídeos de reuniões, Master-Data (MD), planilhas operacionais e cronogramas', priority: 'medium', status: 'pending', notes: 'Complementa F2-03; Supabase Storage ou SharePoint como destino' },
++    ],
++  },
++  {
++    id: 'F3', label: 'Fase 3 — Longo prazo', sub: 'IA avançada, infraestrutura própria, expansão multi-setor', color: '#C98A22',
++    items: [
++      { id: 'F3-01', desc: 'IA própria no servidor da empresa (LLM open-source On-Premise)', priority: 'high', status: 'pending', notes: 'Ex: Llama, Mistral rodando em servidor dedicado Invent; uso ilimitado sem custo por chamada' },
++      { id: 'F3-02', desc: 'Base de conhecimento vetorial por projeto: "Obsidian que aprende sozinho"', priority: 'high', status: 'pending', notes: 'Vector DB (ex: Qdrant, Pinecone) alimentado pelos JSONs e docs de cada projeto' },
++      { id: 'F3-03', desc: 'MD de roteamento: IA identifica quais fontes de conhecimento consultar e economiza tokens', priority: 'medium', status: 'pending', notes: 'Sistema de RAG com routing — IA decide qual especialista MD chamar' },
++      { id: 'F3-04', desc: 'Sistema de refinamento por peso: IA aprende com resultados aprovados e refina o próprio MD guia', priority: 'medium', status: 'pending', notes: 'Feedback loop — resultados aprovados aumentam peso de certos padrões' },
++      { id: 'F3-05', desc: 'Transcript do kickoff → IA preenche o formulário automaticamente', priority: 'high', status: 'pending', notes: 'Upload de áudio/texto → IA preenche → compara com preenchimento humano → aponta divergências' },
++      { id: 'F3-06', desc: 'Expansão multi-setor: PMO, Implantação e Pós-vendas com IAs especializadas', priority: 'high', status: 'pending', notes: 'Cada setor com suas perguntas específicas alimentando a IA de forma centralizada' },
++      { id: 'F3-07', desc: 'Intensivão por setor: mapear processos, identificar planilhas existentes e migrar para NEXUS', priority: 'medium', status: 'pending', notes: 'Entrevista setor → mapeia dor → constrói módulo' },
++      { id: 'F3-08', desc: 'Transformar planilhas de controle de cada setor em CRUDs dentro do NEXUS com IA específica', priority: 'medium', status: 'pending' },
++      { id: 'F3-09', desc: 'MCP Server: expor dados do NEXUS como ferramentas para IAs externas', priority: 'medium', status: 'pending', notes: 'get_project(code), list_projects(), search_projects(query)' },
++      { id: 'F3-10', desc: 'Domínio próprio: nexus.invent.com.br', priority: 'medium', status: 'pending', notes: 'Requer Netlify/VPS + configuração DNS' },
++      { id: 'F3-11', desc: 'Edição colaborativa em tempo real (Supabase Realtime)', priority: 'low', status: 'pending', notes: 'Múltiplos usuários editando o mesmo projeto simultaneamente' },
++      { id: 'F3-12', desc: 'VEX AI: pesquisa conversacional semântica na base histórica de todos os projetos', priority: 'high', status: 'pending', notes: 'Chat aberto para colaboradores autorizados; busca sobre dados históricos, documentos e JSONs' },
++      { id: 'F3-13', desc: 'VEX AI: Agentes Especialistas por vertical técnica ou cliente', priority: 'medium', status: 'pending', notes: 'Ex: agente de Integração ERP, agente de Picking; relatórios segmentados por área' },
++      { id: 'F3-14', desc: 'VEX AI: Insights preditivos e sugestões de perguntas complementares gerados automaticamente', priority: 'medium', status: 'pending' },
++      { id: 'F3-15', desc: 'Módulo de Arenas: revisão crítica de docs gerados pela LLM + loop de feedback contínuo', priority: 'high', status: 'pending', notes: 'Correções humanas alimentam input.json de feedback → refinamento automático do modelo' },
++      { id: 'F3-16', desc: 'Auditoria de segurança FABLE de todo o ecossistema antes do ganho de escala comercial', priority: 'high', status: 'pending', notes: 'Validação contra vazamento de dados corporativos e vulnerabilidades em nível de código' },
++    ],
++  },
++  {
++    id: 'F4', label: 'Fase 4 — O Auge', sub: 'Automação end-to-end — reduzir até 90% do trabalho braçal de documentação', color: '#8b5cf6',
++    items: [
++      { id: 'F4-01', desc: 'Cowork: envio automático de e-mail institucional com documento + sugestão de agenda após revisão aprovada', priority: 'high', status: 'pending', notes: 'Requer Azure Graph API (F2-21); e-mail enviado pelo NEXUS em nome do responsável' },
++      { id: 'F4-02', desc: 'Skill Reunião Doc Análise: transcrição automática + extração de pontos-chave e decisões', priority: 'high', status: 'pending', notes: 'Input: gravação ou transcript; Output: JSON estruturado de alterações propostas ao documento' },
++      { id: 'F4-03', desc: 'Skill Alterações Inteligentes: aplicar automaticamente mudanças extraídas da reunião ao documento', priority: 'high', status: 'pending', notes: 'Gera nova revisão do .docx com log de alterações; depende de F4-02' },
++      { id: 'F4-04', desc: 'Documento Modular Vivo: qualquer alteração em campo do Nexus gera tarefa automática de atualização no doc vinculado', priority: 'medium', status: 'pending', notes: 'Ex: engenharia muda nº de posições → alerta → confirmado → aplica no SharePoint + gera PDF' },
++      { id: 'F4-05', desc: 'Versionamento Semântico Rev [A].[B].[C] gerado automaticamente com base no tipo de alteração', priority: 'medium', status: 'pending', notes: 'A = escopo/tecnologia macro; B = impacto de outras áreas; C = micro-ajustes textuais. Ex: Rev 7.1.3' },
++      { id: 'F4-06', desc: 'Motor Evolutivo SUPER_MD: cada correção humana alimenta treinamento supervisionado do ecossistema', priority: 'high', status: 'pending', notes: 'NEXUS aprende organicamente a cada projeto; regras do Especialista Documentador se refinam automaticamente' },
++      { id: 'F4-07', desc: 'Etapa de Análise Crítica I.A. Gomes no pipeline de revisão antes do envio da próxima revisão ao cliente', priority: 'medium', status: 'pending', notes: 'Etapa intermediária após alterações aplicadas; aguarda confirmação do analista' },
++    ],
++  },
++];
++
++const BCHECK_KEY = 'nexus_backlog_checks_v1';
++const BDEL_KEY   = 'nexus_backlog_deleted_v1';
++
++function loadSet(key: string): Set<string> {
++  try { return new Set(JSON.parse(localStorage.getItem(key) ?? '[]') as string[]); }
++  catch { return new Set(); }
++}
++function saveSet(key: string, s: Set<string>): void {
++  localStorage.setItem(key, JSON.stringify([...s]));
++}
++
++function BacklogItemRow({
++  item, phaseColor, checked, onToggle, onDelete,
++}: {
++  item: BItem; phaseColor: string; checked: boolean;
++  onToggle: () => void; onDelete: () => void;
++}) {
++  const [confirmDel, setConfirmDel] = useState(false);
++  const prio = BPRIO_META[item.priority];
++  const borderColor = checked ? '#22c55e' : item.status === 'unclear' ? '#f59e0b' : phaseColor;
++
++  return (
++    <Paper elevation={0} sx={{ borderLeft: `3px solid ${borderColor}`, transition: 'border-color .15s' }}>
++      <Box sx={{ p: '8px 10px', display: 'flex', gap: 1, alignItems: 'flex-start' }}>
++        <Checkbox checked={checked} onChange={onToggle} size="small"
++          sx={{ p: '2px', mt: '1px', flexShrink: 0, color: 'text.disabled', '&.Mui-checked': { color: '#22c55e' } }} />
++        <Typography sx={{ fontSize: 9.5, fontFamily: 'monospace', fontWeight: 700, color: 'text.disabled', minWidth: 38, pt: '4px', flexShrink: 0 }}>
++          {item.id}
++        </Typography>
++        <Box sx={{ flex: 1, minWidth: 0 }}>
++          <Typography sx={{ fontSize: 13, fontWeight: 600, color: 'text.primary', lineHeight: 1.5 }}>
++            {item.desc}
++          </Typography>
++          {item.notes && (
++            <Typography sx={{ fontSize: 11.5, color: 'text.disabled', mt: '3px', lineHeight: 1.45 }}>
++              {item.notes}
++            </Typography>
++          )}
++        </Box>
++        <Box sx={{ display: 'flex', gap: 0.75, flexShrink: 0, alignItems: 'center', pt: '4px' }}>
++          <Chip label={prio.label} size="small"
++            sx={{ fontSize: 9.5, height: 18, bgcolor: `${prio.color}14`, color: prio.color, border: `1px solid ${prio.color}35`, fontWeight: 600 }} />
++          {item.status === 'unclear' && (
++            <Chip label="Aguardando" size="small"
++              sx={{ fontSize: 9.5, height: 18, bgcolor: 'rgba(245,158,11,0.1)', color: '#f59e0b', border: '1px solid rgba(245,158,11,0.35)', fontWeight: 600 }} />
++          )}
++          <Tooltip title="Remover item">
++            <IconButton size="small" onClick={() => setConfirmDel(true)}
++              sx={{ p: '3px', color: 'text.disabled', '&:hover': { color: '#ef4444' } }}>
++              <DeleteRoundedIcon sx={{ fontSize: 14 }} />
++            </IconButton>
++          </Tooltip>
++        </Box>
++      </Box>
++      {confirmDel && (
++        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, px: 2, py: '8px', borderTop: '1px solid', borderColor: 'divider', bgcolor: 'rgba(239,68,68,0.04)' }}>
++          <Typography sx={{ fontSize: 12, color: '#ef4444', flex: 1 }}>Remover este item do backlog?</Typography>
++          <Button size="small" onClick={() => setConfirmDel(false)}
++            sx={{ fontSize: 11, textTransform: 'none', color: 'text.disabled', minWidth: 0, px: 1.5 }}>
++            Cancelar
++          </Button>
++          <Button size="small" variant="contained" onClick={onDelete}
++            sx={{ fontSize: 11, textTransform: 'none', bgcolor: '#ef4444', '&:hover': { bgcolor: '#dc2626' }, minWidth: 0, px: 1.5 }}>
++            Confirmar
++          </Button>
++        </Box>
++      )}
++    </Paper>
++  );
++}
++
++function BacklogAdminTab() {
++  const [phaseFilter, setPhaseFilter] = useState<string>('all');
++  const [prioFilter,  setPrioFilter]  = useState<BPriority | 'all'>('all');
++  const [checks,  setChecks]  = useState<Set<string>>(() => loadSet(BCHECK_KEY));
++  const [deleted, setDeleted] = useState<Set<string>>(() => loadSet(BDEL_KEY));
++  const [showDone, setShowDone] = useState(false);
++
++  const allItems: BItemExt[] = BACKLOG_PHASES.flatMap(p => p.items.map(i => ({ ...i, phaseId: p.id, phaseColor: p.color })));
++  const alive = allItems.filter(i => !deleted.has(i.id));
++
++  const isDone = (item: BItem) => item.status === 'done' || checks.has(item.id);
++
++  const toggleCheck = (id: string) => {
++    setChecks(prev => {
++      const next = new Set(prev);
++      if (next.has(id)) next.delete(id); else next.add(id);
++      saveSet(BCHECK_KEY, next);
++      return next;
++    });
++  };
++
++  const deleteItem = (id: string) => {
++    setDeleted(prev => {
++      const next = new Set(prev);
++      next.add(id);
++      saveSet(BDEL_KEY, next);
++      return next;
++    });
++  };
++
++  const doneCount    = alive.filter(isDone).length;
++  const pendingCount = alive.filter(i => !isDone(i) && i.status !== 'unclear').length;
++  const unclearCount = alive.filter(i => !isDone(i) && i.status === 'unclear').length;
++
++  const visible = alive.filter(i => {
++    if (!showDone && isDone(i)) return false;
++    const matchPhase = phaseFilter === 'all' || i.phaseId  === phaseFilter;
++    const matchPrio  = prioFilter  === 'all' || i.priority === prioFilter;
++    return matchPhase && matchPrio;
++  });
++
++  const grouped = phaseFilter === 'all'
++    ? BACKLOG_PHASES.map(p => ({ phase: p, items: visible.filter(i => i.phaseId === p.id) })).filter(g => g.items.length > 0)
++    : null;
++
++  const currentPhase = phaseFilter !== 'all' ? BACKLOG_PHASES.find(p => p.id === phaseFilter) : null;
++
++  return (
++    <Box>
++      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
++        <Box>
++          <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Backlog NEXUS</Typography>
++          <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>
++            Marque itens como concluídos para ocultá-los. Use o botão de excluir para remover o que não se aplica.
++          </Typography>
++        </Box>
++        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++          <Chip label={`◌ ${pendingCount} pendentes`} size="small"
++            sx={{ fontSize: 11, fontWeight: 600, bgcolor: 'rgba(90,122,149,0.1)', color: '#7A96B0', border: '1px solid rgba(90,122,149,0.25)' }} />
++          {unclearCount > 0 && (
++            <Chip label={`? ${unclearCount} aguardando`} size="small"
++              sx={{ fontSize: 11, fontWeight: 600, bgcolor: 'rgba(245,158,11,0.1)', color: '#f59e0b', border: '1px solid rgba(245,158,11,0.25)' }} />
++          )}
++          <Chip
++            label={showDone ? `✓ ${doneCount} entregues · ocultar` : `✓ ${doneCount} entregues`}
++            size="small" onClick={() => setShowDone(v => !v)}
++            sx={{ fontSize: 11, fontWeight: 600, cursor: 'pointer', bgcolor: showDone ? 'rgba(34,197,94,0.12)' : 'rgba(34,197,94,0.05)', color: '#22c55e', border: `1px solid ${showDone ? 'rgba(34,197,94,0.4)' : 'rgba(34,197,94,0.2)'}`, '&:hover': { bgcolor: 'rgba(34,197,94,0.15)' } }} />
++        </Box>
++      </Box>
++
++      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
++        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++          <Typography sx={{ fontSize: 11, color: 'text.disabled', minWidth: 60 }}>Fase:</Typography>
++          <Chip label="Todas" size="small" onClick={() => setPhaseFilter('all')}
++            sx={{ fontSize: 11, fontWeight: 600, bgcolor: phaseFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent', borderColor: phaseFilter === 'all' ? 'rgba(255,255,255,0.25)' : 'divider', color: phaseFilter === 'all' ? 'text.primary' : 'text.disabled', border: '1px solid' }} />
++          {BACKLOG_PHASES.map(p => (
++            <Chip key={p.id} label={p.id} size="small" onClick={() => setPhaseFilter(phaseFilter === p.id ? 'all' : p.id)}
++              sx={{ fontSize: 11, fontWeight: 700, bgcolor: phaseFilter === p.id ? `${p.color}22` : 'transparent', borderColor: phaseFilter === p.id ? p.color : 'divider', color: phaseFilter === p.id ? p.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: p.color, color: p.color } }} />
++          ))}
++        </Box>
++        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
++          <Typography sx={{ fontSize: 11, color: 'text.disabled', minWidth: 60 }}>Prioridade:</Typography>
++          <Chip label="Todas" size="small" onClick={() => setPrioFilter('all')}
++            sx={{ fontSize: 11, bgcolor: prioFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent', borderColor: prioFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider', color: prioFilter === 'all' ? 'text.secondary' : 'text.disabled', border: '1px solid' }} />
++          {(['high', 'medium', 'low'] as BPriority[]).map(p => (
++            <Chip key={p} label={BPRIO_META[p].label} size="small" onClick={() => setPrioFilter(prioFilter === p ? 'all' : p)}
++              sx={{ fontSize: 11, fontWeight: 600, bgcolor: prioFilter === p ? `${BPRIO_META[p].color}18` : 'transparent', borderColor: prioFilter === p ? BPRIO_META[p].color : 'divider', color: prioFilter === p ? BPRIO_META[p].color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: BPRIO_META[p].color, color: BPRIO_META[p].color } }} />
++          ))}
++        </Box>
++      </Box>
++
++      {visible.length === 0 ? (
++        <Box sx={{ textAlign: 'center', py: 5 }}>
++          <Typography sx={{ fontSize: 13, color: 'text.disabled' }}>
++            {!showDone && doneCount > 0
++              ? `Todos os itens visíveis foram entregues. Clique em "✓ ${doneCount} entregues" para exibi-los.`
++              : 'Nenhum item para os filtros selecionados.'}
++          </Typography>
++        </Box>
++      ) : grouped ? (
++        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
++          {grouped.map(({ phase, items }) => (
++            <Box key={phase.id}>
++              <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1.5, mb: 1.5 }}>
++                <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: phase.color, flexShrink: 0, mt: '4px' }} />
++                <Box sx={{ flex: 1, minWidth: 0 }}>
++                  <Typography sx={{ fontSize: 12, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: phase.color, lineHeight: 1.4 }}>
++                    {phase.label}
++                  </Typography>
++                  <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>{phase.sub}</Typography>
++                </Box>
++                <Typography sx={{ fontSize: 10, color: 'text.disabled', fontFamily: 'monospace', flexShrink: 0 }}>
++                  {items.length} visível{items.length !== 1 ? 'is' : ''}
++                </Typography>
++              </Box>
++              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
++                {items.map(item => (
++                  <BacklogItemRow key={item.id} item={item} phaseColor={phase.color}
++                    checked={isDone(item)} onToggle={() => toggleCheck(item.id)} onDelete={() => deleteItem(item.id)} />
++                ))}
++              </Box>
++            </Box>
++          ))}
++        </Box>
++      ) : (
++        <Box>
++          {currentPhase && (
++            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1.5, mb: 2 }}>
++              <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: currentPhase.color, flexShrink: 0, mt: '4px' }} />
++              <Box>
++                <Typography sx={{ fontSize: 12, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: currentPhase.color }}>
++                  {currentPhase.label}
++                </Typography>
++                <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>{currentPhase.sub}</Typography>
++              </Box>
++            </Box>
++          )}
++          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
++            {visible.map(item => (
++              <BacklogItemRow key={item.id} item={item} phaseColor={item.phaseColor}
++                checked={isDone(item)} onToggle={() => toggleCheck(item.id)} onDelete={() => deleteItem(item.id)} />
++            ))}
++          </Box>
++        </Box>
++      )}
++    </Box>
++  );
++}
++
 +// ─── AdminPage ────────────────────────────────────────────────────────────────
 +
 +interface AdminPageProps {
@@ -1250,14 +1887,15 @@ index 0000000..a56c078
 +          sx={{
 +            borderBottom: '1px solid', borderColor: 'divider', mb: 3, mt: 2.5,
 +            '& .MuiTab-root': { fontSize: 12, fontWeight: 600, textTransform: 'none', minHeight: 40, px: 2 },
-+            '& .Mui-selected': { color: 'primary.main' },
-+            '& .MuiTabs-indicator': { bgcolor: 'primary.main' },
++            '& .Mui-selected': { color: tab === 4 ? '#F59D00 !important' : 'primary.main' },
++            '& .MuiTabs-indicator': { bgcolor: tab === 4 ? '#F59D00' : 'primary.main' },
 +          }}
 +        >
 +          <Tab label="Papéis" />
 +          <Tab label="Apresentação" icon={<SlideshowRoundedIcon sx={{ fontSize: 16 }} />} iconPosition="start" />
 +          <Tab label="Funcionalidades" />
 +          <Tab label="Backlog" />
++          <Tab label="Corpus · IA" sx={{ color: tab === 4 ? '#F59D00 !important' : undefined }} />
 +        </Tabs>
 +
 +        {/* ── Tab 0: Papéis ── */}
@@ -1368,7 +2006,22 @@ index 0000000..a56c078
 +        {tab === 2 && <FeaturesAdminTab />}
 +
 +        {/* ── Tab 3: Backlog ── */}
-+        {tab === 3 && <PendenciasTab />}
++        {tab === 3 && <BacklogAdminTab />}
++
++        {/* ── Tab 4: Corpus · IA ── */}
++        {tab === 4 && (
++          <Box sx={{ pb: 2 }}>
++            <Box sx={{ mb: 2 }}>
++              <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary', mb: '2px' }}>
++                Base de Conhecimento WMS / WCS
++              </Typography>
++              <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>
++                Mapa vivo do corpus minerado — atualizado diretamente no código a cada nova sessão de mineração.
++              </Typography>
++            </Box>
++            <CorpusKnowledgeTab />
++          </Box>
++        )}
 +      </Box>
 +    </>
 +  );
@@ -1722,701 +2375,6 @@ index eefb6ef..f701512 100644
 -          )}
 -
 -          {listaFiltrada.length === 0 ? (
--            <Box sx={{ textAlign: 'center', py: 6 }}>
--              <FormatListBulletedRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', mb: 1.5, opacity: 0.4 }} />
--              <Typography sx={{ fontSize: 13, color: 'text.disabled' }}>
--                {lista.length === 0
--                  ? 'Nenhuma pendência ainda. Marque sugestões com o bookmark na aba Sugestões.'
--                  : 'Nenhum item para esse filtro.'}
--              </Typography>
--            </Box>
--          ) : (
--            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
--              {listaFiltrada.map(item => {
--                const rl = ROLES.find(r => r.value === item.role);
--                const catColor = item.categoria ? getCategoryColor(item.categoria) : null;
--                const catLabel = item.categoria ? getCategoryLabel(item.categoria) : null;
--                const date = new Date(item.addedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
--                return (
--                  <Paper
--                    key={item.id}
--                    elevation={0}
--                    sx={{ p: '12px 16px', display: 'flex', gap: 1.5, alignItems: 'flex-start', opacity: item.done ? 0.5 : 1, transition: 'opacity .2s' }}
--                  >
--                    <Checkbox
--                      checked={item.done}
--                      onChange={() => { toggleListaItem(item.id); refreshLista(); }}
--                      size="small"
--                      sx={{ p: '2px', mt: '1px', flexShrink: 0, color: 'text.disabled', '&.Mui-checked': { color: '#22c55e' } }}
--                    />
--                    <Box sx={{ flex: 1, minWidth: 0 }}>
--                      {item.title && (
--                        <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary', mb: '4px', textDecoration: item.done ? 'line-through' : 'none' }}>
--                          {item.title}
--                        </Typography>
--                      )}
--                      <Typography sx={{ fontSize: 13, color: item.title ? 'text.secondary' : 'text.primary', lineHeight: 1.7, whiteSpace: 'pre-wrap', wordBreak: 'break-word', textDecoration: item.done ? 'line-through' : 'none' }}>
--                        {item.texto}
--                      </Typography>
--                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: '6px', flexWrap: 'wrap' }}>
--                        <Chip label={rl?.label ?? item.role} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[item.role]}18`, color: ROLE_COLOR[item.role], border: `1px solid ${ROLE_COLOR[item.role]}44`, fontWeight: 600 }} />
--                        {catLabel && catColor && (
--                          <Chip label={catLabel} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${catColor}18`, color: catColor, border: `1px solid ${catColor}44`, fontWeight: 600 }} />
--                        )}
--                        {item.userName && <Typography sx={{ fontSize: 11, fontWeight: 600, color: 'text.secondary' }}>{item.userName}</Typography>}
--                        <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>{date}</Typography>
--                      </Box>
--                    </Box>
--                    <Tooltip title="Remover da lista">
--                      <IconButton size="small" onClick={() => { removeFromLista(item.id); refreshLista(); }} sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0, mt: '2px' }}>
--                        <DeleteRoundedIcon sx={{ fontSize: 15 }} />
--                      </IconButton>
--                    </Tooltip>
--                  </Paper>
--                );
--              })}
--            </Box>
--          )}
--        </Box>
--      )}
--    </Box>
--  );
-+export function ConfigPage({ role, userName }: { role?: Role; userName?: string }) {
-+  return <SugestoesPage role={role ?? 'gestao'} userName={userName ?? ''} />;
- }
- 
--function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave: (f: RoleFeature) => void; isAdm?: boolean }) {
-+// ─── FeatureCard ─────────────────────────────────────────────────────────────
-+
-+export function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave: (f: RoleFeature) => void; isAdm?: boolean }) {
-   const [editing, setEditing] = useState(false);
-   const [draft, setDraft] = useState<RoleFeature>({ ...feature });
- 
--  const handleEdit = () => {
--    setDraft({ ...feature });
--    setEditing(true);
--  };
--
-+  const handleEdit = () => { setDraft({ ...feature }); setEditing(true); };
-   const handleSave = () => {
-     if (!draft.title.trim()) return;
-     onSave({ ...draft, title: draft.title.trim(), description: draft.description.trim() });
-     setEditing(false);
-   };
--
-   const toggleRole = (r: Role) => {
--    setDraft(d => ({
--      ...d,
--      roles: d.roles.includes(r) ? d.roles.filter(x => x !== r) : [...d.roles, r],
--    }));
-+    setDraft(d => ({ ...d, roles: d.roles.includes(r) ? d.roles.filter(x => x !== r) : [...d.roles, r] }));
-   };
- 
-   if (editing) {
-     return (
-       <Paper elevation={0} sx={{ p: '16px', display: 'flex', flexDirection: 'column', gap: 2, border: '1px solid', borderColor: 'primary.main' }}>
--        {/* Title */}
--        <TextField
--          label="Título"
--          size="small"
--          fullWidth
--          value={draft.title}
-+        <TextField label="Título" size="small" fullWidth value={draft.title}
-           onChange={e => setDraft(d => ({ ...d, title: e.target.value }))}
--          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
--        />
--
--        {/* Description */}
--        <TextField
--          label="Descrição"
--          size="small"
--          fullWidth
--          multiline
--          minRows={2}
--          value={draft.description}
-+          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }} />
-+        <TextField label="Descrição" size="small" fullWidth multiline minRows={2} value={draft.description}
-           onChange={e => setDraft(d => ({ ...d, description: e.target.value }))}
--          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }}
--        />
--
--        {/* Page */}
-+          sx={{ '& .MuiInputBase-root': { fontSize: 13 } }} />
-         <Box>
-           <Typography sx={{ fontSize: 11, color: 'text.disabled', mb: '6px' }}>Página</Typography>
-           <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap' }}>
-             {PAGE_CATEGORIES.map(c => {
-               const selected = draft.page === c.label;
-               return (
--                <Chip
--                  key={c.value}
--                  label={c.label}
--                  size="small"
--                  onClick={() => setDraft(d => ({ ...d, page: c.label }))}
--                  sx={{
--                    fontSize: 10, height: 20, fontWeight: 600,
--                    bgcolor: selected ? `${c.color}22` : 'transparent',
--                    borderColor: selected ? c.color : 'divider',
--                    color: selected ? c.color : 'text.disabled',
--                    border: '1px solid',
--                    '&:hover': { borderColor: c.color, color: c.color },
--                  }}
--                />
-+                <Chip key={c.value} label={c.label} size="small" onClick={() => setDraft(d => ({ ...d, page: c.label }))}
-+                  sx={{ fontSize: 10, height: 20, fontWeight: 600, bgcolor: selected ? `${c.color}22` : 'transparent', borderColor: selected ? c.color : 'divider', color: selected ? c.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: c.color, color: c.color } }} />
-               );
-             })}
-           </Box>
-         </Box>
--
--        {/* Roles */}
-         <Box>
-           <Typography sx={{ fontSize: 11, color: 'text.disabled', mb: '6px' }}>
-             Funções
--            {draft.roles.length === ROLES.length && (
--              <Box component="span" sx={{ color: '#22c55e', ml: '6px' }}>· Todas selecionadas (disponível para todos)</Box>
--            )}
-+            {draft.roles.length === ROLES.length && <Box component="span" sx={{ color: '#22c55e', ml: '6px' }}>· Todas selecionadas</Box>}
-           </Typography>
-           <Box sx={{ display: 'flex', gap: 0.75, flexWrap: 'wrap' }}>
-             {ROLES.map(r => {
-               const selected = draft.roles.includes(r.value);
-               return (
--                <Chip
--                  key={r.value}
--                  label={r.label}
--                  size="small"
--                  onClick={() => toggleRole(r.value)}
--                  sx={{
--                    fontSize: 10, height: 20, fontWeight: 600,
--                    bgcolor: selected ? `${ROLE_COLOR[r.value]}22` : 'transparent',
--                    borderColor: selected ? ROLE_COLOR[r.value] : 'divider',
--                    color: selected ? ROLE_COLOR[r.value] : 'text.disabled',
--                    border: '1px solid',
--                    '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] },
--                  }}
--                />
-+                <Chip key={r.value} label={r.label} size="small" onClick={() => toggleRole(r.value)}
-+                  sx={{ fontSize: 10, height: 20, fontWeight: 600, bgcolor: selected ? `${ROLE_COLOR[r.value]}22` : 'transparent', borderColor: selected ? ROLE_COLOR[r.value] : 'divider', color: selected ? ROLE_COLOR[r.value] : 'text.disabled', border: '1px solid', '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] } }} />
-               );
-             })}
-           </Box>
-         </Box>
--
--        {/* Implemented toggle */}
-         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-           <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>Status:</Typography>
--          <Chip
--            label={draft.implemented ? 'Implementado' : 'Planejado'}
--            size="small"
-+          <Chip label={draft.implemented ? 'Implementado' : 'Planejado'} size="small"
-             onClick={() => setDraft(d => ({ ...d, implemented: !d.implemented }))}
--            sx={{
--              fontSize: 11, fontWeight: 600, cursor: 'pointer',
--              bgcolor: draft.implemented ? 'rgba(34,197,94,0.1)' : 'rgba(255,197,0,0.06)',
--              color: draft.implemented ? '#22c55e' : '#ffc500',
--              border: `1px solid ${draft.implemented ? 'rgba(34,197,94,0.3)' : 'rgba(255,197,0,0.2)'}`,
--            }}
--          />
-+            sx={{ fontSize: 11, fontWeight: 600, cursor: 'pointer', bgcolor: draft.implemented ? 'rgba(34,197,94,0.1)' : 'rgba(255,197,0,0.06)', color: draft.implemented ? '#22c55e' : '#ffc500', border: `1px solid ${draft.implemented ? 'rgba(34,197,94,0.3)' : 'rgba(255,197,0,0.2)'}` }} />
-         </Box>
--
--        {/* KPIs — ADM only */}
-         {isAdm && (
-           <Box>
-             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: '6px' }}>
-               <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>KPIs <Box component="span" sx={{ color: '#ef4444', ml: '4px', fontSize: 10 }}>ADM</Box></Typography>
--              <Button
--                size="small" variant="text"
--                onClick={() => setDraft(d => ({ ...d, kpis: [...(d.kpis ?? []), { label: '', value: '', unit: '' }] }))}
--                sx={{ fontSize: 11, p: '2px 6px', minWidth: 0, color: 'text.disabled', '&:hover': { color: 'primary.main' } }}
--              >
-+              <Button size="small" variant="text" onClick={() => setDraft(d => ({ ...d, kpis: [...(d.kpis ?? []), { label: '', value: '', unit: '' }] }))}
-+                sx={{ fontSize: 11, p: '2px 6px', minWidth: 0, color: 'text.disabled', '&:hover': { color: 'primary.main' } }}>
-                 + KPI
-               </Button>
-             </Box>
--            {(draft.kpis ?? []).length === 0 && (
--              <Typography sx={{ fontSize: 11, color: 'rgba(255,255,255,0.2)', fontStyle: 'italic' }}>Nenhum KPI cadastrado.</Typography>
--            )}
-+            {(draft.kpis ?? []).length === 0 && <Typography sx={{ fontSize: 11, color: 'rgba(255,255,255,0.2)', fontStyle: 'italic' }}>Nenhum KPI cadastrado.</Typography>}
-             {(draft.kpis ?? []).map((k, i) => (
-               <Box key={i} sx={{ display: 'flex', gap: 0.75, mb: 0.75, alignItems: 'center' }}>
--                <TextField
--                  size="small" placeholder="Métrica"
--                  value={k.label}
-+                <TextField size="small" placeholder="Métrica" value={k.label}
-                   onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, label: e.target.value } : x) }))}
--                  sx={{ flex: 2, '& .MuiInputBase-root': { fontSize: 12 } }}
--                />
--                <TextField
--                  size="small" placeholder="Valor"
--                  value={k.value}
-+                  sx={{ flex: 2, '& .MuiInputBase-root': { fontSize: 12 } }} />
-+                <TextField size="small" placeholder="Valor" value={k.value}
-                   onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, value: e.target.value } : x) }))}
--                  sx={{ flex: 1, '& .MuiInputBase-root': { fontSize: 12 } }}
--                />
--                <TextField
--                  size="small" placeholder="Unid."
--                  value={k.unit ?? ''}
-+                  sx={{ flex: 1, '& .MuiInputBase-root': { fontSize: 12 } }} />
-+                <TextField size="small" placeholder="Unid." value={k.unit ?? ''}
-                   onChange={e => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).map((x, j) => j === i ? { ...x, unit: e.target.value } : x) }))}
--                  sx={{ width: 64, '& .MuiInputBase-root': { fontSize: 12 } }}
--                />
--                <IconButton
--                  size="small"
--                  onClick={() => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).filter((_, j) => j !== i) }))}
--                  sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0 }}
--                >
-+                  sx={{ width: 64, '& .MuiInputBase-root': { fontSize: 12 } }} />
-+                <IconButton size="small" onClick={() => setDraft(d => ({ ...d, kpis: (d.kpis ?? []).filter((_, j) => j !== i) }))}
-+                  sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0 }}>
-                   <DeleteRoundedIcon sx={{ fontSize: 14 }} />
-                 </IconButton>
-               </Box>
-             ))}
-           </Box>
-         )}
--
--        {/* Actions */}
-         <Box sx={{ display: 'flex', gap: 1, justifyContent: 'flex-end' }}>
--          <Button size="small" variant="outlined" onClick={() => setEditing(false)} sx={{ fontSize: 12, textTransform: 'none' }}>
--            Cancelar
--          </Button>
--          <Button size="small" variant="contained" onClick={handleSave} disabled={!draft.title.trim()} sx={{ fontSize: 12, textTransform: 'none' }}>
--            Salvar
--          </Button>
-+          <Button size="small" variant="outlined" onClick={() => setEditing(false)} sx={{ fontSize: 12, textTransform: 'none' }}>Cancelar</Button>
-+          <Button size="small" variant="contained" onClick={handleSave} disabled={!draft.title.trim()} sx={{ fontSize: 12, textTransform: 'none' }}>Salvar</Button>
-         </Box>
-       </Paper>
-     );
-   }
- 
--  // ── View mode ──
-   return (
-     <Paper elevation={0} sx={{ p: '12px 16px', display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-       <Box sx={{ mt: '2px', flexShrink: 0 }}>
-         {feature.implemented
-           ? <CheckCircleRoundedIcon sx={{ fontSize: 16, color: '#22c55e' }} />
--          : <RadioButtonUncheckedRoundedIcon sx={{ fontSize: 16, color: 'text.disabled' }} />
--        }
-+          : <RadioButtonUncheckedRoundedIcon sx={{ fontSize: 16, color: 'text.disabled' }} />}
-       </Box>
--
-       <Box sx={{ flex: 1, minWidth: 0 }}>
-         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap', mb: '4px' }}>
-           <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary' }}>{feature.title}</Typography>
-           <Chip label={feature.page} size="small" sx={{ fontSize: 10, height: 16, bgcolor: 'rgba(255,255,255,0.05)', color: 'text.disabled', border: 'none' }} />
--          {!feature.implemented && (
--            <Chip label="Planejado" size="small" sx={{ fontSize: 10, height: 16, bgcolor: 'rgba(255,197,0,0.06)', color: 'rgba(255,197,0,0.5)', border: '1px solid rgba(255,197,0,0.15)' }} />
--          )}
-+          {!feature.implemented && <Chip label="Planejado" size="small" sx={{ fontSize: 10, height: 16, bgcolor: 'rgba(255,197,0,0.06)', color: 'rgba(255,197,0,0.5)', border: '1px solid rgba(255,197,0,0.15)' }} />}
-         </Box>
-         <Typography sx={{ fontSize: 12, color: 'text.secondary', lineHeight: 1.6 }}>{feature.description}</Typography>
-         {(feature.kpis?.length ?? 0) > 0 && (
-@@ -590,9 +153,7 @@ function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave:
-             {feature.kpis!.map((k, i) => (
-               <Box key={i} sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: '3px' }}>
-                 <Typography sx={{ fontSize: 12, color: 'text.secondary', flex: 1 }}>{k.label}</Typography>
--                <Typography sx={{ fontSize: 12, fontWeight: 700, color: 'primary.main', fontFamily: 'monospace' }}>
--                  {k.value}{k.unit ? ` ${k.unit}` : ''}
--                </Typography>
-+                <Typography sx={{ fontSize: 12, fontWeight: 700, color: 'primary.main', fontFamily: 'monospace' }}>{k.value}{k.unit ? ` ${k.unit}` : ''}</Typography>
-               </Box>
-             ))}
-           </Box>
-@@ -600,16 +161,13 @@ function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave:
-         <Box sx={{ display: 'flex', gap: 0.75, mt: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-           {feature.roles.map(r => {
-             const rl = ROLES.find(x => x.value === r)?.label ?? r;
--            return (
--              <Chip key={r} label={rl} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r]}18`, color: ROLE_COLOR[r], border: `1px solid ${ROLE_COLOR[r]}44` }} />
--            );
-+            return <Chip key={r} label={rl} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[r]}18`, color: ROLE_COLOR[r], border: `1px solid ${ROLE_COLOR[r]}44` }} />;
-           })}
-           <Typography sx={{ fontSize: 10, color: 'text.disabled', ml: 'auto' }}>
-             {new Date(feature.addedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' })}
-           </Typography>
-         </Box>
-       </Box>
--
-       <Tooltip title="Editar">
-         <IconButton size="small" onClick={handleEdit} sx={{ color: 'text.disabled', '&:hover': { color: 'text.primary' }, flexShrink: 0, mt: '2px' }}>
-           <EditRoundedIcon sx={{ fontSize: 14 }} />
-@@ -618,3 +176,185 @@ function FeatureCard({ feature, onSave, isAdm }: { feature: RoleFeature; onSave:
-     </Paper>
-   );
- }
-+
-+// ─── FeaturesAdminTab ─────────────────────────────────────────────────────────
-+
-+export function FeaturesAdminTab() {
-+  const [features, setFeatures] = useState<RoleFeature[]>(() => loadFeatures());
-+  const [roleFilter, setRoleFilter] = useState<Role | 'all'>('all');
-+  const [pageFilter, setPageFilter] = useState<string | 'all'>('all');
-+
-+  const refreshFeatures = () => setFeatures(loadFeatures());
-+  const handleSaveFeature = (updated: RoleFeature) => { saveFeature(updated); refreshFeatures(); };
-+
-+  const usedPages = new Set(features.map(f => f.page));
-+  const pagePages = PAGE_CATEGORIES.filter(c => usedPages.has(c.label));
-+  const filtered = features.filter(f => {
-+    const matchRole = roleFilter === 'all' || f.roles.includes(roleFilter);
-+    const matchPage = pageFilter === 'all' || f.page === pageFilter;
-+    return matchRole && matchPage;
-+  });
-+  const byRole = ROLES.map(r => ({ ...r, features: features.filter(f => f.roles.includes(r.value)) })).filter(r => r.features.length > 0);
-+
-+  return (
-+    <Box>
-+      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
-+        <Box>
-+          <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Funcionalidades por Função</Typography>
-+          <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>Lista de recursos exclusivos ou diferenciados por setor. Clique em editar para ajustar.</Typography>
-+        </Box>
-+        <Chip label={`${features.filter(f => f.implemented).length} / ${features.length} implementadas`} size="small"
-+          sx={{ bgcolor: 'rgba(255,197,0,0.08)', color: '#ffc500', border: '1px solid rgba(255,197,0,0.2)', fontSize: 11, fontWeight: 600 }} />
-+      </Box>
-+
-+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
-+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-+          <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Função:</Typography>
-+          <Chip label="Todas" size="small" onClick={() => setRoleFilter('all')}
-+            sx={{ fontSize: 11, fontWeight: 600, bgcolor: roleFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent', borderColor: roleFilter === 'all' ? 'rgba(255,255,255,0.3)' : 'divider', color: roleFilter === 'all' ? 'text.primary' : 'text.disabled', border: '1px solid' }} />
-+          {ROLES.map(r => (
-+            <Chip key={r.value} label={r.label} size="small" onClick={() => setRoleFilter(roleFilter === r.value ? 'all' : r.value)}
-+              sx={{ fontSize: 11, fontWeight: 600, bgcolor: roleFilter === r.value ? `${ROLE_COLOR[r.value]}22` : 'transparent', borderColor: roleFilter === r.value ? ROLE_COLOR[r.value] : 'divider', color: roleFilter === r.value ? ROLE_COLOR[r.value] : 'text.disabled', border: '1px solid', '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] } }} />
-+          ))}
-+        </Box>
-+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-+          <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Categoria:</Typography>
-+          <Chip label="Todas" size="small" onClick={() => setPageFilter('all')}
-+            sx={{ fontSize: 11, bgcolor: pageFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent', borderColor: pageFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider', color: pageFilter === 'all' ? 'text.secondary' : 'text.disabled', border: '1px solid' }} />
-+          {pagePages.map(cat => (
-+            <Chip key={cat.value} label={cat.label} size="small" onClick={() => setPageFilter(pageFilter === cat.label ? 'all' : cat.label)}
-+              sx={{ fontSize: 11, fontWeight: 600, bgcolor: pageFilter === cat.label ? `${cat.color}20` : 'transparent', borderColor: pageFilter === cat.label ? cat.color : 'divider', color: pageFilter === cat.label ? cat.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: cat.color, color: cat.color } }} />
-+          ))}
-+        </Box>
-+      </Box>
-+
-+      {filtered.length === 0 ? (
-+        <Typography sx={{ fontSize: 13, color: 'text.disabled', fontStyle: 'italic' }}>Nenhuma funcionalidade encontrada para os filtros selecionados.</Typography>
-+      ) : roleFilter === 'all' ? (
-+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-+          {byRole.filter(r => pageFilter === 'all' || r.features.some(f => f.page === pageFilter)).map(r => (
-+            <Box key={r.value}>
-+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
-+                <Box sx={{ width: 10, height: 10, borderRadius: '50%', bgcolor: ROLE_COLOR[r.value], flexShrink: 0 }} />
-+                <Typography sx={{ fontSize: 11, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1px', color: ROLE_COLOR[r.value] }}>{r.label}</Typography>
-+                <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>· {r.features.filter(f => pageFilter === 'all' || f.page === pageFilter).length} item(s)</Typography>
-+              </Box>
-+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-+                {r.features.filter(f => pageFilter === 'all' || f.page === pageFilter).map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={true} />)}
-+              </Box>
-+            </Box>
-+          ))}
-+        </Box>
-+      ) : (
-+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-+          {filtered.map(f => <FeatureCard key={f.id} feature={f} onSave={handleSaveFeature} isAdm={true} />)}
-+        </Box>
-+      )}
-+    </Box>
-+  );
-+}
-+
-+// ─── PendenciasTab ────────────────────────────────────────────────────────────
-+
-+export function PendenciasTab() {
-+  const [lista, setLista] = useState<ListaItem[]>(() => loadLista());
-+  const [listaRoleFilter, setListaRoleFilter] = useState<Role | 'all'>('all');
-+  const [listaCatFilter, setListaCatFilter] = useState<string | 'all'>('all');
-+
-+  const refreshLista = () => setLista(loadLista());
-+
-+  const listaFiltrada = lista.filter(i => {
-+    const matchRole = listaRoleFilter === 'all' || i.role === listaRoleFilter;
-+    const matchCat = listaCatFilter === 'all' || i.categoria === listaCatFilter;
-+    return matchRole && matchCat;
-+  });
-+  const listaUsedCategories = PAGE_CATEGORIES.filter(c => lista.some(i => i.categoria === c.value));
-+  const listaRolesUsed = ROLES.filter(r => lista.some(i => i.role === r.value));
-+  const donePct = lista.length > 0 ? Math.round((lista.filter(i => i.done).length / lista.length) * 100) : 0;
-+
-+  return (
-+    <Box>
-+      <Box sx={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', mb: 2.5, flexWrap: 'wrap', gap: 1.5 }}>
-+        <Box>
-+          <Typography sx={{ fontSize: 14, fontWeight: 700, color: 'text.primary', mb: '4px' }}>Backlog de Pendências</Typography>
-+          <Typography sx={{ fontSize: 12, color: 'text.disabled' }}>Sugestões marcadas para acompanhamento. Marque como concluídas conforme forem implementadas.</Typography>
-+        </Box>
-+        {lista.length > 0 && (
-+          <Chip label={`${lista.filter(i => i.done).length} / ${lista.length} concluídas (${donePct}%)`} size="small"
-+            sx={{ bgcolor: 'rgba(34,197,94,0.08)', color: '#22c55e', border: '1px solid rgba(34,197,94,0.2)', fontSize: 11, fontWeight: 600 }} />
-+        )}
-+      </Box>
-+
-+      {lista.length > 0 && (
-+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 3 }}>
-+          <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-+            <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Função:</Typography>
-+            <Chip label={`Todas (${lista.length})`} size="small" onClick={() => setListaRoleFilter('all')}
-+              sx={{ fontSize: 11, fontWeight: 600, bgcolor: listaRoleFilter === 'all' ? 'rgba(255,255,255,0.1)' : 'transparent', borderColor: listaRoleFilter === 'all' ? 'rgba(255,255,255,0.25)' : 'divider', color: listaRoleFilter === 'all' ? 'text.primary' : 'text.disabled', border: '1px solid' }} />
-+            {listaRolesUsed.map(r => (
-+              <Chip key={r.value} label={`${r.label} (${lista.filter(i => i.role === r.value).length})`} size="small"
-+                onClick={() => setListaRoleFilter(listaRoleFilter === r.value ? 'all' : r.value)}
-+                sx={{ fontSize: 11, fontWeight: 600, bgcolor: listaRoleFilter === r.value ? `${ROLE_COLOR[r.value]}20` : 'transparent', borderColor: listaRoleFilter === r.value ? ROLE_COLOR[r.value] : 'divider', color: listaRoleFilter === r.value ? ROLE_COLOR[r.value] : 'text.disabled', border: '1px solid', '&:hover': { borderColor: ROLE_COLOR[r.value], color: ROLE_COLOR[r.value] } }} />
-+            ))}
-+          </Box>
-+          {listaUsedCategories.length > 0 && (
-+            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', alignItems: 'center' }}>
-+              <Typography sx={{ fontSize: 11, color: 'text.disabled', mr: '2px', minWidth: 60 }}>Categoria:</Typography>
-+              <Chip label="Todas" size="small" onClick={() => setListaCatFilter('all')}
-+                sx={{ fontSize: 11, bgcolor: listaCatFilter === 'all' ? 'rgba(255,255,255,0.07)' : 'transparent', borderColor: listaCatFilter === 'all' ? 'rgba(255,255,255,0.2)' : 'divider', color: listaCatFilter === 'all' ? 'text.secondary' : 'text.disabled', border: '1px solid' }} />
-+              {listaUsedCategories.map(c => (
-+                <Chip key={c.value} label={c.label} size="small" onClick={() => setListaCatFilter(listaCatFilter === c.value ? 'all' : c.value)}
-+                  sx={{ fontSize: 11, fontWeight: 600, bgcolor: listaCatFilter === c.value ? `${c.color}20` : 'transparent', borderColor: listaCatFilter === c.value ? c.color : 'divider', color: listaCatFilter === c.value ? c.color : 'text.disabled', border: '1px solid', '&:hover': { borderColor: c.color, color: c.color } }} />
-+              ))}
-+            </Box>
-+          )}
-+        </Box>
-+      )}
-+
-+      {listaFiltrada.length === 0 ? (
-+        <Box sx={{ textAlign: 'center', py: 6 }}>
-+          <FormatListBulletedRoundedIcon sx={{ fontSize: 36, color: 'text.disabled', mb: 1.5, opacity: 0.4 }} />
-+          <Typography sx={{ fontSize: 13, color: 'text.disabled' }}>
-+            {lista.length === 0 ? 'Nenhuma pendência ainda. Marque sugestões com o bookmark na aba Sugestões.' : 'Nenhum item para esse filtro.'}
-+          </Typography>
-+        </Box>
-+      ) : (
-+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-+          {listaFiltrada.map(item => {
-+            const rl = ROLES.find(r => r.value === item.role);
-+            const catColor = item.categoria ? getCategoryColor(item.categoria) : null;
-+            const catLabel = item.categoria ? getCategoryLabel(item.categoria) : null;
-+            const date = new Date(item.addedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
-+            return (
-+              <Paper key={item.id} elevation={0} sx={{ p: '12px 16px', display: 'flex', gap: 1.5, alignItems: 'flex-start', opacity: item.done ? 0.5 : 1, transition: 'opacity .2s' }}>
-+                <Checkbox checked={item.done} onChange={() => { toggleListaItem(item.id); refreshLista(); }} size="small"
-+                  sx={{ p: '2px', mt: '1px', flexShrink: 0, color: 'text.disabled', '&.Mui-checked': { color: '#22c55e' } }} />
-+                <Box sx={{ flex: 1, minWidth: 0 }}>
-+                  {item.title && (
-+                    <Typography sx={{ fontSize: 13, fontWeight: 700, color: 'text.primary', mb: '4px', textDecoration: item.done ? 'line-through' : 'none' }}>
-+                      {item.title}
-+                    </Typography>
-+                  )}
-+                  <Typography sx={{ fontSize: 13, color: item.title ? 'text.secondary' : 'text.primary', lineHeight: 1.7, whiteSpace: 'pre-wrap', wordBreak: 'break-word', textDecoration: item.done ? 'line-through' : 'none' }}>
-+                    {item.texto}
-+                  </Typography>
-+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: '6px', flexWrap: 'wrap' }}>
-+                    <Chip label={rl?.label ?? item.role} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${ROLE_COLOR[item.role]}18`, color: ROLE_COLOR[item.role], border: `1px solid ${ROLE_COLOR[item.role]}44`, fontWeight: 600 }} />
-+                    {catLabel && catColor && <Chip label={catLabel} size="small" sx={{ fontSize: 10, height: 18, bgcolor: `${catColor}18`, color: catColor, border: `1px solid ${catColor}44`, fontWeight: 600 }} />}
-+                    {item.userName && <Typography sx={{ fontSize: 11, fontWeight: 600, color: 'text.secondary' }}>{item.userName}</Typography>}
-+                    <Typography sx={{ fontSize: 11, color: 'text.disabled' }}>{date}</Typography>
-+                  </Box>
-+                </Box>
-+                <Tooltip title="Remover da lista">
-+                  <IconButton size="small" onClick={() => { removeFromLista(item.id); refreshLista(); }} sx={{ color: 'text.disabled', '&:hover': { color: '#ef4444' }, flexShrink: 0, mt: '2px' }}>
-+                    <DeleteRoundedIcon sx={{ fontSize: 15 }} />
-+                  </IconButton>
-+                </Tooltip>
-+              </Paper>
-+            );
-+          })}
-+        </Box>
-+      )}
-+    </Box>
-+  );
-+}
-diff --git a/src/pages/Documentacao/ApontamentoHoras.tsx b/src/pages/Documentacao/ApontamentoHoras.tsx
-new file mode 100644
-index 0000000..ebee4d1
---- /dev/null
-+++ b/src/pages/Documentacao/ApontamentoHoras.tsx
-@@ -0,0 +1,1376 @@
-+import { useState, useEffect } from 'react';
-+import Box from '@mui/material/Box';
-+import Paper from '@mui/material/Paper';
-+import Typography from '@mui/material/Typography';
-+import Button from '@mui/material/Button';
-+import IconButton from '@mui/material/IconButton';
-+import TextField from '@mui/material/TextField';
-+import Select from '@mui/material/Select';
-+import MenuItem from '@mui/material/MenuItem';
-+import Dialog from '@mui/material/Dialog';
-+import DialogTitle from '@mui/material/DialogTitle';
-+import DialogContent from '@mui/material/DialogContent';
-+import DialogActions from '@mui/material/DialogActions';
-+import FormControl from '@mui/material/FormControl';
-+import InputLabel from '@mui/material/InputLabel';
-+import Snackbar from '@mui/material/Snackbar';
-+import Alert from '@mui/material/Alert';
-+import Tooltip from '@mui/material/Tooltip';
-+import ExcelJS from 'exceljs';
-+import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
-+import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-+import FileDownloadRoundedIcon from '@mui/icons-material/FileDownloadRounded';
-+import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
-+import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
-+import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
-+import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-+import AddRoundedIcon from '@mui/icons-material/AddRounded';
-+import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
-+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
-+import EditRoundedIcon from '@mui/icons-material/EditRounded';
-+import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
-+import HistoryRoundedIcon from '@mui/icons-material/HistoryRounded';
-+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
-+import TableChartRoundedIcon from '@mui/icons-material/TableChartRounded';
-+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-+
-+// ─── Types ────────────────────────────────────────────────────────────────────
-+interface ApontProfile {
-+  nome: string;
-+  recurso: string;
-+  atividade: string;
-+  faseControladora: string;
-+}
-+
-+interface ApontProject {
-+  id: number;
-+  nome: string;
-+  ativo: boolean;
-+}
-+
-+interface Bloco { ini: number; fim: number; }
-+
-+interface Atividade {
-+  id: number;
-+  projetoId: number;
-+  descricao: string;
-+  peso: number;
-+  ordem: number;
-+  blocos: Bloco[];
-+  ajustada: boolean;
-+}
-+
-+type DayTipo = 'NORMAL' | 'FERIADO' | 'FERIAS' | 'ATESTADO' | 'FOLGA' | 'CUSTOM';
-+
-+interface DayData {
-+  tipo: DayTipo;
-+  cargaCustom?: number;
-+  atividades: Atividade[];
-+}
-+
-+interface ApontState {
-+  profile: ApontProfile;
-+  projects: ApontProject[];
-+  nextProjId: number;
-+  nextActId: number;
-+  days: Record<string, DayData>;
-+  exports: Record<string, string>;
-+}
-+
-+interface ApontHistoryEntry {
-+  id: string;
-+  userName: string;
-+  weekKey: string;
-+  weekNum: number;
-+  weekYear: number;
-+  mondayISO: string;
-+  weekLabel: string;
-+  exportedAt: string;
-+  contentHash: string;
-+  daysSnapshot: Record<string, DayData>;
-+  projectsSnapshot: ApontProject[];
-+  profile: ApontProfile;
-+}
-+
-+// ─── Constants ────────────────────────────────────────────────────────────────
-+const LUNCH = { ini: 11.5 * 60, fim: 12.5 * 60 };
-+const JORNADA: Record<number, { ini: number; fim: number }> = {
-+  1: { ini: 480, fim: 1080 }, 2: { ini: 480, fim: 1080 },
-+  3: { ini: 480, fim: 1080 }, 4: { ini: 480, fim: 1080 },
-+  5: { ini: 480, fim: 1020 },
-+};
-+const GRAN = 30;
-+const TIPOS_OFF: DayTipo[] = ['FERIADO', 'FERIAS', 'ATESTADO', 'FOLGA'];
-+const TIPO_LABEL: Record<string, string> = {
-+  FERIADO: 'Feriado', FERIAS: 'Férias', ATESTADO: 'Atestado',
-+  FOLGA: 'Folga', CUSTOM: 'Jornada customizada',
-+};
-+const DOW_SHORT = ['SEG', 'TER', 'QUA', 'QUI', 'SEX'];
-+const DOW_FULL = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira'];
-+
-+const PROJ_COLORS: [string, string][] = [
-+  ['rgba(47,93,138,0.20)', '#7EB3E0'],
-+  ['rgba(46,125,91,0.20)', '#6DCCA0'],
-+  ['rgba(255,197,0,0.15)', '#FFC500'],
-+  ['rgba(138,61,105,0.20)', '#E090C0'],
-+  ['rgba(87,79,160,0.20)', '#A89FE0'],
-+  ['rgba(92,102,80,0.20)', '#A0B090'],
-+  ['rgba(161,78,44,0.20)', '#E09070'],
-+  ['rgba(34,112,122,0.20)', '#70C0CA'],
-+];
-+
-+const STATUS_DOT: Record<string, string> = {
-+  vazio: '#555', rascunho: '#FFC500', distribuido: '#6DCCA0', ajustado: '#7EB3E0',
-+};
-+
-+// ─── Date helpers ─────────────────────────────────────────────────────────────
-+function mondayOf(d: Date): Date {
-+  const x = new Date(d.getFullYear(), d.getMonth(), d.getDate());
-+  x.setDate(x.getDate() - (x.getDay() + 6) % 7);
-+  return x;
-+}
-+
-+function isoWeek(d: Date): { week: number; year: number } {
-+  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-+  const day = (date.getUTCDay() + 6) % 7;
-+  date.setUTCDate(date.getUTCDate() - day + 3);
-+  const firstThu = new Date(Date.UTC(date.getUTCFullYear(), 0, 4));
-+  firstThu.setUTCDate(firstThu.getUTCDate() - (firstThu.getUTCDay() + 6) % 7 + 3);
-+  return { week: 1 + Math.round((date.getTime() - firstThu.getTime()) / (7 * 864e5)), year: date.getUTCFullYear() };
-+}
-+
-+function fmtKey(d: Date): string {
-+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-+}
-+
-+function addDays(d: Date, n: number): Date {
-+  const x = new Date(d); x.setDate(x.getDate() + n); return x;
-+}
-+
-+function fmtBR(d: Date): string {
-+  return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}/${d.getFullYear()}`;
-+}
-+
-+function fmtShort(d: Date): string {
-+  return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
-+}
-+
-+function hm(min: number): string {
-+  return `${String(Math.floor(min / 60)).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
-+}
-+
-+function hms(min: number): string { return hm(min) + ':00'; }
-+
-+function durFmt(min: number): string {
-+  const h = Math.floor(min / 60), m = min % 60;
-+  return m ? `${h}h${String(m).padStart(2, '0')}` : `${h}h`;
-+}
-+
-+function getInitials(name: string): string {
-+  const p = name.trim().split(/\s+/);
-+  return p.length === 1 ? p[0].slice(0, 2).toUpperCase() : (p[0][0] + '.' + p[p.length - 1][0]).toUpperCase();
-+}
-+
-+function weekDates(monday: Date): Date[] { return [0, 1, 2, 3, 4].map(i => addDays(monday, i)); }
-+function wkKey(monday: Date): string { const w = isoWeek(monday); return `${w.year}-S${w.week}`; }
-+
-+// ─── Domain helpers ───────────────────────────────────────────────────────────
-+function cargaMin(dateObj: Date, day: DayData): number {
-+  if (TIPOS_OFF.includes(day.tipo)) return 0;
 ```
 
 _Diff limitado a 2000 linhas. Para ver tudo: `git diff snapshot/2026-06-16 upstream/main`_
