@@ -1,8 +1,6 @@
 # Radar Neural — Claude Code
 
-- [[MOC-Perfil]]
-- [[MOC-Habilidades]]
-- [[MOC-Portfolio]]
-- [[Nexus]]
-- [[MOC-Oferta]]
-- [[_ROUTING]]
+- [[index.html]]
+- [[app.js]]
+- [[app.css]]
+- [[quill.bubble.css]]
