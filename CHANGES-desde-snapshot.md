@@ -1,6 +1,6 @@
 # Mudancas desde snapshot de 16/06/2026
 
-> Ultimo sync: 04/07/2026 13:27
+> Ultimo sync: 10/07/2026 20:58
 > Fork: [daia85-prog/nexus-ecossystem](https://github.com/daia85-prog/nexus-ecossystem)
 > Original: [RaphaelCerri/nexus-ecossystem](https://github.com/RaphaelCerri/nexus-ecossystem)
 
@@ -9,6 +9,7 @@
 ## Commits do Raphael desde o snapshot
 
 ```
+85dd725 a lot
 1abdcf1 muitas alterações
 2927ebf arrumação geral das infos
 ed0d885 ED agora faz integrações e teve a ordenação corrigida
@@ -41,13 +42,15 @@ b8c1bf4 alterações no ED
  .obsidian/plugins/obsidian-local-rest-api/main.js  | 87229 +++++++++++++++++++
  .../plugins/obsidian-local-rest-api/manifest.json  |    10 +
  .../plugins/obsidian-local-rest-api/styles.css     |    55 +
- .obsidian/workspace.json                           |    91 +-
+ .obsidian/workspace.json                           |    99 +-
  BACKLOG.md                                         |    65 +-
  NEXUS_FEATURES.md                                  |    19 +-
  NEXUS_PLANO.md                                     |     4 +-
  README.md                                          |   134 +-
  ROADMAP_MINERACAO.md                               |   122 +
- Radar_Claude.md                                    |     8 +
+ Radar_Claude.md                                    |     6 +
+ .../login.png                                      |   Bin 0 -> 16696 bytes
+ .../signup.png                                     |   Bin 0 -> 18223 bytes
  _VALIDACAO_HEADINGS.txt                            |  2432 +
  corpus-conhecimento/.obsidian/app.json             |     1 +
  corpus-conhecimento/.obsidian/appearance.json      |     1 +
@@ -366,8 +369,10 @@ b8c1bf4 alterações no ED
  src/pages/Documentacao/index.tsx                   |    16 +-
  src/pages/KickoffPage.tsx                          |    27 +-
  src/pages/LoginPage.tsx                            |    14 +-
+ undefined/login.png                                |   Bin 0 -> 16696 bytes
+ undefined/signup.png                               |   Bin 0 -> 18223 bytes
  vite.config.ts                                     |     7 +
- 337 files changed, 149558 insertions(+), 685 deletions(-)
+ 341 files changed, 149560 insertions(+), 689 deletions(-)
 ```
 
 ---
