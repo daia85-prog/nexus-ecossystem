@@ -16,7 +16,7 @@ O Auditor **não é um revisor de forma** — não verifica gramática, estilo o
 
 ```
 1. ED gera todos os capítulos internamente (sem emitir o JSON ainda)
-2. ED executa as 6 categorias de auditoria sobre o conjunto
+2. ED executa as 8 categorias de auditoria sobre o conjunto
 3. ED classifica cada achado como:
    ─ ⚡ GAP Confirmado  (conflito real, decisão obrigatória do usuário)
    ─ ⚠️ Dúvida Leve    (inconsistência possível, mas o ED já tem uma proposta)
@@ -97,9 +97,30 @@ Uma condicional foi ativada pelo kickoff mas o conteúdo gerado não diferencia 
 **Exemplos de GAP:**
 - `cf_t1` inclui `conf_blind` (conferência cega) mas o texto gerado não menciona que o WCS omite as quantidades esperadas do operador.
 - `es3 = yes` (reabastecimento pelo sorter) mas o capítulo de Reabastecimento não descreve como o volume de reabastecimento transita pelo sorter.
-- `pt_frag = yes` (matriz de fragilidade) mas PTL-Alocação não menciona o critério de restrição por fragilidade.
+- `pt_frag = yes` (matriz de fragilidade) mas PTL-Alocação não menciona o critério de restrição por fragilidade — **atenção:** o CARD sinaliza ambiguidade de escopo aqui (separação de categoria × ordem de empilhamento); não afirme uma interpretação sem confirmação, gere GAP.
 
 **Como reportar:** campo/valor do kickoff, condicional esperada, diferença ausente no texto.
+
+---
+
+### CAT-07 — Pré-requisito Ausente
+Um capítulo descreve uma funcionalidade que depende de hardware, sistema ou definição que o kickoff/Master Data marca como inexistente, `tbd` ou `N/A`.
+
+**Exemplos de GAP:**
+- Capítulo descreve login/autenticação do operador via PDV, mas `p_pdv = no` ou o Master Data diz que não há PDV no projeto.
+- Capítulo assume impressora dedicada numa estação, mas o campo de impressora correspondente está `tbd` ou `no`.
+- Capítulo descreve um fluxo que depende de um sistema (`g5`, `in1`) que está `tbd` no kickoff.
+
+**Como reportar:** funcionalidade descrita, campo do kickoff/Master Data que a contradiz, valor encontrado.
+
+---
+
+### CAT-08 — Validação JSON↔Tabela
+Verificação determinística: todo campo presente em um `json_block` de payload de integração deve ter uma linha correspondente na tabela de campos da mesma interface, e vice-versa. Toda interface mencionada no capítulo de visão geral de Integração deve ter seu `json_block` + tabela completos (ou um GAP explícito registrando a ausência).
+
+**Como verificar:** para cada capítulo de integração, liste os campos citados em cada `json_block` e compare com as linhas da tabela `["Campo", "Descrição", "Tipo", "Obrigatório", "Tamanho"]` imediatamente seguinte. Divergência em qualquer direção é GAP Confirmado (categoria determinística — não depende de heurística).
+
+**Como reportar:** interface afetada, campo(s) presentes no JSON e ausentes na tabela (ou o inverso).
 
 ---
 
@@ -162,15 +183,19 @@ O Auditor retorna o relatório **antes** do `input_json`. Estrutura:
 
 2. **Reporte TODOS os GAPs encontrados** — não filtre por "importância". O usuário definiu que quer ver os 10 GAPs, não só os críticos. Dúvidas leves leves também são reportadas (separadas).
 
-3. **Seja preciso na localização** — cite sempre: campo do kickoff envolvido (ex: `st7`), capítulo afetado (ex: "Cross-Check"), e número do heading no JSON gerado (ex: "seção 4.2").
+3. **Force toda pendência `tbd`/"a definir"/"avaliar" a virar GAP visível, nunca `[OBS INTERNA]`.** Se, ao revisar os capítulos, o Auditor encontrar qualquer `[OBS INTERNA]` que na verdade descreve uma pendência de conteúdo (dado faltante, decisão do cliente/operação) em vez de uma nota de revisão pura, isso é um GAP Confirmado por si só: a categoria correta é "canal errado" — a correção é converter para `{ "tipo": "warning", "texto": "GAP: ..." }` antes de emitir o JSON final. Esse é o erro que motivou a criação do Auditor: pendências viradas `[OBS INTERNA]` somem do documento e o Auditor declara "nenhum GAP" por engano.
 
-4. **Ofereça exatamente 2 opções por GAP** — nada mais. Opção A e B devem ser mutuamente exclusivas e cobrir os casos mais prováveis. Se houver mais variações, agrupe nas 2.
+4. **Se houver Master Data anexado**, use-o como fonte de verdade para a categoria CAT-05 (Contradição Direta) — qualquer capítulo que contradiga escopo, capacidade ou responsabilidade descrita no Master Data é GAP Confirmado, mesmo que o kickoff ou a transcrição sugiram outra coisa.
 
-5. **Dúvidas Leves têm proposta padrão (A)** — se o usuário disser "aceito todas as dúvidas leves", o ED aplica todas as opções A sem precisar de mais input.
+5. **Seja preciso na localização** — cite sempre: campo do kickoff envolvido (ex: `st7`), capítulo afetado (ex: "Cross-Check"), e número do heading no JSON gerado (ex: "seção 4.2").
 
-6. **Após receber as decisões** — o ED regera o `input_json` **completo**, incorporando todas as correções. Não emite parcialmente.
+6. **Ofereça exatamente 2 opções por GAP** — nada mais. Opção A e B devem ser mutuamente exclusivas e cobrir os casos mais prováveis. Se houver mais variações, agrupe nas 2.
 
-7. **Mínimo de auditoria** — mesmo que não encontre nenhum GAP, o ED declara explicitamente: "Auditoria concluída. Nenhum GAP identificado." antes de emitir o JSON.
+7. **Dúvidas Leves têm proposta padrão (A)** — se o usuário disser "aceito todas as dúvidas leves", o ED aplica todas as opções A sem precisar de mais input.
+
+8. **Após receber as decisões** — o ED regera o `input_json` **completo**, incorporando todas as correções. Não emite parcialmente.
+
+9. **Mínimo de auditoria** — mesmo que não encontre nenhum GAP, o ED declara explicitamente: "Auditoria concluída. Nenhum GAP identificado." antes de emitir o JSON.
 
 ---
 
