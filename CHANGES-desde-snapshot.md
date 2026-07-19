@@ -1,6 +1,6 @@
 # Mudancas desde snapshot de 16/06/2026
 
-> Ultimo sync: 10/07/2026 20:58
+> Ultimo sync: 19/07/2026 12:24
 > Fork: [daia85-prog/nexus-ecossystem](https://github.com/daia85-prog/nexus-ecossystem)
 > Original: [RaphaelCerri/nexus-ecossystem](https://github.com/RaphaelCerri/nexus-ecossystem)
 
@@ -9,6 +9,8 @@
 ## Commits do Raphael desde o snapshot
 
 ```
+475ac26 .
+9aaa380 mta coisa
 85dd725 a lot
 1abdcf1 muitas alterações
 2927ebf arrumação geral das infos
@@ -42,7 +44,7 @@ b8c1bf4 alterações no ED
  .obsidian/plugins/obsidian-local-rest-api/main.js  | 87229 +++++++++++++++++++
  .../plugins/obsidian-local-rest-api/manifest.json  |    10 +
  .../plugins/obsidian-local-rest-api/styles.css     |    55 +
- .obsidian/workspace.json                           |    99 +-
+ .obsidian/workspace.json                           |    93 +-
  BACKLOG.md                                         |    65 +-
  NEXUS_FEATURES.md                                  |    19 +-
  NEXUS_PLANO.md                                     |     4 +-
@@ -266,6 +268,7 @@ b8c1bf4 alterações no ED
  .../blocos/sistema/infraestrutura/DOSSIE.md        |    71 +
  .../sistema/infraestrutura/infraestrutura.md       |    38 +
  .../insights/infraestrutura.INSIGHTS.md            |    32 +
+ corpus-conhecimento/cards/CARD_autenticacao.md     |   161 +
  .../cards/CARD_cadastros-acessos.md                |   218 +
  .../cards/CARD_cancelamento-pedidos.md             |   170 +
  .../cards/CARD_checklist-carregamento.md           |   152 +
@@ -289,7 +292,7 @@ b8c1bf4 alterações no ED
  corpus-conhecimento/cards/CARD_picking-fullcase.md |   204 +
  corpus-conhecimento/cards/CARD_picking-pallet.md   |   174 +
  corpus-conhecimento/cards/CARD_picking-pbl.md      |   226 +
- corpus-conhecimento/cards/CARD_ptl-alocacao.md     |   184 +
+ corpus-conhecimento/cards/CARD_ptl-alocacao.md     |   186 +
  corpus-conhecimento/cards/CARD_ptm.md              |   167 +
  corpus-conhecimento/cards/CARD_put-to-wall.md      |   141 +
  corpus-conhecimento/cards/CARD_reabastecimento.md  |   168 +
@@ -299,9 +302,9 @@ b8c1bf4 alterações no ED
  corpus-conhecimento/cards/CARD_sorter-mapa-rota.md |   205 +
  corpus-conhecimento/cards/CARD_sorter-rejeito.md   |   214 +
  corpus-conhecimento/cards/CARD_sorter.md           |   202 +
- corpus-conhecimento/cards/JSON_DOCS.md             |   538 +
- corpus-conhecimento/cards/PROMPT_ED.md             |   234 +
- corpus-conhecimento/cards/_AUDITOR.md              |   223 +
+ corpus-conhecimento/cards/JSON_DOCS.md             |   541 +
+ corpus-conhecimento/cards/PROMPT_ED.md             |   286 +
+ corpus-conhecimento/cards/_AUDITOR.md              |   248 +
  corpus-conhecimento/cards/_KICKOFF_FIELDS.md       |    91 +
  corpus-conhecimento/corpus-full.jsonl              |  1344 +
  .../relatorio-auditoria-links-resolvidos.md        |    64 +
@@ -357,7 +360,7 @@ b8c1bf4 alterações no ED
  public/ES_PLACEHOLDER_v7.docx                      |   Bin 6904976 -> 6922109 bytes
  src/App.tsx                                        |    53 +-
  src/components/Sidebar.tsx                         |    82 +-
- src/lib/docxBuilder.ts                             |    74 +-
+ src/lib/docxBuilder.ts                             |    49 +-
  src/lib/featureRegistry.ts                         |     9 +
  src/lib/kickoffMeta.ts                             |     4 +-
  src/lib/pageCategories.ts                          |     1 -
@@ -372,7 +375,7 @@ b8c1bf4 alterações no ED
  undefined/login.png                                |   Bin 0 -> 16696 bytes
  undefined/signup.png                               |   Bin 0 -> 18223 bytes
  vite.config.ts                                     |     7 +
- 341 files changed, 149560 insertions(+), 689 deletions(-)
+ 342 files changed, 149754 insertions(+), 707 deletions(-)
 ```
 
 ---
@@ -652,7 +655,7 @@ index 8769bd7..24bbf7a 100644
                <Box
                  sx={{
 diff --git a/src/lib/docxBuilder.ts b/src/lib/docxBuilder.ts
-index ce815a1..46fd094 100644
+index ce815a1..9640689 100644
 --- a/src/lib/docxBuilder.ts
 +++ b/src/lib/docxBuilder.ts
 @@ -71,6 +71,8 @@ function xe(text: unknown): string {
@@ -664,92 +667,113 @@ index ce815a1..46fd094 100644
    return xml.replace(/\{\{[^{}]{1,60}\}\}/g, (m) => m.replace(/<[^>]+>/g, ''));
  }
  
-@@ -494,7 +496,68 @@ function injectBody(docXml: string, bodyXml: string): string {
+@@ -278,16 +280,6 @@ function firstNameOf(fullName: string): string {
+   return fullName.trim().split(/\s+/)[0] ?? fullName.trim();
+ }
+ 
+-// Detecta se uma tabela é a tabela de stakeholders/participantes do projeto
+-function isStakeholdersTable(headers: string[]): boolean {
+-  const h = headers.join(' ').toLowerCase();
+-  return (
+-    h.includes('participante') ||
+-    h.includes('stakeholder') ||
+-    (h.includes('função') && h.includes('empresa'))
+-  );
+-}
+-
+ // ─── Body builder ─────────────────────────────────────────────────────────────
+ 
+ // Parágrafo de direção de integração: "Direção: X → Y"
+@@ -362,7 +354,6 @@ function estSectionLines(caps: Capitulo[], fromIndex: number): number {
+ 
+ function buildBodyXml(
+   capitulos: Capitulo[],
+-  userInfo?: UserInfo,
+ ): { bodyXml: string; internalsRemoved: string[] } {
+   const parts: string[]    = [];
+   const internals: string[] = [];
+@@ -426,13 +417,10 @@ function buildBodyXml(
+         internals.push(headers.join(' | '));
+         continue;
+       }
+-      let rows = allRows.filter(r => {
++      const rows = allRows.filter(r => {
+         if (r.some(v => INTERNAL_RE.test(v))) { internals.push(r.join(' | ')); return false; }
+         return true;
+       });
+-      if (isStakeholdersTable(headers) && userInfo) {
+-        rows = [[userInfo.name, 'Analista de negócios', 'Invent Smart'], ...rows];
+-      }
+       if (headers.length || rows.length) {
+         parts.push(xmlTable(headers, rows));
+         totalLines += 1.5 + rows.length;
+@@ -494,7 +482,7 @@ function injectBody(docXml: string, bodyXml: string): string {
    const fim = paraBounds(docXml, ANCHOR_END);
    if (!ini || !fim) throw new Error(`Âncoras ${ANCHOR_START}/${ANCHOR_END} não encontradas no template.`);
    if (ini[0] >= fim[0]) throw new Error('Ordem das âncoras inválida no template.');
 -  return docXml.slice(0, ini[0]) + bodyXml + xmlPageBreak() + docXml.slice(fim[1]);
 +  return docXml.slice(0, ini[0]) + bodyXml + docXml.slice(fim[1]);
-+}
-+
-+function titulo1Headings(xml: string): Array<{ pStart: number; text: string }> {
-+  const out: Array<{ pStart: number; text: string }> = [];
-+  const re = /<w:pStyle w:val="Ttulo1"\s*\/>/g;
-+  let m: RegExpExecArray | null;
-+  while ((m = re.exec(xml)) !== null) {
-+    const pStart = Math.max(xml.lastIndexOf('<w:p ', m.index), xml.lastIndexOf('<w:p>', m.index));
-+    const pEnd   = xml.indexOf('</w:p>', m.index);
-+    if (pStart === -1 || pEnd === -1) continue;
-+    const seg  = xml.slice(pStart, pEnd);
-+    const text = [...seg.matchAll(/<w:t[^>]*>(.*?)<\/w:t>/g)].map(t => t[1]).join('');
-+    out.push({ pStart, text });
-+  }
-+  return out;
-+}
-+
-+// Extrai byte-a-byte o capítulo "Métodos de Autenticação" do template: do Ttulo1
-+// com "Autentica" até (exclusive) o próximo Ttulo1 com "Integra".
-+function extractAuthBlock(docXml: string): string {
-+  const headings = titulo1Headings(docXml);
-+  for (let i = 0; i < headings.length; i++) {
-+    if (/autentica/i.test(headings[i].text)) {
-+      for (let j = i + 1; j < headings.length; j++) {
-+        if (/integra/i.test(headings[j].text)) {
-+          return docXml.slice(headings[i].pStart, headings[j].pStart);
-+        }
-+      }
-+      break;
-+    }
-+  }
-+  return '';
-+}
-+
-+function injectAuthBeforeIntegrations(bodyXml: string, authXml: string): string {
-+  for (const h of titulo1Headings(bodyXml)) {
-+    if (/integra/i.test(h.text)) {
-+      return bodyXml.slice(0, h.pStart) + authXml + bodyXml.slice(h.pStart);
-+    }
-+  }
-+  return bodyXml + authXml;
-+}
-+
-+// Remove do JSON o bloco inteiro de autenticação: do capítulo cujo título casa com
-+// /autentica/i até (exclusive) o capítulo de Integrações. Tira o heading E as
-+// tabelas/warnings/subtópicos filhos.
-+//
-+// NÃO depende de 'nivel': o ED (IA) gera o JSON de forma não-determinística e o
-+// campo 'nivel' do heading de auth varia entre execuções (às vezes ausente).
-+// Delimitar por título (autentica → integra) é robusto a essa variação.
-+function stripAuthChapters(capitulos: Capitulo[]): Capitulo[] {
-+  const titulo = (c: Capitulo) => ('titulo' in c ? c.titulo ?? '' : '');
-+  const start = capitulos.findIndex(c => /autentica/i.test(titulo(c)));
-+  if (start === -1) return capitulos;
-+  let end = capitulos.findIndex((c, i) => i > start && /integra/i.test(titulo(c)));
-+  if (end === -1) {
-+    // Sem capítulo de Integrações: remove até o próximo heading não-auth.
-+    end = capitulos.findIndex((c, i) => i > start && titulo(c) && !/autentica/i.test(titulo(c)));
-+    if (end === -1) end = capitulos.length;
-+  }
-+  return [...capitulos.slice(0, start), ...capitulos.slice(end)];
  }
  
  // ─── Public API ───────────────────────────────────────────────────────────────
-@@ -568,7 +631,14 @@ export async function generateDocx(
+@@ -516,9 +504,10 @@ export async function generateDocx(
+ ): Promise<GenerateResult> {
+   const { meta, capa, capitulos } = inputJson;
+ 
+-  // userInfo tem prioridade sobre os campos de capa do JSON
+-  const fullName  = userInfo?.name  || capa.nome_responsavel  || '';
+-  const userEmail = userInfo?.email || capa.email             || '';
++  // capa do input.json tem prioridade — é o que o ED preencheu a partir do kickoff.
++  // userInfo (usuário logado na sessão) só é usado como fallback quando o input não traz o dado.
++  const fullName  = capa.nome_responsavel || userInfo?.name  || '';
++  const userEmail = capa.email            || userInfo?.email || '';
+ 
+   // Retorna o valor do campo ou o padrão quando o campo está vazio ou é "[A DEFINIR]"
+   const fieldVal = (val: string | undefined, def: string) =>
+@@ -533,12 +522,14 @@ export async function generateDocx(
+     EMAIL_RESPONSAVEL:        userEmail,
+     DEPARTAMENTO_RESPONSAVEL: fieldVal(capa.departamento, 'Desenvolvimento de Software'),
+     TELEFONE_RESPONSAVEL:     fieldVal(capa.telefone,     '+55 11 2833-0005|0006'),
+-    DATA_REVISAO:             new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }),
++    DATA_REVISAO:             capa.data_revisao || new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }),
+     DESCRICAO_REVISAO:        capa.descricao_revisao ?? 'Emissão inicial',
+     // Campo responsável na tabela de revisões usa apenas o primeiro nome
+     RESPONSAVEL_REVISAO:      firstNameOf(fullName) || capa.responsavel_revisao || '',
+     NOME_CLIENTE:             capa.nome_cliente    ?? '',
+-    DATA_APROVACAO:           capa.data_aprovacao  ?? '',
++    // Antes da aprovação, capa.data_aprovacao fica vazio por design — evita o texto
++    // fixo do template ("Rev {{REVISAO}} de {{DATA_APROVACAO}}") ficar pendurado.
++    DATA_APROVACAO:           capa.data_aprovacao || '[aprovação pendente]',
+   };
+ 
+   const codigo  = safeName(meta.codigo  ?? '') || 'PROJ';
+@@ -568,11 +559,25 @@ export async function generateDocx(
        + docXml.slice(anchorPos);
    }
  
 -  const { bodyXml, internalsRemoved } = buildBodyXml(capitulos, userInfo);
-+  // Extrai o capítulo de Métodos de Autenticação byte-a-byte do template (preserva
-+  // formatação exata do Word). Remove do JSON o BLOCO inteiro de autenticação
-+  // (heading nivel-1 + tabelas/warnings até o próximo nivel-1) p/ não duplicar
-+  // nem deixar tabelas órfãs coladas no capítulo anterior.
-+  const authBlock = extractAuthBlock(docXml);
-+  const caps = stripAuthChapters(capitulos);
-+  const { bodyXml: rawBodyXml, internalsRemoved } = buildBodyXml(caps, userInfo);
-+  const bodyXml = authBlock ? injectAuthBeforeIntegrations(rawBodyXml, authBlock) : rawBodyXml;
++  // O capítulo "Métodos de Autenticação" agora é gerado pelo ED como qualquer outro
++  // tópico (CARD_autenticacao.md, Fase 1) — não há mais extração/injeção fixa do
++  // template aqui. O conteúdo do template entre as âncoras é descartado normalmente.
++  const { bodyXml, internalsRemoved } = buildBodyXml(capitulos);
    docXml = injectBody(docXml, bodyXml);
  
    zip.file('word/document.xml', docXml);
+ 
++  // Força o Word a recalcular o Sumário e demais campos ao abrir o documento — sem
++  // isso, o TOC pode exibir código de campo cru (#_Toc...) em vez do texto/página.
++  const settingsFile = zip.file('word/settings.xml');
++  if (settingsFile) {
++    let settingsXml = await settingsFile.async('string');
++    if (!settingsXml.includes('<w:updateFields')) {
++      settingsXml = settingsXml.replace(/(<w:settings[^>]*>)/, '$1<w:updateFields w:val="true"/>');
++      zip.file('word/settings.xml', settingsXml);
++    }
++  }
++
+   // Remove the top-right anchored image (rId2) from header6.xml — it sits on every body page's top-right corner
+   const h6file = zip.file('word/header6.xml');
+   if (h6file) {
 diff --git a/src/lib/featureRegistry.ts b/src/lib/featureRegistry.ts
 index 84c8f42..3831b94 100644
 --- a/src/lib/featureRegistry.ts
@@ -2359,27 +2383,6 @@ index eefb6ef..f701512 100644
 -                    }}
 -                  />
 -                  {listaUsedCategories.map(c => (
--                    <Chip
--                      key={c.value}
--                      label={c.label}
--                      size="small"
--                      onClick={() => setListaCatFilter(listaCatFilter === c.value ? 'all' : c.value)}
--                      sx={{
--                        fontSize: 11, fontWeight: 600,
--                        bgcolor: listaCatFilter === c.value ? `${c.color}20` : 'transparent',
--                        borderColor: listaCatFilter === c.value ? c.color : 'divider',
--                        color: listaCatFilter === c.value ? c.color : 'text.disabled',
--                        border: '1px solid',
--                        '&:hover': { borderColor: c.color, color: c.color },
--                      }}
--                    />
--                  ))}
--                </Box>
--              )}
--            </Box>
--          )}
--
--          {listaFiltrada.length === 0 ? (
 ```
 
 _Diff limitado a 2000 linhas. Para ver tudo: `git diff snapshot/2026-06-16 upstream/main`_
