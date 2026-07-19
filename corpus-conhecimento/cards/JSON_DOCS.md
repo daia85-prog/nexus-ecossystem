@@ -85,11 +85,12 @@
 
 ### 2.5 Regras gerais de conteúdo
 
-- **`[OBS INTERNA]`** no texto → removido do .docx (invisível no documento final). Usar para anotações de revisão.
+- **`[OBS INTERNA]`** no texto → removido do .docx (invisível no documento final). Usar **apenas** para anotações de revisão que não interessam ao cliente — nunca para pendência de conteúdo ou decisão em aberto (isso é GAP, ver abaixo).
 - **`[ATENÇÃO CRÍTICA]`** → idem, removido do .docx.
-- Campo com valor `tbd`, "a definir", "pendente" ou `—` → seção inteira **omitida** automaticamente.
+- **GAP de conteúdo** (pendência, dado que falta, decisão que depende do cliente/operação) → item `{ "tipo": "warning", "texto": "GAP: <descrição>" }` no ponto exato onde a pendência aparece. Renderiza como caixa amarela **visível** no documento final — diferente de `[OBS INTERNA]`, que some. Sempre iniciar o texto com "GAP:" para diferenciar de um warning de alerta operacional comum.
+- Campo com valor `tbd`, "a definir", "pendente" ou `—` → seção inteira **omitida** automaticamente. Se a omissão em si for uma decisão incerta (dúvida genuína sobre o gate), gerar o tópico com um GAP em vez de omitir silenciosamente.
 - Quebra de página entre seções é automática (baseada em níveis de heading) — não inserir manualmente.
-- **NÃO** gerar o capítulo "Métodos de Autenticação" — é injetado byte-a-byte do template pelo docxBuilder antes das Integrações.
+- O capítulo "Métodos de Autenticação" (Fase 1) é gerado pelo ED como qualquer outro tópico, a partir de `CARD_autenticacao.md`, condicionado por `in1`/`if8`. O docxBuilder não injeta mais conteúdo fixo de autenticação.
 
 ---
 
@@ -103,7 +104,7 @@ Sempre seguir a ordem abaixo. É a **sequência universal obrigatória** para qu
 |------|-----------------------------------------------|
 | **0. Abertura** _(sempre — ver Seção 4)_ | Objetivo do Documento · Stakeholders ES · Etapas da ES |
 | **0b. Fases do Projeto** _(condicional)_ | Visão Geral das Fases do Projeto — gerar SOMENTE SE `g4 = additive` ou kickoff descreve projeto multifase |
-| **1. Autenticação** | **FIXO no template — NÃO gerar** (injetado pelo docxBuilder entre a Fase 0b e a Fase 2) |
+| **1. Autenticação** | autenticacao — **gerado pelo ED** a partir de `CARD_autenticacao.md`, variante definida por `in1` (protocolo de integração) e `if8` (AD/SSO do operador) |
 | **2. Integração** | integracao (visão geral + tabela de interfaces) · integracao-pedidos · integracao-wcs-wms · integracao-wms-erp · integracao-cadastros |
 | **3. Dados** | cubagem |
 | **4. Entrada / Início** | recebimento-armazenagem · order-start |
@@ -116,7 +117,7 @@ Sempre seguir a ordem abaixo. É a **sequência universal obrigatória** para qu
 **Sub-ordem dentro de cada fase é obrigatória.** Os tópicos são listados na sequência em que devem aparecer no documento.
 
 > **Estrutura completa do documento final:**
-> Capa 1 → Capa 2 → Página de Introdução (código, projeto, responsável, e-mail, logo cliente, revisão) → Sumário (F9) → **[Fase 0]** Objetivo do Documento → Stakeholders ES → Etapas da ES → **[Fase 0b]** Visão Geral das Fases (se aplicável) → **[Fase 1]** Métodos de Autenticação (builder) → **[Fase 2]** Integrações (overview + cards) → **[Fases 3–8]** Tópicos operacionais e de sistema → **Aprovação da Proposta** (template)
+> Capa 1 → Capa 2 → Página de Introdução (código, projeto, responsável, e-mail, logo cliente, revisão) → Sumário (F9) → **[Fase 0]** Objetivo do Documento → Stakeholders ES → Etapas da ES → **[Fase 0b]** Visão Geral das Fases (se aplicável) → **[Fase 1]** Métodos de Autenticação (gerado pelo ED) → **[Fase 2]** Integrações (overview + cards) → **[Fases 3–8]** Tópicos operacionais e de sistema → **Aprovação da Proposta** (template)
 
 ---
 
@@ -141,14 +142,14 @@ Estes capítulos devem ser os **primeiros da lista `capitulos[]`** em todo `inpu
 { "tipo": "tabela",
   "headers": ["Participante", "Função", "Empresa"],
   "rows": [
-    ["{capa.nome_responsavel}", "Gerente de Projetos", "Invent Corp"],
-    ["[OBS INTERNA] confirmar demais participantes com a equipe de projetos", "", ""]
+    ["{capa.nome_responsavel}", "Gerente de Projetos", "Invent Smart"]
   ]
-}
+},
+{ "tipo": "warning", "texto": "GAP: confirmar demais participantes do lado do cliente com a equipe de projetos." }
 ```
 
-- Primeira linha: `capa.nome_responsavel` como Gerente de Projetos da Invent Corp.
-- Demais linhas: stakeholders do cliente identificados no kickoff. Se não informados no kickoff, manter apenas a linha de `[OBS INTERNA]`.
+- Primeira linha: `capa.nome_responsavel` como Gerente de Projetos da Invent Smart.
+- Demais linhas: stakeholders do cliente identificados no kickoff. Se não informados no kickoff, **não** criar linha vazia/placeholder na tabela — inserir logo depois um item `warning` com texto iniciando em "GAP:" (ver Seção 2.5).
 
 ### 4.3 Etapas da Especificação de Software (ES)
 
@@ -536,3 +537,5 @@ O NEXUS exporta o kickoff em JSON estruturado. Campos multi-select usam `|||` co
 ---
 
 *Documento atualizado 2026-06-26 — v2: Golden Standard (Fases 0–9), capítulos de abertura obrigatórios (Seção 4), formato padrão de integração por interface (Seção 5). Integração passa para Fase 2 (antes dos tópicos operacionais). Substitui a versão anterior.*
+
+*Documento atualizado 2026-07-17 — v3: razão social "Invent Smart"; canal de GAP visível (`tipo: warning`, prefixo "GAP:") separado de `[OBS INTERNA]` (Seção 2.5); Fase 1 (Autenticação) passa a ser gerada pelo ED via `CARD_autenticacao.md` em vez de injetada fixa pelo builder (Seção 3). Motivado pela revisão do primeiro documento 100% automático (I26.4018/BR Supply).*

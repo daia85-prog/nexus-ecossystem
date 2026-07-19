@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#wcs/estoque",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,13 +72,11 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 259.5,
-    "collapsed": true
+    "width": 259.5
   },
   "right": {
     "id": "805f28042437da32",
@@ -180,7 +178,7 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "c7157ae934de698d",
+  "active": "e6be7af8b013ae9d",
   "lastOpenFiles": [
     "node_modules/glob/node_modules/brace-expansion/README.md",
     "undefined/signup.png",

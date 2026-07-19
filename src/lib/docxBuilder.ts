@@ -280,16 +280,6 @@ function firstNameOf(fullName: string): string {
   return fullName.trim().split(/\s+/)[0] ?? fullName.trim();
 }
 
-// Detecta se uma tabela é a tabela de stakeholders/participantes do projeto
-function isStakeholdersTable(headers: string[]): boolean {
-  const h = headers.join(' ').toLowerCase();
-  return (
-    h.includes('participante') ||
-    h.includes('stakeholder') ||
-    (h.includes('função') && h.includes('empresa'))
-  );
-}
-
 // ─── Body builder ─────────────────────────────────────────────────────────────
 
 // Parágrafo de direção de integração: "Direção: X → Y"
@@ -364,7 +354,6 @@ function estSectionLines(caps: Capitulo[], fromIndex: number): number {
 
 function buildBodyXml(
   capitulos: Capitulo[],
-  userInfo?: UserInfo,
 ): { bodyXml: string; internalsRemoved: string[] } {
   const parts: string[]    = [];
   const internals: string[] = [];
@@ -428,13 +417,10 @@ function buildBodyXml(
         internals.push(headers.join(' | '));
         continue;
       }
-      let rows = allRows.filter(r => {
+      const rows = allRows.filter(r => {
         if (r.some(v => INTERNAL_RE.test(v))) { internals.push(r.join(' | ')); return false; }
         return true;
       });
-      if (isStakeholdersTable(headers) && userInfo) {
-        rows = [[userInfo.name, 'Analista de negócios', 'Invent Smart'], ...rows];
-      }
       if (headers.length || rows.length) {
         parts.push(xmlTable(headers, rows));
         totalLines += 1.5 + rows.length;
@@ -499,67 +485,6 @@ function injectBody(docXml: string, bodyXml: string): string {
   return docXml.slice(0, ini[0]) + bodyXml + docXml.slice(fim[1]);
 }
 
-function titulo1Headings(xml: string): Array<{ pStart: number; text: string }> {
-  const out: Array<{ pStart: number; text: string }> = [];
-  const re = /<w:pStyle w:val="Ttulo1"\s*\/>/g;
-  let m: RegExpExecArray | null;
-  while ((m = re.exec(xml)) !== null) {
-    const pStart = Math.max(xml.lastIndexOf('<w:p ', m.index), xml.lastIndexOf('<w:p>', m.index));
-    const pEnd   = xml.indexOf('</w:p>', m.index);
-    if (pStart === -1 || pEnd === -1) continue;
-    const seg  = xml.slice(pStart, pEnd);
-    const text = [...seg.matchAll(/<w:t[^>]*>(.*?)<\/w:t>/g)].map(t => t[1]).join('');
-    out.push({ pStart, text });
-  }
-  return out;
-}
-
-// Extrai byte-a-byte o capítulo "Métodos de Autenticação" do template: do Ttulo1
-// com "Autentica" até (exclusive) o próximo Ttulo1 com "Integra".
-function extractAuthBlock(docXml: string): string {
-  const headings = titulo1Headings(docXml);
-  for (let i = 0; i < headings.length; i++) {
-    if (/autentica/i.test(headings[i].text)) {
-      for (let j = i + 1; j < headings.length; j++) {
-        if (/integra/i.test(headings[j].text)) {
-          return docXml.slice(headings[i].pStart, headings[j].pStart);
-        }
-      }
-      break;
-    }
-  }
-  return '';
-}
-
-function injectAuthBeforeIntegrations(bodyXml: string, authXml: string): string {
-  for (const h of titulo1Headings(bodyXml)) {
-    if (/integra/i.test(h.text)) {
-      return bodyXml.slice(0, h.pStart) + authXml + bodyXml.slice(h.pStart);
-    }
-  }
-  return bodyXml + authXml;
-}
-
-// Remove do JSON o bloco inteiro de autenticação: do capítulo cujo título casa com
-// /autentica/i até (exclusive) o capítulo de Integrações. Tira o heading E as
-// tabelas/warnings/subtópicos filhos.
-//
-// NÃO depende de 'nivel': o ED (IA) gera o JSON de forma não-determinística e o
-// campo 'nivel' do heading de auth varia entre execuções (às vezes ausente).
-// Delimitar por título (autentica → integra) é robusto a essa variação.
-function stripAuthChapters(capitulos: Capitulo[]): Capitulo[] {
-  const titulo = (c: Capitulo) => ('titulo' in c ? c.titulo ?? '' : '');
-  const start = capitulos.findIndex(c => /autentica/i.test(titulo(c)));
-  if (start === -1) return capitulos;
-  let end = capitulos.findIndex((c, i) => i > start && /integra/i.test(titulo(c)));
-  if (end === -1) {
-    // Sem capítulo de Integrações: remove até o próximo heading não-auth.
-    end = capitulos.findIndex((c, i) => i > start && titulo(c) && !/autentica/i.test(titulo(c)));
-    if (end === -1) end = capitulos.length;
-  }
-  return [...capitulos.slice(0, start), ...capitulos.slice(end)];
-}
-
 // ─── Public API ───────────────────────────────────────────────────────────────
 
 function safeName(s: string): string {
@@ -579,9 +504,10 @@ export async function generateDocx(
 ): Promise<GenerateResult> {
   const { meta, capa, capitulos } = inputJson;
 
-  // userInfo tem prioridade sobre os campos de capa do JSON
-  const fullName  = userInfo?.name  || capa.nome_responsavel  || '';
-  const userEmail = userInfo?.email || capa.email             || '';
+  // capa do input.json tem prioridade — é o que o ED preencheu a partir do kickoff.
+  // userInfo (usuário logado na sessão) só é usado como fallback quando o input não traz o dado.
+  const fullName  = capa.nome_responsavel || userInfo?.name  || '';
+  const userEmail = capa.email            || userInfo?.email || '';
 
   // Retorna o valor do campo ou o padrão quando o campo está vazio ou é "[A DEFINIR]"
   const fieldVal = (val: string | undefined, def: string) =>
@@ -596,12 +522,14 @@ export async function generateDocx(
     EMAIL_RESPONSAVEL:        userEmail,
     DEPARTAMENTO_RESPONSAVEL: fieldVal(capa.departamento, 'Desenvolvimento de Software'),
     TELEFONE_RESPONSAVEL:     fieldVal(capa.telefone,     '+55 11 2833-0005|0006'),
-    DATA_REVISAO:             new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }),
+    DATA_REVISAO:             capa.data_revisao || new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }),
     DESCRICAO_REVISAO:        capa.descricao_revisao ?? 'Emissão inicial',
     // Campo responsável na tabela de revisões usa apenas o primeiro nome
     RESPONSAVEL_REVISAO:      firstNameOf(fullName) || capa.responsavel_revisao || '',
     NOME_CLIENTE:             capa.nome_cliente    ?? '',
-    DATA_APROVACAO:           capa.data_aprovacao  ?? '',
+    // Antes da aprovação, capa.data_aprovacao fica vazio por design — evita o texto
+    // fixo do template ("Rev {{REVISAO}} de {{DATA_APROVACAO}}") ficar pendurado.
+    DATA_APROVACAO:           capa.data_aprovacao || '[aprovação pendente]',
   };
 
   const codigo  = safeName(meta.codigo  ?? '') || 'PROJ';
@@ -631,17 +559,24 @@ export async function generateDocx(
       + docXml.slice(anchorPos);
   }
 
-  // Extrai o capítulo de Métodos de Autenticação byte-a-byte do template (preserva
-  // formatação exata do Word). Remove do JSON o BLOCO inteiro de autenticação
-  // (heading nivel-1 + tabelas/warnings até o próximo nivel-1) p/ não duplicar
-  // nem deixar tabelas órfãs coladas no capítulo anterior.
-  const authBlock = extractAuthBlock(docXml);
-  const caps = stripAuthChapters(capitulos);
-  const { bodyXml: rawBodyXml, internalsRemoved } = buildBodyXml(caps, userInfo);
-  const bodyXml = authBlock ? injectAuthBeforeIntegrations(rawBodyXml, authBlock) : rawBodyXml;
+  // O capítulo "Métodos de Autenticação" agora é gerado pelo ED como qualquer outro
+  // tópico (CARD_autenticacao.md, Fase 1) — não há mais extração/injeção fixa do
+  // template aqui. O conteúdo do template entre as âncoras é descartado normalmente.
+  const { bodyXml, internalsRemoved } = buildBodyXml(capitulos);
   docXml = injectBody(docXml, bodyXml);
 
   zip.file('word/document.xml', docXml);
+
+  // Força o Word a recalcular o Sumário e demais campos ao abrir o documento — sem
+  // isso, o TOC pode exibir código de campo cru (#_Toc...) em vez do texto/página.
+  const settingsFile = zip.file('word/settings.xml');
+  if (settingsFile) {
+    let settingsXml = await settingsFile.async('string');
+    if (!settingsXml.includes('<w:updateFields')) {
+      settingsXml = settingsXml.replace(/(<w:settings[^>]*>)/, '$1<w:updateFields w:val="true"/>');
+      zip.file('word/settings.xml', settingsXml);
+    }
+  }
 
   // Remove the top-right anchored image (rId2) from header6.xml — it sits on every body page's top-right corner
   const h6file = zip.file('word/header6.xml');

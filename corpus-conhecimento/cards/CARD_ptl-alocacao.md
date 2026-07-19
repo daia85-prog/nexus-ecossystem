@@ -97,6 +97,8 @@ A operação do PTL é precedida pela **Tela de Romaneios**: o operador selecion
 #### SE `pt_frag = yes` → ADICIONA subseção "Matriz de Fragilidade"
 O WCS aplica a **Matriz de Fragilidade** na alocação PTL: cada rota/pedido pode ocupar 2 ou mais posições PTL, separadas por nível de fragilidade (ex: itens pesados na posição base, frágeis na posição superior). O sistema garante que volumes frágeis não sejam alocados sob volumes pesados, respeitando a sequência definida na matriz. → ver também [[paletizacao]].
 
+> **Atenção — ambiguidade de escopo não resolvida (ver Lacunas conhecidas).** A evidência-fonte (Esperança, BP) descreve a fragilidade como critério de **separação/mistura entre volumes** (quais categorias não podem compartilhar a mesma posição/pallet), não necessariamente como **ordem física de empilhamento** dentro da posição. **Não afirme** que a fragilidade depende de bipagem item a item na coleta (picking) — se existir alguma dependência de bipagem, ela é, no máximo, sobre fragilidade **dentro da caixa** (base de caixa), um escopo diferente do desta subseção. Se o kickoff/Master Data não desambiguar qual interpretação vale para o projeto, gere um GAP visível (`tipo: warning`, `texto: "GAP: confirmar se a matriz de fragilidade neste projeto rege separação de categorias por posição ou ordem de empilhamento no pallet."`) em vez de escolher uma versão por conta própria.
+
 ### Itens Perigosos — derivado de `pt8`
 
 #### SE `pt8 = yes` → ADICIONA subseção "Pallet Exclusivo para Itens Perigosos"
