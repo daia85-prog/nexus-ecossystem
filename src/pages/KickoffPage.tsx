@@ -44,6 +44,7 @@ var Y = '#ffc500';
 var O = {
   yes:'Sim',no:'Não',tbd:'A definir',
   new_proj:'Novo',additive:'Aditivo',
+  nat_nova:'Automação nova',nat_retrofit:'Retrofit',nat_mista:'Mista',
   wcs:'WCS',wms_only:'WMS',both_wms_wcs:'Ambos',
   plastic:'Plástica',cardboard:'Papelão',both_box:'Ambos',tote:'Tote',misto_box:'Misto',tote_plastic:'Tote/Plástica',fardo:'Fardo',
   desktop:'Desktop',tablet:'Tablet',collector:'Coletor',
@@ -73,6 +74,10 @@ var O = {
   ptl_hw:'PTL (displays físicos)',tablet_ptl:'Tablet',
 };
 var to = function(v) { return O[v] || v; };
+// C1: normalização de master data na exportação — apara espaços nas pontas, colapsa
+// espaços/tabs internos duplicados e remove espaço antes de quebra de linha.
+// Preserva quebras de linha (textareas) e separadores de multi-select (|||).
+function norm(v) { return typeof v === 'string' ? v.replace(/[ \t]{2,}/g, ' ').replace(/[ \t]+(\r?\n)/g, '$1').trim() : v; }
 var YN = ['yes','no','tbd'], RS = ['wcs','wms_only','both_wms_wcs','tbd'], FN = ['invent','client','both_resp','tbd'];
 function Q(a,b,c,d,e,f,g,h) { return {id:a,q:b,t:c,e:!!d,o:e||null,g:!!f,d:g||null,p:h||null}; }
 
@@ -85,6 +90,7 @@ var SEC = [
     Q('g1','Cliente','text',1),Q('g2','Código do Projeto','text',1),Q('g_codinome','Codinome do Projeto','text',1,0,0,0,'Ex: Projeto Colibri'),Q('g3','Local do CD','text',1),
     Q('g4','Novo ou aditivo?','select',1,['new_proj','additive','tbd']),
     Q('g4a','Escopo do aditivo','textarea',0,0,0,'g4:additive','Descreva o escopo'),
+    Q('g_nat','Natureza da automação','select',1,['nat_nova','nat_retrofit','nat_mista','tbd']),
     Q('g5','Sistema do Cliente','wms',1),
     Q('g_golive','GoLive alvo','text',1,0,0,0,'Ex: 24/06/2026'),
     Q('g_layout_ref','Layout Semelhante','text',0,0,0,0,'Ex: CD Kalunga 2023'),
@@ -291,6 +297,7 @@ var DESC = {
   g3:'Cidade e estado do Centro de Distribuição onde o WCS será implantado. Ex: São Paulo, SP.',
   g4:'Indica se é uma implantação nova ou expansão/modificação de sistema WCS já existente no cliente.',
   g4a:'Descreva os módulos ou funcionalidades que serão adicionados ao sistema existente.',
+  g_nat:'Natureza técnica da automação, independente da classificação comercial (g4). "Automação nova" = greenfield, operação criada do zero. "Retrofit" = substitui/moderniza uma automação já existente — o documento deve descrever a mudança sobre a operação atual. "Mista" = parte nova, parte retrofit. Alimenta o tom do Objetivo e dos capítulos de processo no ED.',
   g5:'Sistema de gestão do armazém do cliente. Pode ser WMS (ex: CONCINCO, TOTVS, Infor), EWM/SAP, ou outros sistemas legados.',
   g_golive:'Data alvo para entrada em produção (Go-Live). Impacta dimensionamento de equipe e cronograma.',
   // Seção 2 — Layout e Caixas
@@ -1019,13 +1026,16 @@ export function KickoffPage({ onNavigate, projectId, onProjectSaved, isFullscree
     return function() { clearTimeout(tid1); clearTimeout(tid2); clearTimeout(tid3); };
   }, [pendingScrollQId]);
 
-  var ch = useCallback(function(id,v){setA(function(p){var n=Object.assign({},p);n[id]=v;if(id==='fc_conf')n['cf_gate']=v;if(id==='cf_gate')n['fc_conf']=v;return n;});},[]);
+  // C2: fc_conf (conferência DO Full Case) e cf_gate (conferência geral do CD) são
+  // gates independentes — não sincronizar. Acoplá-los zerava a conferência geral
+  // quando o Full Case não tinha conferência (caso BR Supply/I26.4018).
+  var ch = useCallback(function(id,v){setA(function(p){var n=Object.assign({},p);n[id]=v;return n;});},[]);
   var nc = useCallback(function(id,v){setN(function(p){var n=Object.assign({},p);n[id]=v;return n;});},[]);
   var tgo = useCallback(function(id){setSo(function(p){var n=Object.assign({},p);n[id]=!p[id];return n;});},[]);
 
-  var bJ = function(){var o={meta:{project:a.g1||a.g2||'WCS',date:new Date().toISOString(),v:'4.0',total_pct:tp,filled:ta},sections:{},progress:{},notes:{},pbl_lines:[],os_devices:[],os_details:[],mez_details:[],etiquetas_custom:[],meeting_notes:meetingNotes};SEC.forEach(function(s){var d={};gv(s,a).forEach(function(q){if(a[q.id]&&a[q.id]!=='')d[q.id]=a[q.id]});if(Object.keys(d).length)o.sections[s.id]=d;if(nt[s.id])o.notes[s.id]=nt[s.id];var pr=gpr(s);o.progress[s.id]={title:s.t,pct:pr.p,filled:pr.a,total:pr.t};});o.pbl_lines=pblLines.map(function(line){var d={};gvPbl(line).forEach(function(q){if(line[q.id]&&line[q.id]!=='')d[q.id]=line[q.id];});return d;}).filter(function(d){return Object.keys(d).length>0});o.os_devices=osDevices.filter(function(d){return d.type||d.qty});o.os_details=osDetailsList.filter(function(v){return v});o.mez_details=mezDetails.filter(function(v){return v});o.etiquetas_custom=etiquetas.filter(function(e){return e.name});return o;};
+  var bJ = function(){var o={meta:{project:norm(a.g1)||a.g2||'WCS',date:new Date().toISOString(),v:'4.0',total_pct:tp,filled:ta},sections:{},progress:{},notes:{},pbl_lines:[],os_devices:[],os_details:[],mez_details:[],etiquetas_custom:[],meeting_notes:meetingNotes};SEC.forEach(function(s){var d={};gv(s,a).forEach(function(q){var nv=norm(a[q.id]);if(nv&&nv!=='')d[q.id]=nv});if(Object.keys(d).length)o.sections[s.id]=d;if(nt[s.id])o.notes[s.id]=nt[s.id];var pr=gpr(s);o.progress[s.id]={title:s.t,pct:pr.p,filled:pr.a,total:pr.t};});o.pbl_lines=pblLines.map(function(line){var d={};gvPbl(line).forEach(function(q){var nv=norm(line[q.id]);if(nv&&nv!=='')d[q.id]=nv;});return d;}).filter(function(d){return Object.keys(d).length>0});o.os_devices=osDevices.filter(function(d){return d.type||d.qty});o.os_details=osDetailsList.filter(function(v){return v});o.mez_details=mezDetails.filter(function(v){return v});o.etiquetas_custom=etiquetas.filter(function(e){return e.name});return o;};
   var bM = function(pend){var md='# NEXUS Kickoff — '+(a.g1||a.g2||'WCS')+'\n\n';if(!pend)md+='> **Prontidão total: '+tp+'%** · '+ta+' respostas preenchidas\n\n';SEC.forEach(function(s){if(s.id==='pb')return;var vis=gv(s,a);var items=pend==='tbd'?vis.filter(function(q){return isADefinir(a[q.id],q.t);}):pend?vis.filter(function(q){return !a[q.id]||a[q.id]==='';}):vis.filter(function(q){return a[q.id]&&a[q.id]!=='';});if(!items.length)return;var pr=gpr(s);var pctStr=pr.p===100?'100% ✓':pr.p+'% ('+pr.a+'/'+pr.t+')';md+='## '+s.t+' — '+pctStr+'\n';items.forEach(function(q){if(pend){md+='- [ ] '+q.q+'\n';}else{var v=a[q.id];if(q.t==='select'||q.t==='wms')v=to(v);if(q.t==='multi')v=v.split('|||').map(to).join(', ');md+='- **'+q.q+':** '+v+'\n';}});if(!pend&&nt[s.id])md+='\n> '+nt[s.id]+'\n';md+='\n';});if(!pend&&a.p1==='yes'&&pblLines.length>0){var pbSec=SEC.find(function(s){return s.id==='pb';});var pbPr=pbSec?gpr(pbSec):{p:0,a:0,t:0};var pbPctStr=pbPr.p===100?'100% ✓':pbPr.p+'% ('+pbPr.a+'/'+pbPr.t+')';md+='## PBL / FlowRack — '+pbPctStr+'\n';pblLines.forEach(function(line,i){md+='### Linha '+(i+1)+'\n';gvPbl(line).forEach(function(q){if(line[q.id]&&line[q.id]!==''){var v=line[q.id];if(q.t==='select')v=to(v);md+='- **'+q.q+':** '+v+'\n';}});md+='\n';});}return md;};
-  var bJSec = function(secId){var s=SEC.find(function(x){return x.id===secId;});if(!s)return{};var d={};gv(s,a).forEach(function(q){if(a[q.id]&&a[q.id]!=='')d[q.id]=a[q.id];});return{section:secId,title:s.t,data:d,notes:nt[secId]||''};};
+  var bJSec = function(secId){var s=SEC.find(function(x){return x.id===secId;});if(!s)return{};var d={};gv(s,a).forEach(function(q){var nv=norm(a[q.id]);if(nv&&nv!=='')d[q.id]=nv;});return{section:secId,title:s.t,data:d,notes:nt[secId]||''};};
   var bMSec = function(secId){var s=SEC.find(function(x){return x.id===secId;});if(!s)return'';var vis=gv(s,a);var md='## '+s.t+'\n';vis.filter(function(q){return a[q.id]&&a[q.id]!=='';}).forEach(function(q){var v=a[q.id];if(q.t==='select'||q.t==='wms')v=to(v);if(q.t==='multi')v=v.split('|||').map(to).join(', ');md+='- **'+q.q+':** '+v+'\n';});if(nt[secId])md+='\n> '+nt[secId]+'\n';return md;};
   var hi = function(file){var rd=new FileReader();rd.onload=function(ev){try{var j=JSON.parse(ev.target.result);var flat={};if(j.sections){var vs=Object.values(j.sections);for(var i=0;i<vs.length;i++){var sec=vs[i];for(var k in sec)flat[k]=sec[k];}}if(Object.keys(flat).length)setA(flat);if(j.notes)setN(j.notes);if(Array.isArray(j.pbl_lines)&&j.pbl_lines.length)setPblLines(j.pbl_lines);if(Array.isArray(j.os_devices))setOsDevices(j.os_devices);if(Array.isArray(j.os_details))setOsDetailsList(j.os_details);if(Array.isArray(j.mez_details))setMezDetails(j.mez_details);if(Array.isArray(j.etiquetas_custom))setEtiquetas(j.etiquetas_custom);}catch(err){}};rd.readAsText(file);};
 

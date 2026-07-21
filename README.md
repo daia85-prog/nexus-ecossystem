@@ -351,4 +351,4 @@ O histórico completo de features entregues, KPIs mapeados e hipóteses de impac
 
 ---
 
-*Desenvolvido por **Raphael Cerri Caveagna** · Invent Corp*
+*Desenvolvido por **Raphael Cerri Caveagna** · Invent Smart*

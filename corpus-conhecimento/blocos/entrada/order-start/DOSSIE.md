@@ -54,13 +54,13 @@ Há um Order Start **por tipo de fluxo**: **Padrão** (linha comum/PBL), **Picki
 
 ## Variações por Projeto
 
-| Projeto | Variação |
-|---------|----------|
-| **I22.1732** (Flower) | Order Start por fluxo (Cart, Full Case, Coletor); mapeamento caixa↔posição; Full Case por posto de impressão + rua. |
-| **I23.125** (Cristal) | 1 Order Start padrão; sem prioridade automática (manual); gera controlados/não controlados/full case; **Order Start Exceção** dedicado; troca de endereço por prefixo. |
-| **I23.144** (Automatize/Convocação Ativa) | Order Start Full Case com posto de impressão e coleta por item agrupada. |
-| **I25.3515** (Esperança) | Cadenciamento/Matriz por rampa no Order Start (distribuição balanceada entre rampas do sorter). |
-| **I24.203** (Beta) | Unificação do Order Start Full Case + Reabastecimento numa única coleta. |
+| Projeto                                   | Variação                                                                                                                                                               |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **I22.1732** (Flower)                     | Order Start por fluxo (Cart, Full Case, Coletor); mapeamento caixa↔posição; Full Case por posto de impressão + rua.                                                    |
+| **I23.125** (Cristal)                     | 1 Order Start padrão; sem prioridade automática (manual); gera controlados/não controlados/full case; **Order Start Exceção** dedicado; troca de endereço por prefixo. |
+| **I23.144** (Automatize/Convocação Ativa) | Order Start Full Case com posto de impressão e coleta por item agrupada.                                                                                               |
+| **I25.3515** (Esperança)                  | Cadenciamento/Matriz por rampa no Order Start (distribuição balanceada entre rampas do sorter).                                                                        |
+| **I24.203** (Beta)                        | Unificação do Order Start Full Case + Reabastecimento numa única coleta.                                                                                               |
 
 ## Integrações
 

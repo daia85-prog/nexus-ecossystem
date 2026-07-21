@@ -44,13 +44,14 @@
 ### 2.1 Heading (nível 1–5)
 
 ```json
-{ "nivel": 1, "titulo": "Order Start", "conteudo": "Parágrafo de texto.\n\nSegundo parágrafo." }
+{ "nivel": 1, "titulo": "Order Start", "conteudo": "Parágrafo de texto.\n\nSegundo parágrafo.", "origem": "BR SP Rev 8 FINAL" }
 ```
 
 - `nivel`: 1 = título principal de seção (Título1), 2–5 = subtítulos. Usar `nivel 3+` para subseções dentro de um tópico.
 - `conteudo`: texto corrido. Parágrafos separados por `\n\n`. Quebras simples por `\n`.
 - `conteudo` pode ser omitido se o heading não tiver texto próprio (só introduz subseções).
 - **Direção de integração** em parágrafo (ex: `"WMS → WCS: enviar pedido"`) é renderizado em **negrito** automaticamente.
+- `origem` _(opcional, só em headings de nível 1)_: proveniência do texto quando o capítulo foi reaproveitado de um projeto-referência — string curta no formato `"<Projeto> Rev <N> FINAL"` (ex: `"BR SP Rev 8 FINAL"`). **Metadado de auditoria: o docxBuilder o ignora — não aparece no `.docx`.** Serve para o revisor rastrear de onde veio cada bloco reaproveitado. Omitir em capítulos escritos do zero a partir do kickoff/CARDs. Ver a regra de proveniência no `PROMPT_ED.md`.
 
 ### 2.2 Tabela
 
@@ -134,6 +135,9 @@ Estes capítulos devem ser os **primeiros da lista `capitulos[]`** em todo `inpu
 
 - Preencher `{meta.projeto}` → `meta.projeto`; `{capa.nome_cliente}` → `capa.nome_cliente`; `{g3}` → local do CD; `{g5}` → sistema do cliente (WMS/ERP).
 - **SE `g4 = additive`:** adicionar parágrafo: `"Este é um documento aditivo ao escopo original. As funcionalidades descritas complementam o sistema já implantado, conforme detalhado em: {g4a}."` — substituindo `{g4a}` pelo valor de `g4a`.
+- **SE `g_nat = nat_retrofit`:** adicionar parágrafo indicando que o projeto é um **retrofit** — a automação substitui/moderniza uma operação já existente, e o documento descreve as mudanças sobre essa operação atual (não uma operação criada do zero). Ajustar o tom dos capítulos de processo no mesmo sentido.
+- **SE `g_nat = nat_mista`:** indicar que o escopo combina partes novas e partes de retrofit; deixar claro, quando possível, quais módulos são novos e quais modernizam operação existente.
+- **SE `g_nat = nat_nova` ou `tbd`:** redação padrão (operação nova), sem parágrafo extra.
 
 ### 4.2 Stakeholders ES
 
@@ -258,6 +262,7 @@ wcs=WCS · wms_only=WMS · both_wms_wcs=Ambos
 invent=Invent · client=Cliente · both_resp=Ambos
 srv_invent=Invent · srv_client=Cliente · srv_shared=Compartilhada
 new_proj=Novo · additive=Aditivo
+nat_nova=Automação nova · nat_retrofit=Retrofit · nat_mista=Mista
 ```
 
 ---
@@ -270,8 +275,9 @@ new_proj=Novo · additive=Aditivo
 | `g2` | texto (mascarado) | Código do projeto: `I24.001` |
 | `g_codinome` | texto | Codinome de uso nos documentos |
 | `g3` | texto | Local do CD (cidade + estado) |
-| `g4` | select | `new_proj`=Novo · `additive`=Aditivo · `tbd` |
+| `g4` | select | `new_proj`=Novo · `additive`=Aditivo · `tbd` — classificação **comercial** |
 | `g4a` | textarea | Escopo do aditivo (só se g4=additive) |
+| `g_nat` | select | `nat_nova`=Automação nova · `nat_retrofit`=Retrofit · `nat_mista`=Mista · `tbd` — natureza **técnica**, independente de `g4`. Retrofit → o Objetivo e os capítulos de processo descrevem a mudança sobre a operação existente, não uma operação nova. |
 | `g5` | texto (wms) | Sistema do cliente (WMS/ERP): CONCINCO, SAP EWM, TOTVS WMS, Oracle, Manhattan, Infor, JDA, Linx, Sankhya, Track, GFT, Bsoft, Outro |
 | `g_golive` | texto | Data alvo GoLive (DD/MM/AAAA) |
 | `g_layout_ref` | texto | Layout de referência semelhante |
