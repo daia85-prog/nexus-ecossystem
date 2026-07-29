@@ -498,7 +498,7 @@ function CorpusKnowledgeTab() {
         <div style={{ position: 'absolute', left: 28, top: 0, bottom: 0, width: 2, background: '#F59D00' }} />
 
         <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#F59D00', marginBottom: 8 }}>
-          Invent Corp · Nexus WCS · {CORPUS_UPDATED}
+          Invent Smart · Nexus WCS · {CORPUS_UPDATED}
         </div>
         <div style={{ fontSize: 20, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#E2EBF5', lineHeight: 1.1, marginBottom: 20 }}>
           Corpus<span style={{ color: '#F59D00' }}>-</span>Conhecimento{' '}

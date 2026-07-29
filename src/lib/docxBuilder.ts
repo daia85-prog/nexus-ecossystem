@@ -23,7 +23,8 @@ export interface InputCapa {
 }
 
 export type Capitulo =
-  | { nivel: 1 | 2 | 3 | 4 | 5; titulo: string; conteudo?: string }
+  // `origem`: proveniência opcional (auditoria) — não renderizada, ver JSON_DOCS.md §2.1
+  | { nivel: 1 | 2 | 3 | 4 | 5; titulo: string; conteudo?: string; origem?: string }
   | { tipo: 'tabela'; headers: string[]; rows: string[][] }
   | { tipo: 'json_block'; linhas: string[] }
   | { tipo: 'warning'; texto: string }

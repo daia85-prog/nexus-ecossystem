@@ -27,7 +27,8 @@
 
 ### 1. Info Gerais (ge)
 - `g1` Cliente (text) · `g2` Código do Projeto (text) · `g_codinome` Codinome (text) · `g3` Local do CD (text)
-- `g4` Novo ou aditivo? (select: new_proj/additive/tbd) · `g4a` Escopo do aditivo (textarea) [g4:additive]
+- `g4` Novo ou aditivo? (select: new_proj/additive/tbd) — **classificação comercial** · `g4a` Escopo do aditivo (textarea) [g4:additive]
+- `g_nat` Natureza da automação (select: `nat_nova`=Automação nova · `nat_retrofit`=Retrofit · `nat_mista`=Mista · `tbd`) — **classificação técnica**, independente de `g4`. Alimenta o tom do Objetivo e dos capítulos de processo no ED (retrofit → descrever a mudança sobre a operação existente).
 - `g5` Sistema do Cliente / WMS (wms) · `g_golive` GoLive alvo (text) · `g_layout_ref` Layout Semelhante (text)
 
 ### 2. Layout e Caixas (la)
@@ -57,7 +58,7 @@
 ### 8. Full Case (fc)
 - `fc1` Tem Full Case? (YN) **[GATE]** · `fc_r` Resp (wcs/wms_only/both_wms_wcs/tbd) · `fc2` Método (fc_coletor/fc_etiq_led/fc_etiq) [fc_r:wcs] · `fc2b` Método [fc_r:both_wms_wcs]
 - `fc_i` Tem impressora? (YN) · `fc_if` Quem fornece impressora (FN) [fc_i:yes]
-- `fc_conf` Tem Conferência? (yes/no/tbd) ⟷ espelha `cf_gate` · `fc_conf_hw` Hardware conferência (fc_hw_col/fc_hw_pdv) [fc_conf:yes] · `fc_conf_forn` Coletor Android fornecimento (FN) [fc_conf:no]
+- `fc_conf` Tem Conferência **no Full Case**? (yes/no/tbd) — **campo independente de `cf_gate`** (a partir de 2026-07-17; antes espelhava, o que zerava a conferência geral quando o FC não tinha conferência) · `fc_conf_hw` Hardware conferência (fc_hw_col/fc_hw_pdv) [fc_conf:yes] · `fc_conf_forn` Coletor Android fornecimento (FN) [fc_conf:no]
 
 ### 9. Conferência & Packing (pk)
 - `cf_gate` Tem Conferência? (yes/no/tbd) **[GATE]** ⟷ espelha `fc_conf`
